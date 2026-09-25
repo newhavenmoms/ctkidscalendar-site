@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Norwalk Kids Calendar — events, classes and resources for Norwalk families</title>
+<meta name="description" content="What's happening for kids and families in Norwalk, CT this week: storytimes, classes, festivals and local resources, all in one place.">
+<meta name="color-scheme" content="only light">
+<meta name="theme-color" content="#1B2A4A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CT Kids Calendar">
+<meta property="og:title" content="Norwalk Kids Calendar: what are we doing today?">
+<meta property="og:description" content="Storytimes, festivals, classes and local resources for little ones in Norwalk, CT.">
+<meta property="og:url" content="https://ctkidscalendar.com/norwalk/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared/style.css">
+<style>
+  /* This town's ONE accent variable. Everything else (navy, cream, yellow) is shared. */
+  :root{ --accent: #A8E4C9; }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     TOWN CONFIG — real content for this town goes here.
+     Replace every {{...}} and empty array before publishing.
+     See /shared/TOWN-TEMPLATE.md for the full field reference.
+     ============================================================ -->
+<script>
+window.TOWN = {
+  name: "Norwalk Kids Calendar",
+  townLabel: "Norwalk, CT",
+  url: "https://ctkidscalendar.com/norwalk/",
+  email: "",
+  instagram: "",
+  calendarThrough: "2026-12-31",
+
+  venues: {
+    "norwalk-public-library-main-library-dima": ["Norwalk Public Library — Main Library / DiMattia Building", "1 Belden Ave"],
+    "norwalk-public-library-south-norwalk-bra": ["Norwalk Public Library — South Norwalk Branch", "10 Washington St"],
+    "the-norwalk-art-space-art-alon-music-sch": ["The Norwalk Art Space / Art & Alon Music School", "455 West Ave"],
+    "norwalk-recreation-parks-on-point-archer": ["Norwalk Recreation & Parks — On-Point Archery program site", "170 Main St"],
+    "norwalk-recreation-parks-ben-franklin-gy": ["Norwalk Recreation & Parks — Ben Franklin Gym", "165 Flax Hill Rd"],
+    "norwalk-recreation-parks-silvermine-elem": ["Norwalk Recreation & Parks — Silvermine Elementary School", "157 Perry Ave"],
+    "norwalk-recreation-parks-norwalk-aquatic": ["Norwalk Recreation & Parks — Norwalk Aquatics", "Norwalk"],
+    "norwalk-recreation-parks-norwalk-communi": ["Norwalk Recreation & Parks — Norwalk Community Recreation Center", "98 S Main St"],
+    "norwalk-junior-soccer-association-norwal": ["Norwalk Junior Soccer Association — Norwalk fields", "Norwalk"],
+    "music-theatre-of-connecticut": ["Music Theatre of Connecticut", "509 Westport Ave"],
+    "children-of-the-sound-swim-school": ["Children of the Sound Swim School", "8 Willard Rd"],
+    "stepping-stones-museum-for-children": ["Stepping Stones Museum for Children", "303 West Ave"],
+    "stew-leonard-s-norwalk": ["Stew Leonard's Norwalk", "100 Westport Ave"],
+    "city-of-norwalk-mathews-park": ["City of Norwalk — Mathews Park", "295 West Ave"],
+    "city-of-norwalk-cranbury-park": ["City of Norwalk — Cranbury Park", "300 Grumman Ave"],
+    "rowayton-library": ["Rowayton Library", "33 Highland Ave"],
+    "rowayton-library-rowayton-community-cent": ["Rowayton Library — Rowayton Community Center – Moose Room", "33 Highland Ave"],
+    "norwalk-public-library-main-library-chil": ["Norwalk Public Library — Main Library Children's Activity Room", "1 Belden Ave"],
+    "norwalk-public-library-online": ["Norwalk Public Library — Online", "Norwalk"],
+    "norwalk-public-library-south-norwalk-bra-2": ["Norwalk Public Library – South Norwalk Branch", "10 Washington St"],
+    "the-maritime-aquarium-at-norwalk": ["The Maritime Aquarium at Norwalk", "10 N Water St"],
+    "the-maritime-aquarium-at-norwalk-r-v-sou": ["The Maritime Aquarium at Norwalk — R/V Sound Explorer", "10 N Water St"],
+    "city-of-norwalk-calf-pasture-beach-shady": ["City of Norwalk — Calf Pasture Beach & Shady Beach", "Calf Pasture Beach Rd"],
+    "city-of-norwalk-veterans-memorial-park-m": ["City of Norwalk — Veterans Memorial Park & Marina", "42 Seaview Ave"],
+    "city-of-norwalk-mathews-park-devon-s-pla": ["City of Norwalk — Mathews Park & Devon's Place", "295 West Ave"],
+    "city-of-norwalk-ryan-park": ["City of Norwalk — Ryan Park", "Day St / Raymond St"],
+    "city-of-norwalk-oyster-shell-park": ["City of Norwalk — Oyster Shell Park", "N Water St / Ann St area"],
+    "norwalk-recreation-parks-calf-pasture-be": ["Norwalk Recreation & Parks — Calf Pasture Beach", "Calf Pasture Beach Rd"],
+    "city-of-norwalk-public-works-center": ["City of Norwalk — Public Works Center", "15 S Smith St"],
+    "norwalk-recreation-parks-city-state-bank": ["Norwalk Recreation & Parks — City State Bank Norwalk Fieldhouse / outdoor program area", "Norwalk"],
+    "norwalk-recreation-parks-city-state-bank-2": ["Norwalk Recreation & Parks — City State Bank Norwalk Fieldhouse", "Norwalk"],
+    "norwalk-recreation-parks-mcaninch-sports": ["Norwalk Recreation & Parks — McAninch Sports Complex", "Norwalk"],
+    "norwalk-parks-recreation-norwalk-lions-c": ["Norwalk Parks & Recreation / Norwalk Lions Club — St. John the Apostle Catholic Church", "Norwalk"],
+    "norwalk-farmers-market-network-rainbow-p": ["Norwalk farmers market network — Rainbow Plaza", "120 Connecticut Ave"],
+    "norwalk-community-health-center": ["Norwalk Community Health Center", "205 Main St"],
+    "rowayton-farmers-market-pinkney-park-177": ["Rowayton Farmers Market — Pinkney Park / 177 Rowayton Ave area", "177 Rowayton Ave"],
+    "city-of-norwalk-sono-district-washington": ["City of Norwalk / SoNo district — Washington Street", "50 Washington St"],
+    "norwalk-seaport-association-veterans-mem": ["Norwalk Seaport Association — Veterans Memorial Park", "Norwalk"],
+    "visit-norwalk-sono-district-washington-s": ["Visit Norwalk / SoNo district — Washington Street", "South Norwalk"],
+    "norwalk-seaport-association-sheffield-is": ["Norwalk Seaport Association — Sheffield Island Lighthouse", "Norwalk Harbor"],
+    "norwalk-seaport-association-sheffield-is-2": ["Norwalk Seaport Association — Sheffield Island Ferry", "Norwalk Harbor"],
+    "crystal-theatre": ["Crystal Theatre", "66 Bayview Ave"],
+    "alon-music-school-intempo-norwalk-art-sp": ["Alon Music School / INTEMPO / Norwalk Art Space — The Norwalk Art Space", "455 West Ave"],
+    "the-norwalk-art-space": ["The Norwalk Art Space", "455 West Ave"],
+    "shakespeare-on-the-sound-pinkney-park": ["Shakespeare on the Sound — Pinkney Park", "177 Rowayton Ave"],
+    "norwalk-symphony-orchestra-norwalk-conce": ["Norwalk Symphony Orchestra — Norwalk concert venue", "Norwalk"],
+    "lockwood-mathews-mansion-museum": ["Lockwood-Mathews Mansion Museum", "295 West Ave"],
+    "tumble-jungle": ["Tumble Jungle", "250 Westport Ave"],
+    "sky-zone-norwalk": ["Sky Zone Norwalk", "360 Dr Martin Luther King Jr Dr"],
+    "chalk": ["CHALK", "542 Westport Ave"],
+    "playhouse-sono-the-sono-collection": ["Playhouse SoNo — The SoNo Collection", "100 N Water St"],
+    "stewie-the-duck-swim-school": ["Stewie the Duck Swim School", "55 Westport Ave"],
+    "goldfish-swim-school-norwalk": ["Goldfish Swim School – Norwalk", "112 Main St"],
+    "velo-ct": ["Velo-CT", "8 Willard Rd"],
+    "sono-ice-house": ["SoNo Ice House", "300 Wilson Ave"],
+    "norwalk-academy-of-dance": ["Norwalk Academy of Dance", "250 Westport Ave"],
+    "the-dance-collective": ["The Dance Collective", "509 Westport Ave"],
+    "the-spot-at-just-dance-studios": ["The Spot at Just Dance Studios", "48 Westport Ave"],
+    "triangle-community-center": ["Triangle Community Center", "650 West Ave"],
+    "st-matthew-church": ["St. Matthew Church", "216 Scribner Ave"]
+  },
+
+  venueMeta: {
+    "norwalk-public-library-main-library-dima": [null, 1],
+    "norwalk-public-library-south-norwalk-bra": [null, 1],
+    "the-norwalk-art-space-art-alon-music-sch": [null, 1],
+    "norwalk-recreation-parks-on-point-archer": [null, 1],
+    "norwalk-recreation-parks-ben-franklin-gy": [null, 1],
+    "norwalk-recreation-parks-silvermine-elem": [null, 1],
+    "norwalk-recreation-parks-norwalk-aquatic": [null, null],
+    "norwalk-recreation-parks-norwalk-communi": [null, 1],
+    "norwalk-junior-soccer-association-norwal": [null, 0],
+    "music-theatre-of-connecticut": [null, 1],
+    "children-of-the-sound-swim-school": [null, null],
+    "stepping-stones-museum-for-children": [null, 1],
+    "stew-leonard-s-norwalk": [null, 0],
+    "city-of-norwalk-mathews-park": [null, 0],
+    "city-of-norwalk-cranbury-park": [null, 0],
+    "rowayton-library": [null, 1],
+    "rowayton-library-rowayton-community-cent": [null, 1],
+    "norwalk-public-library-main-library-chil": [null, 1],
+    "norwalk-public-library-online": [null, null],
+    "norwalk-public-library-south-norwalk-bra-2": [null, 1],
+    "the-maritime-aquarium-at-norwalk": [null, 1],
+    "the-maritime-aquarium-at-norwalk-r-v-sou": [null, 0],
+    "city-of-norwalk-calf-pasture-beach-shady": [null, 0],
+    "city-of-norwalk-veterans-memorial-park-m": [null, 0],
+    "city-of-norwalk-mathews-park-devon-s-pla": [null, 0],
+    "city-of-norwalk-ryan-park": [null, 0],
+    "city-of-norwalk-oyster-shell-park": [null, 0],
+    "norwalk-recreation-parks-calf-pasture-be": [null, 0],
+    "city-of-norwalk-public-works-center": [null, 0],
+    "norwalk-recreation-parks-city-state-bank": [null, 0],
+    "norwalk-recreation-parks-city-state-bank-2": [null, 1],
+    "norwalk-recreation-parks-mcaninch-sports": [null, 0],
+    "norwalk-parks-recreation-norwalk-lions-c": [null, 1],
+    "norwalk-farmers-market-network-rainbow-p": [null, 0],
+    "norwalk-community-health-center": [null, 0],
+    "rowayton-farmers-market-pinkney-park-177": [null, 0],
+    "city-of-norwalk-sono-district-washington": [null, 0],
+    "norwalk-seaport-association-veterans-mem": [null, 0],
+    "visit-norwalk-sono-district-washington-s": [null, 0],
+    "norwalk-seaport-association-sheffield-is": [null, 0],
+    "norwalk-seaport-association-sheffield-is-2": [null, 0],
+    "crystal-theatre": [null, 1],
+    "alon-music-school-intempo-norwalk-art-sp": [null, 1],
+    "the-norwalk-art-space": [null, 1],
+    "shakespeare-on-the-sound-pinkney-park": [null, 0],
+    "norwalk-symphony-orchestra-norwalk-conce": [null, 1],
+    "lockwood-mathews-mansion-museum": [null, 1],
+    "tumble-jungle": [null, 1],
+    "sky-zone-norwalk": [null, 1],
+    "chalk": [null, 1],
+    "playhouse-sono-the-sono-collection": [null, 1],
+    "stewie-the-duck-swim-school": [null, 1],
+    "goldfish-swim-school-norwalk": [null, 1],
+    "velo-ct": [null, 1],
+    "sono-ice-house": [null, 1],
+    "norwalk-academy-of-dance": [null, 1],
+    "the-dance-collective": [null, 1],
+    "the-spot-at-just-dance-studios": [null, 1],
+    "triangle-community-center": [null, 1],
+    "st-matthew-church": [null, 1]
+  },
+
+  hoods: [],
+
+  events: [
+    {t:"Tunes and Tales", v:"norwalk-public-library-main-library-dima", ages:"Young children + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.norwalklib.org/calendar.aspx?CID=0&month=9&view=list&year=2026", s:[[2, [["10:15", "10:45"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Tunes and Tales", v:"norwalk-public-library-main-library-dima", ages:"Young children + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.norwalklib.org/calendar.aspx?CID=0&month=9&view=list&year=2026", s:[[2, [["11:00", "11:30"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Tunes and Tales", v:"norwalk-public-library-main-library-dima", ages:"Young children + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"September calendar shows recurring Friday sessions", src:"https://www.norwalklib.org/calendar.aspx?CID=0&month=9&view=list&year=2026", s:[[5, [["10:15", "10:45"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Tunes and Tales", v:"norwalk-public-library-main-library-dima", ages:"Young children + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"September calendar shows recurring Friday sessions", src:"https://www.norwalklib.org/calendar.aspx?CID=0&month=9&view=list&year=2026", s:[[5, [["11:00", "11:30"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Preschool Storytime", v:"norwalk-public-library-main-library-dima", ages:"Preschoolers", a:["preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.norwalklib.org/calendar.aspx?CID=0&month=9&view=list&year=2026", s:[[3, [["14:30", "15:15"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Baby Storytime", v:"norwalk-public-library-main-library-dima", ages:"Babies + caregiver", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.norwalklib.org/calendar.aspx?CID=0&month=9&view=list&year=2026", s:[[4, [["10:30", "11:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"LEGO for Littles", v:"norwalk-public-library-main-library-dima", ages:"Young children", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.norwalklib.org/calendar.aspx?CID=0&month=9&view=list&year=2026", s:[[4, [["16:00", "18:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"LEGO Club", v:"norwalk-public-library-main-library-dima", ages:"School-age children", a:["big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.norwalklib.org/calendar.aspx?CID=0&month=9&view=list&year=2026", s:[[4, [["17:00", "18:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Coding Wednesdays", v:"norwalk-public-library-main-library-dima", ages:"Children / teens; see event", a:["big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"Online program", src:"https://www.norwalklib.org/calendar.aspx?CID=0&month=9&view=list&year=2026", s:[[3, [["17:00", "18:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Coding Saturdays", v:"norwalk-public-library-main-library-dima", ages:"Children / teens; see event", a:["big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"Online program", src:"https://www.norwalklib.org/calendar.aspx?CID=0&month=9&view=list&year=2026", s:[[6, [["11:00", "12:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Robotics for Teens", v:"norwalk-public-library-main-library-dima", ages:"Teens", a:["big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.norwalklib.org/calendar.aspx?CID=0&month=9&view=list&year=2026", s:[[6, [["14:00", "15:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"3D Design for Teens", v:"norwalk-public-library-main-library-dima", ages:"Teens", a:["big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.norwalklib.org/calendar.aspx?CID=0&month=9&view=list&year=2026", s:[[4, [["17:00", "18:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Baby & Toddler Storytime", v:"norwalk-public-library-south-norwalk-bra", ages:"Babies / toddlers + caregiver", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:false, check:true, blurb:"", src:"https://www.norwalklib.org/calendar.aspx?CID=0&month=9&view=list&year=2026", s:[[4, [["10:00", "10:30"]], "2026-09-03", "2026-09-03"]]},
+    {t:"Storytime", v:"rowayton-library", ages:"Babies & toddlers + caregiver", a:["baby", "toddler"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Books, songs and early-literacy activities.", src:"https://www.rowayton.org/events/upcoming", s:[[1, [["11:30", "12:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Early Childhood Music & Movement with Ms. Deirdre", v:"rowayton-library-rowayton-community-cent", ages:"Ages 5 and under + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"Highly interactive singing, instruments and dancing.", src:"https://www.rowayton.org/event/early-childhood-music-and-movement-ms-deirdre-496", s:[[1, [["15:30", "16:45"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Toddler Time", v:"rowayton-library", ages:"Toddlers", a:["baby", "toddler", "preschool"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"Toddler-focused hands-on program.", src:"https://www.rowayton.org/events/upcoming?page=1", s:[[2, [["16:00", "16:45"]], "2026-10-20", "2026-10-20"]]},
+    {t:"Kids Tech", v:"rowayton-library", ages:"Children/tweens; some sessions teens", a:["big"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"Rotating technology/maker themes.", src:"https://www.rowayton.org/events/upcoming?page=1", s:[[3, [["16:00", "17:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Tunes and Tales – Early Session", v:"norwalk-public-library-main-library-chil", ages:"Young children + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Songs, rhymes and stories.", src:"https://www.norwalkpl.org/calendar.aspx", s:[[2, [["10:15", "10:45"]], "2026-09-14", "2026-12-19"], [5, [["10:15", "10:45"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Tunes and Tales – Late Session", v:"norwalk-public-library-main-library-chil", ages:"Young children + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Second weekly session.", src:"https://www.norwalkpl.org/calendar.aspx", s:[[2, [["11:00", "11:30"]], "2026-09-14", "2026-12-19"], [5, [["11:00", "11:30"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Preschool Storytime", v:"norwalk-public-library-main-library-dima", ages:"Preschool age", a:["big"], price:"Free", free:true, drop:false, rsvp:false, check:false, blurb:"", src:"https://www.norwalkpl.org/calendar.aspx", s:[[3, [["14:30", "15:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Baby Storytime", v:"norwalk-public-library-main-library-dima", ages:"Babies + caregiver", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:false, check:false, blurb:"", src:"https://www.norwalkpl.org/calendar.aspx", s:[[4, [["10:30", "11:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"LEGO for Littles", v:"norwalk-public-library-main-library-dima", ages:"Younger children", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:false, check:false, blurb:"", src:"https://www.norwalkpl.org/calendar.aspx", s:[[4, [["16:00", "17:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"LEGO Club", v:"norwalk-public-library-main-library-dima", ages:"School-age children", a:["big"], price:"Free", free:true, drop:false, rsvp:false, check:false, blurb:"", src:"https://www.norwalkpl.org/calendar.aspx", s:[[4, [["17:00", "18:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Coding Wednesdays", v:"norwalk-public-library-online", ages:"Children / youth; check session", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.norwalkpl.org/calendar.aspx", s:[[3, [["17:00", "18:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Coding Saturdays", v:"norwalk-public-library-online", ages:"Children / youth; check session", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.norwalkpl.org/calendar.aspx", s:[[6, [["11:00", "12:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Baby & Toddler Storytime", v:"norwalk-public-library-south-norwalk-bra-2", ages:"Babies/toddlers + caregiver", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:false, check:true, blurb:"", src:"https://www.norwalkpl.org/calendar.aspx", s:[[4, [["10:00", "10:30"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Rainbow Plaza Farmstand", v:"norwalk-farmers-market-network-rainbow-p", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"", src:"https://www.norwalkct.gov/DocumentCenter/View/30821/2026-Farmers-Market-Flyer-?bidId=", s:[[3, [["11:00", "15:00"]], "2026-06-03", "2026-11-11"]]},
+    {t:"Norwalk Community Health Center Farmstand", v:"norwalk-community-health-center", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"", src:"https://www.norwalkct.gov/DocumentCenter/View/30821/2026-Farmers-Market-Flyer-?bidId=", s:[[3, [["11:00", "15:00"]], "2026-06-03", "2026-10-28"]]},
+    {t:"Rowayton Farmers Market", v:"rowayton-farmers-market-pinkney-park-177", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"", src:"https://www.norwalkct.gov/DocumentCenter/View/30821/2026-Farmers-Market-Flyer-?bidId=", s:[[5, [["10:00", "14:00"]], "2026-05-22", "2026-05-22"]]},
+    {t:"SoNo Saturday Market", v:"city-of-norwalk-sono-district-washington", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:true, blurb:"30+ vendors, food, live music and lawn games.", src:"https://www.visitnorwalk.org/events-in-norwalk/sono-saturday-market/", s:[[6, [["11:00", "15:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Beasties and Besties Halloween Festival", v:"stepping-stones-museum-for-children", special:"hw", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Ticketed; full-day museum admission", free:false, ticket:true, blurb:"Monster Mash, carnival games, shadow puppetry, costume parade and hands-on activities.", src:"https://www.steppingstonesmuseum.org/experience/beasties-and-besties", when:[{from:"2026-10-24", to:"2026-10-24", t:[["10:00", "17:00"]]}]},
+    {t:"Scout Sleepover + BSA Scout Day", v:"the-maritime-aquarium-at-norwalk", special:"fall", ages:"Scouts + families", a:["baby", "toddler", "preschool", "big"], price:"Sleepover $100/person; Scout Day child $19.50/adult $25.50", free:false, ticket:false, blurb:"After-dark aquarium activities, badge programs and behind-the-scenes experiences.", src:"https://www.maritimeaquarium.org/newsroom/posts/the-maritime-aquarium-announces-special-bsa-scout-day-programs-on-march-21", when:[{from:"2026-03-20", to:"2026-03-21", t:[]}]},
+    {t:"Movies at the Beach – Sonic the Hedgehog 3", v:"norwalk-recreation-parks-calf-pasture-be", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free; standard beach parking rules apply", free:true, ticket:false, blurb:"Beachfront outdoor movie; useful annual series to monitor.", src:"https://www.norwalkct.gov/4019/Events", when:[{from:"2026-09-18", to:"2026-09-18", t:[["20:45", "22:30"]]}]},
+    {t:"City Open House & Touch-A-Truck", v:"city-of-norwalk-public-works-center", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Emergency/public works vehicles, demonstrations and hands-on activities.", src:"https://norwalkct.gov/Calendar.aspx?EID=17061&calType=0&day=17&month=8&year=2026", when:[{from:"2026-09-19", to:"2026-09-19", t:[["09:00", "12:00"]]}]},
+    {t:"Fall Family Fest + Movie", v:"norwalk-recreation-parks-mcaninch-sports", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Games/activities followed by Zootopia 2 at 7 PM.", src:"https://fliphtml5.com/qmsjn/kpqu/", when:[{from:"2026-10-02", to:"2026-10-02", t:[["17:30", "19:00"]]}]},
+    {t:"Trunk or Treat", v:"norwalk-recreation-parks-mcaninch-sports", special:"hw", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"City departments, businesses and organizations host decorated trunks.", src:"https://fliphtml5.com/qmsjn/kpqu/", when:[{from:"2026-10-21", to:"2026-10-21", t:[["17:00", "19:00"]]}]},
+    {t:"Annual Tree Lighting", v:"norwalk-recreation-parks-city-state-bank-2", special:"hol", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Community holiday kickoff.", src:"https://fliphtml5.com/qmsjn/kpqu/", when:[{from:"2026-11-20", to:"2026-11-20", t:[["18:00", "19:00"]]}]},
+    {t:"Norwalk Oyster Festival", v:"norwalk-seaport-association-veterans-mem", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Ticketed; children/family pricing see event", free:false, ticket:true, blurb:"Kids Cove, carnival rides, face painting, games, music and food.", src:"https://www.seaport.org/norwalk-oyster-festival", when:[{from:"2026-09-11", to:"2026-09-13", t:[]}]},
+    {t:"Halloween Nightfair", v:"visit-norwalk-sono-district-washington-s", special:"hw", ages:"All ages; later hours become more nightlife-oriented", a:["baby", "toddler", "preschool", "big"], price:"Free admission", free:true, ticket:false, blurb:"Afternoon family programming includes pumpkin painting, face painting, games and trick-or-treating; 60+ vendors.", src:"https://www.visitnorwalk.org/halloween-nightfair-2026/", when:[{from:"2026-10-24", to:"2026-10-24", t:[["14:00", "22:00"]]}]},
+    {t:"Pirates Weekend & Cruise", v:"norwalk-seaport-association-sheffield-is", special:"fall", ages:"Families", a:["baby", "toddler", "preschool", "big"], price:"Cruise ticket required", free:false, ticket:true, blurb:"Treasure hunts, sea chanteys and pirate-themed island activities.", src:"https://www.seaport.org/", when:[{from:"2026-07-18", to:"2026-07-19", t:[]}]},
+    {t:"Music for All Ages: Peter and the Wolf", v:"norwalk-symphony-orchestra-norwalk-conce", special:"fall", ages:"Families / first-time concertgoers", a:["baby", "toddler", "preschool", "big"], price:"See ticketing", free:false, ticket:true, blurb:"Peter and the Wolf with New England Academy of Dance; keep in planning database because announced during 2026.", src:"https://www.norwalksymphony.org/20262027", when:[{from:"2027-05-15", to:"2027-05-15", t:[["19:30", null]]}]},
+    {t:"Ghosts & Spirits at the Mansion", v:"lockwood-mathews-mansion-museum", special:"hw", ages:"Recommended ages 12+; children with adult", a:["big"], price:"Ticketed", free:false, ticket:true, blurb:"Immersive theatrical tours about Victorian Spiritualism, Gothic literature and mansion ghost stories.", src:"https://lockwoodmathewsmansion.com/event/ghosts-spirits-at-the-mansion/", when:[{from:"2026-10-22", to:"2026-10-24", t:[["18:00", "21:00"]]}]},
+    {t:"Parent & Caregiver Mixer", v:"triangle-community-center", special:"fall", ages:"Parents/caregivers", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Local activity spaces, mental-health resources, advocacy and youth relationship education.", src:"https://www.ctpridecenter.org/caregiver-mixer", when:[{from:"2026-09-26", to:"2026-09-26", t:[["10:00", "12:00"]]}]},
+    {t:"St. Matthew Youth Group – Halloween Party", v:"st-matthew-church", special:"hw", ages:"Grades 3–HS", a:["big"], price:"See youth group", free:false, ticket:false, blurb:"", src:"https://stmatthewnorwalk.org/youth-group/", when:[{from:"2026-10-17", to:"2026-10-17", t:[]}]},
+    {t:"Trunk or Treat", v:"st-matthew-church", special:"hw", ages:"Families", a:["baby", "toddler", "preschool", "big"], price:"See event", free:false, ticket:false, blurb:"", src:"https://stmatthewnorwalk.org/youth-group/", when:[{from:"2026-10-25", to:"2026-10-25", t:[]}]},
+    {t:"Breakfast with Santa", v:"st-matthew-church", special:"hol", ages:"Families", a:["baby", "toddler", "preschool", "big"], price:"See event", free:false, ticket:false, blurb:"", src:"https://stmatthewnorwalk.org/youth-group/", when:[{from:"2026-12-13", to:"2026-12-13", t:[]}]}
+  ],
+
+  tba: [
+
+  ],
+
+  classes: [
+    {id:"choir--the-norwalk-art-space-art-alon-music-sch", c:"music", n:"Choir", u:"https://www.thenorwalkartspace.org/education", blurb:"", ages:"School-age children / teens; class dependent", where:"The Norwalk Art Space / Art & Alon Music School"},
+    {id:"strings--the-norwalk-art-space-art-alon-music-sch", c:"music", n:"Strings", u:"https://www.thenorwalkartspace.org/education", blurb:"", ages:"School-age children / teens; class dependent", where:"The Norwalk Art Space / Art & Alon Music School"},
+    {id:"ukulele-guitar--the-norwalk-art-space-art-alon-music-sch", c:"music", n:"Ukulele & Guitar", u:"https://www.thenorwalkartspace.org/education", blurb:"", ages:"School-age children / teens; class dependent", where:"The Norwalk Art Space / Art & Alon Music School"},
+    {id:"string-orchestra--the-norwalk-art-space-art-alon-music-sch", c:"music", n:"String Orchestra", u:"https://www.thenorwalkartspace.org/education", blurb:"", ages:"School-age children / teens; class dependent", where:"The Norwalk Art Space / Art & Alon Music School"},
+    {id:"on-point-archery--norwalk-recreation-parks-on-point-archer", c:"move", n:"On-Point Archery", u:"https://www.norwalkct.gov/4013/Youth-Programs", blurb:"Resident $220 / Non-resident $240.", ages:"Ages 8–17", where:"Norwalk Recreation & Parks — On-Point Archery program site"},
+    {id:"hoops4all-youth-basketball-academy--norwalk-recreation-parks-ben-franklin-gy", c:"move", n:"Hoops4All Youth Basketball Academy", u:"https://www.norwalkct.gov/4013/Youth-Programs", blurb:"Resident $160 / Non-resident $180.", ages:"Grades 3–5", where:"Norwalk Recreation & Parks — Ben Franklin Gym"},
+    {id:"girls-volleyball-fall-session-i--norwalk-recreation-parks-silvermine-elem", c:"move", n:"Girls Volleyball – Fall Session I", u:"https://norwalkct.gov/2181/Girls-Volleyball", blurb:"Resident $125 / Non-resident $145.", ages:"Ages 8–11", where:"Norwalk Recreation & Parks — Silvermine Elementary School"},
+    {id:"learn-to-swim-levels-1-2--norwalk-recreation-parks-norwalk-aquatic", c:"swim", n:"Learn to Swim – Levels 1 & 2", u:"https://www.norwalkct.gov/4015/Aquatics", blurb:"Multiple class start times; use registration portal to choose an exact slot. Resident $27.50 / Non-resident $37.50.", ages:"Ages 5–17", where:"Norwalk Recreation & Parks — Norwalk Aquatics"},
+    {id:"learn-to-swim-level-3--norwalk-recreation-parks-norwalk-aquatic", c:"swim", n:"Learn to Swim – Level 3", u:"https://www.norwalkct.gov/4015/Aquatics", blurb:"Multiple class start times; use registration portal to choose an exact slot. Resident $55 / Non-resident $65.", ages:"Ages 5–17", where:"Norwalk Recreation & Parks — Norwalk Aquatics"},
+    {id:"learn-to-swim-level-4--norwalk-recreation-parks-norwalk-aquatic", c:"swim", n:"Learn to Swim – Level 4", u:"https://www.norwalkct.gov/4015/Aquatics", blurb:"Multiple class start times; use registration portal to choose an exact slot. Resident $55 / Non-resident $65.", ages:"Ages 5–17", where:"Norwalk Recreation & Parks — Norwalk Aquatics"},
+    {id:"open-gym-community-recreation-center--norwalk-recreation-parks-norwalk-communi", c:"move", n:"Open Gym / Community Recreation Center", u:"https://norwalkct.gov/3950/Community-Recreation-Center", blurb:"Available activities include open-gym basketball, volleyball and pickleball. Saturday hours are 10 AM–6 PM. See registration / access rules.", ages:"Families / youth; activity rules vary", where:"Norwalk Recreation & Parks — Norwalk Community Recreation Center"},
+    {id:"fall-recreation-soccer--norwalk-junior-soccer-association-norwal", c:"move", n:"Fall Recreation Soccer", u:"https://njsa.org/", blurb:"See registration.", ages:"Boys & girls ages 2–13", where:"Norwalk Junior Soccer Association — Norwalk fields"},
+    {id:"fall-acting-musical-theatre-classes--music-theatre-of-connecticut", c:"art", n:"Fall Acting / Musical Theatre Classes", u:"https://www.musictheatreofct.com/fall-spring-programs", blurb:"See registration.", ages:"Grades 1–12", where:"Music Theatre of Connecticut"},
+    {id:"fall-group-swim-classes--children-of-the-sound-swim-school", c:"swim", n:"Fall Group Swim Classes", u:"https://www.childrenofthesound.com/", blurb:"Contact provider.", ages:"Children; level varies", where:"Children of the Sound Swim School"},
+    {id:"museum-open-hours-included-daily-programming--stepping-stones-museum-for-children", c:"move", n:"Museum Open Hours + Included Daily Programming", u:"https://www.steppingstonesmuseum.org/visit/plan-your-visit", blurb:"Puppet shows, workshops and other programs may be included with admission; check What's On for date-specific programming. Adults & children $20; seniors $16; under 1 free; members free.", ages:"Children / families", where:"Stepping Stones Museum for Children"},
+    {id:"museum-open-hours-daily-family-programming--stepping-stones-museum-for-children", c:"move", n:"Museum Open Hours + Daily Family Programming", u:"https://www.steppingstonesmuseum.org/visit/plan-your-visit", blurb:"Daily puppet shows, workshops and seasonal activities vary; check What's On. Adults & children $20; seniors $16; under 1 free; members free.", ages:"Primarily children 10 and under", where:"Stepping Stones Museum for Children"},
+    {id:"little-farm-family-seasonal-activities--stew-leonard-s-norwalk", c:"nature", n:"Little Farm / Family Seasonal Activities", u:"https://www.stewleonards.com/", blurb:"Seasonal Little Farm/petting-zoo tradition plus family events; useful watch-list source. Generally free; special events may vary.", ages:"Families / young children", where:"Stew Leonard's Norwalk"},
+    {id:"devon-s-place-inclusive-playground--city-of-norwalk-mathews-park", c:"move", n:"Devon's Place Inclusive Playground", u:"https://www.norwalkct.gov/", blurb:"Large boundless playground next to Stepping Stones; include in evergreen family-outings database.", ages:"All ages / multiple play zones", where:"City of Norwalk — Mathews Park"},
+    {id:"cranbury-park-family-outing--city-of-norwalk-cranbury-park", c:"nature", n:"Cranbury Park Family Outing", u:"https://www.norwalkct.gov/", blurb:"Trails, playground, picnic areas, lawn and sculpture garden. Park free; seasonal nonresident parking fee may apply.", ages:"All ages", where:"City of Norwalk — Cranbury Park"},
+    {id:"museum-open-hours-daily-play--stepping-stones-museum-for-children", c:"move", n:"Museum Open Hours + Daily Play", u:"https://www.steppingstonesmuseum.org/visit/plan-your-visit", blurb:"Includes Tot Town for children 36 months and under plus changing programs/exhibits. Adults/children $20; seniors $16; under 1 free; members free.", ages:"Primarily children 10 and under", where:"Stepping Stones Museum for Children"},
+    {id:"spookytown-variety--stepping-stones-museum-for-children", c:"move", n:"Spookytown Variety", u:"https://www.steppingstonesmuseum.org/", blurb:"Two Halloween puppet performances. Included with Halloween Festival admission.", ages:"Families", where:"Stepping Stones Museum for Children"},
+    {id:"rabbit-s-warren--stepping-stones-museum-for-children", c:"move", n:"Rabbit's Warren", u:"https://www.steppingstonesmuseum.org/", blurb:"Part of museum's recurring puppetry/performance calendar. Included with museum admission.", ages:"Families", where:"Stepping Stones Museum for Children"},
+    {id:"family-nutrition-workshop-series--stepping-stones-museum-for-children", c:"move", n:"Family Nutrition Workshop Series", u:"https://www.steppingstonesmuseum.org/experience/events", blurb:"Hands-on family nutrition and wellness workshops. See session details.", ages:"Families", where:"Stepping Stones Museum for Children"},
+    {id:"leaf-a-palooza--stepping-stones-museum-for-children", c:"move", n:"Leaf-A-Palooza", u:"https://www.steppingstonesmuseum.org/experience/events", blurb:"More than 60,000 fabric leaves for raking, piling and jumping. Included with admission.", ages:"Children/families", where:"Stepping Stones Museum for Children"},
+    {id:"aquarium-visit-daily-animal-experiences--the-maritime-aquarium-at-norwalk", c:"move", n:"Aquarium Visit + Daily Animal Experiences", u:"https://www.maritimeaquarium.org/", blurb:"Long Island Sound-focused aquarium with hands-on marine exhibits and daily programs. See current admission.", ages:"All ages", where:"The Maritime Aquarium at Norwalk"},
+    {id:"marine-life-encounter-cruise--the-maritime-aquarium-at-norwalk-r-v-sou", c:"move", n:"Marine Life Encounter Cruise", u:"https://www.maritimeaquarium.org/newsroom/posts/experience-long-island-sound-and-norwalk-harbor-aboard-the-maritime-aquariums-summer-cruises", blurb:"Educator-led trawl and biodiversity experience on Long Island Sound. See cruise ticketing.", ages:"Families; age rules apply by cruise", where:"The Maritime Aquarium at Norwalk — R/V Sound Explorer"},
+    {id:"sunset-cruise--the-maritime-aquarium-at-norwalk-r-v-sou", c:"move", n:"Sunset Cruise", u:"https://www.maritimeaquarium.org/newsroom/posts/experience-long-island-sound-and-norwalk-harbor-aboard-the-maritime-aquariums-summer-cruises", blurb:"90-minute sunset trip around the Norwalk Islands. See cruise ticketing.", ages:"Families; check age requirements", where:"The Maritime Aquarium at Norwalk — R/V Sound Explorer"},
+    {id:"oyster-town-harbor-cruise--the-maritime-aquarium-at-norwalk-r-v-sou", c:"move", n:"Oyster Town Harbor Cruise", u:"https://www.maritimeaquarium.org/newsroom/posts/experience-long-island-sound-and-norwalk-harbor-aboard-the-maritime-aquariums-summer-cruises", blurb:"New 2026 educator-led cruise about Norwalk Harbor and oyster heritage. See ticketing.", ages:"Families; check age requirements", where:"The Maritime Aquarium at Norwalk — R/V Sound Explorer"},
+    {id:"maritime-aquarium-summer-camps--the-maritime-aquarium-at-norwalk", c:"move", n:"Maritime Aquarium Summer Camps", u:"https://www.maritimeaquarium.org/newsroom/posts/maritime-aquarium-camps-are-open-for-registration", blurb:"Animal encounters, beach visits, experiments and behind-the-scenes experiences. See camp registration.", ages:"Ages 6–15", where:"The Maritime Aquarium at Norwalk"},
+    {id:"calf-pasture-beach-shady-beach--city-of-norwalk-calf-pasture-beach-shady", c:"nature", n:"Calf Pasture Beach & Shady Beach", u:"https://norwalkct.gov/4021/Parks-Facilities", blurb:"3/4 mile coastline, splash pad, skate park, sailing school, volleyball, bocce, basketball and free summer concerts. Free; beach parking/pass rules may apply.", ages:"All ages", where:"City of Norwalk — Calf Pasture Beach & Shady Beach"},
+    {id:"cranbury-park--city-of-norwalk-cranbury-park", c:"nature", n:"Cranbury Park", u:"https://norwalkct.gov/4021/Parks-Facilities", blurb:"227 acres of wooded trails, disc golf, playground/picnic areas and dog-friendly orchard. Free; beach parking/pass rules may apply.", ages:"All ages", where:"City of Norwalk — Cranbury Park"},
+    {id:"veterans-memorial-park-marina--city-of-norwalk-veterans-memorial-park-m", c:"nature", n:"Veterans Memorial Park & Marina", u:"https://norwalkct.gov/4021/Parks-Facilities", blurb:"35-acre waterfront park with marina, esplanade, playground, athletic fields and courts. Free; beach parking/pass rules may apply.", ages:"All ages", where:"City of Norwalk — Veterans Memorial Park & Marina"},
+    {id:"mathews-park-devon-s-place--city-of-norwalk-mathews-park-devon-s-pla", c:"nature", n:"Mathews Park & Devon's Place", u:"https://norwalkct.gov/4021/Parks-Facilities", blurb:"Cultural campus with Stepping Stones, Lockwood-Mathews Mansion, Norwalk Art Space, inclusive playground and Heritage Park Trail. Free; beach parking/pass rules may apply.", ages:"All ages", where:"City of Norwalk — Mathews Park & Devon's Place"},
+    {id:"ryan-park--city-of-norwalk-ryan-park", c:"nature", n:"Ryan Park", u:"https://norwalkct.gov/4021/Parks-Facilities", blurb:"Neighborhood park with upgraded splash pad and playground. Free; beach parking/pass rules may apply.", ages:"All ages", where:"City of Norwalk — Ryan Park"},
+    {id:"oyster-shell-park--city-of-norwalk-oyster-shell-park", c:"nature", n:"Oyster Shell Park", u:"https://norwalkct.gov/4021/Parks-Facilities", blurb:"Waterfront overlooks and walking paths near SoNo and the aquarium. Free; beach parking/pass rules may apply.", ages:"All ages", where:"City of Norwalk — Oyster Shell Park"},
+    {id:"dash-tykes-soccer--norwalk-recreation-parks-city-state-bank", c:"move", n:"DASH Tykes Soccer", u:"https://fliphtml5.com/qmsjn/kpqu/", blurb:"Parent participation required. Resident $65 / nonresident $74.75.", ages:"Ages 2–3", where:"Norwalk Recreation & Parks — City State Bank Norwalk Fieldhouse / outdoor program area"},
+    {id:"dash-tykes-basketball--norwalk-recreation-parks-city-state-bank-2", c:"move", n:"DASH Tykes Basketball", u:"https://content.govdelivery.com/accounts/IANORWALK/bulletins/424dc4f", blurb:"Resident $65 / nonresident $74.75.", ages:"Ages 2–3", where:"Norwalk Recreation & Parks — City State Bank Norwalk Fieldhouse"},
+    {id:"dash-tykes-track-field--norwalk-recreation-parks-city-state-bank-2", c:"move", n:"DASH Tykes Track & Field", u:"https://fliphtml5.com/qmsjn/kpqu/", blurb:"Running, jumping and throwing fundamentals. Resident $69 / nonresident $79.35.", ages:"Ages 4–6", where:"Norwalk Recreation & Parks — City State Bank Norwalk Fieldhouse"},
+    {id:"little-dribblers-basketball--norwalk-recreation-parks-city-state-bank-2", c:"move", n:"Little Dribblers Basketball", u:"https://fliphtml5.com/qmsjn/kpqu/", blurb:"Preschool Tuesdays OR Thursdays; kindergarten Tuesdays & Thursdays. Resident $35 / nonresident $40.25.", ages:"Pre-K & Kindergarten; age 4 by start", where:"Norwalk Recreation & Parks — City State Bank Norwalk Fieldhouse"},
+    {id:"family-bingo--norwalk-parks-recreation-norwalk-lions-c", c:"move", n:"Family Bingo", u:"https://fliphtml5.com/qmsjn/kpqu/", blurb:"Bring snacks; beverages provided. 50¢/card or 3 for $1.", ages:"All ages", where:"Norwalk Parks & Recreation / Norwalk Lions Club — St. John the Apostle Catholic Church"},
+    {id:"sheffield-island-lighthouse-cruise--norwalk-seaport-association-sheffield-is-2", c:"nature", n:"Sheffield Island Lighthouse Cruise", u:"https://www.seaport.org/ferry-schedule", blurb:"Narrated harbor cruise plus lighthouse visit and wildlife refuge. See 2026 ticketing.", ages:"All ages / families", where:"Norwalk Seaport Association — Sheffield Island Ferry"},
+    {id:"sheffield-island-clambake--norwalk-seaport-association-sheffield-is", c:"move", n:"Sheffield Island Clambake", u:"https://www.seaport.org/", blurb:"Lobster and non-lobster options; island evening. Ticketed.", ages:"Families; check menu/boat suitability", where:"Norwalk Seaport Association — Sheffield Island Lighthouse"},
+    {id:"musical-theatre-2--music-theatre-of-connecticut", c:"music", n:"Musical Theatre 2", u:"https://www.musictheatreofct.com/fall-spring-programs", blurb:"$535/term.", ages:"Grades 3–5", where:"Music Theatre of Connecticut"},
+    {id:"musical-theatre-1--music-theatre-of-connecticut", c:"music", n:"Musical Theatre 1", u:"https://www.musictheatreofct.com/fall-spring-programs", blurb:"$535/term.", ages:"Grades 1–2", where:"Music Theatre of Connecticut"},
+    {id:"the-addams-family-student-production--music-theatre-of-connecticut", c:"art", n:"The Addams Family – Student Production", u:"https://www.musictheatreofct.com/fall-spring-programs", blurb:"Student musical production; participants must also be in an MTC class. $745.", ages:"Grades 2–8; prerequisites apply", where:"Music Theatre of Connecticut"},
+    {id:"crystal-theatre-fall-musical-rehearsal-program--crystal-theatre", c:"art", n:"Crystal Theatre Fall Musical Rehearsal Program", u:"https://www.crystaltheatre.org/class-signups", blurb:"Long-running youth musical-theater program culminating in Jan 2027 performances. See registration.", ages:"Youth performers; production-specific", where:"Crystal Theatre"},
+    {id:"free-choir-classes--alon-music-school-intempo-norwalk-art-sp", c:"music", n:"Free Choir Classes", u:"https://www.thenorwalkartspace.org/education", blurb:"Free; instruments provided as needed.", ages:"Norwalk youth; level dependent", where:"Alon Music School / INTEMPO / Norwalk Art Space — The Norwalk Art Space"},
+    {id:"free-strings-classes--alon-music-school-intempo-norwalk-art-sp", c:"music", n:"Free Strings Classes", u:"https://www.thenorwalkartspace.org/education", blurb:"Free; instruments provided.", ages:"Norwalk youth; level dependent", where:"Alon Music School / INTEMPO / Norwalk Art Space — The Norwalk Art Space"},
+    {id:"free-ukulele-guitar-classes--alon-music-school-intempo-norwalk-art-sp", c:"music", n:"Free Ukulele & Guitar Classes", u:"https://www.thenorwalkartspace.org/education", blurb:"Free; instruments provided.", ages:"Norwalk youth; level dependent", where:"Alon Music School / INTEMPO / Norwalk Art Space — The Norwalk Art Space"},
+    {id:"free-string-orchestra--alon-music-school-intempo-norwalk-art-sp", c:"music", n:"Free String Orchestra", u:"https://www.thenorwalkartspace.org/education", blurb:"Free; instruments provided.", ages:"Norwalk youth; level dependent", where:"Alon Music School / INTEMPO / Norwalk Art Space — The Norwalk Art Space"},
+    {id:"norwalk-art-space-gallery-visit--the-norwalk-art-space", c:"art", n:"Norwalk Art Space Gallery Visit", u:"https://www.thenorwalkartspace.org/", blurb:"Free contemporary gallery plus youth education hub.", ages:"All ages", where:"The Norwalk Art Space"},
+    {id:"shakespeare-on-the-sound-kids-show--shakespeare-on-the-sound-pinkney-park", c:"art", n:"Shakespeare on the Sound Kids' Show", u:"https://www.shakespeareonthesound.org/kids-show", blurb:"30-minute kid-friendly Much Ado About Nothing adaptation before every mainstage show.", ages:"Ages 1–100", where:"Shakespeare on the Sound — Pinkney Park"},
+    {id:"lockwood-mathews-mansion-mini-tours--lockwood-mathews-mansion-museum", c:"move", n:"Lockwood-Mathews Mansion Mini-Tours", u:"https://lockwoodmathewsmansion.com/past-events/", blurb:"Lower-cost way to explore the historic mansion. $5 mini-tour days.", ages:"Families; best for school-age+", where:"Lockwood-Mathews Mansion Museum"},
+    {id:"open-gym-jump--tumble-jungle", c:"move", n:"Open Gym & Jump", u:"https://tumblejungle.com/", blurb:"Gym + inflatables; hours vary around camps/classes. See current drop-in price.", ages:"Crawlers through young children", where:"Tumble Jungle"},
+    {id:"baboons-parent-me--tumble-jungle", c:"move", n:"Baboons Parent & Me", u:"https://tumblejungle.com/classes/", blurb:"Movement, balance, coordination, parachute play and music. Drop-in; see current price.", ages:"Ages 1–2 + caregiver", where:"Tumble Jungle"},
+    {id:"baboons-4-week-session--tumble-jungle", c:"move", n:"Baboons 4-Week Session", u:"https://tumblejungle.com/classes/", blurb:"See current session price.", ages:"Ages 1–2 + caregiver", where:"Tumble Jungle"},
+    {id:"vacation-day-camp--tumble-jungle", c:"move", n:"Vacation Day Camp", u:"https://tumblejungle.com/", blurb:"Camp offered on many weekdays when school is closed. See registration.", ages:"Potty-trained children; check age range", where:"Tumble Jungle"},
+    {id:"sensory-friendly-hours--sky-zone-norwalk", c:"move", n:"Sensory Friendly Hours", u:"https://dev.skyzone.com/norwalk/", blurb:"Quieter jump hour. $15.", ages:"Jumpers with sensory sensitivities + family", where:"Sky Zone Norwalk"},
+    {id:"little-leapers--sky-zone-norwalk", c:"move", n:"Little Leapers", u:"https://dev.skyzone.com/norwalk/", blurb:"Dedicated young-child jump time. $15.", ages:"Ages 5 and under + parent", where:"Sky Zone Norwalk"},
+    {id:"two-for-tuesdays--sky-zone-norwalk", c:"move", n:"Two for Tuesdays", u:"https://dev.skyzone.com/norwalk/", blurb:"$37.99 for two under current offer.", ages:"All ages subject to park rules", where:"Sky Zone Norwalk"},
+    {id:"wristband-wednesdays--sky-zone-norwalk", c:"move", n:"Wristband Wednesdays", u:"https://dev.skyzone.com/norwalk/", blurb:"$37.99 standard pass; stay all day.", ages:"All ages subject to park rules", where:"Sky Zone Norwalk"},
+    {id:"chalk-open-play--chalk", c:"move", n:"CHALK Open Play", u:"https://www.chalkct.com/", blurb:"15,000-square-foot open-ended indoor play environment. See current admission.", ages:"Children / families", where:"CHALK"},
+    {id:"playhouse-sono-open-play--playhouse-sono-the-sono-collection", c:"move", n:"Playhouse SoNo Open Play", u:"https://playhouse-sono.gymdesk.com/", blurb:"Soft-play café with Toddler Haven; check schedule because private parties can close sessions. See current admission.", ages:"Young children; toddler area", where:"Playhouse SoNo — The SoNo Collection"},
+    {id:"group-swim-lessons--stewie-the-duck-swim-school", c:"swim", n:"Group Swim Lessons", u:"https://stewietheduck.org/pricing/", blurb:"Net proceeds support water-safety swim grants. $36/class billed monthly + $30 annual family registration.", ages:"6 months+; level dependent", where:"Stewie the Duck Swim School"},
+    {id:"casual-drop-in-group-swim-lesson--stewie-the-duck-swim-school", c:"swim", n:"Casual Drop-In Group Swim Lesson", u:"https://stewietheduck.org/pricing/", blurb:"$41/lesson.", ages:"Level dependent", where:"Stewie the Duck Swim School"},
+    {id:"speed-weeks-intensive-swim--stewie-the-duck-swim-school", c:"swim", n:"Speed Weeks Intensive Swim", u:"https://stewietheduck.org/speed-weeks/", blurb:"$180/week.", ages:"Ages 3–4, 5–7, 8+ depending level", where:"Stewie the Duck Swim School"},
+    {id:"children-s-swim-lessons--goldfish-swim-school-norwalk", c:"swim", n:"Children's Swim Lessons", u:"https://goldfishswimschool.com/norwalk/pricing/additional-program/", blurb:"See lesson pricing.", ages:"Babies through age 12; level dependent", where:"Goldfish Swim School – Norwalk"},
+    {id:"family-swim--goldfish-swim-school-norwalk", c:"swim", n:"Family Swim", u:"https://goldfishswimschool.com/norwalk/pricing/additional-program/", blurb:"$10/swimmer or $30/family.", ages:"Families", where:"Goldfish Swim School – Norwalk"},
+    {id:"velo-swim-school-group-lessons--velo-ct", c:"swim", n:"Velo Swim School Group Lessons", u:"https://velo-ct.com/", blurb:"Learn-to-swim program at two-pool aquatic facility. $35 per 30-min class billed monthly.", ages:"Children; level dependent", where:"Velo-CT"},
+    {id:"open-skate--sono-ice-house", c:"move", n:"Open Skate", u:"https://www.sonoicehouse.com/", blurb:"Public open-skate sessions vary by day. See rink calendar.", ages:"All ages", where:"SoNo Ice House"},
+    {id:"ny-rangers-learn-to-play-fall--sono-ice-house", c:"move", n:"NY Rangers Learn to Play – Fall", u:"https://www.sonoicehouse.com/", blurb:"First-time hockey program. See registration; full gear included for first-time players.", ages:"Young beginner hockey players; program age rules", where:"SoNo Ice House"},
+    {id:"youth-dance-classes--norwalk-academy-of-dance", c:"dance", n:"Youth Dance Classes", u:"https://www.norwalkacademyofdance.com/", blurb:"Ballet, tap, jazz, hip hop and other youth dance styles. See enrollment.", ages:"Children/teens; level dependent", where:"Norwalk Academy of Dance"},
+    {id:"tots-youth-dance-classes--the-dance-collective", c:"dance", n:"Tots & Youth Dance Classes", u:"https://www.thedancecollectivect.com/", blurb:"Ballet, tap, jazz, hip hop, contemporary and youth programs. See enrollment.", ages:"Tots through teens", where:"The Dance Collective"},
+    {id:"youth-dance-tumbling--the-spot-at-just-dance-studios", c:"dance", n:"Youth Dance & Tumbling", u:"https://www.justdancestudios.com/", blurb:"Ballet, tap, jazz, hip hop, contemporary and acro/tumbling. See enrollment.", ages:"Preschool through teens", where:"The Spot at Just Dance Studios"},
+    {id:"lighthouse-youth-program--triangle-community-center", c:"move", n:"Lighthouse Youth Program", u:"https://www.ctpridecenter.org/programs-and-services", blurb:"Youth support/community program; important parent-resource directory entry.", ages:"LGBTQ+ youth; check current age range", where:"Triangle Community Center"},
+    {id:"family-bingo--st-matthew-church", c:"move", n:"Family Bingo", u:"https://stmatthewnorwalk.org/youth-group/", blurb:"See event.", ages:"Families / youth", where:"St. Matthew Church"}
+  ],
+
+  library: {for:"Free, every week", name:"Norwalk Public Library", desc:"Norwalk's public library, with branches downtown and in South Norwalk. Library cards are free for residents.", a:"See Norwalk Public Library events", href:"https://norwalkpl.org/"},
+
+  extraResources: []
+};
+</script>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track" id="tickerTrack"></div></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#today" aria-label="Norwalk Kids Calendar, home">
+      
+      <span>Norwalk Kids Calendar</span>
+    </a>
+    <div class="navwrap">
+      <nav class="nav" aria-label="Sections">
+        <a href="#bigdays">Big days</a>
+        <a href="#events">Calendar</a>
+        <a href="#classes">Classes</a>
+        <a href="#things">Things to do</a>
+        <a href="#resources">Resources</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="today">
+    <div class="band"><div class="wrap bandwrap">
+      <h1>What are we doing <em>today?</em></h1>
+      <p class="lede">Storytimes, festivals, classes and things to do for little ones in Norwalk, checked and gathered in one place. Tap a day to see what's on.</p>
+      <p class="fig">The week ahead in Norwalk, Conn.</p>
+      <div class="days" id="days" role="group" aria-label="Pick a day this week"></div>
+      <div class="herorow">
+        <button class="wkbtn" type="button" id="weekendBtn" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><span>This weekend</span></button>
+      </div>
+    </div></div>
+    <div class="wrap">
+      <div class="dayhead"><h2 id="dayTitle">Today</h2><button class="act" type="button" id="shareDay"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5"></path><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"></path></svg><span id="shareDayLabel">Share this day</span></button></div>
+      <ul class="list" id="dayList" aria-live="polite"></ul>
+    </div>
+  </section>
+
+  <section class="block" id="bigdays">
+    <div class="wrap">
+      <h2 class="sec">Big days</h2>
+      <p class="intro">The once-a-year stuff worth planning around: festivals, Halloween fun and holiday shows. Tap one to jump to it on the calendar.</p>
+      <p class="swipehint">Swipe for Halloween and holidays</p>
+      <div class="bigdays" id="bigList"></div>
+    </div>
+  </section>
+
+  <section class="block" id="events">
+    <div class="wrap">
+      <h2 class="sec">The calendar</h2>
+      <p class="intro">Everything we're tracking, week by week. Narrow it down by age, or show only the free, drop-in or rainy-day stuff.</p>
+      <div class="filters">
+        <div class="fgroup" role="group" aria-label="Filter by age">
+          <span class="flabel">Ages</span>
+          <button class="chip" data-age="all" aria-pressed="true">All</button>
+          <button class="chip" data-age="baby" aria-pressed="false">Babies</button>
+          <button class="chip" data-age="toddler" aria-pressed="false">Toddlers</button>
+          <button class="chip" data-age="preschool" aria-pressed="false">Preschool</button>
+          <button class="chip" data-age="big" aria-pressed="false">Big kids</button>
+        </div>
+        <div class="fgroup" id="hoodWrap">
+          <label class="flabel" for="hoodSel">Area</label>
+          <select class="chip selectchip" id="hoodSel"></select>
+        </div>
+        <div class="fgroup" role="group" aria-label="Other filters">
+          <span class="flabel">Show only</span>
+          <button class="chip" data-toggle="free" aria-pressed="false">Free</button>
+          <button class="chip" data-toggle="dropin" aria-pressed="false">Drop-in</button>
+          <button class="chip" data-toggle="indoor" aria-pressed="false">Rainy day (indoors)</button>
+          <button class="chip" data-toggle="special" aria-pressed="false">Big days</button>
+        </div>
+      </div>
+      <div class="weeknav">
+        <button class="navbtn" id="prevWeek" aria-label="Previous week">‹</button>
+        <button class="navbtn" id="nextWeek" aria-label="Next week">›</button>
+        <h3 id="weekTitle" aria-live="polite"></h3>
+      </div>
+      <div id="weekList"></div>
+      <p class="fineprint">Holiday closures aren't always reflected here. Events marked "Check first" are recurring slots we haven't been able to confirm for every date, so look at the organizer's page before you head out.</p>
+    </div>
+  </section>
+
+  <!-- Things to do: hand-written per town (parks, museums, short drives). Not JS-driven. -->
+  <section class="block" id="things">
+    <div class="wrap">
+      <h2 class="sec">Things to do anytime</h2>
+      <p class="intro">No schedule needed. Good for the mornings when everyone's up at 6 and you need somewhere to be by 9.</p>
+      <p class="swipehint">Swipe for rainy-day spots and short drives</p>
+      <p class="empty" style="padding:8px 4px">We're still gathering our favorite parks, museums and rainy-day spots in Norwalk &mdash; check back soon.</p>
+    </div>
+  </section>
+
+  <section class="block" id="classes">
+    <div class="wrap">
+      <h2 class="sec">Classes &amp; lessons</h2>
+      <p class="intro">Weekly classes worth signing up for, from baby music and first ballet to swim lessons and preschool soccer. Most run in sessions, so check each program's site for start dates and prices.</p>
+      <div class="cchips" id="classChips" role="group" aria-label="Filter classes"></div>
+      <div class="cgrid" id="classList"></div>
+    </div>
+  </section>
+
+  <section class="block" id="resources">
+    <div class="wrap">
+      <h2 class="sec">Resources for moms</h2>
+      <p class="intro">Help with the big things and the everyday things, from pregnancy through the toddler years.</p>
+      <div class="help">
+        <h3>If you're struggling right now</h3>
+        <div id="helpList"></div>
+      </div>
+      <div class="res" id="resList"></div>
+    </div>
+  </section>
+
+
+  <section class="privacy" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap doc">
+      <h2 id="privacy-title">Privacy policy</h2>
+      <p class="updated">Effective September 24, 2026</p>
+      <p>Norwalk Kids Calendar (ctkidscalendar.com/norwalk) is part of CT Kids Calendar, a free guide to events, classes and resources for families across Connecticut. We keep things simple: this site has no accounts, no advertising trackers and no cookies. We count visits anonymously so we know what's useful. This policy explains the little information that does change hands when you use the site.</p>
+      <h3>Information we collect</h3>
+      <p>We don't collect personal information through the website itself. You can browse the calendar, classes and resources without telling us who you are, and the site doesn't set cookies.</p>
+      <p>To see how many people use the site, we use GoatCounter, a privacy-friendly visit counter. It records which pages are viewed, the website that sent you here (like Instagram), your general location (country and region) and your browser and screen size. It doesn't use cookies, doesn't follow you to other websites, and doesn't collect your name or anything that identifies you personally.</p>
+      <h3>How we use it</h3>
+      <ul>
+        <li>To publish event details we're given, like the name, place, time, ages, price and the organizer's public link.</li>
+        <li>To talk with businesses and organizations about sponsorship.</li>
+      </ul>
+      <p>We don't sell, rent or trade your information, and we don't add you to a mailing list without asking.</p>
+      <h3>Services we rely on</h3>
+      <p>A few outside services help run the site, and they may receive basic technical information such as your IP address when your browser connects to them:</p>
+      <ul>
+        <li><strong>GitHub Pages</strong> hosts the site. GitHub may keep server logs, including visitor IP addresses, for security. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub privacy statement</a>.</li>
+        <li><strong>Google Fonts</strong> supplies the site's typefaces, so your browser requests them from Google. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>.</li>
+        <li><strong>GoatCounter</strong> counts visits anonymously, as described above. See <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">GoatCounter's privacy policy</a>.</li>
+      </ul>
+      <p>The site also links to other websites, such as Google Maps, Google Calendar, event organizers and community resources. Those sites have their own privacy practices, which we don't control.</p>
+      <h3>Children's privacy</h3>
+      <p>This site is written for parents and caregivers. It isn't directed at children under 13, and we don't knowingly collect information from them. This site doesn't currently have a way to submit information directly, which further limits this risk.</p>
+      <h3>Keeping and deleting your information</h3>
+      <p>We don't currently have a public contact address, so no emails are being collected yet. This policy will be updated when that changes.</p>
+      <h3>Changes to this policy</h3>
+      <p>If we add something new, like a newsletter sign-up, we'll update this policy first and change the date at the top.</p>
+      <p><a href="#today">Back to the calendar</a></p>
+    </div>
+  </section>
+</main>
+
+<nav class="tabbar" aria-label="Sections">
+  <a href="#today" data-tab="today"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><span>Today</span></a>
+  <a href="#bigdays" data-tab="bigdays"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"></path></svg><span>Big days</span></a>
+  <a href="#events" data-tab="events"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg><span>Calendar</span></a>
+  <a href="#classes" data-tab="classes"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg><span>Classes</span></a>
+  <a href="#things" data-tab="things"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>To do</span></a>
+  <a href="#resources" data-tab="resources"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 11.2c0 5-8.8 9.8-8.8 9.8S3.2 16.2 3.2 11.2A4.8 4.8 0 0 1 12 8.5a4.8 4.8 0 0 1 8.8 2.7z"></path></svg><span>Help</span></a>
+</nav>
+
+<dialog class="sheet" id="shareSheet" aria-labelledby="sheetTitle">
+  <div class="sheet-in">
+    <h3 id="sheetTitle">Share with a friend</h3>
+    <p class="sheet-preview" id="sheetPreview"></p>
+    <div class="sheet-grid">
+      <a class="act" id="shSms" href="#">Text message</a>
+      <a class="act" id="shWa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="act" id="shMail" href="#">Email</a>
+      <a class="act" id="shFb" href="#" target="_blank" rel="noopener">Facebook</a>
+      <button class="act primary" type="button" id="shCopy" style="grid-column:1/-1">Copy link</button>
+    </div>
+    <button class="sheet-close" type="button" data-close>Close</button>
+  </div>
+</dialog>
+
+<dialog class="sheet" id="calSheet" aria-labelledby="calTitle">
+  <div class="sheet-in">
+    <h3 id="calTitle">Add to your calendar</h3>
+    <p class="sheet-preview" id="calPreview"></p>
+    <div class="sheet-grid one">
+      <a class="act primary" id="calIcs" href="#" download="event.ics">Apple, Outlook or other calendar</a>
+      <a class="act" id="calGoogle" href="#" target="_blank" rel="noopener">Google Calendar</a>
+    </div>
+    <button class="sheet-close" type="button" data-close>Close</button>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<footer>
+  <div class="wrap">
+    <span>Norwalk Kids Calendar · part of <a href="https://ctkidscalendar.com/">CT Kids Calendar</a></span>
+    <span>Schedules last checked September 2026 · <a href="#privacy">Privacy policy</a></span>
+  </div>
+</footer>
+
+<script data-goatcounter="https://ctkidscalendar.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="/shared/app.js"></script>
+</body>
+</html>

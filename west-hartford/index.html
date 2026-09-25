@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>West Hartford Kids Calendar — events, classes and resources for West Hartford families</title>
+<meta name="description" content="What's happening for kids and families in West Hartford, CT this week: storytimes, classes, festivals and local resources, all in one place.">
+<meta name="color-scheme" content="only light">
+<meta name="theme-color" content="#1B2A4A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CT Kids Calendar">
+<meta property="og:title" content="West Hartford Kids Calendar: what are we doing today?">
+<meta property="og:description" content="Storytimes, festivals, classes and local resources for little ones in West Hartford, CT.">
+<meta property="og:url" content="https://ctkidscalendar.com/west-hartford/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared/style.css">
+<style>
+  /* This town's ONE accent variable. Everything else (navy, cream, yellow) is shared. */
+  :root{ --accent: #F1D48C; }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     TOWN CONFIG — real content for this town goes here.
+     Replace every {{...}} and empty array before publishing.
+     See /shared/TOWN-TEMPLATE.md for the full field reference.
+     ============================================================ -->
+<script>
+window.TOWN = {
+  name: "West Hartford Kids Calendar",
+  townLabel: "West Hartford, CT",
+  url: "https://ctkidscalendar.com/west-hartford/",
+  email: "",
+  instagram: "",
+  calendarThrough: "2026-12-31",
+
+  venues: {
+    "west-hartford-public-library-noah-webste": ["West Hartford Public Library — Noah Webster Library", "20 S Main St"],
+    "west-hartford-public-library-bishops-cor": ["West Hartford Public Library — Bishops Corner Library", "15 Starkel Rd"],
+    "west-hartford-public-library-faxon-libra": ["West Hartford Public Library — Faxon Library", "1073 New Britain Ave"],
+    "music-together-of-west-hartford-farmingt": ["Music Together of West Hartford & Farmington Valley — St. James's Episcopal Church", "1018 Farmington Ave"],
+    "music-together-of-west-hartford-farmingt-2": ["Music Together of West Hartford & Farmington Valley — Congregation Beth Israel", "701 Farmington Ave"],
+    "music-together-of-west-hartford-farmingt-3": ["Music Together of West Hartford & Farmington Valley — Mandell JCC", "335 Bloomfield Ave"],
+    "mandell-jcc": ["Mandell JCC", "335 Bloomfield Ave"],
+    "west-hartford-art-league": ["West Hartford Art League", "37 Buena Vista Rd"],
+    "barnes-noble": ["Barnes & Noble", "60 Isham Rd"],
+    "town-of-west-hartford-town-hall-lot-2026": ["Town of West Hartford — Town Hall lot (2026 temporary location)", "West Hartford"],
+    "blue-back-farmers-market-town-listing-we": ["Blue Back Farmers' Market / Town listing — West Hartford Town Hall lot", "West Hartford"],
+    "moms-more-of-west-hartford-various-west-": ["Moms & More of West Hartford — Various West Hartford locations", "West Hartford"],
+    "moms-more-of-west-hartford-town-business": ["Moms & More of West Hartford + Town/businesses — West Hartford Center & Blue Back Square", "West Hartford"],
+    "town-of-west-hartford-westmoor-park": ["Town of West Hartford — Westmoor Park", "119 Flagg Rd"],
+    "little-wanderers-bishop-s-corner": ["Little Wanderers — Bishop's Corner", "West Hartford"],
+    "the-book-club": ["The Book Club", "76 LaSalle Rd"],
+    "river-bend-bookshop": ["River Bend Bookshop", "224 Park Rd"],
+    "park-road-association-river-bend-booksho": ["Park Road Association / River Bend Bookshop", "Park Rd"],
+    "west-hartford-leisure-services-beachland": ["West Hartford Leisure Services — Beachland Park Soccer Field", "847 S Quaker Ln"],
+    "veterans-memorial-skating-rink": ["Veterans Memorial Skating Rink", "56 Buena Vista Rd"],
+    "cornerstone-aquatics-center": ["Cornerstone Aquatics Center", "55 Buena Vista Rd"],
+    "miracle-league-of-connecticut-west-hartf": ["Miracle League of Connecticut — West Hartford Miracle League Field", "1700 Asylum Ave"],
+    "west-hartford-youth-soccer-association-v": ["West Hartford Youth Soccer Association — Various fields", "West Hartford"],
+    "west-hartford-little-league-various-whll": ["West Hartford Little League — Various WHLL fields", "West Hartford"],
+    "plus-one-defense-systems": ["Plus One Defense Systems", "9 Tolles St"],
+    "school-of-rock-west-hartford": ["School of Rock West Hartford", "20 Isham Rd"],
+    "junk-pot-studio": ["Junk Pot Studio", "604 New Park Ave"],
+    "west-hartford-yoga": ["West Hartford Yoga", "23 Brook St"],
+    "pip-yoga-elmwood-community-center": ["Pip Yoga — Elmwood Community Center", "1106 New Britain Ave"],
+    "beth-el-temple": ["Beth El Temple", "2626 Albany Ave"],
+    "mandell-jcc-pj-library": ["Mandell JCC / PJ Library", "335 Bloomfield Ave"],
+    "noah-webster-house": ["Noah Webster House", "227 S Main St"],
+    "noah-webster-house-west-hartford-histori": ["Noah Webster House & West Hartford Historical Society — Old North Cemetery", "80 N Main St"],
+    "arts-for-learning-connecticut-west-hartf": ["Arts for Learning Connecticut — West Hartford Senior Center", "15 Starkel Rd"],
+    "town-of-west-hartford-town-hall-parking-": ["Town of West Hartford — Town Hall parking lot", "50 S Main St"],
+    "moms-more-town-of-west-hartford-local-bu": ["Moms & More / Town of West Hartford / local businesses — West Hartford Center & Blue Back Square", "West Hartford"],
+    "west-hartford-chamber-town-blue-back-squ": ["West Hartford Chamber + Town + Blue Back Square + Center businesses — West Hartford Center & Blue Back Square", "West Hartford"],
+    "hartford-marathon-foundation-west-hartfo": ["Hartford Marathon Foundation / West Hartford — Blue Back Square / Isham Road", "West Hartford"],
+    "playhouse-on-park": ["Playhouse on Park", "244 Park Rd"],
+    "playhouse-on-park-playhouse-theatre-acad": ["Playhouse on Park / Playhouse Theatre Academy — Touring to schools/venues", "West Hartford-based"],
+    "connecticut-family-theatre": ["Connecticut Family Theatre", "58 South St"],
+    "west-hartford-community-theater-west-har": ["West Hartford Community Theater — West Hartford performance venue", "West Hartford"],
+    "west-hartford-summer-arts-festival-elmwo": ["West Hartford Summer Arts Festival — Elmwood Community Center / production venues", "1106 New Britain Ave"],
+    "west-hartford-symphony-orchestra-hall-hi": ["West Hartford Symphony Orchestra — Hall High School", "975 N Main St"],
+    "the-home-depot-west-hartford": ["The Home Depot – West Hartford", "503 New Park Ave"],
+    "warhammer-west-hartford": ["Warhammer West Hartford", "7 S Main St"],
+    "the-toy-shop": ["The Toy Shop", "967C Farmington Ave"],
+    "the-next-chapter": ["The Next Chapter", "13 S Main St"],
+    "town-of-west-hartford-beachland-park": ["Town of West Hartford — Beachland Park", "847 S Quaker Ln"],
+    "town-of-west-hartford-fernridge-park": ["Town of West Hartford — Fernridge Park", "567 Fern St"],
+    "town-of-west-hartford-kennedy-park": ["Town of West Hartford — Kennedy Park", "160 Oakwood Ave"],
+    "town-of-west-hartford-eisenhower-park": ["Town of West Hartford — Eisenhower Park", "33 Sheep Hill Dr"],
+    "town-of-west-hartford-wolcott-park": ["Town of West Hartford — Wolcott Park", "1341 New Britain Ave"],
+    "town-of-west-hartford-spicebush-swamp-pa": ["Town of West Hartford — Spicebush Swamp Park", "Mountain Rd / Farmington Ave area"],
+    "town-of-west-hartford-cornerstone-aquati": ["Town of West Hartford / Cornerstone Aquatics — Four neighborhood parks", "West Hartford"],
+    "town-of-west-hartford-trout-brook-trail": ["Town of West Hartford — Trout Brook Trail", "New Park Ave to Asylum Ave"],
+    "mandell-jcc-campus-jonathan-s-dream": ["Mandell JCC campus / Jonathan's Dream", "355 Bloomfield Ave"],
+    "angel-land-west-hartford": ["Angel Land West Hartford", "1433 New Britain Ave"],
+    "westmoor-park": ["Westmoor Park", "119 Flagg Rd"],
+    "town-of-west-hartford-west-hartford-town": ["Town of West Hartford — West Hartford Town Hall grounds", "50 S Main St"],
+    "town-of-west-hartford-blue-back-square": ["Town of West Hartford — Blue Back Square", "Isham Rd & Memorial Rd"],
+    "night-fall-inc-elizabeth-park": ["Night Fall, Inc. / Elizabeth Park", "1561 Asylum Ave"],
+    "elizabeth-park-conservancy": ["Elizabeth Park Conservancy", "1561 Asylum Ave"],
+    "connecticut-ballet-elizabeth-park-conser": ["Connecticut Ballet / Elizabeth Park Conservancy — Elizabeth Park Rose Garden Lawn", "1561 Asylum Ave"],
+    "noah-webster-house-west-hartford-histori-2": ["Noah Webster House & West Hartford Historical Society", "227 S Main St"],
+    "westminster-presbyterian-church": ["Westminster Presbyterian Church", "2080 Boulevard"],
+    "west-hartford-pride-various-west-hartfor": ["West Hartford Pride — Various West Hartford venues", "West Hartford"],
+    "hartford-stitch": ["Hartford Stitch", "13 Sedgwick Rd"],
+    "the-new-old-school-of-music": ["The New Old School of Music", "625C New Park Ave"],
+    "the-new-old-school-of-music-venue-tba": ["The New Old School of Music — Venue TBA", "West Hartford"],
+    "moms-more-of-west-hartford-various": ["Moms & More of West Hartford — Various", "West Hartford / Farmington Valley"],
+    "ywca-hartford-region-5-west-hartford-ele": ["YWCA Hartford Region — 5 West Hartford elementary schools", "West Hartford"],
+    "ywca-hartford-region-ywca-early-learning": ["YWCA Hartford Region — YWCA Early Learning Center", "1106 New Britain Ave"],
+    "the-bridge-family-center": ["The Bridge Family Center", "1021 Farmington Ave"]
+  },
+
+  venueMeta: {
+    "west-hartford-public-library-noah-webste": [null, 1],
+    "west-hartford-public-library-bishops-cor": [null, 1],
+    "west-hartford-public-library-faxon-libra": [null, 1],
+    "music-together-of-west-hartford-farmingt": [null, 1],
+    "music-together-of-west-hartford-farmingt-2": [null, 1],
+    "music-together-of-west-hartford-farmingt-3": [null, 1],
+    "mandell-jcc": [null, 1],
+    "west-hartford-art-league": [null, 1],
+    "barnes-noble": [null, 1],
+    "town-of-west-hartford-town-hall-lot-2026": [null, 0],
+    "blue-back-farmers-market-town-listing-we": [null, 0],
+    "moms-more-of-west-hartford-various-west-": [null, null],
+    "moms-more-of-west-hartford-town-business": [null, 0],
+    "town-of-west-hartford-westmoor-park": [null, 1],
+    "little-wanderers-bishop-s-corner": [null, 1],
+    "the-book-club": [null, 1],
+    "river-bend-bookshop": [null, 1],
+    "park-road-association-river-bend-booksho": [null, 0],
+    "west-hartford-leisure-services-beachland": [null, 0],
+    "veterans-memorial-skating-rink": [null, 1],
+    "cornerstone-aquatics-center": [null, 1],
+    "miracle-league-of-connecticut-west-hartf": [null, 0],
+    "west-hartford-youth-soccer-association-v": [null, 0],
+    "west-hartford-little-league-various-whll": [null, 0],
+    "plus-one-defense-systems": [null, 1],
+    "school-of-rock-west-hartford": [null, 1],
+    "junk-pot-studio": [null, 1],
+    "west-hartford-yoga": [null, 1],
+    "pip-yoga-elmwood-community-center": [null, 1],
+    "beth-el-temple": [null, 1],
+    "mandell-jcc-pj-library": [null, 1],
+    "noah-webster-house": [null, 1],
+    "noah-webster-house-west-hartford-histori": [null, 0],
+    "arts-for-learning-connecticut-west-hartf": [null, 1],
+    "town-of-west-hartford-town-hall-parking-": [null, 0],
+    "moms-more-town-of-west-hartford-local-bu": [null, 0],
+    "west-hartford-chamber-town-blue-back-squ": [null, 0],
+    "hartford-marathon-foundation-west-hartfo": [null, 0],
+    "playhouse-on-park": [null, 1],
+    "playhouse-on-park-playhouse-theatre-acad": [null, null],
+    "connecticut-family-theatre": [null, 1],
+    "west-hartford-community-theater-west-har": [null, 1],
+    "west-hartford-summer-arts-festival-elmwo": [null, 1],
+    "west-hartford-symphony-orchestra-hall-hi": [null, 1],
+    "the-home-depot-west-hartford": [null, 1],
+    "warhammer-west-hartford": [null, 1],
+    "the-toy-shop": [null, 1],
+    "the-next-chapter": [null, 1],
+    "town-of-west-hartford-beachland-park": [null, 0],
+    "town-of-west-hartford-fernridge-park": [null, 0],
+    "town-of-west-hartford-kennedy-park": [null, 0],
+    "town-of-west-hartford-eisenhower-park": [null, 0],
+    "town-of-west-hartford-wolcott-park": [null, 0],
+    "town-of-west-hartford-spicebush-swamp-pa": [null, 0],
+    "town-of-west-hartford-cornerstone-aquati": [null, 0],
+    "town-of-west-hartford-trout-brook-trail": [null, 0],
+    "mandell-jcc-campus-jonathan-s-dream": [null, 0],
+    "angel-land-west-hartford": [null, 1],
+    "westmoor-park": [null, 0],
+    "town-of-west-hartford-west-hartford-town": [null, 0],
+    "town-of-west-hartford-blue-back-square": [null, 0],
+    "night-fall-inc-elizabeth-park": [null, 0],
+    "elizabeth-park-conservancy": [null, 0],
+    "connecticut-ballet-elizabeth-park-conser": [null, 0],
+    "noah-webster-house-west-hartford-histori-2": [null, 1],
+    "westminster-presbyterian-church": [null, 1],
+    "west-hartford-pride-various-west-hartfor": [null, 1],
+    "hartford-stitch": [null, 1],
+    "the-new-old-school-of-music": [null, 1],
+    "the-new-old-school-of-music-venue-tba": [null, 1],
+    "moms-more-of-west-hartford-various": [null, null],
+    "ywca-hartford-region-5-west-hartford-ele": [null, 1],
+    "ywca-hartford-region-ywca-early-learning": [null, 1],
+    "the-bridge-family-center": [null, null]
+  },
+
+  hoods: [],
+
+  events: [
+    {t:"Family Storytime", v:"west-hartford-public-library-noah-webste", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"", src:"https://westhartford.librarymarket.com/", s:[[2, [["10:15", "10:45"]], "2026-09-08", "2026-10-13"]]},
+    {t:"Babytime", v:"west-hartford-public-library-noah-webste", ages:"Newborn–15 months", a:["baby", "toddler"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"", src:"https://westhartford.librarymarket.com/", s:[[5, [["11:00", "11:30"]], "2026-09-11", "2026-10-09"]]},
+    {t:"Preschool Circle Time", v:"west-hartford-public-library-noah-webste", ages:"Ages 2–3 + caregiver", a:["toddler", "preschool"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://westhartford.librarymarket.com/", s:[[1, [["11:15", "11:45"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Bouncing Babies", v:"west-hartford-public-library-bishops-cor", ages:"Newborn–15 months", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://westhartford.librarymarket.com/", s:[[4, [["11:15", "12:00"]], "2026-09-10", "2026-10-15"]]},
+    {t:"Mother Goose on the Loose", v:"west-hartford-public-library-bishops-cor", ages:"18 months–4 years", a:["toddler", "preschool"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://westhartford.librarymarket.com/", s:[[4, [["10:15", "10:45"]], "2026-09-10", "2026-10-15"]]},
+    {t:"Mother Goose on the Loose", v:"west-hartford-public-library-faxon-libra", ages:"18 months–4 years", a:["toddler", "preschool"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://westhartford.librarymarket.com/", s:[[2, [["10:15", "10:45"]], "2026-09-08", "2026-10-13"]]},
+    {t:"Mother Goose on the Loose", v:"west-hartford-public-library-noah-webste", ages:"18 months–4 years", a:["toddler", "preschool"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://westhartford.librarymarket.com/", s:[[5, [["10:15", "10:45"]], "2026-09-11", "2026-10-09"]]},
+    {t:"Fun with Favorites", v:"west-hartford-public-library-noah-webste", ages:"Ages 3–5", a:["preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://westhartford.librarymarket.com/", s:[[3, [["11:00", "11:30"]], "2026-09-09", "2026-10-14"]]},
+    {t:"Saturday Storytime", v:"barnes-noble", ages:"Children / families", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Story plus coloring sheets in the children's department.", src:"https://stores.barnesandnoble.com/event/9780062202706-22", s:[[6, [["11:00", "11:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"West Hartford Farmers' Market", v:"town-of-west-hartford-town-hall-lot-2026", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Produce, baked goods, flowers and other CT farm products.", src:"https://www.westhartfordct.gov/visit-us/gardens-farms", s:[[6, [["09:00", "13:00"]], "2026-05-02", "2026-12-10"]]},
+    {t:"Blue Back Farmers' Market", v:"blue-back-farmers-market-town-listing-we", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"20+ vendors plus live music, readings and community programs.", src:"https://www.westhartfordct.gov/visit-us/gardens-farms", s:[[0, [["10:00", "13:00"]], "2026-06-14", "2026-10-25"]]},
+    {t:"Wonderful Ones", v:"west-hartford-public-library-noah-webste", ages:"12–23 months + caregiver", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.westhartfordlibrary.org/children/", s:[[1, [["10:15", "10:45"]], "2026-09-14", "2026-10-19"]]},
+    {t:"Mini Movers", v:"west-hartford-public-library-noah-webste", ages:"Ages 1–5 + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.westhartfordlibrary.org/children/", s:[[2, [["11:30", "12:00"]], "2026-10-20", "2026-10-20"]]},
+    {t:"Terrific Twos", v:"west-hartford-public-library-noah-webste", ages:"Age 2 + caregiver", a:["toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.westhartfordlibrary.org/children/", s:[[4, [["10:15", "10:45"]], "2026-10-20", "2026-10-20"]]},
+    {t:"LEGO Club – Noah Webster", v:"west-hartford-public-library-noah-webste", ages:"Grades K–4", a:["big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://westhartford.librarymarket.com/event/lego-club-nwl-104864", s:[[3, [["15:30", "16:15"]], "2026-09-14", "2026-12-19"]]},
+    {t:"LEGO Club – Bishops Corner", v:"west-hartford-public-library-bishops-cor", ages:"Grades K–4", a:["big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.westhartfordlibrary.org/children/", s:[[3, [["15:30", "16:15"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Tween Tuesday", v:"west-hartford-public-library-noah-webste", ages:"Grades 4–6", a:["big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"Theme changes monthly: crafts, baking, technology and more.", src:"https://www.westhartfordlibrary.org/children/", s:[[2, [["16:00", "16:45"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Tween Chess", v:"west-hartford-public-library-faxon-libra", ages:"Grades 3–8", a:["big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://westhartford.librarymarket.com/events/week/2026/10/13", s:[[6, [["10:30", "11:30"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Teen Crochet Club", v:"west-hartford-public-library-noah-webste", ages:"Grades 6–12", a:["big"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"", src:"https://westhartford.librarymarket.com/events/week/2026/05/27", s:[[6, [["14:00", "15:00"]], "2026-09-26", "2026-09-26"]]},
+    {t:"Kids Workshop", v:"the-home-depot-west-hartford", ages:"Children + adult", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"Hands-on take-home building project; Oct. project is a witch candy box.", src:"https://www.homedepot.com/l/West-Hartford/CT/West-Hartford/06110/6210", s:[[6, [["09:00", "12:00"]], "2026-10-03", "2026-10-03"]]},
+    {t:"Plant a Row for the Hungry Volunteer Mornings", v:"westmoor-park", ages:"All ages/experience levels; confirm suitability for young children", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:false, check:false, blurb:"Plant, maintain and harvest organic produce donated to shelters/senior centers.", src:"https://www.westhartfordct.gov/town-departments/leisure-services/westmoor-park/volunteers", s:[[1, [["09:00", "12:00"]], "2026-09-14", "2026-12-19"], [3, [["09:00", "12:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Elizabeth Park Summer Concert Series", v:"elizabeth-park-conservancy", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:true, blurb:"Bring blankets/chairs; several concerts were rescheduled for weather.", src:"https://elizabethparkct.org/events/category/concerts-movies-performances/", s:[[3, [["18:30", "20:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Punk Taco Vol. 2 Launch + Drawing Workshop", v:"river-bend-bookshop", special:"fall", ages:"Recommended ages 7–12", a:["big"], price:"Free", free:true, ticket:false, blurb:"Author/illustrator drawing workshop, signing and launch party.", src:"https://riverbendbookshop.com/event/2026-10-13/adam-and-makana-wallenta-punk-taco-vol-2-launch-party-and-drawing-workshop", when:[{from:"2026-10-13", to:"2026-10-13", t:[["16:00", "17:30"]]}]},
+    {t:"Fall for Park Road Festival", v:"park-road-association-river-bend-booksho", special:"fall", ages:"All ages / families", a:["baby", "toddler", "preschool", "big"], price:"Free admission", free:true, ticket:false, blurb:"Family activities, live entertainment, promotions and antique trolley.", src:"https://riverbendbookshop.com/event/2026-10-03/fall-park-road-festival", when:[{from:"2026-10-03", to:"2026-10-03", t:[["10:00", "16:00"]]}]},
+    {t:"Family Arts Festival", v:"arts-for-learning-connecticut-west-hartf", special:"fall", ages:"Designed ages 3–13; all ages welcome", a:["preschool", "big"], price:"Free; donations appreciated", free:true, ticket:false, blurb:"Hands-on art, music, dance and theater mini-workshops plus live performances.", src:"https://www.aflct.org/programs/family-arts-festival-2026/", when:[{from:"2026-05-16", to:"2026-05-16", t:[["10:00", "14:00"]]}]},
+    {t:"Community Preparedness Day + Touch-A-Truck", v:"town-of-west-hartford-town-hall-parking-", special:"fall", ages:"Families", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Normally includes emergency vehicles/Touch-A-Truck, giveaways and family preparedness activities; 2026 listing is currently cancelled.", src:"https://www.westhartfordct.gov/town-departments/public-relations/calendar-of-events", when:[{from:"2026-09-26", to:"2026-09-26", t:[["10:00", "14:00"]]}]},
+    {t:"Halloween Stroll", v:"moms-more-town-of-west-hartford-local-bu", special:"hw", ages:"Families", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Trick-or-treating/community event; town estimates thousands of attendees.", src:"https://www.westhartfordct.gov/home-2024", when:[{from:"2026-10-24", to:"2026-10-25", t:[["10:30", "12:30"]]}]},
+    {t:"West Hartford Holiday Stroll", v:"west-hartford-chamber-town-blue-back-squ", special:"hol", ages:"Families", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Santa, Menorah lighting, three performance stages, Victorian carolers, fire trucks and activities.", src:"https://www.whchamber.com/west-hartford-holiday-stroll/", when:[{from:"2026-12-03", to:"2026-12-03", t:[["17:00", "20:00"]]}]},
+    {t:"Blue Back Mitten Run", v:"hartford-marathon-foundation-west-hartfo", special:"fall", ages:"Families / runners", a:["baby", "toddler", "preschool", "big"], price:"See registration", free:false, ticket:false, blurb:"", src:"https://www.westhartfordct.gov/visit-us/concerts-events", when:[{from:"2026-12-06", to:"2026-12-06", t:[["10:00", null]]}]},
+    {t:"Children's Concert", v:"west-hartford-symphony-orchestra-hall-hi", special:"fall", ages:"Children / school groups", a:["baby", "toddler", "preschool", "big"], price:"Check orchestra", free:false, ticket:false, blurb:"Dedicated children's concert on the orchestra's official 2026 schedule.", src:"https://whso.org/rehearsal-schedule/", when:[{from:"2026-04-23", to:"2026-04-23", t:[["10:00", "11:00"]]}]},
+    {t:"Celebrate! West Hartford", v:"town-of-west-hartford-west-hartford-town", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Admission and many attractions free; rides/food extra", free:false, ticket:false, blurb:"Nearly 40,000 attendees; carnival rides, amusements, arts/crafts, food, live music, nonprofit expo and family activities.", src:"https://www.westhartfordct.gov/town-departments/leisure-services/celebrate-west-hartford", when:[{from:"2026-06-06", to:"2026-06-07", t:[]}]},
+    {t:"Celebrate! Kids' K", v:"town-of-west-hartford-blue-back-square", special:"fall", ages:"Ages 10 and under for medal; family chaperones welcome", a:["baby", "toddler", "preschool", "big"], price:"$5", free:false, ticket:false, blurb:"Non-timed .52-mile dash; supports Leisure Services scholarship fund.", src:"https://www.westhartfordct.gov/town-departments/leisure-services/celebrate-west-hartford", when:[{from:"2026-06-07", to:"2026-06-07", t:[["08:00", null]]}]},
+    {t:"WELL & WILD + Night Fall", v:"night-fall-inc-elizabeth-park", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Pre-show festival 1–6 PM; Night Fall performance at 6:30 PM with music, dance, puppetry, costumes and food trucks.", src:"https://nightfallhartford.org/performances/nightfall2026", when:[{from:"2026-10-03", to:"2026-10-04", t:[["13:00", "18:30"]]}]},
+    {t:"Ballet Under the Stars", v:"connecticut-ballet-elizabeth-park-conser", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Outdoor Connecticut Ballet performance; rescheduled from Jul 18 for weather.", src:"https://elizabethparkct.org/events/category/concerts-movies-performances/", when:[{from:"2026-07-19", to:"2026-07-19", t:[["19:00", "20:30"]]}]},
+    {t:"Noah Webster House Easter Egg Hunt", v:"noah-webster-house-west-hartford-histori-2", special:"hol", ages:"Children + adults", a:["baby", "toddler", "preschool", "big"], price:"Children $10; adults free (max 2 adults/child)", free:false, ticket:false, blurb:"Egg hunt at 10 sharp, Easter Bunny, crafts, storytime and house tours.", src:"https://noahwebsterhouse.org/event/2026-easter-egg-hunt-at-the-noah-webster-house/", when:[{from:"2026-04-04", to:"2026-04-04", t:[["10:00", "14:00"]]}]},
+    {t:"Community Easter Egg Hunt", v:"westminster-presbyterian-church", special:"hol", ages:"Families", a:["baby", "toddler", "preschool", "big"], price:"Free; food-pantry donations encouraged", free:true, ticket:false, blurb:"Thousands of eggs, crafts, face painting, snacks and Easter Bunny.", src:"https://westpresby.org/", when:[{from:"2026-04-04", to:"2026-04-04", t:[["10:00", null]]}]},
+    {t:"West Hartford Pride Month + Festival", v:"west-hartford-pride-various-west-hartfor", special:"fall", ages:"All ages / families; individual events vary", a:["baby", "toddler", "preschool", "big"], price:"Many events free; check listings", free:false, ticket:false, blurb:"Month-long nonprofit/community celebration culminating in a festival day with storytelling and community resources.", src:"https://westhartfordpride.org/", when:[{from:"2026-06-01", to:"2026-07-30", t:[]}]}
+  ],
+
+  tba: [
+    {g:"hw", t:"Halloween Stroll", w:"Moms & More of West Hartford + Town/businesses — West Hartford Center & Blue Back Square", p:"Long-running event; town estimated 5,000+ visitors the prior year.", src:"https://wehamoms.com/halloweenstrollregistration"},
+    {g:"hw", t:"West Hartford Hauntings", w:"Noah Webster House & West Hartford Historical Society — Old North Cemetery", p:"Date to be confirmed for 2026.", src:"https://noahwebsterhouse.org/west-hartford-hauntings/"},
+    {g:"fall", t:"West Hartford Summer Arts Festival", w:"West Hartford Summer Arts Festival — Elmwood Community Center / production venues", p:"Educational theater collaboration among Leisure Services, WHPS Fine & Performing Arts and the SAF Endowment Fund.", src:"https://www.westhartfordsaf.com/"}
+  ],
+
+  classes: [
+    {id:"music-together-mixed-ages--music-together-of-west-hartford-farmingt", c:"music", n:"Music Together – Mixed Ages", u:"https://musictogetherwhfv.com/classes.aspx", blurb:"$305 first child / 10-week fall session; sibling 9mo–under 6 $135; infant/additional sibling under 9mo free; new-family fee may apply.", ages:"Birth–5", where:"Music Together of West Hartford & Farmington Valley — St. James's Episcopal Church"},
+    {id:"music-together-rhythm-kids--music-together-of-west-hartford-farmingt", c:"music", n:"Music Together – Rhythm Kids", u:"https://musictogetherwhfv.com/classes.aspx", blurb:"$305 first child / 10-week fall session; sibling 9mo–under 6 $135; infant/additional sibling under 9mo free; new-family fee may apply; first-ever Rhythm Kids may add $40 djembe.", ages:"Ages 4–5", where:"Music Together of West Hartford & Farmington Valley — St. James's Episcopal Church"},
+    {id:"music-together-babies-class--music-together-of-west-hartford-farmingt", c:"music", n:"Music Together – Babies Class", u:"https://musictogetherwhfv.com/classes.aspx", blurb:"$305 first child / 10-week fall session; sibling 9mo–under 6 $135; infant/additional sibling under 9mo free; new-family fee may apply.", ages:"0–9 months", where:"Music Together of West Hartford & Farmington Valley — St. James's Episcopal Church"},
+    {id:"music-together-mixed-ages--music-together-of-west-hartford-farmingt-2", c:"music", n:"Music Together – Mixed Ages", u:"https://musictogetherwhfv.com/classes.aspx", blurb:"$305 first child / 10-week fall session; sibling 9mo–under 6 $135; infant/additional sibling under 9mo free; new-family fee may apply.", ages:"Birth–5", where:"Music Together of West Hartford & Farmington Valley — Congregation Beth Israel"},
+    {id:"music-together-pajama-class--music-together-of-west-hartford-farmingt-2", c:"music", n:"Music Together – Pajama Class", u:"https://musictogetherwhfv.com/classes.aspx", blurb:"$305 first child / 10-week fall session; sibling 9mo–under 6 $135; infant/additional sibling under 9mo free; new-family fee may apply.", ages:"Birth–5", where:"Music Together of West Hartford & Farmington Valley — Congregation Beth Israel"},
+    {id:"music-together-mixed-ages--music-together-of-west-hartford-farmingt-3", c:"music", n:"Music Together – Mixed Ages", u:"https://musictogetherwhfv.com/classes.aspx", blurb:"$305 first child / 10-week fall session; sibling 9mo–under 6 $135; infant/additional sibling under 9mo free; new-family fee may apply.", ages:"Birth–5", where:"Music Together of West Hartford & Farmington Valley — Mandell JCC"},
+    {id:"toddler-1--mandell-jcc", c:"swim", n:"Toddler 1", u:"https://www.mandelljcc.org/index.php?category=AquaticsCenter&link=AquaticsCenterLanding&src=gendocs", blurb:"$190.", ages:"6–36 months", where:"Mandell JCC"},
+    {id:"toddler-2--mandell-jcc", c:"swim", n:"Toddler 2", u:"https://www.mandelljcc.org/index.php?category=AquaticsCenter&link=AquaticsCenterLanding&src=gendocs", blurb:"$190.", ages:"18 months–3 years", where:"Mandell JCC"},
+    {id:"minnows-1--mandell-jcc", c:"swim", n:"Minnows 1", u:"https://www.mandelljcc.org/index.php?category=AquaticsCenter&link=AquaticsCenterLanding&src=gendocs", blurb:"$190.", ages:"Ages 3–5", where:"Mandell JCC"},
+    {id:"minnows-2--mandell-jcc", c:"swim", n:"Minnows 2", u:"https://www.mandelljcc.org/index.php?category=AquaticsCenter&link=AquaticsCenterLanding&src=gendocs", blurb:"$190.", ages:"Ages 3–5", where:"Mandell JCC"},
+    {id:"level-1--mandell-jcc", c:"swim", n:"Level 1", u:"https://www.mandelljcc.org/index.php?category=AquaticsCenter&link=AquaticsCenterLanding&src=gendocs", blurb:"$190.", ages:"Kindergarten+", where:"Mandell JCC"},
+    {id:"level-2--mandell-jcc", c:"swim", n:"Level 2", u:"https://www.mandelljcc.org/index.php?category=AquaticsCenter&link=AquaticsCenterLanding&src=gendocs", blurb:"$190.", ages:"School-age", where:"Mandell JCC"},
+    {id:"level-3--mandell-jcc", c:"swim", n:"Level 3", u:"https://www.mandelljcc.org/index.php?category=AquaticsCenter&link=AquaticsCenterLanding&src=gendocs", blurb:"$228.", ages:"School-age", where:"Mandell JCC"},
+    {id:"level-4--mandell-jcc", c:"swim", n:"Level 4", u:"https://www.mandelljcc.org/index.php?category=AquaticsCenter&link=AquaticsCenterLanding&src=gendocs", blurb:"$228.", ages:"School-age", where:"Mandell JCC"},
+    {id:"graphic-memoir--west-hartford-art-league", c:"art", n:"Graphic Memoir", u:"https://westhartfordartleague.squarespace.com/kids-fall-2026-classes", blurb:"See registration.", ages:"Ages 14–18", where:"West Hartford Art League"},
+    {id:"stained-glass--west-hartford-art-league", c:"art", n:"Stained Glass", u:"https://westhartfordartleague.squarespace.com/kids-fall-2026-classes", blurb:"See registration.", ages:"Ages 10–15", where:"West Hartford Art League"},
+    {id:"art-club--west-hartford-art-league", c:"art", n:"Art Club", u:"https://westhartfordartleague.squarespace.com/kids-fall-2026-classes", blurb:"See registration.", ages:"Ages 7–9", where:"West Hartford Art League"},
+    {id:"wheel-throwing-for-kids--west-hartford-art-league", c:"art", n:"Wheel Throwing for Kids", u:"https://westhartfordartleague.squarespace.com/kids-fall-2026-classes", blurb:"See registration.", ages:"Ages 10+", where:"West Hartford Art League"},
+    {id:"art-for-young-children--west-hartford-art-league", c:"art", n:"Art for Young Children", u:"https://westhartfordartleague.squarespace.com/kids-fall-2026-classes", blurb:"See registration.", ages:"Ages 5–7", where:"West Hartford Art League"},
+    {id:"comics-for-younger-cartoonists--west-hartford-art-league", c:"art", n:"Comics for Younger Cartoonists", u:"https://westhartfordartleague.squarespace.com/kids-fall-2026-classes", blurb:"See registration.", ages:"Ages 7–10", where:"West Hartford Art League"},
+    {id:"kids-hand-building--west-hartford-art-league", c:"art", n:"Kids Hand Building", u:"https://westhartfordartleague.squarespace.com/kids-fall-2026-classes", blurb:"See registration.", ages:"Ages 6–9", where:"West Hartford Art League"},
+    {id:"intro-to-digital-drawing--west-hartford-art-league", c:"art", n:"Intro to Digital Drawing", u:"https://westhartfordartleague.squarespace.com/kids-fall-2026-classes", blurb:"See registration.", ages:"Ages 13+", where:"West Hartford Art League"},
+    {id:"moms-more-children-s-events-playgroups--moms-more-of-west-hartford-various-west-", c:"move", n:"Moms & More Children's Events & Playgroups", u:"https://wehamoms.com/", blurb:"Also operates an active private Facebook group; important source for less-publicized parent/kid events. Membership required; see current membership price.", ages:"Primarily ages 0–5 + caregivers", where:"Moms & More of West Hartford — Various West Hartford locations"},
+    {id:"westmoor-park-farm-trails--town-of-west-hartford-westmoor-park", c:"nature", n:"Westmoor Park Farm + Trails", u:"https://www.westhartfordct.gov/town-departments/leisure-services/westmoor-park", blurb:"Demonstration farm, animals, gardens, ponds and trails; also offers seasonal education programs. Free general visit; classes/programs vary.", ages:"All ages", where:"Town of West Hartford — Westmoor Park"},
+    {id:"little-wanderers-play-studio-cafe--little-wanderers-bishop-s-corner", c:"move", n:"Little Wanderers Play Studio + Cafe", u:"https://www.thelittlewanderers.com/", blurb:"Add to watch list; designed specifically as a parent-friendly indoor play studio/cafe. TBD.", ages:"Ages 0–5 + grown-ups", where:"Little Wanderers — Bishop's Corner"},
+    {id:"story-play-studio--the-book-club", c:"move", n:"Story + Play Studio", u:"https://www.thebookclubct.com/classes", blurb:"Stories plus rotating art, building, movement, music, science and other play stations. See booking / membership.", ages:"Ages 1–7", where:"The Book Club"},
+    {id:"literacy-enrichment-classes--the-book-club", c:"move", n:"Literacy Enrichment Classes", u:"https://www.thebookclubct.com/book-now", blurb:"Rotating Art, Music, Science, Architecture, Theatre, Spanish, Yoga and Cooking, all anchored in books. See booking / membership.", ages:"Children; class dependent", where:"The Book Club"},
+    {id:"soccer-shots-classic--west-hartford-leisure-services-beachland", c:"move", n:"Soccer Shots Classic", u:"https://westhartford.recdesk.com/Community/Program/Detail?programId=17294", blurb:"Resident $139 / Nonresident $149.", ages:"Ages 3–5 years 11 months", where:"West Hartford Leisure Services — Beachland Park Soccer Field"},
+    {id:"learn-to-skate-1-session-2--veterans-memorial-skating-rink", c:"move", n:"Learn to Skate 1 – Session 2", u:"https://westhartford.recdesk.com/Community/Program/Detail?programId=17403", blurb:"Resident $216 / Nonresident $225; skate rental included.", ages:"Ages 4–6", where:"Veterans Memorial Skating Rink"},
+    {id:"public-skating--veterans-memorial-skating-rink", c:"move", n:"Public Skating", u:"https://www.westhartfordct.gov/town-departments/leisure-services/skating-rink/facility-schedule", blurb:"DJ Skate also offered at $12. Resident child $7 / nonresident child $9; age 2 & under free; skate rental $5.", ages:"All ages", where:"Veterans Memorial Skating Rink"},
+    {id:"group-swim-lessons--cornerstone-aquatics-center", c:"swim", n:"Group Swim Lessons", u:"https://www.westhartfordct.gov/town-departments/leisure-services/aquatics/cornerstone-aquatics-center/programs", blurb:"Member $90 / Nonmember $126 per 6-week group session.", ages:"6 months through adult; level dependent", where:"Cornerstone Aquatics Center"},
+    {id:"waves-swim-team--cornerstone-aquatics-center", c:"swim", n:"Waves Swim Team", u:"https://www.westhartfordct.gov/town-departments/leisure-services/aquatics/cornerstone-aquatics-center/programs", blurb:"See registration.", ages:"Youth able to swim 25 yd freestyle + 25 yd backstroke", where:"Cornerstone Aquatics Center"},
+    {id:"miracle-league-minor-league-fall-ball--miracle-league-of-connecticut-west-hartf", c:"move", n:"Miracle League Minor League Fall Ball", u:"https://www.activekids.com/west-hartford-ct/baseball/baseball-leagues/miracle-league-minor-league-fall-ball-ages-4-11-years-old-2026", blurb:"$60.", ages:"Ages 4–11", where:"Miracle League of Connecticut — West Hartford Miracle League Field"},
+    {id:"fall-recreational-soccer--west-hartford-youth-soccer-association-v", c:"move", n:"Fall Recreational Soccer", u:"https://www.wehasoccer.org/Default.aspx?tabid=746569", blurb:"See registration.", ages:"Youth divisions", where:"West Hartford Youth Soccer Association — Various fields"},
+    {id:"fall-little-league-baseball--west-hartford-little-league-various-whll", c:"move", n:"Fall Little League Baseball", u:"https://www.westhartfordlittleleague.com/Default.aspx?tabid=1931544", blurb:"See registration.", ages:"Ages 4–12", where:"West Hartford Little League — Various WHLL fields"},
+    {id:"brazilian-jiu-jitsu--plus-one-defense-systems", c:"move", n:"Brazilian Jiu-Jitsu", u:"https://www.teamplusone.com/kids-martial-arts-west-hartford/", blurb:"First class free; ongoing tuition see provider.", ages:"Ages 5–7", where:"Plus One Defense Systems"},
+    {id:"kung-fu-karate--plus-one-defense-systems", c:"move", n:"Kung Fu / Karate", u:"https://www.teamplusone.com/kids-martial-arts-west-hartford/", blurb:"First class free; ongoing tuition see provider.", ages:"Ages 5–7", where:"Plus One Defense Systems"},
+    {id:"muay-thai-kickboxing--plus-one-defense-systems", c:"move", n:"Muay Thai Kickboxing", u:"https://www.teamplusone.com/kids-martial-arts-west-hartford/", blurb:"First class free; ongoing tuition see provider.", ages:"Ages 5–7", where:"Plus One Defense Systems"},
+    {id:"rookies--school-of-rock-west-hartford", c:"music", n:"Rookies", u:"https://www.schoolofrock.com/locations/westhartford", blurb:"See enrollment.", ages:"Ages 5–8", where:"School of Rock West Hartford"},
+    {id:"rock-101--school-of-rock-west-hartford", c:"music", n:"Rock 101", u:"https://www.schoolofrock.com/locations/westhartford", blurb:"See enrollment.", ages:"Ages 8–12", where:"School of Rock West Hartford"},
+    {id:"performance-program--school-of-rock-west-hartford", c:"music", n:"Performance Program", u:"https://www.schoolofrock.com/locations/westhartford", blurb:"See enrollment.", ages:"Ages 13–18", where:"School of Rock West Hartford"},
+    {id:"fall-youth-pottery-classes--junk-pot-studio", c:"art", n:"Fall Youth Pottery Classes", u:"https://junkpotstudio.com/classes/store/youth-camp", blurb:"$350 / 8-week class; open-studio time included.", ages:"Youth; class dependent", where:"Junk Pot Studio"},
+    {id:"why-kids--west-hartford-yoga", c:"move", n:"WHY Kids", u:"https://www.westhartfordyoga.com/", blurb:"See registration.", ages:"Ages 4–10", where:"West Hartford Yoga"},
+    {id:"children-s-yoga--pip-yoga-elmwood-community-center", c:"move", n:"Children's Yoga", u:"https://www.pipyogastudio.com/about", blurb:"See registration.", ages:"18 months–12 years", where:"Pip Yoga — Elmwood Community Center"},
+    {id:"shababa--beth-el-temple", c:"move", n:"Shababa", u:"https://bethelwesthartford.staging.shulcloud.com/", blurb:"Singing, dancing, stories, prayers and children's dinner. See RSVP; sponsorship optional.", ages:"About age 8 and under + siblings/family", where:"Beth El Temple"},
+    {id:"fall-into-fun-family-shabbat--mandell-jcc", c:"move", n:"Fall into Fun – Family Shabbat", u:"https://www.mandelljcc.org/index.php?m=10&src=events&srctype=events_glance&y=2026", blurb:"See event.", ages:"Families / young children", where:"Mandell JCC"},
+    {id:"pj-library-harvest-holiday-fun-in-the-sukkah--mandell-jcc-pj-library", c:"move", n:"PJ Library – Harvest Holiday Fun in the Sukkah", u:"https://www.mandelljcc.org/index.php?pos=0%2C10%2C39&src=events&srctype=lister", blurb:"See event.", ages:"Families", where:"Mandell JCC / PJ Library"},
+    {id:"life-on-the-webster-farm-demonstrations--noah-webster-house", c:"move", n:"Life on the Webster Farm Demonstrations", u:"https://noahwebsterhouse.org/", blurb:"Hands-on/live demonstrations of early American work and play. Included with museum admission; children 12 & under free.", ages:"Families; children 12 & under free for program", where:"Noah Webster House"},
+    {id:"a-year-with-frog-and-toad--playhouse-on-park", c:"art", n:"A Year With Frog and Toad", u:"https://playhouseonpark.org/web2/Season17/TYA_FrogAndToad.html", blurb:"May 30 at 10 AM was sensory-friendly; River Bend ran a curated book sale in the lobby. Adult $28.50; child/student/senior $26.", ages:"Pre-K–Grade 5; all ages welcome", where:"Playhouse on Park"},
+    {id:"shakespeare-for-kids-dream-scheme--playhouse-on-park-playhouse-theatre-acad", c:"art", n:"Shakespeare for Kids: Dream Scheme", u:"https://www.playhouseonpark.org/web2/Season17/TYA_Shakespeare.html", blurb:"Interactive Shakespeare with songs, comedy, sock puppets, study guide and post-show Q&A. $1,200 per performance.", ages:"Grades K–5; all ages", where:"Playhouse on Park / Playhouse Theatre Academy — Touring to schools/venues"},
+    {id:"theatre-for-young-audiences-series--playhouse-on-park", c:"art", n:"Theatre for Young Audiences Series", u:"https://playhouseonpark.org/web2/tickets.html", blurb:"Major source to monitor each season; sensory-friendly performances are offered for some productions. 2026-27 TYA: adults $28.50; children/students $26.", ages:"Children / families", where:"Playhouse on Park"},
+    {id:"youth-theatre-productions-classes--connecticut-family-theatre", c:"art", n:"Youth Theatre Productions & Classes", u:"https://ctfamilytheatre.org/events/", blurb:"West Hartford children's theatre and teaching organization; 2026 Summer of Music Theatre served ages 9+. Varies.", ages:"Children and teens; program dependent", where:"Connecticut Family Theatre"},
+    {id:"the-addams-family--west-hartford-community-theater-west-har", c:"art", n:"The Addams Family", u:"https://www.westhartfordtheater.org/", blurb:"Community-theater production; useful family performance calendar source. See tickets.", ages:"Family audience; parental judgment by child", where:"West Hartford Community Theater — West Hartford performance venue"},
+    {id:"free-hobby-introduction-build-paint-play-demo--warhammer-west-hartford", c:"move", n:"Free Hobby Introduction / Build-Paint-Play Demo", u:"https://www.warhammer.com/en-US/store-finder", blurb:"Official Warhammer stores offer introductory build/paint/play experiences; call ahead for West Hartford timing. Free intro experience.", ages:"Older children/teens with adult; hobby interest", where:"Warhammer West Hartford"},
+    {id:"miniature-of-the-month--warhammer-west-hartford", c:"move", n:"Miniature of the Month", u:"https://www.warhammer-community.com/en-gb/", blurb:"Useful recurring retail activity; exact monthly release date changes. Free while supplies last.", ages:"Hobbyists; older kids/teens with adult", where:"Warhammer West Hartford"},
+    {id:"independent-toy-store-family-stop--the-toy-shop", c:"move", n:"Independent Toy Store Family Stop", u:"https://www.thetoyshoponline.com/", blurb:"Keep on event-source watch list; curated educational/play-focused independent toy shop. Free to browse.", ages:"Children / families", where:"The Toy Shop"},
+    {id:"student-run-used-bookstore--the-next-chapter", c:"move", n:"Student-Run Used Bookstore", u:"https://www.whps.org/", blurb:"Student-run used bookstore operated through WHPS Post-Secondary Program; useful non-obvious family/community stop. Free to browse.", ages:"Families / readers", where:"The Next Chapter"},
+    {id:"beachland-park--town-of-west-hartford-beachland-park", c:"nature", n:"Beachland Park", u:"https://www.westhartfordct.gov/town-departments/leisure-services/parks", blurb:"25+ acres; two playscapes, pond, picnic tables, basketball, soccer/baseball, seasonal pool and splash pad.", ages:"All ages", where:"Town of West Hartford — Beachland Park"},
+    {id:"fernridge-park--town-of-west-hartford-fernridge-park", c:"nature", n:"Fernridge Park", u:"https://www.westhartfordct.gov/town-departments/leisure-services/parks", blurb:"Two playgrounds, paved walking trails, pond, courts, pool and splash pad; annual Family Fishing Day.", ages:"All ages", where:"Town of West Hartford — Fernridge Park"},
+    {id:"kennedy-park--town-of-west-hartford-kennedy-park", c:"nature", n:"Kennedy Park", u:"https://www.westhartfordct.gov/town-departments/leisure-services/parks", blurb:"Playground, basketball, baseball/soccer, picnic area, zero-entry pool with slide and splash pad.", ages:"All ages", where:"Town of West Hartford — Kennedy Park"},
+    {id:"eisenhower-park--town-of-west-hartford-eisenhower-park", c:"nature", n:"Eisenhower Park", u:"https://www.westhartfordct.gov/town-departments/leisure-services/parks", blurb:"Playground includes an AAC communication sign; soccer/baseball, basketball, picnic tables and zero-entry pool.", ages:"All ages", where:"Town of West Hartford — Eisenhower Park"},
+    {id:"wolcott-park--town-of-west-hartford-wolcott-park", c:"nature", n:"Wolcott Park", u:"https://www.westhartfordct.gov/town-departments/leisure-services/parks", blurb:"Playscape, splash pad, pond, children's forest/outdoor classroom, raised forest boardwalk, courts and fields.", ages:"All ages", where:"Town of West Hartford — Wolcott Park"},
+    {id:"spicebush-swamp-park--town-of-west-hartford-spicebush-swamp-pa", c:"nature", n:"Spicebush Swamp Park", u:"https://www.westhartfordct.gov/town-departments/leisure-services/parks", blurb:"33-acre natural area with McGovern Pond, public fishing, short trail, pollinator garden and birding.", ages:"All ages", where:"Town of West Hartford — Spicebush Swamp Park"},
+    {id:"splash-pads-beachland-fernridge-kennedy-wolcott--town-of-west-hartford-cornerstone-aquati", c:"move", n:"Splash Pads – Beachland, Fernridge, Kennedy & Wolcott", u:"https://www.westhartfordct.gov/town-departments/leisure-services/aquatics/splash-pads", blurb:"Four separate free splash pads; excellent recurring summer resource.", ages:"All ages; young children especially", where:"Town of West Hartford / Cornerstone Aquatics — Four neighborhood parks"},
+    {id:"trout-brook-trail--town-of-west-hartford-trout-brook-trail", c:"move", n:"Trout Brook Trail", u:"https://www.westhartfordct.gov/town-departments/leisure-services/outdoor-recreation/walking-trails", blurb:"Nearly 4-mile paved greenway, up to 10 feet wide; useful for strollers, scooters and bikes.", ages:"All ages", where:"Town of West Hartford — Trout Brook Trail"},
+    {id:"jonathan-s-dream-inclusive-playground--mandell-jcc-campus-jonathan-s-dream", c:"move", n:"Jonathan's Dream Inclusive Playground", u:"https://www.mandelljcc.org/", blurb:"Large inclusive all-abilities playground with toddler areas and accessible play elements.", ages:"All abilities / children", where:"Mandell JCC campus / Jonathan's Dream"},
+    {id:"open-play--angel-land-west-hartford", c:"move", n:"Open Play", u:"https://angellandplay.com/", blurb:"Large indoor playground; important rainy/cold-day evergreen resource. See current admission.", ages:"Primarily ages 1–10", where:"Angel Land West Hartford"},
+    {id:"westmoor-farm-discovery-room-trails--town-of-west-hartford-westmoor-park", c:"nature", n:"Westmoor Farm, Discovery Room & Trails", u:"https://www.westhartfordct.gov/town-departments/leisure-services/westmoor-park/explore-westmoor", blurb:"Farmyard, reptiles/amphibians in Discovery Room, gardens, ponds and 3 miles of trails including accessible trail. Free general visit.", ages:"All ages", where:"Town of West Hartford — Westmoor Park"},
+    {id:"westmoor-volunteer-day--westmoor-park", c:"nature", n:"Westmoor Volunteer Day", u:"https://www.westhartfordct.gov/town-departments/leisure-services/westmoor-park/volunteers", blurb:"Conservation, garden and trail projects.", ages:"All ages/experience levels; confirm child participation", where:"Westmoor Park"},
+    {id:"saturday-sewing-club-fall-accessories--hartford-stitch", c:"move", n:"Saturday Sewing Club – Fall Accessories", u:"https://www.hartfordstitch.com/service-page/october-saturday-sewing-club", blurb:"Beginner+; machine experience required; equipment/materials included. $200 / 4 sessions.", ages:"Ages 8–13", where:"Hartford Stitch"},
+    {id:"teen-after-school-sewing--hartford-stitch", c:"move", n:"Teen After-School Sewing", u:"https://www.hartfordstitch.com/service-page/wednesday-teen-after-school-class", blurb:"Garments, quilting, bagmaking and other sewing; prior machine basics required. $275 / 8 sessions.", ages:"Middle–high school", where:"Hartford Stitch"},
+    {id:"early-childhood-music-class-bouncy-blue--the-new-old-school-of-music", c:"music", n:"Early Childhood Music Class – Bouncy Blue", u:"https://mail.newoldschoolofmusic.com/programs/group-lessons/early-childhood-music-classes", blurb:"School runs recurring 6-class early-childhood music sessions; monitor for next session. $75 first child / $50 additional sibling.", ages:"Young children + caregiver", where:"The New Old School of Music"},
+    {id:"student-recitals--the-new-old-school-of-music-venue-tba", c:"music", n:"Student Recitals", u:"https://newoldschoolofmusic.com/programs/recitals", blurb:"All students have opportunity to perform. Free admission.", ages:"All ages / families", where:"The New Old School of Music — Venue TBA"},
+    {id:"children-s-events-playgroups--moms-more-of-west-hartford-various", c:"move", n:"Children's Events & Playgroups", u:"https://wehamoms.com/", blurb:"500+ member nonprofit parent network; one of the best sources for events that never make public calendars. Annual membership.", ages:"Primarily ages 0–5 + caregivers", where:"Moms & More of West Hartford — Various"},
+    {id:"kidslink-before-after-school--ywca-hartford-region-5-west-hartford-ele", c:"move", n:"Kidslink Before & After School", u:"https://www.ywcahartford.org/programs/childcare/kidslink-before-after-school-program/west-hartford/", blurb:"Sites: Bugbee, Duffy, Smith STEM, Webster Hill and Wolcott; enrichment, homework support and play. See enrollment / Care4Kids accepted.", ages:"Grades K–5", where:"YWCA Hartford Region — 5 West Hartford elementary schools"},
+    {id:"ywca-early-learning-center--ywca-hartford-region-ywca-early-learning", c:"move", n:"YWCA Early Learning Center", u:"https://www.ywcahartford.org/programs/childcare/early-learning-childcare/west-hartford/", blurb:"Not an event, but belongs in a comprehensive parent-resource provider directory. Tuition; Care4Kids/sliding assistance may be available.", ages:"Early childhood", where:"YWCA Hartford Region — YWCA Early Learning Center"},
+    {id:"family-resource-youth-programs--the-bridge-family-center", c:"move", n:"Family Resource & Youth Programs", u:"https://www.bridgefamilycenter.org/", blurb:"Family Resource Center, youth programs, counseling and Mosaic Parenting Centers; event calendar is a useful watch source. Program dependent.", ages:"Children, teens and families", where:"The Bridge Family Center"}
+  ],
+
+  library: {for:"Free, every week", name:"West Hartford Public Library", desc:"West Hartford's library system, with the Noah Webster main branch and the Bishops Corner branch.", a:"See West Hartford Library events", href:"https://www.westhartfordlibrary.org/"},
+
+  extraResources: []
+};
+</script>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track" id="tickerTrack"></div></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#today" aria-label="West Hartford Kids Calendar, home">
+      
+      <span>West Hartford Kids Calendar</span>
+    </a>
+    <div class="navwrap">
+      <nav class="nav" aria-label="Sections">
+        <a href="#bigdays">Big days</a>
+        <a href="#events">Calendar</a>
+        <a href="#classes">Classes</a>
+        <a href="#things">Things to do</a>
+        <a href="#resources">Resources</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="today">
+    <div class="band"><div class="wrap bandwrap">
+      <h1>What are we doing <em>today?</em></h1>
+      <p class="lede">Storytimes, festivals, classes and things to do for little ones in West Hartford, checked and gathered in one place. Tap a day to see what's on.</p>
+      <p class="fig">The week ahead in West Hartford, Conn.</p>
+      <div class="days" id="days" role="group" aria-label="Pick a day this week"></div>
+      <div class="herorow">
+        <button class="wkbtn" type="button" id="weekendBtn" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><span>This weekend</span></button>
+      </div>
+    </div></div>
+    <div class="wrap">
+      <div class="dayhead"><h2 id="dayTitle">Today</h2><button class="act" type="button" id="shareDay"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5"></path><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"></path></svg><span id="shareDayLabel">Share this day</span></button></div>
+      <ul class="list" id="dayList" aria-live="polite"></ul>
+    </div>
+  </section>
+
+  <section class="block" id="bigdays">
+    <div class="wrap">
+      <h2 class="sec">Big days</h2>
+      <p class="intro">The once-a-year stuff worth planning around: festivals, Halloween fun and holiday shows. Tap one to jump to it on the calendar.</p>
+      <p class="swipehint">Swipe for Halloween and holidays</p>
+      <div class="bigdays" id="bigList"></div>
+    </div>
+  </section>
+
+  <section class="block" id="events">
+    <div class="wrap">
+      <h2 class="sec">The calendar</h2>
+      <p class="intro">Everything we're tracking, week by week. Narrow it down by age, or show only the free, drop-in or rainy-day stuff.</p>
+      <div class="filters">
+        <div class="fgroup" role="group" aria-label="Filter by age">
+          <span class="flabel">Ages</span>
+          <button class="chip" data-age="all" aria-pressed="true">All</button>
+          <button class="chip" data-age="baby" aria-pressed="false">Babies</button>
+          <button class="chip" data-age="toddler" aria-pressed="false">Toddlers</button>
+          <button class="chip" data-age="preschool" aria-pressed="false">Preschool</button>
+          <button class="chip" data-age="big" aria-pressed="false">Big kids</button>
+        </div>
+        <div class="fgroup" id="hoodWrap">
+          <label class="flabel" for="hoodSel">Area</label>
+          <select class="chip selectchip" id="hoodSel"></select>
+        </div>
+        <div class="fgroup" role="group" aria-label="Other filters">
+          <span class="flabel">Show only</span>
+          <button class="chip" data-toggle="free" aria-pressed="false">Free</button>
+          <button class="chip" data-toggle="dropin" aria-pressed="false">Drop-in</button>
+          <button class="chip" data-toggle="indoor" aria-pressed="false">Rainy day (indoors)</button>
+          <button class="chip" data-toggle="special" aria-pressed="false">Big days</button>
+        </div>
+      </div>
+      <div class="weeknav">
+        <button class="navbtn" id="prevWeek" aria-label="Previous week">‹</button>
+        <button class="navbtn" id="nextWeek" aria-label="Next week">›</button>
+        <h3 id="weekTitle" aria-live="polite"></h3>
+      </div>
+      <div id="weekList"></div>
+      <p class="fineprint">Holiday closures aren't always reflected here. Events marked "Check first" are recurring slots we haven't been able to confirm for every date, so look at the organizer's page before you head out.</p>
+    </div>
+  </section>
+
+  <!-- Things to do: hand-written per town (parks, museums, short drives). Not JS-driven. -->
+  <section class="block" id="things">
+    <div class="wrap">
+      <h2 class="sec">Things to do anytime</h2>
+      <p class="intro">No schedule needed. Good for the mornings when everyone's up at 6 and you need somewhere to be by 9.</p>
+      <p class="swipehint">Swipe for rainy-day spots and short drives</p>
+      <p class="empty" style="padding:8px 4px">We're still gathering our favorite parks, museums and rainy-day spots in West Hartford &mdash; check back soon.</p>
+    </div>
+  </section>
+
+  <section class="block" id="classes">
+    <div class="wrap">
+      <h2 class="sec">Classes &amp; lessons</h2>
+      <p class="intro">Weekly classes worth signing up for, from baby music and first ballet to swim lessons and preschool soccer. Most run in sessions, so check each program's site for start dates and prices.</p>
+      <div class="cchips" id="classChips" role="group" aria-label="Filter classes"></div>
+      <div class="cgrid" id="classList"></div>
+    </div>
+  </section>
+
+  <section class="block" id="resources">
+    <div class="wrap">
+      <h2 class="sec">Resources for moms</h2>
+      <p class="intro">Help with the big things and the everyday things, from pregnancy through the toddler years.</p>
+      <div class="help">
+        <h3>If you're struggling right now</h3>
+        <div id="helpList"></div>
+      </div>
+      <div class="res" id="resList"></div>
+    </div>
+  </section>
+
+
+  <section class="privacy" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap doc">
+      <h2 id="privacy-title">Privacy policy</h2>
+      <p class="updated">Effective September 24, 2026</p>
+      <p>West Hartford Kids Calendar (ctkidscalendar.com/west-hartford) is part of CT Kids Calendar, a free guide to events, classes and resources for families across Connecticut. We keep things simple: this site has no accounts, no advertising trackers and no cookies. We count visits anonymously so we know what's useful. This policy explains the little information that does change hands when you use the site.</p>
+      <h3>Information we collect</h3>
+      <p>We don't collect personal information through the website itself. You can browse the calendar, classes and resources without telling us who you are, and the site doesn't set cookies.</p>
+      <p>To see how many people use the site, we use GoatCounter, a privacy-friendly visit counter. It records which pages are viewed, the website that sent you here (like Instagram), your general location (country and region) and your browser and screen size. It doesn't use cookies, doesn't follow you to other websites, and doesn't collect your name or anything that identifies you personally.</p>
+      <h3>How we use it</h3>
+      <ul>
+        <li>To publish event details we're given, like the name, place, time, ages, price and the organizer's public link.</li>
+        <li>To talk with businesses and organizations about sponsorship.</li>
+      </ul>
+      <p>We don't sell, rent or trade your information, and we don't add you to a mailing list without asking.</p>
+      <h3>Services we rely on</h3>
+      <p>A few outside services help run the site, and they may receive basic technical information such as your IP address when your browser connects to them:</p>
+      <ul>
+        <li><strong>GitHub Pages</strong> hosts the site. GitHub may keep server logs, including visitor IP addresses, for security. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub privacy statement</a>.</li>
+        <li><strong>Google Fonts</strong> supplies the site's typefaces, so your browser requests them from Google. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>.</li>
+        <li><strong>GoatCounter</strong> counts visits anonymously, as described above. See <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">GoatCounter's privacy policy</a>.</li>
+      </ul>
+      <p>The site also links to other websites, such as Google Maps, Google Calendar, event organizers and community resources. Those sites have their own privacy practices, which we don't control.</p>
+      <h3>Children's privacy</h3>
+      <p>This site is written for parents and caregivers. It isn't directed at children under 13, and we don't knowingly collect information from them. This site doesn't currently have a way to submit information directly, which further limits this risk.</p>
+      <h3>Keeping and deleting your information</h3>
+      <p>We don't currently have a public contact address, so no emails are being collected yet. This policy will be updated when that changes.</p>
+      <h3>Changes to this policy</h3>
+      <p>If we add something new, like a newsletter sign-up, we'll update this policy first and change the date at the top.</p>
+      <p><a href="#today">Back to the calendar</a></p>
+    </div>
+  </section>
+</main>
+
+<nav class="tabbar" aria-label="Sections">
+  <a href="#today" data-tab="today"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><span>Today</span></a>
+  <a href="#bigdays" data-tab="bigdays"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"></path></svg><span>Big days</span></a>
+  <a href="#events" data-tab="events"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg><span>Calendar</span></a>
+  <a href="#classes" data-tab="classes"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg><span>Classes</span></a>
+  <a href="#things" data-tab="things"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>To do</span></a>
+  <a href="#resources" data-tab="resources"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 11.2c0 5-8.8 9.8-8.8 9.8S3.2 16.2 3.2 11.2A4.8 4.8 0 0 1 12 8.5a4.8 4.8 0 0 1 8.8 2.7z"></path></svg><span>Help</span></a>
+</nav>
+
+<dialog class="sheet" id="shareSheet" aria-labelledby="sheetTitle">
+  <div class="sheet-in">
+    <h3 id="sheetTitle">Share with a friend</h3>
+    <p class="sheet-preview" id="sheetPreview"></p>
+    <div class="sheet-grid">
+      <a class="act" id="shSms" href="#">Text message</a>
+      <a class="act" id="shWa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="act" id="shMail" href="#">Email</a>
+      <a class="act" id="shFb" href="#" target="_blank" rel="noopener">Facebook</a>
+      <button class="act primary" type="button" id="shCopy" style="grid-column:1/-1">Copy link</button>
+    </div>
+    <button class="sheet-close" type="button" data-close>Close</button>
+  </div>
+</dialog>
+
+<dialog class="sheet" id="calSheet" aria-labelledby="calTitle">
+  <div class="sheet-in">
+    <h3 id="calTitle">Add to your calendar</h3>
+    <p class="sheet-preview" id="calPreview"></p>
+    <div class="sheet-grid one">
+      <a class="act primary" id="calIcs" href="#" download="event.ics">Apple, Outlook or other calendar</a>
+      <a class="act" id="calGoogle" href="#" target="_blank" rel="noopener">Google Calendar</a>
+    </div>
+    <button class="sheet-close" type="button" data-close>Close</button>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<footer>
+  <div class="wrap">
+    <span>West Hartford Kids Calendar · part of <a href="https://ctkidscalendar.com/">CT Kids Calendar</a></span>
+    <span>Schedules last checked September 2026 · <a href="#privacy">Privacy policy</a></span>
+  </div>
+</footer>
+
+<script data-goatcounter="https://ctkidscalendar.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="/shared/app.js"></script>
+</body>
+</html>

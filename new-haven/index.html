@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>New Haven Kids Calendar — events, classes and resources for New Haven families</title>
+<meta name="description" content="What's happening for kids and families in New Haven, CT this week: storytimes, classes, festivals and local resources, all in one place.">
+<meta name="color-scheme" content="only light">
+<meta name="theme-color" content="#1B2A4A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CT Kids Calendar">
+<meta property="og:title" content="New Haven Kids Calendar: what are we doing today?">
+<meta property="og:description" content="Storytimes, festivals, classes and local resources for little ones in New Haven, CT.">
+<meta property="og:url" content="https://ctkidscalendar.com/new-haven/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared/style.css">
+<style>
+  /* This town's ONE accent variable. Everything else (navy, cream, yellow) is shared. */
+  :root{ --accent: #A9E0F2; }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     TOWN CONFIG — real content for this town goes here.
+     Replace every {{...}} and empty array before publishing.
+     See /shared/TOWN-TEMPLATE.md for the full field reference.
+     ============================================================ -->
+<script>
+window.TOWN = {
+  name: "New Haven Kids Calendar",
+  townLabel: "New Haven, CT",
+  url: "https://ctkidscalendar.com/new-haven/",
+  email: "",
+  instagram: "",
+  calendarThrough: "2026-12-31",
+
+  venues: {
+  stetson:["NHFPL Stetson Branch","197 Dixwell Ave"],
+  fairhaven:["NHFPL Fair Haven Branch","182 Grand Ave"],
+  mitchell:["NHFPL Mitchell Branch","37 Harrison St"],
+  ives:["NHFPL Ives Main Library","133 Elm St"],
+  wilson:["NHFPL Wilson Branch","303 Washington Ave"],
+  stjohns:["St. John's Episcopal Church","400 Humphrey St"],
+  ccm:["Connecticut Children's Museum","22 Wall St"],
+  cg:["Common Ground","358 Springside Ave"],
+  atwater:["Atwater Senior Center","26 Atwater St"],
+  pebbles:["Pebbles Toys & Gifts","528 Orange St"],
+  trinity:["Trinity on the Green","230 Temple St"],
+  cpc:["CPC New Haven","135 Whitney Ave"],
+  caw:["Creative Arts Workshop","80 Audubon St"],
+  peabody:["Yale Peabody Museum","170 Whitney Ave"],
+  ycba:["Yale Center for British Art","1080 Chapel St"],
+  nhm:["New Haven Museum","114 Whitney Ave"],
+  green:["New Haven Green","250 Temple St"],
+  junta:["Junta for Progressive Action","169 Grand Ave"],
+  shubert:["Shubert Theatre","247 College St"],
+  broadway:["Broadway District","Elm St & Broadway"],
+  hope:["Hope Child Development Center",""],
+  trolley:["Shore Line Trolley Museum","17 River St","East Haven, CT"],
+  ewm:["Eli Whitney Museum & Workshop","915 Whitney Ave","Hamden, CT"]
+},
+
+  venueMeta: {
+stetson:["dixwell",1],fairhaven:["fairhaven",1],mitchell:["westville",1],ives:["downtown",1],wilson:["hill",1],stjohns:["eastrock",1],ccm:["downtown",1],cg:["westville",0],atwater:["fairhaven",1],pebbles:["eastrock",1],trinity:["downtown",1],cpc:["downtown",1],caw:["downtown",1],peabody:["downtown",1],ycba:["downtown",1],nhm:["downtown",1],green:["downtown",0],junta:["fairhaven",null],shubert:["downtown",1],broadway:["downtown",0],hope:["nearby",null],trolley:["nearby",null],ewm:["nearby",1]
+  },
+
+  hoods: [
+    ["all", "All neighborhoods"],
+    ["downtown", "Downtown & Yale"],
+    ["eastrock", "East Rock"],
+    ["westville", "Westville & West Rock"],
+    ["fairhaven", "Fair Haven"],
+    ["hill", "The Hill"],
+    ["dixwell", "Dixwell & Newhallville"],
+    ["nearby", "Other & nearby"]
+  ],
+
+  events: [
+ {t:"Stay & Play",v:"stetson",ages:"Birth–5 with a caregiver",a:["baby","toddler","preschool"],price:"Free",free:true,drop:true,src:"https://nhfpl.org/children/storytimesandmore/",s:[[1,[["10:00","11:30"]],"2026-09-28","2026-12-31"],[6,[["10:00","11:30"]],"2026-09-26","2026-12-31"]]},
+ {t:"Quédate y Juega · Bilingual Stay & Play",v:"fairhaven",ages:"Birth–5 with a caregiver",a:["baby","toddler","preschool"],price:"Free",free:true,drop:true,src:"https://nhfpl.org/children/storytimesandmore/",s:[[2,[["10:30","11:00"]],"2026-09-29","2026-12-31"]]},
+ {t:"Stay & Play",v:"mitchell",ages:"Birth–5 with a caregiver",a:["baby","toddler","preschool"],price:"Free",free:true,drop:true,src:"https://nhfpl.org/children/storytimesandmore/",s:[[2,[["11:00","12:00"]],"2026-09-29","2026-12-31"],[6,[["11:00","12:00"]],"2026-10-17","2026-12-31",3]]},
+ {t:"Stay & Play",v:"ives",ages:"Birth–5 with a caregiver",a:["baby","toddler","preschool"],price:"Free",free:true,drop:true,src:"https://nhfpl.org/children/storytimesandmore/",s:[[3,[["11:00","11:30"]],"2026-09-23","2026-12-31"]]},
+ {t:"Stay & Play",v:"wilson",ages:"Birth–5 with a caregiver",a:["baby","toddler","preschool"],price:"Free",free:true,drop:true,src:"https://nhfpl.org/children/storytimesandmore/",s:[[4,[["10:30","11:15"]],"2026-09-24","2026-12-31"]]},
+ {t:"Toddler Tunes",v:"stjohns",ages:"Newborn–6 with a caregiver",a:["baby","toddler","preschool"],price:"Free, donations welcome",free:true,drop:true,check:true,note:"The fall schedule still needs confirming with St. John's.",s:[[3,[["10:30","11:30"]],"2026-09-23","2026-12-31"],[0,[["15:30","16:30"]],"2026-09-27","2026-12-31"]]},
+ {t:"Children's Museum open play",v:"ccm",ages:"Young children and families",a:["baby","toddler","preschool"],price:"$12 per child, $12 per adult, under 12 months free",free:false,drop:true,src:"https://www.childrensbuilding.org/new-home",s:[[4,[["13:00","17:00"]],"2026-09-24","2026-12-31"],[5,[["10:00","15:00"]],"2026-09-25","2026-12-31"],[6,[["10:00","15:00"]],"2026-09-26","2026-12-31"]]},
+ {t:"Open Farm Day",v:"cg",ages:"All ages",a:["baby","toddler","preschool","big"],price:"Free",free:true,drop:true,src:"https://www.commongroundct.org/calendar/open-farm-day",s:[[6,[["10:00","14:00"]],"2026-09-26","2026-11-30"]]},
+ {t:"ARTE Saturday Academy",v:"atwater",ages:"Ages 7–17",a:["big"],price:"Free",free:true,drop:false,note:"Meets nearly every Saturday. Check with the program about holiday weekends and how to enroll.",s:[[6,[["10:15","12:00"]],"2026-09-26","2026-12-31"]]},
+ {t:"Storytime at Pebbles",v:"pebbles",ages:"Young children",a:["toddler","preschool"],price:"Free",free:true,drop:true,src:"https://pebblestoys.com/pages/contact",s:[[6,[["10:30","11:00"]],"2026-09-26","2026-12-31"],[0,[["11:00","11:30"]],"2026-09-27","2026-12-31"]]},
+ {t:"Children's Chapel",v:"trinity",ages:"Children, in groups for 7 and under and 8 and up",a:["preschool","big"],price:"Free",free:true,drop:true,src:"https://www.trinitynewhaven.org/children-youth-and-family-ministry-events",s:[[0,[["10:30","11:30"]],"2026-09-27","2026-12-31"]]},
+ {t:"Children's Sunday School",v:"cpc",ages:"Age 2 through teens",a:["toddler","preschool","big"],price:"Free",free:true,drop:true,src:"https://cpcnewhaven.org/sundays.html",s:[[0,[["10:30","11:30"]],"2026-09-27","2026-12-31"]]},
+ {t:"Seedlings nature class",v:"cg",ages:"Young children with a caregiver",a:["toddler","preschool"],price:"$195 for 10 weeks (Wednesday: $175 for 9 weeks)",free:false,drop:false,src:"https://www.commongroundct.org/about-seedlings",s:[[1,[["09:00","10:30"],["13:00","14:30"]],"2026-09-14","2026-11-16"],[3,[["09:00","10:30"]],"2026-09-23","2026-11-18"],[5,[["09:00","10:30"]],"2026-09-11","2026-11-13"]]},
+ {t:"Art With You and Me",v:"caw",ages:"Ages 3–4 with an adult",a:["preschool"],price:"$233 for 7 classes",free:false,drop:false,src:"https://creativeartsworkshop.org/courses/no-term/art-with-you-and-me/",s:[[3,[["09:30","10:30"]],"2026-09-16","2026-10-28"],[3,[["09:30","10:30"]],"2026-11-04","2026-12-16"],[6,[["09:30","10:30"]],"2026-09-19","2026-10-31"],[6,[["09:30","10:30"]],"2026-11-07","2026-12-19"]]},
+ {t:"Art Stuff n' Fun",v:"caw",ages:"Ages 4–6",a:["preschool","big"],price:"$177.50 for 7 classes",free:false,drop:false,src:"https://creativeartsworkshop.org/courses/no-term/art-stuff-n-fun/",s:[[6,[["11:00","12:00"]],"2026-09-19","2026-10-31"],[6,[["11:00","12:00"]],"2026-11-07","2026-12-19"]]},
+ {t:"Toddler Time at the Peabody",v:"peabody",ages:"Ages 1–3",a:["toddler"],price:"Free",free:true,drop:true,check:true,note:"Usually the first Saturday of the month. Oct 3 is confirmed; check each month's listing, since registration may be required.",src:"https://peabody.yale.edu/events/toddler-time",s:[[6,[["11:00","12:00"]],"2026-10-03","2026-12-31",1]]},
+ {t:"Make Time! family art",v:"ycba",ages:"Designed for ages 5–12, everyone welcome",a:["preschool","big"],price:"Free",free:true,drop:true,src:"https://britishart.yale.edu/exhibitions-programs/make-time-see-touch-landscapes",s:[[6,[["14:00","16:00"]],"2026-09-26","2026-12-31",4]]},
+ {t:"Free First Sunday",v:"nhm",ages:"All ages",a:["baby","toddler","preschool","big"],price:"Free",free:true,drop:true,src:"https://www.newhavenmuseum.org/free-first-sunday/",s:[[0,[["13:00","16:00"]],"2026-10-04","2026-12-31",1]]},
+ {t:"Story Time at the Peabody",v:"peabody",ages:"Best for 8 and under",a:["toddler","preschool","big"],price:"Free",free:true,drop:true,check:true,note:"Half-hour story times, several each weekend afternoon. Check the Peabody calendar for date-specific changes.",s:[[6,[["11:00","11:30"],["12:00","12:30"],["13:00","13:30"],["14:00","14:30"]],"2026-09-26","2026-12-31"],[0,[["12:30","13:00"],["13:30","14:00"],["14:30","15:00"],["15:30","16:00"]],"2026-09-27","2026-12-31"]]},
+ {t:"New Haven Grand Prix & Apizza Feast",v:"green",special:"fall",ages:"All ages",a:["baby","toddler","preschool","big"],price:"Free. The pizza-costume world-record attempt is ticketed.",free:true,drop:true,blurb:"Bike races around the Green, 70+ vendors and New Haven's famous apizza. The pizza-costume world-record attempt is 6–7pm on the Green. College St between Crown and Elm closes at 9am, nearby blocks at noon.",src:"https://visitnewhaven.com/events/new-haven-grand-prix/",when:[{from:"2026-09-25",t:[["16:00","22:00"]]}]},
+ {t:"¡Fiesta Latina!",v:"junta",special:"fall",ages:"All ages",a:["baby","toddler","preschool","big"],price:"Free",free:true,drop:true,blurb:"A celebration of Hispanic cultures with music and community programming, hosted by Junta and the Peabody. Saturday is at Junta; Sunday's performances are at the Peabody.",src:"https://peabody.yale.edu/events/fiesta-latina-2026",when:[{from:"2026-09-26",t:[["12:00","17:00"]]}]},
+ {t:"¡Fiesta Latina!",v:"peabody",special:"fall",ages:"All ages",a:["baby","toddler","preschool","big"],price:"Free",free:true,drop:true,blurb:"A day of performances at the Peabody, part of the weekend celebration of Hispanic cultures with Junta for Progressive Action.",src:"https://peabody.yale.edu/events/fiesta-latina-2026",when:[{from:"2026-09-27",t:[["12:00","17:00"]]}]},
+ {t:"New Haven Chalk Art Festival",v:"broadway",special:"fall",ages:"All ages",a:["baby","toddler","preschool","big"],price:"Free",free:true,drop:true,blurb:"60+ artists chalk the Broadway District from noon to 3:30, and there's a Family Fun Zone with free chalk. Rain date is Oct 4. Free parking at the 150 York St garage with a validation stamp.",src:"https://theshopsatyale.com/chalkart/",when:[{from:"2026-10-03",t:[["12:00","15:30"]]}]},
+ {t:"THE WIZ",v:"shubert",special:"fall",ages:"Families",a:["preschool","big"],price:"Tickets required",ticket:true,blurb:"The Tony-winning musical on tour. A good first Broadway-style show for bigger kids.",src:"https://www.shubert.com/events/detail/the-wiz",when:[{from:"2026-10-01",to:"2026-10-04",t:[]}]},
+ {t:"Elmo's Got the Moves (Sesame Street Live!)",v:"shubert",special:"fall",ages:"Toddlers and preschoolers",a:["toddler","preschool"],price:"Tickets required",ticket:true,src:"https://www.shubert.com/events/detail/elmos-got-the-moves",when:[{from:"2026-10-09",t:[["18:00",null]]}]},
+ {t:"Faith & Family Fall Festival",v:"hope",special:"fall",ages:"All ages",a:["baby","toddler","preschool","big"],price:"RSVP on Eventbrite",rsvp:true,blurb:"Fall activities, food and fun celebrating 25 years of Hope Child Development Center. Rain date is Oct 24.",src:"https://www.eventbrite.com/e/2nd-annual-faith-family-fall-festival-tickets-1993959908763",when:[{from:"2026-10-17",t:[["13:00","16:00"]]}]},
+ {t:"Shubert Free Family Fun Day",v:"shubert",special:"hw",ages:"All ages; costumes welcome for kids under 12",a:["baby","toddler","preschool","big"],price:"Free",free:true,drop:true,rsvp:true,blurb:"A self-guided backstage tour of the Shubert with trick-or-treat stations along the way. Come in costume, but leave prop weapons at home. It kicks off the Shubert's holiday food and toy drive, so bring a donation if you can.",src:"https://www.shubert.com/events/detail/free-family-fun-day",when:[{from:"2026-10-25",t:[["10:00","13:00"]]}]},
+ {t:"Doctor Gasp and the Eeks",v:"ewm",special:"hw",ages:"Families",a:["preschool","big"],price:"See the museum's page for tickets",check:true,noSignup:true,blurb:"A Halloween concert from folk musician Dan Blakeslee's spooky alter ego, Doctor Gasp, and his band the Eeks. A fun, not-too-scary way to kick off Halloween week.",src:"https://www.eliwhitney.org/events",when:[{from:"2026-10-24",t:[["18:00","20:00"]]}]},
+ {t:"How the Grinch Stole Christmas! The Musical",v:"shubert",special:"hol",ages:"Families",a:["preschool","big"],price:"Tickets required",ticket:true,src:"https://www.shubert.com/events/detail/dr-seuss-how-the-grinch-stole-christmas-the-musical",when:[{from:"2026-11-18",to:"2026-11-22",t:[]}]},
+ {t:"The Nutcracker (New Haven Ballet)",v:"shubert",special:"hol",ages:"Families",a:["preschool","big"],price:"Tickets required",ticket:true,src:"https://www.shubert.com/events/detail/new-haven-ballet-presents-the-nutcracker",when:[{from:"2026-12-11",to:"2026-12-13",t:[]}]},
+ {t:"The Hip Hop Nutcracker",v:"shubert",special:"hol",ages:"Families",a:["preschool","big"],price:"Tickets required",ticket:true,src:"https://www.shubert.com/events/detail/the-hip-hop-nutcracker",when:[{from:"2026-12-22",t:[["19:00",null]]}]}
+  ],
+
+  tba: [
+{g:"hw",t:"Pumpkin Patch Trolley",w:"Shore Line Trolley Museum, East Haven",p:"A non-spooky trolley ride to pick a little pumpkin, usually on October weekends. 2026 dates aren't posted yet.",src:"https://shorelinetrolley.org/"},
+ {g:"hw",t:"Spooktacular at the Peabody",w:"Yale Peabody Museum",p:"Free costume day for kids up to 10, held on a late-October Saturday in past years. Watch for the 2026 date.",src:"https://peabody.yale.edu/events/upcoming"},
+ {g:"hol",t:"City Tree Lighting",w:"New Haven Green",p:"Music, performances and amusement rides as the big tree lights up. Usually early December; the 2026 date is still to be announced.",src:"https://theshopsatyale.com/holiday/"}
+  ],
+
+  classes: [
+    {id:"nms", c:"music", n:"Neighborhood Music School", u:"https://nmsnewhaven.org/music-classes", blurb:"Early-childhood music classes you take together, with dance, drama and instrument lessons to grow into. It's Connecticut's largest community arts school.", ages:"6 months and up", where:"100 Audubon St, Downtown"},
+    {id:"musicalfolk", c:"music", n:"Music Together (Musical Folk)", u:"https://www.musicalfolk.com/OurClasses.html", blurb:"Sing, dance and play instruments with your little one. There are baby classes (0–9 months), mixed-age classes (birth to 5), Rhythm Kids (4–8) and ukulele (6+).", ages:"Birth to 8, with a grown-up", where:"Six spots around New Haven"},
+    {id:"musichaven", c:"music", n:"Music Haven", u:"https://www.musichavenct.org/", blurb:"Tuition-free violin, viola and cello: one-on-one lessons, group classes and an instrument, all at no cost, taught by the resident Haven String Quartet. Kids start in grades 1–3 and can stay through high school. Spots are for kids from certain New Haven neighborhoods, so check eligibility.", ages:"Starts in grades 1–3", where:"New Haven"},
+    {id:"schoolofrock", c:"music", n:"School of Rock North Haven", u:"https://www.schoolofrock.com/locations/northhaven", blurb:"Little Wing for toddlers and preschoolers, then Rookies, then Rock 101 for 8–13-year-olds: a weekly band rehearsal plus a private lesson, playing real rock songs.", ages:"Toddlers to teens", where:"North Haven"},
+    {id:"nhaopa", c:"music", n:"New Haven Academy of Performing Arts", u:"https://www.nhaopa.com/acting-classes.html", blurb:"Voice, piano, guitar and ukulele lessons, plus 12-week musical theater classes that end in a cabaret. Their site is in English and Spanish.", ages:"Young kids to teens", where:"East Haven"},
+    {id:"nhb", c:"dance", n:"New Haven Ballet", u:"https://newhavenballet.org/programs-tuition/programs-tuition-childrens/", blurb:"A gentle, playful first ballet that builds toward classical training. Dancers in Creative Ballet and up can audition for The Nutcracker at the Shubert.", ages:"Ages 3–9 (Children's Division)", where:"New Haven and nearby studios"},
+    {id:"nhbshared", c:"dance", n:"Shared Ability at New Haven Ballet", u:"https://newhavenballet.org/news-events/", blurb:"A weekly, wheelchair-accessible dance class for kids and young adults with disabilities, including autism, Down syndrome and cerebral palsy. Dancers work toward a spring performance at the Shubert.", ages:"Kids and young adults with disabilities", where:"New Haven Ballet"},
+    {id:"leap", c:"swim", n:"LEAP Aquatics", u:"https://www.leapforkids.org/swimming", blurb:"Inclusive community swim lessons in 5-week sessions. There's a toddler class on Friday evenings and youth levels on weeknights.", ages:"Toddlers to adults", where:"31 Jefferson St, New Haven"},
+    {id:"jccswim", c:"swim", n:"JCC Swim With Me", u:"https://www.jccnh.org/swim-with-me", blurb:"Parent-and-baby swim with games, songs and water safety. Instructors show you how to keep practicing between classes.", ages:"6–36 months, with a grown-up", where:"JCC of Greater New Haven, Woodbridge"},
+    {id:"bulldog", c:"swim", n:"Bulldog Swim Academy", u:"https://bulldogswimacademy.com/", blurb:"Small, self-paced swim classes where kids move up as they master each skill.", ages:"7 months and up", where:"New Haven and Orange"},
+    {id:"cityrec", c:"swim", n:"New Haven Youth & Recreation", u:"https://www.newhavenct.gov/government/departments-divisions/youth-and-recreation-department/recreation", blurb:"The city's own programs: youth swim lessons at Martinez School, open swim for New Haven residents (kids under 13 swim with an adult), and beginner tennis for ages 5–7. Check the page for this season's times.", ages:"Kids; open swim for all ages with an adult", where:"Martinez School, 100 James St, Fair Haven"},
+    {id:"jccpre", c:"move", n:"JCC preschool classes", u:"https://www.jccnh.org/programguide/children-youth", blurb:"Little Tumble & Move, Mini Track and Field, and hands-on science and math clubs made for preschoolers.", ages:"Preschoolers", where:"JCC of Greater New Haven, Woodbridge"},
+    {id:"justtumble", c:"move", n:"Just Tumble", u:"https://www.justtumblect.com/", blurb:"Tumble Tots classes and Parent & Me play groups for balance, coordination and burning off energy, plus open gym.", ages:"Toddlers and up", where:"North Haven"},
+    {id:"squirts", c:"move", n:"Soccer Squirts", u:"https://soccersquirts.com/ct/1175-new-haven-preschool-kindergarten-childrens-soccer-classes-activities", blurb:"Parent & Me soccer for first-timers and preschool soccer classes, with new sessions every season.", ages:"18 months to 8", where:"New Haven and nearby towns"},
+    {id:"skate", c:"move", n:"Skate New Haven", u:"https://skate-newhaven.com/", blurb:"Public skating and group lessons at the Ralph Walker Rink, an open-air rink in East Rock. It reopens for the season in October.", ages:"All ages", where:"1080 State St, East Rock"},
+    {id:"caw", c:"art", n:"Creative Arts Workshop", u:"https://creativeartsworkshop.org/courses/no-term/art-with-you-and-me/", blurb:"Messy, hands-on art: Art With You and Me for 3–4-year-olds with a grown-up, and Art Stuff n' Fun for 4–6 on their own. Classes run in 7-week sessions.", ages:"Ages 3–6", where:"80 Audubon St, Downtown"},
+    {id:"ycth", c:"art", n:"Yale Children's Theater workshops", u:"https://yalechildrenstheater.org/", blurb:"Weekly acting and improv workshops taught by Yale students on campus. They also put on shows made for kids in grades K–5.", ages:"Grades K–12", where:"Yale campus, Downtown"},
+    {id:"nmsdrama", c:"art", n:"NMS Drama & Film", u:"https://nmsnewhaven.org/drama-film-classes", blurb:"Acting, film, musical theater and spoken-word classes and ensembles at Neighborhood Music School.", ages:"Kids and teens", where:"100 Audubon St, Downtown"},
+    {id:"eliwhitney", c:"build", n:"Eli Whitney Museum & Workshop", u:"https://www.eliwhitney.org/", blurb:"Walk-in weekend building projects where kids pick a kit and make it on the spot, from boats to pinball machines. There's also a marble wall, a toy-train display, and workshops during school vacations.", ages:"About 4–12, with a grown-up", where:"915 Whitney Ave, Hamden"},
+    {id:"seedlings", c:"nature", n:"Seedlings at Common Ground", u:"https://www.commongroundct.org/about-seedlings", blurb:"An outdoor nature class on a working farm: little ones explore gardens, animals and the woods with their grown-ups.", ages:"Young kids, with a grown-up", where:"358 Springside Ave, Westville"}
+  ],
+
+  library: {for:"Free, every week", name:"New Haven Free Public Library", desc:"Library cards are free for New Haven residents. Branches host Stay & Play, bilingual storytime and more.", a:"See library storytimes", href:"https://nhfpl.org/children/storytimesandmore/"},
+
+  extraResources: []
+};
+</script>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track" id="tickerTrack"></div></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#today" aria-label="New Haven Kids Calendar, home">
+      
+      <span>New Haven Kids Calendar</span>
+    </a>
+    <div class="navwrap">
+      <nav class="nav" aria-label="Sections">
+        <a href="#bigdays">Big days</a>
+        <a href="#events">Calendar</a>
+        <a href="#classes">Classes</a>
+        <a href="#things">Things to do</a>
+        <a href="#resources">Resources</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="today">
+    <div class="band"><div class="wrap bandwrap">
+      <h1>What are we doing <em>today?</em></h1>
+      <p class="lede">Storytimes, festivals, classes and things to do for little ones in New Haven, checked and gathered in one place. Tap a day to see what's on.</p>
+      <p class="fig">The week ahead in New Haven, Conn.</p>
+      <div class="days" id="days" role="group" aria-label="Pick a day this week"></div>
+      <div class="herorow">
+        <button class="wkbtn" type="button" id="weekendBtn" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><span>This weekend</span></button>
+      </div>
+    </div></div>
+    <div class="wrap">
+      <div class="dayhead"><h2 id="dayTitle">Today</h2><button class="act" type="button" id="shareDay"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5"></path><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"></path></svg><span id="shareDayLabel">Share this day</span></button></div>
+      <ul class="list" id="dayList" aria-live="polite"></ul>
+    </div>
+  </section>
+
+  <section class="block" id="bigdays">
+    <div class="wrap">
+      <h2 class="sec">Big days</h2>
+      <p class="intro">The once-a-year stuff worth planning around: festivals, Halloween fun and holiday shows. Tap one to jump to it on the calendar.</p>
+      <p class="swipehint">Swipe for Halloween and holidays</p>
+      <div class="bigdays" id="bigList"></div>
+    </div>
+  </section>
+
+  <section class="block" id="events">
+    <div class="wrap">
+      <h2 class="sec">The calendar</h2>
+      <p class="intro">Everything we're tracking, week by week. Narrow it down by age, or show only the free, drop-in or rainy-day stuff.</p>
+      <div class="filters">
+        <div class="fgroup" role="group" aria-label="Filter by age">
+          <span class="flabel">Ages</span>
+          <button class="chip" data-age="all" aria-pressed="true">All</button>
+          <button class="chip" data-age="baby" aria-pressed="false">Babies</button>
+          <button class="chip" data-age="toddler" aria-pressed="false">Toddlers</button>
+          <button class="chip" data-age="preschool" aria-pressed="false">Preschool</button>
+          <button class="chip" data-age="big" aria-pressed="false">Big kids</button>
+        </div>
+        <div class="fgroup" id="hoodWrap">
+          <label class="flabel" for="hoodSel">Area</label>
+          <select class="chip selectchip" id="hoodSel"></select>
+        </div>
+        <div class="fgroup" role="group" aria-label="Other filters">
+          <span class="flabel">Show only</span>
+          <button class="chip" data-toggle="free" aria-pressed="false">Free</button>
+          <button class="chip" data-toggle="dropin" aria-pressed="false">Drop-in</button>
+          <button class="chip" data-toggle="indoor" aria-pressed="false">Rainy day (indoors)</button>
+          <button class="chip" data-toggle="special" aria-pressed="false">Big days</button>
+        </div>
+      </div>
+      <div class="weeknav">
+        <button class="navbtn" id="prevWeek" aria-label="Previous week">‹</button>
+        <button class="navbtn" id="nextWeek" aria-label="Next week">›</button>
+        <h3 id="weekTitle" aria-live="polite"></h3>
+      </div>
+      <div id="weekList"></div>
+      <p class="fineprint">Holiday closures aren't always reflected here. Events marked "Check first" are recurring slots we haven't been able to confirm for every date, so look at the organizer's page before you head out.</p>
+    </div>
+  </section>
+
+  <!-- Things to do: hand-written per town (parks, museums, short drives). Not JS-driven. -->
+  <section class="block" id="things">
+    <div class="wrap">
+      <h2 class="sec">Things to do anytime</h2>
+      <p class="intro">No schedule needed. Good for the mornings when everyone's up at 6 and you need somewhere to be by 9.</p>
+      <p class="swipehint">Swipe for rainy-day spots and short drives</p>
+<div class="places">
+        <div>
+          <h3>Get outside</h3>
+          <ul>
+            <li><strong>East Rock Park</strong><span>Trails, a summit with views over the city and harbor, and plenty of room to run.</span></li>
+            <li><strong>Lighthouse Point Park</strong><span>Beach, the old lighthouse, and a historic carousel that runs in season.</span></li>
+            <li><strong>Edgewood Park</strong><span>A big neighborhood park with a playground, pond and paths for scooters and strollers.</span></li>
+            <li><strong>Common Ground</strong><span>Farm animals and gardens on Springside Ave. Saturday Open Farm Days are free through November.</span></li>
+            <li><strong>Wooster Square</strong><span>A stroller loop under the trees, and famous cherry blossoms in April. Pizza is right there.</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="rain">Rainy day, indoors</h3>
+          <ul>
+            <li><strong>Yale Peabody Museum</strong><span>Dinosaurs, dioramas and weekend story times. Free admission.</span></li>
+            <li><strong>Connecticut Children's Museum</strong><span>Hands-on play for small kids on Wall St. Open Thursday afternoons, Friday and Saturday.</span></li>
+            <li><strong>Yale Center for British Art</strong><span>Free, calm, and hosts Make Time! family art afternoons on fourth Saturdays.</span></li>
+            <li><strong>Yale University Art Gallery</strong><span>Free and stroller-friendly, with a lot of room to wander.</span></li>
+            <li><strong>Your library branch</strong><span>Every NHFPL branch has a children's room, and Stay &amp; Play runs somewhere almost every weekday.</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="drive">Worth a short drive</h3>
+          <ul>
+            <li><strong>Shoreline Trolley Museum</strong><span>Real trolley rides in East Haven, seasonal. A hit with anyone who loves vehicles.</span></li>
+            <li><strong>Connecticut's Beardsley Zoo</strong><span>About half an hour away in Bridgeport, sized just right for little legs.</span></li>
+            <li><strong>Hammonasset Beach</strong><span>Long boardwalk and a nature center in Madison. Lovely in fall with no crowds.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="classes">
+    <div class="wrap">
+      <h2 class="sec">Classes &amp; lessons</h2>
+      <p class="intro">Weekly classes worth signing up for, from baby music and first ballet to swim lessons and preschool soccer. Most run in sessions, so check each program's site for start dates and prices.</p>
+      <div class="cchips" id="classChips" role="group" aria-label="Filter classes"></div>
+      <div class="cgrid" id="classList"></div>
+    </div>
+  </section>
+
+  <section class="block" id="resources">
+    <div class="wrap">
+      <h2 class="sec">Resources for moms</h2>
+      <p class="intro">Help with the big things and the everyday things, from pregnancy through the toddler years.</p>
+      <div class="help">
+        <h3>If you're struggling right now</h3>
+        <div id="helpList"></div>
+      </div>
+      <div class="res" id="resList"></div>
+    </div>
+  </section>
+
+
+  <section class="privacy" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap doc">
+      <h2 id="privacy-title">Privacy policy</h2>
+      <p class="updated">Effective September 25, 2026</p>
+      <p>New Haven Kids Calendar (ctkidscalendar.com/new-haven) is part of CT Kids Calendar, a free guide to events, classes and resources for families across Connecticut. We keep things simple: this site has no accounts, no advertising trackers and no cookies. We count visits anonymously so we know what's useful. This policy explains the little information that does change hands when you use the site.</p>
+      <h3>Information we collect</h3>
+      <p>We don't collect personal information through the website itself. You can browse the calendar, classes and resources without telling us who you are, and the site doesn't set cookies.</p>
+      <p>To see how many people use the site, we use GoatCounter, a privacy-friendly visit counter. It records which pages are viewed, the website that sent you here (like Instagram), your general location (country and region) and your browser and screen size. It doesn't use cookies, doesn't follow you to other websites, and doesn't collect your name or anything that identifies you personally.</p>
+      <h3>How we use it</h3>
+      <ul>
+        <li>To publish event details we're given, like the name, place, time, ages, price and the organizer's public link.</li>
+        <li>To talk with businesses and organizations about sponsorship.</li>
+      </ul>
+      <p>We don't sell, rent or trade your information, and we don't add you to a mailing list without asking.</p>
+      <h3>Services we rely on</h3>
+      <p>A few outside services help run the site, and they may receive basic technical information such as your IP address when your browser connects to them:</p>
+      <ul>
+        <li><strong>GitHub Pages</strong> hosts the site. GitHub may keep server logs, including visitor IP addresses, for security. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub privacy statement</a>.</li>
+        <li><strong>Google Fonts</strong> supplies the site's typefaces, so your browser requests them from Google. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>.</li>
+        <li><strong>GoatCounter</strong> counts visits anonymously, as described above. See <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">GoatCounter's privacy policy</a>.</li>
+      </ul>
+      <p>The site also links to other websites, such as Google Maps, Google Calendar, event organizers and community resources. Those sites have their own privacy practices, which we don't control.</p>
+      <h3>Children's privacy</h3>
+      <p>This site is written for parents and caregivers. It isn't directed at children under 13, and we don't knowingly collect information from them. This site doesn't currently have a way to submit information directly, which further limits this risk.</p>
+      <h3>Keeping and deleting your information</h3>
+      <p>We don't currently have a public contact address, so no emails are being collected yet. This policy will be updated when that changes.</p>
+      <h3>Changes to this policy</h3>
+      <p>If we add something new, like a newsletter sign-up, we'll update this policy first and change the date at the top.</p>
+      <p><a href="#today">Back to the calendar</a></p>
+    </div>
+  </section>
+</main>
+
+<nav class="tabbar" aria-label="Sections">
+  <a href="#today" data-tab="today"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><span>Today</span></a>
+  <a href="#bigdays" data-tab="bigdays"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"></path></svg><span>Big days</span></a>
+  <a href="#events" data-tab="events"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg><span>Calendar</span></a>
+  <a href="#classes" data-tab="classes"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg><span>Classes</span></a>
+  <a href="#things" data-tab="things"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>To do</span></a>
+  <a href="#resources" data-tab="resources"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 11.2c0 5-8.8 9.8-8.8 9.8S3.2 16.2 3.2 11.2A4.8 4.8 0 0 1 12 8.5a4.8 4.8 0 0 1 8.8 2.7z"></path></svg><span>Help</span></a>
+</nav>
+
+<dialog class="sheet" id="shareSheet" aria-labelledby="sheetTitle">
+  <div class="sheet-in">
+    <h3 id="sheetTitle">Share with a friend</h3>
+    <p class="sheet-preview" id="sheetPreview"></p>
+    <div class="sheet-grid">
+      <a class="act" id="shSms" href="#">Text message</a>
+      <a class="act" id="shWa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="act" id="shMail" href="#">Email</a>
+      <a class="act" id="shFb" href="#" target="_blank" rel="noopener">Facebook</a>
+      <button class="act primary" type="button" id="shCopy" style="grid-column:1/-1">Copy link</button>
+    </div>
+    <button class="sheet-close" type="button" data-close>Close</button>
+  </div>
+</dialog>
+
+<dialog class="sheet" id="calSheet" aria-labelledby="calTitle">
+  <div class="sheet-in">
+    <h3 id="calTitle">Add to your calendar</h3>
+    <p class="sheet-preview" id="calPreview"></p>
+    <div class="sheet-grid one">
+      <a class="act primary" id="calIcs" href="#" download="event.ics">Apple, Outlook or other calendar</a>
+      <a class="act" id="calGoogle" href="#" target="_blank" rel="noopener">Google Calendar</a>
+    </div>
+    <button class="sheet-close" type="button" data-close>Close</button>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<footer>
+  <div class="wrap">
+    <span>New Haven Kids Calendar · part of <a href="https://ctkidscalendar.com/">CT Kids Calendar</a></span>
+    <span>Schedules last checked September 2026 · <a href="#privacy">Privacy policy</a></span>
+  </div>
+</footer>
+
+<script data-goatcounter="https://ctkidscalendar.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="/shared/app.js"></script>
+</body>
+</html>

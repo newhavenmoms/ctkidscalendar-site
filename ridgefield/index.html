@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ridgefield Kids Calendar — events, classes and resources for Ridgefield families</title>
+<meta name="description" content="What's happening for kids and families in Ridgefield, CT this week: storytimes, classes, festivals and local resources, all in one place.">
+<meta name="color-scheme" content="only light">
+<meta name="theme-color" content="#1B2A4A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CT Kids Calendar">
+<meta property="og:title" content="Ridgefield Kids Calendar: what are we doing today?">
+<meta property="og:description" content="Storytimes, festivals, classes and local resources for little ones in Ridgefield, CT.">
+<meta property="og:url" content="https://ctkidscalendar.com/ridgefield/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared/style.css">
+<style>
+  /* This town's ONE accent variable. Everything else (navy, cream, yellow) is shared. */
+  :root{ --accent: #BFE0B0; }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     TOWN CONFIG — real content for this town goes here.
+     Replace every {{...}} and empty array before publishing.
+     See /shared/TOWN-TEMPLATE.md for the full field reference.
+     ============================================================ -->
+<script>
+window.TOWN = {
+  name: "Ridgefield Kids Calendar",
+  townLabel: "Ridgefield, CT",
+  url: "https://ctkidscalendar.com/ridgefield/",
+  email: "",
+  instagram: "",
+  calendarThrough: "2026-12-31",
+
+  venues: {
+    "ridgefield-library": ["Ridgefield Library", "472 Main St"],
+    "ridgefield-guild-of-artists": ["Ridgefield Guild of Artists", "34 Halpin Ln"],
+    "ridgefield-conservatory-of-dance": ["Ridgefield Conservatory of Dance", "440 Main St"],
+    "landmark-preschool": ["Landmark Preschool", "20 Portland Ave"],
+    "ridgefield-parks-recreation": ["Ridgefield Parks & Recreation", "195 Danbury Rd / various Ridgefield sites"],
+    "soccer-club-of-ridgefield-ridgefield-fie": ["Soccer Club of Ridgefield — Ridgefield fields", "Ridgefield"],
+    "ridgefield-basketball-association-see-cl": ["Ridgefield Basketball Association — See clinic page", "Ridgefield"],
+    "ridgefield-academy": ["Ridgefield Academy", "223 W Mountain Rd"],
+    "ridgefield-farmers-market-jesse-lee-gree": ["Ridgefield Farmers Market — Jesse Lee Greens", "207 Main St"],
+    "ridgefield-library-ridgefield-farmers-ma": ["Ridgefield Library + Ridgefield Farmers Market — Jesse Lee Greens", "207 Main St"],
+    "the-aldrich-contemporary-art-museum-ridg": ["The Aldrich Contemporary Art Museum + Ridgefield Library", "258 Main St"],
+    "town-of-ridgefield-main-street": ["Town of Ridgefield — Main Street", "Ridgefield"],
+    "ridgefield-community-event-ballard-park": ["Ridgefield community event — Ballard Park", "Ridgefield"],
+    "the-aldrich-contemporary-art-museum": ["The Aldrich Contemporary Art Museum", "258 Main St"],
+    "the-aldrich-ridgefield-library-the-aldri": ["The Aldrich + Ridgefield Library — The Aldrich Contemporary Art Museum", "258 Main St"],
+    "keeler-tavern-museum-history-center": ["Keeler Tavern Museum & History Center", "152 Main St"],
+    "keeler-tavern-museum-history-center-carr": ["Keeler Tavern Museum & History Center — Carriage Barn", "152 Main St"],
+    "woodcock-nature-center": ["Woodcock Nature Center", "56 Deer Run Rd"],
+    "woodcock-nature-center-ridgefield-conser": ["Woodcock Nature Center / Ridgefield Conservation Commission", "56 Deer Run Rd"],
+    "the-ridgefield-playhouse": ["The Ridgefield Playhouse", "80 East Ridge Rd"],
+    "the-ridgefield-playhouse-field-at-vetera": ["The Ridgefield Playhouse — Field at Veterans Park", "Ridgefield"],
+    "a-c-t-of-connecticut": ["A.C.T. of Connecticut", "36 Old Quarry Rd"],
+    "ridgefield-theater-barn": ["Ridgefield Theater Barn", "37 Halpin Ln"],
+    "ridgefield-parks-recreation-ridgefield-r": ["Ridgefield Parks & Recreation — Ridgefield Recreation Center / program sites", "195 Danbury Rd"],
+    "ridgefield-parks-recreation-ridgefield-r-2": ["Ridgefield Parks & Recreation — Ridgefield Recreation Center", "195 Danbury Rd"],
+    "ridgefield-parks-recreation-ridgefield-r-3": ["Ridgefield Parks & Recreation — Ridgefield Recreation Center Pool", "195 Danbury Rd"],
+    "little-sprouts-play-place": ["Little Sprouts Play Place", "15 Danbury Rd"],
+    "books-on-the-common": ["Books on the Common", "404 Main St"],
+    "toy-chest": ["Toy Chest", "441 Main St"],
+    "some-books": ["Some Books", "346 Ethan Allen Hwy"],
+    "way-of-the-sword-academy": ["Way of the Sword Academy", "21 Governor St"],
+    "ridgefield-school-of-dance": ["Ridgefield School of Dance", "66 Grove St"],
+    "ridgefield-school-of-dance-ridgefield-pe": ["Ridgefield School of Dance — Ridgefield performance venue", "Ridgefield"],
+    "dance-factory-ridgefield": ["Dance Factory Ridgefield", "722 Danbury Rd"],
+    "enchanted-garden-studios": ["Enchanted Garden Studios", "165 Danbury Rd & 529 Ethan Allen Hwy"],
+    "enchanted-garden-studios-enchanted-garde": ["Enchanted Garden Studios — Enchanted Garden Studio Two", "529 Ethan Allen Hwy"],
+    "town-state-of-connecticut-ballard-park": ["Town/State of Connecticut — Ballard Park", "485 Main St"],
+    "town-state-of-connecticut-bennett-s-pond": ["Town/State of Connecticut — Bennett's Pond State Park", "Bennetts Farm Rd"],
+    "town-state-of-connecticut-seth-low-pierr": ["Town/State of Connecticut — Seth Low Pierrepont State Park Reserve", "139 Knollwood Dr"],
+    "town-state-of-connecticut-martin-park-gr": ["Town/State of Connecticut — Martin Park / Great Pond", "Ridgebury Rd area"],
+    "connecticut-giant-pumpkin-growers-club-b": ["Connecticut Giant Pumpkin Growers Club — Ballard Park", "485 Main St"],
+    "ridgefield-chamber-of-commerce-downtown-": ["Ridgefield Chamber of Commerce — Downtown Ridgefield", "400 Main St"],
+    "town-of-ridgefield-main-street-to-ballar": ["Town of Ridgefield — Main Street to Ballard Park", "Ridgefield"]
+  },
+
+  venueMeta: {
+    "ridgefield-library": [null, 1],
+    "ridgefield-guild-of-artists": [null, 1],
+    "ridgefield-conservatory-of-dance": [null, 1],
+    "landmark-preschool": [null, 1],
+    "ridgefield-parks-recreation": [null, null],
+    "soccer-club-of-ridgefield-ridgefield-fie": [null, 0],
+    "ridgefield-basketball-association-see-cl": [null, 1],
+    "ridgefield-academy": [null, 1],
+    "ridgefield-farmers-market-jesse-lee-gree": [null, 0],
+    "ridgefield-library-ridgefield-farmers-ma": [null, 0],
+    "the-aldrich-contemporary-art-museum-ridg": [null, 1],
+    "town-of-ridgefield-main-street": [null, 0],
+    "ridgefield-community-event-ballard-park": [null, 0],
+    "the-aldrich-contemporary-art-museum": [null, 1],
+    "the-aldrich-ridgefield-library-the-aldri": [null, 1],
+    "keeler-tavern-museum-history-center": [null, 1],
+    "keeler-tavern-museum-history-center-carr": [null, 1],
+    "woodcock-nature-center": [null, 0],
+    "woodcock-nature-center-ridgefield-conser": [null, 0],
+    "the-ridgefield-playhouse": [null, 1],
+    "the-ridgefield-playhouse-field-at-vetera": [null, 0],
+    "a-c-t-of-connecticut": [null, 1],
+    "ridgefield-theater-barn": [null, 1],
+    "ridgefield-parks-recreation-ridgefield-r": [null, 1],
+    "ridgefield-parks-recreation-ridgefield-r-2": [null, 1],
+    "ridgefield-parks-recreation-ridgefield-r-3": [null, 1],
+    "little-sprouts-play-place": [null, 1],
+    "books-on-the-common": [null, 1],
+    "toy-chest": [null, 1],
+    "some-books": [null, 1],
+    "way-of-the-sword-academy": [null, 1],
+    "ridgefield-school-of-dance": [null, 1],
+    "ridgefield-school-of-dance-ridgefield-pe": [null, 1],
+    "dance-factory-ridgefield": [null, 1],
+    "enchanted-garden-studios": [null, 1],
+    "enchanted-garden-studios-enchanted-garde": [null, 1],
+    "town-state-of-connecticut-ballard-park": [null, 0],
+    "town-state-of-connecticut-bennett-s-pond": [null, 0],
+    "town-state-of-connecticut-seth-low-pierr": [null, 0],
+    "town-state-of-connecticut-martin-park-gr": [null, 0],
+    "connecticut-giant-pumpkin-growers-club-b": [null, 0],
+    "ridgefield-chamber-of-commerce-downtown-": [null, 0],
+    "town-of-ridgefield-main-street-to-ballar": [null, 0]
+  },
+
+  hoods: [],
+
+  events: [
+    {t:"Mother Goose", v:"ridgefield-library", ages:"Walkers ages 12–24 months", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://ridgefieldlibrary.librarymarket.com/event/mother-goose-ages-12-24-months-149706", s:[[2, [["10:30", "11:00"]], "2026-09-08", "2026-11-24"]]},
+    {t:"Preschool Storytime", v:"ridgefield-library", ages:"Ages 3–5", a:["preschool", "big"], price:"Free", free:true, drop:false, rsvp:false, check:true, blurb:"", src:"https://ridgefieldlibrary.librarymarket.com/event/preschool-storytime-144208", s:[[3, [["10:30", "11:15"]], "2026-09-14", "2026-12-19"]]},
+    {t:"All-Age Family Storytime", v:"ridgefield-library", ages:"All ages / families", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:true, blurb:"", src:"https://ridgefieldlibrary.librarymarket.com/event/all-age-family-storytime-117423", s:[[1, [["10:30", "11:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Ridgefield Farmers Market", v:"ridgefield-farmers-market-jesse-lee-gree", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Family activities and live music are part of the market programming.", src:"https://www.ridgefieldfarmersmarket.org/", s:[[6, [["10:00", "13:00"]], "2026-06-20", "2026-10-03"]]},
+    {t:"Storytime at the Ridgefield Farmers Market", v:"ridgefield-library-ridgefield-farmers-ma", ages:"All ages / families", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:true, blurb:"Useful recurring model to watch for 2027; sponsored by Friends of Ridgefield Library.", src:"https://ridgefieldlibrary.librarymarket.com/event/storytime-ridgefield-farmers-market-146128", s:[[6, [["12:00", "12:30"]], "2026-09-14", "2026-12-19"]]},
+    {t:"All-Age Family Storytime", v:"ridgefield-library", ages:"All ages + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Talk, read, play, move and sing together.", src:"https://ridgefieldlibrary.org/", s:[[1, [["10:30", "11:00"]], "2026-11-30", "2026-11-30"]]},
+    {t:"Mother Goose", v:"ridgefield-library", ages:"Walkers ages 12–24 months + caregiver", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://ridgefieldlibrary.librarymarket.com/event/mother-goose-ages-12-24-months-149706", s:[[2, [["10:30", "11:00"]], "2026-09-08", "2026-11-24"]]},
+    {t:"Preschool Storytime", v:"ridgefield-library", ages:"Ages 3–5", a:["preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.ridgefieldpubliclibrary.com/children-programs", s:[[3, [["10:30", "11:15"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Third Saturdays – Free Admission", v:"the-aldrich-contemporary-art-museum", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"Includes art-making; many months pair Story Time at 10:30 and All Ages Discovery Tour at 1.", src:"https://thealdrich.org/events/third-saturdays-23", s:[[6, [["10:00", "17:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Story Time for Kids", v:"the-aldrich-ridgefield-library-the-aldri", ages:"Perfect for ages 6 and under + family", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"Story followed by studio art-making inspired by exhibitions.", src:"https://thealdrich.org/learn/children-and-family-programs", s:[[6, [["10:30", "11:30"]], "2026-09-14", "2026-12-19"]]},
+    {t:"All Ages Discovery Tour", v:"the-aldrich-contemporary-art-museum", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"Interactive, judgment-free exhibition tour.", src:"https://thealdrich.org/learn", s:[[6, [["13:00", "14:00"]], "2026-11-21", "2026-11-21"]]},
+    {t:"Sensory Saturday", v:"the-aldrich-contemporary-art-museum", ages:"Ages 4–12 with developmental/learning disabilities/autism + family", a:["preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"Relaxed gallery exploration using touch, sound and movement.", src:"https://thealdrich.org/events", s:[[6, [["10:30", "11:30"]], "2026-10-24", "2026-10-24"]]},
+    {t:"Plants and Seeds Guided Hike", v:"woodcock-nature-center-ridgefield-conser", ages:"Adults and families", a:["big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.woodcocknaturecenter.org/upcomingevents", s:[[6, [["10:30", "12:00"]], "2026-10-03", "2026-10-03"]]},
+    {t:"Ridgefield Farmers Market", v:"ridgefield-farmers-market-jesse-lee-gree", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Family activities and live music alongside producers-only market.", src:"https://www.ridgefieldfarmersmarket.org/", s:[[6, [["10:00", "13:00"]], "2026-06-20", "2026-10-03"]]},
+    {t:"Storytime at Ridgefield Farmers Market", v:"ridgefield-library-ridgefield-farmers-ma", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:true, blurb:"", src:"https://ridgefieldlibrary.librarymarket.com/event/storytime-ridgefield-farmers-market-146128", s:[[6, [["12:00", "12:30"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Ridgefield Halloween Walk", v:"town-of-ridgefield-main-street", special:"hw", ages:"Families", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Downtown trick-or-treating at shops; organized by the Town.", src:"https://inridgefield.com/events/ridgefields-halloween-walk/", when:[{from:"2026-10-31", to:"2026-10-31", t:[["10:00", "12:00"]]}]},
+    {t:"Giant Pumpkin Weigh Off", v:"ridgefield-community-event-ballard-park", special:"hw", ages:"Families", a:["baby", "toddler", "preschool", "big"], price:"See event listing", free:false, ticket:false, blurb:"Large fall community event surfaced through parent calendar rather than institutional class listings.", src:"https://ridgefieldmom.com/calendar/month/2026-10/", when:[{from:"2026-09-27", to:"2026-09-27", t:[["10:00", "15:00"]]}]},
+    {t:"Jack's Adventures in American History", v:"ridgefield-library", special:"fall", ages:"Grades K–5 + family", a:["big"], price:"Free", free:true, ticket:false, blurb:"Interactive family history program.", src:"https://ridgefieldmom.com/calendar/2026-04-25/", when:[{from:"2026-04-25", to:"2026-04-25", t:[["14:00", "15:00"]]}]},
+    {t:"Summer Reading Kickoff Party", v:"ridgefield-library", special:"fall", ages:"Babies, kids, teens and families", a:["baby", "toddler"], price:"Free", free:true, ticket:false, blurb:"Summer reading signup, free T-shirts while supplies last and prizes.", src:"https://www.ridgefieldpubliclibrary.com/children-programs", when:[{from:"2026-06-27", to:"2026-06-27", t:[["11:00", "13:00"]]}]},
+    {t:"Ghosts of Ridgefield", v:"keeler-tavern-museum-history-center", special:"hw", ages:"Families; check recommended age", a:["baby", "toddler", "preschool", "big"], price:"Ticketed", free:false, ticket:true, blurb:"", src:"https://keelertavernmuseum.org/events/calendar/", when:[{from:"2026-10-23", to:"2026-10-25", t:[["17:00", "19:00"]]}]},
+    {t:"Holiday Stroll Open House", v:"keeler-tavern-museum-history-center", special:"hol", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Check event / stroll admission", free:false, ticket:false, blurb:"", src:"https://keelertavernmuseum.org/events/calendar/", when:[{from:"2026-12-04", to:"2026-12-04", t:[["17:00", "19:00"]]}]},
+    {t:"Ridgefield Town Party", v:"the-ridgefield-playhouse-field-at-vetera", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:true, blurb:"Live music plus Kids Zone with face painting, lawn games, bubble artistry and nonprofit partners.", src:"https://ridgefieldplayhouse.org/event/ridgefield-town-party-2026/", when:[{from:"2026-05-31", to:"2026-05-31", t:[["14:00", null]]}]},
+    {t:"The Nutcracker", v:"ridgefield-school-of-dance-ridgefield-pe", special:"hol", ages:"Families / student dancers", a:["baby", "toddler", "preschool", "big"], price:"Ticketed", free:false, ticket:true, blurb:"", src:"https://www.ridgefieldschoolofdance.com/", when:[{from:"2026-11-20", to:"2026-11-20", t:[]}]},
+    {t:"Annual Giant Pumpkin Weigh-Off", v:"connecticut-giant-pumpkin-growers-club-b", special:"hw", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free admission", free:true, ticket:false, blurb:"Giant pumpkins, growers, music, farm animals, children's activities and vendors.", src:"https://inridgefield.com/events/ridgefields-annual-giant-pumpkin-weigh-off/", when:[{from:"2026-09-27", to:"2026-09-27", t:[["10:00", "15:00"]]}]},
+    {t:"Ridgefield Holiday Stroll", v:"ridgefield-chamber-of-commerce-downtown-", special:"hol", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free / individual activities may vary", free:true, ticket:false, blurb:"Weekend of downtown holiday activities; Keeler Tavern and A.C.T. participate.", src:"https://inridgefield.com/events/holiday-stroll/", when:[{from:"2026-12-04", to:"2026-12-05", t:[]}]},
+    {t:"Memorial Day Parade", v:"town-of-ridgefield-main-street-to-ballar", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Rifle salute, parade down Main Street and ceremonies at Ballard Park.", src:"https://inridgefield.com/events/memorial-day-parade/", when:[{from:"2026-05-25", to:"2026-05-25", t:[["11:30", "13:00"]]}]}
+  ],
+
+  tba: [
+
+  ],
+
+  classes: [
+    {id:"joy-of-art--ridgefield-guild-of-artists", c:"art", n:"Joy of Art", u:"https://rgoa.org/course/joy-of-art-fall-2026/", blurb:"Member $150 / Nonmember $192.", ages:"Ages 7–13", where:"Ridgefield Guild of Artists"},
+    {id:"dance-for-2s-3s-companion--ridgefield-conservatory-of-dance", c:"dance", n:"Dance for 2s & 3s – Companion", u:"https://www.ridgefielddance.org/calendar/", blurb:"RCD lists 35 fall classes; these are the child-focused schedule rows publicly exposed in searchable text. More levels are available. See 2026–27 registration.", ages:"Ages 2–3 + caregiver", where:"Ridgefield Conservatory of Dance"},
+    {id:"dance-for-3s-4s-independent--ridgefield-conservatory-of-dance", c:"dance", n:"Dance for 3s & 4s – Independent", u:"https://www.ridgefielddance.org/calendar/", blurb:"RCD lists 35 fall classes; these are the child-focused schedule rows publicly exposed in searchable text. More levels are available. See 2026–27 registration.", ages:"Ages 3–4", where:"Ridgefield Conservatory of Dance"},
+    {id:"pre-ballet-for-pre-k--ridgefield-conservatory-of-dance", c:"dance", n:"Pre-Ballet for Pre-K", u:"https://www.ridgefielddance.org/calendar/", blurb:"RCD lists 35 fall classes; these are the child-focused schedule rows publicly exposed in searchable text. More levels are available. See 2026–27 registration.", ages:"Pre-K", where:"Ridgefield Conservatory of Dance"},
+    {id:"jazz-ii--ridgefield-conservatory-of-dance", c:"dance", n:"Jazz II", u:"https://www.ridgefielddance.org/calendar/", blurb:"RCD lists 35 fall classes; these are the child-focused schedule rows publicly exposed in searchable text. More levels are available. See 2026–27 registration.", ages:"Placement / school-age", where:"Ridgefield Conservatory of Dance"},
+    {id:"additional-ballet-jazz-modern-levels--ridgefield-conservatory-of-dance", c:"dance", n:"Additional Ballet / Jazz / Modern Levels", u:"https://www.ridgefielddance.org/calendar/", blurb:"Use provider calendar/portal for the complete placement-based schedule. See 2026–27 registration.", ages:"School-age through teen", where:"Ridgefield Conservatory of Dance"},
+    {id:"fun-for-ones--landmark-preschool", c:"move", n:"Fun for Ones", u:"https://www.landmarkpreschool.org/fun-for-ones", blurb:"See registration.", ages:"12–24 months + caregiver", where:"Landmark Preschool"},
+    {id:"recreation-station--ridgefield-parks-recreation", c:"move", n:"Recreation Station", u:"https://www.ridgefieldparksandrec.org/youth-programs/pages/recreation-station", blurb:"Same fee for 1–5 days per week; school bus transportation available from participating schools. Member $298 / Nonmember $348.", ages:"Grades K–5", where:"Ridgefield Parks & Recreation"},
+    {id:"fall-recreation-soccer--soccer-club-of-ridgefield-ridgefield-fie", c:"move", n:"Fall Recreation Soccer", u:"https://www.scor.org/Default.aspx?tabid=927299", blurb:"See registration.", ages:"Pre-K through high school divisions", where:"Soccer Club of Ridgefield — Ridgefield fields"},
+    {id:"fall-basketball-clinic--ridgefield-basketball-association-see-cl", c:"move", n:"Fall Basketball Clinic", u:"https://rbahoops.com/clinics/", blurb:"See registration.", ages:"Boys Grade 4", where:"Ridgefield Basketball Association — See clinic page"},
+    {id:"super-hero-princess-dance-creations--ridgefield-academy", c:"move", n:"Super Hero & Princess Dance Creations", u:"https://www.ridgefieldacademy.org/community/parentresources/after-school-enrichment-clubs", blurb:"Confirm enrollment eligibility; this is listed in Ridgefield Academy's after-school enrichment program. $305 / 10 sessions.", ages:"Preschool 3s & 4s", where:"Ridgefield Academy"},
+    {id:"lego-design-thinkers--ridgefield-academy", c:"move", n:"LEGO Design Thinkers", u:"https://www.ridgefieldacademy.org/community/parentresources/after-school-enrichment-clubs", blurb:"Confirm enrollment eligibility; this is listed in Ridgefield Academy's after-school enrichment program. $305 / 10 sessions.", ages:"Preschool 3s & 4s", where:"Ridgefield Academy"},
+    {id:"storytime-at-the-aldrich--the-aldrich-contemporary-art-museum-ridg", c:"art", n:"Storytime at The Aldrich", u:"https://thealdrich.org/events", blurb:"Art-museum storytime collaboration; monitor individual dates. See event / typically museum family program.", ages:"Ages 6 and under", where:"The Aldrich Contemporary Art Museum + Ridgefield Library"},
+    {id:"co-create-a-family-art-adventure--the-aldrich-contemporary-art-museum", c:"art", n:"Co-Create: A Family Art Adventure", u:"https://thealdrich.org/learn/children-and-family-programs", blurb:"See registration.", ages:"Child + caregiver", where:"The Aldrich Contemporary Art Museum"},
+    {id:"museum-visit-historic-site-tour--keeler-tavern-museum-history-center", c:"move", n:"Museum Visit + Historic Site Tour", u:"https://keelertavernmuseum.org/", blurb:"Four-acre historic campus; admission includes tour and exhibits. Site admission; see current rates.", ages:"Families; best for school-age+", where:"Keeler Tavern Museum & History Center"},
+    {id:"first-sunday--keeler-tavern-museum-history-center", c:"move", n:"First Sunday", u:"https://keelertavernmuseum.org/events/calendar/", blurb:"See event; historically family-access focused.", ages:"All ages / families", where:"Keeler Tavern Museum & History Center"},
+    {id:"hands-on-history-living-off-the-land--keeler-tavern-museum-history-center-carr", c:"move", n:"Hands-On History: Living Off the Land", u:"https://keelertavernmuseum.org/events/calendar/", blurb:"Interactive history exhibition. Included with site admission / check event.", ages:"Families / school-age children", where:"Keeler Tavern Museum & History Center — Carriage Barn"},
+    {id:"trails-playground-birds-of-prey--woodcock-nature-center", c:"nature", n:"Trails, Playground & Birds of Prey", u:"https://www.woodcocknaturecenter.org/visit-wnc", blurb:"Ridgefield-adjacent nonprofit heavily serving Ridgefield families; trails, playground and resident raptors.", ages:"All ages", where:"Woodcock Nature Center"},
+    {id:"storytime-on-the-trails--woodcock-nature-center", c:"music", n:"Storytime: On the Trails", u:"https://www.woodcocknaturecenter.org/upcomingevents", blurb:"Outdoor storytime/nature exploration. See registration.", ages:"Young children + caregiver", where:"Woodcock Nature Center"},
+    {id:"minecraft-vs-nature--woodcock-nature-center", c:"build", n:"Minecraft vs Nature", u:"https://www.woodcocknaturecenter.org/upcomingevents", blurb:"Explore real biomes vs Minecraft, pixel-art craft and ambassador animals. $45/child.", ages:"Grades 3–6", where:"Woodcock Nature Center"},
+    {id:"school-s-out-nature-s-in--woodcock-nature-center", c:"nature", n:"School's Out, Nature's In", u:"https://www.woodcocknaturecenter.org/programs", blurb:"Outdoor exploration, animal presentations, crafts and seasonal ecology. $95/day.", ages:"Grades K–5", where:"Woodcock Nature Center"},
+    {id:"private-guided-family-nature-experience--woodcock-nature-center", c:"nature", n:"Private Guided Family Nature Experience", u:"https://www.woodcocknaturecenter.org/private-guided-experiences", blurb:"Themes can include salamanders/frogs, mushrooms and seasonal discoveries. $200/group; max 12 family members.", ages:"Families / all ages", where:"Woodcock Nature Center"},
+    {id:"journey-to-oz--the-ridgefield-playhouse", c:"art", n:"Journey to Oz", u:"https://ridgefieldplayhouse.org/event/journey-to-oz-ridgefield-ct-2026/", blurb:"Interactive audience-participation production. Ticketed.", ages:"Ages 4–12 / Grades K–6", where:"The Ridgefield Playhouse"},
+    {id:"the-pout-pout-fish--the-ridgefield-playhouse", c:"art", n:"The Pout-Pout Fish", u:"https://ridgefieldplayhouse.org/event/the-pout-pout-fish-11am-ridgefield-ct-2026/", blurb:"Optional post-show fish-themed craft/cupcake/photo party. Ticketed; optional $10 child party upgrade.", ages:"Recommended ages 3–8", where:"The Ridgefield Playhouse"},
+    {id:"story-pirates-live-11-am--the-ridgefield-playhouse", c:"art", n:"Story Pirates Live – 11 AM", u:"https://ridgefieldplayhouse.org/event/story-pirates-live-11am-ridgefield-ct-2026/", blurb:"Songs and improv sketches based on kids' ideas. Ticketed.", ages:"Recommended ages 5–12", where:"The Ridgefield Playhouse"},
+    {id:"story-pirates-live-2-pm--the-ridgefield-playhouse", c:"art", n:"Story Pirates Live – 2 PM", u:"https://ridgefieldplayhouse.org/event/story-pirates-live-11am-ridgefield-ct-2026/", blurb:"Ticketed.", ages:"Recommended ages 5–12", where:"The Ridgefield Playhouse"},
+    {id:"mike-super-magic-illusion--the-ridgefield-playhouse", c:"move", n:"Mike Super – Magic & Illusion", u:"https://ridgefieldplayhouse.org/event/mike-super-ridgefield-ct-2026/", blurb:"Interactive family magic show. Ticketed.", ages:"Recommended ages 3–93", where:"The Ridgefield Playhouse"},
+    {id:"youth-choir-teen-choir--a-c-t-of-connecticut", c:"music", n:"Youth Choir + Teen Choir", u:"https://www.actofct.org/youth-choir", blurb:"Dress rehearsal Dec 9; concert Dec 11; community performances Dec 4 & 10. $700 fall session after Aug 31; $1,300 full season; sibling discounts/scholarships.", ages:"Grades 2–12", where:"A.C.T. of Connecticut"},
+    {id:"summer-stars-showcase--a-c-t-of-connecticut", c:"art", n:"Summer Stars Showcase", u:"https://www.actofct.org/summer-stars-showcase", blurb:"Musical theater skills and fully staged final production. $1,300.", ages:"Incoming grades 2–7", where:"A.C.T. of Connecticut"},
+    {id:"summer-teen-conservatory--a-c-t-of-connecticut", c:"art", n:"Summer Teen Conservatory", u:"https://www.actofct.org/summer-teen-conservatory", blurb:"Need-based scholarships available. $1,500.", ages:"Incoming grades 8–12", where:"A.C.T. of Connecticut"},
+    {id:"private-voice-acting-lessons--a-c-t-of-connecticut", c:"music", n:"Private Voice / Acting Lessons", u:"https://www.actofct.org/education", blurb:"See instructor/program.", ages:"All ages", where:"A.C.T. of Connecticut"},
+    {id:"rtbk-playmakers-lab--ridgefield-theater-barn", c:"art", n:"RTBK PlayMakers LAB", u:"https://ridgefieldtheaterbarn.org/rtbk-workshops/rtbk-playmakers-lab/", blurb:"Non-performance acting lab with improv, character, movement and storytelling. $300; financial aid available.", ages:"Grades 1–3", where:"Ridgefield Theater Barn"},
+    {id:"recreation-station--ridgefield-parks-recreation-ridgefield-r", c:"move", n:"Recreation Station", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"$298 member / $348 nonmember (existing fall listing).", ages:"Grades K–5", where:"Ridgefield Parks & Recreation — Ridgefield Recreation Center / program sites"},
+    {id:"preschool-playroom--ridgefield-parks-recreation-ridgefield-r-2", c:"move", n:"Preschool PLAYroom", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Dedicated drop-in preschool recreation option. See current drop-in fee/membership.", ages:"Preschool children + caregiver", where:"Ridgefield Parks & Recreation — Ridgefield Recreation Center"},
+    {id:"open-gym-basketball--ridgefield-parks-recreation-ridgefield-r-2", c:"move", n:"Open Gym Basketball", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"See current fee/membership.", ages:"Youth/families; session rules vary", where:"Ridgefield Parks & Recreation — Ridgefield Recreation Center"},
+    {id:"bach-to-rock--ridgefield-parks-recreation", c:"music", n:"Bach to Rock", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"basketball--ridgefield-parks-recreation", c:"move", n:"Basketball", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"come-play-half-day-camps--ridgefield-parks-recreation", c:"move", n:"Come Play Half-Day Camps", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"dance--ridgefield-parks-recreation", c:"dance", n:"Dance", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"dodgeball--ridgefield-parks-recreation", c:"move", n:"Dodgeball", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"flag-football--ridgefield-parks-recreation", c:"move", n:"Flag Football", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"flips-tumbling--ridgefield-parks-recreation", c:"move", n:"FLIPS Tumbling", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"food-explorers--ridgefield-parks-recreation", c:"move", n:"Food Explorers", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"french-for-beginners--ridgefield-parks-recreation", c:"move", n:"French for Beginners", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"giggling-pig-art--ridgefield-parks-recreation", c:"art", n:"Giggling Pig Art", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"horseback-riding--ridgefield-parks-recreation", c:"move", n:"Horseback Riding", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"karate--ridgefield-parks-recreation", c:"move", n:"Karate", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"mountain-biking-lessons--ridgefield-parks-recreation", c:"move", n:"Mountain Biking Lessons", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"muse-squad-creative-writing-programs--ridgefield-parks-recreation", c:"move", n:"Muse Squad: Creative Writing Programs", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"musical-theater-with-mrs-feola--ridgefield-parks-recreation", c:"music", n:"Musical Theater with Mrs Feola", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"music-together--ridgefield-parks-recreation", c:"music", n:"Music Together", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"pickleball-lessons--ridgefield-parks-recreation", c:"move", n:"Pickleball Lessons", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"pie-in-the-sky--ridgefield-parks-recreation", c:"move", n:"Pie in the Sky", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"sing-like-taylor-swift-a-class-for-every-swiftie--ridgefield-parks-recreation", c:"music", n:"Sing Like Taylor Swift – A Class for Every Swiftie!", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"skate-park-lessons--ridgefield-parks-recreation", c:"move", n:"Skate Park Lessons", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"soccer-stars-amazing-athletes--ridgefield-parks-recreation", c:"move", n:"Soccer Stars & Amazing Athletes", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"tennis--ridgefield-parks-recreation", c:"move", n:"Tennis", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"usa-sports-group-preschool-sports-classes--ridgefield-parks-recreation", c:"move", n:"USA Sports Group: Preschool Sports Classes", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"volleyball-clinics-coed--ridgefield-parks-recreation", c:"move", n:"Volleyball Clinics (Coed)", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"youth-training-program--ridgefield-parks-recreation", c:"move", n:"Youth Training Program", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"zany-zoology--ridgefield-parks-recreation", c:"nature", n:"Zany Zoology", u:"https://www.ridgefieldparksandrec.org/youth-programs", blurb:"Exact dates/times vary by seasonal session; retained as a distinct parent-resource program. See seasonal registration.", ages:"Youth; age varies by course", where:"Ridgefield Parks & Recreation"},
+    {id:"parent-child-aquatics-level-1--ridgefield-parks-recreation-ridgefield-r-3", c:"swim", n:"Parent & Child Aquatics Level 1", u:"https://www.ridgefieldparksandrec.org/sites/g/files/vyhlif4921/f/uploads/spring_swim_lesson_brochure_2026_4.pdf", blurb:"$141 members / $210 nonmembers; 6 classes.", ages:"Ages 6–20 months + caregiver", where:"Ridgefield Parks & Recreation — Ridgefield Recreation Center Pool"},
+    {id:"parent-child-aquatics-level-2--ridgefield-parks-recreation-ridgefield-r-3", c:"swim", n:"Parent & Child Aquatics Level 2", u:"https://www.ridgefieldparksandrec.org/sites/g/files/vyhlif4921/f/uploads/spring_swim_lesson_brochure_2026_4.pdf", blurb:"$141 members / $210 nonmembers; 6 classes.", ages:"Ages 21–48 months + caregiver", where:"Ridgefield Parks & Recreation — Ridgefield Recreation Center Pool"},
+    {id:"youth-swim-lessons--ridgefield-parks-recreation-ridgefield-r-3", c:"swim", n:"Youth Swim Lessons", u:"https://www.ridgefieldparksandrec.org/youth-aquatic-programs/pages/youth-swim-lessons", blurb:"American Red Cross preschool and Learn-to-Swim levels. Member/nonmember rates by session.", ages:"Ages 4–12; levels", where:"Ridgefield Parks & Recreation — Ridgefield Recreation Center Pool"},
+    {id:"open-play--little-sprouts-play-place", c:"move", n:"Open Play", u:"https://www.littlesproutsplayplace.com/", blurb:"Imaginative/open-ended indoor play; occasional classes and activities. See current admission/membership.", ages:"Babies, toddlers and young children", where:"Little Sprouts Play Place"},
+    {id:"weekend-open-play--little-sprouts-play-place", c:"move", n:"Weekend Open Play", u:"https://www.littlesproutsplayplace.com/", blurb:"See current admission/membership.", ages:"Babies, toddlers and young children", where:"Little Sprouts Play Place"},
+    {id:"independent-bookstore-family-stop--books-on-the-common", c:"move", n:"Independent Bookstore Family Stop", u:"https://booksonthecommon.com/", blurb:"Independent bookstore with children's books and community/author events; monitor event calendar. Free to browse.", ages:"All ages", where:"Books on the Common"},
+    {id:"independent-toy-store-family-stop--toy-chest", c:"move", n:"Independent Toy Store Family Stop", u:"https://www.toychestct.com/", blurb:"Long-running Main Street specialty toy store; retained as resource/watch source. Free to browse.", ages:"Children/families", where:"Toy Chest"},
+    {id:"curated-used-bookstore-visit--some-books", c:"move", n:"Curated Used Bookstore Visit", u:"https://somebooksct.com/", blurb:"Curated secondhand and independent-press bookstore; useful source to monitor for readings/events. Free to browse.", ages:"Readers/families; selection varies", where:"Some Books"},
+    {id:"youth-fencing--way-of-the-sword-academy", c:"move", n:"Youth Fencing", u:"https://wayofthesword.org/", blurb:"Olympic-style fencing instruction. See enrollment.", ages:"Youth; level dependent", where:"Way of the Sword Academy"},
+    {id:"youth-archery-joad--way-of-the-sword-academy", c:"move", n:"Youth Archery / JOAD", u:"https://wayofthesword.org/", blurb:"USA Archery/JOAD pathway. See enrollment.", ages:"Youth + adults; level dependent", where:"Way of the Sword Academy"},
+    {id:"scholastic-chess-club--way-of-the-sword-academy", c:"build", n:"Scholastic Chess Club", u:"https://wayofthesword.org/", blurb:"See enrollment.", ages:"School-age youth", where:"Way of the Sword Academy"},
+    {id:"youth-dance-classes--ridgefield-school-of-dance", c:"dance", n:"Youth Dance Classes", u:"https://www.ridgefieldschoolofdance.com/", blurb:"Ballet plus jazz, contemporary/modern, theater dance and tap. See enrollment.", ages:"Early childhood through pre-professional", where:"Ridgefield School of Dance"},
+    {id:"youth-dance-classes--dance-factory-ridgefield", c:"dance", n:"Youth Dance Classes", u:"https://www.dancefactoryridgefield.com/", blurb:"Recreational and competitive dance across multiple styles. See enrollment.", ages:"Preschool through teens", where:"Dance Factory Ridgefield"},
+    {id:"music-dance-early-childhood-arts-programs--enchanted-garden-studios", c:"music", n:"Music, Dance & Early Childhood Arts Programs", u:"https://www.enchantedgardenstudios.com/", blurb:"Private music, dance, ensembles and arts-based early childhood programs. See registration.", ages:"Toddlers through teens", where:"Enchanted Garden Studios"},
+    {id:"enchanted-nutcracker-camp-fall-rehearsals--enchanted-garden-studios-enchanted-garde", c:"dance", n:"Enchanted Nutcracker Camp + Fall Rehearsals", u:"https://www.enchantedgardenstudios.com/summer-dance", blurb:"25th annual production; age-banded camp times from 10 AM through 5 PM. $500 including fall rehearsals.", ages:"Pre-K–Grade 12", where:"Enchanted Garden Studios — Enchanted Garden Studio Two"},
+    {id:"hip-hop-dance-camp--enchanted-garden-studios-enchanted-garde", c:"dance", n:"Hip Hop Dance Camp", u:"https://www.enchantedgardenstudios.com/summer-dance", blurb:"$435/week.", ages:"Grades K–2 or 3–5 depending week", where:"Enchanted Garden Studios — Enchanted Garden Studio Two"},
+    {id:"ballard-park--town-state-of-connecticut-ballard-park", c:"nature", n:"Ballard Park", u:"https://www.ridgefieldparksandrec.org/", blurb:"Downtown green/park; major family festivals, concerts, pumpkin weigh-off and parade terminus. Free or seasonal beach fee where applicable.", ages:"All ages", where:"Town/State of Connecticut — Ballard Park"},
+    {id:"bennett-s-pond-state-park--town-state-of-connecticut-bennett-s-pond", c:"nature", n:"Bennett's Pond State Park", u:"https://www.ridgefieldparksandrec.org/", blurb:"Free nature-first state park with pond and wooded trails. Free or seasonal beach fee where applicable.", ages:"All ages", where:"Town/State of Connecticut — Bennett's Pond State Park"},
+    {id:"seth-low-pierrepont-state-park-reserve--town-state-of-connecticut-seth-low-pierr", c:"nature", n:"Seth Low Pierrepont State Park Reserve", u:"https://www.ridgefieldparksandrec.org/", blurb:"Quiet lake-centered state park reserve with blazed non-motorized trails. Free or seasonal beach fee where applicable.", ages:"All ages", where:"Town/State of Connecticut — Seth Low Pierrepont State Park Reserve"},
+    {id:"martin-park-great-pond--town-state-of-connecticut-martin-park-gr", c:"nature", n:"Martin Park / Great Pond", u:"https://www.ridgefieldparksandrec.org/", blurb:"Town swimming/recreation destination; seasonal beach rules and programs. Free or seasonal beach fee where applicable.", ages:"All ages", where:"Town/State of Connecticut — Martin Park / Great Pond"}
+  ],
+
+  library: {for:"Free, every week", name:"Ridgefield Library", desc:"Ridgefield's public library, right on Main Street. Ask about Mother Goose and weekend storytimes.", a:"See Ridgefield Library events", href:"https://ridgefieldlibrary.librarymarket.com/"},
+
+  extraResources: []
+};
+</script>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track" id="tickerTrack"></div></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#today" aria-label="Ridgefield Kids Calendar, home">
+      
+      <span>Ridgefield Kids Calendar</span>
+    </a>
+    <div class="navwrap">
+      <nav class="nav" aria-label="Sections">
+        <a href="#bigdays">Big days</a>
+        <a href="#events">Calendar</a>
+        <a href="#classes">Classes</a>
+        <a href="#things">Things to do</a>
+        <a href="#resources">Resources</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="today">
+    <div class="band"><div class="wrap bandwrap">
+      <h1>What are we doing <em>today?</em></h1>
+      <p class="lede">Storytimes, festivals, classes and things to do for little ones in Ridgefield, checked and gathered in one place. Tap a day to see what's on.</p>
+      <p class="fig">The week ahead in Ridgefield, Conn.</p>
+      <div class="days" id="days" role="group" aria-label="Pick a day this week"></div>
+      <div class="herorow">
+        <button class="wkbtn" type="button" id="weekendBtn" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><span>This weekend</span></button>
+      </div>
+    </div></div>
+    <div class="wrap">
+      <div class="dayhead"><h2 id="dayTitle">Today</h2><button class="act" type="button" id="shareDay"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5"></path><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"></path></svg><span id="shareDayLabel">Share this day</span></button></div>
+      <ul class="list" id="dayList" aria-live="polite"></ul>
+    </div>
+  </section>
+
+  <section class="block" id="bigdays">
+    <div class="wrap">
+      <h2 class="sec">Big days</h2>
+      <p class="intro">The once-a-year stuff worth planning around: festivals, Halloween fun and holiday shows. Tap one to jump to it on the calendar.</p>
+      <p class="swipehint">Swipe for Halloween and holidays</p>
+      <div class="bigdays" id="bigList"></div>
+    </div>
+  </section>
+
+  <section class="block" id="events">
+    <div class="wrap">
+      <h2 class="sec">The calendar</h2>
+      <p class="intro">Everything we're tracking, week by week. Narrow it down by age, or show only the free, drop-in or rainy-day stuff.</p>
+      <div class="filters">
+        <div class="fgroup" role="group" aria-label="Filter by age">
+          <span class="flabel">Ages</span>
+          <button class="chip" data-age="all" aria-pressed="true">All</button>
+          <button class="chip" data-age="baby" aria-pressed="false">Babies</button>
+          <button class="chip" data-age="toddler" aria-pressed="false">Toddlers</button>
+          <button class="chip" data-age="preschool" aria-pressed="false">Preschool</button>
+          <button class="chip" data-age="big" aria-pressed="false">Big kids</button>
+        </div>
+        <div class="fgroup" id="hoodWrap">
+          <label class="flabel" for="hoodSel">Area</label>
+          <select class="chip selectchip" id="hoodSel"></select>
+        </div>
+        <div class="fgroup" role="group" aria-label="Other filters">
+          <span class="flabel">Show only</span>
+          <button class="chip" data-toggle="free" aria-pressed="false">Free</button>
+          <button class="chip" data-toggle="dropin" aria-pressed="false">Drop-in</button>
+          <button class="chip" data-toggle="indoor" aria-pressed="false">Rainy day (indoors)</button>
+          <button class="chip" data-toggle="special" aria-pressed="false">Big days</button>
+        </div>
+      </div>
+      <div class="weeknav">
+        <button class="navbtn" id="prevWeek" aria-label="Previous week">‹</button>
+        <button class="navbtn" id="nextWeek" aria-label="Next week">›</button>
+        <h3 id="weekTitle" aria-live="polite"></h3>
+      </div>
+      <div id="weekList"></div>
+      <p class="fineprint">Holiday closures aren't always reflected here. Events marked "Check first" are recurring slots we haven't been able to confirm for every date, so look at the organizer's page before you head out.</p>
+    </div>
+  </section>
+
+  <!-- Things to do: hand-written per town (parks, museums, short drives). Not JS-driven. -->
+  <section class="block" id="things">
+    <div class="wrap">
+      <h2 class="sec">Things to do anytime</h2>
+      <p class="intro">No schedule needed. Good for the mornings when everyone's up at 6 and you need somewhere to be by 9.</p>
+      <p class="swipehint">Swipe for rainy-day spots and short drives</p>
+      <p class="empty" style="padding:8px 4px">We're still gathering our favorite parks, museums and rainy-day spots in Ridgefield &mdash; check back soon.</p>
+    </div>
+  </section>
+
+  <section class="block" id="classes">
+    <div class="wrap">
+      <h2 class="sec">Classes &amp; lessons</h2>
+      <p class="intro">Weekly classes worth signing up for, from baby music and first ballet to swim lessons and preschool soccer. Most run in sessions, so check each program's site for start dates and prices.</p>
+      <div class="cchips" id="classChips" role="group" aria-label="Filter classes"></div>
+      <div class="cgrid" id="classList"></div>
+    </div>
+  </section>
+
+  <section class="block" id="resources">
+    <div class="wrap">
+      <h2 class="sec">Resources for moms</h2>
+      <p class="intro">Help with the big things and the everyday things, from pregnancy through the toddler years.</p>
+      <div class="help">
+        <h3>If you're struggling right now</h3>
+        <div id="helpList"></div>
+      </div>
+      <div class="res" id="resList"></div>
+    </div>
+  </section>
+
+
+  <section class="privacy" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap doc">
+      <h2 id="privacy-title">Privacy policy</h2>
+      <p class="updated">Effective September 24, 2026</p>
+      <p>Ridgefield Kids Calendar (ctkidscalendar.com/ridgefield) is part of CT Kids Calendar, a free guide to events, classes and resources for families across Connecticut. We keep things simple: this site has no accounts, no advertising trackers and no cookies. We count visits anonymously so we know what's useful. This policy explains the little information that does change hands when you use the site.</p>
+      <h3>Information we collect</h3>
+      <p>We don't collect personal information through the website itself. You can browse the calendar, classes and resources without telling us who you are, and the site doesn't set cookies.</p>
+      <p>To see how many people use the site, we use GoatCounter, a privacy-friendly visit counter. It records which pages are viewed, the website that sent you here (like Instagram), your general location (country and region) and your browser and screen size. It doesn't use cookies, doesn't follow you to other websites, and doesn't collect your name or anything that identifies you personally.</p>
+      <h3>How we use it</h3>
+      <ul>
+        <li>To publish event details we're given, like the name, place, time, ages, price and the organizer's public link.</li>
+        <li>To talk with businesses and organizations about sponsorship.</li>
+      </ul>
+      <p>We don't sell, rent or trade your information, and we don't add you to a mailing list without asking.</p>
+      <h3>Services we rely on</h3>
+      <p>A few outside services help run the site, and they may receive basic technical information such as your IP address when your browser connects to them:</p>
+      <ul>
+        <li><strong>GitHub Pages</strong> hosts the site. GitHub may keep server logs, including visitor IP addresses, for security. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub privacy statement</a>.</li>
+        <li><strong>Google Fonts</strong> supplies the site's typefaces, so your browser requests them from Google. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>.</li>
+        <li><strong>GoatCounter</strong> counts visits anonymously, as described above. See <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">GoatCounter's privacy policy</a>.</li>
+      </ul>
+      <p>The site also links to other websites, such as Google Maps, Google Calendar, event organizers and community resources. Those sites have their own privacy practices, which we don't control.</p>
+      <h3>Children's privacy</h3>
+      <p>This site is written for parents and caregivers. It isn't directed at children under 13, and we don't knowingly collect information from them. This site doesn't currently have a way to submit information directly, which further limits this risk.</p>
+      <h3>Keeping and deleting your information</h3>
+      <p>We don't currently have a public contact address, so no emails are being collected yet. This policy will be updated when that changes.</p>
+      <h3>Changes to this policy</h3>
+      <p>If we add something new, like a newsletter sign-up, we'll update this policy first and change the date at the top.</p>
+      <p><a href="#today">Back to the calendar</a></p>
+    </div>
+  </section>
+</main>
+
+<nav class="tabbar" aria-label="Sections">
+  <a href="#today" data-tab="today"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><span>Today</span></a>
+  <a href="#bigdays" data-tab="bigdays"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"></path></svg><span>Big days</span></a>
+  <a href="#events" data-tab="events"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg><span>Calendar</span></a>
+  <a href="#classes" data-tab="classes"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg><span>Classes</span></a>
+  <a href="#things" data-tab="things"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>To do</span></a>
+  <a href="#resources" data-tab="resources"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 11.2c0 5-8.8 9.8-8.8 9.8S3.2 16.2 3.2 11.2A4.8 4.8 0 0 1 12 8.5a4.8 4.8 0 0 1 8.8 2.7z"></path></svg><span>Help</span></a>
+</nav>
+
+<dialog class="sheet" id="shareSheet" aria-labelledby="sheetTitle">
+  <div class="sheet-in">
+    <h3 id="sheetTitle">Share with a friend</h3>
+    <p class="sheet-preview" id="sheetPreview"></p>
+    <div class="sheet-grid">
+      <a class="act" id="shSms" href="#">Text message</a>
+      <a class="act" id="shWa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="act" id="shMail" href="#">Email</a>
+      <a class="act" id="shFb" href="#" target="_blank" rel="noopener">Facebook</a>
+      <button class="act primary" type="button" id="shCopy" style="grid-column:1/-1">Copy link</button>
+    </div>
+    <button class="sheet-close" type="button" data-close>Close</button>
+  </div>
+</dialog>
+
+<dialog class="sheet" id="calSheet" aria-labelledby="calTitle">
+  <div class="sheet-in">
+    <h3 id="calTitle">Add to your calendar</h3>
+    <p class="sheet-preview" id="calPreview"></p>
+    <div class="sheet-grid one">
+      <a class="act primary" id="calIcs" href="#" download="event.ics">Apple, Outlook or other calendar</a>
+      <a class="act" id="calGoogle" href="#" target="_blank" rel="noopener">Google Calendar</a>
+    </div>
+    <button class="sheet-close" type="button" data-close>Close</button>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<footer>
+  <div class="wrap">
+    <span>Ridgefield Kids Calendar · part of <a href="https://ctkidscalendar.com/">CT Kids Calendar</a></span>
+    <span>Schedules last checked September 2026 · <a href="#privacy">Privacy policy</a></span>
+  </div>
+</footer>
+
+<script data-goatcounter="https://ctkidscalendar.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="/shared/app.js"></script>
+</body>
+</html>
