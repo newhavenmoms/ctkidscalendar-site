@@ -3,221 +3,473 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>CT Kids Calendar — find your town's guide to kids' events, classes and resources</title>
-<meta name="description" content="Storytimes, festivals, classes and family resources for towns across Connecticut. Pick your town to see what's on.">
+<title>Fairfield Kids Calendar — events, classes and resources for Fairfield families</title>
+<meta name="description" content="What's happening for kids and families in Fairfield, CT this week: storytimes, classes, festivals and local resources, all in one place.">
 <meta name="color-scheme" content="only light">
-<meta name="theme-color" content="#A9E0F2">
+<meta name="theme-color" content="#1B2A4A">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CT Kids Calendar">
-<meta property="og:title" content="CT Kids Calendar: find your town">
-<meta property="og:description" content="Storytimes, festivals, classes and family resources for towns across Connecticut.">
-<meta property="og:url" content="https://ctkidscalendar.com/">
+<meta property="og:title" content="Fairfield Kids Calendar: what are we doing today?">
+<meta property="og:description" content="Storytimes, festivals, classes and local resources for little ones in Fairfield, CT.">
+<meta property="og:url" content="https://ctkidscalendar.com/fairfield/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/shared/style.css">
 <style>
-:root{ --accent:#A9E0F2; }
-
-.top .wrap{max-width:1180px}
-.brand span{font-size:1.3rem}
-
-/* ---------- hero: light, map-forward ---------- */
-.home-hero{background-color:var(--pool);background-image:linear-gradient(rgba(255,255,255,.55) 1.5px,transparent 1.5px),linear-gradient(90deg,rgba(255,255,255,.55) 1.5px,transparent 1.5px);background-size:34px 34px;border-bottom:1.5px solid var(--ink)}
-.home-hero .wrap{max-width:1100px;padding:52px 24px 20px;text-align:center}
-.home-fig{font-family:var(--mono);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 10px}
-.home-hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(3rem,9vw,6.4rem);line-height:.92;letter-spacing:-.02em;margin:0 auto 18px;max-width:none;color:var(--ink)}
-.home-hero h1 em{font-style:italic;background:linear-gradient(transparent 58%,var(--sun) 58%,var(--sun) 92%,transparent 92%);color:var(--ink);padding:0 .06em}
-.home-hero p.lede{font-size:1.12rem;color:var(--ink-soft);max-width:52ch;margin:0 auto 8px}
-
-.hero-mapwrap{max-width:620px;margin:24px auto 0;position:relative}
-.hero-maptag{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--paper);font-family:var(--mono);font-weight:700;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;padding:8px 16px;border-radius:999px;margin-bottom:-14px;position:relative;z-index:2}
-.hero-maptag svg{animation:pointbounce 1.6s ease-in-out infinite}
-@keyframes pointbounce{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
-.hero-mapcard{padding:0}
-.ctmap-shape{filter:drop-shadow(5px 5px 0 var(--ink))}
-.hero-mapcard .ctmap{display:block;width:100%;height:auto;overflow:visible}
-
-/* pins */
-.mappin{cursor:pointer}
-.pin-hit{fill:transparent}
-.pin-body{transform-origin:0px 0px}
-.mappin:hover .pin-body,.mappin:focus .pin-body{animation:pinwiggle .5s ease-in-out}
-@keyframes pinwiggle{0%,100%{transform:rotate(0deg)}20%{transform:rotate(-9deg)}40%{transform:rotate(7deg)}60%{transform:rotate(-5deg)}80%{transform:rotate(3deg)}}
-.pin-tip{opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s;pointer-events:none}
-.mappin:hover .pin-tip,.mappin:focus .pin-tip{opacity:1;transform:translateY(0)}
-.pin-tip-label{font-family:var(--mono);font-size:13px;font-weight:600;fill:#fff}
-@media (prefers-reduced-motion:reduce){.mappin:hover .pin-body,.mappin:focus .pin-body{animation:none}.hero-maptag svg{animation:none}}
-@media (max-width:600px){.hero-mapcard{padding:14px 10px 6px}.pin-label{font-size:15px}}
-
-/* ---------- stat strip ---------- */
-.statstrip{background:var(--paper);border-bottom:1.5px solid var(--ink)}
-.statstrip .wrap{max-width:1100px;padding:34px 24px 44px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
-.statitem .num{font-family:var(--serif);font-size:clamp(2.1rem,4vw,3rem);line-height:1;color:var(--ink)}
-.statitem .lbl{font-family:var(--mono);font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-soft);margin-top:6px}
-@media (max-width:760px){.statstrip .wrap{grid-template-columns:repeat(2,1fr);gap:26px 12px}}
-
-/* ---------- CTA band ---------- */
-.home-cta{background:var(--paper-2)}
-.home-cta .wrap{max-width:1100px;padding:56px 24px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
-.home-cta h2{font-family:var(--serif);font-style:italic;font-size:1.9rem;margin:0 0 10px}
-.home-cta p{max-width:52ch;color:var(--ink-soft);margin:0}
-.home-cta .btn{white-space:nowrap}
-
-footer.home-footer{background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:.82rem}
-footer.home-footer .wrap{padding:32px 24px;max-width:1100px;display:flex;flex-wrap:wrap;gap:10px 20px;justify-content:space-between}
-footer.home-footer a{color:var(--paper)}
-footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:italic;font-size:1.2rem;color:rgba(246,241,228,.85);margin:0 0 8px}
-
-@media (max-width:600px){
-  .statstrip .wrap{padding:28px 20px 36px}
-  .home-cta .wrap{padding:44px 20px}
-}
-
-.townlist{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:22px 0 4px;padding:0}
-.townlist a{display:inline-block;font-family:var(--mono);font-weight:700;font-size:.82rem;letter-spacing:.03em;color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);border-radius:999px;padding:9px 18px;text-decoration:none;box-shadow:3px 3px 0 var(--ink)}
-.townlist a:hover{background:var(--tc);transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
-@media (max-width:600px){.townlist a{padding:8px 14px;font-size:.78rem}}
+  /* This town's ONE accent variable. Everything else (navy, cream, yellow) is shared. */
+  :root{ --accent: #C7CBF2; }
 </style>
 </head>
 <body>
 
-<div class="ticker" aria-hidden="true"><div class="ticker-track" id="tickerTrack">
-<span>WELCOME TO CT KIDS CALENDAR</span><span>6 TOWNS OPEN NOW</span><span>531 THINGS TO DO, TRACKED BY HAND</span><span>WELCOME TO CT KIDS CALENDAR</span><span>6 TOWNS OPEN NOW</span><span>531 THINGS TO DO, TRACKED BY HAND</span>
-</div></div>
+<!-- ============================================================
+     TOWN CONFIG — real content for this town goes here.
+     Replace every {{...}} and empty array before publishing.
+     See /shared/TOWN-TEMPLATE.md for the full field reference.
+     ============================================================ -->
+<script>
+window.TOWN = {
+  name: "Fairfield Kids Calendar",
+  townLabel: "Fairfield, CT",
+  url: "https://ctkidscalendar.com/fairfield/",
+  email: "",
+  instagram: "",
+  calendarThrough: "2026-12-31",
 
+  venues: {
+    "fairfield-public-library-main-library-di": ["Fairfield Public Library — Main Library / DiMattia Building", "1080 Old Post Rd"],
+    "fairfield-public-library-fairfield-woods": ["Fairfield Public Library — Fairfield Woods Branch", "1147 Fairfield Woods Rd"],
+    "fairfield-museum-fairfield-public-librar": ["Fairfield Museum + Fairfield Public Library — Fairfield Museum Commons", "370 Beach Rd"],
+    "fairfield-museum": ["Fairfield Museum", "370 Beach Rd"],
+    "fairfield-community-services-indoor-sout": ["Fairfield Community Services — Indoor South Pine Creek Field", "210 Old Dam Rd"],
+    "fairfield-parks-recreation-oldfield": ["Fairfield Parks & Recreation — Oldfield", "Fairfield"],
+    "fairfield-area-swim-school": ["Fairfield Area Swim School", "Fairfield"],
+    "creative-family-rhythms-veterans-park": ["Creative Family Rhythms — Veterans Park", "909 Reef Rd"],
+    "fairfield-skating-club-martire-family-ar": ["Fairfield Skating Club — Martire Family Arena – Sacred Heart University", "3135 Easton Tpke"],
+    "fairfield-ymca": ["Fairfield YMCA", "841 Old Post Rd"],
+    "fairfield-theatre-academy-ftc-ftc-rehear": ["Fairfield Theatre Academy / FTC — FTC rehearsal studios", "63 Unquowa Rd"],
+    "fairfield-community-services-bigelow-cen": ["Fairfield Community Services — Bigelow Center", "100 Mona Terrace"],
+    "fairfield-university-downtown-bookstore-": ["Fairfield University Downtown Bookstore — Downtown Bookstore – Fairfield Forest", "1499 Post Rd"],
+    "town-of-fairfield-fairfield-community-ar": ["Town of Fairfield — Fairfield Community Arts Center parking lot", "411 Wessel Dr"],
+    "fairfield-museum-town-of-fairfield-commu": ["Fairfield Museum + Town of Fairfield + Community Services — Fairfield Museum Commons", "370 Beach Rd"],
+    "connecticut-audubon-society-fairfield-na": ["Connecticut Audubon Society — Fairfield Nature Center", "2325 Burr St"],
+    "fairfield-public-library-main-fairfield-": ["Fairfield Public Library — Main & Fairfield Woods Libraries", "Fairfield"],
+    "fairfield-museum-and-history-center": ["Fairfield Museum and History Center", "370 Beach Rd"],
+    "fairfield-museum-victorian-cottage": ["Fairfield Museum — Victorian Cottage", "370 Beach Rd"],
+    "fairfield-museum-ogden-house": ["Fairfield Museum — Ogden House", "1520 Bronson Rd"],
+    "pequot-library": ["Pequot Library", "720 Pequot Ave"],
+    "connecticut-audubon-society-fairfield-na-2": ["Connecticut Audubon Society — Fairfield Nature Center & Larsen Sanctuary", "2325 Burr St"],
+    "town-of-fairfield-jennings-beach": ["Town of Fairfield — Jennings Beach", "880 S Benson Rd"],
+    "town-of-fairfield-penfield-beach": ["Town of Fairfield — Penfield Beach", "323 Fairfield Beach Rd"],
+    "town-of-fairfield-lake-mohegan-recreatio": ["Town of Fairfield — Lake Mohegan Recreation Area", "960 Morehouse Hwy"],
+    "town-of-fairfield-lt-owen-fish-park": ["Town of Fairfield — Lt. Owen Fish Park", "1443 Stratfield Rd"],
+    "town-of-fairfield-gould-manor-park": ["Town of Fairfield — Gould Manor Park", "Fairfield"],
+    "town-of-fairfield-veterans-park": ["Town of Fairfield — Veterans Park", "909 Reef Rd"],
+    "town-of-fairfield-south-pine-creek-recre": ["Town of Fairfield — South Pine Creek Recreation Area", "210 Old Dam Rd"],
+    "fairfield-theatre-academy-ftc-rehearsal-": ["Fairfield Theatre Academy — FTC Rehearsal Studio", "63 Unquowa Rd"],
+    "fairfield-performing-arts-studio": ["Fairfield Performing Arts Studio", "Fairfield"],
+    "break-a-leg-productions-fairfield-area-p": ["Break a Leg Productions — Fairfield-area program site", "Fairfield"],
+    "regina-a-quick-center-for-the-arts": ["Regina A. Quick Center for the Arts", "1073 N Benson Rd"],
+    "shu-community-theatre": ["SHU Community Theatre", "1420 Post Rd"],
+    "sunnyfield-studio": ["Sunnyfield Studio", "Fairfield"],
+    "d-valda-sirico-dance-and-music-centre": ["D'Valda & Sirico Dance and Music Centre", "1580 Post Rd"],
+    "flash-pointe-dance": ["Flash Pointe Dance", "1657 Post Rd"],
+    "connecticut-dance-school": ["Connecticut Dance School", "42 Halley Ct"],
+    "connecticut-dance-school-quick-center-fo": ["Connecticut Dance School — Quick Center for the Arts", "1073 N Benson Rd"],
+    "wings-over-water-school": ["Wings Over Water School", "2221 Black Rock Tpke"],
+    "fairfield-area-swim-school-fairfield-uni": ["Fairfield Area Swim School — Fairfield University RecPlex", "1073 N Benson Rd"],
+    "fairfield-skating-club-martire-family-ar-2": ["Fairfield Skating Club — Martire Family Arena", "3135 Easton Tpke"],
+    "fairfield-community-services-town-progra": ["Fairfield Community Services — Town program site", "Fairfield"],
+    "fairfield-parks-recreation-town-field": ["Fairfield Parks & Recreation — Town field", "Fairfield"],
+    "bricks-minifigs-fairfield": ["Bricks & Minifigs Fairfield", "1929 Black Rock Tpke"],
+    "toy-polloi": ["Toy Polloi", "41 Ruane St"],
+    "hobbytown-fairfield": ["HobbyTown Fairfield", "847 Post Rd"],
+    "fairfield-university-store": ["Fairfield University Store", "1499 Post Rd"],
+    "neighborhood-studios-of-fairfield-county": ["Neighborhood Studios of Fairfield County — Program sites", "Fairfield County / Fairfield-area"],
+    "town-of-fairfield-sherman-town-green": ["Town of Fairfield — Sherman Town Green", "1451 Post Rd"],
+    "town-of-fairfield-town-parks-venues": ["Town of Fairfield — Town parks / venues", "Fairfield"],
+    "fairfield-museum-community-partners-fair": ["Fairfield Museum / community partners — Fairfield Museum Commons / Town Green", "370 Beach Rd"],
+    "town-of-fairfield-fairfield-chamber-down": ["Town of Fairfield / Fairfield Chamber — Downtown Fairfield", "Fairfield"]
+  },
+
+  venueMeta: {
+    "fairfield-public-library-main-library-di": [null, 1],
+    "fairfield-public-library-fairfield-woods": [null, 0],
+    "fairfield-museum-fairfield-public-librar": [null, 1],
+    "fairfield-museum": [null, 1],
+    "fairfield-community-services-indoor-sout": [null, 1],
+    "fairfield-parks-recreation-oldfield": [null, 0],
+    "fairfield-area-swim-school": [null, null],
+    "creative-family-rhythms-veterans-park": [null, 0],
+    "fairfield-skating-club-martire-family-ar": [null, 1],
+    "fairfield-ymca": [null, 1],
+    "fairfield-theatre-academy-ftc-ftc-rehear": [null, 1],
+    "fairfield-community-services-bigelow-cen": [null, 1],
+    "fairfield-university-downtown-bookstore-": [null, 1],
+    "town-of-fairfield-fairfield-community-ar": [null, 0],
+    "fairfield-museum-town-of-fairfield-commu": [null, 0],
+    "connecticut-audubon-society-fairfield-na": [null, 1],
+    "fairfield-public-library-main-fairfield-": [null, 1],
+    "fairfield-museum-and-history-center": [null, 1],
+    "fairfield-museum-victorian-cottage": [null, 1],
+    "fairfield-museum-ogden-house": [null, 1],
+    "pequot-library": [null, 1],
+    "connecticut-audubon-society-fairfield-na-2": [null, 0],
+    "town-of-fairfield-jennings-beach": [null, 0],
+    "town-of-fairfield-penfield-beach": [null, 0],
+    "town-of-fairfield-lake-mohegan-recreatio": [null, 0],
+    "town-of-fairfield-lt-owen-fish-park": [null, 0],
+    "town-of-fairfield-gould-manor-park": [null, 0],
+    "town-of-fairfield-veterans-park": [null, 0],
+    "town-of-fairfield-south-pine-creek-recre": [null, 0],
+    "fairfield-theatre-academy-ftc-rehearsal-": [null, 1],
+    "fairfield-performing-arts-studio": [null, 1],
+    "break-a-leg-productions-fairfield-area-p": [null, 1],
+    "regina-a-quick-center-for-the-arts": [null, 1],
+    "shu-community-theatre": [null, 1],
+    "sunnyfield-studio": [null, 1],
+    "d-valda-sirico-dance-and-music-centre": [null, 1],
+    "flash-pointe-dance": [null, 1],
+    "connecticut-dance-school": [null, 1],
+    "connecticut-dance-school-quick-center-fo": [null, 1],
+    "wings-over-water-school": [null, 1],
+    "fairfield-area-swim-school-fairfield-uni": [null, 1],
+    "fairfield-skating-club-martire-family-ar-2": [null, 1],
+    "fairfield-community-services-town-progra": [null, 1],
+    "fairfield-parks-recreation-town-field": [null, 0],
+    "bricks-minifigs-fairfield": [null, 1],
+    "toy-polloi": [null, 1],
+    "hobbytown-fairfield": [null, 1],
+    "fairfield-university-store": [null, 1],
+    "neighborhood-studios-of-fairfield-county": [null, 1],
+    "town-of-fairfield-sherman-town-green": [null, 0],
+    "town-of-fairfield-town-parks-venues": [null, 0],
+    "fairfield-museum-community-partners-fair": [null, 0],
+    "town-of-fairfield-fairfield-chamber-down": [null, 0]
+  },
+
+  hoods: [],
+
+  events: [
+    {t:"Tiny Tots", v:"fairfield-public-library-main-library-di", ages:"Up to 18 months + caregiver", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"", src:"https://fplct.librarymarket.com/events/list", s:[[1, [["09:30", "10:00"]], "2026-09-20", "2026-09-20"]]},
+    {t:"Bounce & Wiggle", v:"fairfield-public-library-main-library-di", ages:"18–35 months + caregiver", a:["toddler", "preschool"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"", src:"https://fplct.librarymarket.com/events/list", s:[[4, [["09:30", "10:00"]], "2026-09-20", "2026-09-20"]]},
+    {t:"Outside Baby Rhyme Time", v:"fairfield-public-library-fairfield-woods", ages:"Babies + caregiver", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:false, check:true, blurb:"", src:"https://fplct.librarymarket.com/events/list", s:[[4, [["09:00", "09:30"]], "2026-09-20", "2026-09-20"]]},
+    {t:"Outside Wobbly Walkers", v:"fairfield-public-library-fairfield-woods", ages:"Young toddlers + caregiver", a:["baby", "toddler", "preschool"], price:"Free", free:true, drop:false, rsvp:false, check:true, blurb:"", src:"https://fplct.librarymarket.com/events/list", s:[[4, [["09:45", "10:15"]], "2026-09-20", "2026-09-20"]]},
+    {t:"Outside Terrific Twos", v:"fairfield-public-library-fairfield-woods", ages:"Ages 24–35 months + caregiver", a:["toddler", "preschool"], price:"Free", free:true, drop:false, rsvp:false, check:true, blurb:"", src:"https://fplct.librarymarket.com/events/list", s:[[4, [["10:30", "11:00"]], "2026-09-20", "2026-09-20"]]},
+    {t:"Sing Me A Story", v:"fairfield-public-library-main-library-di", ages:"Ages 0–5 + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:true, blurb:"", src:"https://fplct.librarymarket.com/events/list", s:[[5, [["10:00", "10:30"]], "2026-09-20", "2026-09-20"]]},
+    {t:"Baby Rhyme Time", v:"fairfield-public-library-fairfield-woods", ages:"Babies + caregiver", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"", src:"https://fplct.librarymarket.com/events/list", s:[[2, [["09:00", "09:30"]], "2026-09-20", "2026-09-20"]]},
+    {t:"Sing Me a Story", v:"fairfield-museum-fairfield-public-librar", ages:"Ages 0–5 + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"", src:"https://www.fairfieldhistory.org/event/sing-me-a-story-with-fairfield-public-library-59/", s:[[2, [["10:00", "10:30"]], "2026-09-08", "2026-10-27"]]},
+    {t:"Open Play @ Victorian Cottage", v:"fairfield-museum", ages:"Young children + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"", src:"https://www.fairfieldhistory.org/calendar/", s:[[2, [["10:30", "11:30"]], "2026-09-08", "2026-10-27"]]},
+    {t:"Children's Storytime in the Fairfield Forest", v:"fairfield-university-downtown-bookstore-", ages:"Children / families; under 14 with adult", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Local reading teacher Steve Gaynes leads the storytime; public event.", src:"https://events.fairfield.edu/event/childrens-storytime-in-the-fairfield-forest-1972", s:[[6, [["13:00", "14:00"]], "2026-09-26", "2026-12-19"]]},
+    {t:"Fairfield Farmers Market", v:"town-of-fairfield-fairfield-community-ar", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Rotating local food, baked goods, crafts and seasonal finds.", src:"https://fairfield-city.org/calendar.aspx?CID=26%2C31&month=7&view=list&year=2026", s:[[3, [["16:00", "19:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Tiny Tots", v:"fairfield-public-library-main-library-di", ages:"Up to 18 months + caregiver", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:false, check:false, blurb:"Songs, rhymes and books.", src:"https://fairfieldpubliclibrary.org/children/early-literacy/", s:[[1, [["09:30", "10:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Bounce & Wiggle", v:"fairfield-public-library-main-library-di", ages:"18–35 months + caregiver", a:["toddler", "preschool"], price:"Free", free:true, drop:false, rsvp:false, check:false, blurb:"Movement-heavy toddler literacy.", src:"https://fairfieldpubliclibrary.org/children/early-literacy/", s:[[4, [["09:30", "10:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Sing Me a Story", v:"fairfield-public-library-main-library-di", ages:"Ages 0–5 + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:false, check:false, blurb:"Music-infused early literacy.", src:"https://fairfieldpubliclibrary.org/children/early-literacy/", s:[[5, [["10:00", "10:30"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Baby Rhyme Time", v:"fairfield-public-library-fairfield-woods", ages:"Babies + caregiver", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:false, check:false, blurb:"Rhymes, songs and board books.", src:"https://fairfieldpubliclibrary.org/children/early-literacy/", s:[[2, [["09:00", "09:30"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Outside Baby Rhyme Time", v:"fairfield-public-library-fairfield-woods", ages:"Babies + caregiver", a:["baby", "toddler"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Outdoor early literacy.", src:"https://fairfieldpubliclibrary.org/children/early-literacy/", s:[[4, [["09:00", "09:30"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Outside Wobbly Walkers", v:"fairfield-public-library-fairfield-woods", ages:"Early walkers + caregiver", a:["baby", "toddler", "preschool"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Outdoor movement and stories.", src:"https://fairfieldpubliclibrary.org/children/early-literacy/", s:[[4, [["09:45", "10:15"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Outside Terrific Twos", v:"fairfield-public-library-fairfield-woods", ages:"Age 2 + caregiver", a:["toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Outdoor stories and movement.", src:"https://fairfieldpubliclibrary.org/children/early-literacy/", s:[[4, [["10:30", "11:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Sing Me a Story on Museum Commons", v:"fairfield-museum-fairfield-public-librar", ages:"Ages 0–5 + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Dancing, singing and stories.", src:"https://www.fairfieldhistory.org/event/sing-me-a-story-with-fairfield-public-library-59/", s:[[2, [["10:00", "10:30"]], "2026-09-08", "2026-10-27"]]},
+    {t:"Open Play @ Victorian Cottage", v:"fairfield-museum-victorian-cottage", ages:"Young children + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Dedicated early-childhood create/explore/play space.", src:"https://www.fairfieldhistory.org/events-calendar/month/", s:[[2, [["10:30", "11:30"]], "2026-09-08", "2026-10-27"]]},
+    {t:"Ogden House Open", v:"fairfield-museum-ogden-house", ages:"Families; school-age+ especially", a:["big"], price:"Free", free:true, drop:true, rsvp:false, check:true, blurb:"Explore an 18th-century saltbox and colonial garden.", src:"https://www.fairfieldhistory.org/events-calendar/month/", s:[[0, [["13:00", "16:00"]], "2026-09-27", "2026-09-27"]]},
+    {t:"Drop-in Craft: Mini Spy Button Notebooks", v:"fairfield-museum", ages:"Ages 5+", a:["big"], price:"Free", free:true, drop:true, rsvp:false, check:true, blurb:"Spy Week hands-on history craft.", src:"https://www.fairfieldhistory.org/events-calendar/month/", s:[[1, [["10:00", "13:00"]], "2026-09-21", "2026-09-21"]]},
+    {t:"Storytime for Toddlers", v:"pequot-library", ages:"Ages 1–3 + caregiver", a:["baby", "toddler", "preschool"], price:"Free", free:true, drop:false, rsvp:false, check:true, blurb:"Songs, stories and movement; monitor exact seasonal runs.", src:"https://www.pequotlibrary.org/calendar/", s:[[1, [["10:30", "11:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Storytime for Preschoolers", v:"pequot-library", ages:"Ages 3–5 + caregiver", a:["preschool", "big"], price:"Free", free:true, drop:false, rsvp:false, check:true, blurb:"Preschool literacy and stories.", src:"https://www.pequotlibrary.org/calendar/", s:[[3, [["10:30", "11:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"After-School Fall Explorers", v:"connecticut-audubon-society-fairfield-na", ages:"School-age children; check registration", a:["big"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"Nature exploration after school.", src:"https://ctaudubon.org/locations/the-fairfield-nature-center-and-larsen-sanctuary/programs-and-events/", s:[[4, [["15:45", "17:00"]], "2026-09-17", "2026-09-17"]]},
+    {t:"Story Corner", v:"connecticut-audubon-society-fairfield-na", ages:"Young children + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"Nature-themed story/activity.", src:"https://ctaudubon.org/locations/the-fairfield-nature-center-and-larsen-sanctuary/programs-and-events/", s:[[2, [["10:00", "10:00"]], "2026-09-22", "2026-09-22"]]},
+    {t:"Halloween on the Green", v:"fairfield-museum-town-of-fairfield-commu", special:"hw", ages:"Families", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"10th annual event: trick-or-treating, giveaways, bounce house, historic buildings and food vendors.", src:"https://www.fairfieldhistory.org/events-calendar/month/2026-10/?hide_subsequent_recurrences=1", when:[{from:"2026-10-25", to:"2026-10-25", t:[["12:00", "16:00"]]}]},
+    {t:"Halloween on the Green", v:"fairfield-museum-community-partners-fair", special:"hw", ages:"Families", a:["baby", "toddler", "preschool", "big"], price:"Free / check annual details", free:true, ticket:false, blurb:"Costumes, family activities and community partners; verify exact annual date on museum calendar.", src:"https://www.fairfieldhistory.org/", when:[{from:"2026-10-20", to:"2026-10-20", t:[]}]}
+  ],
+
+  tba: [
+    {g:"fall", t:"Pequot Library Book Sale", w:"Pequot Library", p:"Large community used-book sale; family browsing and children's-book sections.", src:"https://www.pequotlibrary.org/"},
+    {g:"hol", t:"The Nutcracker", w:"Connecticut Dance School — Quick Center for the Arts", p:"Major student/family holiday ballet.", src:"https://www.ctdanceschool.org/"},
+    {g:"fall", t:"Independence Day Fireworks", w:"Town of Fairfield — Jennings Beach", p:"Major family beach event.", src:"https://fairfieldct.org/"},
+    {g:"hol", t:"Holiday Events & Tree Lighting", w:"Town of Fairfield / Fairfield Chamber — Downtown Fairfield", p:"Downtown seasonal family programming; exact event details vary.", src:"https://fairfieldct.org/"}
+  ],
+
+  classes: [
+    {id:"little-sluggers--fairfield-community-services-indoor-sout", c:"move", n:"Little Sluggers", u:"https://www.ffldcommunity.com/boost_pre-k_sports.php", blurb:"$155 / 6 weeks.", ages:"Ages 3–5", where:"Fairfield Community Services — Indoor South Pine Creek Field"},
+    {id:"pre-k-multi-sports--fairfield-community-services-indoor-sout", c:"move", n:"Pre-K Multi-Sports", u:"https://www.ffldcommunity.com/boost_pre-k_sports.php", blurb:"$155 / 6 weeks.", ages:"Ages 3–5", where:"Fairfield Community Services — Indoor South Pine Creek Field"},
+    {id:"pre-school-soccer-skills-drills--fairfield-parks-recreation-oldfield", c:"move", n:"Pre-School Soccer Skills & Drills", u:"https://ctfairfieldweb.myvscloud.com/webtrac/web/search.html?module=AR&type=Camps%20and%20Clinics", blurb:"$50 resident / nonresident.", ages:"Ages 3–5.99", where:"Fairfield Parks & Recreation — Oldfield"},
+    {id:"private-swim-lesson-single-30-min--fairfield-area-swim-school", c:"swim", n:"Private Swim Lesson – Single 30 min", u:"https://www.fairfieldareaswimschool.com/springservices", blurb:"$55.", ages:"Children; placement varies", where:"Fairfield Area Swim School"},
+    {id:"private-swim-lesson-5-lesson-package--fairfield-area-swim-school", c:"swim", n:"Private Swim Lesson – 5-lesson package", u:"https://www.fairfieldareaswimschool.com/springservices", blurb:"$245.", ages:"Children; placement varies", where:"Fairfield Area Swim School"},
+    {id:"group-swim-10-x-30-min--fairfield-area-swim-school", c:"swim", n:"Group Swim – 10 x 30 min", u:"https://www.fairfieldareaswimschool.com/springservices", blurb:"$465.", ages:"Children; placement varies", where:"Fairfield Area Swim School"},
+    {id:"diving-10-lesson-package--fairfield-area-swim-school", c:"swim", n:"Diving – 10 lesson package", u:"https://www.fairfieldareaswimschool.com/springservices", blurb:"$425.", ages:"Children; placement varies", where:"Fairfield Area Swim School"},
+    {id:"music-together-musical-playdate--creative-family-rhythms-veterans-park", c:"music", n:"Music Together Musical Playdate", u:"https://www.creativefamilyrhythms.com/music-together-mixed-ages.html?sem0=54068", blurb:"See registration.", ages:"Young children / mixed ages + caregiver", where:"Creative Family Rhythms — Veterans Park"},
+    {id:"learn-to-skate--fairfield-skating-club-martire-family-ar", c:"move", n:"Learn to Skate", u:"https://fairfieldskatingclub.com/", blurb:"$313 / 9 weeks.", ages:"Youth / skill-based", where:"Fairfield Skating Club — Martire Family Arena – Sacred Heart University"},
+    {id:"hockey-prep-academy--fairfield-skating-club-martire-family-ar", c:"move", n:"Hockey Prep Academy", u:"https://fairfieldskatingclub.com/", blurb:"$399 / 9 weeks.", ages:"Youth / skill-based", where:"Fairfield Skating Club — Martire Family Arena – Sacred Heart University"},
+    {id:"figure-skating-prep-academy--fairfield-skating-club-martire-family-ar", c:"move", n:"Figure Skating Prep Academy", u:"https://fairfieldskatingclub.com/", blurb:"$399 / 9 weeks.", ages:"Youth / skill-based", where:"Fairfield Skating Club — Martire Family Arena – Sacred Heart University"},
+    {id:"fall-1-youth-swim-lessons--fairfield-ymca", c:"swim", n:"Fall 1 Youth Swim Lessons", u:"https://cccymca.org/locations/fairfield/swim/", blurb:"See Fall 1 guide / registration; session pricing varies by level.", ages:"Preschool 3–5; school age 5–12; teen levels available", where:"Fairfield YMCA"},
+    {id:"fall-2-youth-swim-lessons--fairfield-ymca", c:"swim", n:"Fall 2 Youth Swim Lessons", u:"https://cccymca.org/locations/fairfield/swim/", blurb:"See Fall 2 guide / registration; session pricing varies by level.", ages:"Preschool 3–5; school age 5–12; teen levels available", where:"Fairfield YMCA"},
+    {id:"rising-stars-workshop--fairfield-theatre-academy-ftc-ftc-rehear", c:"dance", n:"Rising Stars Workshop", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"See registration.", ages:"Youth", where:"Fairfield Theatre Academy / FTC — FTC rehearsal studios"},
+    {id:"mt-dance-ballet-3--fairfield-theatre-academy-ftc-ftc-rehear", c:"dance", n:"MT Dance/Ballet 3", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"See registration.", ages:"Level 3 / Grades 6–8", where:"Fairfield Theatre Academy / FTC — FTC rehearsal studios"},
+    {id:"mt-dance-ballet-4--fairfield-theatre-academy-ftc-ftc-rehear", c:"dance", n:"MT Dance/Ballet 4", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"See registration.", ages:"Level 4 / Grades 9–12", where:"Fairfield Theatre Academy / FTC — FTC rehearsal studios"},
+    {id:"musical-theater-4--fairfield-theatre-academy-ftc-ftc-rehear", c:"dance", n:"Musical Theater 4", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"See registration.", ages:"Level 4 / Grades 9–12", where:"Fairfield Theatre Academy / FTC — FTC rehearsal studios"},
+    {id:"musical-theater-3--fairfield-theatre-academy-ftc-ftc-rehear", c:"dance", n:"Musical Theater 3", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"See registration.", ages:"Level 3 / Grades 6–8", where:"Fairfield Theatre Academy / FTC — FTC rehearsal studios"},
+    {id:"musical-theater-1--fairfield-theatre-academy-ftc-ftc-rehear", c:"dance", n:"Musical Theater 1", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"See registration.", ages:"Level 1 / Grades K–2", where:"Fairfield Theatre Academy / FTC — FTC rehearsal studios"},
+    {id:"tap-3--fairfield-theatre-academy-ftc-ftc-rehear", c:"dance", n:"Tap 3", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"See registration.", ages:"Level 3", where:"Fairfield Theatre Academy / FTC — FTC rehearsal studios"},
+    {id:"tap-4--fairfield-theatre-academy-ftc-ftc-rehear", c:"dance", n:"Tap 4", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"See registration.", ages:"Level 4", where:"Fairfield Theatre Academy / FTC — FTC rehearsal studios"},
+    {id:"acting-1--fairfield-theatre-academy-ftc-ftc-rehear", c:"dance", n:"Acting 1", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"See registration.", ages:"Level 1 / Grades K–2", where:"Fairfield Theatre Academy / FTC — FTC rehearsal studios"},
+    {id:"acting-2--fairfield-theatre-academy-ftc-ftc-rehear", c:"dance", n:"Acting 2", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"See registration.", ages:"Level 2 / Grades 3–5", where:"Fairfield Theatre Academy / FTC — FTC rehearsal studios"},
+    {id:"acting-3--fairfield-theatre-academy-ftc-ftc-rehear", c:"dance", n:"Acting 3", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"See registration.", ages:"Level 3 / Grades 6–8", where:"Fairfield Theatre Academy / FTC — FTC rehearsal studios"},
+    {id:"musical-theater-2--fairfield-theatre-academy-ftc-ftc-rehear", c:"dance", n:"Musical Theater 2", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"See registration.", ages:"Level 2 / Grades 3–5", where:"Fairfield Theatre Academy / FTC — FTC rehearsal studios"},
+    {id:"acting-4--fairfield-theatre-academy-ftc-ftc-rehear", c:"dance", n:"Acting 4", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"See registration.", ages:"Level 4 / Grades 9–12", where:"Fairfield Theatre Academy / FTC — FTC rehearsal studios"},
+    {id:"after-school-chill--fairfield-community-services-bigelow-cen", c:"move", n:"After School Chill", u:"https://www.ffldcommunity.com/adaptive_recreation/afterschool_chill.php", blurb:"$100.", ages:"Grades K–12+; adaptive recreation", where:"Fairfield Community Services — Bigelow Center"},
+    {id:"fairfield-nature-center-larsen-sanctuary--connecticut-audubon-society-fairfield-na", c:"nature", n:"Fairfield Nature Center + Larsen Sanctuary", u:"https://www.ctaudubon.org/fairfield-home/", blurb:"Live ambassador animals, nature store, sanctuary trails and recurring environmental education programs. Nature center/trails access; program fees vary.", ages:"All ages", where:"Connecticut Audubon Society — Fairfield Nature Center"},
+    {id:"afterschool-steam-classes--fairfield-public-library-main-fairfield-", c:"art", n:"Afterschool STEAM Classes", u:"https://fairfieldpubliclibrary.org/children/family-events-and-afterschool-classes/", blurb:"Rotating science, literature, coding, art and makerspace classes.", ages:"Grades K–5", where:"Fairfield Public Library — Main & Fairfield Woods Libraries"},
+    {id:"d-i-y-take-make-kits--fairfield-public-library-main-fairfield-", c:"art", n:"D.I.Y. Take & Make Kits", u:"https://fairfieldpubliclibrary.org/children/family-events-and-afterschool-classes/", blurb:"Supply kit paired with library video.", ages:"Grades K–5", where:"Fairfield Public Library — Main & Fairfield Woods Libraries"},
+    {id:"family-events--fairfield-public-library-main-fairfield-", c:"move", n:"Family Events", u:"https://fairfieldpubliclibrary.org/children/family-events-and-afterschool-classes/", blurb:"Includes escape rooms, themed parties, family book clubs and annual gingerbread-house program.", ages:"Families", where:"Fairfield Public Library — Main & Fairfield Woods Libraries"},
+    {id:"fairfield-museum-visit--fairfield-museum-and-history-center", c:"move", n:"Fairfield Museum Visit", u:"https://www.fairfieldhistory.org/", blurb:"Free 2026 museum access during stated period. Free general admission Jan 13–Nov 25, 2026.", ages:"All ages", where:"Fairfield Museum and History Center"},
+    {id:"children-s-family-programs--pequot-library", c:"move", n:"Children's & Family Programs", u:"https://www.pequotlibrary.org/calendar/", blurb:"Major source for crafts, author events, school-break activities, holiday programming and family events. Free or event-specific.", ages:"Children/families", where:"Pequot Library"},
+    {id:"larsen-sanctuary-trails--connecticut-audubon-society-fairfield-na-2", c:"nature", n:"Larsen Sanctuary Trails", u:"https://ctaudubon.org/locations/the-fairfield-nature-center-and-larsen-sanctuary/", blurb:"155-acre sanctuary and nature center. Free trail access / donations welcome.", ages:"All ages", where:"Connecticut Audubon Society — Fairfield Nature Center & Larsen Sanctuary"},
+    {id:"ecology-discovery-days--connecticut-audubon-society-fairfield-na", c:"nature", n:"Ecology Discovery Days", u:"https://ctaudubon.org/locations/the-fairfield-nature-center-and-larsen-sanctuary/programs-and-events/", blurb:"Hands-on ecology exploration. $5/person.", ages:"Families / school-age", where:"Connecticut Audubon Society — Fairfield Nature Center"},
+    {id:"fairfield-nature-center-summer-camp--connecticut-audubon-society-fairfield-na", c:"nature", n:"Fairfield Nature Center Summer Camp", u:"https://ctaudubon.org/locations/the-fairfield-nature-center-and-larsen-sanctuary/summer-camp/", blurb:"Small-group outdoor nature camp. Tuition varies; qualifying family membership required.", ages:"Age 4 through grade 7; CIT 14–18", where:"Connecticut Audubon Society — Fairfield Nature Center"},
+    {id:"jennings-beach--town-of-fairfield-jennings-beach", c:"nature", n:"Jennings Beach", u:"https://www.fairfieldct.org/parksrec", blurb:"Fairfield's largest public beach; swimming, broad sandy shoreline and family recreation; seasonal parking rules. Free; seasonal beach/parking fees may apply.", ages:"All ages", where:"Town of Fairfield — Jennings Beach"},
+    {id:"penfield-beach--town-of-fairfield-penfield-beach", c:"nature", n:"Penfield Beach", u:"https://www.fairfieldct.org/parksrec", blurb:"Family-friendly town beach with large playground beside the sand; seasonal parking rules. Free; seasonal beach/parking fees may apply.", ages:"All ages", where:"Town of Fairfield — Penfield Beach"},
+    {id:"lake-mohegan-recreation-area--town-of-fairfield-lake-mohegan-recreatio", c:"nature", n:"Lake Mohegan Recreation Area", u:"https://www.fairfieldct.org/parksrec", blurb:"170-acre lake/open-space destination with swimming beach, splash pad and trails. Free; seasonal beach/parking fees may apply.", ages:"All ages", where:"Town of Fairfield — Lake Mohegan Recreation Area"},
+    {id:"lt-owen-fish-park--town-of-fairfield-lt-owen-fish-park", c:"nature", n:"Lt. Owen Fish Park", u:"https://www.fairfieldct.org/parksrec", blurb:"Shaded playground, pond, ballfields, benches and short wooded trails. Free; seasonal beach/parking fees may apply.", ages:"All ages", where:"Town of Fairfield — Lt. Owen Fish Park"},
+    {id:"gould-manor-park--town-of-fairfield-gould-manor-park", c:"nature", n:"Gould Manor Park", u:"https://www.fairfieldct.org/parksrec", blurb:"Playgrounds, pond, youth baseball plus tennis and pickleball. Free; seasonal beach/parking fees may apply.", ages:"All ages", where:"Town of Fairfield — Gould Manor Park"},
+    {id:"veterans-park--town-of-fairfield-veterans-park", c:"nature", n:"Veterans Park", u:"https://www.fairfieldct.org/parksrec", blurb:"Neighborhood green space and active recreation hub with reservable picnic facilities. Free; seasonal beach/parking fees may apply.", ages:"All ages", where:"Town of Fairfield — Veterans Park"},
+    {id:"south-pine-creek-recreation-area--town-of-fairfield-south-pine-creek-recre", c:"nature", n:"South Pine Creek Recreation Area", u:"https://www.fairfieldct.org/parksrec", blurb:"Sports/recreation complex and family park area near shoreline neighborhoods. Free; seasonal beach/parking fees may apply.", ages:"All ages", where:"Town of Fairfield — South Pine Creek Recreation Area"},
+    {id:"fairfield-theatre-academy-fall-classes--fairfield-theatre-academy-ftc-rehearsal-", c:"dance", n:"Fairfield Theatre Academy – Fall Classes", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"Musical theater, acting, tap, ballet/MT dance and Rising Stars. See class registration.", ages:"Grades K–12", where:"Fairfield Theatre Academy — FTC Rehearsal Studio"},
+    {id:"musical-theater-1--fairfield-theatre-academy-ftc-rehearsal-", c:"art", n:"Musical Theater 1", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"Fall semester. See registration.", ages:"Grades K–2", where:"Fairfield Theatre Academy — FTC Rehearsal Studio"},
+    {id:"musical-theater-2--fairfield-theatre-academy-ftc-rehearsal-", c:"art", n:"Musical Theater 2", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"Fall semester. See registration.", ages:"Grades 3–5", where:"Fairfield Theatre Academy — FTC Rehearsal Studio"},
+    {id:"mt-dance-ballet-3--fairfield-theatre-academy-ftc-rehearsal-", c:"art", n:"MT Dance/Ballet 3", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"Fall semester. See registration.", ages:"Grades 6–8", where:"Fairfield Theatre Academy — FTC Rehearsal Studio"},
+    {id:"mt-dance-ballet-4--fairfield-theatre-academy-ftc-rehearsal-", c:"art", n:"MT Dance/Ballet 4", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"Fall semester. See registration.", ages:"Grades 9–12", where:"Fairfield Theatre Academy — FTC Rehearsal Studio"},
+    {id:"acting-1--fairfield-theatre-academy-ftc-rehearsal-", c:"art", n:"Acting 1", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"Fall semester. See registration.", ages:"Grades K–2", where:"Fairfield Theatre Academy — FTC Rehearsal Studio"},
+    {id:"acting-2--fairfield-theatre-academy-ftc-rehearsal-", c:"art", n:"Acting 2", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"Fall semester. See registration.", ages:"Grades 3–5", where:"Fairfield Theatre Academy — FTC Rehearsal Studio"},
+    {id:"acting-3--fairfield-theatre-academy-ftc-rehearsal-", c:"art", n:"Acting 3", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"Fall semester. See registration.", ages:"Grades 6–8", where:"Fairfield Theatre Academy — FTC Rehearsal Studio"},
+    {id:"acting-4--fairfield-theatre-academy-ftc-rehearsal-", c:"art", n:"Acting 4", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"Fall semester. See registration.", ages:"Grades 9–12", where:"Fairfield Theatre Academy — FTC Rehearsal Studio"},
+    {id:"rising-stars-workshop--fairfield-theatre-academy-ftc-rehearsal-", c:"art", n:"Rising Stars Workshop", u:"https://fairfieldtheatreacademy.org/classes-2026/", blurb:"Fall semester. See registration.", ages:"Youth; check grade range", where:"Fairfield Theatre Academy — FTC Rehearsal Studio"},
+    {id:"fall-2026-spring-2027-acting-classes--fairfield-performing-arts-studio", c:"art", n:"Fall 2026 / Spring 2027 Acting Classes", u:"https://www.fairfieldperformingartsstudio.com/", blurb:"Acting, improv, movement, character development and coaching. See registration.", ages:"Children/teens; class dependent", where:"Fairfield Performing Arts Studio"},
+    {id:"fall-musical-theater-training--break-a-leg-productions-fairfield-area-p", c:"music", n:"Fall Musical Theater Training", u:"https://breakalegct.com/", blurb:"Acting, singing and dance plus production skills. See registration.", ages:"Young actors/dancers/singers", where:"Break a Leg Productions — Fairfield-area program site"},
+    {id:"family-youth-performances--regina-a-quick-center-for-the-arts", c:"art", n:"Family & Youth Performances", u:"https://quickcenter.fairfield.edu/", blurb:"Monitor for family theater, dance, music and educational performances. Ticketed.", ages:"Families; show dependent", where:"Regina A. Quick Center for the Arts"},
+    {id:"family-movies-performances--shu-community-theatre", c:"move", n:"Family Movies & Performances", u:"https://shucommunitytheatre.org/", blurb:"Restored downtown cinema/performance venue; family films and events vary. Ticketed / some community events.", ages:"Families; event dependent", where:"SHU Community Theatre"},
+    {id:"fall-2026-creative-arts-classes--sunnyfield-studio", c:"dance", n:"Fall 2026 Creative Arts Classes", u:"https://www.sunnyfieldstudio.net/", blurb:"Creative dance, Mom & Me music/movement, art, children's yoga and multicultural theater. See registration.", ages:"Young children through youth; class dependent", where:"Sunnyfield Studio"},
+    {id:"youth-dance-music--d-valda-sirico-dance-and-music-centre", c:"music", n:"Youth Dance & Music", u:"https://www.dvaldaandsirico.com/", blurb:"Dance plus private music instruction. See enrollment.", ages:"Children through teens", where:"D'Valda & Sirico Dance and Music Centre"},
+    {id:"youth-dance-classes--flash-pointe-dance", c:"dance", n:"Youth Dance Classes", u:"https://www.flashpointedance.com/", blurb:"Recreational through pre-professional/competitive dance. See enrollment.", ages:"Toddlers through teens", where:"Flash Pointe Dance"},
+    {id:"classical-ballet-training--connecticut-dance-school", c:"dance", n:"Classical Ballet Training", u:"https://www.ctdanceschool.org/", blurb:"Nonprofit classical ballet school with performance opportunities. See enrollment / scholarships.", ages:"Children through teens", where:"Connecticut Dance School"},
+    {id:"dance-4all-abilities--connecticut-dance-school", c:"dance", n:"Dance 4All Abilities", u:"https://www.ctdanceschool.org/", blurb:"Adaptive dance offering. See program.", ages:"Dancers with disabilities; age/program dependent", where:"Connecticut Dance School"},
+    {id:"year-round-swim-lessons--wings-over-water-school", c:"swim", n:"Year-Round Swim Lessons", u:"https://wow-swim.com/", blurb:"Warm-water learn-to-swim school. Monthly tuition varies by age/lesson length.", ages:"Babies, children and teens", where:"Wings Over Water School"},
+    {id:"family-swim--wings-over-water-school", c:"swim", n:"Family Swim", u:"https://wow-swim.com/", blurb:"Call ahead; schedule varies. See current fee.", ages:"Families", where:"Wings Over Water School"},
+    {id:"swim-diving-lessons--fairfield-area-swim-school-fairfield-uni", c:"swim", n:"Swim & Diving Lessons", u:"https://fairfieldareaswimschool.com/", blurb:"30-minute swim/diving lessons; private diving taught by Fairfield University divers. Private $55; 3 private $140; 5 private $245; group packages vary.", ages:"Children; all skill levels", where:"Fairfield Area Swim School — Fairfield University RecPlex"},
+    {id:"youth-swim-lessons--fairfield-ymca", c:"swim", n:"Youth Swim Lessons", u:"https://cccymca.org/locations/fairfield/", blurb:"Youth swim program. See YMCA registration.", ages:"Children; level dependent", where:"Fairfield YMCA"},
+    {id:"learn-to-skate--fairfield-skating-club-martire-family-ar-2", c:"move", n:"Learn to Skate", u:"https://www.fairfieldskatingclub.org/", blurb:"Learn-to-skate session. $313 / 9 weeks.", ages:"Beginner skaters; age/level dependent", where:"Fairfield Skating Club — Martire Family Arena"},
+    {id:"hockey-prep-figure-skating-prep--fairfield-skating-club-martire-family-ar-2", c:"move", n:"Hockey Prep / Figure Skating Prep", u:"https://www.fairfieldskatingclub.org/", blurb:"Prep academies. $399 / 9 weeks.", ages:"Developing skaters", where:"Fairfield Skating Club — Martire Family Arena"},
+    {id:"little-sluggers--fairfield-community-services-town-progra", c:"move", n:"Little Sluggers", u:"https://fairfieldct.org/", blurb:"Preschool baseball fundamentals. $155 / 6 weeks.", ages:"Ages 3–5", where:"Fairfield Community Services — Town program site"},
+    {id:"pre-k-multi-sports--fairfield-community-services-town-progra", c:"move", n:"Pre-K Multi-Sports", u:"https://fairfieldct.org/", blurb:"Rotating sports fundamentals. $155 / 6 weeks.", ages:"Ages 3–5", where:"Fairfield Community Services — Town program site"},
+    {id:"preschool-soccer-skills-drills--fairfield-parks-recreation-town-field", c:"move", n:"Preschool Soccer Skills & Drills", u:"https://fairfieldct.org/parksrec", blurb:"$50.", ages:"Ages 3–5.99", where:"Fairfield Parks & Recreation — Town field"},
+    {id:"after-school-chill--fairfield-community-services-town-progra", c:"move", n:"After School Chill", u:"https://fairfieldct.org/", blurb:"Adaptive after-school recreation. $100.", ages:"Grades K–12+", where:"Fairfield Community Services — Town program site"},
+    {id:"lego-resale-build-store--bricks-minifigs-fairfield", c:"build", n:"LEGO Resale & Build Store", u:"https://bricksandminifigs.com/fairfield-ct/", blurb:"Buy/sell/trade LEGO; parties and occasional community activities. Free to browse; party package $425.", ages:"LEGO fans / families", where:"Bricks & Minifigs Fairfield"},
+    {id:"independent-toy-store-family-stop--toy-polloi", c:"move", n:"Independent Toy Store Family Stop", u:"https://toypolloi.com/", blurb:"Curated independent toy/gift store; monitor for pop-ups and events. Free to browse.", ages:"Children/families", where:"Toy Polloi"},
+    {id:"hobby-store-family-stop--hobbytown-fairfield", c:"build", n:"Hobby Store Family Stop", u:"https://www.hobbytown.com/fairfield-ct/l5", blurb:"RC, model kits and hobby supplies; event/watch source. Free to browse.", ages:"Older children/teens/families", where:"HobbyTown Fairfield"},
+    {id:"downtown-bookstore-visit--fairfield-university-store", c:"move", n:"Downtown Bookstore Visit", u:"https://www.fairfieldbookstore.com/", blurb:"University/community bookstore; monitor children's/community event listings. Free to browse.", ages:"All ages", where:"Fairfield University Store"},
+    {id:"art-dance-theater-classes--neighborhood-studios-of-fairfield-county", c:"art", n:"Art, Dance & Theater Classes", u:"https://www.nstudios.org/register.html", blurb:"Low-cost nonprofit arts education. $125 full year one class; $175 two; $200 all three.", ages:"Ages 4–12", where:"Neighborhood Studios of Fairfield County — Program sites"},
+    {id:"saturday-studios--neighborhood-studios-of-fairfield-county", c:"art", n:"Saturday Studios", u:"https://www.nstudios.org/register.html", blurb:"Arts and enrichment for children/teens with disabilities. See registration.", ages:"Children and teens with disabilities", where:"Neighborhood Studios of Fairfield County — Program sites"},
+    {id:"private-music-lessons--neighborhood-studios-of-fairfield-county", c:"music", n:"Private Music Lessons", u:"https://www.nstudios.org/register.html", blurb:"Very low-cost nonprofit music instruction; sibling/multi-class discounts. $250 for 25 private 30-min lessons.", ages:"Children of all ages", where:"Neighborhood Studios of Fairfield County — Program sites"},
+    {id:"sherman-green-summer-concert-series--town-of-fairfield-sherman-town-green", c:"move", n:"Sherman Green Summer Concert Series", u:"https://fairfieldct.org/", blurb:"Bring chairs/blankets; downtown family outing.", ages:"All ages", where:"Town of Fairfield — Sherman Town Green"},
+    {id:"outdoor-movie-nights--town-of-fairfield-town-parks-venues", c:"move", n:"Outdoor Movie Nights", u:"https://fairfieldct.org/", blurb:"Monitor annual Parks & Recreation calendar. Free / event dependent.", ages:"All ages", where:"Town of Fairfield — Town parks / venues"}
+  ],
+
+  library: {for:"Free, every week", name:"Fairfield Public Library", desc:"Fairfield's public library, with a second branch at Fairfield Woods. Storytimes run most weekday mornings.", a:"See Fairfield Public Library events", href:"https://fplct.librarymarket.com/"},
+
+  extraResources: []
+};
+</script>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track" id="tickerTrack"></div></div>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#" aria-label="CT Kids Calendar, home">
+    <a class="brand" href="#today" aria-label="Fairfield Kids Calendar, home">
       
-      <span>CT Kids Calendar</span>
+      <span>Fairfield Kids Calendar</span>
     </a>
     <div class="navwrap">
+      <nav class="nav" aria-label="Sections">
+        <a href="#bigdays">Big days</a>
+        <a href="#events">Calendar</a>
+        <a href="#classes">Classes</a>
+        <a href="#things">Things to do</a>
+        <a href="#resources">Resources</a>
+      </nav>
     </div>
   </div>
 </header>
 
 <main>
-  <section class="home-hero">
-    <div class="wrap">
-      <p class="home-fig">Connecticut, town by town</p>
-      <h1>Find a kids <em>calendar</em></h1>
-      <p class="lede">Storytimes, festivals, classes and family resources &mdash; tap your town on the map to jump straight in.</p>
-      <div class="hero-mapwrap">
-        <span class="hero-maptag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"></path></svg> Tap a pin to open your town</span>
-        <div class="hero-mapcard">
-          <svg class="ctmap" viewBox="0 0 540 400" role="img" aria-label="Map of Connecticut with pins for each CT Kids Calendar town">
-<path class="ctmap-shape" d="M 180.2 14.1 L 504.7 19.8 L 504.7 25.5 L 504.7 229.8 L 489.1 262.0 L 466.4 256.3 L 353.1 282.8 L 218.5 275.2 L 160.4 322.5 L 98.0 337.7 L 24.3 377.4 L 5.9 337.7 L 69.7 299.8 L 51.2 271.5 L 68.3 10.4 L 180.2 14.1 Z" fill="var(--paper)" stroke="#1B2A4A" stroke-width="3.5" stroke-linejoin="round"></path>
-<a class="mappin" href="/stamford/" aria-label="Stamford — open the calendar">
-  <g transform="translate(54.7 354.6)">
-    <ellipse cx="0" cy="2.5" rx="12" ry="3.2" fill="#1B2A4A" opacity="0.16"></ellipse>
-    <g class="pin-body">
-      <path d="M0 0 C -13 -18 -13 -34 0 -34 C 13 -34 13 -18 0 0 Z" fill="#F2694F" stroke="#1B2A4A" stroke-width="2.5" stroke-linejoin="round"></path>
-      <circle cx="0" cy="-19" r="6.5" fill="#fff" stroke="#1B2A4A" stroke-width="2"></circle>
-    </g>
-    <g class="pin-tip">
-      <rect x="-108.6" y="-58" width="102.6" height="26" rx="13" fill="#1B2A4A"></rect>
-      <text x="-13" y="-40" text-anchor="end" class="pin-tip-label">Stamford</text>
-    </g>
-    <circle class="pin-hit" cx="0" cy="-17" r="19"></circle>
-  </g>
-</a><a class="mappin" href="/norwalk/" aria-label="Norwalk — open the calendar">
-  <g transform="translate(88.4 332.4)">
-    <ellipse cx="0" cy="2.5" rx="12" ry="3.2" fill="#1B2A4A" opacity="0.16"></ellipse>
-    <g class="pin-body">
-      <path d="M0 0 C -13 -18 -13 -34 0 -34 C 13 -34 13 -18 0 0 Z" fill="#2FB6A3" stroke="#1B2A4A" stroke-width="2.5" stroke-linejoin="round"></path>
-      <circle cx="0" cy="-19" r="6.5" fill="#fff" stroke="#1B2A4A" stroke-width="2"></circle>
-    </g>
-    <g class="pin-tip">
-      <rect x="-52.7" y="-58" width="105.4" height="26" rx="13" fill="#1B2A4A"></rect>
-      <text x="0" y="-40" text-anchor="middle" class="pin-tip-label">Norwalk</text>
-    </g>
-    <circle class="pin-hit" cx="0" cy="-17" r="19"></circle>
-  </g>
-</a><a class="mappin" href="/fairfield/" aria-label="Fairfield — open the calendar">
-  <g transform="translate(125.8 324.5)">
-    <ellipse cx="0" cy="2.5" rx="12" ry="3.2" fill="#1B2A4A" opacity="0.16"></ellipse>
-    <g class="pin-body">
-      <path d="M0 0 C -13 -18 -13 -34 0 -34 C 13 -34 13 -18 0 0 Z" fill="#5C6BC0" stroke="#1B2A4A" stroke-width="2.5" stroke-linejoin="round"></path>
-      <circle cx="0" cy="-19" r="6.5" fill="#fff" stroke="#1B2A4A" stroke-width="2"></circle>
-    </g>
-    <g class="pin-tip">
-      <rect x="-62.9" y="-58" width="125.8" height="26" rx="13" fill="#1B2A4A"></rect>
-      <text x="0" y="-40" text-anchor="middle" class="pin-tip-label">Fairfield</text>
-    </g>
-    <circle class="pin-hit" cx="0" cy="-17" r="19"></circle>
-  </g>
-</a><a class="mappin" href="/ridgefield/" aria-label="Ridgefield — open the calendar">
-  <g transform="translate(65.2 275.8)">
-    <ellipse cx="0" cy="2.5" rx="12" ry="3.2" fill="#1B2A4A" opacity="0.16"></ellipse>
-    <g class="pin-body">
-      <path d="M0 0 C -13 -18 -13 -34 0 -34 C 13 -34 13 -18 0 0 Z" fill="#5CAD4A" stroke="#1B2A4A" stroke-width="2.5" stroke-linejoin="round"></path>
-      <circle cx="0" cy="-19" r="6.5" fill="#fff" stroke="#1B2A4A" stroke-width="2"></circle>
-    </g>
-    <g class="pin-tip">
-      <rect x="-68.0" y="-58" width="136.0" height="26" rx="13" fill="#1B2A4A"></rect>
-      <text x="0" y="-40" text-anchor="middle" class="pin-tip-label">Ridgefield</text>
-    </g>
-    <circle class="pin-hit" cx="0" cy="-17" r="19"></circle>
-  </g>
-</a><a class="mappin" href="/west-hartford/" aria-label="West Hartford — open the calendar">
-  <g transform="translate(260.8 109.9)">
-    <ellipse cx="0" cy="2.5" rx="12" ry="3.2" fill="#1B2A4A" opacity="0.16"></ellipse>
-    <g class="pin-body">
-      <path d="M0 0 C -13 -18 -13 -34 0 -34 C 13 -34 13 -18 0 0 Z" fill="#F0B429" stroke="#1B2A4A" stroke-width="2.5" stroke-linejoin="round"></path>
-      <circle cx="0" cy="-19" r="6.5" fill="#fff" stroke="#1B2A4A" stroke-width="2"></circle>
-    </g>
-    <g class="pin-tip">
-      <rect x="-83.3" y="-58" width="166.6" height="26" rx="13" fill="#1B2A4A"></rect>
-      <text x="0" y="-40" text-anchor="middle" class="pin-tip-label">West Hartford</text>
-    </g>
-    <circle class="pin-hit" cx="0" cy="-17" r="19"></circle>
-  </g>
-</a><a class="mappin" href="/new-haven/" aria-label="New Haven — open the calendar">
-  <g transform="translate(212.7 266.6)">
-    <ellipse cx="0" cy="2.5" rx="12" ry="3.2" fill="#1B2A4A" opacity="0.16"></ellipse>
-    <g class="pin-body">
-      <path d="M0 0 C -13 -18 -13 -34 0 -34 C 13 -34 13 -18 0 0 Z" fill="#A9E0F2" stroke="#1B2A4A" stroke-width="2.5" stroke-linejoin="round"></path>
-      <circle cx="0" cy="-19" r="6.5" fill="#fff" stroke="#1B2A4A" stroke-width="2"></circle>
-    </g>
-    <g class="pin-tip">
-      <rect x="-63.4" y="-58" width="126.8" height="26" rx="13" fill="#1B2A4A"></rect>
-      <text x="0" y="-40" text-anchor="middle" class="pin-tip-label">New Haven</text>
-    </g>
-    <circle class="pin-hit" cx="0" cy="-17" r="19"></circle>
-  </g>
-</a>
-</svg>
-        </div>
-        <ul class="townlist">
-          <li><a href="/stamford/" style="--tc:#F2694F">Stamford</a></li>
-          <li><a href="/norwalk/" style="--tc:#2FB6A3">Norwalk</a></li>
-          <li><a href="/fairfield/" style="--tc:#5C6BC0">Fairfield</a></li>
-          <li><a href="/ridgefield/" style="--tc:#5CAD4A">Ridgefield</a></li>
-          <li><a href="/west-hartford/" style="--tc:#F0B429">West Hartford</a></li>
-          <li><a href="/new-haven/" style="--tc:#A9E0F2">New Haven</a></li>
-        </ul>
+  <section class="hero" id="today">
+    <div class="band"><div class="wrap bandwrap">
+      <h1>What are we doing <em>today?</em></h1>
+      <p class="lede">Storytimes, festivals, classes and things to do for little ones in Fairfield, checked and gathered in one place. Tap a day to see what's on.</p>
+      <p class="fig">The week ahead in Fairfield, Conn.</p>
+      <div class="days" id="days" role="group" aria-label="Pick a day this week"></div>
+      <div class="herorow">
+        <button class="wkbtn" type="button" id="weekendBtn" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><span>This weekend</span></button>
       </div>
-    </div>
-  </section>
-
-  <section class="statstrip">
+    </div></div>
     <div class="wrap">
-      <div class="statitem"><div class="num">6</div><div class="lbl">Towns open</div></div>
-      <div class="statitem"><div class="num">531</div><div class="lbl">Storytimes &amp; classes</div></div>
-      <div class="statitem"><div class="num">301</div><div class="lbl">Local venues</div></div>
-      <div class="statitem"><div class="num">72</div><div class="lbl">Festivals &amp; holiday events</div></div>
+      <div class="dayhead"><h2 id="dayTitle">Today</h2><button class="act" type="button" id="shareDay"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5"></path><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"></path></svg><span id="shareDayLabel">Share this day</span></button></div>
+      <ul class="list" id="dayList" aria-live="polite"></ul>
     </div>
   </section>
 
+  <section class="block" id="bigdays">
+    <div class="wrap">
+      <h2 class="sec">Big days</h2>
+      <p class="intro">The once-a-year stuff worth planning around: festivals, Halloween fun and holiday shows. Tap one to jump to it on the calendar.</p>
+      <p class="swipehint">Swipe for Halloween and holidays</p>
+      <div class="bigdays" id="bigList"></div>
+    </div>
+  </section>
+
+  <section class="block" id="events">
+    <div class="wrap">
+      <h2 class="sec">The calendar</h2>
+      <p class="intro">Everything we're tracking, week by week. Narrow it down by age, or show only the free, drop-in or rainy-day stuff.</p>
+      <div class="filters">
+        <div class="fgroup" role="group" aria-label="Filter by age">
+          <span class="flabel">Ages</span>
+          <button class="chip" data-age="all" aria-pressed="true">All</button>
+          <button class="chip" data-age="baby" aria-pressed="false">Babies</button>
+          <button class="chip" data-age="toddler" aria-pressed="false">Toddlers</button>
+          <button class="chip" data-age="preschool" aria-pressed="false">Preschool</button>
+          <button class="chip" data-age="big" aria-pressed="false">Big kids</button>
+        </div>
+        <div class="fgroup" id="hoodWrap">
+          <label class="flabel" for="hoodSel">Area</label>
+          <select class="chip selectchip" id="hoodSel"></select>
+        </div>
+        <div class="fgroup" role="group" aria-label="Other filters">
+          <span class="flabel">Show only</span>
+          <button class="chip" data-toggle="free" aria-pressed="false">Free</button>
+          <button class="chip" data-toggle="dropin" aria-pressed="false">Drop-in</button>
+          <button class="chip" data-toggle="indoor" aria-pressed="false">Rainy day (indoors)</button>
+          <button class="chip" data-toggle="special" aria-pressed="false">Big days</button>
+        </div>
+      </div>
+      <div class="weeknav">
+        <button class="navbtn" id="prevWeek" aria-label="Previous week">‹</button>
+        <button class="navbtn" id="nextWeek" aria-label="Next week">›</button>
+        <h3 id="weekTitle" aria-live="polite"></h3>
+      </div>
+      <div id="weekList"></div>
+      <p class="fineprint">Holiday closures aren't always reflected here. Events marked "Check first" are recurring slots we haven't been able to confirm for every date, so look at the organizer's page before you head out.</p>
+    </div>
+  </section>
+
+  <!-- Things to do: hand-written per town (parks, museums, short drives). Not JS-driven. -->
+  <section class="block" id="things">
+    <div class="wrap">
+      <h2 class="sec">Things to do anytime</h2>
+      <p class="intro">No schedule needed. Good for the mornings when everyone's up at 6 and you need somewhere to be by 9.</p>
+      <p class="swipehint">Swipe for rainy-day spots and short drives</p>
+      <p class="empty" style="padding:8px 4px">We're still gathering our favorite parks, museums and rainy-day spots in Fairfield &mdash; check back soon.</p>
+    </div>
+  </section>
+
+  <section class="block" id="classes">
+    <div class="wrap">
+      <h2 class="sec">Classes &amp; lessons</h2>
+      <p class="intro">Weekly classes worth signing up for, from baby music and first ballet to swim lessons and preschool soccer. Most run in sessions, so check each program's site for start dates and prices.</p>
+      <div class="cchips" id="classChips" role="group" aria-label="Filter classes"></div>
+      <div class="cgrid" id="classList"></div>
+    </div>
+  </section>
+
+  <section class="block" id="resources">
+    <div class="wrap">
+      <h2 class="sec">Resources for moms</h2>
+      <p class="intro">Help with the big things and the everyday things, from pregnancy through the toddler years.</p>
+      <div class="help">
+        <h3>If you're struggling right now</h3>
+        <div id="helpList"></div>
+      </div>
+      <div class="res" id="resList"></div>
+    </div>
+  </section>
+
+
+  <section class="privacy" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap doc">
+      <h2 id="privacy-title">Privacy policy</h2>
+      <p class="updated">Effective September 24, 2026</p>
+      <p>Fairfield Kids Calendar (ctkidscalendar.com/fairfield) is part of CT Kids Calendar, a free guide to events, classes and resources for families across Connecticut. We keep things simple: this site has no accounts, no advertising trackers and no cookies. We count visits anonymously so we know what's useful. This policy explains the little information that does change hands when you use the site.</p>
+      <h3>Information we collect</h3>
+      <p>We don't collect personal information through the website itself. You can browse the calendar, classes and resources without telling us who you are, and the site doesn't set cookies.</p>
+      <p>To see how many people use the site, we use GoatCounter, a privacy-friendly visit counter. It records which pages are viewed, the website that sent you here (like Instagram), your general location (country and region) and your browser and screen size. It doesn't use cookies, doesn't follow you to other websites, and doesn't collect your name or anything that identifies you personally.</p>
+      <h3>How we use it</h3>
+      <ul>
+        <li>To publish event details we're given, like the name, place, time, ages, price and the organizer's public link.</li>
+        <li>To talk with businesses and organizations about sponsorship.</li>
+      </ul>
+      <p>We don't sell, rent or trade your information, and we don't add you to a mailing list without asking.</p>
+      <h3>Services we rely on</h3>
+      <p>A few outside services help run the site, and they may receive basic technical information such as your IP address when your browser connects to them:</p>
+      <ul>
+        <li><strong>GitHub Pages</strong> hosts the site. GitHub may keep server logs, including visitor IP addresses, for security. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub privacy statement</a>.</li>
+        <li><strong>Google Fonts</strong> supplies the site's typefaces, so your browser requests them from Google. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>.</li>
+        <li><strong>GoatCounter</strong> counts visits anonymously, as described above. See <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">GoatCounter's privacy policy</a>.</li>
+      </ul>
+      <p>The site also links to other websites, such as Google Maps, Google Calendar, event organizers and community resources. Those sites have their own privacy practices, which we don't control.</p>
+      <h3>Children's privacy</h3>
+      <p>This site is written for parents and caregivers. It isn't directed at children under 13, and we don't knowingly collect information from them. This site doesn't currently have a way to submit information directly, which further limits this risk.</p>
+      <h3>Keeping and deleting your information</h3>
+      <p>We don't currently have a public contact address, so no emails are being collected yet. This policy will be updated when that changes.</p>
+      <h3>Changes to this policy</h3>
+      <p>If we add something new, like a newsletter sign-up, we'll update this policy first and change the date at the top.</p>
+      <p><a href="#today">Back to the calendar</a></p>
+    </div>
+  </section>
 </main>
 
-<footer class="home-footer">
+<nav class="tabbar" aria-label="Sections">
+  <a href="#today" data-tab="today"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><span>Today</span></a>
+  <a href="#bigdays" data-tab="bigdays"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"></path></svg><span>Big days</span></a>
+  <a href="#events" data-tab="events"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg><span>Calendar</span></a>
+  <a href="#classes" data-tab="classes"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg><span>Classes</span></a>
+  <a href="#things" data-tab="things"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>To do</span></a>
+  <a href="#resources" data-tab="resources"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 11.2c0 5-8.8 9.8-8.8 9.8S3.2 16.2 3.2 11.2A4.8 4.8 0 0 1 12 8.5a4.8 4.8 0 0 1 8.8 2.7z"></path></svg><span>Help</span></a>
+</nav>
+
+<dialog class="sheet" id="shareSheet" aria-labelledby="sheetTitle">
+  <div class="sheet-in">
+    <h3 id="sheetTitle">Share with a friend</h3>
+    <p class="sheet-preview" id="sheetPreview"></p>
+    <div class="sheet-grid">
+      <a class="act" id="shSms" href="#">Text message</a>
+      <a class="act" id="shWa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="act" id="shMail" href="#">Email</a>
+      <a class="act" id="shFb" href="#" target="_blank" rel="noopener">Facebook</a>
+      <button class="act primary" type="button" id="shCopy" style="grid-column:1/-1">Copy link</button>
+    </div>
+    <button class="sheet-close" type="button" data-close>Close</button>
+  </div>
+</dialog>
+
+<dialog class="sheet" id="calSheet" aria-labelledby="calTitle">
+  <div class="sheet-in">
+    <h3 id="calTitle">Add to your calendar</h3>
+    <p class="sheet-preview" id="calPreview"></p>
+    <div class="sheet-grid one">
+      <a class="act primary" id="calIcs" href="#" download="event.ics">Apple, Outlook or other calendar</a>
+      <a class="act" id="calGoogle" href="#" target="_blank" rel="noopener">Google Calendar</a>
+    </div>
+    <button class="sheet-close" type="button" data-close>Close</button>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<footer>
   <div class="wrap">
-    <span>CT Kids Calendar &middot; a town-by-town guide for Connecticut families</span>
+    <span>Fairfield Kids Calendar · part of <a href="https://ctkidscalendar.com/">CT Kids Calendar</a></span>
+    <span>Schedules last checked September 2026 · <a href="#privacy">Privacy policy</a></span>
   </div>
 </footer>
 
 <script data-goatcounter="https://ctkidscalendar.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="/shared/app.js"></script>
 </body>
 </html>
