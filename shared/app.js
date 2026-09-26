@@ -378,7 +378,61 @@ function renderTicker(){
   window.addEventListener("resize",re);})();
 
 /* ---------- initial render ---------- */
-renderHoods();renderDays();renderDay();renderWeek();renderBig();renderClasses();renderTicker();
+/* ---------- structured data (Event JSON-LD, for search rich results) ---------- */
+function injectEventSchema(){
+  const items=[];
+  // next upcoming occurrence of each recurring (non-special) event, looking up to 45 days ahead
+  E.filter(e=>!e.special).forEach(e=>{
+    for(let i=0;i<45;i++){
+      const d=addDays(today,i);
+      const o=eventsOn(d).find(x=>x.e.t===e.t&&x.e.v===e.v);
+      if(o){
+        const t=o.times[0];
+        items.push({
+          "@type":"Event",
+          "name":e.t,
+          "startDate":key(d)+(t?"T"+t[0]:""),
+          "endDate":(t&&t[1])?key(d)+"T"+t[1]:undefined,
+          "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+          "eventStatus":"https://schema.org/EventScheduled",
+          "location":V[e.v]?{"@type":"Place","name":V[e.v][0],"address":addrLine(e.v)}:undefined,
+          "description":e.blurb||e.t,
+          "isAccessibleForFree":!!e.free,
+          "url":SITE+"#e="+encodeURIComponent(e.id)+"&d="+key(d)
+        });
+        break;
+      }
+    }
+  });
+  // big days: already have real confirmed dates
+  E.filter(e=>e.special).forEach(e=>{
+    (e.when||[]).forEach(w=>{
+      if(w.from>=key(today)){
+        const t=w.t&&w.t[0];
+        items.push({
+          "@type":"Event",
+          "name":e.t,
+          "startDate":w.from+(t?"T"+t[0]:""),
+          "endDate":(w.to&&w.to!==w.from)?w.to:((t&&t[1])?w.from+"T"+t[1]:undefined),
+          "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+          "eventStatus":"https://schema.org/EventScheduled",
+          "location":V[e.v]?{"@type":"Place","name":V[e.v][0],"address":addrLine(e.v)}:undefined,
+          "description":e.blurb||e.t,
+          "isAccessibleForFree":!!e.free,
+          "url":SITE+"#e="+encodeURIComponent(e.id)+"&d="+w.from
+        });
+      }
+    });
+  });
+  if(!items.length)return;
+  const ld={"@context":"https://schema.org","@graph":items};
+  const s=document.createElement('script');
+  s.type='application/ld+json';
+  s.textContent=JSON.stringify(ld);
+  document.head.appendChild(s);
+}
+
+renderHoods();renderDays();renderDay();renderWeek();renderBig();renderClasses();renderTicker();injectEventSchema();
 
 /* ---------- links: shared events, days, weekend ---------- */
 function handleHash(){

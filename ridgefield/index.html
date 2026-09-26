@@ -12,6 +12,32 @@
 <meta property="og:title" content="Ridgefield Kids Calendar: what are we doing today?">
 <meta property="og:description" content="Storytimes, festivals, classes and local resources for little ones in Ridgefield, CT.">
 <meta property="og:url" content="https://ctkidscalendar.com/ridgefield/">
+<link rel="canonical" href="https://ctkidscalendar.com/ridgefield/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://ctkidscalendar.com/ridgefield/#page",
+      "url": "https://ctkidscalendar.com/ridgefield/",
+      "name": "Ridgefield Kids Calendar",
+      "isPartOf": { "@id": "https://ctkidscalendar.com/#website" },
+      "about": {
+        "@type": "Place",
+        "name": "Ridgefield, Connecticut"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "CT Kids Calendar", "item": "https://ctkidscalendar.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Ridgefield", "item": "https://ctkidscalendar.com/ridgefield/"}
+      ]
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -132,32 +158,26 @@ window.TOWN = {
   hoods: [],
 
   events: [
-    {t:"Mother Goose", v:"ridgefield-library", ages:"Walkers ages 12–24 months", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://ridgefieldlibrary.librarymarket.com/event/mother-goose-ages-12-24-months-149706", s:[[2, [["10:30", "11:00"]], "2026-09-08", "2026-11-24"]]},
-    {t:"Preschool Storytime", v:"ridgefield-library", ages:"Ages 3–5", a:["preschool", "big"], price:"Free", free:true, drop:false, rsvp:false, check:true, blurb:"", src:"https://ridgefieldlibrary.librarymarket.com/event/preschool-storytime-144208", s:[[3, [["10:30", "11:15"]], "2026-09-14", "2026-12-19"]]},
-    {t:"All-Age Family Storytime", v:"ridgefield-library", ages:"All ages / families", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:true, blurb:"", src:"https://ridgefieldlibrary.librarymarket.com/event/all-age-family-storytime-117423", s:[[1, [["10:30", "11:00"]], "2026-09-14", "2026-12-19"]]},
-    {t:"Ridgefield Farmers Market", v:"ridgefield-farmers-market-jesse-lee-gree", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Family activities and live music are part of the market programming.", src:"https://www.ridgefieldfarmersmarket.org/", s:[[6, [["10:00", "13:00"]], "2026-06-20", "2026-10-03"]]},
-    {t:"Storytime at the Ridgefield Farmers Market", v:"ridgefield-library-ridgefield-farmers-ma", ages:"All ages / families", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:true, blurb:"Useful recurring model to watch for 2027; sponsored by Friends of Ridgefield Library.", src:"https://ridgefieldlibrary.librarymarket.com/event/storytime-ridgefield-farmers-market-146128", s:[[6, [["12:00", "12:30"]], "2026-09-14", "2026-12-19"]]},
-    {t:"All-Age Family Storytime", v:"ridgefield-library", ages:"All ages + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Talk, read, play, move and sing together.", src:"https://ridgefieldlibrary.org/", s:[[1, [["10:30", "11:00"]], "2026-11-30", "2026-11-30"]]},
     {t:"Mother Goose", v:"ridgefield-library", ages:"Walkers ages 12–24 months + caregiver", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://ridgefieldlibrary.librarymarket.com/event/mother-goose-ages-12-24-months-149706", s:[[2, [["10:30", "11:00"]], "2026-09-08", "2026-11-24"]]},
-    {t:"Preschool Storytime", v:"ridgefield-library", ages:"Ages 3–5", a:["preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.ridgefieldpubliclibrary.com/children-programs", s:[[3, [["10:30", "11:15"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Preschool Storytime", v:"ridgefield-library", ages:"Ages 3–5", a:["preschool", "big"], price:"Free", free:true, drop:false, rsvp:false, check:true, blurb:"", src:"https://ridgefieldlibrary.librarymarket.com/event/preschool-storytime-144208", s:[[3, [["10:30", "11:15"]], "2026-09-14", "2026-12-19"]]},
+    {t:"All-Age Family Storytime", v:"ridgefield-library", ages:"All ages + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:true, blurb:"Talk, read, play, move and sing together.", src:"https://ridgefieldlibrary.librarymarket.com/event/all-age-family-storytime-117423", s:[[1, [["10:30", "11:00"]], "2026-09-14", "2026-12-19"]]},
+    {t:"Ridgefield Farmers Market", v:"ridgefield-farmers-market-jesse-lee-gree", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Family activities and live music are part of the market programming.", src:"https://www.ridgefieldfarmersmarket.org/", s:[[6, [["10:00", "13:00"]], "2026-06-20", "2026-10-03"]]},
+    {t:"Storytime at Ridgefield Farmers Market", v:"ridgefield-library-ridgefield-farmers-ma", ages:"All ages / families", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:true, blurb:"Storytime at the farmers market, sponsored by Friends of Ridgefield Library.", src:"https://ridgefieldlibrary.librarymarket.com/event/storytime-ridgefield-farmers-market-146128", s:[[6, [["12:00", "12:30"]], "2026-09-14", "2026-12-19"]]},
     {t:"Third Saturdays – Free Admission", v:"the-aldrich-contemporary-art-museum", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"Includes art-making; many months pair Story Time at 10:30 and All Ages Discovery Tour at 1.", src:"https://thealdrich.org/events/third-saturdays-23", s:[[6, [["10:00", "17:00"]], "2026-09-14", "2026-12-19"]]},
     {t:"Story Time for Kids", v:"the-aldrich-ridgefield-library-the-aldri", ages:"Perfect for ages 6 and under + family", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"Story followed by studio art-making inspired by exhibitions.", src:"https://thealdrich.org/learn/children-and-family-programs", s:[[6, [["10:30", "11:30"]], "2026-09-14", "2026-12-19"]]},
     {t:"All Ages Discovery Tour", v:"the-aldrich-contemporary-art-museum", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"Interactive, judgment-free exhibition tour.", src:"https://thealdrich.org/learn", s:[[6, [["13:00", "14:00"]], "2026-11-21", "2026-11-21"]]},
     {t:"Sensory Saturday", v:"the-aldrich-contemporary-art-museum", ages:"Ages 4–12 with developmental/learning disabilities/autism + family", a:["preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"Relaxed gallery exploration using touch, sound and movement.", src:"https://thealdrich.org/events", s:[[6, [["10:30", "11:30"]], "2026-10-24", "2026-10-24"]]},
     {t:"Plants and Seeds Guided Hike", v:"woodcock-nature-center-ridgefield-conser", ages:"Adults and families", a:["big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.woodcocknaturecenter.org/upcomingevents", s:[[6, [["10:30", "12:00"]], "2026-10-03", "2026-10-03"]]},
-    {t:"Ridgefield Farmers Market", v:"ridgefield-farmers-market-jesse-lee-gree", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Family activities and live music alongside producers-only market.", src:"https://www.ridgefieldfarmersmarket.org/", s:[[6, [["10:00", "13:00"]], "2026-06-20", "2026-10-03"]]},
-    {t:"Storytime at Ridgefield Farmers Market", v:"ridgefield-library-ridgefield-farmers-ma", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:true, blurb:"", src:"https://ridgefieldlibrary.librarymarket.com/event/storytime-ridgefield-farmers-market-146128", s:[[6, [["12:00", "12:30"]], "2026-09-14", "2026-12-19"]]},
     {t:"Ridgefield Halloween Walk", v:"town-of-ridgefield-main-street", special:"hw", ages:"Families", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Downtown trick-or-treating at shops; organized by the Town.", src:"https://inridgefield.com/events/ridgefields-halloween-walk/", when:[{from:"2026-10-31", to:"2026-10-31", t:[["10:00", "12:00"]]}]},
-    {t:"Giant Pumpkin Weigh Off", v:"ridgefield-community-event-ballard-park", special:"hw", ages:"Families", a:["baby", "toddler", "preschool", "big"], price:"See event listing", free:false, ticket:false, blurb:"Large fall community event surfaced through parent calendar rather than institutional class listings.", src:"https://ridgefieldmom.com/calendar/month/2026-10/", when:[{from:"2026-09-27", to:"2026-09-27", t:[["10:00", "15:00"]]}]},
     {t:"Jack's Adventures in American History", v:"ridgefield-library", special:"fall", ages:"Grades K–5 + family", a:["big"], price:"Free", free:true, ticket:false, blurb:"Interactive family history program.", src:"https://ridgefieldmom.com/calendar/2026-04-25/", when:[{from:"2026-04-25", to:"2026-04-25", t:[["14:00", "15:00"]]}]},
     {t:"Summer Reading Kickoff Party", v:"ridgefield-library", special:"fall", ages:"Babies, kids, teens and families", a:["baby", "toddler"], price:"Free", free:true, ticket:false, blurb:"Summer reading signup, free T-shirts while supplies last and prizes.", src:"https://www.ridgefieldpubliclibrary.com/children-programs", when:[{from:"2026-06-27", to:"2026-06-27", t:[["11:00", "13:00"]]}]},
     {t:"Ghosts of Ridgefield", v:"keeler-tavern-museum-history-center", special:"hw", ages:"Families; check recommended age", a:["baby", "toddler", "preschool", "big"], price:"Ticketed", free:false, ticket:true, blurb:"", src:"https://keelertavernmuseum.org/events/calendar/", when:[{from:"2026-10-23", to:"2026-10-25", t:[["17:00", "19:00"]]}]},
     {t:"Holiday Stroll Open House", v:"keeler-tavern-museum-history-center", special:"hol", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Check event / stroll admission", free:false, ticket:false, blurb:"", src:"https://keelertavernmuseum.org/events/calendar/", when:[{from:"2026-12-04", to:"2026-12-04", t:[["17:00", "19:00"]]}]},
     {t:"Ridgefield Town Party", v:"the-ridgefield-playhouse-field-at-vetera", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:true, blurb:"Live music plus Kids Zone with face painting, lawn games, bubble artistry and nonprofit partners.", src:"https://ridgefieldplayhouse.org/event/ridgefield-town-party-2026/", when:[{from:"2026-05-31", to:"2026-05-31", t:[["14:00", null]]}]},
     {t:"The Nutcracker", v:"ridgefield-school-of-dance-ridgefield-pe", special:"hol", ages:"Families / student dancers", a:["baby", "toddler", "preschool", "big"], price:"Ticketed", free:false, ticket:true, blurb:"", src:"https://www.ridgefieldschoolofdance.com/", when:[{from:"2026-11-20", to:"2026-11-20", t:[]}]},
-    {t:"Annual Giant Pumpkin Weigh-Off", v:"connecticut-giant-pumpkin-growers-club-b", special:"hw", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free admission", free:true, ticket:false, blurb:"Giant pumpkins, growers, music, farm animals, children's activities and vendors.", src:"https://inridgefield.com/events/ridgefields-annual-giant-pumpkin-weigh-off/", when:[{from:"2026-09-27", to:"2026-09-27", t:[["10:00", "15:00"]]}]},
     {t:"Ridgefield Holiday Stroll", v:"ridgefield-chamber-of-commerce-downtown-", special:"hol", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free / individual activities may vary", free:true, ticket:false, blurb:"Weekend of downtown holiday activities; Keeler Tavern and A.C.T. participate.", src:"https://inridgefield.com/events/holiday-stroll/", when:[{from:"2026-12-04", to:"2026-12-05", t:[]}]},
-    {t:"Memorial Day Parade", v:"town-of-ridgefield-main-street-to-ballar", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Rifle salute, parade down Main Street and ceremonies at Ballard Park.", src:"https://inridgefield.com/events/memorial-day-parade/", when:[{from:"2026-05-25", to:"2026-05-25", t:[["11:30", "13:00"]]}]}
+    {t:"Memorial Day Parade", v:"town-of-ridgefield-main-street-to-ballar", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Rifle salute, parade down Main Street and ceremonies at Ballard Park.", src:"https://inridgefield.com/events/memorial-day-parade/", when:[{from:"2026-05-25", to:"2026-05-25", t:[["11:30", "13:00"]]}]},
+    {t:"Annual Giant Pumpkin Weigh-Off", v:"connecticut-giant-pumpkin-growers-club-b", special:"hw", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free admission", free:true, ticket:false, blurb:"Giant pumpkins, growers, music, farm animals, children's activities and vendors.", src:"https://inridgefield.com/events/ridgefields-annual-giant-pumpkin-weigh-off/", when:[{from:"2026-09-27", to:"2026-09-27", t:[["10:00", "15:00"]]}]}
   ],
 
   tba: [
@@ -269,6 +289,7 @@ window.TOWN = {
         <a href="#things">Things to do</a>
         <a href="#resources">Resources</a>
       </nav>
+      <a class="btn-sm" href="https://ctkidscalendar.com/">&larr; All towns</a>
     </div>
   </div>
 </header>
@@ -466,6 +487,7 @@ window.TOWN = {
   <div class="wrap">
     <span>Ridgefield Kids Calendar · part of <a href="https://ctkidscalendar.com/">CT Kids Calendar</a></span>
     <span>Schedules last checked September 2026 · <a href="#privacy">Privacy policy</a></span>
+    <span><a href="mailto:newhavenmoms@gmail.com?subject=Suggest%20a%20town%20for%20CT%20Kids%20Calendar&body=Town%3A%20">Suggest a town</a></span>
   </div>
 </footer>
 

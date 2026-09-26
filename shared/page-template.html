@@ -12,6 +12,32 @@
 <meta property="og:title" content="{{TOWN}} Kids Calendar: what are we doing today?">
 <meta property="og:description" content="Storytimes, festivals, classes and local resources for little ones in {{TOWN}}, CT.">
 <meta property="og:url" content="{{URL}}">
+<link rel="canonical" href="{{URL}}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{URL}}#page",
+      "url": "{{URL}}",
+      "name": "{{TOWN}} Kids Calendar",
+      "isPartOf": { "@id": "https://ctkidscalendar.com/#website" },
+      "about": {
+        "@type": "Place",
+        "name": "{{TOWN}}, Connecticut"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "CT Kids Calendar", "item": "https://ctkidscalendar.com/"},
+        {"@type": "ListItem", "position": 2, "name": "{{TOWN}}", "item": "{{URL}}"}
+      ]
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -78,6 +104,7 @@ window.TOWN = {
         <a href="#things">Things to do</a>
         <a href="#resources">Resources</a>
       </nav>
+      <a class="btn-sm" href="https://ctkidscalendar.com/">&larr; All towns</a>
     </div>
   </div>
 </header>
@@ -183,7 +210,7 @@ window.TOWN = {
 
   <section class="block" id="resources">
     <div class="wrap">
-      <h2 class="sec">Resources for moms</h2>
+      <h2 class="sec">Resources for parents</h2>
       <p class="intro">Help with the big things and the everyday things, from pregnancy through the toddler years.</p>
       <div class="help">
         <h3>If you're struggling right now</h3>
@@ -269,6 +296,7 @@ window.TOWN = {
   <div class="wrap">
     <span>{{TOWN}} Kids Calendar · part of <a href="https://ctkidscalendar.com/">CT Kids Calendar</a></span>
     <span>Schedules last checked {{MONTH_YEAR}} · <a href="#privacy">Privacy policy</a></span>
+    <span><a href="mailto:newhavenmoms@gmail.com?subject=Suggest%20a%20town%20for%20CT%20Kids%20Calendar&body=Town%3A%20">Suggest a town</a></span>
   </div>
 </footer>
 

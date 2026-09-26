@@ -12,6 +12,40 @@
 <meta property="og:title" content="CT Kids Calendar: find your town">
 <meta property="og:description" content="Storytimes, festivals, classes and family resources for towns across Connecticut.">
 <meta property="og:url" content="https://ctkidscalendar.com/">
+<link rel="canonical" href="https://ctkidscalendar.com/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ctkidscalendar.com/#org",
+      "name": "CT Kids Calendar",
+      "url": "https://ctkidscalendar.com/",
+      "description": "A town-by-town guide to storytimes, festivals, classes and family resources across Connecticut."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ctkidscalendar.com/#website",
+      "url": "https://ctkidscalendar.com/",
+      "name": "CT Kids Calendar",
+      "publisher": { "@id": "https://ctkidscalendar.com/#org" }
+    },
+    {
+      "@type": "ItemList",
+      "name": "CT Kids Calendar towns",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Stamford", "url": "https://ctkidscalendar.com/stamford/"},
+        {"@type": "ListItem", "position": 2, "name": "Norwalk", "url": "https://ctkidscalendar.com/norwalk/"},
+        {"@type": "ListItem", "position": 3, "name": "Fairfield", "url": "https://ctkidscalendar.com/fairfield/"},
+        {"@type": "ListItem", "position": 4, "name": "Ridgefield", "url": "https://ctkidscalendar.com/ridgefield/"},
+        {"@type": "ListItem", "position": 5, "name": "West Hartford", "url": "https://ctkidscalendar.com/west-hartford/"},
+        {"@type": "ListItem", "position": 6, "name": "New Haven", "url": "https://ctkidscalendar.com/new-haven/"}
+      ]
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -93,6 +127,9 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       <span>CT Kids Calendar</span>
     </a>
     <div class="navwrap">
+      <div class="actions">
+        <a class="btn-sm" href="mailto:newhavenmoms@gmail.com?subject=Hello%20from%20CT%20Kids%20Calendar">Contact</a>
+      </div>
     </div>
   </div>
 </header>
@@ -102,7 +139,7 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
     <div class="wrap">
       <p class="home-fig">Connecticut, town by town</p>
       <h1>Find a kids <em>calendar</em></h1>
-      <p class="lede">Storytimes, festivals, classes and family resources &mdash; tap your town on the map to jump straight in.</p>
+      <p class="lede">Find your town. Find something to do. Every single week.</p>
       <div class="hero-mapwrap">
         <span class="hero-maptag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"></path></svg> Tap a pin to open your town</span>
         <div class="hero-mapcard">
@@ -210,11 +247,22 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
     </div>
   </section>
 
+  <section class="home-cta" id="suggest">
+    <div class="wrap">
+      <div>
+        <h2>Don't see your town?</h2>
+        <p>We're adding Connecticut towns one at a time, each one researched and checked by hand. Tell us where you'd like to see CT Kids Calendar next.</p>
+      </div>
+      <a class="btn" href="mailto:newhavenmoms@gmail.com?subject=Suggest%20a%20town%20for%20CT%20Kids%20Calendar&body=Town%3A%20">Suggest a town</a>
+    </div>
+  </section>
+
 </main>
 
 <footer class="home-footer">
   <div class="wrap">
     <span>CT Kids Calendar &middot; a town-by-town guide for Connecticut families</span>
+    <span><a href="mailto:newhavenmoms@gmail.com?subject=Suggest%20a%20town%20for%20CT%20Kids%20Calendar&body=Town%3A%20">Suggest a town</a></span>
   </div>
 </footer>
 
