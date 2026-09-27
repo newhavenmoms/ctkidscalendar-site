@@ -81,6 +81,10 @@ window.TOWN = {
   peabody:["Yale Peabody Museum","170 Whitney Ave"],
   ycba:["Yale Center for British Art","1080 Chapel St"],
   nhm:["New Haven Museum","114 Whitney Ave"],
+  woostermarket:["CitySeed Wooster Square Farmers Market","511 Chapel St"],
+  edgewoodmarket:["CitySeed Edgewood Park Farmers Market","W Rock Ave & Whalley Ave"],
+  qhouse:["Dixwell Community House (Q House)","197 Dixwell Ave"],
+  edgertonpark:["Edgerton Park","75 Cliff St"],
   green:["New Haven Green","250 Temple St"],
   junta:["Junta for Progressive Action","169 Grand Ave"],
   shubert:["Shubert Theatre","247 College St"],
@@ -91,7 +95,7 @@ window.TOWN = {
 },
 
   venueMeta: {
-stetson:["dixwell",1],fairhaven:["fairhaven",1],mitchell:["westville",1],ives:["downtown",1],wilson:["hill",1],stjohns:["eastrock",1],ccm:["downtown",1],cg:["westville",0],atwater:["fairhaven",1],pebbles:["eastrock",1],trinity:["downtown",1],cpc:["downtown",1],caw:["downtown",1],peabody:["downtown",1],ycba:["downtown",1],nhm:["downtown",1],green:["downtown",0],junta:["fairhaven",null],shubert:["downtown",1],broadway:["downtown",0],hope:["nearby",null],trolley:["nearby",null],ewm:["nearby",1]
+stetson:["dixwell",1],fairhaven:["fairhaven",1],mitchell:["westville",1],ives:["downtown",1],wilson:["hill",1],stjohns:["eastrock",1],ccm:["downtown",1],cg:["westville",0],atwater:["fairhaven",1],pebbles:["eastrock",1],trinity:["downtown",1],cpc:["downtown",1],caw:["downtown",1],peabody:["downtown",1],ycba:["downtown",1],nhm:["downtown",1],green:["downtown",0],junta:["fairhaven",null],shubert:["downtown",1],broadway:["downtown",0],hope:["nearby",null],trolley:["nearby",null],ewm:["nearby",1],woostermarket:["downtown",0],edgewoodmarket:["westville",0],qhouse:["dixwell",1],edgertonpark:["eastrock",0]
   },
 
   hoods: [
@@ -106,6 +110,8 @@ stetson:["dixwell",1],fairhaven:["fairhaven",1],mitchell:["westville",1],ives:["
   ],
 
   events: [
+ {t:"CitySeed Wooster Square Farmers Market",v:"woostermarket",ages:"All ages",a:["baby","toddler","preschool","big"],price:"Free to browse",free:true,drop:true,blurb:"An open-air, producer-only farmers market in the Wooster Square/Little Italy neighborhood, with live music and cooking demonstrations most Saturdays.",src:"https://www.cityseed.org",s:[[6,[["09:00","13:00"]],"2026-09-26","2026-11-21"]]},
+ {t:"CitySeed Edgewood Park Farmers Market",v:"edgewoodmarket",ages:"All ages",a:["baby","toddler","preschool","big"],price:"Free to browse",free:true,drop:true,blurb:"A neighborhood farmers market in Edgewood Park, at the corner of West Rock and Whalley Avenues.",src:"https://www.cityseed.org",s:[[0,[["10:00","13:00"]],"2026-09-27","2026-11-23"]]},
  {t:"Stay & Play",v:"stetson",ages:"Birth–5 with a caregiver",a:["baby","toddler","preschool"],price:"Free",free:true,drop:true,src:"https://nhfpl.org/children/storytimesandmore/",s:[[1,[["10:00","11:30"]],"2026-09-28","2026-12-31"],[6,[["10:00","11:30"]],"2026-09-26","2026-12-31"]]},
  {t:"Quédate y Juega · Bilingual Stay & Play",v:"fairhaven",ages:"Birth–5 with a caregiver",a:["baby","toddler","preschool"],price:"Free",free:true,drop:true,src:"https://nhfpl.org/children/storytimesandmore/",s:[[2,[["10:30","11:00"]],"2026-09-29","2026-12-31"]]},
  {t:"Stay & Play",v:"mitchell",ages:"Birth–5 with a caregiver",a:["baby","toddler","preschool"],price:"Free",free:true,drop:true,src:"https://nhfpl.org/children/storytimesandmore/",s:[[2,[["11:00","12:00"]],"2026-09-29","2026-12-31"],[6,[["11:00","12:00"]],"2026-10-17","2026-12-31",3]]},
@@ -136,7 +142,9 @@ stetson:["dixwell",1],fairhaven:["fairhaven",1],mitchell:["westville",1],ives:["
  {t:"Doctor Gasp and the Eeks",v:"ewm",special:"hw",ages:"Families",a:["preschool","big"],price:"See the museum's page for tickets",check:true,noSignup:true,blurb:"A Halloween concert from folk musician Dan Blakeslee's spooky alter ego, Doctor Gasp, and his band the Eeks. A fun, not-too-scary way to kick off Halloween week.",src:"https://www.eliwhitney.org/events",when:[{from:"2026-10-24",t:[["18:00","20:00"]]}]},
  {t:"How the Grinch Stole Christmas! The Musical",v:"shubert",special:"hol",ages:"Families",a:["preschool","big"],price:"Tickets required",ticket:true,src:"https://www.shubert.com/events/detail/dr-seuss-how-the-grinch-stole-christmas-the-musical",when:[{from:"2026-11-18",to:"2026-11-22",t:[]}]},
  {t:"The Nutcracker (New Haven Ballet)",v:"shubert",special:"hol",ages:"Families",a:["preschool","big"],price:"Tickets required",ticket:true,src:"https://www.shubert.com/events/detail/new-haven-ballet-presents-the-nutcracker",when:[{from:"2026-12-11",to:"2026-12-13",t:[]}]},
- {t:"The Hip Hop Nutcracker",v:"shubert",special:"hol",ages:"Families",a:["preschool","big"],price:"Tickets required",ticket:true,src:"https://www.shubert.com/events/detail/the-hip-hop-nutcracker",when:[{from:"2026-12-22",t:[["19:00",null]]}]}
+ {t:"The Hip Hop Nutcracker",v:"shubert",special:"hol",ages:"Families",a:["preschool","big"],price:"Tickets required",ticket:true,src:"https://www.shubert.com/events/detail/the-hip-hop-nutcracker",when:[{from:"2026-12-22",t:[["19:00",null]]}]},
+ {t:"CT Folk Fest & Green Expo",v:"edgertonpark",special:"fall",ages:"All ages",a:["baby","toddler","preschool","big"],price:"Free (suggested donation)",free:true,drop:true,blurb:"A full day of live music, food trucks and eco-friendly vendors, with a dedicated Green Kids Village — yoga, a puppet-making workshop and an afternoon puppet parade made from recycled materials.",src:"https://www.ctfolk.org/",when:[{from:"2026-09-26",t:[["10:45",null]]}]},
+ {t:"New Haven Community Baby Shower",v:"qhouse",special:"fall",ages:"Pregnant parents & families with babies",a:["baby"],price:"Free",free:true,drop:true,blurb:"The 5th annual community baby shower, with free baby supplies, resources for new and expecting parents, and a celebration for the whole family.",when:[{from:"2026-10-17",t:[["11:00",null]]}]}
   ],
 
   tba: [
