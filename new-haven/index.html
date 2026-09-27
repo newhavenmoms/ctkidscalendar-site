@@ -85,6 +85,9 @@ window.TOWN = {
   edgewoodmarket:["CitySeed Edgewood Park Farmers Market","W Rock Ave & Whalley Ave"],
   qhouse:["Dixwell Community House (Q House)","197 Dixwell Ave"],
   edgertonpark:["Edgerton Park","75 Cliff St"],
+  scsu:["SCSU Moore Field House","501 Crescent St"],
+  pitkinplaza:["Pitkin Plaza","900 Chapel St"],
+  barcade:["Barcade New Haven","56 Orange St"],
   green:["New Haven Green","250 Temple St"],
   junta:["Junta for Progressive Action","169 Grand Ave"],
   shubert:["Shubert Theatre","247 College St"],
@@ -95,7 +98,7 @@ window.TOWN = {
 },
 
   venueMeta: {
-stetson:["dixwell",1],fairhaven:["fairhaven",1],mitchell:["westville",1],ives:["downtown",1],wilson:["hill",1],stjohns:["eastrock",1],ccm:["downtown",1],cg:["westville",0],atwater:["fairhaven",1],pebbles:["eastrock",1],trinity:["downtown",1],cpc:["downtown",1],caw:["downtown",1],peabody:["downtown",1],ycba:["downtown",1],nhm:["downtown",1],green:["downtown",0],junta:["fairhaven",null],shubert:["downtown",1],broadway:["downtown",0],hope:["nearby",null],trolley:["nearby",null],ewm:["nearby",1],woostermarket:["downtown",0],edgewoodmarket:["westville",0],qhouse:["dixwell",1],edgertonpark:["eastrock",0]
+stetson:["dixwell",1],fairhaven:["fairhaven",1],mitchell:["westville",1],ives:["downtown",1],wilson:["hill",1],stjohns:["eastrock",1],ccm:["downtown",1],cg:["westville",0],atwater:["fairhaven",1],pebbles:["eastrock",1],trinity:["downtown",1],cpc:["downtown",1],caw:["downtown",1],peabody:["downtown",1],ycba:["downtown",1],nhm:["downtown",1],green:["downtown",0],junta:["fairhaven",null],shubert:["downtown",1],broadway:["downtown",0],hope:["nearby",null],trolley:["nearby",null],ewm:["nearby",1],woostermarket:["downtown",0],edgewoodmarket:["westville",0],qhouse:["dixwell",1],edgertonpark:["eastrock",0],scsu:["nearby",1],pitkinplaza:["downtown",0],barcade:["downtown",1]
   },
 
   hoods: [
@@ -110,6 +113,8 @@ stetson:["dixwell",1],fairhaven:["fairhaven",1],mitchell:["westville",1],ives:["
   ],
 
   events: [
+ {t:"Movies in the Plaza",v:"pitkinplaza",ages:"All ages",a:["baby","toddler","preschool","big"],price:"Free",free:true,drop:true,note:"Films vary by week and aren't all kid-specific — check the lineup before bringing little ones.",blurb:"Free outdoor movie nights in downtown New Haven. Bring lawn chairs or a blanket; light snacks provided.",src:"https://www.downtownnewhaven.com/movies",s:[[3,[["20:00",null]],"2026-09-30","2026-10-31"]]},
+ {t:"Family Day at Barcade",v:"barcade",ages:"All ages",a:["baby","toddler","preschool","big"],price:"Arcade tokens sold separately",free:false,drop:true,blurb:"Classic arcade games and food, every Saturday and Sunday. All kids must be with a parent or guardian.",src:"https://barcade.com/familyday",s:[[6,[["12:00","17:00"]],"2026-09-26","2026-12-31"],[0,[["12:00","17:00"]],"2026-09-27","2026-12-31"]]},
  {t:"CitySeed Wooster Square Farmers Market",v:"woostermarket",ages:"All ages",a:["baby","toddler","preschool","big"],price:"Free to browse",free:true,drop:true,blurb:"An open-air, producer-only farmers market in the Wooster Square/Little Italy neighborhood, with live music and cooking demonstrations most Saturdays.",src:"https://www.cityseed.org",s:[[6,[["09:00","13:00"]],"2026-09-26","2026-11-21"]]},
  {t:"CitySeed Edgewood Park Farmers Market",v:"edgewoodmarket",ages:"All ages",a:["baby","toddler","preschool","big"],price:"Free to browse",free:true,drop:true,blurb:"A neighborhood farmers market in Edgewood Park, at the corner of West Rock and Whalley Avenues.",src:"https://www.cityseed.org",s:[[0,[["10:00","13:00"]],"2026-09-27","2026-11-23"]]},
  {t:"Stay & Play",v:"stetson",ages:"Birth–5 with a caregiver",a:["baby","toddler","preschool"],price:"Free",free:true,drop:true,src:"https://nhfpl.org/children/storytimesandmore/",s:[[1,[["10:00","11:30"]],"2026-09-28","2026-12-31"],[6,[["10:00","11:30"]],"2026-09-26","2026-12-31"]]},
@@ -144,7 +149,9 @@ stetson:["dixwell",1],fairhaven:["fairhaven",1],mitchell:["westville",1],ives:["
  {t:"The Nutcracker (New Haven Ballet)",v:"shubert",special:"hol",ages:"Families",a:["preschool","big"],price:"Tickets required",ticket:true,src:"https://www.shubert.com/events/detail/new-haven-ballet-presents-the-nutcracker",when:[{from:"2026-12-11",to:"2026-12-13",t:[]}]},
  {t:"The Hip Hop Nutcracker",v:"shubert",special:"hol",ages:"Families",a:["preschool","big"],price:"Tickets required",ticket:true,src:"https://www.shubert.com/events/detail/the-hip-hop-nutcracker",when:[{from:"2026-12-22",t:[["19:00",null]]}]},
  {t:"CT Folk Fest & Green Expo",v:"edgertonpark",special:"fall",ages:"All ages",a:["baby","toddler","preschool","big"],price:"Free (suggested donation)",free:true,drop:true,blurb:"A full day of live music, food trucks and eco-friendly vendors, with a dedicated Green Kids Village — yoga, a puppet-making workshop and an afternoon puppet parade made from recycled materials.",src:"https://www.ctfolk.org/",when:[{from:"2026-09-26",t:[["10:45",null]]}]},
- {t:"New Haven Community Baby Shower",v:"qhouse",special:"fall",ages:"Pregnant parents & families with babies",a:["baby"],price:"Free",free:true,drop:true,blurb:"The 5th annual community baby shower, with free baby supplies, resources for new and expecting parents, and a celebration for the whole family.",when:[{from:"2026-10-17",t:[["11:00",null]]}]}
+ {t:"New Haven Community Baby Shower",v:"qhouse",special:"fall",ages:"Pregnant parents & families with babies",a:["baby"],price:"Free",free:true,drop:true,blurb:"The 5th annual community baby shower, with free baby supplies, resources for new and expecting parents, and a celebration for the whole family.",when:[{from:"2026-10-17",t:[["11:00",null]]}]},
+ {t:"Compassionfest",v:"scsu",special:"fall",ages:"All ages",a:["baby","toddler","preschool","big"],price:"Free",free:true,drop:true,blurb:"A festival of vegan food and animal-friendly vendors, local artisans, live music, yoga and workshops, benefiting BARC CT.",src:"https://www.eventbrite.com/e/1983494521508",when:[{from:"2026-10-04",t:[["10:00",null]]}]},
+ {t:"Cirque Alice",v:"shubert",special:"shows",ages:"All ages",a:["baby","toddler","preschool","big"],price:"Tickets required",ticket:true,blurb:"An acrobatic reimagining of Alice in Wonderland, with aerialists, contortionists and puppetry, from the creators of The Illusionists.",src:"https://www.shubert.com",when:[{from:"2027-01-08",t:[["19:00",null]]}]}
   ],
 
   tba: [
