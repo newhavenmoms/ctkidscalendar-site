@@ -144,11 +144,12 @@ section.block{padding:64px 0;border-top:1px solid var(--line)}
 .res article:nth-child(3n) .for{color:var(--harbor)}
 
 /* big days */
-.bigdays{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
+.bigdays{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:36px}
 @media (max-width:860px){.bigdays{grid-template-columns:1fr;gap:28px}}
 .bigdays h3{font-family:var(--serif);font-weight:400;font-size:1.4rem;margin:0 0 4px;padding-bottom:8px;border-bottom:3px solid var(--elm)}
 .bigdays h3.hw{border-color:var(--marigold)}
 .bigdays h3.hol{border-color:var(--lilac)}
+.bigdays h3.shows{border-color:var(--pool-deep)}
 .bigdays ol{list-style:none;margin:0;padding:0}
 .bd{display:grid;grid-template-columns:4.2rem 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);align-items:start}
 .bd-date{text-align:center;border-radius:14px;padding:6px 4px;background:var(--paper-2)}
@@ -439,6 +440,7 @@ section.block h2.sec::before{content:"No. 0" counter(sec);display:block;font-fam
 .bigdays h3::after,.places h3::after{content:"";display:block;height:6px;margin-top:8px;background:var(--elm)}
 .bigdays h3.hw::after{background:var(--marigold)}
 .bigdays h3.hol::after{background:var(--lilac)}
+.bigdays h3.shows::after{background:var(--pool-deep)}
 .places h3.rain::after{background:var(--pool-deep)}
 .places h3.drive::after{background:var(--marigold)}
 .bigdays h3,.places h3{padding-bottom:0;border-bottom:0}
@@ -576,7 +578,7 @@ section.block h2.sec::before{color:var(--ink-soft)}
 #things{background:var(--pool-2)}
 #classes{background:var(--pool-2);background-image:none}
 #contact{background:var(--pool-2)}
-.bigdays h3::after,.bigdays h3.hw::after,.bigdays h3.hol::after,.places h3::after,.places h3.rain::after,.places h3.drive::after{background:var(--ink);height:3px}
+.bigdays h3::after,.bigdays h3.hw::after,.bigdays h3.hol::after,.bigdays h3.shows::after,.places h3::after,.places h3.rain::after,.places h3.drive::after{background:var(--ink);height:3px}
 .bd-date,.bdhw .bd-date:not(.tba),.bdhol .bd-date:not(.tba){background:var(--paper)!important;color:var(--ink)}
 .bd-date .m{color:var(--ink)}
 .ctag,.ctag.music,.ctag.nature,.ctag.dance,.ctag.art,.ctag.swim,.ctag.move,.ctag.build{background:var(--pool-2);color:var(--ink);border-color:var(--ink)}

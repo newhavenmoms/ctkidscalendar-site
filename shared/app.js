@@ -261,7 +261,7 @@ if(hoodSel)hoodSel.onchange=()=>{f.hood=hoodSel.value;hoodSel.classList.toggle("
 /* ---------- big days ---------- */
 const bigEl=document.getElementById("bigList"),bigSection=document.getElementById("bigdays");
 function renderBig(){
-  const groups={fall:["Fall festivals",""],hw:["Halloween","hw"],hol:["Holidays","hol"]};
+  const groups={fall:["Fall festivals",""],shows:["Shows & performances","shows"],hw:["Halloween","hw"],hol:["Holidays","hol"]};
   const byTitle=new Map();
   E.filter(e=>e.special).forEach(e=>{
     const from=e.when[0].from,last=e.when[e.when.length-1],to=last.to||last.from,cur=byTitle.get(e.t);
