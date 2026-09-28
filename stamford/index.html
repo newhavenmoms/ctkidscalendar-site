@@ -57,225 +57,2810 @@
      ============================================================ -->
 <script>
 window.TOWN = {
-  name: "Stamford Kids Calendar",
-  townLabel: "Stamford, CT",
-  url: "https://ctkidscalendar.com/stamford/",
-  email: "",
-  instagram: "",
-  calendarThrough: "2026-12-31",
-
-  venues: {
-    "ferguson-library-harry-bennett-branch": ["Ferguson Library — Harry Bennett Branch", "115 Vine Rd"],
-    "ferguson-library-south-end-branch": ["Ferguson Library — South End Branch", "34 Woodland Ave"],
-    "ferguson-library-main-library-dimattia-b": ["Ferguson Library — Main Library / DiMattia Building", "1 Public Library Plaza"],
-    "abilis": ["Abilis", "78 Harvard Ave"],
-    "stamford-jcc": ["Stamford JCC", "1035 Newfield Ave"],
-    "a-z-dance-studio-star-center": ["A-Z Dance Studio — STAR Center", "1170 Shippan Ave"],
-    "little-jigz-stamford-studio": ["Little Jigz — Stamford Studio", "9 Hyde St"],
-    "chelsea-piers-connecticut": ["Chelsea Piers Connecticut", "1 Blachley Rd"],
-    "children-of-the-sound-swim-school-stamfo": ["Children of the Sound Swim School — Stamford location", "49 Brown House Rd"],
-    "mill-river-park-collaborative-nissen-car": ["Mill River Park Collaborative — Nissen Carousel", "30 W Broad St"],
-    "mill-river-park-collaborative-mill-river": ["Mill River Park Collaborative — Mill River Park / Nissen Carousel area", "Stamford"],
-    "mill-river-park-collaborative": ["Mill River Park Collaborative", "Stamford"],
-    "ferguson-library-south-end-branch-at-lat": ["Ferguson Library — South End Branch at Lathon Wider Community Center", "34 Woodland Ave"],
-    "ferguson-library-weed-memorial-hollander": ["Ferguson Library — Weed Memorial & Hollander Branch", "1143 Hope St"],
-    "ferguson-library-waterside-west-side-bra": ["Ferguson Library — Waterside / West Side Branch", "245 Selleck St"],
-    "stamford-museum-nature-center": ["Stamford Museum & Nature Center", "39 Scofieldtown Rd"],
-    "bartlett-arboretum-gardens": ["Bartlett Arboretum & Gardens", "151 Brookdale Rd"],
-    "soundwaters": ["SoundWaters", "1281 Cove Rd"],
-    "city-of-stamford-soundwaters-cove-island": ["City of Stamford / SoundWaters — Cove Island Park", "1125 Cove Rd / 1281 Cove Rd"],
-    "city-of-stamford-scalzi-park": ["City of Stamford — Scalzi Park", "100 Bridge St"],
-    "city-of-stamford-cummings-park": ["City of Stamford — Cummings Park", "Shippan Ave"],
-    "city-of-stamford-greenwich-mianus-river-": ["City of Stamford / Greenwich — Mianus River Park", "Merriebrook Ln area"],
-    "stamford-downtown-veterans-memorial-park": ["Stamford Downtown — Veterans Memorial Park", "130 Atlantic St"],
-    "stamford-downtown-bedford-street": ["Stamford Downtown — Bedford Street", "Downtown Stamford"],
-    "stamford-downtown-city-departments-veter": ["Stamford Downtown + City departments — Veterans Memorial Park", "130 Atlantic St"],
-    "stamford-downtown-hoyt-street-at-summer-": ["Stamford Downtown — Hoyt Street at Summer Street", "Downtown Stamford"],
-    "stamford-downtown-downtown-stamford": ["Stamford Downtown — Downtown Stamford", "Stamford"],
-    "stamford-moms-stamford-town-center-resta": ["Stamford Moms — Stamford Town Center Restaurant Plaza", "100 Greyrock Pl"],
-    "stamford-moms-cocreate": ["Stamford Moms — CoCreate", "47 John St"],
-    "stamford-department-of-health-human-serv": ["Stamford Department of Health & Human Services — Boys & Girls Club of Stamford", "Stamford"],
-    "mill-river-park-collaborative-whittingha": ["Mill River Park Collaborative — Whittingham Discovery Center", "17 W Park Pl"],
-    "little-jigz-pender-keady-academy": ["Little Jigz / Pender-Keady Academy", "9 Hyde St"],
-    "pender-keady-academy": ["Pender-Keady Academy", "9 Hyde St"],
-    "ballet-school-of-stamford": ["Ballet School of Stamford", "100 Greyrock Pl"],
-    "steps-dance-studio": ["STEPS Dance Studio", "1100 High Ridge Rd"],
-    "creative-family-rhythms-various-stamford": ["Creative Family Rhythms — Various Stamford-area classes", "Stamford"],
-    "stamford-music-arts-academy": ["Stamford Music & Arts Academy", "76 Progress Dr"],
-    "curtain-call-sterling-farms-theatre-comp": ["Curtain Call — Sterling Farms Theatre Complex", "1349 Newfield Ave"],
-    "code-ninjas-stamford": ["Code Ninjas Stamford", "111 High Ridge Rd"],
-    "goldfish-swim-school-stamford": ["Goldfish Swim School – Stamford", "9 Riverbend Dr S"],
-    "hudson-valley-swim-stamford-la-fitness-p": ["Hudson Valley Swim Stamford — LA Fitness pool", "52 6th St"],
-    "sweet-blue-swim-academy": ["Sweet Blue Swim Academy", "75 3rd St"],
-    "angel-land-stamford-stamford-town-center": ["Angel Land Stamford — Stamford Town Center", "100 Greyrock Pl"],
-    "temple-sinai-stamford": ["Temple Sinai Stamford", "458 Lakeside Dr"],
-    "chabad-of-stamford": ["Chabad of Stamford", "770 High Ridge Rd"],
-    "boys-girls-club-of-stamford-yerwood-cent": ["Boys & Girls Club of Stamford — Yerwood Center / Mary C. Rich Clubhouse / Gary Wendt Teen Center", "Stamford"],
-    "stamford-recreation-recreation-star-cent": ["Stamford Recreation — Recreation Star Center", "1170 Shippan Ave"],
-    "german-school-of-connecticut-stamford-ca": ["German School of Connecticut — Stamford campus", "Stamford"]
+ "name": "Stamford Kids Calendar",
+ "townLabel": "Stamford, CT",
+ "url": "https://ctkidscalendar.com/stamford/",
+ "email": "",
+ "instagram": "",
+ "calendarThrough": "2026-12-31",
+ "venues": {
+  "ferguson-library-harry-bennett-branch": [
+   "Ferguson Library — Harry Bennett Branch",
+   "115 Vine Rd"
+  ],
+  "ferguson-library-south-end-branch": [
+   "Ferguson Library — South End Branch",
+   "34 Woodland Ave"
+  ],
+  "ferguson-library-main-library-dimattia-b": [
+   "Ferguson Library — Main Library / DiMattia Building",
+   "1 Public Library Plaza"
+  ],
+  "abilis": [
+   "Abilis",
+   "78 Harvard Ave"
+  ],
+  "stamford-jcc": [
+   "Stamford JCC",
+   "1035 Newfield Ave"
+  ],
+  "a-z-dance-studio-star-center": [
+   "A-Z Dance Studio — STAR Center",
+   "1170 Shippan Ave"
+  ],
+  "little-jigz-stamford-studio": [
+   "Little Jigz — Stamford Studio",
+   "9 Hyde St"
+  ],
+  "chelsea-piers-connecticut": [
+   "Chelsea Piers Connecticut",
+   "1 Blachley Rd"
+  ],
+  "children-of-the-sound-swim-school-stamfo": [
+   "Children of the Sound Swim School — Stamford location",
+   "49 Brown House Rd"
+  ],
+  "mill-river-park-collaborative-nissen-car": [
+   "Mill River Park Collaborative — Nissen Carousel",
+   "30 W Broad St"
+  ],
+  "mill-river-park-collaborative-mill-river": [
+   "Mill River Park Collaborative — Mill River Park / Nissen Carousel area",
+   "Stamford"
+  ],
+  "mill-river-park-collaborative": [
+   "Mill River Park Collaborative",
+   "Stamford"
+  ],
+  "ferguson-library-south-end-branch-at-lat": [
+   "Ferguson Library — South End Branch at Lathon Wider Community Center",
+   "34 Woodland Ave"
+  ],
+  "ferguson-library-weed-memorial-hollander": [
+   "Ferguson Library — Weed Memorial & Hollander Branch",
+   "1143 Hope St"
+  ],
+  "ferguson-library-waterside-west-side-bra": [
+   "Ferguson Library — Waterside / West Side Branch",
+   "245 Selleck St"
+  ],
+  "stamford-museum-nature-center": [
+   "Stamford Museum & Nature Center",
+   "39 Scofieldtown Rd"
+  ],
+  "bartlett-arboretum-gardens": [
+   "Bartlett Arboretum & Gardens",
+   "151 Brookdale Rd"
+  ],
+  "soundwaters": [
+   "SoundWaters",
+   "1281 Cove Rd"
+  ],
+  "city-of-stamford-soundwaters-cove-island": [
+   "City of Stamford / SoundWaters — Cove Island Park",
+   "1125 Cove Rd / 1281 Cove Rd"
+  ],
+  "city-of-stamford-scalzi-park": [
+   "City of Stamford — Scalzi Park",
+   "100 Bridge St"
+  ],
+  "city-of-stamford-cummings-park": [
+   "City of Stamford — Cummings Park",
+   "Shippan Ave"
+  ],
+  "city-of-stamford-greenwich-mianus-river-": [
+   "City of Stamford / Greenwich — Mianus River Park",
+   "Merriebrook Ln area"
+  ],
+  "stamford-downtown-veterans-memorial-park": [
+   "Stamford Downtown — Veterans Memorial Park",
+   "130 Atlantic St"
+  ],
+  "stamford-downtown-bedford-street": [
+   "Stamford Downtown — Bedford Street",
+   "Downtown Stamford"
+  ],
+  "stamford-downtown-city-departments-veter": [
+   "Stamford Downtown + City departments — Veterans Memorial Park",
+   "130 Atlantic St"
+  ],
+  "stamford-downtown-hoyt-street-at-summer-": [
+   "Stamford Downtown — Hoyt Street at Summer Street",
+   "Downtown Stamford"
+  ],
+  "stamford-downtown-downtown-stamford": [
+   "Stamford Downtown — Downtown Stamford",
+   "Stamford"
+  ],
+  "stamford-moms-stamford-town-center-resta": [
+   "Stamford Moms — Stamford Town Center Restaurant Plaza",
+   "100 Greyrock Pl"
+  ],
+  "stamford-moms-cocreate": [
+   "Stamford Moms — CoCreate",
+   "47 John St"
+  ],
+  "stamford-department-of-health-human-serv": [
+   "Stamford Department of Health & Human Services — Boys & Girls Club of Stamford",
+   "Stamford"
+  ],
+  "mill-river-park-collaborative-whittingha": [
+   "Mill River Park Collaborative — Whittingham Discovery Center",
+   "17 W Park Pl"
+  ],
+  "little-jigz-pender-keady-academy": [
+   "Little Jigz / Pender-Keady Academy",
+   "9 Hyde St"
+  ],
+  "pender-keady-academy": [
+   "Pender-Keady Academy",
+   "9 Hyde St"
+  ],
+  "ballet-school-of-stamford": [
+   "Ballet School of Stamford",
+   "100 Greyrock Pl"
+  ],
+  "steps-dance-studio": [
+   "STEPS Dance Studio",
+   "1100 High Ridge Rd"
+  ],
+  "creative-family-rhythms-various-stamford": [
+   "Creative Family Rhythms — Various Stamford-area classes",
+   "Stamford"
+  ],
+  "stamford-music-arts-academy": [
+   "Stamford Music & Arts Academy",
+   "76 Progress Dr"
+  ],
+  "curtain-call-sterling-farms-theatre-comp": [
+   "Curtain Call — Sterling Farms Theatre Complex",
+   "1349 Newfield Ave"
+  ],
+  "code-ninjas-stamford": [
+   "Code Ninjas Stamford",
+   "111 High Ridge Rd"
+  ],
+  "goldfish-swim-school-stamford": [
+   "Goldfish Swim School – Stamford",
+   "9 Riverbend Dr S"
+  ],
+  "hudson-valley-swim-stamford-la-fitness-p": [
+   "Hudson Valley Swim Stamford — LA Fitness pool",
+   "52 6th St"
+  ],
+  "sweet-blue-swim-academy": [
+   "Sweet Blue Swim Academy",
+   "75 3rd St"
+  ],
+  "angel-land-stamford-stamford-town-center": [
+   "Angel Land Stamford — Stamford Town Center",
+   "100 Greyrock Pl"
+  ],
+  "temple-sinai-stamford": [
+   "Temple Sinai Stamford",
+   "458 Lakeside Dr"
+  ],
+  "chabad-of-stamford": [
+   "Chabad of Stamford",
+   "770 High Ridge Rd"
+  ],
+  "boys-girls-club-of-stamford-yerwood-cent": [
+   "Boys & Girls Club of Stamford — Yerwood Center / Mary C. Rich Clubhouse / Gary Wendt Teen Center",
+   "Stamford"
+  ],
+  "stamford-recreation-recreation-star-cent": [
+   "Stamford Recreation — Recreation Star Center",
+   "1170 Shippan Ave"
+  ],
+  "german-school-of-connecticut-stamford-ca": [
+   "German School of Connecticut — Stamford campus",
+   "Stamford"
+  ],
+  "smnc-astronomy": [
+   "Stamford Museum & Nature Center — Astronomy Center & Planetarium",
+   "151 Scofieldtown Rd"
+  ],
+  "palace-theatre": [
+   "Stamford Center for the Arts — The Palace Theatre",
+   "61 Atlantic St"
+  ],
+  "stamford-town-center": [
+   "Stamford Town Center — Grand Court",
+   "100 Greyrock Pl"
+  ],
+  "home-depot-stamford": [
+   "The Home Depot (Stamford)",
+   ""
+  ]
+ },
+ "venueMeta": {
+  "ferguson-library-harry-bennett-branch": [
+   null,
+   1
+  ],
+  "ferguson-library-south-end-branch": [
+   null,
+   1
+  ],
+  "ferguson-library-main-library-dimattia-b": [
+   null,
+   1
+  ],
+  "abilis": [
+   null,
+   1
+  ],
+  "stamford-jcc": [
+   null,
+   1
+  ],
+  "a-z-dance-studio-star-center": [
+   null,
+   1
+  ],
+  "little-jigz-stamford-studio": [
+   null,
+   1
+  ],
+  "chelsea-piers-connecticut": [
+   null,
+   1
+  ],
+  "children-of-the-sound-swim-school-stamfo": [
+   null,
+   1
+  ],
+  "mill-river-park-collaborative-nissen-car": [
+   null,
+   1
+  ],
+  "mill-river-park-collaborative-mill-river": [
+   null,
+   1
+  ],
+  "mill-river-park-collaborative": [
+   null,
+   0
+  ],
+  "ferguson-library-south-end-branch-at-lat": [
+   null,
+   1
+  ],
+  "ferguson-library-weed-memorial-hollander": [
+   null,
+   1
+  ],
+  "ferguson-library-waterside-west-side-bra": [
+   null,
+   1
+  ],
+  "stamford-museum-nature-center": [
+   null,
+   0
+  ],
+  "bartlett-arboretum-gardens": [
+   null,
+   0
+  ],
+  "soundwaters": [
+   null,
+   0
+  ],
+  "city-of-stamford-soundwaters-cove-island": [
+   null,
+   0
+  ],
+  "city-of-stamford-scalzi-park": [
+   null,
+   0
+  ],
+  "city-of-stamford-cummings-park": [
+   null,
+   0
+  ],
+  "city-of-stamford-greenwich-mianus-river-": [
+   null,
+   0
+  ],
+  "stamford-downtown-veterans-memorial-park": [
+   null,
+   0
+  ],
+  "stamford-downtown-bedford-street": [
+   null,
+   0
+  ],
+  "stamford-downtown-city-departments-veter": [
+   null,
+   0
+  ],
+  "stamford-downtown-hoyt-street-at-summer-": [
+   null,
+   0
+  ],
+  "stamford-downtown-downtown-stamford": [
+   null,
+   0
+  ],
+  "stamford-moms-stamford-town-center-resta": [
+   null,
+   0
+  ],
+  "stamford-moms-cocreate": [
+   null,
+   1
+  ],
+  "stamford-department-of-health-human-serv": [
+   null,
+   1
+  ],
+  "mill-river-park-collaborative-whittingha": [
+   null,
+   1
+  ],
+  "little-jigz-pender-keady-academy": [
+   null,
+   1
+  ],
+  "pender-keady-academy": [
+   null,
+   1
+  ],
+  "ballet-school-of-stamford": [
+   null,
+   1
+  ],
+  "steps-dance-studio": [
+   null,
+   1
+  ],
+  "creative-family-rhythms-various-stamford": [
+   null,
+   1
+  ],
+  "stamford-music-arts-academy": [
+   null,
+   1
+  ],
+  "curtain-call-sterling-farms-theatre-comp": [
+   null,
+   1
+  ],
+  "code-ninjas-stamford": [
+   null,
+   1
+  ],
+  "goldfish-swim-school-stamford": [
+   null,
+   1
+  ],
+  "hudson-valley-swim-stamford-la-fitness-p": [
+   null,
+   1
+  ],
+  "sweet-blue-swim-academy": [
+   null,
+   1
+  ],
+  "angel-land-stamford-stamford-town-center": [
+   null,
+   1
+  ],
+  "temple-sinai-stamford": [
+   null,
+   1
+  ],
+  "chabad-of-stamford": [
+   null,
+   1
+  ],
+  "boys-girls-club-of-stamford-yerwood-cent": [
+   null,
+   1
+  ],
+  "stamford-recreation-recreation-star-cent": [
+   null,
+   1
+  ],
+  "german-school-of-connecticut-stamford-ca": [
+   null,
+   1
+  ],
+  "smnc-astronomy": [
+   "nearby",
+   1
+  ],
+  "palace-theatre": [
+   "nearby",
+   1
+  ],
+  "stamford-town-center": [
+   "nearby",
+   1
+  ],
+  "home-depot-stamford": [
+   "nearby",
+   1
+  ]
+ },
+ "hoods": [],
+ "events": [
+  {
+   "t": "Tummy Time & Tales",
+   "v": "ferguson-library-harry-bennett-branch",
+   "ages": "Pre-walking babies; up to 12 months",
+   "a": [
+    "baby",
+    "toddler"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": false,
+   "rsvp": true,
+   "check": true,
+   "blurb": "",
+   "src": "https://www.fergusonlibrary.org/event/tummy-time-tales-94340",
+   "s": [
+    [
+     3,
+     [
+      [
+       "10:30",
+       "11:00"
+      ]
+     ],
+     "2026-09-09",
+     "2026-12-16"
+    ]
+   ]
   },
-
-  venueMeta: {
-    "ferguson-library-harry-bennett-branch": [null, 1],
-    "ferguson-library-south-end-branch": [null, 1],
-    "ferguson-library-main-library-dimattia-b": [null, 1],
-    "abilis": [null, 1],
-    "stamford-jcc": [null, 1],
-    "a-z-dance-studio-star-center": [null, 1],
-    "little-jigz-stamford-studio": [null, 1],
-    "chelsea-piers-connecticut": [null, 1],
-    "children-of-the-sound-swim-school-stamfo": [null, 1],
-    "mill-river-park-collaborative-nissen-car": [null, 1],
-    "mill-river-park-collaborative-mill-river": [null, 1],
-    "mill-river-park-collaborative": [null, 0],
-    "ferguson-library-south-end-branch-at-lat": [null, 1],
-    "ferguson-library-weed-memorial-hollander": [null, 1],
-    "ferguson-library-waterside-west-side-bra": [null, 1],
-    "stamford-museum-nature-center": [null, 0],
-    "bartlett-arboretum-gardens": [null, 0],
-    "soundwaters": [null, 0],
-    "city-of-stamford-soundwaters-cove-island": [null, 0],
-    "city-of-stamford-scalzi-park": [null, 0],
-    "city-of-stamford-cummings-park": [null, 0],
-    "city-of-stamford-greenwich-mianus-river-": [null, 0],
-    "stamford-downtown-veterans-memorial-park": [null, 0],
-    "stamford-downtown-bedford-street": [null, 0],
-    "stamford-downtown-city-departments-veter": [null, 0],
-    "stamford-downtown-hoyt-street-at-summer-": [null, 0],
-    "stamford-downtown-downtown-stamford": [null, 0],
-    "stamford-moms-stamford-town-center-resta": [null, 0],
-    "stamford-moms-cocreate": [null, 1],
-    "stamford-department-of-health-human-serv": [null, 1],
-    "mill-river-park-collaborative-whittingha": [null, 1],
-    "little-jigz-pender-keady-academy": [null, 1],
-    "pender-keady-academy": [null, 1],
-    "ballet-school-of-stamford": [null, 1],
-    "steps-dance-studio": [null, 1],
-    "creative-family-rhythms-various-stamford": [null, 1],
-    "stamford-music-arts-academy": [null, 1],
-    "curtain-call-sterling-farms-theatre-comp": [null, 1],
-    "code-ninjas-stamford": [null, 1],
-    "goldfish-swim-school-stamford": [null, 1],
-    "hudson-valley-swim-stamford-la-fitness-p": [null, 1],
-    "sweet-blue-swim-academy": [null, 1],
-    "angel-land-stamford-stamford-town-center": [null, 1],
-    "temple-sinai-stamford": [null, 1],
-    "chabad-of-stamford": [null, 1],
-    "boys-girls-club-of-stamford-yerwood-cent": [null, 1],
-    "stamford-recreation-recreation-star-cent": [null, 1],
-    "german-school-of-connecticut-stamford-ca": [null, 1]
+  {
+   "t": "Sing & Stomp",
+   "v": "ferguson-library-main-library-dimattia-b",
+   "ages": "Ages 18 months–4 years",
+   "a": [
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "rsvp": false,
+   "check": false,
+   "blurb": "Song-and-dance party with rhymes and children's music.",
+   "src": "https://www.fergusonlibrary.org/event/sing-stomp-94686",
+   "s": [
+    [
+     2,
+     [
+      [
+       "10:30",
+       "11:00"
+      ]
+     ],
+     "2026-09-14",
+     "2026-12-19"
+    ]
+   ]
   },
-
-  hoods: [],
-
-  events: [
-    {t:"Tummy Time & Tales", v:"ferguson-library-harry-bennett-branch", ages:"Pre-walking babies; up to 12 months", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.fergusonlibrary.org/event/tummy-time-tales-94340", s:[[3, [["10:30", "11:00"]], "2026-09-09", "2026-09-30"]]},
-    {t:"Sing & Stomp", v:"ferguson-library-main-library-dimattia-b", ages:"Ages 18 months–4 years", a:["toddler", "preschool"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Song-and-dance party with rhymes and children's music.", src:"https://www.fergusonlibrary.org/event/sing-stomp-94686", s:[[2, [["10:30", "11:00"]], "2026-09-14", "2026-12-19"]]},
-    {t:"Tiny Tunes", v:"ferguson-library-south-end-branch", ages:"Ages 4 and younger + caregiver", a:["baby", "toddler", "preschool"], price:"Free", free:true, drop:false, rsvp:false, check:true, blurb:"Music-based playgroup for crawlers, walkers and runners.", src:"https://www.fergusonlibrary.org/events/list?age_groups%5B31%5D=31&page=0", s:[[2, [["12:15", "13:00"]], "2026-09-01", "2026-12-15"]]},
-    {t:"Baby Social Club", v:"ferguson-library-main-library-dimattia-b", ages:"Newborn–5 + caregivers", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"", src:"https://www.fergusonlibrary.org/event/baby-social-club-69998", s:[[4, [["10:30", "11:30"]], "2026-09-14", "2026-12-19"]]},
-    {t:"Play & Read", v:"ferguson-library-south-end-branch", ages:"Ages 4 and younger + caregiver", a:["baby", "toddler", "preschool"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Stories, movement and play activities.", src:"https://www.fergusonlibrary.org/event/play-and-read-92838", s:[[4, [["10:15", "11:00"]], "2026-09-24", "2026-09-24"]]},
-    {t:"Fall Sunday Funday", v:"mill-river-park-collaborative-mill-river", ages:"Toddlers + grown-ups", a:["baby", "toddler", "preschool"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Books, songs, movement and seasonal activities.", src:"https://millriverpark.org/events/category/kids-family/", s:[[0, [["10:00", "11:00"]], "2026-09-27", "2026-11-08"]]},
-    {t:"Wiggles & Giggles Family Storytime", v:"ferguson-library-harry-bennett-branch", ages:"Ages 2 and younger + caregiver", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"Stories, rhymes, movement and open play afterward.", src:"https://www.fergusonlibrary.org/events/week/2026/09/30", s:[[1, [["10:30", "11:00"]], "2026-09-28", "2026-09-28"]]},
-    {t:"Wee Ones @ Weed Storytime", v:"ferguson-library-weed-memorial-hollander", ages:"Babies/toddlers + caregiver", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"Songs, stories, rhymes and movement.", src:"https://www.fergusonlibrary.org/events/week/2026/09/30", s:[[3, [["10:30", "11:00"]], "2026-09-30", "2026-09-30"]]},
-    {t:"Family Storytime", v:"ferguson-library-main-library-dimattia-b", ages:"Ages 18 months–5 + caregiver", a:["toddler", "preschool"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"Participatory stories, fingerplays, songs and movement.", src:"https://www.fergusonlibrary.org/event/family-storytime-91257", s:[[3, [["10:30", "11:00"]], "2026-09-23", "2026-09-23"]]},
-    {t:"LEGO Table Time", v:"ferguson-library-waterside-west-side-bra", ages:"Ages 5–10", a:["big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Build with the library LEGO collection.", src:"https://stamfordmoms.com/venue/west-side-branch/", s:[[4, [["16:00", "16:30"]], "2026-09-14", "2026-12-19"]]},
-    {t:"Chess Club", v:"ferguson-library-harry-bennett-branch", ages:"Ages 5+", a:["big"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"Learn chess and strategy with instructors.", src:"https://www.fergusonlibrary.org/services/kids", s:[[4, [["16:30", "17:30"]], "2026-09-24", "2026-09-24"]]},
-    {t:"Babytime", v:"ferguson-library-main-library-dimattia-b", ages:"Ages 3–18 months + caregiver", a:["baby", "toddler"], price:"Free", free:true, drop:false, rsvp:true, check:true, blurb:"Verses, bouncing rhymes and board books.", src:"https://www.fergusonlibrary.org/event/babytime-96071", s:[[5, [["10:30", "11:00"]], "2026-09-25", "2026-09-25"]]},
-    {t:"Sunday Farm Market", v:"stamford-museum-nature-center", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Local produce, food and artisans; market admission does not include museum grounds.", src:"https://www.stamfordmuseum.org/event/opening-day-smnc-sunday-farm-market/", s:[[0, [["10:00", "14:00"]], "2026-06-14", "2026-11-01"]]},
-    {t:"Stamford Downtown Farmers Market", v:"stamford-downtown-veterans-memorial-park", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Free yoga at 9 AM and live music 10:30–12:30 weather permitting; WIC/SNAP accepted.", src:"https://stamford-downtown.com/event/farmers-market/", s:[[6, [["09:00", "13:00"]], "2026-06-13", "2026-10-10"]]},
-    {t:"Fall Sunday Funday", v:"mill-river-park-collaborative-whittingha", ages:"Toddlers + grown-ups", a:["baby", "toddler", "preschool"], price:"Free", free:true, drop:true, rsvp:false, check:false, blurb:"Seasonal read-aloud, songs, movement and craft/activity.", src:"https://millriverpark.org/events/category/kids-family/", s:[[0, [["10:00", "11:00"]], "2026-09-27", "2026-11-08"]]},
-    {t:"Silent Disco at the Carousel", v:"mill-river-park-collaborative-nissen-car", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Two DJs, glowing headphones, lawn games; carousel rides available.", src:"https://millriverpark.org/event/silent-disco-at-the-carousel/", when:[{from:"2026-10-23", to:"2026-10-23", t:[["18:00", "21:00"]]}]},
-    {t:"Princess Breakfast", v:"mill-river-park-collaborative-nissen-car", special:"fall", ages:"Families / young children", a:["baby", "toddler", "preschool", "big"], price:"See event page", free:false, ticket:true, blurb:"Breakfast, singing, dancing, characters and photos.", src:"https://millriverpark.org/event/princess-breakfast/", when:[{from:"2026-10-24", to:"2026-10-24", t:[["10:00", "12:00"]]}]},
-    {t:"Bunk with the Beasts Family Campout", v:"stamford-museum-nature-center", special:"fall", ages:"Families; ages 3 and under free", a:["baby", "toddler", "preschool"], price:"Member/nonmember packages $110–$210", free:false, ticket:false, blurb:"Night hikes, animal programs, planetarium/observatory, s'mores and breakfast.", src:"https://www.stamfordmuseum.org/", when:[{from:"2026-09-18", to:"2026-09-19", t:[["18:00", "09:00"]]}]},
-    {t:"Honey Harvest Festival", v:"bartlett-arboretum-gardens", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Kids crafts, face painting, bubble show/play, music, bee talks, honey harvest and tasting.", src:"https://www.bartlettarboretum.org/events/2026/honey-harvest-festival-s9efw", when:[{from:"2026-08-30", to:"2026-08-30", t:[["11:00", "16:00"]]}]},
-    {t:"Arbor Earth Day Celebration", v:"bartlett-arboretum-gardens", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"See event; family celebration", free:false, ticket:false, blurb:"Environmental celebration; 2026 included Cyril the Sorcerer magic show for kids.", src:"https://www.bartlettarboretum.org/events", when:[{from:"2026-04-26", to:"2026-04-26", t:[["11:00", "15:00"]]}]},
-    {t:"Arts & Crafts on Bedford", v:"stamford-downtown-bedford-street", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Juried artisan fair; family-friendly downtown outing.", src:"https://stamford-downtown.com/arts-crafts-on-bedford-application/", when:[{from:"2026-06-13", to:"2026-09-12", t:[["10:00", "18:00"]]}]},
-    {t:"Touch A Truck", v:"stamford-downtown-city-departments-veter", special:"fall", ages:"Children / families", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Kids climb aboard and explore fire trucks, police vehicles, buses and construction equipment.", src:"https://stamford-downtown.com/", when:[{from:"2026-04-08", to:"2026-04-08", t:[["10:00", "13:00"]]}]},
-    {t:"Giant Balloon Inflation Party", v:"stamford-downtown-hoyt-street-at-summer-", special:"hol", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"See giant parade balloons inflate up close, plus music, performances and Santa.", src:"https://stamford-downtown.com/", when:[{from:"2026-11-21", to:"2026-11-21", t:[["15:00", "18:00"]]}]},
-    {t:"Stamford Downtown Parade Spectacular", v:"stamford-downtown-downtown-stamford", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"One of the country's largest balloon parades with marching bands and dance groups.", src:"https://stamford-downtown.com/venue/stamford-downtown/", when:[{from:"2026-11-22", to:"2026-11-22", t:[["12:00", "14:00"]]}]},
-    {t:"Stamford Moms Family Fun Day", v:"stamford-moms-stamford-town-center-resta", special:"fall", ages:"Families", a:["baby", "toddler", "preschool", "big"], price:"Free admission; some activities extra", free:true, ticket:false, blurb:"Family performances, characters, crafts, obstacle course, touch-a-truck, face painting, slime and food.", src:"https://stamfordmoms.com/stamford-moms-family-fun-day/", when:[{from:"2026-05-31", to:"2026-05-31", t:[["11:00", "16:00"]]}]},
-    {t:"New Parent & Baby Expo", v:"stamford-moms-cocreate", special:"fall", ages:"Expecting/new parents; children welcome", a:["baby", "toddler", "preschool", "big"], price:"$12/adult; children free", free:false, ticket:true, blurb:"30+ local providers, talks/demos, soft play and Songs for Seeds demo.", src:"https://stamfordmoms.com/the-stamford-moms-new-parent-and-baby-expo/", when:[{from:"2026-09-26", to:"2026-09-26", t:[["10:00", "13:00"]]}]},
-    {t:"Annual Family Day", v:"stamford-department-of-health-human-serv", special:"fall", ages:"Families", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Activities, entertainment and health/community resources.", src:"https://www.stamfordct.gov/", when:[{from:"2026-09-26", to:"2026-09-26", t:[["10:00", "13:00"]]}]},
-    {t:"Glow in the Dark Party", v:"mill-river-park-collaborative", special:"fall", ages:"All ages", a:["baby", "toddler", "preschool", "big"], price:"See event page", free:false, ticket:false, blurb:"Glow dancing, mini golf and carousel rides.", src:"https://millriverpark.org/events/month/2026-10/", when:[{from:"2026-10-17", to:"2026-10-17", t:[["17:30", "19:30"]]}]},
-    {t:"Sukkah Family Festival", v:"chabad-of-stamford", special:"fall", ages:"All ages / families", a:["baby", "toddler", "preschool", "big"], price:"Early bird $12/person, family max $45; day-of higher", free:false, ticket:true, blurb:"Touch-a-truck, Kona Ice, crafts, pizza, balloons, face painting and teen game truck.", src:"https://www.stamfordchabad.org/civicrm/event/info?id=724&reset=1", when:[{from:"2026-09-29", to:"2026-09-29", t:[["17:00", "18:30"]]}]},
-    {t:"Halloween Trail / Party", v:"mill-river-park-collaborative", special:"hw", ages:"Families", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, ticket:false, blurb:"Trick-or-treat trail from Discovery Center to carousel plus music, games and crafts.", src:"https://millriverpark.org/fall-event/", when:[{from:"2026-10-31", to:"2026-10-31", t:[["15:00", "17:00"]]}]},
-    {t:"Books & Giggles", v:"ferguson-library-south-end-branch", ages:"Ages 4 and younger + caregiver; siblings welcome", a:["baby", "toddler", "preschool", "big"], price:"Free", free:true, drop:false, rsvp:true, check:false, blurb:"Cozy playgroup/storytime with movement and activities.", src:"https://www.fergusonlibrary.org/event/books-giggles-94782", s:[[1, [["10:30", "11:15"]], "2026-09-14", "2026-12-14"]]}
-  ],
-
-  tba: [
-
-  ],
-
-  classes: [
-    {id:"move-and-groove-with-alison--abilis", c:"move", n:"Move and Groove with Alison", u:"https://www.abilis.us/parent-and-child-classes-fall-2026/", blurb:"$360 / 10 weeks + $35 registration.", ages:"Walkers–age 3", where:"Abilis"},
-    {id:"little-movers--abilis", c:"move", n:"Little Movers", u:"https://www.abilis.us/parent-and-child-classes-fall-2026/", blurb:"$360 / 10 weeks + $35 registration.", ages:"Young children + caregiver", where:"Abilis"},
-    {id:"baby-and-me--abilis", c:"move", n:"Baby and Me", u:"https://www.abilis.us/parent-and-child-classes-fall-2026/", blurb:"$360 / 10 weeks + $35 registration.", ages:"Babies + caregiver", where:"Abilis"},
-    {id:"sensory-storytime--abilis", c:"move", n:"Sensory Storytime", u:"https://www.abilis.us/parent-and-child-classes-fall-2026/", blurb:"$360 / 10 weeks + $35 registration.", ages:"Young children + caregiver", where:"Abilis"},
-    {id:"messy-plate-club--abilis", c:"move", n:"Messy Plate Club", u:"https://www.abilis.us/parent-and-child-classes-fall-2026/", blurb:"$360 / 10 weeks + $35 registration +$40 materials fee.", ages:"Young children + caregiver", where:"Abilis"},
-    {id:"parent-me-swim--stamford-jcc", c:"swim", n:"Parent & Me Swim", u:"https://www.stamfordjcc.org/index.php?mrkrs=Early+Learning+Swim&src=programs", blurb:"Member $416 / Community $586.", ages:"6 months–3.5 years", where:"Stamford JCC"},
-    {id:"ready-now-swim--stamford-jcc", c:"swim", n:"Ready Now Swim", u:"https://www.stamfordjcc.org/index.php?mrkrs=Early+Learning+Swim&src=programs", blurb:"Member $338 / Community $478.", ages:"Ages 2–5 + parent", where:"Stamford JCC"},
-    {id:"tadpoles-swim--stamford-jcc", c:"swim", n:"Tadpoles Swim", u:"https://www.stamfordjcc.org/index.php?mrkrs=Early+Learning+Swim&src=programs", blurb:"Member $364 / Community $514.", ages:"Ages 4–5.5", where:"Stamford JCC"},
-    {id:"angelfish-swim--stamford-jcc", c:"swim", n:"Angelfish Swim", u:"https://www.stamfordjcc.org/index.php?mrkrs=Early+Learning+Swim&src=programs", blurb:"Member $364 / Community $514.", ages:"Ages 5.5+", where:"Stamford JCC"},
-    {id:"tiny-tu-tu-s--a-z-dance-studio-star-center", c:"dance", n:"Tiny Tu-Tu's", u:"https://www.atozdancestudio.com/", blurb:"See registration.", ages:"Ages 2–3", where:"A-Z Dance Studio — STAR Center"},
-    {id:"ballet-tap-combo--a-z-dance-studio-star-center", c:"dance", n:"Ballet/Tap Combo", u:"https://www.atozdancestudio.com/", blurb:"See registration.", ages:"Ages 3–4", where:"A-Z Dance Studio — STAR Center"},
-    {id:"little-jigz-dance--little-jigz-stamford-studio", c:"music", n:"Little Jigz Dance", u:"https://www.littlejigz.com/", blurb:"$270.", ages:"Ages 3–4; drop-off", where:"Little Jigz — Stamford Studio"},
-    {id:"little-jigz-mommy-me--little-jigz-stamford-studio", c:"music", n:"Little Jigz Mommy & Me", u:"https://www.littlejigz.com/", blurb:"$270.", ages:"Ages 1.5–3 + caregiver", where:"Little Jigz — Stamford Studio"},
-    {id:"starfish-swim--chelsea-piers-connecticut", c:"swim", n:"Starfish Swim", u:"https://www.chelseapiers.com/athleticclub-stamford/classes", blurb:"$387.50.", ages:"3–24 months + caregiver", where:"Chelsea Piers Connecticut"},
-    {id:"tumbling-tots--chelsea-piers-connecticut", c:"move", n:"Tumbling Tots", u:"https://www.chelseapiers.com/athleticclub-stamford/classes", blurb:"$622.24.", ages:"18–36 months / 2–3 + caregiver", where:"Chelsea Piers Connecticut"},
-    {id:"preschool-gymnastics--chelsea-piers-connecticut", c:"move", n:"Preschool Gymnastics", u:"https://www.chelseapiers.com/athleticclub-stamford/classes", blurb:"$622.24.", ages:"Age 3", where:"Chelsea Piers Connecticut"},
-    {id:"terrific-tots-tennis--chelsea-piers-connecticut", c:"move", n:"Terrific Tots Tennis", u:"https://www.chelseapiers.com/athleticclub-stamford/classes", blurb:"$666.72 / 16 sessions.", ages:"Ages 3–5", where:"Chelsea Piers Connecticut"},
-    {id:"swim-transition-class--chelsea-piers-connecticut", c:"swim", n:"Swim Transition Class", u:"https://www.chelseapiers.com/athleticclub-stamford/classes", blurb:"$499.62.", ages:"Young swimmers transitioning from caregiver class", where:"Chelsea Piers Connecticut"},
-    {id:"fall-group-swim-classes--children-of-the-sound-swim-school-stamfo", c:"swim", n:"Fall Group Swim Classes", u:"https://www.childrenofthesound.com/", blurb:"Fall 2026 group class schedule available by contacting the provider.", ages:"Children; level varies", where:"Children of the Sound Swim School — Stamford location"},
-    {id:"nissen-carousel-weekend-hours--mill-river-park-collaborative-nissen-car", c:"move", n:"Nissen Carousel Weekend Hours", u:"https://millriverpark.org/the-park/carousel/", blurb:"Children under 42 inches ride with a standing adult at no extra fee. $2/ride; 6 rides $10.", ages:"All ages", where:"Mill River Park Collaborative — Nissen Carousel"},
-    {id:"heckscher-farm-nature-s-playground-trails--stamford-museum-nature-center", c:"nature", n:"Heckscher Farm + Nature's Playground + Trails", u:"https://www.stamfordmuseum.org/", blurb:"Working farm, otters/wildlife, playground, museum, observatory and 80+ acres of trails. General admission / membership.", ages:"All ages", where:"Stamford Museum & Nature Center"},
-    {id:"sm-nc-for-all--stamford-museum-nature-center", c:"nature", n:"SM&NC for All", u:"https://www.stamfordmuseum.org/", blurb:"Includes Astronomy for All and hands-on animal/farm programs; dates vary.", ages:"Neurodiverse / special-needs participants, roughly ages 5–17 + family", where:"Stamford Museum & Nature Center"},
-    {id:"bartlett-arboretum-gardens--bartlett-arboretum-gardens", c:"nature", n:"Bartlett Arboretum & Gardens", u:"https://www.bartlettarboretum.org/", blurb:"93 acres of gardens, forests, wetlands and trails; nonprofit environmental education center.", ages:"All ages", where:"Bartlett Arboretum & Gardens"},
-    {id:"third-thursday-walks-talks--bartlett-arboretum-gardens", c:"nature", n:"Third Thursday Walks & Talks", u:"https://www.bartlettarboretum.org/events", blurb:"Master Gardener-led themed walk focused on trees, plants, animals or landscape history. Members free; nonmembers $10.", ages:"Families with older/curious kids welcome; general audience", where:"Bartlett Arboretum & Gardens"},
-    {id:"birding-at-the-bartlett--bartlett-arboretum-gardens", c:"nature", n:"Birding at the Bartlett", u:"https://www.bartlettarboretum.org/events", blurb:"Guided morning bird walk. Members free; nonmember pricing see event.", ages:"All ages; best for kids comfortable with quiet walks", where:"Bartlett Arboretum & Gardens"},
-    {id:"summer-concert-series--bartlett-arboretum-gardens", c:"move", n:"Summer Concert Series", u:"https://www.bartlettarboretum.org/events/2026/concert/series", blurb:"Live music, lawn games and picnic-friendly evenings. Members $5; nonmembers $10; children 12 & under free.", ages:"All ages", where:"Bartlett Arboretum & Gardens"},
-    {id:"fall-adventure-series--soundwaters", c:"move", n:"Fall Adventure Series", u:"https://soundwaters.org/youth-programs/fall-adventure-series-2/", blurb:"Weekly sailing, coastal habitats, live animals and science; students can choose Tuesdays, Wednesdays or both. See registration; financial assistance available.", ages:"Grades 1–5", where:"SoundWaters"},
-    {id:"after-school-science-sailing--soundwaters", c:"move", n:"After-School Science & Sailing", u:"https://soundwaters.org/youth-programs/afterschool-sailing/", blurb:"Bus from school; sailing, marine animals and experiments. $45 participant fee for listed school program.", ages:"Grades 6–8 at participating schools", where:"SoundWaters"},
-    {id:"cove-island-park-soundwaters-coastal-center--city-of-stamford-soundwaters-cove-island", c:"nature", n:"Cove Island Park + SoundWaters Coastal Center", u:"https://soundwaters.org/", blurb:"Beach, paths, playground/park space and SoundWaters coastal education programs. Park access; seasonal parking rules may apply.", ages:"All ages", where:"City of Stamford / SoundWaters — Cove Island Park"},
-    {id:"scalzi-park-family-outing--city-of-stamford-scalzi-park", c:"nature", n:"Scalzi Park Family Outing", u:"https://www.stamfordct.gov/", blurb:"Large city park with playground and sports facilities; frequent site for community events.", ages:"All ages", where:"City of Stamford — Scalzi Park"},
-    {id:"cummings-park-beach--city-of-stamford-cummings-park", c:"move", n:"Cummings Park & Beach", u:"https://www.stamfordct.gov/", blurb:"Beachfront park, playground/recreation and walking; city was actively renovating playground facilities in 2026. Free access; seasonal parking rules may apply.", ages:"All ages", where:"City of Stamford — Cummings Park"},
-    {id:"mianus-river-park--city-of-stamford-greenwich-mianus-river-", c:"move", n:"Mianus River Park", u:"https://www.stamfordct.gov/", blurb:"Wooded trails and river; useful nature outing for families with trail-ready children.", ages:"All ages; trail suitability varies", where:"City of Stamford / Greenwich — Mianus River Park"},
-    {id:"little-jigz-3-4s-drop-off--little-jigz-pender-keady-academy", c:"dance", n:"Little Jigz – 3 & 4s Drop-Off", u:"https://www.littlejigz.com/", blurb:"Intro Irish dance. $270.", ages:"Ages 3–4", where:"Little Jigz / Pender-Keady Academy"},
-    {id:"little-jigz-adult-me--little-jigz-pender-keady-academy", c:"dance", n:"Little Jigz – Adult & Me", u:"https://www.littlejigz.com/", blurb:"Caregiver-participation Irish-dance introduction. $270.", ages:"Ages 1.5–3 + caregiver", where:"Little Jigz / Pender-Keady Academy"},
-    {id:"pender-keady-irish-dance-classes--pender-keady-academy", c:"dance", n:"Pender-Keady Irish Dance Classes", u:"https://www.penderkeady.com/", blurb:"Multiple beginner/advanced levels Monday–Thursday plus championship Friday. See registration.", ages:"Children; beginner through championship levels", where:"Pender-Keady Academy"},
-    {id:"ballet-school-of-stamford-2026-27-classes--ballet-school-of-stamford", c:"dance", n:"Ballet School of Stamford 2026–27 Classes", u:"https://www.balletschoolofstamford.org/school-schedule", blurb:"Nonprofit ballet school; exact class grid varies by level. See registration.", ages:"Children/teens; level dependent", where:"Ballet School of Stamford"},
-    {id:"steps-dance-studio-fall-classes--steps-dance-studio", c:"dance", n:"STEPS Dance Studio Fall Classes", u:"https://stepsdancestudio.com/", blurb:"Long-running Stamford dance school with preschool through advanced programs and performances. See registration.", ages:"Children/teens; class dependent", where:"STEPS Dance Studio"},
-    {id:"broadway-kids-2--stamford-jcc", c:"music", n:"Broadway Kids 2", u:"https://www.stamfordjcc.org/index.php?mrkrs=Theater+School&src=programs", blurb:"Singing, acting and dance; recital costume included. Member $350 / Community $444 (14 sessions).", ages:"Grades 2–6", where:"Stamford JCC"},
-    {id:"theater-playground-1--stamford-jcc", c:"art", n:"Theater Playground 1", u:"https://www.stamfordjcc.org/index.php?mrkrs=Theater+School&src=programs", blurb:"Drama games, improvisation and scene work. See current registration.", ages:"Grade K–1", where:"Stamford JCC"},
-    {id:"little-actors--stamford-jcc", c:"art", n:"Little Actors", u:"https://www.stamfordjcc.org/index.php?mrkrs=Theater+School&src=programs", blurb:"Preschool acting through drama games and familiar stories. Member $350 / Community $444 (14 sessions).", ages:"Ages 3–5", where:"Stamford JCC"},
-    {id:"preschool-musical-theater--stamford-jcc", c:"music", n:"Preschool Musical Theater", u:"https://www.stamfordjcc.org/index.php?mrkrs=Theater+School&src=programs", blurb:"Nursery rhymes, singing, movement, rhythm and vocal skills. Member $350 / Community $444 (14 sessions).", ages:"Ages 3–5", where:"Stamford JCC"},
-    {id:"contemporary-beginner--stamford-jcc", c:"dance", n:"Contemporary Beginner", u:"https://www.stamfordjcc.org/index.php?mrkrs=Youth+Class+Schedule&src=programs", blurb:"Contemporary dance blending ballet, jazz and modern. Member $445 / Community $551 (16 sessions).", ages:"Grades 2–3", where:"Stamford JCC"},
-    {id:"jbaby-shabbat--stamford-jcc", c:"move", n:"JBaby Shabbat", u:"https://www.stamfordjcc.org/jbaby", blurb:"Songs, blessings, dinner and art project; JBaby also offers music, aquatics, sports, dance and art. See event.", ages:"Birth–2 + family", where:"Stamford JCC"},
-    {id:"creative-family-rhythms-music-together--creative-family-rhythms-various-stamford", c:"music", n:"Creative Family Rhythms / Music Together", u:"https://creativefamilyrhythms.org/", blurb:"Music Together plus kids karate/fitness, yoga and Rhythm Kids; weekday/weekend options. See registration; annual membership option.", ages:"Ages 0–10 + caregivers", where:"Creative Family Rhythms — Various Stamford-area classes"},
-    {id:"stamford-music-arts-academy-lessons--stamford-music-arts-academy", c:"music", n:"Stamford Music & Arts Academy Lessons", u:"https://stamfordmusicarts.com/", blurb:"Piano, violin/viola, cello, flute, voice, guitar and music theory. See registration / trial lesson.", ages:"All ages", where:"Stamford Music & Arts Academy"},
-    {id:"fall-drama-arts-classes--curtain-call-sterling-farms-theatre-comp", c:"music", n:"Fall Drama Arts Classes", u:"https://www.curtaincallinc.com/", blurb:"Acting, improv, sketch comedy, musical theater, dance, directing and more. $275–$385; dance $140/session or $22 drop-in.", ages:"Pre-K through Grade 12", where:"Curtain Call — Sterling Farms Theatre Complex"},
-    {id:"summer-stock-theatre-workshops--curtain-call-sterling-farms-theatre-comp", c:"art", n:"Summer Stock Theatre Workshops", u:"https://www.curtaincallinc.com/summer-stock-full-day-workshops", blurb:"Junior, creative theatre and musical theatre tracks. See registration.", ages:"Entering K–12; age-grouped", where:"Curtain Call — Sterling Farms Theatre Complex"},
-    {id:"code-ninjas-after-school-coding--code-ninjas-stamford", c:"build", n:"Code Ninjas After-School Coding", u:"https://www.codeninjas.com/locations/en-us/ct/stamford/coding-school-249.html", blurb:"Game-based coding, robotics and digital literacy; center also open Tue and weekends. See enrollment; free intro session.", ages:"Ages 5–14", where:"Code Ninjas Stamford"},
-    {id:"code-ninjas-weekend-coding--code-ninjas-stamford", c:"build", n:"Code Ninjas Weekend Coding", u:"https://www.codeninjas.com/locations/en-us/ct/stamford/coding-school-249.html", blurb:"Flexible coding dojo hours. See enrollment.", ages:"Ages 5–14", where:"Code Ninjas Stamford"},
-    {id:"preschool-ninja--chelsea-piers-connecticut", c:"nature", n:"Preschool Ninja", u:"https://www.chelseapiers.com/athleticclub-stamford/classes?sports=squash%2Csoccer%2Cninja-%26-parkour%2Ctennis%2Chockey", blurb:"Balance, coordination and upper-body strength. Approx. $622–$700 depending session count.", ages:"Ages 3–4", where:"Chelsea Piers Connecticut"},
-    {id:"soccer-tikes--chelsea-piers-connecticut", c:"move", n:"Soccer Tikes", u:"https://www.chelseapiers.com/athleticclub-stamford/classes?sports=soccer%2Cvolleyball%2Cninja-%26-parkour%2Clacrosse%2Csquash%2Cbasketball", blurb:"Intro soccer and movement with caregiver. See live schedule; fall session.", ages:"Ages 2–3 + caregiver", where:"Chelsea Piers Connecticut"},
-    {id:"soccer-spikes--chelsea-piers-connecticut", c:"move", n:"Soccer Spikes", u:"https://www.chelseapiers.com/athleticclub-stamford/classes?sports=squash%2Csoccer%2Cninja-%26-parkour%2Ctennis%2Chockey", blurb:"Preschool fundamentals. See live schedule.", ages:"Ages 3–5", where:"Chelsea Piers Connecticut"},
-    {id:"starfish-infant-toddler-swim--chelsea-piers-connecticut", c:"swim", n:"Starfish Infant/Toddler Swim", u:"https://www.chelseapiers.com/athleticclub-stamford/classes", blurb:"Water safety, floating and comfort; caregiver participation. Approx. $387.50 for 10 sessions in some fall blocks.", ages:"Ages 3–30 months + caregiver", where:"Chelsea Piers Connecticut"},
-    {id:"intro-to-sea-pups--chelsea-piers-connecticut", c:"swim", n:"Intro to Sea Pups", u:"https://www.chelseapiers.com/athleticclub-stamford/classes?sports=hockey%2Cswimming%2Cvolleyball%2Csoccer", blurb:"Transition from caregiver-supported to independent swimming. See live schedule.", ages:"Ages 24–36 months", where:"Chelsea Piers Connecticut"},
-    {id:"adaptive-swim-lessons--chelsea-piers-connecticut", c:"swim", n:"Adaptive Swim Lessons", u:"https://www.chelseapiers.com/athleticclub-stamford/classes", blurb:"Adaptive instruction available in fall schedule. See live schedule.", ages:"Ages 2–8", where:"Chelsea Piers Connecticut"},
-    {id:"children-s-swim-lessons--goldfish-swim-school-stamford", c:"swim", n:"Children's Swim Lessons", u:"https://www.goldfishswimschool.com/stamford/", blurb:"Structured lessons plus Family Swim and free community water-safety presentations. See enrollment; Family Swim $10/swimmer or $30/family.", ages:"Approx. 4 months–12 years", where:"Goldfish Swim School – Stamford"},
-    {id:"children-s-adaptive-swim-lessons--hudson-valley-swim-stamford-la-fitness-p", c:"swim", n:"Children's & Adaptive Swim Lessons", u:"https://www.hvswim.com/", blurb:"Small-group instruction plus adaptive swim options. See enrollment.", ages:"Infant/toddler through youth; level dependent", where:"Hudson Valley Swim Stamford — LA Fitness pool"},
-    {id:"learn-to-swim-programs--sweet-blue-swim-academy", c:"swim", n:"Learn-to-Swim Programs", u:"https://sweetblueswim.com/", blurb:"Small-group baby, beginner, intermediate and advanced instruction. See enrollment.", ages:"Babies through youth; level dependent", where:"Sweet Blue Swim Academy"},
-    {id:"open-play--angel-land-stamford-stamford-town-center", c:"move", n:"Open Play", u:"https://angellandplay.com/", blurb:"Large indoor playground with slides, ball pits, trampolines and climbing. See current admission; grip socks required.", ages:"Toddlers through elementary age", where:"Angel Land Stamford — Stamford Town Center"},
-    {id:"youth-sports-classes--chelsea-piers-connecticut", c:"move", n:"Youth Sports Classes", u:"https://www.chelseapiers.com/athleticclub-stamford/classes", blurb:"Also includes tennis, basketball, volleyball, squash, hockey and ice skating beyond individually listed preschool programs. Varies by class.", ages:"Toddlers through teens", where:"Chelsea Piers Connecticut"},
-    {id:"families-with-young-children-shabbat-holiday-programs--temple-sinai-stamford", c:"music", n:"Families with Young Children Shabbat & Holiday Programs", u:"https://www.templesinaistamford.org/school/youth-programs.html", blurb:"Dancing, singing, prayer, crafts, play, challah and holiday programs. Open to community; see event details.", ages:"Ages 0–4 + family", where:"Temple Sinai Stamford"},
-    {id:"boys-girls-club-after-school-programs--boys-girls-club-of-stamford-yerwood-cent", c:"move", n:"Boys & Girls Club After-School Programs", u:"https://www.bgcastamford.org/", blurb:"Yerwood K–3; Mary C. Rich grades 4–12; Gary Wendt Teen Center grades 7–12. See membership/enrollment.", ages:"Grades K–12 by site", where:"Boys & Girls Club of Stamford — Yerwood Center / Mary C. Rich Clubhouse / Gary Wendt Teen Center"},
-    {id:"after-school-club-at-star-center--stamford-recreation-recreation-star-cent", c:"move", n:"After School Club at Star Center", u:"https://www.stamfordrecreation.com/", blurb:"Gym, playground/outdoor time, arts/crafts and homework; registration opened May 20, 2026. 3 days $215/mo; 4 days $245; 5 days $270.", ages:"Grades K–5", where:"Stamford Recreation — Recreation Star Center"},
-    {id:"german-school-of-connecticut-stamford-children-s-program--german-school-of-connecticut-stamford-ca", c:"move", n:"German School of Connecticut – Stamford Children's Program", u:"https://germanschoolct.org/class-registration/", blurb:"Saturday German language/culture program; Stamford open house Sep 5. Base tuition $1,350.", ages:"Children born Dec 1 2023–Sep 1 2009", where:"German School of Connecticut — Stamford campus"}
-  ],
-
-  library: {for:"Free, every week", name:"The Ferguson Library", desc:"Stamford's public library system, with four branches around the city. Ask about storytimes and drop-in programs at your nearest branch.", a:"See Ferguson Library events", href:"https://www.fergusonlibrary.org/events/list"},
-
-  extraResources: []
+  {
+   "t": "Tiny Tunes",
+   "v": "ferguson-library-south-end-branch",
+   "ages": "Ages 4 and younger + caregiver",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": false,
+   "rsvp": false,
+   "check": true,
+   "blurb": "Music-based playgroup for crawlers, walkers and runners.",
+   "src": "https://www.fergusonlibrary.org/events/list?age_groups%5B31%5D=31&page=0",
+   "s": [
+    [
+     2,
+     [
+      [
+       "12:15",
+       "13:00"
+      ]
+     ],
+     "2026-09-01",
+     "2026-12-15"
+    ]
+   ]
+  },
+  {
+   "t": "Baby Social Club",
+   "v": "ferguson-library-main-library-dimattia-b",
+   "ages": "Newborn–5 + caregivers",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": false,
+   "rsvp": true,
+   "check": false,
+   "blurb": "",
+   "src": "https://www.fergusonlibrary.org/event/baby-social-club-69998",
+   "s": [
+    [
+     4,
+     [
+      [
+       "10:30",
+       "11:30"
+      ]
+     ],
+     "2026-09-14",
+     "2026-12-19"
+    ]
+   ]
+  },
+  {
+   "t": "Play & Read",
+   "v": "ferguson-library-south-end-branch",
+   "ages": "Ages 4 and younger + caregiver",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "rsvp": false,
+   "check": true,
+   "blurb": "Stories, movement and play activities.",
+   "src": "https://www.fergusonlibrary.org/event/play-and-read-92838",
+   "s": [
+    [
+     4,
+     [
+      [
+       "10:15",
+       "11:00"
+      ]
+     ],
+     "2026-09-24",
+     "2026-12-17"
+    ]
+   ]
+  },
+  {
+   "t": "Fall Sunday Funday",
+   "v": "mill-river-park-collaborative-mill-river",
+   "ages": "Toddlers + grown-ups",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "rsvp": false,
+   "check": false,
+   "blurb": "Books, songs, movement and seasonal activities.",
+   "src": "https://millriverpark.org/events/category/kids-family/",
+   "s": [
+    [
+     0,
+     [
+      [
+       "10:00",
+       "11:00"
+      ]
+     ],
+     "2026-09-27",
+     "2026-11-08"
+    ]
+   ]
+  },
+  {
+   "t": "Wiggles & Giggles Family Storytime",
+   "v": "ferguson-library-harry-bennett-branch",
+   "ages": "Ages 2 and younger + caregiver",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": false,
+   "rsvp": true,
+   "check": true,
+   "blurb": "Stories, rhymes, movement and open play afterward.",
+   "src": "https://www.fergusonlibrary.org/events/week/2026/09/30",
+   "s": [
+    [
+     1,
+     [
+      [
+       "10:30",
+       "11:00"
+      ]
+     ],
+     "2026-09-28",
+     "2026-12-14"
+    ]
+   ]
+  },
+  {
+   "t": "Wee Ones @ Weed Storytime",
+   "v": "ferguson-library-weed-memorial-hollander",
+   "ages": "Babies/toddlers + caregiver",
+   "a": [
+    "baby",
+    "toddler"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": false,
+   "rsvp": true,
+   "check": true,
+   "blurb": "Songs, stories, rhymes and movement.",
+   "src": "https://www.fergusonlibrary.org/events/week/2026/09/30",
+   "s": [
+    [
+     3,
+     [
+      [
+       "10:30",
+       "11:00"
+      ]
+     ],
+     "2026-09-30",
+     "2026-09-30"
+    ]
+   ]
+  },
+  {
+   "t": "Family Storytime",
+   "v": "ferguson-library-main-library-dimattia-b",
+   "ages": "Ages 18 months–5 + caregiver",
+   "a": [
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": false,
+   "rsvp": true,
+   "check": true,
+   "blurb": "Participatory stories, fingerplays, songs and movement.",
+   "src": "https://www.fergusonlibrary.org/event/family-storytime-91257",
+   "s": [
+    [
+     3,
+     [
+      [
+       "10:30",
+       "11:00"
+      ]
+     ],
+     "2026-09-23",
+     "2026-12-16"
+    ]
+   ]
+  },
+  {
+   "t": "LEGO Table Time",
+   "v": "ferguson-library-waterside-west-side-bra",
+   "ages": "Ages 5–10",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "rsvp": false,
+   "check": false,
+   "blurb": "Build with the library LEGO collection.",
+   "src": "https://stamfordmoms.com/venue/west-side-branch/",
+   "s": [
+    [
+     4,
+     [
+      [
+       "16:00",
+       "16:30"
+      ]
+     ],
+     "2026-09-14",
+     "2026-12-19"
+    ]
+   ]
+  },
+  {
+   "t": "Chess Club",
+   "v": "ferguson-library-harry-bennett-branch",
+   "ages": "Ages 5+",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": false,
+   "rsvp": true,
+   "check": true,
+   "blurb": "Learn chess and strategy with instructors.",
+   "src": "https://www.fergusonlibrary.org/services/kids",
+   "s": [
+    [
+     4,
+     [
+      [
+       "16:30",
+       "17:30"
+      ]
+     ],
+     "2026-09-24",
+     "2026-09-24"
+    ]
+   ]
+  },
+  {
+   "t": "Babytime",
+   "v": "ferguson-library-main-library-dimattia-b",
+   "ages": "Ages 3–18 months + caregiver",
+   "a": [
+    "baby",
+    "toddler"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": false,
+   "rsvp": true,
+   "check": true,
+   "blurb": "Verses, bouncing rhymes and board books.",
+   "src": "https://www.fergusonlibrary.org/event/babytime-96071",
+   "s": [
+    [
+     5,
+     [
+      [
+       "10:30",
+       "11:00"
+      ]
+     ],
+     "2026-09-25",
+     "2026-12-18"
+    ]
+   ]
+  },
+  {
+   "t": "Sunday Farm Market",
+   "v": "stamford-museum-nature-center",
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "rsvp": false,
+   "check": false,
+   "blurb": "Local produce, food and artisans; market admission does not include museum grounds.",
+   "src": "https://www.stamfordmuseum.org/event/opening-day-smnc-sunday-farm-market/",
+   "s": [
+    [
+     0,
+     [
+      [
+       "10:00",
+       "14:00"
+      ]
+     ],
+     "2026-06-14",
+     "2026-11-01"
+    ]
+   ]
+  },
+  {
+   "t": "Stamford Downtown Farmers Market",
+   "v": "stamford-downtown-veterans-memorial-park",
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "rsvp": false,
+   "check": false,
+   "blurb": "Free yoga at 9 AM and live music 10:30–12:30 weather permitting; WIC/SNAP accepted.",
+   "src": "https://stamford-downtown.com/event/farmers-market/",
+   "s": [
+    [
+     6,
+     [
+      [
+       "09:00",
+       "13:00"
+      ]
+     ],
+     "2026-06-13",
+     "2026-10-10"
+    ]
+   ]
+  },
+  {
+   "t": "Fall Sunday Funday",
+   "v": "mill-river-park-collaborative-whittingha",
+   "ages": "Toddlers + grown-ups",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "rsvp": false,
+   "check": false,
+   "blurb": "Seasonal read-aloud, songs, movement and craft/activity.",
+   "src": "https://millriverpark.org/events/category/kids-family/",
+   "s": [
+    [
+     0,
+     [
+      [
+       "10:00",
+       "11:00"
+      ]
+     ],
+     "2026-09-27",
+     "2026-11-08"
+    ]
+   ]
+  },
+  {
+   "t": "Silent Disco at the Carousel",
+   "v": "mill-river-park-collaborative-nissen-car",
+   "special": "fall",
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "ticket": false,
+   "blurb": "Two DJs, glowing headphones, lawn games; carousel rides available.",
+   "src": "https://millriverpark.org/event/silent-disco-at-the-carousel/",
+   "when": [
+    {
+     "from": "2026-10-23",
+     "to": "2026-10-23",
+     "t": [
+      [
+       "18:00",
+       "21:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Princess Breakfast",
+   "v": "mill-river-park-collaborative-nissen-car",
+   "special": "fall",
+   "ages": "Families / young children",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "See event page",
+   "free": false,
+   "ticket": true,
+   "blurb": "Breakfast, singing, dancing, characters and photos.",
+   "src": "https://millriverpark.org/event/princess-breakfast/",
+   "when": [
+    {
+     "from": "2026-10-24",
+     "to": "2026-10-24",
+     "t": [
+      [
+       "10:00",
+       "12:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Bunk with the Beasts Family Campout",
+   "v": "stamford-museum-nature-center",
+   "special": "fall",
+   "ages": "Families; ages 3 and under free",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool"
+   ],
+   "price": "Member/nonmember packages $110–$210",
+   "free": false,
+   "ticket": false,
+   "blurb": "Night hikes, animal programs, planetarium/observatory, s'mores and breakfast.",
+   "src": "https://www.stamfordmuseum.org/",
+   "when": [
+    {
+     "from": "2026-09-18",
+     "to": "2026-09-19",
+     "t": [
+      [
+       "18:00",
+       "09:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Honey Harvest Festival",
+   "v": "bartlett-arboretum-gardens",
+   "special": "fall",
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "ticket": false,
+   "blurb": "Kids crafts, face painting, bubble show/play, music, bee talks, honey harvest and tasting.",
+   "src": "https://www.bartlettarboretum.org/events/2026/honey-harvest-festival-s9efw",
+   "when": [
+    {
+     "from": "2026-08-30",
+     "to": "2026-08-30",
+     "t": [
+      [
+       "11:00",
+       "16:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Arbor Earth Day Celebration",
+   "v": "bartlett-arboretum-gardens",
+   "special": "fall",
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "See event; family celebration",
+   "free": false,
+   "ticket": false,
+   "blurb": "Environmental celebration; 2026 included Cyril the Sorcerer magic show for kids.",
+   "src": "https://www.bartlettarboretum.org/events",
+   "when": [
+    {
+     "from": "2026-04-26",
+     "to": "2026-04-26",
+     "t": [
+      [
+       "11:00",
+       "15:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Arts & Crafts on Bedford",
+   "v": "stamford-downtown-bedford-street",
+   "special": "fall",
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "ticket": false,
+   "blurb": "Juried artisan fair; family-friendly downtown outing.",
+   "src": "https://stamford-downtown.com/arts-crafts-on-bedford-application/",
+   "when": [
+    {
+     "from": "2026-06-13",
+     "to": "2026-09-12",
+     "t": [
+      [
+       "10:00",
+       "18:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Touch A Truck",
+   "v": "stamford-downtown-city-departments-veter",
+   "special": "fall",
+   "ages": "Children / families",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "ticket": false,
+   "blurb": "Kids climb aboard and explore fire trucks, police vehicles, buses and construction equipment.",
+   "src": "https://stamford-downtown.com/",
+   "when": [
+    {
+     "from": "2026-04-08",
+     "to": "2026-04-08",
+     "t": [
+      [
+       "10:00",
+       "13:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Giant Balloon Inflation Party",
+   "v": "stamford-downtown-hoyt-street-at-summer-",
+   "special": "hol",
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "ticket": false,
+   "blurb": "See giant parade balloons inflate up close, plus music, performances and Santa.",
+   "src": "https://stamford-downtown.com/",
+   "when": [
+    {
+     "from": "2026-11-21",
+     "to": "2026-11-21",
+     "t": [
+      [
+       "15:00",
+       "18:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Stamford Downtown Parade Spectacular",
+   "v": "stamford-downtown-downtown-stamford",
+   "special": "fall",
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "ticket": false,
+   "blurb": "One of the country's largest balloon parades with marching bands and dance groups.",
+   "src": "https://stamford-downtown.com/venue/stamford-downtown/",
+   "when": [
+    {
+     "from": "2026-11-22",
+     "to": "2026-11-22",
+     "t": [
+      [
+       "12:00",
+       "14:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Stamford Moms Family Fun Day",
+   "v": "stamford-moms-stamford-town-center-resta",
+   "special": "fall",
+   "ages": "Families",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free admission; some activities extra",
+   "free": true,
+   "ticket": false,
+   "blurb": "Family performances, characters, crafts, obstacle course, touch-a-truck, face painting, slime and food.",
+   "src": "https://stamfordmoms.com/stamford-moms-family-fun-day/",
+   "when": [
+    {
+     "from": "2026-05-31",
+     "to": "2026-05-31",
+     "t": [
+      [
+       "11:00",
+       "16:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "New Parent & Baby Expo",
+   "v": "stamford-moms-cocreate",
+   "special": "fall",
+   "ages": "Expecting/new parents; children welcome",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "$12/adult; children free",
+   "free": false,
+   "ticket": true,
+   "blurb": "30+ local providers, talks/demos, soft play and Songs for Seeds demo.",
+   "src": "https://stamfordmoms.com/the-stamford-moms-new-parent-and-baby-expo/",
+   "when": [
+    {
+     "from": "2026-09-26",
+     "to": "2026-09-26",
+     "t": [
+      [
+       "10:00",
+       "13:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Annual Family Day",
+   "v": "stamford-department-of-health-human-serv",
+   "special": "fall",
+   "ages": "Families",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "ticket": false,
+   "blurb": "Activities, entertainment and health/community resources.",
+   "src": "https://www.stamfordct.gov/",
+   "when": [
+    {
+     "from": "2026-10-03",
+     "t": [
+      [
+       "10:00",
+       "14:00"
+      ]
+     ]
+    }
+   ],
+   "check": true
+  },
+  {
+   "t": "Glow in the Dark Party",
+   "v": "mill-river-park-collaborative",
+   "special": "fall",
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "See event page",
+   "free": false,
+   "ticket": false,
+   "blurb": "Glow dancing, mini golf and carousel rides.",
+   "src": "https://millriverpark.org/events/month/2026-10/",
+   "when": [
+    {
+     "from": "2026-10-17",
+     "to": "2026-10-17",
+     "t": [
+      [
+       "17:30",
+       "19:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Sukkah Family Festival",
+   "v": "chabad-of-stamford",
+   "special": "fall",
+   "ages": "All ages / families",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Early bird $12/person, family max $45; day-of higher",
+   "free": false,
+   "ticket": true,
+   "blurb": "Touch-a-truck, Kona Ice, crafts, pizza, balloons, face painting and teen game truck.",
+   "src": "https://www.stamfordchabad.org/civicrm/event/info?id=724&reset=1",
+   "when": [
+    {
+     "from": "2026-09-29",
+     "to": "2026-09-29",
+     "t": [
+      [
+       "17:00",
+       "18:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Halloween Trail / Party",
+   "v": "mill-river-park-collaborative",
+   "special": "hw",
+   "ages": "Families",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "ticket": false,
+   "blurb": "Trick-or-treat trail from Discovery Center to carousel plus music, games and crafts.",
+   "src": "https://millriverpark.org/fall-event/",
+   "when": [
+    {
+     "from": "2026-10-31",
+     "to": "2026-10-31",
+     "t": [
+      [
+       "15:00",
+       "17:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Books & Giggles",
+   "v": "ferguson-library-south-end-branch",
+   "ages": "Ages 4 and younger + caregiver; siblings welcome",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": false,
+   "rsvp": true,
+   "check": false,
+   "blurb": "Cozy playgroup/storytime with movement and activities.",
+   "src": "https://www.fergusonlibrary.org/event/books-giggles-94782",
+   "s": [
+    [
+     1,
+     [
+      [
+       "10:30",
+       "11:15"
+      ]
+     ],
+     "2026-09-14",
+     "2026-12-14"
+    ]
+   ]
+  },
+  {
+   "t": "Snow White and the Seven Dwarfs (United European Ballet)",
+   "v": "palace-theatre",
+   "special": "shows",
+   "when": [
+    {
+     "from": "2026-10-17",
+     "t": [
+      [
+       "16:00",
+       ""
+      ]
+     ]
+    }
+   ],
+   "ages": "Ages 2 and up",
+   "a": [
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Ticketed",
+   "ticket": true,
+   "blurb": "A family-friendly ballet retelling of the fairy tale, in two acts with one intermission. Suitable for ages 2 and up.",
+   "src": "https://www.palacestamford.org/events/detail/snow-white"
+  },
+  {
+   "t": "Be Like Blippi Tour!",
+   "v": "palace-theatre",
+   "special": "shows",
+   "when": [
+    {
+     "from": "2026-12-06",
+     "t": [
+      [
+       "14:00",
+       ""
+      ]
+     ]
+    }
+   ],
+   "ages": "Families",
+   "a": [
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Ticketed",
+   "ticket": true,
+   "blurb": "Blippi's live stage tour comes to the Palace. The show uses flashing lights, haze and confetti.",
+   "src": "https://www.palacestamford.org/events/all"
+  },
+  {
+   "t": "Connecticut Ballet: The Nutcracker",
+   "v": "palace-theatre",
+   "special": "hol",
+   "when": [
+    {
+     "from": "2026-12-12",
+     "t": [
+      [
+       "14:00",
+       ""
+      ],
+      [
+       "18:00",
+       ""
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-13",
+     "t": [
+      [
+       "13:00",
+       ""
+      ],
+      [
+       "17:00",
+       ""
+      ]
+     ]
+    }
+   ],
+   "ages": "Families",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "price": "Ticketed",
+   "ticket": true,
+   "blurb": "Connecticut Ballet's annual holiday tradition, the longest-running professional Nutcracker in the state, with guest artists from major companies.",
+   "src": "https://www.palacestamford.org/events/all"
+  },
+  {
+   "t": "The Canine Stars Stunt Dog Show",
+   "v": "palace-theatre",
+   "special": "shows",
+   "when": [
+    {
+     "from": "2026-12-19",
+     "t": [
+      [
+       "15:00",
+       ""
+      ]
+     ]
+    }
+   ],
+   "ages": "Families",
+   "a": [
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Ticketed",
+   "ticket": true,
+   "blurb": "Trained stunt dogs take the stage at the Palace.",
+   "src": "https://www.palacestamford.org/events/all"
+  },
+  {
+   "t": "Santa's Circus",
+   "v": "palace-theatre",
+   "special": "hol",
+   "when": [
+    {
+     "from": "2026-12-20",
+     "t": [
+      [
+       "16:00",
+       ""
+      ]
+     ]
+    }
+   ],
+   "ages": "Families",
+   "a": [
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Ticketed",
+   "ticket": true,
+   "blurb": "A Christmas-themed circus with acrobatics, stunts and music in a holiday wonderland.",
+   "src": "https://www.palacestamford.org/events/all"
+  },
+  {
+   "t": "World Ballet Company: The Nutcracker with a Live Orchestra",
+   "v": "palace-theatre",
+   "special": "hol",
+   "when": [
+    {
+     "from": "2026-12-28",
+     "t": [
+      [
+       "19:00",
+       ""
+      ]
+     ]
+    }
+   ],
+   "ages": "Families",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "price": "Ticketed",
+   "ticket": true,
+   "blurb": "The holiday classic with a live orchestra and 40 dancers.",
+   "src": "https://www.palacestamford.org/events/all"
+  },
+  {
+   "t": "Pumpkins & Planets Fall Fest Sundays",
+   "v": "stamford-museum-nature-center",
+   "special": "fall",
+   "when": [
+    {
+     "from": "2026-10-18",
+     "t": [
+      [
+       "10:00",
+       "14:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-25",
+     "t": [
+      [
+       "10:00",
+       "14:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "price": "Tickets required (early-bird pricing)",
+   "ticket": true,
+   "blurb": "Seasonal favorites, family fun and farm adventures, plus out-of-this-world experiences in the new Astronomy Center & Planetarium.",
+   "src": "https://www.stamfordmuseum.org/fest/",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ]
+  },
+  {
+   "t": "Tarantula Trick-or-Treat (members only)",
+   "v": "stamford-museum-nature-center",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-23",
+     "t": [
+      [
+       "16:00",
+       "16:45"
+      ],
+      [
+       "17:00",
+       "17:45"
+      ],
+      [
+       "18:00",
+       "18:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-24",
+     "t": [
+      [
+       "16:00",
+       "16:45"
+      ],
+      [
+       "17:00",
+       "17:45"
+      ],
+      [
+       "18:00",
+       "18:45"
+      ]
+     ]
+    }
+   ],
+   "ages": "Ages 3–10",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "price": "$24/child · members only",
+   "ticket": true,
+   "blurb": "Trick-or-treat around the grounds with a special opening of the tarantula exhibit, Heckscher WILD!, a planetarium presentation, crafts and the farm. Members only; two adults per ticket.",
+   "src": "https://www.stamfordmuseum.org/tarantula-trick-or-treat/"
+  },
+  {
+   "t": "Halloween Laser Spooktactular",
+   "v": "smnc-astronomy",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-01",
+     "t": [
+      [
+       "20:00",
+       "20:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-02",
+     "t": [
+      [
+       "20:00",
+       "20:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-03",
+     "t": [
+      [
+       "20:00",
+       "20:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-08",
+     "t": [
+      [
+       "20:00",
+       "20:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-09",
+     "t": [
+      [
+       "20:00",
+       "20:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-10",
+     "t": [
+      [
+       "20:00",
+       "20:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-15",
+     "t": [
+      [
+       "20:00",
+       "20:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-16",
+     "t": [
+      [
+       "20:00",
+       "20:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-17",
+     "t": [
+      [
+       "20:00",
+       "20:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-22",
+     "t": [
+      [
+       "20:00",
+       "20:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-23",
+     "t": [
+      [
+       "20:00",
+       "20:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-24",
+     "t": [
+      [
+       "20:00",
+       "20:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-29",
+     "t": [
+      [
+       "20:00",
+       "20:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-30",
+     "t": [
+      [
+       "20:00",
+       "20:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-31",
+     "t": [
+      [
+       "20:00",
+       "20:45"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "price": "$15 ($12 members)",
+   "ticket": true,
+   "blurb": "A family-friendly Halloween show of spooky music and laser imagery under the planetarium dome. Thursday to Saturday nights in October, 8pm.",
+   "src": "https://www.stamfordmuseum.org/astronomy/",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ]
+  },
+  {
+   "t": "Holiday Laser Spectacular",
+   "v": "smnc-astronomy",
+   "special": "hol",
+   "when": [
+    {
+     "from": "2026-12-05",
+     "t": [
+      [
+       "15:00",
+       "15:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-06",
+     "t": [
+      [
+       "15:00",
+       "15:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-12",
+     "t": [
+      [
+       "15:00",
+       "15:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-13",
+     "t": [
+      [
+       "15:00",
+       "15:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-19",
+     "t": [
+      [
+       "15:00",
+       "15:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-20",
+     "t": [
+      [
+       "15:00",
+       "15:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-26",
+     "t": [
+      [
+       "15:00",
+       "15:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-27",
+     "t": [
+      [
+       "15:00",
+       "15:45"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "price": "$15 ($12 members)",
+   "ticket": true,
+   "blurb": "Holiday favorites set to music and laser imagery under the dome. Weekend afternoons, plus Thursday to Saturday evenings all December.",
+   "src": "https://www.stamfordmuseum.org/astronomy/",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ]
+  },
+  {
+   "t": "Sesame Street planetarium show: One World, One Sky",
+   "v": "smnc-astronomy",
+   "s": [
+    [
+     6,
+     [
+      [
+       "10:00",
+       "10:45"
+      ]
+     ],
+     "2026-09-28",
+     "2026-12-31"
+    ],
+    [
+     0,
+     [
+      [
+       "10:00",
+       "10:45"
+      ]
+     ],
+     "2026-09-28",
+     "2026-12-31"
+    ],
+    [
+     3,
+     [
+      [
+       "13:00",
+       "13:45"
+      ]
+     ],
+     "2026-09-28",
+     "2026-12-31"
+    ],
+    [
+     4,
+     [
+      [
+       "13:00",
+       "13:45"
+      ]
+     ],
+     "2026-09-28",
+     "2026-12-31"
+    ],
+    [
+     5,
+     [
+      [
+       "13:00",
+       "13:45"
+      ]
+     ],
+     "2026-09-28",
+     "2026-12-31"
+    ]
+   ],
+   "ages": "All ages",
+   "price": "$12/seat ($8 members) + museum admission; toddlers 2 & under free on a lap",
+   "ticket": true,
+   "blurb": "Elmo, Big Bird and friends teach the youngest explorers about the sun, stars and the Big Dipper in a 45-minute dome show. Also runs on select school holidays.",
+   "src": "https://www.stamfordmuseum.org/astronomy/",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ]
+  },
+  {
+   "t": "Kids' planetarium shows (ages 5+)",
+   "v": "smnc-astronomy",
+   "s": [
+    [
+     6,
+     [
+      [
+       "11:00",
+       "11:45"
+      ],
+      [
+       "13:00",
+       "13:45"
+      ],
+      [
+       "15:00",
+       "15:45"
+      ]
+     ],
+     "2026-09-28",
+     "2026-12-31"
+    ],
+    [
+     0,
+     [
+      [
+       "11:00",
+       "11:45"
+      ],
+      [
+       "13:00",
+       "13:45"
+      ],
+      [
+       "15:00",
+       "15:45"
+      ]
+     ],
+     "2026-09-28",
+     "2026-12-31"
+    ]
+   ],
+   "ages": "Ages 5+",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "price": "$12/seat ($8 members) + museum admission",
+   "ticket": true,
+   "blurb": "Weekend shows at the Astronomy Center: Little Astronomers (11am, live and kid-sized), Forward! To the Moon (1pm) and Magic Globe (3pm). Kids 8+ can also catch Habitat Earth (noon) and Sunstruck (4pm).",
+   "src": "https://www.stamfordmuseum.org/astronomy/"
+  },
+  {
+   "t": "Daily Otter Feeding",
+   "v": "stamford-museum-nature-center",
+   "s": [
+    [
+     0,
+     [
+      [
+       "13:00",
+       "13:10"
+      ]
+     ],
+     "2026-09-28",
+     "2026-12-31"
+    ],
+    [
+     1,
+     [
+      [
+       "13:00",
+       "13:10"
+      ]
+     ],
+     "2026-09-28",
+     "2026-12-31"
+    ],
+    [
+     2,
+     [
+      [
+       "13:00",
+       "13:10"
+      ]
+     ],
+     "2026-09-28",
+     "2026-12-31"
+    ],
+    [
+     3,
+     [
+      [
+       "13:00",
+       "13:10"
+      ]
+     ],
+     "2026-09-28",
+     "2026-12-31"
+    ],
+    [
+     4,
+     [
+      [
+       "13:00",
+       "13:10"
+      ]
+     ],
+     "2026-09-28",
+     "2026-12-31"
+    ],
+    [
+     5,
+     [
+      [
+       "13:00",
+       "13:10"
+      ]
+     ],
+     "2026-09-28",
+     "2026-12-31"
+    ],
+    [
+     6,
+     [
+      [
+       "13:00",
+       "13:10"
+      ]
+     ],
+     "2026-09-28",
+     "2026-12-31"
+    ]
+   ],
+   "ages": "All ages",
+   "price": "Included with museum admission",
+   "drop": true,
+   "blurb": "Watch the otters at Otter Pond get their daily feeding.",
+   "src": "https://www.stamfordmuseum.org/events-2/events/",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ]
+  },
+  {
+   "t": "Magical Friday Night Halloween Event",
+   "v": "stamford-recreation-recreation-star-cent",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-23",
+     "t": [
+      [
+       "18:00",
+       "20:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Grades K–5",
+   "a": [
+    "big"
+   ],
+   "price": "$20/child · pre-register",
+   "blurb": "A Halloween party with a magic show by Dan Bowen, a costume contest, ice cream sundaes and a goodie bag. Come in costume. Pre-registration required; limited to 100 kids.",
+   "src": "https://www.stamfordrecreation.com/"
+  },
+  {
+   "t": "Bebés Bilingües",
+   "v": "ferguson-library-harry-bennett-branch",
+   "s": [
+    [
+     3,
+     [
+      [
+       "12:30",
+       "13:00"
+      ]
+     ],
+     "2026-09-30",
+     "2026-12-16"
+    ]
+   ],
+   "ages": "Ages 2 and under + caregiver; siblings welcome",
+   "a": [
+    "baby",
+    "toddler"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "check": true,
+   "blurb": "A Spanish-language storytime with picture books, rhymes and movement activities.",
+   "src": "https://www.fergusonlibrary.org/locations-hours/harry-bennett"
+  },
+  {
+   "t": "Saturday Matinee at Stamford Town Center (Avon on Tour)",
+   "v": "stamford-town-center",
+   "s": [
+    [
+     6,
+     [
+      [
+       "13:00",
+       "16:00"
+      ]
+     ],
+     "2026-10-03",
+     "2026-12-31",
+     1
+    ]
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "A free family movie in the Grand Court while the Avon Theatre is renovated, on the first Saturday of the month. First come, first served. The Oct 3 film is Hotel Transylvania (PG). Check the mall’s events page for the showtime.",
+   "src": "https://shopstamfordtowncenter.com/events/"
+  },
+  {
+   "t": "Home Depot Kids Workshop",
+   "v": "home-depot-stamford",
+   "s": [
+    [
+     6,
+     [
+      [
+       "09:00",
+       "12:00"
+      ]
+     ],
+     "2026-10-03",
+     "2026-12-31",
+     1
+    ]
+   ],
+   "ages": "Ages 5–12",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "noSignup": true,
+   "check": true,
+   "blurb": "A free hands-on workshop where kids build a project with tools, led by store associates. Check the store’s site for the project and sign-up.",
+   "src": "https://stamfordmoms.com/event/home-depot-kids-workshop/2026-10-03/"
+  }
+ ],
+ "tba": [
+  {
+   "g": "hol",
+   "t": "Heights & Lights: Rappelling Santa & Tree Lighting",
+   "w": "Landmark Square & Latham Park, Stamford Downtown",
+   "p": "Santa and friends rappel down a 22-story building, followed by fireworks, then holiday music and the tree lighting at Latham Park. Last year it was the first Sunday in December; this year’s date isn’t announced yet.",
+   "src": "https://www.heystamford.com/event-calendar"
+  },
+  {
+   "g": "hol",
+   "t": "Santa Calls (Stamford Recreation)",
+   "w": "Free for Stamford residents",
+   "p": "Stamford Recreation arranges a free phone call from Santa for kids who live in Stamford. It’s just a call: no gifts are supplied. Check the recreation site for sign-up details.",
+   "src": "https://www.stamfordrecreation.com/services-3"
+  },
+  {
+   "g": "hol",
+   "t": "Ice skating season opens at Mill River Park",
+   "w": "Cohen Skating Center, Mill River Park",
+   "p": "Stamford’s only outdoor ice rink usually opens in mid to late November and stays open through mid-March. Last year opening day was Nov 22; this year’s date isn’t announced yet. Timed tickets are recommended.",
+   "src": "https://millriverpark.org/venue/steven-alexandra-cohen-skating-center/"
+  }
+ ],
+ "classes": [
+  {
+   "id": "move-and-groove-with-alison--abilis",
+   "c": "move",
+   "n": "Move and Groove with Alison",
+   "u": "https://www.abilis.us/parent-and-child-classes-fall-2026/",
+   "blurb": "$360 / 10 weeks + $35 registration.",
+   "ages": "Walkers–age 3",
+   "where": "Abilis"
+  },
+  {
+   "id": "little-movers--abilis",
+   "c": "move",
+   "n": "Little Movers",
+   "u": "https://www.abilis.us/parent-and-child-classes-fall-2026/",
+   "blurb": "$360 / 10 weeks + $35 registration.",
+   "ages": "Young children + caregiver",
+   "where": "Abilis"
+  },
+  {
+   "id": "baby-and-me--abilis",
+   "c": "move",
+   "n": "Baby and Me",
+   "u": "https://www.abilis.us/parent-and-child-classes-fall-2026/",
+   "blurb": "$360 / 10 weeks + $35 registration.",
+   "ages": "Babies + caregiver",
+   "where": "Abilis"
+  },
+  {
+   "id": "sensory-storytime--abilis",
+   "c": "move",
+   "n": "Sensory Storytime",
+   "u": "https://www.abilis.us/parent-and-child-classes-fall-2026/",
+   "blurb": "$360 / 10 weeks + $35 registration.",
+   "ages": "Young children + caregiver",
+   "where": "Abilis"
+  },
+  {
+   "id": "messy-plate-club--abilis",
+   "c": "move",
+   "n": "Messy Plate Club",
+   "u": "https://www.abilis.us/parent-and-child-classes-fall-2026/",
+   "blurb": "$360 / 10 weeks + $35 registration +$40 materials fee.",
+   "ages": "Young children + caregiver",
+   "where": "Abilis"
+  },
+  {
+   "id": "parent-me-swim--stamford-jcc",
+   "c": "swim",
+   "n": "Parent & Me Swim",
+   "u": "https://www.stamfordjcc.org/index.php?mrkrs=Early+Learning+Swim&src=programs",
+   "blurb": "Member $416 / Community $586.",
+   "ages": "6 months–3.5 years",
+   "where": "Stamford JCC"
+  },
+  {
+   "id": "ready-now-swim--stamford-jcc",
+   "c": "swim",
+   "n": "Ready Now Swim",
+   "u": "https://www.stamfordjcc.org/index.php?mrkrs=Early+Learning+Swim&src=programs",
+   "blurb": "Member $338 / Community $478.",
+   "ages": "Ages 2–5 + parent",
+   "where": "Stamford JCC"
+  },
+  {
+   "id": "tadpoles-swim--stamford-jcc",
+   "c": "swim",
+   "n": "Tadpoles Swim",
+   "u": "https://www.stamfordjcc.org/index.php?mrkrs=Early+Learning+Swim&src=programs",
+   "blurb": "Member $364 / Community $514.",
+   "ages": "Ages 4–5.5",
+   "where": "Stamford JCC"
+  },
+  {
+   "id": "angelfish-swim--stamford-jcc",
+   "c": "swim",
+   "n": "Angelfish Swim",
+   "u": "https://www.stamfordjcc.org/index.php?mrkrs=Early+Learning+Swim&src=programs",
+   "blurb": "Member $364 / Community $514.",
+   "ages": "Ages 5.5+",
+   "where": "Stamford JCC"
+  },
+  {
+   "id": "tiny-tu-tu-s--a-z-dance-studio-star-center",
+   "c": "dance",
+   "n": "Tiny Tu-Tu's",
+   "u": "https://www.atozdancestudio.com/",
+   "blurb": "See registration.",
+   "ages": "Ages 2–3",
+   "where": "A-Z Dance Studio — STAR Center"
+  },
+  {
+   "id": "ballet-tap-combo--a-z-dance-studio-star-center",
+   "c": "dance",
+   "n": "Ballet/Tap Combo",
+   "u": "https://www.atozdancestudio.com/",
+   "blurb": "See registration.",
+   "ages": "Ages 3–4",
+   "where": "A-Z Dance Studio — STAR Center"
+  },
+  {
+   "id": "little-jigz-dance--little-jigz-stamford-studio",
+   "c": "music",
+   "n": "Little Jigz Dance",
+   "u": "https://www.littlejigz.com/",
+   "blurb": "$270.",
+   "ages": "Ages 3–4; drop-off",
+   "where": "Little Jigz — Stamford Studio"
+  },
+  {
+   "id": "little-jigz-mommy-me--little-jigz-stamford-studio",
+   "c": "music",
+   "n": "Little Jigz Mommy & Me",
+   "u": "https://www.littlejigz.com/",
+   "blurb": "$270.",
+   "ages": "Ages 1.5–3 + caregiver",
+   "where": "Little Jigz — Stamford Studio"
+  },
+  {
+   "id": "starfish-swim--chelsea-piers-connecticut",
+   "c": "swim",
+   "n": "Starfish Swim",
+   "u": "https://www.chelseapiers.com/athleticclub-stamford/classes",
+   "blurb": "$387.50.",
+   "ages": "3–24 months + caregiver",
+   "where": "Chelsea Piers Connecticut"
+  },
+  {
+   "id": "tumbling-tots--chelsea-piers-connecticut",
+   "c": "move",
+   "n": "Tumbling Tots",
+   "u": "https://www.chelseapiers.com/athleticclub-stamford/classes",
+   "blurb": "$622.24.",
+   "ages": "18–36 months / 2–3 + caregiver",
+   "where": "Chelsea Piers Connecticut"
+  },
+  {
+   "id": "preschool-gymnastics--chelsea-piers-connecticut",
+   "c": "move",
+   "n": "Preschool Gymnastics",
+   "u": "https://www.chelseapiers.com/athleticclub-stamford/classes",
+   "blurb": "$622.24.",
+   "ages": "Age 3",
+   "where": "Chelsea Piers Connecticut"
+  },
+  {
+   "id": "terrific-tots-tennis--chelsea-piers-connecticut",
+   "c": "move",
+   "n": "Terrific Tots Tennis",
+   "u": "https://www.chelseapiers.com/athleticclub-stamford/classes",
+   "blurb": "$666.72 / 16 sessions.",
+   "ages": "Ages 3–5",
+   "where": "Chelsea Piers Connecticut"
+  },
+  {
+   "id": "swim-transition-class--chelsea-piers-connecticut",
+   "c": "swim",
+   "n": "Swim Transition Class",
+   "u": "https://www.chelseapiers.com/athleticclub-stamford/classes",
+   "blurb": "$499.62.",
+   "ages": "Young swimmers transitioning from caregiver class",
+   "where": "Chelsea Piers Connecticut"
+  },
+  {
+   "id": "fall-group-swim-classes--children-of-the-sound-swim-school-stamfo",
+   "c": "swim",
+   "n": "Fall Group Swim Classes",
+   "u": "https://www.childrenofthesound.com/",
+   "blurb": "Fall 2026 group class schedule available by contacting the provider.",
+   "ages": "Children; level varies",
+   "where": "Children of the Sound Swim School — Stamford location"
+  },
+  {
+   "id": "nissen-carousel-weekend-hours--mill-river-park-collaborative-nissen-car",
+   "c": "move",
+   "n": "Nissen Carousel Weekend Hours",
+   "u": "https://millriverpark.org/the-park/carousel/",
+   "blurb": "Children under 42 inches ride with a standing adult at no extra fee. $2/ride; 6 rides $10.",
+   "ages": "All ages",
+   "where": "Mill River Park Collaborative — Nissen Carousel"
+  },
+  {
+   "id": "heckscher-farm-nature-s-playground-trails--stamford-museum-nature-center",
+   "c": "nature",
+   "n": "Heckscher Farm + Nature's Playground + Trails",
+   "u": "https://www.stamfordmuseum.org/",
+   "blurb": "Working farm, otters/wildlife, playground, museum, observatory and 80+ acres of trails. General admission / membership.",
+   "ages": "All ages",
+   "where": "Stamford Museum & Nature Center"
+  },
+  {
+   "id": "sm-nc-for-all--stamford-museum-nature-center",
+   "c": "nature",
+   "n": "SM&NC for All",
+   "u": "https://www.stamfordmuseum.org/",
+   "blurb": "Includes Astronomy for All and hands-on animal/farm programs; dates vary.",
+   "ages": "Neurodiverse / special-needs participants, roughly ages 5–17 + family",
+   "where": "Stamford Museum & Nature Center"
+  },
+  {
+   "id": "bartlett-arboretum-gardens--bartlett-arboretum-gardens",
+   "c": "nature",
+   "n": "Bartlett Arboretum & Gardens",
+   "u": "https://www.bartlettarboretum.org/",
+   "blurb": "93 acres of gardens, forests, wetlands and trails; nonprofit environmental education center.",
+   "ages": "All ages",
+   "where": "Bartlett Arboretum & Gardens"
+  },
+  {
+   "id": "third-thursday-walks-talks--bartlett-arboretum-gardens",
+   "c": "nature",
+   "n": "Third Thursday Walks & Talks",
+   "u": "https://www.bartlettarboretum.org/events",
+   "blurb": "Master Gardener-led themed walk focused on trees, plants, animals or landscape history. Members free; nonmembers $10.",
+   "ages": "Families with older/curious kids welcome; general audience",
+   "where": "Bartlett Arboretum & Gardens"
+  },
+  {
+   "id": "birding-at-the-bartlett--bartlett-arboretum-gardens",
+   "c": "nature",
+   "n": "Birding at the Bartlett",
+   "u": "https://www.bartlettarboretum.org/events",
+   "blurb": "Guided morning bird walk. Members free; nonmember pricing see event.",
+   "ages": "All ages; best for kids comfortable with quiet walks",
+   "where": "Bartlett Arboretum & Gardens"
+  },
+  {
+   "id": "summer-concert-series--bartlett-arboretum-gardens",
+   "c": "move",
+   "n": "Summer Concert Series",
+   "u": "https://www.bartlettarboretum.org/events/2026/concert/series",
+   "blurb": "Live music, lawn games and picnic-friendly evenings. Members $5; nonmembers $10; children 12 & under free.",
+   "ages": "All ages",
+   "where": "Bartlett Arboretum & Gardens"
+  },
+  {
+   "id": "fall-adventure-series--soundwaters",
+   "c": "move",
+   "n": "Fall Adventure Series",
+   "u": "https://soundwaters.org/youth-programs/fall-adventure-series-2/",
+   "blurb": "Weekly sailing, coastal habitats, live animals and science; students can choose Tuesdays, Wednesdays or both. See registration; financial assistance available.",
+   "ages": "Grades 1–5",
+   "where": "SoundWaters"
+  },
+  {
+   "id": "after-school-science-sailing--soundwaters",
+   "c": "move",
+   "n": "After-School Science & Sailing",
+   "u": "https://soundwaters.org/youth-programs/afterschool-sailing/",
+   "blurb": "Bus from school; sailing, marine animals and experiments. $45 participant fee for listed school program.",
+   "ages": "Grades 6–8 at participating schools",
+   "where": "SoundWaters"
+  },
+  {
+   "id": "cove-island-park-soundwaters-coastal-center--city-of-stamford-soundwaters-cove-island",
+   "c": "nature",
+   "n": "Cove Island Park + SoundWaters Coastal Center",
+   "u": "https://soundwaters.org/",
+   "blurb": "Beach, paths, playground/park space and SoundWaters coastal education programs. Park access; seasonal parking rules may apply.",
+   "ages": "All ages",
+   "where": "City of Stamford / SoundWaters — Cove Island Park"
+  },
+  {
+   "id": "scalzi-park-family-outing--city-of-stamford-scalzi-park",
+   "c": "nature",
+   "n": "Scalzi Park Family Outing",
+   "u": "https://www.stamfordct.gov/",
+   "blurb": "Large city park with playground and sports facilities; frequent site for community events.",
+   "ages": "All ages",
+   "where": "City of Stamford — Scalzi Park"
+  },
+  {
+   "id": "cummings-park-beach--city-of-stamford-cummings-park",
+   "c": "move",
+   "n": "Cummings Park & Beach",
+   "u": "https://www.stamfordct.gov/",
+   "blurb": "Beachfront park, playground/recreation and walking; city was actively renovating playground facilities in 2026. Free access; seasonal parking rules may apply.",
+   "ages": "All ages",
+   "where": "City of Stamford — Cummings Park"
+  },
+  {
+   "id": "mianus-river-park--city-of-stamford-greenwich-mianus-river-",
+   "c": "move",
+   "n": "Mianus River Park",
+   "u": "https://www.stamfordct.gov/",
+   "blurb": "Wooded trails and river; useful nature outing for families with trail-ready children.",
+   "ages": "All ages; trail suitability varies",
+   "where": "City of Stamford / Greenwich — Mianus River Park"
+  },
+  {
+   "id": "little-jigz-3-4s-drop-off--little-jigz-pender-keady-academy",
+   "c": "dance",
+   "n": "Little Jigz – 3 & 4s Drop-Off",
+   "u": "https://www.littlejigz.com/",
+   "blurb": "Intro Irish dance. $270.",
+   "ages": "Ages 3–4",
+   "where": "Little Jigz / Pender-Keady Academy"
+  },
+  {
+   "id": "little-jigz-adult-me--little-jigz-pender-keady-academy",
+   "c": "dance",
+   "n": "Little Jigz – Adult & Me",
+   "u": "https://www.littlejigz.com/",
+   "blurb": "Caregiver-participation Irish-dance introduction. $270.",
+   "ages": "Ages 1.5–3 + caregiver",
+   "where": "Little Jigz / Pender-Keady Academy"
+  },
+  {
+   "id": "pender-keady-irish-dance-classes--pender-keady-academy",
+   "c": "dance",
+   "n": "Pender-Keady Irish Dance Classes",
+   "u": "https://www.penderkeady.com/",
+   "blurb": "Multiple beginner/advanced levels Monday–Thursday plus championship Friday. See registration.",
+   "ages": "Children; beginner through championship levels",
+   "where": "Pender-Keady Academy"
+  },
+  {
+   "id": "ballet-school-of-stamford-2026-27-classes--ballet-school-of-stamford",
+   "c": "dance",
+   "n": "Ballet School of Stamford 2026–27 Classes",
+   "u": "https://www.balletschoolofstamford.org/school-schedule",
+   "blurb": "Nonprofit ballet school; exact class grid varies by level. See registration.",
+   "ages": "Children/teens; level dependent",
+   "where": "Ballet School of Stamford"
+  },
+  {
+   "id": "steps-dance-studio-fall-classes--steps-dance-studio",
+   "c": "dance",
+   "n": "STEPS Dance Studio Fall Classes",
+   "u": "https://stepsdancestudio.com/",
+   "blurb": "Long-running Stamford dance school with preschool through advanced programs and performances. See registration.",
+   "ages": "Children/teens; class dependent",
+   "where": "STEPS Dance Studio"
+  },
+  {
+   "id": "broadway-kids-2--stamford-jcc",
+   "c": "music",
+   "n": "Broadway Kids 2",
+   "u": "https://www.stamfordjcc.org/index.php?mrkrs=Theater+School&src=programs",
+   "blurb": "Singing, acting and dance; recital costume included. Member $350 / Community $444 (14 sessions).",
+   "ages": "Grades 2–6",
+   "where": "Stamford JCC"
+  },
+  {
+   "id": "theater-playground-1--stamford-jcc",
+   "c": "art",
+   "n": "Theater Playground 1",
+   "u": "https://www.stamfordjcc.org/index.php?mrkrs=Theater+School&src=programs",
+   "blurb": "Drama games, improvisation and scene work. See current registration.",
+   "ages": "Grade K–1",
+   "where": "Stamford JCC"
+  },
+  {
+   "id": "little-actors--stamford-jcc",
+   "c": "art",
+   "n": "Little Actors",
+   "u": "https://www.stamfordjcc.org/index.php?mrkrs=Theater+School&src=programs",
+   "blurb": "Preschool acting through drama games and familiar stories. Member $350 / Community $444 (14 sessions).",
+   "ages": "Ages 3–5",
+   "where": "Stamford JCC"
+  },
+  {
+   "id": "preschool-musical-theater--stamford-jcc",
+   "c": "music",
+   "n": "Preschool Musical Theater",
+   "u": "https://www.stamfordjcc.org/index.php?mrkrs=Theater+School&src=programs",
+   "blurb": "Nursery rhymes, singing, movement, rhythm and vocal skills. Member $350 / Community $444 (14 sessions).",
+   "ages": "Ages 3–5",
+   "where": "Stamford JCC"
+  },
+  {
+   "id": "contemporary-beginner--stamford-jcc",
+   "c": "dance",
+   "n": "Contemporary Beginner",
+   "u": "https://www.stamfordjcc.org/index.php?mrkrs=Youth+Class+Schedule&src=programs",
+   "blurb": "Contemporary dance blending ballet, jazz and modern. Member $445 / Community $551 (16 sessions).",
+   "ages": "Grades 2–3",
+   "where": "Stamford JCC"
+  },
+  {
+   "id": "jbaby-shabbat--stamford-jcc",
+   "c": "move",
+   "n": "JBaby Shabbat",
+   "u": "https://www.stamfordjcc.org/jbaby",
+   "blurb": "Songs, blessings, dinner and art project; JBaby also offers music, aquatics, sports, dance and art. See event.",
+   "ages": "Birth–2 + family",
+   "where": "Stamford JCC"
+  },
+  {
+   "id": "creative-family-rhythms-music-together--creative-family-rhythms-various-stamford",
+   "c": "music",
+   "n": "Creative Family Rhythms / Music Together",
+   "u": "https://creativefamilyrhythms.org/",
+   "blurb": "Music Together plus kids karate/fitness, yoga and Rhythm Kids; weekday/weekend options. See registration; annual membership option.",
+   "ages": "Ages 0–10 + caregivers",
+   "where": "Creative Family Rhythms — Various Stamford-area classes"
+  },
+  {
+   "id": "stamford-music-arts-academy-lessons--stamford-music-arts-academy",
+   "c": "music",
+   "n": "Stamford Music & Arts Academy Lessons",
+   "u": "https://stamfordmusicarts.com/",
+   "blurb": "Piano, violin/viola, cello, flute, voice, guitar and music theory. See registration / trial lesson.",
+   "ages": "All ages",
+   "where": "Stamford Music & Arts Academy"
+  },
+  {
+   "id": "fall-drama-arts-classes--curtain-call-sterling-farms-theatre-comp",
+   "c": "music",
+   "n": "Fall Drama Arts Classes",
+   "u": "https://www.curtaincallinc.com/",
+   "blurb": "Acting, improv, sketch comedy, musical theater, dance, directing and more. $275–$385; dance $140/session or $22 drop-in.",
+   "ages": "Pre-K through Grade 12",
+   "where": "Curtain Call — Sterling Farms Theatre Complex"
+  },
+  {
+   "id": "summer-stock-theatre-workshops--curtain-call-sterling-farms-theatre-comp",
+   "c": "art",
+   "n": "Summer Stock Theatre Workshops",
+   "u": "https://www.curtaincallinc.com/summer-stock-full-day-workshops",
+   "blurb": "Junior, creative theatre and musical theatre tracks. See registration.",
+   "ages": "Entering K–12; age-grouped",
+   "where": "Curtain Call — Sterling Farms Theatre Complex"
+  },
+  {
+   "id": "code-ninjas-after-school-coding--code-ninjas-stamford",
+   "c": "build",
+   "n": "Code Ninjas After-School Coding",
+   "u": "https://www.codeninjas.com/locations/en-us/ct/stamford/coding-school-249.html",
+   "blurb": "Game-based coding, robotics and digital literacy; center also open Tue and weekends. See enrollment; free intro session.",
+   "ages": "Ages 5–14",
+   "where": "Code Ninjas Stamford"
+  },
+  {
+   "id": "code-ninjas-weekend-coding--code-ninjas-stamford",
+   "c": "build",
+   "n": "Code Ninjas Weekend Coding",
+   "u": "https://www.codeninjas.com/locations/en-us/ct/stamford/coding-school-249.html",
+   "blurb": "Flexible coding dojo hours. See enrollment.",
+   "ages": "Ages 5–14",
+   "where": "Code Ninjas Stamford"
+  },
+  {
+   "id": "preschool-ninja--chelsea-piers-connecticut",
+   "c": "nature",
+   "n": "Preschool Ninja",
+   "u": "https://www.chelseapiers.com/athleticclub-stamford/classes?sports=squash%2Csoccer%2Cninja-%26-parkour%2Ctennis%2Chockey",
+   "blurb": "Balance, coordination and upper-body strength. Approx. $622–$700 depending session count.",
+   "ages": "Ages 3–4",
+   "where": "Chelsea Piers Connecticut"
+  },
+  {
+   "id": "soccer-tikes--chelsea-piers-connecticut",
+   "c": "move",
+   "n": "Soccer Tikes",
+   "u": "https://www.chelseapiers.com/athleticclub-stamford/classes?sports=soccer%2Cvolleyball%2Cninja-%26-parkour%2Clacrosse%2Csquash%2Cbasketball",
+   "blurb": "Intro soccer and movement with caregiver. See live schedule; fall session.",
+   "ages": "Ages 2–3 + caregiver",
+   "where": "Chelsea Piers Connecticut"
+  },
+  {
+   "id": "soccer-spikes--chelsea-piers-connecticut",
+   "c": "move",
+   "n": "Soccer Spikes",
+   "u": "https://www.chelseapiers.com/athleticclub-stamford/classes?sports=squash%2Csoccer%2Cninja-%26-parkour%2Ctennis%2Chockey",
+   "blurb": "Preschool fundamentals. See live schedule.",
+   "ages": "Ages 3–5",
+   "where": "Chelsea Piers Connecticut"
+  },
+  {
+   "id": "starfish-infant-toddler-swim--chelsea-piers-connecticut",
+   "c": "swim",
+   "n": "Starfish Infant/Toddler Swim",
+   "u": "https://www.chelseapiers.com/athleticclub-stamford/classes",
+   "blurb": "Water safety, floating and comfort; caregiver participation. Approx. $387.50 for 10 sessions in some fall blocks.",
+   "ages": "Ages 3–30 months + caregiver",
+   "where": "Chelsea Piers Connecticut"
+  },
+  {
+   "id": "intro-to-sea-pups--chelsea-piers-connecticut",
+   "c": "swim",
+   "n": "Intro to Sea Pups",
+   "u": "https://www.chelseapiers.com/athleticclub-stamford/classes?sports=hockey%2Cswimming%2Cvolleyball%2Csoccer",
+   "blurb": "Transition from caregiver-supported to independent swimming. See live schedule.",
+   "ages": "Ages 24–36 months",
+   "where": "Chelsea Piers Connecticut"
+  },
+  {
+   "id": "adaptive-swim-lessons--chelsea-piers-connecticut",
+   "c": "swim",
+   "n": "Adaptive Swim Lessons",
+   "u": "https://www.chelseapiers.com/athleticclub-stamford/classes",
+   "blurb": "Adaptive instruction available in fall schedule. See live schedule.",
+   "ages": "Ages 2–8",
+   "where": "Chelsea Piers Connecticut"
+  },
+  {
+   "id": "children-s-swim-lessons--goldfish-swim-school-stamford",
+   "c": "swim",
+   "n": "Children's Swim Lessons",
+   "u": "https://www.goldfishswimschool.com/stamford/",
+   "blurb": "Structured lessons plus Family Swim and free community water-safety presentations. See enrollment; Family Swim $10/swimmer or $30/family.",
+   "ages": "Approx. 4 months–12 years",
+   "where": "Goldfish Swim School – Stamford"
+  },
+  {
+   "id": "children-s-adaptive-swim-lessons--hudson-valley-swim-stamford-la-fitness-p",
+   "c": "swim",
+   "n": "Children's & Adaptive Swim Lessons",
+   "u": "https://www.hvswim.com/",
+   "blurb": "Small-group instruction plus adaptive swim options. See enrollment.",
+   "ages": "Infant/toddler through youth; level dependent",
+   "where": "Hudson Valley Swim Stamford — LA Fitness pool"
+  },
+  {
+   "id": "learn-to-swim-programs--sweet-blue-swim-academy",
+   "c": "swim",
+   "n": "Learn-to-Swim Programs",
+   "u": "https://sweetblueswim.com/",
+   "blurb": "Small-group baby, beginner, intermediate and advanced instruction. See enrollment.",
+   "ages": "Babies through youth; level dependent",
+   "where": "Sweet Blue Swim Academy"
+  },
+  {
+   "id": "open-play--angel-land-stamford-stamford-town-center",
+   "c": "move",
+   "n": "Open Play",
+   "u": "https://angellandplay.com/",
+   "blurb": "Large indoor playground with slides, ball pits, trampolines and climbing. See current admission; grip socks required.",
+   "ages": "Toddlers through elementary age",
+   "where": "Angel Land Stamford — Stamford Town Center"
+  },
+  {
+   "id": "youth-sports-classes--chelsea-piers-connecticut",
+   "c": "move",
+   "n": "Youth Sports Classes",
+   "u": "https://www.chelseapiers.com/athleticclub-stamford/classes",
+   "blurb": "Also includes tennis, basketball, volleyball, squash, hockey and ice skating beyond individually listed preschool programs. Varies by class.",
+   "ages": "Toddlers through teens",
+   "where": "Chelsea Piers Connecticut"
+  },
+  {
+   "id": "families-with-young-children-shabbat-holiday-programs--temple-sinai-stamford",
+   "c": "music",
+   "n": "Families with Young Children Shabbat & Holiday Programs",
+   "u": "https://www.templesinaistamford.org/school/youth-programs.html",
+   "blurb": "Dancing, singing, prayer, crafts, play, challah and holiday programs. Open to community; see event details.",
+   "ages": "Ages 0–4 + family",
+   "where": "Temple Sinai Stamford"
+  },
+  {
+   "id": "boys-girls-club-after-school-programs--boys-girls-club-of-stamford-yerwood-cent",
+   "c": "move",
+   "n": "Boys & Girls Club After-School Programs",
+   "u": "https://www.bgcastamford.org/",
+   "blurb": "Yerwood K–3; Mary C. Rich grades 4–12; Gary Wendt Teen Center grades 7–12. See membership/enrollment.",
+   "ages": "Grades K–12 by site",
+   "where": "Boys & Girls Club of Stamford — Yerwood Center / Mary C. Rich Clubhouse / Gary Wendt Teen Center"
+  },
+  {
+   "id": "after-school-club-at-star-center--stamford-recreation-recreation-star-cent",
+   "c": "move",
+   "n": "After School Club at Star Center",
+   "u": "https://www.stamfordrecreation.com/",
+   "blurb": "Gym, playground/outdoor time, arts/crafts and homework; registration opened May 20, 2026. 3 days $215/mo; 4 days $245; 5 days $270.",
+   "ages": "Grades K–5",
+   "where": "Stamford Recreation — Recreation Star Center"
+  },
+  {
+   "id": "german-school-of-connecticut-stamford-children-s-program--german-school-of-connecticut-stamford-ca",
+   "c": "move",
+   "n": "German School of Connecticut – Stamford Children's Program",
+   "u": "https://germanschoolct.org/class-registration/",
+   "blurb": "Saturday German language/culture program; Stamford open house Sep 5. Base tuition $1,350.",
+   "ages": "Children born Dec 1 2023–Sep 1 2009",
+   "where": "German School of Connecticut — Stamford campus"
+  },
+  {
+   "id": "armelle-spanish-star",
+   "c": "music",
+   "n": "Learn Spanish Through Music (Armelle for Kids)",
+   "u": "https://armelleforkids.com/tag/learn-spanish/",
+   "blurb": "A weekly Spanish class built on songs, movement and instruments, for ages 1–4. This fall it meets on Tuesdays at the Recreation Star Center (about 40 minutes a class). Check Stamford Recreation for the time and price.",
+   "ages": "1–4 years",
+   "where": "Stamford Recreation — Recreation Star Center"
+  },
+  {
+   "id": "comic-tree-star",
+   "c": "art",
+   "n": "Comic Tree Workshop at the Star Center",
+   "u": "https://www.stamfordrecreation.com/",
+   "blurb": "Cartoon and comic-book drawing with cartoonist Phil Lohmeyer: Comic Book Studio for grades 2–4 (Tuesdays 5–6pm, Oct 6–Dec 1, $165) and Cartoon Animals for Pre-K to grade 1 (Saturdays Oct 17 and 24, 10–11am, $75). Materials included.",
+   "ages": "Pre-K–Grade 4",
+   "where": "Stamford Recreation — Recreation Star Center"
+  },
+  {
+   "id": "ferguson-south-end-bilingual",
+   "c": "music",
+   "n": "Bilingual Storytime at the South End Branch",
+   "u": "https://www.fergusonlibrary.org/locations-hours/south-end",
+   "blurb": "A joyful bilingual storytime with books, songs, dance and play, inside the Lathon Wider Community Center. Registration is required and families sign up for the whole month. Check Ferguson’s calendar for the day and time.",
+   "ages": "Ages 4 and under + adult",
+   "where": "Ferguson Library — South End Branch (Lathon Wider Community Center)"
+  }
+ ],
+ "library": {
+  "for": "Free, every week",
+  "name": "The Ferguson Library",
+  "desc": "Stamford's public library system, with four branches around the city. Ask about storytimes and drop-in programs at your nearest branch.",
+  "a": "See Ferguson Library events",
+  "href": "https://www.fergusonlibrary.org/events/list"
+ },
+ "extraResources": []
 };
 </script>
 
@@ -382,6 +2967,9 @@ window.TOWN = {
             <li><strong>Stamford Museum &amp; Nature Center</strong><span data-es="Animales de granja, un planetario y galerías interiores, con senderos afuera para cuando mejora el clima.">Farm animals, a planetarium and indoor galleries, with trails outside for when the weather turns nice.</span></li>
             <li><strong>Chelsea Piers Connecticut</strong><span data-es="Un complejo deportivo y de juegos con cancha techada, gimnasia y una zona de juegos para los más pequeños.">A sports and play complex with an indoor field house, gymnastics and a toddler play zone.</span></li>
             <li><strong>Kiddo Land</strong><span data-es="Un parque infantil techado dentro del centro comercial Stamford Town Center, hecho para trepar, deslizarse y gastar energía.">An indoor playground inside Stamford Town Center mall, built for climbing, sliding and burning off energy.</span></li>
+            <li><strong>Astronomy Center &amp; Planetarium</strong><span data-es="Shows bajo la cúpula casi todos los fines de semana, incluido uno de Sesame Street para los exploradores más pequeños. Compra los boletos con anticipación.">Dome shows most weekends, including a Sesame Street show for the littlest explorers. Buy tickets ahead.</span></li>
+            <li><strong>Stamford Twin Rinks</strong><span data-es="Sesiones de patinaje público durante todo el año. Consulta el horario antes de ir.">Public skating sessions year-round. Check the schedule before you go.</span></li>
+            <li><strong>Terry Conners Ice Rink</strong><span data-es="La pista de hielo de la ciudad en Cove Road, con sesiones de patinaje público. Consulta el horario antes de ir.">The city’s rink on Cove Road, with public skating sessions. Check the schedule before you go.</span></li>
           </ul>
         </div>
         <div>
@@ -498,8 +3086,64 @@ window.TOWN = {
 </footer>
 
 <script>window.DATA_ES = {
-  // English text -> Spanish translation, for this town's event/class blurbs, ages and price fields.
-  // Anything not listed here falls back to English automatically.
+  "Sesame Street planetarium show: One World, One Sky": "Show de planetario de Sesame Street: One World, One Sky",
+  "Kids' planetarium shows (ages 5+)": "Shows de planetario para niños (5+ años)",
+  "Daily Otter Feeding": "Alimentación diaria de las nutrias",
+  "Magical Friday Night Halloween Event": "Noche mágica de Halloween (viernes)",
+  "Tarantula Trick-or-Treat (members only)": "Tarantula Trick-or-Treat (solo socios)",
+  "Ages 2 and up": "De 2 años en adelante",
+  "Ages 3–10": "De 3 a 10 años",
+  "Ages 5+": "5 años en adelante",
+  "Grades K–5": "Grados K–5",
+  "Pre-K–Grade 4": "Pre-K a 4.º grado",
+  "1–4 years": "1–4 años",
+  "Families": "Familias",
+  "All ages": "Todas las edades",
+  "Tickets required (early-bird pricing)": "Se requieren boletos (precio anticipado disponible)",
+  "$24/child · members only": "$24 por niño · solo socios",
+  "$15 ($12 members)": "$15 ($12 socios)",
+  "$12/seat ($8 members) + museum admission": "$12 por asiento ($8 socios) + entrada al museo",
+  "$12/seat ($8 members) + museum admission; toddlers 2 & under free on a lap": "$12 por asiento ($8 socios) + entrada al museo; niños de 2 años o menos gratis en el regazo",
+  "Included with museum admission": "Incluido con la entrada al museo",
+  "$20/child · pre-register": "$20 por niño · inscripción previa",
+  "Ticketed": "Con boleto",
+  "A family-friendly ballet retelling of the fairy tale, in two acts with one intermission. Suitable for ages 2 and up.": "Una versión en ballet del cuento de hadas, apta para toda la familia, en dos actos con un intermedio. Recomendada para niños de 2 años en adelante.",
+  "Blippi's live stage tour comes to the Palace. The show uses flashing lights, haze and confetti.": "La gira en vivo de Blippi llega al Palace. El espectáculo usa luces intermitentes, humo escénico y confeti.",
+  "Connecticut Ballet's annual holiday tradition, the longest-running professional Nutcracker in the state, with guest artists from major companies.": "La tradición navideña anual de Connecticut Ballet, el Cascanueces profesional que más tiempo lleva en cartel en el estado, con artistas invitados de grandes compañías.",
+  "Trained stunt dogs take the stage at the Palace.": "Perros acróbatas entrenados se presentan en el escenario del Palace.",
+  "A Christmas-themed circus with acrobatics, stunts and music in a holiday wonderland.": "Un circo navideño con acrobacias, proezas y música en un país de las maravillas de las fiestas.",
+  "The holiday classic with a live orchestra and 40 dancers.": "El clásico navideño con orquesta en vivo y 40 bailarines.",
+  "Seasonal favorites, family fun and farm adventures, plus out-of-this-world experiences in the new Astronomy Center & Planetarium.": "Favoritos de la temporada, diversión familiar y aventuras en la granja, además de experiencias fuera de este mundo en el nuevo Astronomy Center & Planetarium.",
+  "Trick-or-treat around the grounds with a special opening of the tarantula exhibit, Heckscher WILD!, a planetarium presentation, crafts and the farm. Members only; two adults per ticket.": "Dulces o truco por todo el museo, con una apertura especial de la exhibición de tarántulas, Heckscher WILD!, una presentación en el planetario, manualidades y la granja. Solo para socios; dos adultos por boleto.",
+  "A family-friendly Halloween show of spooky music and laser imagery under the planetarium dome. Thursday to Saturday nights in October, 8pm.": "Un espectáculo de Halloween para toda la familia, con música espeluznante e imágenes láser bajo la cúpula del planetario. Noches de jueves a sábado en octubre, 8 p. m.",
+  "Holiday favorites set to music and laser imagery under the dome. Weekend afternoons, plus Thursday to Saturday evenings all December.": "Éxitos navideños con música e imágenes láser bajo la cúpula. Tardes de fin de semana, además de las noches de jueves a sábado durante todo diciembre.",
+  "Elmo, Big Bird and friends teach the youngest explorers about the sun, stars and the Big Dipper in a 45-minute dome show. Also runs on select school holidays.": "Elmo, Big Bird y sus amigos enseñan a los más pequeños sobre el sol, las estrellas y la Osa Mayor en un espectáculo de 45 minutos bajo la cúpula. También se presenta en algunos días festivos escolares.",
+  "Weekend shows at the Astronomy Center: Little Astronomers (11am, live and kid-sized), Forward! To the Moon (1pm) and Magic Globe (3pm). Kids 8+ can also catch Habitat Earth (noon) and Sunstruck (4pm).": "Shows de fin de semana en el Astronomy Center: Little Astronomers (11 a. m., en vivo y a tamaño de niño), Forward! To the Moon (1 p. m.) y Magic Globe (3 p. m.). Los niños de 8 años en adelante también pueden ver Habitat Earth (mediodía) y Sunstruck (4 p. m.).",
+  "Watch the otters at Otter Pond get their daily feeding.": "Mira cómo alimentan a las nutrias en Otter Pond.",
+  "A Halloween party with a magic show by Dan Bowen, a costume contest, ice cream sundaes and a goodie bag. Come in costume. Pre-registration required; limited to 100 kids.": "Una fiesta de Halloween con un show de magia de Dan Bowen, concurso de disfraces, helados y una bolsita de premios. Ven disfrazado. Se requiere inscripción previa; cupo limitado a 100 niños.",
+  "Learn Spanish Through Music (Armelle for Kids)": "Aprende español con música (Armelle for Kids)",
+  "A weekly Spanish class built on songs, movement and instruments, for ages 1–4. This fall it meets on Tuesdays at the Recreation Star Center (about 40 minutes a class). Check Stamford Recreation for the time and price.": "Una clase semanal de español basada en canciones, movimiento e instrumentos, para niños de 1 a 4 años. Este otoño se reúne los martes en el Recreation Star Center (unos 40 minutos por clase). Consulta a Stamford Recreation para el horario y el precio.",
+  "Cartoon and comic-book drawing with cartoonist Phil Lohmeyer: Comic Book Studio for grades 2–4 (Tuesdays 5–6pm, Oct 6–Dec 1, $165) and Cartoon Animals for Pre-K to grade 1 (Saturdays Oct 17 and 24, 10–11am, $75). Materials included.": "Dibujo de caricaturas y cómics con el caricaturista Phil Lohmeyer: Comic Book Studio para 2.º a 4.º grado (martes de 5 a 6 p. m., del 6 de oct. al 1 de dic., $165) y Cartoon Animals para Pre-K a 1.er grado (sábados 17 y 24 de oct., de 10 a 11 a. m., $75). Materiales incluidos.",
+  "Bebés Bilingües": "Bebés Bilingües",
+  "Ages 2 and under + caregiver; siblings welcome": "De 2 años o menos + adulto acompañante; hermanos bienvenidos",
+  "A Spanish-language storytime with picture books, rhymes and movement activities.": "Cuentacuentos en español con libros ilustrados, rimas y actividades de movimiento.",
+  "Free": "Gratis",
+  "Bilingual Storytime at the South End Branch": "Cuentacuentos bilingüe en la sucursal South End",
+  "A joyful bilingual storytime with books, songs, dance and play, inside the Lathon Wider Community Center. Registration is required and families sign up for the whole month. Check Ferguson’s calendar for the day and time.": "Un alegre cuentacuentos bilingüe con libros, canciones, baile y juego, dentro del Lathon Wider Community Center. Se requiere inscripción y las familias se inscriben por todo el mes. Consulta el calendario de Ferguson para el día y la hora.",
+  "Ages 4 and under + adult": "De 4 años o menos + adulto",
+  "Heights & Lights: Rappelling Santa & Tree Lighting": "Heights & Lights: Santa en rápel y encendido del árbol",
+  "Landmark Square & Latham Park, Stamford Downtown": "Landmark Square y Latham Park, Stamford Downtown",
+  "Santa and friends rappel down a 22-story building, followed by fireworks, then holiday music and the tree lighting at Latham Park. Last year it was the first Sunday in December; this year’s date isn’t announced yet.": "Santa y sus amigos bajan en rápel por un edificio de 22 pisos, seguido de fuegos artificiales, y luego música navideña y el encendido del árbol en Latham Park. El año pasado fue el primer domingo de diciembre; la fecha de este año aún no se ha anunciado.",
+  "Santa Calls (Stamford Recreation)": "Llamadas de Santa (Stamford Recreation)",
+  "Free for Stamford residents": "Gratis para residentes de Stamford",
+  "Stamford Recreation arranges a free phone call from Santa for kids who live in Stamford. It’s just a call: no gifts are supplied. Check the recreation site for sign-up details.": "Stamford Recreation organiza una llamada gratuita de Santa para los niños que viven en Stamford. Es solo una llamada: no se entregan regalos. Consulta el sitio de recreación para los detalles de inscripción.",
+  "Saturday Matinee at Stamford Town Center (Avon on Tour)": "Matié de sábado en Stamford Town Center (Avon on Tour)",
+  "A free family movie in the Grand Court while the Avon Theatre is renovated, on the first Saturday of the month. First come, first served. The Oct 3 film is Hotel Transylvania (PG). Check the mall’s events page for the showtime.": "Una película familiar gratuita en el Grand Court mientras se renueva el Avon Theatre, el primer sábado de cada mes. Por orden de llegada. La película del 3 de oct. es Hotel Transylvania (PG). Consulta la página de eventos del centro comercial para el horario.",
+  "Ages 5–12": "De 5 a 12 años",
+  "A free hands-on workshop where kids build a project with tools, led by store associates. Check the store’s site for the project and sign-up.": "Un taller práctico y gratuito donde los niños construyen un proyecto con herramientas, guiados por empleados de la tienda. Consulta el sitio de la tienda para el proyecto y la inscripción.",
+  "Ice skating season opens at Mill River Park": "Abre la temporada de patinaje sobre hielo en Mill River Park",
+  "Cohen Skating Center, Mill River Park": "Cohen Skating Center, Mill River Park",
+  "Stamford’s only outdoor ice rink usually opens in mid to late November and stays open through mid-March. Last year opening day was Nov 22; this year’s date isn’t announced yet. Timed tickets are recommended.": "La única pista de hielo al aire libre de Stamford suele abrir a mediados o finales de noviembre y permanece abierta hasta mediados de marzo. El año pasado abrió el 22 de noviembre; la fecha de este año aún no se ha anunciado. Se recomienda comprar boletos con horario."
 };</script>
 <script data-goatcounter="https://ctkidscalendar.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="/shared/app.js"></script>
