@@ -447,7 +447,8 @@ function renderBig(){
     const dated=items.filter(i=>i.g===g).map(i=>{
       const a=pd(i.from),b=pd(i.to);
       const dd=i.from===i.to?a.getDate():(a.getMonth()===b.getMonth()?`${a.getDate()}\u2013${b.getDate()}`:`${a.getDate()}\u2013${MON()[b.getMonth()]} ${b.getDate()}`);
-      return `<li class="bd"><span class="bd-date"><span class="m">${MON()[a.getMonth()]}</span><span class="d">${dd}</span></span>
+      const dl=String(dd).length,dcls=dl>=8?" xl":(dl>=5?" long":"");
+      return `<li class="bd"><span class="bd-date${dcls}"><span class="m">${MON()[a.getMonth()]}</span><span class="d">${dd}</span></span>
         <span><strong>${esc(dx(i.t))}</strong><span class="w">${esc([...new Set(i.places)].join(andWord))}</span>
         <span class="rowbtns"><button class="linkbtn" type="button" data-jump="${i.from}">${tx("seeOnCal")}</button><button class="linkbtn" type="button" data-share-e="${i.id}" data-share-d="${i.from}">${tx("share")}</button></span></span></li>`;
     }).join("");
