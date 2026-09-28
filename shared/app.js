@@ -26,7 +26,16 @@ try{
   LANG=(q==="es"||q==="en")?q:(saved||((navigator.language||"").toLowerCase().startsWith("es")?"es":"en"));
 }catch(_){}
 const tx=(k,...args)=>{const v=UI[LANG][k];return typeof v==="function"?v(...args):(v!==undefined?v:UI.en[k])};
-const DATA_ES = (typeof window!=="undefined"&&window.DATA_ES) || {};
+window.DATA_ES = window.DATA_ES || {};
+const DATA_ES = window.DATA_ES;
+/* The big shared Spanish dictionary is only downloaded when someone actually switches to Spanish. */
+function ensureEs(cb){
+  if(window.__ES_LOADED){cb();return}
+  const el=document.createElement("script");
+  el.src=window.ES_DATA_SRC||"/shared/data-es.js";
+  el.onload=()=>cb();el.onerror=()=>cb();
+  document.head.appendChild(el);
+}
 const dx=s=>LANG==="es"&&s&&DATA_ES[s]?DATA_ES[s]:s;
 
 const UI={
@@ -543,6 +552,10 @@ function applyStaticI18n(){
     const k=el.dataset.i18nDate,d=el.dataset.dateVal;
     if(UI.en[k]!==undefined)el.innerHTML=tx(k,d);
   });
+  document.querySelectorAll("[data-es]").forEach(el=>{
+    if(el.dataset.enOrig===undefined)el.dataset.enOrig=el.textContent;
+    el.textContent=LANG==="es"?el.dataset.es:el.dataset.enOrig;
+  });
   const priTitle=document.getElementById("privIntro");
   if(priTitle)priTitle.innerHTML=tx("privacyIntro",townName,priTitle.dataset.domain);
   const lb=document.getElementById("langBtn");
@@ -557,7 +570,7 @@ function reRenderAll(){
   renderHoods();renderDays();renderDay();renderWeek();renderBig();renderClasses();renderTicker();renderResources();applyStaticI18n();
 }
 const langBtn=document.getElementById("langBtn");
-if(langBtn)langBtn.onclick=()=>{LANG=LANG==="es"?"en":"es";try{localStorage.setItem("ctk-lang",LANG)}catch(_){}reRenderAll()};
+if(langBtn)langBtn.onclick=()=>{LANG=LANG==="es"?"en":"es";try{localStorage.setItem("ctk-lang",LANG)}catch(_){}reRenderAll();if(LANG==="es"&&!window.__ES_LOADED)ensureEs(reRenderAll)};
 
 /* ---------- mobile tab bar ---------- */
 (function(){
@@ -621,6 +634,7 @@ function injectEventSchema(){
 
 /* ---------- initial render ---------- */
 renderHoods();renderDays();renderDay();renderWeek();renderBig();renderClasses();renderTicker();renderResources();applyStaticI18n();injectEventSchema();
+if(LANG==="es"&&!window.__ES_LOADED)ensureEs(reRenderAll);
 
 /* ---------- links: shared events, days, weekend ---------- */
 function handleHash(){
