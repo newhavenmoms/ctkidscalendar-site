@@ -706,3 +706,10 @@ footer{font-size:.84rem;line-height:1.6}
 /* Big Days date tiles: shrink long ranges so they never overflow */
 .bd-date.long .d{font-size:1.15rem!important}
 .bd-date.xl .d{font-size:.9rem!important}
+
+/* School closure / early-dismissal notes in the week view */
+.schoolnote{margin:.5rem 0 .3rem;padding:.4rem .7rem;font-size:.86rem;background:var(--marigold-tint);border:1.5px dashed var(--ink)}
+.schoolnote.closed{background:var(--lilac-tint)}
+.schoolnote strong{font-family:var(--mono);text-transform:uppercase;letter-spacing:.05em;font-size:.78rem}
+.weekday.closureonly{padding:.55rem 0;border-bottom:1px solid var(--line)}
+.weekday.closureonly h4{margin:.1rem 0;font-size:1.05rem}

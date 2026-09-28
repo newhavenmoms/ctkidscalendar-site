@@ -12,6 +12,7 @@ const TOWN_LABEL = T.townLabel || "";
 const V = T.venues || {};
 const E = (T.events || []).slice();
 const TBA = T.tba || [];
+const SCL = new Map((T.closures || []).map(c => [c.d, c]));
 const VM = T.venueMeta || {};
 const HOODS = (T.hoods || []).slice(); // [] hides the neighborhood filter
 const CL = (T.classes || []).slice();
@@ -51,7 +52,7 @@ en:{
   rsvp:"RSVP", signUpAhead:"Sign up ahead", checkFirst:"Check first",
   ages:"Ages", cost:"Cost", where:"Where",
   directions:"Directions", organizerPage:"Organizer's page", shareWithFriend:"Share with a friend", addToCal:"Add to calendar",
-  seeOnCal:"See it on the calendar", share:"Share", tba:"TBA", checkForDates:"Check for dates",
+  seeOnCal:"See it on the calendar", share:"Share", tba:"TBA", checkForDates:"Check for dates", schoolClosed:"No school", schoolEarly:"Early dismissal",
   groupFall:"Fall festivals", groupShows:"Shows & performances", groupHw:"Halloween", groupHol:"Holidays",
   noMatchFilters:"Nothing matches those filters this week. Try another age group or neighborhood, or turn off a filter.",
   buildingCal:'We\u2019re still building out this town\u2019s calendar \u2014 check back soon, or <a href="#contact">tell us what\u2019s coming up</a>.',
@@ -116,7 +117,7 @@ es:{
   rsvp:"RSVP", signUpAhead:"Inscripci\u00f3n previa", checkFirst:"Verifica antes",
   ages:"Edades", cost:"Costo", where:"D\u00f3nde",
   directions:"C\u00f3mo llegar", organizerPage:"P\u00e1gina del organizador", shareWithFriend:"Compartir con un amigo", addToCal:"Agregar al calendario",
-  seeOnCal:"Ver en el calendario", share:"Compartir", tba:"Pronto", checkForDates:"Ver fechas",
+  seeOnCal:"Ver en el calendario", share:"Compartir", tba:"Pronto", checkForDates:"Ver fechas", schoolClosed:"Sin clases", schoolEarly:"Salida temprana",
   groupFall:"Festivales de oto\u00f1o", groupShows:"Espect\u00e1culos y funciones", groupHw:"Halloween", groupHol:"Fiestas de fin de a\u00f1o",
   noMatchFilters:"Nada coincide con esos filtros esta semana. Prueba otro grupo de edad o vecindario, o desactiva un filtro.",
   buildingCal:'Todav\u00eda estamos construyendo el calendario de este pueblo \u2014 vuelve pronto, o <a href="#contact">cu\u00e9ntanos qu\u00e9 se viene</a>.',
@@ -224,6 +225,7 @@ function occursOn(sc,d){const[dow,,from,until,nth]=sc;if(d.getDay()!==dow)return
 function eventsOn(d){
   const out=[],k=key(d);
   E.forEach(e=>{
+    if(e.x&&e.x.includes(k))return;
     if(e.s)e.s.forEach(sc=>{if(occursOn(sc,d))out.push({e,times:sc[1]})});
     if(e.when)e.when.forEach(w=>{if(k>=w.from&&k<=(w.to||w.from))out.push({e,times:w.t})});
   });
@@ -411,12 +413,15 @@ function renderWeek(){
   let html="",total=0;
   for(let i=0;i<7;i++){
     const d=addDays(wk,i);if(d<today)continue;
-    const list=eventsOn(d).filter(o=>pass(o.e));if(!list.length)continue;
+    const cl=SCL.get(key(d));
+    const clHtml=cl?`<p class="schoolnote ${cl.k}"><strong>${tx(cl.k==="closed"?"schoolClosed":"schoolEarly")}</strong>${cl.t?" \u00b7 "+esc(dx(cl.t)):""}</p>`:"";
+    const list=eventsOn(d).filter(o=>pass(o.e));
+    if(!list.length){if(clHtml)html+=`<div class="weekday closureonly"><h4><span>${dMed(d)}</span></h4>${clHtml}</div>`;continue}
     total+=list.length;
     const openIt=!isMobile()||total===list.length||key(d)===forceOpen;
-    html+=`<details class="weekday"${openIt?" open":""}><summary><h4><span>${dMed(d)} <span class="n">\u00b7 ${list.length}</span></span></h4></summary><ul class="list">${list.map(o=>row(o,d)).join("")}</ul></details>`;
+    html+=`<details class="weekday"${openIt?" open":""}><summary><h4><span>${dMed(d)} <span class="n">\u00b7 ${list.length}</span></span></h4></summary>${clHtml}<ul class="list">${list.map(o=>row(o,d)).join("")}</ul></details>`;
   }
-  weekList.innerHTML=total?html:`<p class="empty">${E.length?tx("noMatchFilters"):tx("buildingCal")}</p>`;
+  weekList.innerHTML=(total||html)?html:`<p class="empty">${E.length?tx("noMatchFilters"):tx("buildingCal")}</p>`;
 }
 prevB.onclick=()=>{wk=addDays(wk,-7);renderWeek()};
 nextB.onclick=()=>{wk=addDays(wk,7);renderWeek()};
