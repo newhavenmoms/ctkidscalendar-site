@@ -16,7 +16,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const TOWNS = ['stamford', 'norwalk', 'fairfield', 'ridgefield', 'west-hartford', 'new-haven', 'greenwich'];
+const TOWNS = ['stamford', 'norwalk', 'fairfield', 'ridgefield', 'west-hartford', 'new-haven', 'greenwich', 'darien'];
 
 let things = 0, venues = 0, festivals = 0;
 
