@@ -67,10 +67,34 @@ window.TOWN = {
   "blackstone": [
    "James Blackstone Memorial Library",
    "758 Main St"
+  ],
+  "branford-green": [
+   "Branford Town Green",
+   "1011 Main St"
+  ],
+  "branford-rec": [
+   "Branford Parks & Recreation",
+   "Location on registration"
+  ],
+  "grey-goat": [
+   "Grey Goat Farmtique",
+   "11 N Branford Rd"
   ]
  },
  "venueMeta": {
   "blackstone": [
+   null,
+   1
+  ],
+  "branford-green": [
+   null,
+   0
+  ],
+  "branford-rec": [
+   null,
+   1
+  ],
+  "grey-goat": [
    null,
    1
   ]
@@ -104,7 +128,7 @@ window.TOWN = {
    "price": "Free",
    "free": true,
    "check": true,
-   "blurb": "A weekly preschool storytime. We couldn't confirm this program on the library's live calendar, so check before you go.",
+   "blurb": "A preschool storytime on selected Mondays, not every week, so check the library's calendar for this month's dates.",
    "src": "https://www.blackstonelibrary.org/"
   },
   {
@@ -150,7 +174,7 @@ window.TOWN = {
       ]
      ],
      "2026-09-29",
-     "2026-12-18"
+     "2026-12-15"
     ]
    ],
    "x": [
@@ -230,7 +254,7 @@ window.TOWN = {
    "price": "Free",
    "free": true,
    "check": true,
-   "blurb": "Open play time after the baby storytimes. We couldn't confirm this program on the library's live calendar, so check before you go.",
+   "blurb": "Facilitated play and social time right after the baby storytime. We couldn't confirm this program on the library's live calendar, so check before you go.",
    "src": "https://www.blackstonelibrary.org/"
   },
   {
@@ -261,16 +285,312 @@ window.TOWN = {
    "price": "Free",
    "free": true,
    "check": true,
-   "blurb": "A short Friday storytime for young children. We couldn't confirm this program on the library's live calendar, so check before you go.",
+   "blurb": "Picture-book videos, music and songs for little ones on selected Fridays, not every week. Check the library's calendar for dates.",
    "src": "https://www.blackstonelibrary.org/"
+  },
+  {
+   "t": "Scarecrows on the Green",
+   "v": "branford-green",
+   "when": [
+    {
+     "from": "2026-10-16",
+     "to": "2026-11-03",
+     "t": []
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "The Branford Garden Club's annual display of scarecrows made by local businesses, schools, clubs and families, all around the Town Green. Free to stroll anytime.",
+   "src": "https://allevents.in/branford-ct/all",
+   "special": "fall"
+  },
+  {
+   "t": "Halloween Pottery for Kids",
+   "v": "branford-rec",
+   "when": [
+    {
+     "from": "2026-10-22",
+     "t": [
+      [
+       "18:00",
+       "19:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "Ages 5–10",
+   "a": [
+    "big"
+   ],
+   "price": "$30 residents / $40 non-residents",
+   "free": false,
+   "rsvp": true,
+   "check": true,
+   "blurb": "A Halloween clay project through Branford Parks & Recreation. Register online; the listing has the location.",
+   "src": "https://branfordct.myrec.com/info/activities/default.aspx",
+   "special": "hw"
+  },
+  {
+   "t": "Holiday Pottery for Kids",
+   "v": "branford-rec",
+   "when": [
+    {
+     "from": "2026-12-17",
+     "t": [
+      [
+       "18:00",
+       "19:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "Ages 5–10",
+   "a": [
+    "big"
+   ],
+   "price": "$30 residents / $40 non-residents",
+   "free": false,
+   "rsvp": true,
+   "check": true,
+   "blurb": "A Christmas and Hanukkah clay project through Branford Parks & Recreation. Register online; the listing has the location.",
+   "src": "https://branfordct.myrec.com/info/activities/default.aspx",
+   "special": "hol"
+  },
+  {
+   "t": "Halloween Cookie Decorating",
+   "v": "grey-goat",
+   "when": [
+    {
+     "from": "2026-10-18",
+     "t": [
+      [
+       "16:00",
+       "18:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Kids & families",
+   "a": [
+    "big"
+   ],
+   "price": "Paid; see listing",
+   "free": false,
+   "rsvp": true,
+   "check": true,
+   "blurb": "A fall and Halloween cookie-decorating class at a local shop. Found in a local news roundup, so check price and spots with the shop.",
+   "src": "https://patch.com/connecticut/branford",
+   "special": "hw"
+  },
+  {
+   "t": "Homeschool Meetup",
+   "v": "blackstone",
+   "ages": "School-age",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "check": true,
+   "blurb": "A monthly arts, science and social meetup for homeschooling families. We couldn't confirm this program on the library's live calendar, so check before you go.",
+   "src": "https://www.blackstonelibrary.org/",
+   "when": [
+    {
+     "from": "2026-10-05",
+     "t": [
+      [
+       "14:00",
+       "15:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-09",
+     "t": [
+      [
+       "14:00",
+       "15:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Intro to 3D Printing",
+   "v": "blackstone",
+   "ages": "Ages 8+",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "check": true,
+   "blurb": "A hands-on introduction to the library's 3D printer. We couldn't confirm this program on the library's live calendar, so check before you go.",
+   "src": "https://www.blackstonelibrary.org/",
+   "when": [
+    {
+     "from": "2026-10-07",
+     "t": [
+      [
+       "16:00",
+       "16:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Teen D&D Roleplaying Club",
+   "v": "blackstone",
+   "ages": "Grades 5–12",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "check": true,
+   "blurb": "A Saturday-afternoon Dungeons & Dragons club for tweens and teens. We couldn't confirm this program on the library's live calendar, so check before you go.",
+   "src": "https://www.blackstonelibrary.org/",
+   "when": [
+    {
+     "from": "2026-10-10",
+     "t": [
+      [
+       "14:00",
+       "16:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-14",
+     "t": [
+      [
+       "14:00",
+       "16:30"
+      ]
+     ]
+    }
+   ]
   }
  ],
- "tba": [],
- "classes": [],
+ "tba": [
+  {
+   "g": "hw",
+   "t": "Halloween House Hunt",
+   "w": "Branford",
+   "p": "Parks & Rec's annual map of decorated houses around town to drive or walk by. This year's map isn't posted yet.",
+   "src": "https://branfordct.myrec.com/info/activities/default.aspx"
+  },
+  {
+   "g": "hw",
+   "t": "The Great Goblin Giveaway",
+   "w": "Branford",
+   "p": "A yearly Parks & Rec Halloween tradition. Date not announced yet.",
+   "src": "https://branfordct.myrec.com/info/activities/default.aspx"
+  },
+  {
+   "g": "hol",
+   "t": "Holiday Parade & Tree Lighting",
+   "w": "Branford High School to the Town Green",
+   "p": "An evening parade from the high school to the Green, ending with the tree lighting. In past years it has been on a Saturday in late November or early December.",
+   "src": "https://branfordct.myrec.com/info/activities/default.aspx"
+  }
+ ],
+ "classes": [
+  {
+   "id": "legacy-theatre",
+   "c": "dance",
+   "n": "Legacy Theatre Classes",
+   "u": "https://www.legacytheatrect.org/classes",
+   "blurb": "Toddler dance, storytime and drama, acting classes for ages 6–17, and a Wheel Life troupe for performers who use mobility devices and their families. Check the current session.",
+   "ages": "Toddlers–teens",
+   "where": "Legacy Theatre, Stony Creek"
+  },
+  {
+   "id": "mt-branford",
+   "c": "music",
+   "n": "Music Together",
+   "u": "https://www.musicalfolk.com/OurClasses.html",
+   "blurb": "Ten-week family music classes through Nov 21. The Saturday 9:30 a.m. section had room when last checked; Friday was full.",
+   "ages": "Birth–5 + caregiver",
+   "where": "Trinity Episcopal Church"
+  },
+  {
+   "id": "branford-toddler-movement",
+   "c": "move",
+   "n": "Toddler & Me Creative Movement",
+   "u": "https://branfordct.myrec.com/info/activities/default.aspx",
+   "blurb": "Tuesdays 9:30–10 a.m. in monthly sessions (Oct 6–27, Nov 3–24), $60 residents / $70 non-residents, through Branford Parks & Recreation.",
+   "ages": "18 months–3 years + caregiver",
+   "where": "Branford Parks & Recreation"
+  },
+  {
+   "id": "branford-rec",
+   "c": "sports",
+   "n": "Branford Recreation Classes",
+   "u": "https://branfordct.myrec.com/info/activities/default.aspx",
+   "blurb": "Little Lacrosse Stars and Soccer Squirts for the youngest players, plus T-ball, LEGO STEM, kids' cooking, coding and ballet.",
+   "ages": "Ages 2 and up",
+   "where": "Branford Parks & Recreation"
+  },
+  {
+   "id": "soundview-ymca",
+   "c": "swim",
+   "n": "YMCA Swim Lessons",
+   "u": "https://www.ymca.org/locations/soundview-family-ymca",
+   "blurb": "Youth swim lessons and family swim, plus youth sports and an outdoor ropes course.",
+   "ages": "Kids & families",
+   "where": "Soundview Family YMCA"
+  },
+  {
+   "id": "dance-unlimited",
+   "c": "dance",
+   "n": "Diaper Dancers & Toddler Dance",
+   "u": "https://www.danceunlimitedcrew.com/",
+   "blurb": "Grown-up-and-me and toddler dance classes, with youth and teen classes as kids grow.",
+   "ages": "Toddlers–teens",
+   "where": "Dance Unlimited"
+  },
+  {
+   "id": "shining-starz",
+   "c": "move",
+   "n": "Acro, Gymnastics & Dance",
+   "u": "https://shiningstarzacrodanceacademyct.com/",
+   "blurb": "Acrobatics and gymnastics alongside ballet, tap, jazz and hip-hop.",
+   "ages": "Kids & teens",
+   "where": "Shining Starz Acro-Dance Academy"
+  },
+  {
+   "id": "branford-land-trust",
+   "c": "nature",
+   "n": "Land Trust Nature Programs",
+   "u": "https://branfordlandtrust.org/learn/",
+   "blurb": "Guided family hikes, nature-explorer programs and seasonal walks on Branford's preserves, many free.",
+   "ages": "Kids & families",
+   "where": "Branford Land Trust"
+  },
+  {
+   "id": "branford-youth-sports",
+   "c": "sports",
+   "n": "Youth Sports Leagues",
+   "u": "https://branfordct.myrec.com/info/activities/default.aspx",
+   "blurb": "Branford's volunteer leagues cover soccer, flag and tackle football, Little League, girls' softball, lacrosse, basketball and cheer. Parks & Rec lists contacts for each.",
+   "ages": "Youth",
+   "where": "Branford"
+  }
+ ],
  "library": {
   "for": "Free, most weeks",
   "name": "James Blackstone Memorial Library",
-  "desc": "Branford's landmark 1896 library runs baby, toddler and preschool storytimes and a LEGO club. Its online calendar couldn't be checked automatically, so treat the times here as a starting point.",
+  "desc": "Branford's landmark 1896 library runs toddler, preschool and baby storytimes, a LEGO club, a teen D&D club and monthly homeschool meetups. Its online calendar couldn't be checked automatically, and some storytimes run only on selected weeks, so treat the times here as a starting point.",
   "a": "Visit the library's site",
   "href": "https://www.blackstonelibrary.org/"
  },
@@ -370,15 +690,18 @@ window.TOWN = {
         <div>
           <h3 data-i18n="getOutside">Get outside</h3>
           <ul>
+            <li><strong>Foote Memorial Park</strong><span data-es="Parques infantiles separados para niños mayores y pequeños, además de una zona de juegos de agua en verano.">Separate playgrounds for big kids and little ones, plus a splash pad in summer.</span></li>
             <li><strong>Branford Point</strong><span data-es="Un pequeño parque frente al agua en la desembocadura del río Branford.">A small waterfront park at the mouth of the Branford River.</span></li>
             <li><strong>Stony Creek &amp; the Thimble Islands</strong><span data-es="Un pueblo costero; en temporada hay paseos en barco por las islas.">A seaside village; seasonal boat tours cruise the islands.</span></li>
             <li><strong>Supply Ponds Preserve</strong><span data-es="Senderos boscosos alrededor de una serie de estanques.">Wooded trails around a string of ponds.</span></li>
+            <li><strong>Short Beach Preserve</strong><span data-es="Una pequeña reserva costera para un paseo fácil en familia.">A small shoreline preserve for an easy family nature walk.</span></li>
           </ul>
         </div>
         <div>
           <h3 class="rain" data-i18n="rainyDay">Rainy day, indoors</h3>
           <ul>
             <li><strong>James Blackstone Memorial Library</strong><span data-es="Una emblemática biblioteca de 1896 en el centro, con cuentacuentos semanales.">A landmark 1896 library downtown with weekly storytimes.</span></li>
+            <li><strong>Fired Up!</strong><span data-es="Pinta tu propia cerámica en Main Street; se aceptan visitas sin cita de martes a domingo.">Paint-your-own pottery on Main Street; walk-ins welcome Tuesday through Sunday.</span></li>
           </ul>
         </div>
         <div>
@@ -494,28 +817,81 @@ window.TOWN = {
 </footer>
 
 <script>window.DATA_ES = {
- "A short Friday storytime for young children. We couldn't confirm this program on the library's live calendar, so check before you go.": "Un cuentacuentos corto de viernes para niños pequeños. No pudimos confirmar este programa en el calendario actual de la biblioteca, así que revisa antes de ir.",
- "A weekly preschool storytime. We couldn't confirm this program on the library's live calendar, so check before you go.": "Un cuentacuentos preescolar semanal. No pudimos confirmar este programa en el calendario actual de la biblioteca, así que revisa antes de ir.",
+ "$30 residents / $40 non-residents": "$30 residentes / $40 no residentes",
+ "18 months–3 years + caregiver": "18 meses–3 años + adulto",
+ "A Christmas and Hanukkah clay project through Branford Parks & Recreation. Register online; the listing has the location.": "Un proyecto de arcilla de Navidad y Janucá a través de Branford Parks & Recreation. Inscríbete en línea; el anuncio indica el lugar.",
+ "A Halloween clay project through Branford Parks & Recreation. Register online; the listing has the location.": "Un proyecto de arcilla de Halloween a través de Branford Parks & Recreation. Inscríbete en línea; el anuncio indica el lugar.",
+ "A Saturday-afternoon Dungeons & Dragons club for tweens and teens. We couldn't confirm this program on the library's live calendar, so check before you go.": "Un club de Dungeons & Dragons los sábados por la tarde para preadolescentes y adolescentes. No pudimos confirmar este programa en el calendario actual de la biblioteca, así que revisa antes de ir.",
+ "A fall and Halloween cookie-decorating class at a local shop. Found in a local news roundup, so check price and spots with the shop.": "Una clase de decoración de galletas de otoño y Halloween en una tienda local. La encontramos en un resumen de noticias locales, así que confirma precio y cupos con la tienda.",
+ "A hands-on introduction to the library's 3D printer. We couldn't confirm this program on the library's live calendar, so check before you go.": "Una introducción práctica a la impresora 3D de la biblioteca. No pudimos confirmar este programa en el calendario actual de la biblioteca, así que revisa antes de ir.",
+ "A monthly arts, science and social meetup for homeschooling families. We couldn't confirm this program on the library's live calendar, so check before you go.": "Un encuentro mensual de arte, ciencia y convivencia para familias que educan en casa. No pudimos confirmar este programa en el calendario actual de la biblioteca, así que revisa antes de ir.",
+ "A preschool storytime on selected Mondays, not every week, so check the library's calendar for this month's dates.": "Un cuentacuentos preescolar en algunos lunes, no todas las semanas, así que revisa el calendario de la biblioteca para las fechas de este mes.",
  "A weekly storytime for two-year-olds. We couldn't confirm this program on the library's live calendar, so check before you go.": "Un cuentacuentos semanal para niños de dos años. No pudimos confirmar este programa en el calendario actual de la biblioteca, así que revisa antes de ir.",
+ "A yearly Parks & Rec Halloween tradition. Date not announced yet.": "Una tradición anual de Halloween de Parks & Rec. La fecha aún no se ha anunciado.",
+ "Acro, Gymnastics & Dance": "Acrobacia, gimnasia y baile",
+ "Acrobatics and gymnastics alongside ballet, tap, jazz and hip-hop.": "Acrobacia y gimnasia junto con ballet, tap, jazz y hip-hop.",
+ "Ages 2 and up": "Desde 2 años",
  "Ages 2–3": "De 2 a 3 años",
  "Ages 3–5": "De 3 a 5 años",
- "Branford's landmark 1896 library runs baby, toddler and preschool storytimes and a LEGO club. Its online calendar couldn't be checked automatically, so treat the times here as a starting point.": "La emblemática biblioteca de Branford, de 1896, ofrece cuentacuentos para bebés, niños pequeños y preescolares, y un club LEGO. No pudimos revisar su calendario en línea automáticamente, así que toma estos horarios como punto de partida.",
+ "Ages 5–10": "De 5 a 10 años",
+ "Ages 8+": "8 años en adelante",
+ "All ages": "Todas las edades",
+ "An evening parade from the high school to the Green, ending with the tree lighting. In past years it has been on a Saturday in late November or early December.": "Un desfile nocturno desde la escuela secundaria hasta el Green, que termina con el encendido del árbol. En años anteriores ha sido un sábado a finales de noviembre o principios de diciembre.",
+ "Birth–5 + caregiver": "Desde el nacimiento hasta 5 años + adulto",
+ "Branford High School to the Town Green": "De Branford High School al Town Green",
+ "Branford Recreation Classes": "Clases de Branford Recreation",
+ "Branford's landmark 1896 library runs toddler, preschool and baby storytimes, a LEGO club, a teen D&D club and monthly homeschool meetups. Its online calendar couldn't be checked automatically, and some storytimes run only on selected weeks, so treat the times here as a starting point.": "La emblemática biblioteca de Branford, de 1896, ofrece cuentacuentos para niños pequeños, preescolares y bebés, un club LEGO, un club juvenil de D&D y encuentros mensuales de educación en casa. No pudimos revisar su calendario en línea automáticamente y algunos cuentacuentos solo se hacen ciertas semanas, así que toma estos horarios como punto de partida.",
+ "Branford's volunteer leagues cover soccer, flag and tackle football, Little League, girls' softball, lacrosse, basketball and cheer. Parks & Rec lists contacts for each.": "Las ligas voluntarias de Branford incluyen fútbol, flag football y fútbol americano, Little League, sóftbol femenino, lacrosse, baloncesto y porrismo. Parks & Rec tiene los contactos de cada una.",
+ "Diaper Dancers & Toddler Dance": "Diaper Dancers y baile para pequeños",
  "Elementary; grades vary by session": "Primaria; los grados varían según la sesión",
+ "Facilitated play and social time right after the baby storytime. We couldn't confirm this program on the library's live calendar, so check before you go.": "Juego guiado y tiempo para socializar justo después del cuentacuentos para bebés. No pudimos confirmar este programa en el calendario actual de la biblioteca, así que revisa antes de ir.",
  "Free": "Gratis",
  "Free, most weeks": "Gratis, casi todas las semanas",
+ "Grades 5–12": "5.º a 12.º grado",
+ "Grown-up-and-me and toddler dance classes, with youth and teen classes as kids grow.": "Clases de baile para adulto y niño y para niños pequeños, con clases para niños y adolescentes a medida que crecen.",
+ "Guided family hikes, nature-explorer programs and seasonal walks on Branford's preserves, many free.": "Caminatas guiadas en familia, programas de exploración de la naturaleza y paseos de temporada en las reservas de Branford, muchos gratis.",
+ "Halloween Cookie Decorating": "Decoración de galletas de Halloween",
+ "Halloween House Hunt": "Búsqueda de casas de Halloween",
+ "Halloween Pottery for Kids": "Cerámica de Halloween para niños",
+ "Holiday Parade & Tree Lighting": "Desfile navideño y encendido del árbol",
+ "Holiday Pottery for Kids": "Cerámica navideña para niños",
+ "Homeschool Meetup": "Encuentro de educación en casa",
+ "Intro to 3D Printing": "Introducción a la impresión 3D",
+ "Kids & families": "Niños y familias",
+ "Kids & teens": "Niños y adolescentes",
  "LEGO Club": "Club LEGO",
  "LEGO building with prompts; creations go on display. Listings have shown different grade ranges, so check which grades this session is for.": "Construcción con LEGO a partir de retos; las creaciones se exhiben. Los anuncios han mostrado distintos rangos de grados, así que revisa para qué grados es esta sesión.",
- "Open play time after the baby storytimes. We couldn't confirm this program on the library's live calendar, so check before you go.": "Tiempo de juego libre después de los cuentacuentos para bebés. No pudimos confirmar este programa en el calendario actual de la biblioteca, así que revisa antes de ir.",
+ "Land Trust Nature Programs": "Programas de naturaleza del Land Trust",
+ "Legacy Theatre Classes": "Clases en Legacy Theatre",
+ "Little Lacrosse Stars and Soccer Squirts for the youngest players, plus T-ball, LEGO STEM, kids' cooking, coding and ballet.": "Little Lacrosse Stars y Soccer Squirts para los más pequeños, además de T-ball, LEGO STEM, cocina infantil, programación y ballet.",
+ "Music Together": "Music Together",
+ "Paid; see listing": "Con costo; ver anuncio",
+ "Parks & Rec's annual map of decorated houses around town to drive or walk by. This year's map isn't posted yet.": "El mapa anual de Parks & Rec con casas decoradas por el pueblo para recorrer en auto o a pie. El mapa de este año aún no está publicado.",
+ "Picture-book videos, music and songs for little ones on selected Fridays, not every week. Check the library's calendar for dates.": "Videos de libros ilustrados, música y canciones para los más pequeños en algunos viernes, no todas las semanas. Revisa el calendario de la biblioteca para las fechas.",
  "Preschool Stories": "Cuentos para preescolares",
+ "Scarecrows on the Green": "Espantapájaros en el Green",
+ "School-age": "Edad escolar",
  "Stay and Play": "Quédate a jugar",
  "Stories & Music for Babies": "Cuentos y música para bebés",
  "Stories and music for babies, offered twice on Wednesday mornings. We couldn't confirm this program on the library's live calendar, so check before you go.": "Cuentos y música para bebés, dos veces los miércoles por la mañana. No pudimos confirmar este programa en el calendario actual de la biblioteca, así que revisa antes de ir.",
+ "Teen D&D Roleplaying Club": "Club juvenil de rol D&D",
+ "Ten-week family music classes through Nov 21. The Saturday 9:30 a.m. section had room when last checked; Friday was full.": "Clases de música en familia de diez semanas hasta el 21 de noviembre. La sección del sábado a las 9:30 a. m. tenía cupo en la última revisión; la del viernes estaba llena.",
+ "The Branford Garden Club's annual display of scarecrows made by local businesses, schools, clubs and families, all around the Town Green. Free to stroll anytime.": "La exhibición anual del Branford Garden Club con espantapájaros hechos por negocios, escuelas, clubes y familias locales, alrededor del Town Green. Gratis para pasear a cualquier hora.",
+ "The Great Goblin Giveaway": "The Great Goblin Giveaway",
+ "Toddler & Me Creative Movement": "Movimiento creativo para pequeños y adultos",
+ "Toddler dance, storytime and drama, acting classes for ages 6–17, and a Wheel Life troupe for performers who use mobility devices and their families. Check the current session.": "Baile, cuentos y teatro para niños pequeños, clases de actuación para edades de 6 a 17 años y un grupo Wheel Life para artistas que usan dispositivos de movilidad y sus familias. Consulta la sesión actual.",
+ "Toddlers–teens": "Niños pequeños–adolescentes",
+ "Tuesdays 9:30–10 a.m. in monthly sessions (Oct 6–27, Nov 3–24), $60 residents / $70 non-residents, through Branford Parks & Recreation.": "Martes de 9:30 a 10 a. m. en sesiones mensuales (6–27 de octubre, 3–24 de noviembre), $60 residentes / $70 no residentes, a través de Branford Parks & Recreation.",
  "Tuesdays Are for Twos": "Los martes son para los de dos",
  "Under 2 + caregiver": "Menores de 2 años + adulto",
  "Up to 24 months + caregiver": "Hasta 24 meses + adulto",
  "Up to age 5": "Hasta 5 años",
  "Video Stories": "Cuentos en video",
- "Visit the library's site": "Visitar el sitio de la biblioteca"
+ "Visit the library's site": "Visitar el sitio de la biblioteca",
+ "YMCA Swim Lessons": "Clases de natación en el YMCA",
+ "Youth": "Jóvenes",
+ "Youth Sports Leagues": "Ligas deportivas juveniles",
+ "Youth swim lessons and family swim, plus youth sports and an outdoor ropes course.": "Clases de natación para jóvenes y natación familiar, además de deportes juveniles y un circuito de cuerdas al aire libre."
 };</script>
 <script data-goatcounter="https://ctkidscalendar.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="/shared/app.js"></script>
