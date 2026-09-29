@@ -96,6 +96,8 @@ retesting:
 - West Hartford `#F1D48C` (amber)
 - Ridgefield `#BFE0B0` (sage)
 - Fairfield `#C7CBF2` (periwinkle)
+- Cheshire `#F5E3C0` · Milford `#D4EDB0` · Trumbull `#F5D5E8` · Wallingford `#FAD4C0`
+- Middletown `#E6E0C8` · Glastonbury `#D8E6F0` · Newtown `#CFE3F5` · Branford `#B8E6E6`
 
 ## What's shared vs. per-town
 
