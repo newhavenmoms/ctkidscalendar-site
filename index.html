@@ -225,6 +225,19 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
     </g>
     <circle class="pin-hit" cx="0" cy="-17" r="19"></circle>
   </g>
+</a><a class="mappin" href="/greenwich/" aria-label="Greenwich — open the calendar">
+  <g transform="translate(24.0 359.0)">
+    <ellipse cx="0" cy="2.5" rx="12" ry="3.2" fill="#1B2A4A" opacity="0.16"></ellipse>
+    <g class="pin-body">
+      <path d="M0 0 C -13 -18 -13 -34 0 -34 C 13 -34 13 -18 0 0 Z" fill="#E17C96" stroke="#1B2A4A" stroke-width="2.5" stroke-linejoin="round"></path>
+      <circle cx="0" cy="-19" r="6.5" fill="#fff" stroke="#1B2A4A" stroke-width="2"></circle>
+    </g>
+    <g class="pin-tip">
+      <rect x="-64.0" y="-58" width="128.0" height="26" rx="13" fill="#1B2A4A"></rect>
+      <text x="0" y="-40" text-anchor="middle" class="pin-tip-label">Greenwich</text>
+    </g>
+    <circle class="pin-hit" cx="0" cy="-17" r="19"></circle>
+  </g>
 </a>
 </svg>
         </div>
@@ -235,6 +248,7 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
           <li><a href="/ridgefield/" style="--tc:#5CAD4A">Ridgefield</a></li>
           <li><a href="/west-hartford/" style="--tc:#F0B429">West Hartford</a></li>
           <li><a href="/new-haven/" style="--tc:#A9E0F2">New Haven</a></li>
+          <li><a href="/greenwich/" style="--tc:#E17C96">Greenwich</a></li>
         </ul>
       </div>
     </div>
@@ -242,10 +256,10 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
 
   <section class="statstrip">
     <div class="wrap">
-      <div class="statitem"><div class="num">6</div><div class="lbl" data-i18n="statTowns">Towns open</div></div>
-      <div class="statitem"><div class="num">531</div><div class="lbl" data-i18n="statThings">Storytimes &amp; classes</div></div>
-      <div class="statitem"><div class="num">301</div><div class="lbl" data-i18n="statVenues">Local venues</div></div>
-      <div class="statitem"><div class="num">72</div><div class="lbl" data-i18n="statFestivals">Festivals &amp; holiday events</div></div>
+      <div class="statitem"><div class="num" id="statTownsNum">6</div><div class="lbl" data-i18n="statTowns">Towns open</div></div>
+      <div class="statitem"><div class="num" id="statThingsNum">548</div><div class="lbl" data-i18n="statThings">Storytimes &amp; classes</div></div>
+      <div class="statitem"><div class="num" id="statVenuesNum">316</div><div class="lbl" data-i18n="statVenues">Local venues</div></div>
+      <div class="statitem"><div class="num" id="statFestivalsNum">123</div><div class="lbl" data-i18n="statFestivals">Festivals &amp; holiday events</div></div>
     </div>
   </section>
 
@@ -278,7 +292,7 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       statTowns:"Towns open", statThings:"Storytimes &amp; classes", statVenues:"Local venues", statFestivals:"Festivals &amp; holiday events",
       ctaH2:"Don't see your town?", ctaP:"We're adding Connecticut towns one at a time, each one researched and checked by hand. Tell us where you'd like to see CT Kids Calendar next.",
       suggestTown:"Suggest a town", footerTag:"CT Kids Calendar &middot; a town-by-town guide for Connecticut families",
-      tickWelcome:"WELCOME TO CT KIDS CALENDAR", tickTowns:"6 TOWNS OPEN NOW", tickThings:"531 THINGS TO DO, TRACKED BY HAND",
+      tickWelcome:"WELCOME TO CT KIDS CALENDAR", tickTowns:"6 TOWNS OPEN NOW", tickThings:"{{N}} THINGS TO DO, TRACKED BY HAND",
       langBtn:"Espa\u00f1ol",
     },
     es:{
@@ -287,10 +301,11 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       statTowns:"Pueblos disponibles", statThings:"Cuentacuentos y clases", statVenues:"Lugares locales", statFestivals:"Festivales y eventos navide\u00f1os",
       ctaH2:"\u00bfNo ves tu pueblo?", ctaP:"Estamos agregando pueblos de Connecticut uno a la vez, cada uno investigado y verificado a mano. Cu\u00e9ntanos d\u00f3nde te gustar\u00eda ver CT Kids Calendar despu\u00e9s.",
       suggestTown:"Sugerir un pueblo", footerTag:"CT Kids Calendar &middot; una gu\u00eda pueblo por pueblo para familias de Connecticut",
-      tickWelcome:"BIENVENIDO A CT KIDS CALENDAR", tickTowns:"6 PUEBLOS DISPONIBLES", tickThings:"531 COSAS QUE HACER, VERIFICADAS A MANO",
+      tickWelcome:"BIENVENIDO A CT KIDS CALENDAR", tickTowns:"6 PUEBLOS DISPONIBLES", tickThings:"{{N}} COSAS QUE HACER, VERIFICADAS A MANO",
       langBtn:"English",
     }
   };
+  let STATS={towns:6,things:548,venues:316,festivals:123}; // fallback; overwritten by /shared/stats.json when reachable
   let LANG="en";
   try{
     const q=new URLSearchParams(location.search).get("lang");
@@ -299,10 +314,13 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
   }catch(_){}
   function apply(){
     document.documentElement.lang=LANG;
-    document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;if(UI.en[k]!==undefined)el.innerHTML=UI[LANG][k]});
+    document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;if(UI.en[k]!==undefined)el.innerHTML=UI[LANG][k].replace("{{N}}",STATS.things)});
     const lb=document.getElementById("langBtn");
     if(lb){lb.querySelector(".full").textContent=UI[LANG].langBtn;lb.querySelector(".short").textContent=LANG==="es"?"EN":"ES";lb.setAttribute("aria-label",LANG==="es"?"Switch to English":"Cambiar a espa\u00f1ol")}
+    const ids={towns:"statTownsNum",things:"statThingsNum",venues:"statVenuesNum",festivals:"statFestivalsNum"};
+    Object.keys(ids).forEach(k=>{const el=document.getElementById(ids[k]);if(el)el.textContent=STATS[k]});
   }
+  fetch("/shared/stats.json").then(r=>r.ok?r.json():null).then(d=>{if(d&&d.things&&d.venues&&d.festivals){STATS=d;apply()}}).catch(()=>{});
   const btn=document.getElementById("langBtn");
   if(btn)btn.onclick=()=>{LANG=LANG==="es"?"en":"es";try{localStorage.setItem("ctk-lang",LANG)}catch(_){}apply()};
   apply();

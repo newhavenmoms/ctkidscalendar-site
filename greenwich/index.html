@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Greenwich Kids Calendar — events, classes and resources for Greenwich families</title>
+<meta name="description" content="What's happening for kids and families in Greenwich, CT this week: storytimes, classes, festivals and local resources, all in one place.">
+<meta name="color-scheme" content="only light">
+<link rel="icon" href="/shared/favicon.ico" sizes="any">
+<meta name="theme-color" content="#1B2A4A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CT Kids Calendar">
+<meta property="og:title" content="Greenwich Kids Calendar: what are we doing today?">
+<meta property="og:description" content="Storytimes, festivals, classes and local resources for little ones in Greenwich, CT.">
+<meta property="og:url" content="https://ctkidscalendar.com/greenwich/">
+<link rel="canonical" href="https://ctkidscalendar.com/greenwich/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://ctkidscalendar.com/greenwich/#page",
+      "url": "https://ctkidscalendar.com/greenwich/",
+      "name": "Greenwich Kids Calendar",
+      "isPartOf": { "@id": "https://ctkidscalendar.com/#website" },
+      "about": {
+        "@type": "Place",
+        "name": "Greenwich, Connecticut"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "CT Kids Calendar", "item": "https://ctkidscalendar.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Greenwich", "item": "https://ctkidscalendar.com/greenwich/"}
+      ]
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared/style.css">
+<style>
+  /* This town's ONE accent variable. Everything else (navy, cream, yellow) is shared. */
+  :root{ --accent: #F2C6D0; }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     TOWN CONFIG — real content for this town goes here.
+     Replace every {{...}} and empty array before publishing.
+     See /shared/TOWN-TEMPLATE.md for the full field reference.
+     ============================================================ -->
+<script>
+window.TOWN = {
+ "name": "Greenwich Kids Calendar",
+ "townLabel": "Greenwich, CT",
+ "url": "https://ctkidscalendar.com/greenwich/",
+ "email": "hello@ctkidscalendar.com",
+ "instagram": "ctkidscalendar",
+ "calendarThrough": "2026-12-31",
+ "venues": {
+  "greenwich-library-main": [
+   "Greenwich Library",
+   "101 West Putnam Ave"
+  ],
+  "greenwich-library-byram": [
+   "Greenwich Library — Byram Shubert Branch",
+   "21 Mead Ave"
+  ],
+  "greenwich-library-coscob": [
+   "Greenwich Library — Cos Cob Branch",
+   "5 Sinawoy Rd"
+  ],
+  "perrot-library": [
+   "Perrot Memorial Library",
+   "90 Sound Beach Ave"
+  ],
+  "bruce-museum": [
+   "Bruce Museum",
+   "1 Museum Dr"
+  ],
+  "audubon-greenwich": [
+   "Audubon Greenwich",
+   "613 Riversville Rd"
+  ],
+  "greenwich-farmers-market": [
+   "Greenwich Farmers' Market",
+   "Arch St / Horseneck Lane commuter lot"
+  ],
+  "roger-sherman-baldwin-park": [
+   "Roger Sherman Baldwin Park",
+   "Arch St"
+  ],
+  "boys-girls-club-greenwich": [
+   "Boys & Girls Club of Greenwich",
+   "4 Horseneck Ln"
+  ],
+  "bendheim-western-civic": [
+   "Bendheim Western Greenwich Civic Center",
+   "449 Pemberwick Rd"
+  ],
+  "cohen-eastern-civic": [
+   "Cohen Eastern Greenwich Civic Center",
+   "90 Harding Rd"
+  ],
+  "greenwich-town-hall": [
+   "Greenwich Town Hall",
+   "101 Field Point Rd"
+  ]
+ },
+ "venueMeta": {
+  "greenwich-library-main": [
+   "central",
+   1
+  ],
+  "greenwich-library-byram": [
+   "byram",
+   1
+  ],
+  "greenwich-library-coscob": [
+   "coscob",
+   1
+  ],
+  "perrot-library": [
+   "oldgreenwich",
+   1
+  ],
+  "bruce-museum": [
+   "central",
+   1
+  ],
+  "audubon-greenwich": [
+   "backcountry",
+   0
+  ],
+  "greenwich-farmers-market": [
+   "central",
+   0
+  ],
+  "roger-sherman-baldwin-park": [
+   "central",
+   0
+  ],
+  "boys-girls-club-greenwich": [
+   "central",
+   1
+  ],
+  "bendheim-western-civic": [
+   "glenville",
+   1
+  ],
+  "cohen-eastern-civic": [
+   "oldgreenwich",
+   1
+  ],
+  "greenwich-town-hall": [
+   "central",
+   0
+  ]
+ },
+ "hoods": [
+  [
+   "central",
+   "Downtown / Central Greenwich"
+  ],
+  [
+   "oldgreenwich",
+   "Old Greenwich & Riverside"
+  ],
+  [
+   "coscob",
+   "Cos Cob"
+  ],
+  [
+   "byram",
+   "Byram"
+  ],
+  [
+   "glenville",
+   "Glenville"
+  ],
+  [
+   "backcountry",
+   "Backcountry"
+  ]
+ ],
+ "events": [
+  {
+   "t": "Greenwich Farmers' Market",
+   "v": "greenwich-farmers-market",
+   "s": [
+    [
+     6,
+     [
+      [
+       "9:30",
+       "13:00"
+      ]
+     ],
+     "2026-09-28",
+     "2026-11-21"
+    ]
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free to browse",
+   "free": true,
+   "noSignup": true,
+   "check": true,
+   "blurb": "A Saturday-morning farmers' market at the Arch Street / Horseneck Lane commuter lot, near Roger Sherman Baldwin Park. Runs into late fall; check the market's own page for the exact closing date this year.",
+   "src": "https://www.greenwichfarmersmarketct.com/"
+  }
+ ],
+ "tba": [
+  {
+   "g": "fall",
+   "t": "Greenwich Town Party",
+   "w": "Roger Sherman Baldwin Park",
+   "p": "A free, town-wide outdoor festival on the harbor at Roger Sherman Baldwin Park, with live music, food and family activities — one of the biggest single days on the Greenwich calendar. Usually held in late spring/early summer; this year's 2026 date wasn't posted yet when we checked.",
+   "src": "https://www.greenwichtownparty.org/"
+  },
+  {
+   "g": "hol",
+   "t": "Greenwich Town Hall Tree Lighting",
+   "w": "Greenwich Town Hall",
+   "p": "Santa arrives on the Town Hall lawn for the town's holiday tree lighting, with treats and entertainment from local performing groups. It's usually the first Friday evening in December; this year's exact date wasn't confirmed yet when we checked.",
+   "src": "https://patch.com/connecticut/greenwich/"
+  }
+ ],
+ "classes": [
+  {
+   "id": "bruce-beginnings",
+   "c": "art",
+   "n": "Bruce Beginnings",
+   "u": "https://brucemuseum.org/discover/family-programs/",
+   "blurb": "Picture-book readings and a craft connected to the current exhibitions, in the Museum galleries. Free with admission; space is limited and reservations are required. Check the Bruce's events calendar for the next date.",
+   "ages": "Ages 2–5 + caregiver",
+   "where": "Bruce Museum"
+  },
+  {
+   "id": "bruce-beginnings-jr",
+   "c": "art",
+   "n": "Bruce Beginnings Junior",
+   "u": "https://brucemuseum.org/discover/family-programs/",
+   "blurb": "A fun, interactive first introduction to the Museum and its collection, designed for the very youngest visitors. Free with admission, first come first served.",
+   "ages": "6 months–2 years + caregiver",
+   "where": "Bruce Museum"
+  },
+  {
+   "id": "bruce-science-solvers",
+   "c": "build",
+   "n": "Science Solvers",
+   "u": "https://brucemuseum.org/discover/family-programs/",
+   "blurb": "A drop-in science activity connected to the Museum's exhibitions. Free with general admission, no registration required.",
+   "ages": "Ages 4+ + family",
+   "where": "Bruce Museum"
+  },
+  {
+   "id": "bruce-weekend-programs",
+   "c": "art",
+   "n": "Weekend Programs",
+   "u": "https://brucemuseum.org/discover/family-programs/",
+   "blurb": "Drop-in weekend programs that alternate between art and science topics. Check the Museum's calendar for this weekend's topic and time.",
+   "ages": "Ages 5+",
+   "where": "Bruce Museum"
+  },
+  {
+   "id": "audubon-greenwich-programs",
+   "c": "nature",
+   "n": "Audubon Greenwich Nature Programs",
+   "u": "https://greenwich.audubon.org/",
+   "blurb": "A 285-acre sanctuary with seven miles of trails, open daily 10am–5pm. Runs nature classes, scout programs and birthday parties throughout the year; check the calendar for family programs and First Sunday Science at Greenwich Point.",
+   "ages": "All ages",
+   "where": "Audubon Greenwich"
+  },
+  {
+   "id": "boys-girls-club-greenwich",
+   "c": "build",
+   "n": "Boys & Girls Club of Greenwich",
+   "u": "https://bgcgreenwich.org/",
+   "blurb": "Fall after-school programming with homework help, sports, arts and enrichment. Membership-based; check the site for fall registration.",
+   "ages": "School age",
+   "where": "Boys & Girls Club of Greenwich"
+  },
+  {
+   "id": "dance-pointe-greenwich",
+   "c": "dance",
+   "n": "The Dance Pointe",
+   "u": "https://www.greenwichct.gov/447/Youth-Fall-Activities",
+   "blurb": "Dance instruction for all ages and levels — recreational through performance track — run through the Town's Parks & Recreation youth activities.",
+   "ages": "All ages",
+   "where": "Bendheim Western Greenwich Civic Center"
+  },
+  {
+   "id": "civic-center-open-gym",
+   "c": "sports",
+   "n": "Open Gym",
+   "u": "https://www.greenwichct.gov/447/Youth-Fall-Activities",
+   "blurb": "Free-play open gym time, offered monthly at both Civic Centers. Check each facility's page for this month's schedule.",
+   "ages": "Ages 6+",
+   "where": "Cohen Eastern & Bendheim Western Greenwich Civic Centers"
+  }
+ ],
+ "library": {
+  "for": "Free, every week",
+  "name": "Greenwich Library",
+  "desc": "Greenwich Library's system — the Main Library plus the Byram Shubert and Cos Cob branches — runs storytimes and children's programs by lottery/registered session rather than simple weekly drop-in. Old Greenwich and Riverside are served by the independently run Perrot Memorial Library instead. Check each library's own calendar for the current session's storytime days and times.",
+  "a": "See the library's calendar",
+  "href": "https://www.greenwichlibrary.org/children/"
+ },
+ "extraResources": []
+};
+</script>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track" id="tickerTrack"></div></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#today" aria-label="Greenwich Kids Calendar, home">
+      <svg width="38" height="38" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 92 C50 92 20 58 20 38 C20 20 33 6 50 6 C67 6 80 20 80 38 C80 58 50 92 50 92 Z" fill="#1B2A4A"/><rect x="33" y="21" width="34" height="30" rx="8" fill="#FFD84D"/><circle cx="42.5" cy="32.5" r="4" fill="#1B2A4A"/><circle cx="57.5" cy="32.5" r="4" fill="#1B2A4A"/><circle cx="42.5" cy="43.5" r="4" fill="#1B2A4A"/><circle cx="57.5" cy="43.5" r="4" fill="#1B2A4A"/></svg><span>Greenwich Kids Calendar</span>
+    </a>
+    <div class="navwrap">
+      <nav class="nav" aria-label="Sections">
+        <a href="#bigdays" data-i18n="navBig">Big days</a>
+        <a href="#events" data-i18n="navCal">Calendar</a>
+        <a href="#classes" data-i18n="navClasses">Classes</a>
+        <a href="#things" data-i18n="navThings">Things to do</a>
+        <a href="#resources" data-i18n="navRes">Resources</a>
+      </nav>
+      <button class="langbtn" type="button" id="langBtn"><span class="full">Español</span><span class="short">ES</span></button>
+      <a class="btn-sm" href="https://ctkidscalendar.com/" data-i18n="allTowns">&larr; All towns</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="today">
+    <div class="band"><div class="wrap bandwrap">
+      <h1 data-i18n="heroH1">What are we doing <em>today?</em></h1>
+      <p class="lede" data-i18n-town="heroLede">Storytimes, festivals, classes and things to do for little ones in Greenwich, checked and gathered in one place. Tap a day to see what's on.</p>
+      <p class="fig" data-i18n-town="weekAhead">The week ahead in Greenwich, Conn.</p>
+      <div class="days" id="days" role="group" aria-label="Pick a day this week"></div>
+      <div class="herorow">
+        <button class="wkbtn" type="button" id="weekendBtn" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><span data-i18n="thisWeekend">This weekend</span></button>
+      </div>
+    </div></div>
+    <div class="wrap">
+      <div class="dayhead"><h2 id="dayTitle" data-i18n="today2">Today</h2><button class="act" type="button" id="shareDay"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5"></path><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"></path></svg><span id="shareDayLabel" data-i18n="shareDayLbl">Share this day</span></button></div>
+      <ul class="list" id="dayList" aria-live="polite"></ul>
+    </div>
+  </section>
+
+  <section class="block" id="bigdays">
+    <div class="wrap">
+      <h2 class="sec" data-i18n="secBigDays">Big days</h2>
+      <p class="intro" data-i18n="bigIntro">The once-a-year stuff worth planning around: festivals, live shows, Halloween fun and holiday favorites. Tap one to jump to it on the calendar.</p>
+      <p class="swipehint" data-i18n="swipeHw">Swipe for Halloween and holidays</p>
+      <div class="bigdays" id="bigList"></div>
+    </div>
+  </section>
+
+  <section class="block" id="events">
+    <div class="wrap">
+      <h2 class="sec" data-i18n="secCalendar">The calendar</h2>
+      <p class="intro" data-i18n="calIntro">Everything we're tracking, week by week. Narrow it down by age, or show only the free, drop-in or rainy-day stuff.</p>
+      <div class="filters">
+        <div class="fgroup" role="group" aria-label="Filter by age">
+          <span class="flabel" data-i18n="filterAges">Ages</span>
+          <button class="chip" data-age="all" aria-pressed="true" data-i18n="catAll">All</button>
+          <button class="chip" data-age="baby" aria-pressed="false" data-i18n="ageBabies">Babies</button>
+          <button class="chip" data-age="toddler" aria-pressed="false" data-i18n="ageToddlers">Toddlers</button>
+          <button class="chip" data-age="preschool" aria-pressed="false" data-i18n="agePreschoolF">Preschool</button>
+          <button class="chip" data-age="big" aria-pressed="false" data-i18n="ageBigKids">Big kids</button>
+        </div>
+        <div class="fgroup" id="hoodWrap">
+          <label class="flabel" for="hoodSel" data-i18n="filterArea">Area</label>
+          <select class="chip selectchip" id="hoodSel"></select>
+        </div>
+        <div class="fgroup" role="group" aria-label="Other filters">
+          <span class="flabel" data-i18n="filterShowOnly">Show only</span>
+          <button class="chip" data-toggle="free" aria-pressed="false" data-i18n="free">Free</button>
+          <button class="chip" data-toggle="dropin" aria-pressed="false" data-i18n="dropIn">Drop-in</button>
+          <button class="chip" data-toggle="indoor" aria-pressed="false" data-i18n="filterIndoorLong">Rainy day (indoors)</button>
+          <button class="chip" data-toggle="special" aria-pressed="false" data-i18n="filterBig">Big days</button>
+        </div>
+      </div>
+      <div class="weeknav">
+        <button class="navbtn" id="prevWeek" aria-label="Previous week" data-i18n-aria="weekPrev">‹</button>
+        <button class="navbtn" id="nextWeek" aria-label="Next week" data-i18n-aria="weekNext">›</button>
+        <h3 id="weekTitle" aria-live="polite"></h3>
+      </div>
+      <div id="weekList"></div>
+      <p class="fineprint" data-i18n="finePrint">Holiday closures aren't always reflected here. Events marked "Check first" are recurring slots we haven't been able to confirm for every date, so look at the organizer's page before you head out.</p>
+    </div>
+  </section>
+
+  <!-- Things to do: hand-written per town (parks, museums, short drives). Not JS-driven. -->
+  <section class="block" id="things">
+    <div class="wrap">
+      <h2 class="sec" data-i18n="secThings">Things to do anytime</h2>
+      <p class="intro" data-i18n="thingsIntro">No schedule needed. Good for whenever cabin fever hits &mdash; just check each spot's hours before you head out, since not everything opens early.</p>
+      <p class="swipehint" data-i18n="swipeThings">Swipe for rainy-day spots and short drives</p>
+      <div class="places">
+        <div>
+          <h3 data-i18n="getOutside">Get outside</h3>
+          <ul>
+                        <li><strong>Greenwich Point Park (Tod’s Point)</strong><span data-es="Un parque de 147 acres frente al agua, con playa, senderos para caminar y áreas de picnic. En verano se cobra una tarifa de estacionamiento a los no residentes, pero es gratis para caminar todo el año.">A 147-acre park on the water with a beach, walking paths and picnic areas. A seasonal non-resident parking fee applies in summer, but it’s open and free to walk year-round.</span></li>
+            <li><strong>Bruce Park</strong><span data-es="Un gran parque céntrico junto al Bruce Museum, con parque infantil, un estanque y amplios céspedes.">A big central park right by the Bruce Museum, with a playground, a pond and open lawns.</span></li>
+            <li><strong>Binney Park</strong><span data-es="Un parque de 32 acres con estanque y parque infantil en Old Greenwich, frente a la Perrot Memorial Library.">A 32-acre pond-and-playground park in Old Greenwich, across the street from the Perrot Memorial Library.</span></li>
+            <li><strong>Byram Park</strong><span data-es="Un parque frente al agua con parque infantil, playa y piscina, en el límite entre Greenwich y Port Chester.">A waterfront park with a playground, beach and pool, at the Greenwich/Port Chester line.</span></li>
+
+          </ul>
+        </div>
+        <div>
+          <h3 class="rain" data-i18n="rainyDay">Rainy day, indoors</h3>
+          <ul>
+                        <li><strong>Bruce Museum</strong><span data-es="Un museo de arte, ciencia e historia natural con exhibiciones prácticas para todas las edades, dentro de Bruce Park.">An art, science and natural history museum with hands-on exhibits for all ages, right in Bruce Park.</span></li>
+            <li><strong>Greenwich Library</strong><span data-es="El ala infantil de la biblioteca principal, además de las sucursales Byram Shubert y Cos Cob, y la Perrot Memorial Library independiente en Old Greenwich.">The Main Library’s children’s wing, plus the Byram Shubert and Cos Cob branches and the independent Perrot Memorial Library in Old Greenwich.</span></li>
+            <li><strong>Audubon Greenwich</strong><span data-es="Un centro de naturaleza con exhibiciones, tienda de regalos y galería de arte en el interior, además de siete millas de senderos afuera para cuando mejore el clima.">A nature center with exhibits, a gift shop and an art gallery indoors, plus seven miles of trails outside for when the weather turns.</span></li>
+
+          </ul>
+        </div>
+        <div>
+          <h3 class="drive" data-i18n="shortDrive">Worth a short drive</h3>
+          <ul>
+                        <li><strong>Stamford Museum & Nature Center</strong><span data-es="Una granja, planetario y senderos naturales a poca distancia en auto por la I-95, en Stamford.">A farm, planetarium and nature trails a short drive down I-95 in Stamford.</span></li>
+            <li><strong>Stepping Stones Museum for Children</strong><span data-es="Un museo infantil interactivo en Norwalk, a unos 25 minutos.">A hands-on children’s museum in Norwalk, about 25 minutes away.</span></li>
+            <li><strong>Playland Park</strong><span data-es="Un clásico parque de diversiones junto al lago, justo cruzando la línea estatal en Rye, NY.">A classic lakeside amusement park just over the state line in Rye, NY.</span></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="classes">
+    <div class="wrap">
+      <h2 class="sec" data-i18n="secClasses">Classes &amp; lessons</h2>
+      <p class="intro" data-i18n="classesIntro">Weekly classes worth signing up for, from baby music and first ballet to swim lessons and preschool soccer. Most run in sessions, so check each program's site for start dates and prices.</p>
+      <div class="cchips" id="classChips" role="group" aria-label="Filter classes"></div>
+      <div class="cgrid" id="classList"></div>
+    </div>
+  </section>
+
+  <section class="block" id="resources">
+    <div class="wrap">
+      <h2 class="sec" data-i18n="secResources">Resources for parents</h2>
+      <p class="intro" data-i18n="resIntro">Help with the big things and the everyday things, from pregnancy through the toddler years.</p>
+      <div class="help">
+        <h3 id="helpTitle">If you're struggling right now</h3>
+        <div id="helpList"></div>
+      </div>
+      <div class="res" id="resList"></div>
+    </div>
+  </section>
+
+
+  <section class="privacy" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap doc">
+      <h2 id="privacy-title" data-i18n="privacyTitle">Privacy policy</h2>
+      <p class="updated" data-i18n-date="privacyUpdated" data-date-val="September 29, 2026">Effective September 29, 2026</p>
+      <p id="privIntro" data-domain="ctkidscalendar.com/greenwich">Greenwich Kids Calendar (ctkidscalendar.com/greenwich) is part of CT Kids Calendar, a free guide to events, classes and resources for families across Connecticut. We keep things simple: this site has no accounts, no advertising trackers and no cookies. We count visits anonymously so we know what's useful. This policy explains the little information that does change hands when you use the site.</p>
+      <h3 data-i18n="privH1">Information we collect</h3>
+      <p data-i18n="privP1">We don't collect personal information through the website itself. You can browse the calendar, classes and resources without telling us who you are, and the site doesn't set cookies.</p>
+      <p data-i18n="privP2">To see how many people use the site, we use GoatCounter, a privacy-friendly visit counter. It records which pages are viewed, the website that sent you here (like Instagram), your general location (country and region) and your browser and screen size. It doesn't use cookies, doesn't follow you to other websites, and doesn't collect your name or anything that identifies you personally.</p>
+      <h3 data-i18n="privH2">How we use it</h3>
+      <ul>
+        <li data-i18n="privLi1">To publish event details we're given, like the name, place, time, ages, price and the organizer's public link.</li>
+        <li data-i18n="privLi2">To talk with businesses and organizations about sponsorship.</li>
+      </ul>
+      <p data-i18n="privP3">We don't sell, rent or trade your information, and we don't add you to a mailing list without asking.</p>
+      <h3 data-i18n="privH3">Services we rely on</h3>
+      <p data-i18n="privP4">A few outside services help run the site, and they may receive basic technical information such as your IP address when your browser connects to them:</p>
+      <ul>
+        <li data-i18n="privGh"><strong>GitHub Pages</strong> hosts the site. GitHub may keep server logs, including visitor IP addresses, for security. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub privacy statement</a>.</li>
+        <li data-i18n="privGf"><strong>Google Fonts</strong> supplies the site's typefaces, so your browser requests them from Google. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>.</li>
+        <li data-i18n="privGc"><strong>GoatCounter</strong> counts visits anonymously, as described above. See <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">GoatCounter's privacy policy</a>.</li>
+      </ul>
+      <p data-i18n="privP5">The site also links to other websites, such as Google Maps, Google Calendar, event organizers and community resources. Those sites have their own privacy practices, which we don't control.</p>
+      <h3 data-i18n="privH4">Children's privacy</h3>
+      <p data-i18n="privP6">This site is written for parents and caregivers. It isn't directed at children under 13, and we don't knowingly collect information from them. This site doesn't currently have a way to submit information directly, which further limits this risk.</p>
+      <h3 data-i18n="privH5">Keeping and deleting your information</h3>
+      <p data-i18n="privP7">We don't currently have a public contact address, so no emails are being collected yet. This policy will be updated when that changes.</p>
+      <h3 data-i18n="privH6">Changes to this policy</h3>
+      <p data-i18n="privP8">If we add something new, like a newsletter sign-up, we'll update this policy first and change the date at the top.</p>
+      <p><a href="#today" data-i18n="backToCal">Back to the calendar</a></p>
+    </div>
+  </section>
+</main>
+
+<nav class="tabbar" aria-label="Sections">
+  <a href="#today" data-tab="today"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><span data-i18n="tabToday">Today</span></a>
+  <a href="#bigdays" data-tab="bigdays"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"></path></svg><span data-i18n="tabBigDays">Big days</span></a>
+  <a href="#events" data-tab="events"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg><span data-i18n="tabCalendar">Calendar</span></a>
+  <a href="#classes" data-tab="classes"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg><span data-i18n="tabClasses">Classes</span></a>
+  <a href="#things" data-tab="things"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span data-i18n="tabToDo">To do</span></a>
+  <a href="#resources" data-tab="resources"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 11.2c0 5-8.8 9.8-8.8 9.8S3.2 16.2 3.2 11.2A4.8 4.8 0 0 1 12 8.5a4.8 4.8 0 0 1 8.8 2.7z"></path></svg><span data-i18n="tabHelp">Help</span></a>
+</nav>
+
+<dialog class="sheet" id="shareSheet" aria-labelledby="sheetTitle">
+  <div class="sheet-in">
+    <h3 id="sheetTitle" data-i18n="shareTitle">Share with a friend</h3>
+    <p class="sheet-preview" id="sheetPreview"></p>
+    <div class="sheet-grid">
+      <a class="act" id="shSms" href="#" data-i18n="textMsg">Text message</a>
+      <a class="act" id="shWa" href="#" target="_blank" rel="noopener" data-i18n="whatsapp">WhatsApp</a>
+      <a class="act" id="shMail" href="#" data-i18n="email">Email</a>
+      <a class="act" id="shFb" href="#" target="_blank" rel="noopener" data-i18n="facebook">Facebook</a>
+      <button class="act primary" type="button" id="shCopy" style="grid-column:1/-1" data-i18n="copyLink">Copy link</button>
+    </div>
+    <button class="sheet-close" type="button" data-close data-i18n="close">Close</button>
+  </div>
+</dialog>
+
+<dialog class="sheet" id="calSheet" aria-labelledby="calTitle">
+  <div class="sheet-in">
+    <h3 id="calTitle" data-i18n="addCalTitle">Add to your calendar</h3>
+    <p class="sheet-preview" id="calPreview"></p>
+    <div class="sheet-grid one">
+      <a class="act primary" id="calIcs" href="#" download="event.ics" data-i18n="appleOutlook">Apple, Outlook or other calendar</a>
+      <a class="act" id="calGoogle" href="#" target="_blank" rel="noopener" data-i18n="googleCal">Google Calendar</a>
+    </div>
+    <button class="sheet-close" type="button" data-close data-i18n="close">Close</button>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<footer>
+  <div class="wrap">
+    <span data-i18n-town="footerPart">Greenwich Kids Calendar · part of <a href="https://ctkidscalendar.com/">CT Kids Calendar</a></span>
+    <span data-i18n-date="footerChecked" data-date-val="September 2026">Schedules last checked September 2026 · <a href="#privacy">Privacy policy</a></span>
+    <span><a href="mailto:newhavenmoms@gmail.com?subject=Suggest%20a%20town%20for%20CT%20Kids%20Calendar&body=Town%3A%20" data-i18n="suggestTown">Suggest a town</a></span>
+  </div>
+</footer>
+
+<script>window.DATA_ES = {
+ "Greenwich Farmers' Market": "Mercado de agricultores de Greenwich",
+ "All ages": "Todas las edades",
+ "Free to browse": "Gratis para recorrer",
+ "A Saturday-morning farmers' market at the Arch Street / Horseneck Lane commuter lot, near Roger Sherman Baldwin Park. Runs into late fall; check the market's own page for the exact closing date this year.": "Un mercado de agricultores los sábados por la mañana en el estacionamiento de Arch Street / Horseneck Lane, cerca de Roger Sherman Baldwin Park. Continúa hasta finales de otoño; consulta la página del mercado para la fecha exacta de cierre este año.",
+ "Greenwich Town Party": "Greenwich Town Party",
+ "A free, town-wide outdoor festival on the harbor at Roger Sherman Baldwin Park, with live music, food and family activities — one of the biggest single days on the Greenwich calendar. Usually held in late spring/early summer; this year's 2026 date wasn't posted yet when we checked.": "Un festival gratuito al aire libre para todo el pueblo, en el puerto de Roger Sherman Baldwin Park, con música en vivo, comida y actividades familiares: uno de los días más grandes del calendario de Greenwich. Normalmente se celebra a finales de primavera o principios de verano; la fecha de 2026 aún no se había publicado cuando revisamos.",
+ "Greenwich Town Hall Tree Lighting": "Encendido del árbol en el Ayuntamiento de Greenwich",
+ "Santa arrives on the Town Hall lawn for the town's holiday tree lighting, with treats and entertainment from local performing groups. It's usually the first Friday evening in December; this year's exact date wasn't confirmed yet when we checked.": "Santa llega al césped del Ayuntamiento para el encendido del árbol navideño del pueblo, con dulces y presentaciones de grupos artísticos locales. Normalmente es el primer viernes por la noche de diciembre; la fecha exacta de este año aún no estaba confirmada cuando revisamos.",
+ "Bruce Beginnings": "Bruce Beginnings",
+ "Picture-book readings and a craft connected to the current exhibitions, in the Museum galleries. Free with admission; space is limited and reservations are required. Check the Bruce's events calendar for the next date.": "Lecturas de libros ilustrados y una manualidad relacionada con las exhibiciones actuales, en las galerías del Museo. Gratis con la entrada; los cupos son limitados y se requiere reservación. Consulta el calendario de eventos del Bruce para la próxima fecha.",
+ "Ages 2–5 + caregiver": "De 2 a 5 años + adulto",
+ "Bruce Beginnings Junior": "Bruce Beginnings Junior",
+ "A fun, interactive first introduction to the Museum and its collection, designed for the very youngest visitors. Free with admission, first come first served.": "Una divertida e interactiva primera introducción al Museo y su colección, diseñada para los visitantes más pequeños. Gratis con la entrada, por orden de llegada.",
+ "6 months–2 years + caregiver": "De 6 meses a 2 años + adulto",
+ "Science Solvers": "Science Solvers",
+ "A drop-in science activity connected to the Museum's exhibitions. Free with general admission, no registration required.": "Una actividad científica sin inscripción relacionada con las exhibiciones del Museo. Gratis con la entrada general, no requiere inscripción.",
+ "Ages 4+ + family": "4 años en adelante + familia",
+ "Weekend Programs": "Programas de fin de semana",
+ "Drop-in weekend programs that alternate between art and science topics. Check the Museum's calendar for this weekend's topic and time.": "Programas de fin de semana sin inscripción que alternan entre temas de arte y ciencia. Consulta el calendario del Museo para el tema y horario de este fin de semana.",
+ "Ages 5+": "5 años en adelante",
+ "Audubon Greenwich Nature Programs": "Programas de naturaleza de Audubon Greenwich",
+ "A 285-acre sanctuary with seven miles of trails, open daily 10am–5pm. Runs nature classes, scout programs and birthday parties throughout the year; check the calendar for family programs and First Sunday Science at Greenwich Point.": "Un santuario de 285 acres con siete millas de senderos, abierto todos los días de 10 a. m. a 5 p. m. Ofrece clases de naturaleza, programas de scouts y fiestas de cumpleaños durante todo el año; consulta el calendario para programas familiares y First Sunday Science en Greenwich Point.",
+ "Boys & Girls Club of Greenwich": "Boys & Girls Club of Greenwich",
+ "Fall after-school programming with homework help, sports, arts and enrichment. Membership-based; check the site for fall registration.": "Programación de otoño después de clases con ayuda con la tarea, deportes, artes y enriquecimiento. Funciona por membresía; consulta el sitio para la inscripción de otoño.",
+ "School age": "Edad escolar",
+ "The Dance Pointe": "The Dance Pointe",
+ "Dance instruction for all ages and levels — recreational through performance track — run through the Town's Parks & Recreation youth activities.": "Clases de baile para todas las edades y niveles, desde recreativo hasta nivel de presentación, organizadas a través de las actividades juveniles de Parks & Recreation del pueblo.",
+ "Open Gym": "Gimnasio libre",
+ "Free-play open gym time, offered monthly at both Civic Centers. Check each facility's page for this month's schedule.": "Tiempo de juego libre en el gimnasio, ofrecido mensualmente en ambos Civic Centers. Consulta la página de cada instalación para el horario de este mes.",
+ "Ages 6+": "6 años en adelante",
+ "Greenwich Library's system — the Main Library plus the Byram Shubert and Cos Cob branches — runs storytimes and children's programs by lottery/registered session rather than simple weekly drop-in. Old Greenwich and Riverside are served by the independently run Perrot Memorial Library instead. Check each library's own calendar for the current session's storytime days and times.": "El sistema de Greenwich Library (la biblioteca principal más las sucursales Byram Shubert y Cos Cob) organiza cuentacuentos y programas infantiles por sorteo/sesión con inscripción, en lugar de un simple modelo semanal sin cita. Old Greenwich y Riverside son atendidos en cambio por la Perrot Memorial Library, de gestión independiente. Consulta el calendario de cada biblioteca para los días y horarios de cuentacuentos de la sesión actual.",
+ "See the library's calendar": "Ver el calendario de la biblioteca"
+};</script>
+<script data-goatcounter="https://ctkidscalendar.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="/shared/app.js"></script>
+</body>
+</html>
