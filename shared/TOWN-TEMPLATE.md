@@ -19,12 +19,12 @@ those two files, and every town gets it.
 6. Write the "Things to do anytime" section by hand (parks, museums, short
    drives) — this one isn't data-driven, just edit the HTML directly using
    the existing `.places` markup as a guide.
-7. Add the town as a pin + card on the homepage (`/index.html`): a `<div
-   class="tcard soon">` in the `.towngrid`, and a pin in the `.ctmap` SVG
-   (copy an existing `<a class="mappin">` block and adjust the coordinates,
-   label position, and `href="#card-<slug>"`). Once the town's page is real,
-   change its card to `<a class="tcard" href="/<slug>/">` and its map pin's
-   `href` to `/<slug>/`.
+7. Add the town to the homepage (`/index.html`): a `<li><a href="/<slug>/"
+   style="--tc:<pin color>">Name</a></li>` in the `.townlist` — **keep the
+   list alphabetical** — and a pin in the `.ctmap` SVG (copy an existing
+   `<a class="mappin">` block and adjust the coordinates and label width).
+8. Add the town's URL to `/sitemap.xml` and its slug to the `TOWNS` list in
+   `shared/build-stats.js`, then re-run `node shared/build-stats.js`.
 
 ## `window.TOWN` field reference
 
