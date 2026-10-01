@@ -54,7 +54,8 @@
         "venueName": "James Blackstone Memorial Library",
         "address": "758 Main St",
         "kidsOnly": false,
-        "defaultFree": true
+        "defaultFree": true,
+        "method": "paste: Filters \u2192 kids age groups \u2192 List view, copy each page"
       }
     ],
     "glastonbury": [

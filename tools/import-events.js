@@ -4,6 +4,7 @@
 
    Usage (from the repo root):
      node tools/import-events.js <town>                 fetch every feed listed for <town> in tools/sources.json
+     node tools/import-events.js <town> --paste page1.txt,page2.txt   text copied from a LibraryCalendar list page
      node tools/import-events.js <town> --file feed.ics [--source "Library name"]
                                                         use a downloaded .ics file instead of fetching
      Options: --from YYYY-MM-DD  (default: today)   --to YYYY-MM-DD (default: the town's calendarThrough)
@@ -17,6 +18,7 @@
 const fs = require('fs');
 const path = require('path');
 const ics = require('./lib/ics');
+const { parseLibraryCalendarText } = require('./lib/librarycalendar-text');
 
 const ROOT = path.join(__dirname, '..');
 const args = process.argv.slice(2);
@@ -40,7 +42,12 @@ const prior = fs.existsSync(importsFile) ? JSON.parse(fs.readFileSync(importsFil
 
 const config = JSON.parse(fs.readFileSync(path.join(__dirname, 'sources.json'), 'utf8'));
 let sources = (config.towns[slug] || []).slice();
-if (opt('file')) {
+if (opt('paste')) {
+  const want = opt('source');
+  const base = want ? sources.find(s => s.name === want) : sources[0];
+  if (!base) { console.error(`No source configured for ${slug} in tools/sources.json.`); process.exit(1); }
+  sources = [{ ...base, paste: opt('paste').split(',') }];
+} else if (opt('file')) {
   const want = opt('source');
   const base = want ? sources.find(s => s.name === want) : sources[0];
   if (!base) { console.error(`No source ${want ? `"${want}" ` : ''}configured for ${slug} in tools/sources.json.`); process.exit(1); }
@@ -48,6 +55,7 @@ if (opt('file')) {
 }
 if (!sources.length) { console.error(`No sources configured for "${slug}" in tools/sources.json.`); process.exit(1); }
 
+const nowNY = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date());
 const FROM = opt('from') || ics.todayNY();
 const TO = opt('to') || TOWN.calendarThrough || ics.addDays(FROM, 92);
 
@@ -55,7 +63,7 @@ const TO = opt('to') || TOWN.calendarThrough || ics.addDays(FROM, 92);
 const KID = /\b(story ?times?|stories|story lab|bab(y|ies)|infants?|lapsit|toddlers?|twos|ones\b|preschool(ers)?|pre-?k|kindergarten|kids?|child(ren)?|famil(y|ies)|tweens?|teens?|grades?\s*(k|pre|\d)|elementary|lego|homework|puppet|sensory|playgroup|play ?time|stay (and|&) play|bounce|rhyme|sing-?along|ages?\s*\d)/i;
 const ADULT = /\b(adults?( only)?|for grown-?ups|seniors?|18\+|21\+|ages? 18|medicare|retire(ment|es)|tax(es)? (help|prep)|job seekers?|resume|genealogy|family history|trustees|board (of )?(trustees|meeting)|friends of the library meeting|aarp|wine|beer|cocktail)\b/i;
 const STRONG_ADULT = /\b(genealogy|family history|ancestry|medicare|estate planning|retirement)\b/i;
-const CLOSED = /\b(library closed|closed|cancell?ed|postponed)\b/i;
+const CLOSED = /\b(library closed|closed|closing|closes early|cancell?ed|postponed)\b/i;
 
 function classify(o) {
   const title = o.title, cats = o.categories.join(' '), desc = o.description;
@@ -86,14 +94,24 @@ function groupsFromRange(text) {
   if (gr) return /pre/i.test(gr[1]) ? ['preschool', 'big'] : ['big'];
   return null;
 }
+function upTo(text) {
+  let m = text.match(/\bup to (\d+)\s*months?\b/i); if (m) return +m[1] > 12 ? ['baby', 'toddler'] : ['baby'];
+  m = text.match(/\bup to age (\d+)\b/i); if (m) return groupsFromRange(`ages 0-${m[1]}`);
+  return null;
+}
 function ageGroups(text) {
-  const r = groupsFromRange(text);
+  const [title] = text.split('\n');
+  const r = upTo(title) || groupsFromRange(title) || upTo(text) || groupsFromRange(text);
   if (r && r.length) return { a: r, guessed: false };
   const a = AGE_RULES.filter(([, re]) => re.test(text)).map(([g]) => g);
   return a.length ? { a, guessed: false } : { a: ['toddler', 'preschool', 'big'], guessed: true };
 }
 function agesLabel(text) {
   if (/\ball ages\b/i.test(text.split('\n')[0])) return 'All ages';
+  const t = text.split('\n')[0];
+  let u = t.match(/\bup to (\d+\s*months|age \d+)\b/i); if (u) return 'Up to ' + u[1];
+  u = t.match(/\b(grades?\s*(?:k|pre-?k|\d+)(?:\s*(?:[-–]|to)\s*\d+)?(?:\s*(?:and up|\+))?|ages?\s*\d+\s*(?:[-–]|to)\s*\d+|ages?\s*\d+\s*(?:and up|\+))\b/i);
+  if (u) { const v = u[1].replace(/\s*(?:-|to)\s*(?=\d)/g, '–').replace(/\s+/g, ' '); return (v.charAt(0).toUpperCase() + v.slice(1)).replace(/\b(grades?\s*)k\b/i, '$1K'); }
   const w = text.match(/\b((?:walkers|birth|newborns?|babies|\d+\s*months?)\s*(?:to|[-–])\s*(?:age\s*)?\d+(?:\s*(?:months|years))?)\b/i);
   if (w) { const s = w[1].replace(/\s*-\s*/g, '–').replace(/\s+/g, ' '); return s.charAt(0).toUpperCase() + s.slice(1); }
   const m = text.match(/\b(ages?\s*\d+\s*(?:[-–]\s*\d+|\+|and up)?(?:\s*(?:months|years))?|\d+\s*[-–]\s*\d+\s*months|birth\s*(?:to|[-–])\s*\d+(?:\s*(?:months|years))?|grades?\s*(?:k|pre-?k|\d+)(?:\s*[-–]\s*\d+)?)\b/i);
@@ -130,8 +148,16 @@ async function main() {
     .concat((prior.events || []).map(e => ({ e, key: normTitle(e.t), origin: 'imported from ' + e.imp })));
 
   for (const src of sources) {
-    let text;
-    try {
+    let text, occ;
+    if (src.paste) {
+      text = src.paste.map(f => fs.readFileSync(f, 'utf8')).join('\n');
+      const all = parseLibraryCalendarText(text);
+      if (!all.length) { console.warn(`! ${src.name}: no events found in the pasted text.`); report.sources.push({ name: src.name, error: 'no events found in paste' }); continue; }
+      const dates = all.map(o => o.date).sort();
+      report.pasteRange = [dates[0], dates[dates.length - 1]];
+      occ = all.filter(o => o.date >= FROM && o.date <= TO && !(o.date === ics.todayNY() && (o.end || o.start) < nowNY()));
+      report.sources.push({ name: src.name + ' (pasted list)', events: all.length, occurrences: occ.length });
+    } else try {
       if (src.file) text = fs.readFileSync(src.file, 'utf8');
       else {
         if (!src.url) { console.warn(`! ${src.name}: no feed URL yet in tools/sources.json — skipped.`); report.sources.push({ name: src.name, error: 'no feed URL configured' }); continue; }
@@ -143,12 +169,13 @@ async function main() {
       console.warn(`! ${src.name}: couldn't read the feed (${err.message}). Download it in a browser and use --file.`);
       report.sources.push({ name: src.name, error: err.message }); continue;
     }
+    if (!src.paste) {
     if (!/BEGIN:VCALENDAR/.test(text)) { console.warn(`! ${src.name}: that isn't an iCal feed (no BEGIN:VCALENDAR).`); report.sources.push({ name: src.name, error: 'not an iCal feed' }); continue; }
 
     const vevents = ics.parseICS(text);
-    const nowNY = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date());
-    const occ = ics.occurrences(vevents, FROM, TO).filter(o => !(o.date === ics.todayNY() && !o.endDate && (o.end || o.start) && (o.end || o.start) < nowNY));
+    occ = ics.occurrences(vevents, FROM, TO).filter(o => !(o.date === ics.todayNY() && !o.endDate && (o.end || o.start) && (o.end || o.start) < nowNY()));
     report.sources.push({ name: src.name, events: vevents.length, occurrences: occ.length });
+    }
 
     // classify each occurrence; group the kid ones by title
     const groups = new Map();

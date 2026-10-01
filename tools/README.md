@@ -44,6 +44,20 @@ If a site blocks the download, open the feed link in your browser, save the
 node tools/import-events.js cheshire --file ~/Downloads/feed.ics
 ```
 
+## Libraries without a feed (LibraryCalendar sites)
+
+Blackstone (Branford), Welles-Turner (Glastonbury) and Russell (Middletown) use
+LibraryCalendar, which may not offer a feed link. Instead: open the events page,
+click **Filters** and pick the kids' age groups, switch to **List**, then select
+all (Cmd+A / Ctrl+A), copy, and save each page as a text file (or paste it to
+Claude, who saves it in `tools/pastes/`). Then:
+
+```
+node tools/import-events.js branford --paste tools/pastes/page1.txt,tools/pastes/page2.txt
+```
+
+Review and publish exactly as with a feed.
+
 ## What the importer does for you
 
 - **Keeps only kids' and family events.** It skips adult programs, closures

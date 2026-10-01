@@ -32,7 +32,7 @@ The "Also cited in your data" lists are generated from the site itself by
 
 | Source | What to look for / how often | Last checked |
 |---|---|---|
-| [James Blackstone Memorial Library — events](https://events.blackstonelibrary.org/) | Monthly. Blocks automated checks; someone needs to open it and send the iCal link or a screenshot. Several storytimes run only on selected weeks. | Not yet verified |
+| [James Blackstone Memorial Library — events](https://events.blackstonelibrary.org/) | Monthly. No feed link: click Filters → kids' age groups → List, then copy each page (Cmd+A) and paste to Claude. Several storytimes run only on selected weeks. | Sep 30, 2026 (imported Oct–Dec) |
 | [Branford Parks & Recreation (MyRec)](https://branfordct.myrec.com/info/activities/default.aspx) | Monthly: pottery nights, Toddler & Me movement, holiday parade, Halloween House Hunt. | Sep 29, 2026 |
 | [Branford Land Trust — programs](https://branfordlandtrust.org/learn/) | Family hikes and nature programs. | Sep 29, 2026 |
 
@@ -160,7 +160,7 @@ The "Also cited in your data" lists are generated from the site itself by
 
 | Source | What to look for / how often | Last checked |
 |---|---|---|
-| [Welles-Turner Memorial Library — calendar](https://wtmlib.librarycalendar.com/) | Monthly. Blocks automated checks; send the iCal link or a screenshot. | Not yet verified |
+| [Welles-Turner Memorial Library — calendar](https://wtmlib.librarycalendar.com/) | Monthly. Same system as Blackstone: probably no feed link, so use Filters → kids' age groups → List, copy each page and paste to Claude. | Not yet verified |
 
 **Worth adding** (not used yet)
 
@@ -206,7 +206,7 @@ The "Also cited in your data" lists are generated from the site itself by
 
 | Source | What to look for / how often | Last checked |
 |---|---|---|
-| [Russell Library — calendar](https://russelllibrary.librarycalendar.com/) | Monthly. Blocks automated checks; send the iCal link or a screenshot. | Not yet verified |
+| [Russell Library — calendar](https://russelllibrary.librarycalendar.com/) | Monthly. Same system as Blackstone: probably no feed link, so use Filters → kids' age groups → List, copy each page and paste to Claude. | Not yet verified |
 | [City of Middletown calendar](https://middletownct.gov/calendar.aspx?CID=119) | Monthly. | Sep 29, 2026 |
 
 **Also cited in your data** — 1 site(s), busiest first

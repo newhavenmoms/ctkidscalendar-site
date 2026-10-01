@@ -1,0 +1,454 @@
+{
+ "venues": {
+  "blackstone": [
+   "James Blackstone Memorial Library",
+   "758 Main St"
+  ]
+ },
+ "venueMeta": {
+  "blackstone": [
+   null,
+   1
+  ]
+ },
+ "events": [
+  {
+   "t": "Video Stories for Babies up to age 5",
+   "v": "blackstone",
+   "ages": "Up to age 5",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "blurb": "A storytime featuring movies, music & more! For children through age 5. Room: Auditorium.",
+   "src": "https://www.blackstonelibrary.org/",
+   "imp": "James Blackstone Memorial Library",
+   "s": [
+    [
+     5,
+     [
+      [
+       "11:00",
+       "11:30"
+      ]
+     ],
+     "2026-10-02",
+     "2026-12-18"
+    ]
+   ],
+   "x": [
+    "2026-10-30",
+    "2026-11-27"
+   ]
+  },
+  {
+   "t": "Preschool Stories for ages 3-5",
+   "v": "blackstone",
+   "ages": "Ages 3–5",
+   "a": [
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "blurb": "A live, in-person storytime for children ages 3-5! Room: Auditorium.",
+   "src": "https://www.blackstonelibrary.org/",
+   "imp": "James Blackstone Memorial Library",
+   "s": [
+    [
+     1,
+     [
+      [
+       "10:00",
+       "10:30"
+      ]
+     ],
+     "2026-10-05",
+     "2026-12-14"
+    ]
+   ],
+   "x": [
+    "2026-10-12"
+   ]
+  },
+  {
+   "t": "Homeschool Meetup",
+   "v": "blackstone",
+   "ages": "Grades K–4",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "A meetup for homeschool families to socialize and share resources. Every month we will learn about a new topic, do an educational activity, and learn about some of the services the library provides. Waitlist. Registration Required. Room: Auditorium.",
+   "src": "https://www.blackstonelibrary.org/",
+   "imp": "James Blackstone Memorial Library",
+   "when": [
+    {
+     "from": "2026-10-05",
+     "t": [
+      [
+       "14:00",
+       "15:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-09",
+     "t": [
+      [
+       "14:00",
+       "15:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Tuesdays are for Twos Storytime for ages 2 to 3",
+   "v": "blackstone",
+   "ages": "Ages 2–3",
+   "a": [
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "blurb": "Children & their caregivers are invited to sign up for a program filled with singing, dancing, rhyming & stories for ages 2-3! Room: Auditorium.",
+   "src": "https://www.blackstonelibrary.org/",
+   "imp": "James Blackstone Memorial Library",
+   "s": [
+    [
+     2,
+     [
+      [
+       "10:00",
+       "10:30"
+      ]
+     ],
+     "2026-10-06",
+     "2026-12-15"
+    ]
+   ]
+  },
+  {
+   "t": "Stories & Music for Babies up to 24 months",
+   "v": "blackstone",
+   "ages": "Up to 24 months",
+   "a": [
+    "baby",
+    "toddler"
+   ],
+   "price": "Free",
+   "free": true,
+   "blurb": "Babies & their caregivers are invited to a gentle storytime of rhyming, movement & song for babies just under 24 months. Room: Auditorium.",
+   "src": "https://www.blackstonelibrary.org/",
+   "imp": "James Blackstone Memorial Library",
+   "s": [
+    [
+     3,
+     [
+      [
+       "10:00",
+       "10:30"
+      ],
+      [
+       "10:45",
+       "11:15"
+      ]
+     ],
+     "2026-10-07",
+     "2026-12-16"
+    ]
+   ]
+  },
+  {
+   "t": "Stay and Play",
+   "v": "blackstone",
+   "ages": "Under 2 + caregiver",
+   "a": [
+    "baby",
+    "toddler"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "Stay after storytime ends or just drop in. Designed for children under 2 and their caregivers to play, connect, and chat in a casual setting. This event is facilitated in collaboration with the Branford Early Start Partnership for Children. Room: Auditorium.",
+   "src": "https://www.blackstonelibrary.org/",
+   "imp": "James Blackstone Memorial Library",
+   "s": [
+    [
+     3,
+     [
+      [
+       "11:15",
+       "11:45"
+      ]
+     ],
+     "2026-10-07",
+     "2026-12-16"
+    ]
+   ]
+  },
+  {
+   "t": "3D Printing Introduction for ages 8 and up",
+   "v": "blackstone",
+   "ages": "Ages 8 and up",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Visit the Youth Services department to learn how to design your own 3D files and learn more about our 3D printer. During this informal hour we will get you started learning 3D design software and demonstrate our 3D printers! Registration Open.",
+   "src": "https://www.blackstonelibrary.org/",
+   "imp": "James Blackstone Memorial Library",
+   "when": [
+    {
+     "from": "2026-10-07",
+     "t": [
+      [
+       "16:00",
+       "16:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Read Aloud to a Therapy Dog for Grades 1 and up",
+   "v": "blackstone",
+   "ages": "Grades 1 and up",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "blurb": "Grab your favorite book and join Oscar for a reading adventure! Practice reading aloud to Oscar, a therapy dog who loves spending time with kids like you. Room: Youth Services.",
+   "src": "https://www.blackstonelibrary.org/",
+   "imp": "James Blackstone Memorial Library",
+   "when": [
+    {
+     "from": "2026-10-08",
+     "t": [
+      [
+       "18:00",
+       "19:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-12",
+     "t": [
+      [
+       "18:00",
+       "19:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Mario Kart at the Library for Grades K-4",
+   "v": "blackstone",
+   "ages": "Grades K–4",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Come to the library and play some Mario Kart! Race to see who will reach the finish line the fastest. Registration Open. Registration Required. Room: Conference Room.",
+   "src": "https://www.blackstonelibrary.org/",
+   "imp": "James Blackstone Memorial Library",
+   "when": [
+    {
+     "from": "2026-10-09",
+     "t": [
+      [
+       "14:30",
+       "16:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Lego Club for Grades K-4",
+   "v": "blackstone",
+   "ages": "Grades K–4",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "What can you build? Dig into the library’s collection of LEGO bricks and test your engineering skills with some building prompts. Registration Open. Registration Required. Room: Auditorium.",
+   "src": "https://www.blackstonelibrary.org/",
+   "imp": "James Blackstone Memorial Library",
+   "when": [
+    {
+     "from": "2026-10-19",
+     "t": [
+      [
+       "16:00",
+       "16:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-16",
+     "t": [
+      [
+       "16:00",
+       "16:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Kid Craft: Pumpkin Painting!",
+   "v": "blackstone",
+   "ages": "Grades K–4",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Get creative and enjoy some fall fun! Paint a miniature pumpkin. All supplies will be provided, just bring your creativity! Grades K-4. Registration Open. Registration Required. Room: Auditorium.",
+   "src": "https://www.blackstonelibrary.org/",
+   "imp": "James Blackstone Memorial Library",
+   "when": [
+    {
+     "from": "2026-10-21",
+     "t": [
+      [
+       "16:00",
+       "16:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Fall Family Take-N-Makes",
+   "v": "blackstone",
+   "ages": "Ages 0–5 & grades K–4",
+   "a": [
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "Drop-in event. Looking for something fun to do - how about dropping by the library to grab an interactive kit that you can complete with your family and/or friends? Room: Youth Services.",
+   "src": "https://www.blackstonelibrary.org/",
+   "imp": "James Blackstone Memorial Library",
+   "when": [
+    {
+     "from": "2026-10-28",
+     "t": [
+      [
+       "09:00",
+       "20:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-25",
+     "t": [
+      [
+       "09:00",
+       "17:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Annual Halloween Parade",
+   "v": "blackstone",
+   "ages": "Ages 0–5",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "Drop-in event. Celebrate Halloween before the sun goes down with the Blackstone Library. Join us in a series of songs, movement activities, good reads, and hand rhymes. Room: Auditorium.",
+   "src": "https://www.blackstonelibrary.org/",
+   "imp": "James Blackstone Memorial Library",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-30",
+     "t": [
+      [
+       "10:00",
+       "10:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Kid Craft: Shrinky Dinks!",
+   "v": "blackstone",
+   "ages": "Grades K–4",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Experience the magic of Shrinky Dinks! Draw and color a masterpiece then watch it shrink when heated up. Turn your your creation into a keychain or a magnet! Grades K to 4. Registration Open. Registration Required. Room: Auditorium.",
+   "src": "https://www.blackstonelibrary.org/",
+   "imp": "James Blackstone Memorial Library",
+   "when": [
+    {
+     "from": "2026-11-04",
+     "t": [
+      [
+       "16:00",
+       "16:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "The Story of Inventions",
+   "v": "blackstone",
+   "ages": "Grades K–4",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "How do space rockets help us get home? How do balloons act like microphones? How does a plant make Halloween candy possible? Registration Open. Registration Required. Room: Auditorium.",
+   "src": "https://www.blackstonelibrary.org/",
+   "imp": "James Blackstone Memorial Library",
+   "when": [
+    {
+     "from": "2026-11-11",
+     "t": [
+      [
+       "16:00",
+       "17:00"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "updated": "2026-10-01"
+}
