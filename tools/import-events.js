@@ -63,16 +63,17 @@ const TO = opt('to') || TOWN.calendarThrough || ics.addDays(FROM, 92);
 const KID = /\b(story ?times?|stories|story lab|bab(y|ies)|infants?|lapsit|toddlers?|twos|ones\b|preschool(ers)?|pre-?k|kindergarten|kids?|child(ren)?|famil(y|ies)|tweens?|teens?|grades?\s*(k|pre|\d)|elementary|lego|homework|puppet|sensory|playgroup|play ?time|stay (and|&) play|bounce|rhyme|sing-?along|ages?\s*\d)/i;
 const ADULT = /\b(adults?( only)?|for grown-?ups|seniors?|18\+|21\+|ages? 18|medicare|retire(ment|es)|tax(es)? (help|prep)|job seekers?|resume|genealogy|family history|trustees|board (of )?(trustees|meeting)|friends of the library meeting|aarp|wine|beer|cocktail)\b/i;
 const STRONG_ADULT = /\b(genealogy|family history|ancestry|medicare|estate planning|retirement)\b/i;
-const CLOSED = /\b(library closed|closed|closing|closes early|cancell?ed|postponed)\b/i;
+const CLOSED = /\b(library closed|closed|closing|closes|cancell?ed|postponed)\b/i;
 
 function classify(o) {
   const title = o.title, cats = o.categories.join(' '), desc = o.description;
   if (o.cancelled || CLOSED.test(title)) return { kid: false, reason: 'cancelled or closed' };
+  if (o.full) return { kid: false, reason: 'program full for this session' };
   const kidTitle = KID.test(title), kidCat = KID.test(cats);
   const adultTitle = ADULT.test(title), adultCat = ADULT.test(cats);
   const kidTitleStrong = KID.test(title.replace(/\bfamil(y|ies)\b/gi, ''));
   if (STRONG_ADULT.test(title + ' ' + desc) && !kidTitleStrong) return { kid: false, reason: 'adult program' };
-  if ((adultTitle || adultCat) && !kidTitleStrong) return { kid: false, reason: 'adult program' };
+  if ((adultTitle || (adultCat && !kidCat)) && !kidTitleStrong) return { kid: false, reason: 'adult program' };
   if (kidTitle || kidCat) return { kid: true, confident: true, reason: kidTitle ? 'kid words in title' : 'kids/family category' };
   if (KID.test(desc) && !ADULT.test(desc)) return { kid: true, confident: false, reason: 'only the description mentions kids' };
   return { kid: false, reason: 'no sign it is for kids' };
@@ -85,6 +86,10 @@ const AGE_RULES = [
   ['big', /\b(grades?|school[- ]age|k\s*[-–]\s*\d|tweens?|teens?|elementary|ages?\s*(6|7|8|9|10|11|12)|lego|homework|chess|coding|steam|stem|minecraft|d&d|dungeons)\b/i],
 ];
 function groupsFromRange(text) {
+  let u = text.match(/\bages?\s*(\d+)\s*(?:&|and)\s*under\b/i);
+  if (u) return groupsFromRange(`ages 0-${u[1]}`);
+  u = text.match(/\bbirth\s*(?:to|[-–])\s*(\d+)\s*months?\b/i);
+  if (u) return +u[1] > 12 ? ['baby', 'toddler'] : ['baby'];
   const m = text.match(/\b(?:ages?\s*)?(\d+)\s*(?:[-–]|to)\s*(\d+)\s*(months?|mos?\.?)\b/i);
   if (m) { const lo = +m[1], hi = +m[2], g = []; if (lo < 12) g.push('baby'); if (hi > 12) g.push('toddler'); if (hi > 36) g.push('preschool'); return g; }
   const y = text.match(/\bages?\s*(\d+)\s*(?:[-–]|to)\s*(\d+)\b/i) || text.match(/\bbirth\s*(?:to|[-–])\s*(?:age\s*)?()(\d+)\b/i);
@@ -109,6 +114,8 @@ function ageGroups(text) {
 function agesLabel(text) {
   if (/\ball ages\b/i.test(text.split('\n')[0])) return 'All ages';
   const t = text.split('\n')[0];
+  const u5 = text.match(/\bages?\s*(\d+)\s*(?:&|and)\s*under\b/i); if (u5) return `Ages ${u5[1]} & under`;
+  const bm = text.match(/\bbirth\s*(?:to|[-–])\s*(\d+)\s*months?\b/i); if (bm) return `Birth–${bm[1]} months`;
   let u = t.match(/\bup to (\d+\s*months|age \d+)\b/i); if (u) return 'Up to ' + u[1];
   u = t.match(/\b(grades?\s*(?:k|pre-?k|\d+)(?:\s*(?:[-–]|to)\s*\d+)?(?:\s*(?:and up|\+))?|ages?\s*\d+\s*(?:[-–]|to)\s*\d+|ages?\s*\d+\s*(?:and up|\+))\b/i);
   if (u) { const v = u[1].replace(/\s*(?:-|to)\s*(?=\d)/g, '–').replace(/\s+/g, ' '); return (v.charAt(0).toUpperCase() + v.slice(1)).replace(/\b(grades?\s*)k\b/i, '$1K'); }
@@ -192,7 +199,7 @@ async function main() {
     for (const [key, g] of groups) {
       const title = Object.entries(g.titles).sort((a, b) => b[1] - a[1])[0][0];
       const sample = g.occ[0];
-      const text = `${title}\n${sample.categories.join(' ')}\n${cleanText(sample.description)}`;
+      const text = `${title}\n${cleanText(sample.description)}\n${sample.categories.join(' ')}`;
       const { a, guessed } = ageGroups(text);
       const ages = agesLabel(text);
       const priceM = cleanText(sample.description).match(/\$\s?\d+(?:\.\d{2})?/);
@@ -211,7 +218,7 @@ async function main() {
         src: sample.url || src.src, imp: src.name,
       };
       if (/hallowe+n|\bboo\b|trick[- ]or[- ]treat|costume parade|spooky/i.test(title)) base.special = 'hw';
-      else if (/christmas|hanukk?ah|kwanzaa|santa|holiday (party|celebration|concert)|gingerbread|winter wonderland|tree lighting/i.test(title)) base.special = 'hol';
+      else if (/christmas|hanukk?ah|kwanzaa|santa|holiday (party|celebration|concert)|gingerbread|winter wonderland|tree lighting|yuletide|carol(er)?s?\b/i.test(title)) base.special = 'hol';
       const flags = [];
       if (!g.confident) flags.push(g.reason);
       if (guessed) flags.push('age groups guessed');

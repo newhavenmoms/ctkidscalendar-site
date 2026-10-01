@@ -35,7 +35,10 @@ The "Also cited in your data" lists are generated from the site itself by
 | [James Blackstone Memorial Library — events](https://events.blackstonelibrary.org/) | Monthly. No feed link: click Filters → kids' age groups → List, then copy each page (Cmd+A) and paste to Claude. Several storytimes run only on selected weeks. | Sep 30, 2026 (imported Oct–Dec) |
 | [Branford Parks & Recreation — programs list](https://branfordct.myrec.com/info/activities/) | Monthly. Check **Annual Special Events** (House Hunt, Goblin Giveaway, parade, Hanukkah, Easter egg hunt) and **Toddler/Youth Programs** (Early Start playgroup, Kids Night Out, swim). Some pages still show last year's details until the town updates them. | Sep 30, 2026 |
 | [Willoughby Wallace Memorial Library (Stony Creek)](https://www.wwml.org/events) | Monthly. Mostly adult talks and concerts; watch for the monthly storytime, Collage & Crafts Club and family movies. Its calendar file link (saved in sources.json) may let Claude import it automatically. | Sep 30, 2026 |
-| [Branford Land Trust — programs](https://branfordlandtrust.org/learn/) | Family hikes and nature programs. | Sep 29, 2026 |
+| [Branford Land Trust — news & events](https://branfordlandtrust.org/blog/) | Before Thanksgiving and in December: Van Wie Walk (Sunday before Thanksgiving) and New Year's Day hike. | Sep 30, 2026 |
+| [Legacy Theatre — tickets](https://www.tix.com/ticket-sales/legacytheatrectcal/6430) | Every couple of months: family series, holiday show ('Tis the Season, Dec 9–20). Don't confuse with Legacy Theatres in Pittsburgh or Las Vegas. | Sep 30, 2026 |
+| [Shore Line Trolley Museum — events](https://events.humanitix.com/host/the-shore-line-trolley-museum) | Each season: Pumpkin Patch Trolley (Oct), Santa/holiday trolleys, storytime and sensory-friendly days. East Haven, but a Branford family favorite. | Sep 30, 2026 |
+| [Branford Historical Society — events](https://branfordhistoricalsociety.org/events/) | November: holiday open house date. Harrison House tours are summer Saturdays only. | Sep 30, 2026 |
 
 **Also cited in your data** — 8 site(s), busiest first
 
@@ -161,7 +164,7 @@ The "Also cited in your data" lists are generated from the site itself by
 
 | Source | What to look for / how often | Last checked |
 |---|---|---|
-| [Welles-Turner Memorial Library — calendar](https://wtmlib.librarycalendar.com/) | Monthly. Same system as Blackstone: probably no feed link, so use Filters → kids' age groups → List, copy each page and paste to Claude. | Not yet verified |
+| [Welles-Turner Memorial Library — kids' events list](https://wtmlib.librarycalendar.com/events/list?age_groups%5B59%5D=59&age_groups%5B143%5D=143&age_groups%5B58%5D=58) | Monthly. This link is already filtered to kids' age groups: copy each page and paste to Claude. Session storytimes fill by lottery each September (and likely January); watch for new sessions. | Sep 30, 2026 (imported Oct–Dec) |
 
 **Worth adding** (not used yet)
 

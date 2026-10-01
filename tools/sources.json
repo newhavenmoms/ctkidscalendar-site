@@ -82,7 +82,8 @@
         "venueName": "Welles-Turner Memorial Library",
         "address": "2407 Main St",
         "kidsOnly": false,
-        "defaultFree": true
+        "defaultFree": true,
+        "method": "paste: use the filtered kids list link in SOURCES.md, copy each page"
       }
     ],
     "middletown": [

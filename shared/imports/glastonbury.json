@@ -1,0 +1,696 @@
+{
+ "venues": {
+  "wtm-library": [
+   "Welles-Turner Memorial Library",
+   "2407 Main St"
+  ]
+ },
+ "venueMeta": {
+  "wtm-library": [
+   null,
+   1
+  ]
+ },
+ "events": [
+  {
+   "t": "Smart Start Storytime",
+   "v": "wtm-library",
+   "ages": "Ages 3–5",
+   "a": [
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "For Pre-K children ages 3-5, on their own. Resident registration period was September 8–15; registrations were processed by lottery on September 16. Registration Required. Room: Children's Story Nook.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "s": [
+    [
+     4,
+     [
+      [
+       "09:30",
+       "10:00"
+      ]
+     ],
+     "2026-10-01",
+     "2026-10-29"
+    ]
+   ]
+  },
+  {
+   "t": "Mother Goose Storytime",
+   "v": "wtm-library",
+   "ages": "Birth–15 months",
+   "a": [
+    "baby",
+    "toddler"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Babies birth-15 months with an adult. Resident registration period was September 8–15; registrations were processed by lottery on September 16. Registration Required. Room: Friends Room.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "s": [
+    [
+     4,
+     [
+      [
+       "13:15",
+       "13:45"
+      ]
+     ],
+     "2026-10-01",
+     "2026-10-29"
+    ]
+   ],
+   "x": [
+    "2026-10-15"
+   ]
+  },
+  {
+   "t": "Bedtime Stories",
+   "v": "wtm-library",
+   "ages": "Ages 5 & under",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "For families with kids ages 5 & under. ’s, grab your teddy bear, and settle down for a half-hour of stories, songs and rhymes. No registration needed. Room: Children's Story Nook.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "when": [
+    {
+     "from": "2026-10-01",
+     "t": [
+      [
+       "18:00",
+       "18:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-05",
+     "t": [
+      [
+       "18:00",
+       "18:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-19",
+     "t": [
+      [
+       "18:00",
+       "18:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-03",
+     "t": [
+      [
+       "18:00",
+       "18:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-17",
+     "t": [
+      [
+       "18:00",
+       "18:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Wee Rock! Music & Movement",
+   "v": "wtm-library",
+   "ages": "Ages 5 & under",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "For families with kids ages 5 & under. Move and groove to your favorite kids’ tunes: 30 minutes of songs, dance, and finger plays. No registration needed. Room: Friends Room.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "when": [
+    {
+     "from": "2026-10-02",
+     "t": [
+      [
+       "10:00",
+       "10:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-06",
+     "t": [
+      [
+       "10:00",
+       "10:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-04",
+     "t": [
+      [
+       "10:00",
+       "10:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Together Time Tales",
+   "v": "wtm-library",
+   "ages": "Ages 5 & under",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "For families with kids ages 5 & under. Young children and their caregivers are invited to drop in to the Friends Room for stories. No registration needed.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "when": [
+    {
+     "from": "2026-10-03",
+     "t": [
+      [
+       "10:30",
+       "11:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-07",
+     "t": [
+      [
+       "10:30",
+       "11:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-05",
+     "t": [
+      [
+       "10:30",
+       "11:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "DIY Jibbitz in TinkerCAD",
+   "v": "wtm-library",
+   "ages": "Ages 8–17",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Ages 8-17. Design your own shoe charms in TinkerCAD. Waitlist. Registration Required. Room: 2CF Studio.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "when": [
+    {
+     "from": "2026-10-03",
+     "t": [
+      [
+       "13:00",
+       "14:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Side By Side Storytime",
+   "v": "wtm-library",
+   "ages": "Ages 24–36 months",
+   "a": [
+    "toddler"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "For children ages 24-36 months with an adult. Resident registration period was September 8–15; registrations were processed by lottery on September 16. Registration Required. Room: Children's Story Nook.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "s": [
+    [
+     2,
+     [
+      [
+       "09:30",
+       "10:00"
+      ],
+      [
+       "10:30",
+       "11:00"
+      ]
+     ],
+     "2026-10-06",
+     "2026-10-27"
+    ]
+   ]
+  },
+  {
+   "t": "Little Bookworms Storytime",
+   "v": "wtm-library",
+   "ages": "Ages 5 & under",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "For families with kids ages 5 & under. Join the Children’s Librarians for stories, finger rhymes, songs and fun. No registration needed. Room: Friends Room.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "when": [
+    {
+     "from": "2026-10-09",
+     "t": [
+      [
+       "10:00",
+       "10:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-13",
+     "t": [
+      [
+       "10:00",
+       "10:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Bedtime Stories: Halloween Fun",
+   "v": "wtm-library",
+   "ages": "Ages 5 & under",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "For families with kids ages 5 & under. ’s, grab your teddy bear, and settle down for a half-hour of stories, songs and rhymes. No registration needed. Room: Children's Story Nook.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-15",
+     "t": [
+      [
+       "18:00",
+       "18:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Tinkerlab",
+   "v": "wtm-library",
+   "ages": "Ages 5 & under",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "Families with kids ages 5 & under. A place for little ones to learn, play, create, and explore with a favorite adult. No registration needed. Room: Children's Department.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "when": [
+    {
+     "from": "2026-10-16",
+     "t": [
+      [
+       "10:00",
+       "11:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-20",
+     "t": [
+      [
+       "10:00",
+       "11:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-18",
+     "t": [
+      [
+       "10:00",
+       "11:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "KidStruction Lab",
+   "v": "wtm-library",
+   "ages": "Ages 4 through grade 6",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "Suggested for ages 4 through grade 6. Drop in any time during the session for building and engineering play. No registration needed. Room: Children's Story Nook.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "when": [
+    {
+     "from": "2026-10-17",
+     "t": [
+      [
+       "10:30",
+       "12:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Bead and Button Mosaic",
+   "v": "wtm-library",
+   "ages": "All ages (under 6 with an adult)",
+   "a": [
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "All ages (younger than 6 must be accompanied by an adult). Waitlist. Registration Required. Room: 2CF Studio.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "when": [
+    {
+     "from": "2026-10-17",
+     "t": [
+      [
+       "13:00",
+       "14:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Spooky Scary Skeleton Bridges",
+   "v": "wtm-library",
+   "ages": "Grades 2–6",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "For kids in grades 2-6. Build a bridge made entirely out of “bones” (cotton swabs). Registration begins October 5 for residents; October 16 for nonresidents. Registration Required. Room: Glastonbury Room.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-19",
+     "t": [
+      [
+       "16:15",
+       "17:15"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Spooky Story Stroll",
+   "v": "glas-offsite",
+   "ages": "Preschool & elementary families",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "A Halloween story walk for families with preschool and elementary kids, with stories, crafts and treats along the way. Registration is through Glastonbury Parks & Recreation, which shares the location.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-21",
+     "t": [
+      [
+       "16:00",
+       "18:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Kids' Craft: Halloween Flashlight Fun",
+   "v": "wtm-library",
+   "ages": "Grades 3–6",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "For kids in grades 3-6. Registration begins October 8 for residents; October 19 for nonresidents. Registration Required. Room: Children's Craft Corner.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-22",
+     "t": [
+      [
+       "16:00",
+       "16:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-22",
+     "t": [
+      [
+       "16:45",
+       "17:15"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "TinkerCAD: Create your own Name Plate",
+   "v": "wtm-library",
+   "ages": "Ages 10 & up",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Ages 10 & up. Design a name plate for the 3D printer. Waitlist. Registration Required. Room: 2CF Studio.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "when": [
+    {
+     "from": "2026-10-27",
+     "t": [
+      [
+       "18:00",
+       "19:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Little Boo Bash",
+   "v": "wtm-library",
+   "ages": "Ages 5 & under",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "For families with kids ages 5 & under. A not-so-scary Halloween party with crafts and games. No registration needed. Room: Friends Room.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-30",
+     "t": [
+      [
+       "10:00",
+       "11:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Extended Open Hours For Seasonal Makes!",
+   "v": "wtm-library",
+   "ages": "All ages",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "Drop in to the 2CF maker studio for seasonal crafts and making, all ages. Registration Not Required. Room: 2CF Studio.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "s": [
+    [
+     2,
+     [
+      [
+       "17:00",
+       "20:00"
+      ]
+     ],
+     "2026-11-03",
+     "2026-12-29"
+    ]
+   ]
+  },
+  {
+   "t": "Talk Like a Pirate",
+   "v": "wtm-library",
+   "ages": "Grades K–2",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "For kids in grades K-2. A pirate party at the library. Registration begins October 22 for residents; November 2 for non-residents. Registration Required. Room: Friends Room.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "when": [
+    {
+     "from": "2026-11-05",
+     "t": [
+      [
+       "16:15",
+       "17:15"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Clay Flower Bouquets",
+   "v": "wtm-library",
+   "ages": "All ages (under 6 with an adult)",
+   "a": [
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "All ages (younger than 6 must be accompanied by an adult). Registration Required. Room: 2CF Studio.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "when": [
+    {
+     "from": "2026-11-28",
+     "t": [
+      [
+       "13:00",
+       "14:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Connecticut Yuletide Carolers in Concert",
+   "v": "wtm-library",
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "A festive a cappella quartet dressed in traditional Victorian costumes sings the bright sounds of the season. Registration Required. Room: The Commons.",
+   "src": "https://wtmlib.librarycalendar.com/",
+   "imp": "Welles-Turner Memorial Library",
+   "special": "hol",
+   "when": [
+    {
+     "from": "2026-12-11",
+     "t": [
+      [
+       "18:30",
+       "19:30"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "updated": "2026-10-01"
+}

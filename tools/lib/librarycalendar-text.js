@@ -17,9 +17,10 @@
 
 const MONTHS = { january: 1, february: 2, march: 3, april: 4, may: 5, june: 6, july: 7, august: 8, september: 9, october: 10, november: 11, december: 12 };
 const DATE_RE = /^(?:Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday),\s+([A-Za-z]+)\s+(\d{1,2}),\s+(\d{4})\s+at\s+(\d{1,2}:\d{2}\s*[ap]m)(?:\s*[-–]\s*(\d{1,2}:\d{2}\s*[ap]m))?/i;
-const STATUS_RE = /^(registration (open|required|closed|full)|waitlist|cancell?ed|full|closing|in person|online)$/i;
+const STATUS_RE = /^(registration (open|required|closed|full|not required)|waitlist|cancell?ed|full|closing|in person|online|upcoming|offsite event|no registration (is )?needed)$/i;
 const GROUP_RE = /^This event is in the ".*" group$/i;
-const STOP_RE = /^(closed for |all day |pagination$|current page|page\d|next page|last page|connect with us)/i;
+// the second, detailed copy of each event on some LibraryCalendar sites starts with a bare month abbreviation ("Oct")
+const STOP_RE = /^(closed for |all day|pagination$|current page|page\d|next page|last page|connect with us|disclaimer\(s\)|library branch:|(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)$|[a-z]{3}\d{1,2}\d{4}[a-z]{3}$)/i;
 
 const pad = n => String(n).padStart(2, '0');
 function to24(t) {
@@ -51,13 +52,17 @@ function parseLibraryCalendarText(text) {
     const ageIdx = block.findIndex(l => l.toLowerCase() === 'age group:');
     const rest = block.slice(ageIdx >= 0 ? ageIdx + 2 : 1);
     const status = rest.filter(l => STATUS_RE.test(l));
-    let desc = rest.filter(l => l && !STATUS_RE.test(l) && !/:$/.test(l)).join(' ');
+    let desc = rest.filter(l => l && !STATUS_RE.test(l) && !GROUP_RE.test(l) && !/:$/.test(l)).join(' ').trim();
     if (/\.\.\.$/.test(desc)) desc = desc.replace(/[^.!?]*\.\.\.$/, '').trim();   // drop the cut-off last sentence
-    const title = lines[di - 1];
+    let title = lines[di - 1], url = '';
+    const link = title.match(/^\[(.+)\]\((https?:[^)]+)\)$/);          // markdown-style paste
+    if (link) { title = link[1]; url = link[2]; }
+    const full = /\s*-\s*program full\s*$/i.test(title);
+    title = title.replace(/\s*-\s*program full\s*$/i, '');
     out.push({
       uid: `paste-${date}-${to24(m[4])}-${title}`, title,
       description: desc + (status.length ? ' ' + status.join('. ') + '.' : ''),
-      location: location.replace(/\s+at\s+.*$/i, ''), url: '',
+      location: location.replace(/\s+at\s+.*$/i, ''), url, full,
       categories: [ages, types].filter(Boolean),
       cancelled: status.some(s => /cancel/i.test(s)) || /^cancell?ed/i.test(title),
       date, endDate: null, start: to24(m[4]), end: m[5] ? to24(m[5]) : null,

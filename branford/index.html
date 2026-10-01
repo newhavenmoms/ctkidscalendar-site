@@ -95,6 +95,14 @@ window.TOWN = {
   "wwml": [
    "Willoughby Wallace Memorial Library",
    "146 Thimble Islands Rd, Stony Creek"
+  ],
+  "legacy": [
+   "Legacy Theatre",
+   "128 Thimble Islands Rd, Stony Creek"
+  ],
+  "trolley": [
+   "Shore Line Trolley Museum (East Haven)",
+   "17 River St, East Haven"
   ]
  },
  "venueMeta": {
@@ -129,6 +137,14 @@ window.TOWN = {
   "wwml": [
    null,
    1
+  ],
+  "legacy": [
+   null,
+   1
+  ],
+  "trolley": [
+   null,
+   0
   ]
  },
  "hoods": [],
@@ -443,6 +459,126 @@ window.TOWN = {
    "drop": true,
    "blurb": "The 1952 musical classic on the big screen at the Willoughby Wallace Library. Free, no registration, light refreshments.",
    "src": "https://www.wwml.org/events/movie-singin-in-the-rain"
+  },
+  {
+   "t": "'Tis the Season, Starring The Sarafinas",
+   "v": "legacy",
+   "when": [
+    {
+     "from": "2026-12-09",
+     "to": "2026-12-20",
+     "t": []
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "price": "About $47–$61 with fees",
+   "free": false,
+   "rsvp": true,
+   "blurb": "A brand-new family holiday show by two former Radio City Rockettes, staged as a live holiday TV special where a grandmother and granddaughter decorate and reminisce. Opening week has shows Wed at 7, Thu at 2 and 7, Fri at 7, and Sat–Sun at noon and 3; see the ticket page for the full schedule.",
+   "src": "https://www.tix.com/ticket-sales/legacytheatrectcal/6430",
+   "special": "hol"
+  },
+  {
+   "t": "Pumpkin Patch Trolley",
+   "v": "trolley",
+   "when": [
+    {
+     "from": "2026-10-03",
+     "t": [
+      [
+       "10:30",
+       "16:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-04",
+     "t": [
+      [
+       "10:30",
+       "16:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-10",
+     "t": [
+      [
+       "10:30",
+       "16:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-11",
+     "t": [
+      [
+       "10:30",
+       "16:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-12",
+     "t": [
+      [
+       "10:30",
+       "16:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-17",
+     "t": [
+      [
+       "10:30",
+       "16:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-18",
+     "t": [
+      [
+       "10:30",
+       "16:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-24",
+     "t": [
+      [
+       "10:30",
+       "16:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-25",
+     "t": [
+      [
+       "10:30",
+       "16:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Young kids & families",
+   "a": [
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Adults $17; kids' tickets less; toddlers free",
+   "free": false,
+   "blurb": "The trolley museum's non-spooky fall outing for young families: ride a vintage trolley to the pumpkin patch, where each paid child picks a small pumpkin to decorate, plus toy trains, coloring and face painting. Trolleys leave regularly from 10:30 a.m.; the last one is at 4. Just over the Branford line in East Haven.",
+   "src": "https://events.humanitix.com/host/the-shore-line-trolley-museum",
+   "special": "fall"
   }
  ],
  "tba": [
@@ -452,6 +588,27 @@ window.TOWN = {
    "w": "Delivered to your mailbox",
    "p": "A free Halloween treat mailed to Branford kids in kindergarten through 2nd grade. Register each K–2 child by noon on Oct 23 (residents only).",
    "src": "https://branfordct.myrec.com/info/activities/program_details.aspx?ProgramID=30048"
+  },
+  {
+   "g": "fall",
+   "t": "Annual Van Wie Walk",
+   "w": "Van Wie Preserve",
+   "p": "The Branford Land Trust's free guided walk through the 100-acre Van Wie Woods, usually the Sunday before Thanksgiving at 1 p.m., with a short 1–2 mile route and a longer one. Families welcome (no dogs). This year's date isn't posted yet.",
+   "src": "https://branfordlandtrust.org/blog/"
+  },
+  {
+   "g": "hol",
+   "t": "Harrison House Holiday Open House",
+   "w": "Harrison House Museum, 124 Main St",
+   "p": "The Branford Historical Society opens its 1724 house museum, barn and gardens for an annual holiday open house in early December (Dec 7, 1–3 p.m. last year). Free; this year's date isn't posted yet.",
+   "src": "https://branfordhistoricalsociety.org/events/"
+  },
+  {
+   "g": "hol",
+   "t": "New Year's Day Hike",
+   "w": "A Branford Land Trust preserve",
+   "p": "The Land Trust's annual First Day hike on Jan 1 at 1 p.m., with a shorter route good for kids 6 and up. Details are usually posted in December.",
+   "src": "https://branfordlandtrust.org/blog/"
   }
  ],
  "classes": [
@@ -788,24 +945,30 @@ window.TOWN = {
 <script>window.DATA_ES = {
  "$30 residents / $40 non-residents": "$30 residentes / $40 no residentes",
  "$65 per child (residents only)": "$65 por niño (solo residentes)",
+ "'Tis the Season, Starring The Sarafinas": "'Tis the Season, con The Sarafinas",
  "18 months–3 years + caregiver": "18 meses–3 años + adulto",
  "6 months–18": "6 meses a 18 años",
+ "A Branford Land Trust preserve": "Una reserva del Branford Land Trust",
  "A Christmas and Hanukkah clay project through Branford Parks & Recreation. Register online; the listing has the location.": "Un proyecto de arcilla de Navidad y Janucá a través de Branford Parks & Recreation. Inscríbete en línea; el anuncio indica el lugar.",
  "A Halloween clay project through Branford Parks & Recreation. Register online; the listing has the location.": "Un proyecto de arcilla de Halloween a través de Branford Parks & Recreation. Inscríbete en línea; el anuncio indica el lugar.",
  "A Saturday-afternoon Dungeons & Dragons club for tweens and teens. We couldn't confirm this program on the library's live calendar, so check before you go.": "Un club de Dungeons & Dragons los sábados por la tarde para preadolescentes y adolescentes. No pudimos confirmar este programa en el calendario actual de la biblioteca, así que revisa antes de ir.",
+ "A brand-new family holiday show by two former Radio City Rockettes, staged as a live holiday TV special where a grandmother and granddaughter decorate and reminisce. Opening week has shows Wed at 7, Thu at 2 and 7, Fri at 7, and Sat–Sun at noon and 3; see the ticket page for the full schedule.": "Un nuevo espectáculo navideño familiar de dos exRockettes de Radio City, presentado como un especial de televisión en vivo en el que una abuela y su nieta decoran y recuerdan. La primera semana hay funciones el miércoles a las 7, el jueves a las 2 y a las 7, el viernes a las 7 y el sábado y domingo al mediodía y a las 3; consulta la página de boletos para el horario completo.",
  "A fall and Halloween cookie-decorating class at a local shop. Found in a local news roundup, so check price and spots with the shop.": "Una clase de decoración de galletas de otoño y Halloween en una tienda local. La encontramos en un resumen de noticias locales, así que confirma precio y cupos con la tienda.",
  "A free Halloween treat mailed to Branford kids in kindergarten through 2nd grade. Register each K–2 child by noon on Oct 23 (residents only).": "Una sorpresa gratuita de Halloween enviada por correo a los niños de Branford de kínder a 2.º grado. Inscribe a cada niño de K–2 antes del mediodía del 23 de octubre (solo residentes).",
  "A free family class with More to Say on simple signs to use with babies and toddlers, at Stony Creek's village library. Spots are limited; register online.": "Una clase familiar gratuita con More to Say sobre señas sencillas para usar con bebés y niños pequeños, en la biblioteca del pueblo de Stony Creek. Cupo limitado; inscríbete en línea.",
  "A free monthly Saturday-afternoon craft hour at the Willoughby Wallace Library in Stony Creek; all supplies included, all ages welcome. Check the events page for the next date.": "Una hora gratuita de manualidades un sábado por la tarde al mes en la Willoughby Wallace Library de Stony Creek; incluye todos los materiales y todas las edades son bienvenidas. Revisa la página de eventos para la próxima fecha.",
  "A free weekly playgroup run with Branford Early Start and the Family Resource Center: songs and fingerplays, small-group activities, then free play for big muscles. Walk-ins welcome; sign in with the leader when you arrive.": "Un grupo de juego semanal gratuito organizado con Branford Early Start y el Family Resource Center: canciones y juegos con los dedos, actividades en grupos pequeños y luego juego libre para moverse. Se aceptan visitas sin inscripción; regístrate con la coordinadora al llegar.",
  "A supervised Parks & Rec evening for kids while grown-ups get a night out: 90 minutes of portable glow-in-the-dark laser tag outdoors on Hammer Field, plus crafts, games, a movie and snacks. Branford residents only; space is limited.": "Una noche supervisada por Parks & Rec para los niños mientras los adultos salen: 90 minutos de láser tag portátil que brilla en la oscuridad al aire libre en Hammer Field, además de manualidades, juegos, una película y meriendas. Solo residentes de Branford; cupo limitado.",
+ "About $47–$61 with fees": "Aproximadamente $47–$61 con cargos",
  "Acro, Gymnastics & Dance": "Acrobacia, gimnasia y baile",
  "Acrobatics and gymnastics alongside ballet, tap, jazz and hip-hop.": "Acrobacia y gimnasia junto con ballet, tap, jazz y hip-hop.",
+ "Adults $17; kids' tickets less; toddlers free": "Adultos $17; niños pagan menos; los más pequeños gratis",
  "Ages 2 and up": "Desde 2 años",
  "Ages 2–4 + caregiver": "De 2 a 4 años + adulto",
  "Ages 5–10": "De 5 a 10 años",
  "Ages 5–11 (grades K–4)": "De 5 a 11 años (kínder a 4.º grado)",
  "All ages": "Todas las edades",
+ "Annual Van Wie Walk": "Caminata anual Van Wie",
  "Babies & families": "Bebés y familias",
  "Birth–5 + caregiver": "Desde el nacimiento hasta 5 años + adulto",
  "Branford Rec Toddler & Youth Classes": "Clases de Branford Rec para pequeños y jóvenes",
@@ -827,6 +990,8 @@ window.TOWN = {
  "Halloween House Hunt": "Búsqueda de casas de Halloween",
  "Halloween Pottery for Kids": "Cerámica de Halloween para niños",
  "Hanukkah Menorah Lighting on the Green": "Encendido de la menorá en el Green",
+ "Harrison House Holiday Open House": "Casa abierta navideña en la Harrison House",
+ "Harrison House Museum, 124 Main St": "Museo Harrison House, 124 Main St",
  "Holiday Parade & Tree Lighting": "Desfile navideño y encendido del árbol",
  "Holiday Pottery for Kids": "Cerámica navideña para niños",
  "Kids & families": "Niños y familias",
@@ -836,8 +1001,10 @@ window.TOWN = {
  "Learn to Swim at Walsh Pool": "Aprende a nadar en la piscina Walsh",
  "Legacy Theatre Classes": "Clases en Legacy Theatre",
  "Music Together": "Music Together",
+ "New Year's Day Hike": "Caminata del Día de Año Nuevo",
  "Paid; see listing": "Con costo; ver anuncio",
  "Parks & Rec's fourth annual map of homes and businesses decorated for Halloween, ready for a drive-by or evening walk. The map and voting link go live Oct 20; vote for a favorite through Oct 29, with results on Oct 30.": "El cuarto mapa anual de Parks & Rec con casas y negocios decorados para Halloween, para recorrer en auto o caminar de noche. El mapa y la votación se publican el 20 de octubre; vota por tu favorita hasta el 29, y los resultados salen el 30.",
+ "Pumpkin Patch Trolley": "Tranvía al huerto de calabazas",
  "Red Cross swim lessons from parent-and-child classes (6 months–3) through preschool aquatics and levels for school-age kids and teens, held at Walsh Intermediate School's pool (enter by door 157).": "Clases de natación de la Cruz Roja, desde clases de padre e hijo (6 meses a 3 años) hasta natación preescolar y niveles para niños en edad escolar y adolescentes, en la piscina de Walsh Intermediate School (entrada por la puerta 157).",
  "Scarecrows on the Green": "Espantapájaros en el Green",
  "See the library's calendar": "Ver el calendario de la biblioteca",
@@ -845,15 +1012,21 @@ window.TOWN = {
  "Ten-week family music classes through Nov 21. The Saturday 9:30 a.m. section had room when last checked; Friday was full.": "Clases de música en familia de diez semanas hasta el 21 de noviembre. La sección del sábado a las 9:30 a. m. tenía cupo en la última revisión; la del viernes estaba llena.",
  "The 1952 musical classic on the big screen at the Willoughby Wallace Library. Free, no registration, light refreshments.": "El clásico musical de 1952 en pantalla grande en la Willoughby Wallace Library. Gratis, sin inscripción, con refrigerio ligero.",
  "The Branford Garden Club's annual display of scarecrows made by local businesses, schools, clubs and families, all around the Town Green. Free to stroll anytime.": "La exhibición anual del Branford Garden Club con espantapájaros hechos por negocios, escuelas, clubes y familias locales, alrededor del Town Green. Gratis para pasear a cualquier hora.",
+ "The Branford Historical Society opens its 1724 house museum, barn and gardens for an annual holiday open house in early December (Dec 7, 1–3 p.m. last year). Free; this year's date isn't posted yet.": "La Branford Historical Society abre su casa museo de 1724, el granero y los jardines para su casa abierta navideña anual a principios de diciembre (el 7 de diciembre, de 1 a 3 p. m., el año pasado). Gratis; la fecha de este año aún no está publicada.",
+ "The Branford Land Trust's free guided walk through the 100-acre Van Wie Woods, usually the Sunday before Thanksgiving at 1 p.m., with a short 1–2 mile route and a longer one. Families welcome (no dogs). This year's date isn't posted yet.": "La caminata guiada gratuita del Branford Land Trust por los 100 acres de Van Wie Woods, normalmente el domingo antes de Acción de Gracias a la 1 p. m., con una ruta corta de 1 a 2 millas y otra más larga. Familias bienvenidas (sin perros). La fecha de este año aún no está publicada.",
  "The Great Goblin Giveaway": "The Great Goblin Giveaway",
+ "The Land Trust's annual First Day hike on Jan 1 at 1 p.m., with a shorter route good for kids 6 and up. Details are usually posted in December.": "La caminata anual del Land Trust el 1 de enero a la 1 p. m., con una ruta más corta adecuada para niños desde 6 años. Los detalles suelen publicarse en diciembre.",
  "The menorah on the Town Green is lit each of the eight nights of Hanukkah, from sundown Dec 4 through Dec 12.": "La menorá del Town Green se enciende cada una de las ocho noches de Janucá, desde el atardecer del 4 de diciembre hasta el 12.",
  "The parade leaves Branford High School at 6:30 p.m. and marches down East Main and Main Street to the Town Green for the tree lighting (7:15 last year). Bring a non-perishable food item for the Branford Food Council. Only last year's details are posted; the Saturday after Thanksgiving is when it's been held, so check the town's page before you go.": "El desfile sale de Branford High School a las 6:30 p. m. y recorre East Main y Main Street hasta el Town Green para el encendido del árbol (a las 7:15 el año pasado). Trae un alimento no perecedero para el Branford Food Council. Solo están publicados los detalles del año pasado; se ha hecho el sábado después de Acción de Gracias, así que revisa la página del pueblo antes de ir.",
+ "The trolley museum's non-spooky fall outing for young families: ride a vintage trolley to the pumpkin patch, where each paid child picks a small pumpkin to decorate, plus toy trains, coloring and face painting. Trolleys leave regularly from 10:30 a.m.; the last one is at 4. Just over the Branford line in East Haven.": "La salida de otoño, sin sustos, del museo del tranvía para familias con niños pequeños: viaja en un tranvía antiguo al huerto de calabazas, donde cada niño con boleto elige una calabacita para decorar, además de trenes de juguete, colorear y pintacaritas. Los tranvías salen con frecuencia desde las 10:30 a. m.; el último es a las 4. Justo al otro lado del límite de Branford, en East Haven.",
  "Toddler & Me Creative Movement": "Movimiento creativo para pequeños y adultos",
  "Toddler and preschool sports (Soccer Squirts, T-Ball Fun, Ultimate Ball Time, Little Track & Field and Little Lacrosse Stars), Staying Fit for preschoolers, New Haven Ballet, plus kids' pottery at Fired Up, cooking, Play-Well LEGO, coding and tennis.": "Deportes para pequeños y preescolares (Soccer Squirts, T-Ball Fun, Ultimate Ball Time, Little Track & Field y Little Lacrosse Stars), Staying Fit para preescolares, New Haven Ballet, además de cerámica infantil en Fired Up, cocina, LEGO de Play-Well, programación y tenis.",
  "Toddler dance, storytime and drama, acting classes for ages 6–17, and a Wheel Life troupe for performers who use mobility devices and their families. Check the current session.": "Baile, cuentos y teatro para niños pequeños, clases de actuación para edades de 6 a 17 años y un grupo Wheel Life para artistas que usan dispositivos de movilidad y sus familias. Consulta la sesión actual.",
  "Toddlers–teens": "Niños pequeños–adolescentes",
  "Tuesdays 9:30–10 a.m. in monthly sessions (Oct 6–27, Nov 3–24), $60 residents / $70 non-residents, through Branford Parks & Recreation.": "Martes de 9:30 a 10 a. m. en sesiones mensuales (6–27 de octubre, 3–24 de noviembre), $60 residentes / $70 no residentes, a través de Branford Parks & Recreation.",
+ "Van Wie Preserve": "Reserva Van Wie",
  "YMCA Swim Lessons": "Clases de natación en el YMCA",
+ "Young kids & families": "Niños pequeños y familias",
  "Youth": "Jóvenes",
  "Youth Sports Leagues": "Ligas deportivas juveniles",
  "Youth swim lessons and family swim, plus youth sports and an outdoor ropes course.": "Clases de natación para jóvenes y natación familiar, además de deportes juveniles y un circuito de cuerdas al aire libre."
