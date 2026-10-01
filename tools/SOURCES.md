@@ -33,7 +33,8 @@ The "Also cited in your data" lists are generated from the site itself by
 | Source | What to look for / how often | Last checked |
 |---|---|---|
 | [James Blackstone Memorial Library — events](https://events.blackstonelibrary.org/) | Monthly. No feed link: click Filters → kids' age groups → List, then copy each page (Cmd+A) and paste to Claude. Several storytimes run only on selected weeks. | Sep 30, 2026 (imported Oct–Dec) |
-| [Branford Parks & Recreation (MyRec)](https://branfordct.myrec.com/info/activities/default.aspx) | Monthly: pottery nights, Toddler & Me movement, holiday parade, Halloween House Hunt. | Sep 29, 2026 |
+| [Branford Parks & Recreation — programs list](https://branfordct.myrec.com/info/activities/) | Monthly. Check **Annual Special Events** (House Hunt, Goblin Giveaway, parade, Hanukkah, Easter egg hunt) and **Toddler/Youth Programs** (Early Start playgroup, Kids Night Out, swim). Some pages still show last year's details until the town updates them. | Sep 30, 2026 |
+| [Willoughby Wallace Memorial Library (Stony Creek)](https://www.wwml.org/events) | Monthly. Mostly adult talks and concerts; watch for the monthly storytime, Collage & Crafts Club and family movies. Its calendar file link (saved in sources.json) may let Claude import it automatically. | Sep 30, 2026 |
 | [Branford Land Trust — programs](https://branfordlandtrust.org/learn/) | Family hikes and nature programs. | Sep 29, 2026 |
 
 **Also cited in your data** — 8 site(s), busiest first

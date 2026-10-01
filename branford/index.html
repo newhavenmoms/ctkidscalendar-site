@@ -79,6 +79,22 @@ window.TOWN = {
   "grey-goat": [
    "Grey Goat Farmtique",
    "11 N Branford Rd"
+  ],
+  "trapasso": [
+   "Joe Trapasso Community House",
+   "46 Church St"
+  ],
+  "hammer-field": [
+   "Hammer Field",
+   "Branford"
+  ],
+  "branford-houses": [
+   "Decorated houses around Branford",
+   "Map from Parks & Rec"
+  ],
+  "wwml": [
+   "Willoughby Wallace Memorial Library",
+   "146 Thimble Islands Rd, Stony Creek"
   ]
  },
  "venueMeta": {
@@ -95,6 +111,22 @@ window.TOWN = {
    1
   ],
   "grey-goat": [
+   null,
+   1
+  ],
+  "trapasso": [
+   null,
+   1
+  ],
+  "hammer-field": [
+   null,
+   0
+  ],
+  "branford-houses": [
+   null,
+   0
+  ],
+  "wwml": [
    null,
    1
   ]
@@ -235,29 +267,191 @@ window.TOWN = {
      ]
     }
    ]
+  },
+  {
+   "t": "Early Start Community Play Group",
+   "v": "trapasso",
+   "s": [
+    [
+     4,
+     [
+      [
+       "10:00",
+       "10:50"
+      ]
+     ],
+     "2026-10-01",
+     "2026-11-19"
+    ]
+   ],
+   "ages": "Ages 2–4 + caregiver",
+   "a": [
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "A free weekly playgroup run with Branford Early Start and the Family Resource Center: songs and fingerplays, small-group activities, then free play for big muscles. Walk-ins welcome; sign in with the leader when you arrive.",
+   "src": "https://branfordct.myrec.com/info/activities/program_details.aspx?ProgramID=30370"
+  },
+  {
+   "t": "Kids Night Out: Glow-in-the-Dark Laser Tag",
+   "v": "hammer-field",
+   "when": [
+    {
+     "from": "2026-10-16",
+     "t": [
+      [
+       "17:30",
+       "20:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "Ages 5–11 (grades K–4)",
+   "a": [
+    "big"
+   ],
+   "price": "$65 per child (residents only)",
+   "free": false,
+   "rsvp": true,
+   "blurb": "A supervised Parks & Rec evening for kids while grown-ups get a night out: 90 minutes of portable glow-in-the-dark laser tag outdoors on Hammer Field, plus crafts, games, a movie and snacks. Branford residents only; space is limited.",
+   "src": "https://branfordct.myrec.com/info/activities/program_details.aspx?ProgramID=30173"
+  },
+  {
+   "t": "Halloween House Hunt",
+   "v": "branford-houses",
+   "when": [
+    {
+     "from": "2026-10-20",
+     "to": "2026-10-29",
+     "t": []
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "Parks & Rec's fourth annual map of homes and businesses decorated for Halloween, ready for a drive-by or evening walk. The map and voting link go live Oct 20; vote for a favorite through Oct 29, with results on Oct 30.",
+   "src": "https://branfordct.myrec.com/info/activities/program_details.aspx?ProgramID=30213",
+   "special": "hw"
+  },
+  {
+   "t": "Holiday Parade & Tree Lighting",
+   "v": "branford-green",
+   "when": [
+    {
+     "from": "2026-11-28",
+     "t": [
+      [
+       "18:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "check": true,
+   "blurb": "The parade leaves Branford High School at 6:30 p.m. and marches down East Main and Main Street to the Town Green for the tree lighting (7:15 last year). Bring a non-perishable food item for the Branford Food Council. Only last year's details are posted; the Saturday after Thanksgiving is when it's been held, so check the town's page before you go.",
+   "src": "https://branfordct.myrec.com/info/activities/program_details.aspx?ProgramID=30230",
+   "special": "hol"
+  },
+  {
+   "t": "Hanukkah Menorah Lighting on the Green",
+   "v": "branford-green",
+   "when": [
+    {
+     "from": "2026-12-04",
+     "to": "2026-12-12",
+     "t": []
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "The menorah on the Town Green is lit each of the eight nights of Hanukkah, from sundown Dec 4 through Dec 12.",
+   "src": "https://branfordct.myrec.com/info/activities/program_details.aspx?ProgramID=30229",
+   "special": "hol"
+  },
+  {
+   "t": "Free Baby Sign Language Class",
+   "v": "wwml",
+   "when": [
+    {
+     "from": "2026-10-13",
+     "t": [
+      [
+       "11:00",
+       "11:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "Babies & families",
+   "a": [
+    "baby",
+    "toddler"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "A free family class with More to Say on simple signs to use with babies and toddlers, at Stony Creek's village library. Spots are limited; register online.",
+   "src": "https://www.wwml.org/events/babysignlanguage"
+  },
+  {
+   "t": "Friday Night Movie: Singin' in the Rain",
+   "v": "wwml",
+   "when": [
+    {
+     "from": "2026-10-02",
+     "t": [
+      [
+       "19:00",
+       "21:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Families welcome (rated G)",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "The 1952 musical classic on the big screen at the Willoughby Wallace Library. Free, no registration, light refreshments.",
+   "src": "https://www.wwml.org/events/movie-singin-in-the-rain"
   }
  ],
  "tba": [
   {
    "g": "hw",
-   "t": "Halloween House Hunt",
-   "w": "Branford",
-   "p": "Parks & Rec's annual map of decorated houses around town to drive or walk by. This year's map isn't posted yet.",
-   "src": "https://branfordct.myrec.com/info/activities/default.aspx"
-  },
-  {
-   "g": "hw",
    "t": "The Great Goblin Giveaway",
-   "w": "Branford",
-   "p": "A yearly Parks & Rec Halloween tradition. Date not announced yet.",
-   "src": "https://branfordct.myrec.com/info/activities/default.aspx"
-  },
-  {
-   "g": "hol",
-   "t": "Holiday Parade & Tree Lighting",
-   "w": "Branford High School to the Town Green",
-   "p": "An evening parade from the high school to the Green, ending with the tree lighting. In past years it has been on a Saturday in late November or early December.",
-   "src": "https://branfordct.myrec.com/info/activities/default.aspx"
+   "w": "Delivered to your mailbox",
+   "p": "A free Halloween treat mailed to Branford kids in kindergarten through 2nd grade. Register each K–2 child by noon on Oct 23 (residents only).",
+   "src": "https://branfordct.myrec.com/info/activities/program_details.aspx?ProgramID=30048"
   }
  ],
  "classes": [
@@ -291,9 +485,9 @@ window.TOWN = {
   {
    "id": "branford-rec",
    "c": "sports",
-   "n": "Branford Recreation Classes",
-   "u": "https://branfordct.myrec.com/info/activities/default.aspx",
-   "blurb": "Little Lacrosse Stars and Soccer Squirts for the youngest players, plus T-ball, LEGO STEM, kids' cooking, coding and ballet.",
+   "n": "Branford Rec Toddler & Youth Classes",
+   "u": "https://branfordct.myrec.com/info/activities/",
+   "blurb": "Toddler and preschool sports (Soccer Squirts, T-Ball Fun, Ultimate Ball Time, Little Track & Field and Little Lacrosse Stars), Staying Fit for preschoolers, New Haven Ballet, plus kids' pottery at Fired Up, cooking, Play-Well LEGO, coding and tennis.",
    "ages": "Ages 2 and up",
    "where": "Branford Parks & Recreation"
   },
@@ -341,6 +535,24 @@ window.TOWN = {
    "blurb": "Branford's volunteer leagues cover soccer, flag and tackle football, Little League, girls' softball, lacrosse, basketball and cheer. Parks & Rec lists contacts for each.",
    "ages": "Youth",
    "where": "Branford"
+  },
+  {
+   "id": "branford-swim",
+   "c": "swim",
+   "n": "Learn to Swim at Walsh Pool",
+   "u": "https://branfordct.myrec.com/info/activities/program_details.aspx?ProgramID=30132",
+   "blurb": "Red Cross swim lessons from parent-and-child classes (6 months–3) through preschool aquatics and levels for school-age kids and teens, held at Walsh Intermediate School's pool (enter by door 157).",
+   "ages": "6 months–18",
+   "where": "Walsh Intermediate School"
+  },
+  {
+   "id": "wwml-collage",
+   "c": "art",
+   "n": "Collage & Crafts Club",
+   "u": "https://www.wwml.org/events",
+   "blurb": "A free monthly Saturday-afternoon craft hour at the Willoughby Wallace Library in Stony Creek; all supplies included, all ages welcome. Check the events page for the next date.",
+   "ages": "All ages",
+   "where": "Willoughby Wallace Memorial Library"
   }
  ],
  "library": {
@@ -458,6 +670,7 @@ window.TOWN = {
           <ul>
             <li><strong>James Blackstone Memorial Library</strong><span data-es="Una emblemática biblioteca de 1896 en el centro, con cuentacuentos semanales.">A landmark 1896 library downtown with weekly storytimes.</span></li>
             <li><strong>Fired Up!</strong><span data-es="Pinta tu propia cerámica en Main Street; se aceptan visitas sin cita de martes a domingo.">Paint-your-own pottery on Main Street; walk-ins welcome Tuesday through Sunday.</span></li>
+            <li><strong>Willoughby Wallace Memorial Library</strong><span data-es="La biblioteca del pueblo de Stony Creek, con cuentacuentos mensual y club de manualidades.">Stony Creek's village library, with a monthly storytime and crafts club.</span></li>
           </ul>
         </div>
         <div>
@@ -574,49 +787,69 @@ window.TOWN = {
 
 <script>window.DATA_ES = {
  "$30 residents / $40 non-residents": "$30 residentes / $40 no residentes",
+ "$65 per child (residents only)": "$65 por niño (solo residentes)",
  "18 months–3 years + caregiver": "18 meses–3 años + adulto",
+ "6 months–18": "6 meses a 18 años",
  "A Christmas and Hanukkah clay project through Branford Parks & Recreation. Register online; the listing has the location.": "Un proyecto de arcilla de Navidad y Janucá a través de Branford Parks & Recreation. Inscríbete en línea; el anuncio indica el lugar.",
  "A Halloween clay project through Branford Parks & Recreation. Register online; the listing has the location.": "Un proyecto de arcilla de Halloween a través de Branford Parks & Recreation. Inscríbete en línea; el anuncio indica el lugar.",
  "A Saturday-afternoon Dungeons & Dragons club for tweens and teens. We couldn't confirm this program on the library's live calendar, so check before you go.": "Un club de Dungeons & Dragons los sábados por la tarde para preadolescentes y adolescentes. No pudimos confirmar este programa en el calendario actual de la biblioteca, así que revisa antes de ir.",
  "A fall and Halloween cookie-decorating class at a local shop. Found in a local news roundup, so check price and spots with the shop.": "Una clase de decoración de galletas de otoño y Halloween en una tienda local. La encontramos en un resumen de noticias locales, así que confirma precio y cupos con la tienda.",
- "A yearly Parks & Rec Halloween tradition. Date not announced yet.": "Una tradición anual de Halloween de Parks & Rec. La fecha aún no se ha anunciado.",
+ "A free Halloween treat mailed to Branford kids in kindergarten through 2nd grade. Register each K–2 child by noon on Oct 23 (residents only).": "Una sorpresa gratuita de Halloween enviada por correo a los niños de Branford de kínder a 2.º grado. Inscribe a cada niño de K–2 antes del mediodía del 23 de octubre (solo residentes).",
+ "A free family class with More to Say on simple signs to use with babies and toddlers, at Stony Creek's village library. Spots are limited; register online.": "Una clase familiar gratuita con More to Say sobre señas sencillas para usar con bebés y niños pequeños, en la biblioteca del pueblo de Stony Creek. Cupo limitado; inscríbete en línea.",
+ "A free monthly Saturday-afternoon craft hour at the Willoughby Wallace Library in Stony Creek; all supplies included, all ages welcome. Check the events page for the next date.": "Una hora gratuita de manualidades un sábado por la tarde al mes en la Willoughby Wallace Library de Stony Creek; incluye todos los materiales y todas las edades son bienvenidas. Revisa la página de eventos para la próxima fecha.",
+ "A free weekly playgroup run with Branford Early Start and the Family Resource Center: songs and fingerplays, small-group activities, then free play for big muscles. Walk-ins welcome; sign in with the leader when you arrive.": "Un grupo de juego semanal gratuito organizado con Branford Early Start y el Family Resource Center: canciones y juegos con los dedos, actividades en grupos pequeños y luego juego libre para moverse. Se aceptan visitas sin inscripción; regístrate con la coordinadora al llegar.",
+ "A supervised Parks & Rec evening for kids while grown-ups get a night out: 90 minutes of portable glow-in-the-dark laser tag outdoors on Hammer Field, plus crafts, games, a movie and snacks. Branford residents only; space is limited.": "Una noche supervisada por Parks & Rec para los niños mientras los adultos salen: 90 minutos de láser tag portátil que brilla en la oscuridad al aire libre en Hammer Field, además de manualidades, juegos, una película y meriendas. Solo residentes de Branford; cupo limitado.",
  "Acro, Gymnastics & Dance": "Acrobacia, gimnasia y baile",
  "Acrobatics and gymnastics alongside ballet, tap, jazz and hip-hop.": "Acrobacia y gimnasia junto con ballet, tap, jazz y hip-hop.",
  "Ages 2 and up": "Desde 2 años",
+ "Ages 2–4 + caregiver": "De 2 a 4 años + adulto",
  "Ages 5–10": "De 5 a 10 años",
+ "Ages 5–11 (grades K–4)": "De 5 a 11 años (kínder a 4.º grado)",
  "All ages": "Todas las edades",
- "An evening parade from the high school to the Green, ending with the tree lighting. In past years it has been on a Saturday in late November or early December.": "Un desfile nocturno desde la escuela secundaria hasta el Green, que termina con el encendido del árbol. En años anteriores ha sido un sábado a finales de noviembre o principios de diciembre.",
+ "Babies & families": "Bebés y familias",
  "Birth–5 + caregiver": "Desde el nacimiento hasta 5 años + adulto",
- "Branford High School to the Town Green": "De Branford High School al Town Green",
- "Branford Recreation Classes": "Clases de Branford Recreation",
+ "Branford Rec Toddler & Youth Classes": "Clases de Branford Rec para pequeños y jóvenes",
  "Branford's landmark 1896 library runs storytimes for babies, twos and preschoolers, Friday video stories, a drop-in Stay and Play, and kids' crafts, LEGO Club and STEM programs. Some storytimes run only on selected weeks, and most kids' programs need registration.": "La emblemática biblioteca de Branford, de 1896, ofrece cuentacuentos para bebés, niños de dos años y preescolares, cuentos en video los viernes, un Stay and Play sin inscripción y manualidades, Club LEGO y programas STEM para niños. Algunos cuentacuentos solo se hacen ciertas semanas y la mayoría de los programas infantiles requieren inscripción.",
  "Branford's volunteer leagues cover soccer, flag and tackle football, Little League, girls' softball, lacrosse, basketball and cheer. Parks & Rec lists contacts for each.": "Las ligas voluntarias de Branford incluyen fútbol, flag football y fútbol americano, Little League, sóftbol femenino, lacrosse, baloncesto y porrismo. Parks & Rec tiene los contactos de cada una.",
+ "Collage & Crafts Club": "Club de collage y manualidades",
+ "Delivered to your mailbox": "Entregado en tu buzón",
  "Diaper Dancers & Toddler Dance": "Diaper Dancers y baile para pequeños",
+ "Early Start Community Play Group": "Grupo de juego comunitario Early Start",
+ "Families welcome (rated G)": "Familias bienvenidas (apta para todo público)",
  "Free": "Gratis",
+ "Free Baby Sign Language Class": "Clase gratuita de lenguaje de señas para bebés",
  "Free, most weeks": "Gratis, casi todas las semanas",
+ "Friday Night Movie: Singin' in the Rain": "Película del viernes: Singin' in the Rain",
  "Grades 5–12": "5.º a 12.º grado",
  "Grown-up-and-me and toddler dance classes, with youth and teen classes as kids grow.": "Clases de baile para adulto y niño y para niños pequeños, con clases para niños y adolescentes a medida que crecen.",
  "Guided family hikes, nature-explorer programs and seasonal walks on Branford's preserves, many free.": "Caminatas guiadas en familia, programas de exploración de la naturaleza y paseos de temporada en las reservas de Branford, muchos gratis.",
  "Halloween Cookie Decorating": "Decoración de galletas de Halloween",
  "Halloween House Hunt": "Búsqueda de casas de Halloween",
  "Halloween Pottery for Kids": "Cerámica de Halloween para niños",
+ "Hanukkah Menorah Lighting on the Green": "Encendido de la menorá en el Green",
  "Holiday Parade & Tree Lighting": "Desfile navideño y encendido del árbol",
  "Holiday Pottery for Kids": "Cerámica navideña para niños",
  "Kids & families": "Niños y familias",
  "Kids & teens": "Niños y adolescentes",
+ "Kids Night Out: Glow-in-the-Dark Laser Tag": "Noche de niños: láser tag que brilla en la oscuridad",
  "Land Trust Nature Programs": "Programas de naturaleza del Land Trust",
+ "Learn to Swim at Walsh Pool": "Aprende a nadar en la piscina Walsh",
  "Legacy Theatre Classes": "Clases en Legacy Theatre",
- "Little Lacrosse Stars and Soccer Squirts for the youngest players, plus T-ball, LEGO STEM, kids' cooking, coding and ballet.": "Little Lacrosse Stars y Soccer Squirts para los más pequeños, además de T-ball, LEGO STEM, cocina infantil, programación y ballet.",
  "Music Together": "Music Together",
  "Paid; see listing": "Con costo; ver anuncio",
- "Parks & Rec's annual map of decorated houses around town to drive or walk by. This year's map isn't posted yet.": "El mapa anual de Parks & Rec con casas decoradas por el pueblo para recorrer en auto o a pie. El mapa de este año aún no está publicado.",
+ "Parks & Rec's fourth annual map of homes and businesses decorated for Halloween, ready for a drive-by or evening walk. The map and voting link go live Oct 20; vote for a favorite through Oct 29, with results on Oct 30.": "El cuarto mapa anual de Parks & Rec con casas y negocios decorados para Halloween, para recorrer en auto o caminar de noche. El mapa y la votación se publican el 20 de octubre; vota por tu favorita hasta el 29, y los resultados salen el 30.",
+ "Red Cross swim lessons from parent-and-child classes (6 months–3) through preschool aquatics and levels for school-age kids and teens, held at Walsh Intermediate School's pool (enter by door 157).": "Clases de natación de la Cruz Roja, desde clases de padre e hijo (6 meses a 3 años) hasta natación preescolar y niveles para niños en edad escolar y adolescentes, en la piscina de Walsh Intermediate School (entrada por la puerta 157).",
  "Scarecrows on the Green": "Espantapájaros en el Green",
  "See the library's calendar": "Ver el calendario de la biblioteca",
  "Teen D&D Roleplaying Club": "Club juvenil de rol D&D",
  "Ten-week family music classes through Nov 21. The Saturday 9:30 a.m. section had room when last checked; Friday was full.": "Clases de música en familia de diez semanas hasta el 21 de noviembre. La sección del sábado a las 9:30 a. m. tenía cupo en la última revisión; la del viernes estaba llena.",
+ "The 1952 musical classic on the big screen at the Willoughby Wallace Library. Free, no registration, light refreshments.": "El clásico musical de 1952 en pantalla grande en la Willoughby Wallace Library. Gratis, sin inscripción, con refrigerio ligero.",
  "The Branford Garden Club's annual display of scarecrows made by local businesses, schools, clubs and families, all around the Town Green. Free to stroll anytime.": "La exhibición anual del Branford Garden Club con espantapájaros hechos por negocios, escuelas, clubes y familias locales, alrededor del Town Green. Gratis para pasear a cualquier hora.",
  "The Great Goblin Giveaway": "The Great Goblin Giveaway",
+ "The menorah on the Town Green is lit each of the eight nights of Hanukkah, from sundown Dec 4 through Dec 12.": "La menorá del Town Green se enciende cada una de las ocho noches de Janucá, desde el atardecer del 4 de diciembre hasta el 12.",
+ "The parade leaves Branford High School at 6:30 p.m. and marches down East Main and Main Street to the Town Green for the tree lighting (7:15 last year). Bring a non-perishable food item for the Branford Food Council. Only last year's details are posted; the Saturday after Thanksgiving is when it's been held, so check the town's page before you go.": "El desfile sale de Branford High School a las 6:30 p. m. y recorre East Main y Main Street hasta el Town Green para el encendido del árbol (a las 7:15 el año pasado). Trae un alimento no perecedero para el Branford Food Council. Solo están publicados los detalles del año pasado; se ha hecho el sábado después de Acción de Gracias, así que revisa la página del pueblo antes de ir.",
  "Toddler & Me Creative Movement": "Movimiento creativo para pequeños y adultos",
+ "Toddler and preschool sports (Soccer Squirts, T-Ball Fun, Ultimate Ball Time, Little Track & Field and Little Lacrosse Stars), Staying Fit for preschoolers, New Haven Ballet, plus kids' pottery at Fired Up, cooking, Play-Well LEGO, coding and tennis.": "Deportes para pequeños y preescolares (Soccer Squirts, T-Ball Fun, Ultimate Ball Time, Little Track & Field y Little Lacrosse Stars), Staying Fit para preescolares, New Haven Ballet, además de cerámica infantil en Fired Up, cocina, LEGO de Play-Well, programación y tenis.",
  "Toddler dance, storytime and drama, acting classes for ages 6–17, and a Wheel Life troupe for performers who use mobility devices and their families. Check the current session.": "Baile, cuentos y teatro para niños pequeños, clases de actuación para edades de 6 a 17 años y un grupo Wheel Life para artistas que usan dispositivos de movilidad y sus familias. Consulta la sesión actual.",
  "Toddlers–teens": "Niños pequeños–adolescentes",
  "Tuesdays 9:30–10 a.m. in monthly sessions (Oct 6–27, Nov 3–24), $60 residents / $70 non-residents, through Branford Parks & Recreation.": "Martes de 9:30 a 10 a. m. en sesiones mensuales (6–27 de octubre, 3–24 de noviembre), $60 residentes / $70 no residentes, a través de Branford Parks & Recreation.",

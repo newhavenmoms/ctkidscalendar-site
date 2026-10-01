@@ -56,6 +56,19 @@
         "kidsOnly": false,
         "defaultFree": true,
         "method": "paste: Filters \u2192 kids age groups \u2192 List view, copy each page"
+      },
+      {
+        "name": "Willoughby Wallace Memorial Library",
+        "platform": "Squarespace",
+        "url": "https://www.wwml.org/events?format=ical",
+        "calendarPage": "https://www.wwml.org/events",
+        "src": "https://www.wwml.org/events",
+        "venue": "wwml",
+        "venueName": "Willoughby Wallace Memorial Library",
+        "address": "146 Thimble Islands Rd, Stony Creek",
+        "kidsOnly": false,
+        "defaultFree": true,
+        "note": "Feed link follows Squarespace's standard pattern; not yet tested."
       }
     ],
     "glastonbury": [
