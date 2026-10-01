@@ -84,6 +84,19 @@
         "kidsOnly": false,
         "defaultFree": true,
         "method": "paste: use the filtered kids list link in SOURCES.md, copy each page"
+      },
+      {
+        "name": "Historical Society of Glastonbury",
+        "platform": "The Events Calendar (WordPress)",
+        "url": "https://hsgct.org/events/list/?ical=1",
+        "calendarPage": "https://hsgct.org/events/",
+        "src": "https://hsgct.org/events/",
+        "venue": "hsg-museum",
+        "venueName": "Museum on the Green",
+        "address": "1944 Main St",
+        "kidsOnly": false,
+        "defaultFree": true,
+        "note": "Mostly adult events; the importer filters for kids."
       }
     ],
     "middletown": [

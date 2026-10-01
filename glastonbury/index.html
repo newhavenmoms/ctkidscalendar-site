@@ -71,6 +71,26 @@ window.TOWN = {
   "glas-offsite": [
    "Off site (location on registration)",
    "Glastonbury"
+  ],
+  "riverfront-cc": [
+   "Riverfront Community Center",
+   "300 Welles St"
+  ],
+  "riverfront-park": [
+   "Riverfront Park",
+   "300 Welles St"
+  ],
+  "ghs": [
+   "Glastonbury High School",
+   "330 Hubbard St"
+  ],
+  "ghs-pool": [
+   "Glastonbury High School Pool",
+   "330 Hubbard St"
+  ],
+  "glas-around": [
+   "Decorated homes around Glastonbury",
+   "Map from Parks & Rec"
   ]
  },
  "venueMeta": {
@@ -81,10 +101,151 @@ window.TOWN = {
   "glas-offsite": [
    null,
    0
+  ],
+  "riverfront-cc": [
+   null,
+   0
+  ],
+  "riverfront-park": [
+   null,
+   0
+  ],
+  "ghs": [
+   null,
+   0
+  ],
+  "ghs-pool": [
+   null,
+   1
+  ],
+  "glas-around": [
+   null,
+   0
   ]
  },
  "hoods": [],
- "events": [],
+ "events": [
+  {
+   "t": "Glastonbury Apple Harvest & Music Festival",
+   "v": "riverfront-park",
+   "when": [
+    {
+     "from": "2026-10-16",
+     "t": [
+      [
+       "17:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-17",
+     "t": [
+      [
+       "10:00",
+       "22:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-18",
+     "t": [
+      [
+       "11:00",
+       "17:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Small admission (under 6 free in past years); rides extra",
+   "free": false,
+   "drop": true,
+   "blurb": "The town's 51st annual fall festival at Riverfront Park: a carnival midway with rides, 20-plus food trucks, live music on several stages, craft vendors and apple treats. Ride wristbands and credits are sold separately. Past years have had fireworks on Saturday night.",
+   "src": "https://www.eventbrite.com/e/2026-glastonbury-apple-harvest-and-music-festival-tickets-1994245146918",
+   "special": "fall"
+  },
+  {
+   "t": "Santa's Run",
+   "v": "ghs",
+   "when": [
+    {
+     "from": "2026-12-06",
+     "t": [
+      [
+       "12:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages (3.5-mile course)",
+   "a": [
+    "big"
+   ],
+   "price": "$20 pre-registered; $30 race day",
+   "free": false,
+   "rsvp": true,
+   "blurb": "A family holiday road race that draws thousands of runners in their wildest holiday costumes; costume judging starts at 11 a.m. and there's a raffle. Online registration opens Oct 14 and closes Dec 4 at noon. Snow date: Dec 13.",
+   "src": "https://www.glastonburyct.gov/departments/department-directory-i-z/parks-and-recreation/santa-s-run",
+   "special": "hol"
+  },
+  {
+   "t": "Santa's Underwater Adventure",
+   "v": "ghs-pool",
+   "when": [
+    {
+     "from": "2026-12-05",
+     "t": [
+      [
+       "11:30",
+       "13:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Ages 2 and up",
+   "a": [
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "See listing",
+   "free": false,
+   "rsvp": true,
+   "blurb": "Take a family underwater photo with Santa, with help from the regional emergency dive team, plus a craft, hot chocolate and free swim. Going in the pool and underwater is part of it. Up to 6 per household; registration closes Dec 4. Bring an unwrapped toy to donate.",
+   "src": "https://glastonburyct.myrec.com/info/activities/program_details.aspx?ProgramID=30211",
+   "special": "hol"
+  },
+  {
+   "t": "Festive Driving Tour",
+   "v": "glas-around",
+   "when": [
+    {
+     "from": "2026-12-04",
+     "to": "2026-12-21",
+     "t": []
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "Parks & Rec's map of homes decorated for the holidays comes out Dec 4 for a do-it-yourself evening drive. Complete the scavenger hunt Dec 11–21 for a chance at a $30 program credit.",
+   "src": "https://glastonburyct.myrec.com/info/activities/program_details.aspx?ProgramID=30003",
+   "special": "hol"
+  }
+ ],
  "tba": [
   {
    "g": "hw",
@@ -94,7 +255,62 @@ window.TOWN = {
    "src": "https://wtmlib.librarycalendar.com/events/list"
   }
  ],
- "classes": [],
+ "classes": [
+  {
+   "id": "glas-playgroup",
+   "c": "play",
+   "n": "Parent-Child Playgroup",
+   "u": "https://glastonburyct.myrec.com/info/activities/program_details.aspx?ProgramID=29969",
+   "blurb": "Six-week sessions of unstructured play on the Academy gym's carpeted spring floor, Tuesdays and Thursdays at 9 and 10 a.m. ($28 per session). Most fall slots fill; the Tuesday 9 a.m. Fall 2 session (Oct 20–Dec 1) still had spots.",
+   "ages": "Ages 1–4 + caregiver",
+   "where": "Academy Building, 2143 Main St"
+  },
+  {
+   "id": "glas-kno",
+   "c": "play",
+   "n": "Kids Night Out",
+   "u": "https://glastonburyct.myrec.com/info/activities/program_details.aspx?ProgramID=30007",
+   "blurb": "A monthly Friday party (6–9 p.m., $20) with pizza, crafts, games and a movie while grown-ups get a night off. All fall dates sold out; sign up as soon as the next season's registration opens.",
+   "ages": "Ages 5–11",
+   "where": "Academy Building, 2143 Main St"
+  },
+  {
+   "id": "glas-preschool",
+   "c": "music",
+   "n": "Parks & Rec Preschool Classes",
+   "u": "https://glastonburyct.myrec.com/info/activities/default.aspx?CategoryID=1542&type=activities",
+   "blurb": "Music Together, My Grown Up & Me classes, Skyhawks preschool sports and the Kangaroo Kids program, all through Glastonbury Parks & Recreation. Check each listing for days and openings.",
+   "ages": "Toddlers–preschool",
+   "where": "Glastonbury Parks & Recreation"
+  },
+  {
+   "id": "glas-gymnastics",
+   "c": "move",
+   "n": "Glastonbury Gymnastics",
+   "u": "https://glastonburyct.myrec.com/info/activities/program_details.aspx?ProgramID=29960",
+   "blurb": "Town-run recreational gymnastics lessons and a competitive team, in fall sessions.",
+   "ages": "Kids",
+   "where": "Glastonbury Parks & Recreation"
+  },
+  {
+   "id": "glas-youth",
+   "c": "build",
+   "n": "Parks & Rec Youth Classes",
+   "u": "https://glastonburyct.myrec.com/info/activities/default.aspx?CategoryID=1553&type=activities",
+   "blurb": "Food Explorers cooking, Sew This! sewing, youth tennis, fall enrichment and sports, Babysitting and Home Alone Safety courses, the Youth & Teen Center, and Vacation Voyagers on school breaks.",
+   "ages": "School-age & teens",
+   "where": "Glastonbury Parks & Recreation"
+  },
+  {
+   "id": "glas-swim",
+   "c": "swim",
+   "n": "Swim Team & Private Lessons",
+   "u": "https://glastonburyct.myrec.com/info/activities/default.aspx?CategoryID=1545&type=activities",
+   "blurb": "Fall/winter recreation and USA swim teams, plus private swim lessons, through Glastonbury Parks & Recreation.",
+   "ages": "Kids & teens",
+   "where": "Glastonbury Parks & Recreation"
+  }
+ ],
  "library": {
   "for": "Free, every week",
   "name": "Welles-Turner Memorial Library",
@@ -198,13 +414,19 @@ window.TOWN = {
         <div>
           <h3 data-i18n="getOutside">Get outside</h3>
           <ul>
-            <li><strong>Riverfront Park</strong><span data-es="Un parque junto al río Connecticut con parque infantil, senderos y una casa de botes.">A park on the Connecticut River with a playground, walking paths and a boathouse.</span></li>
+            <li><strong>Riverfront Park</strong><span data-es="Un parque junto al río Connecticut con parque infantil, senderos y una casa de botes; sede del Festival de la Cosecha de Manzanas.">A park on the Connecticut River with a playground, walking paths and a boathouse; home of the Apple Harvest Festival.</span></li>
+            <li><strong>Belltown Hill Orchards</strong><span data-es="Cosecha tus propias manzanas (24 variedades) y calabazas hasta finales de octubre; una carreta te lleva a los campos. La cosecha termina a las 4:15 y no se permiten cochecitos en los campos.">Pick-your-own apples (24 varieties) and pumpkins into late October; a wagon takes you to the fields. Picking ends at 4:15, and no strollers in the fields.</span></li>
+            <li><strong>Dondero Orchards</strong><span data-es="Un huerto centenario de South Glastonbury con cosecha propia de manzanas y tienda.">A century-old South Glastonbury orchard with pick-your-own apples and a farm store.</span></li>
+            <li><strong>Rose's Berry Farm</strong><span data-es="Una granja sin pesticidas donde cosechas tu propia fruta, con manzanas y calabazas en otoño.">A pesticide-free pick-your-own farm with apples and pumpkins in the fall.</span></li>
+            <li><strong>Scott's Orchard &amp; Nursery</strong><span data-es="Cosecha tus propias manzanas, laberinto de heno y paseos en carreta tirada por caballos los fines de semana de otoño.">Pick-your-own apples, a hay maze and horse-drawn hayrides on fall weekends.</span></li>
+            <li><strong>Robb's Farm</strong><span data-es="Laberinto de maíz, paseos en heno, calabazas y animales de granja.">A corn maze, hayrides, pumpkins and farm animals.</span></li>
           </ul>
         </div>
         <div>
           <h3 class="rain" data-i18n="rainyDay">Rainy day, indoors</h3>
           <ul>
             <li><strong>Welles-Turner Memorial Library</strong><span data-es="Cuentacuentos para bebés y niños pequeños en sesiones; requiere inscripción.">Baby and toddler storytimes in sessions; registration required.</span></li>
+            <li><strong>Museum on the Green</strong><span data-es="El museo gratuito de la Historical Society, abierto lunes, martes y jueves de 9 a 4 y el tercer domingo de cada mes de 1 a 4.">The Historical Society's free town museum, open Mon, Tue and Thu 9–4 and the third Sunday of each month 1–4.</span></li>
           </ul>
         </div>
         <div>
@@ -321,12 +543,45 @@ window.TOWN = {
 </footer>
 
 <script>window.DATA_ES = {
+ "$20 pre-registered; $30 race day": "$20 con inscripción previa; $30 el día de la carrera",
+ "A family holiday road race that draws thousands of runners in their wildest holiday costumes; costume judging starts at 11 a.m. and there's a raffle. Online registration opens Oct 14 and closes Dec 4 at noon. Snow date: Dec 13.": "Una carrera navideña familiar que reúne a miles de corredores con sus disfraces navideños más locos; el concurso de disfraces empieza a las 11 a. m. y hay una rifa. La inscripción en línea abre el 14 de octubre y cierra el 4 de diciembre al mediodía. Fecha alternativa por nieve: 13 de diciembre.",
+ "A monthly Friday party (6–9 p.m., $20) with pizza, crafts, games and a movie while grown-ups get a night off. All fall dates sold out; sign up as soon as the next season's registration opens.": "Una fiesta mensual de viernes (6 a 9 p. m., $20) con pizza, manualidades, juegos y una película mientras los adultos tienen la noche libre. Todas las fechas de otoño se agotaron; inscríbete en cuanto abra la inscripción de la próxima temporada.",
+ "Ages 1–4 + caregiver": "De 1 a 4 años + adulto",
+ "Ages 2 and up": "Desde 2 años",
+ "Ages 5–11": "De 5 a 11 años",
+ "All ages": "Todas las edades",
+ "All ages (3.5-mile course)": "Todas las edades (recorrido de 3.5 millas)",
  "Drop-in storytimes for families with kids 5 and under almost every week (Bedtime Stories, Wee Rock!, Together Time Tales, Little Bookworms, Tinkerlab), registration-based storytimes by age, a 2CF maker studio with drop-in nights, and kids' STEAM and craft programs. Session storytimes fill by lottery in September.": "Cuentacuentos sin inscripción para familias con niños de 5 años o menos casi todas las semanas (Bedtime Stories, Wee Rock!, Together Time Tales, Little Bookworms, Tinkerlab), cuentacuentos por edad con inscripción, un estudio maker 2CF con noches abiertas y programas STEAM y de manualidades para niños. Los cupos de los cuentacuentos por sesión se asignan por sorteo en septiembre.",
+ "Fall/winter recreation and USA swim teams, plus private swim lessons, through Glastonbury Parks & Recreation.": "Equipos de natación recreativos y USA Swimming de otoño e invierno, además de clases privadas, a través de Glastonbury Parks & Recreation.",
+ "Festive Driving Tour": "Recorrido navideño en auto",
+ "Food Explorers cooking, Sew This! sewing, youth tennis, fall enrichment and sports, Babysitting and Home Alone Safety courses, the Youth & Teen Center, and Vacation Voyagers on school breaks.": "Cocina Food Explorers, costura Sew This!, tenis juvenil, enriquecimiento y deportes de otoño, cursos de niñera y seguridad en casa, el Youth & Teen Center y Vacation Voyagers en las vacaciones escolares.",
+ "Free": "Gratis",
  "Free, every week": "Gratis, cada semana",
+ "Glastonbury Apple Harvest & Music Festival": "Festival de la Cosecha de Manzanas y Música de Glastonbury",
+ "Glastonbury Gymnastics": "Gimnasia de Glastonbury",
+ "Kids": "Niños",
+ "Kids & teens": "Niños y adolescentes",
+ "Kids Night Out": "Noche de niños",
+ "Music Together, My Grown Up & Me classes, Skyhawks preschool sports and the Kangaroo Kids program, all through Glastonbury Parks & Recreation. Check each listing for days and openings.": "Music Together, clases My Grown Up & Me, deportes preescolares Skyhawks y el programa Kangaroo Kids, todo a través de Glastonbury Parks & Recreation. Revisa cada anuncio para días y cupos.",
  "Online, through the library": "En línea, a través de la biblioteca",
+ "Parent-Child Playgroup": "Grupo de juego para padres e hijos",
+ "Parks & Rec Preschool Classes": "Clases preescolares de Parks & Rec",
+ "Parks & Rec Youth Classes": "Clases juveniles de Parks & Rec",
+ "Parks & Rec's map of homes decorated for the holidays comes out Dec 4 for a do-it-yourself evening drive. Complete the scavenger hunt Dec 11–21 for a chance at a $30 program credit.": "El mapa de Parks & Rec con casas decoradas para las fiestas se publica el 4 de diciembre para un paseo nocturno en auto por tu cuenta. Completa la búsqueda del tesoro del 11 al 21 de diciembre para participar por un crédito de $30 en programas.",
+ "Santa's Run": "Carrera de Santa",
+ "Santa's Underwater Adventure": "La aventura submarina de Santa",
+ "School-age & teens": "Edad escolar y adolescentes",
+ "See listing": "Ver anuncio",
  "See the library's calendar": "Ver el calendario de la biblioteca",
+ "Six-week sessions of unstructured play on the Academy gym's carpeted spring floor, Tuesdays and Thursdays at 9 and 10 a.m. ($28 per session). Most fall slots fill; the Tuesday 9 a.m. Fall 2 session (Oct 20–Dec 1) still had spots.": "Sesiones de seis semanas de juego libre en el piso de resortes alfombrado del gimnasio de la Academy, martes y jueves a las 9 y a las 10 a. m. ($28 por sesión). La mayoría de los cupos de otoño se llenan; la sesión Fall 2 del martes a las 9 a. m. (20 de octubre al 1 de diciembre) aún tenía lugares.",
+ "Small admission (under 6 free in past years); rides extra": "Entrada económica (gratis para menores de 6 en años anteriores); juegos aparte",
  "Spooky Glastonbury Writing Contest": "Concurso de escritura Spooky Glastonbury",
- "The library's 2nd annual contest for Glastonbury residents ages 6 and up: write an original spooky tale and submit it by Oct 16. Guidelines are on the library's event page.": "El 2.º concurso anual de la biblioteca para residentes de Glastonbury de 6 años en adelante: escribe un cuento de miedo original y envíalo antes del 16 de octubre. Las reglas están en la página del evento de la biblioteca."
+ "Swim Team & Private Lessons": "Equipo de natación y clases privadas",
+ "Take a family underwater photo with Santa, with help from the regional emergency dive team, plus a craft, hot chocolate and free swim. Going in the pool and underwater is part of it. Up to 6 per household; registration closes Dec 4. Bring an unwrapped toy to donate.": "Tómate una foto familiar bajo el agua con Santa, con ayuda del equipo regional de buceo de emergencia, además de una manualidad, chocolate caliente y nado libre. Entrar a la piscina y sumergirse es parte de la actividad. Hasta 6 por hogar; la inscripción cierra el 4 de diciembre. Trae un juguete sin envolver para donar.",
+ "The library's 2nd annual contest for Glastonbury residents ages 6 and up: write an original spooky tale and submit it by Oct 16. Guidelines are on the library's event page.": "El 2.º concurso anual de la biblioteca para residentes de Glastonbury de 6 años en adelante: escribe un cuento de miedo original y envíalo antes del 16 de octubre. Las reglas están en la página del evento de la biblioteca.",
+ "The town's 51st annual fall festival at Riverfront Park: a carnival midway with rides, 20-plus food trucks, live music on several stages, craft vendors and apple treats. Ride wristbands and credits are sold separately. Past years have had fireworks on Saturday night.": "El 51.º festival anual de otoño del pueblo en Riverfront Park: feria con juegos mecánicos, más de 20 camiones de comida, música en vivo en varios escenarios, artesanos y delicias de manzana. Las pulseras y créditos para los juegos se venden aparte. En años anteriores hubo fuegos artificiales el sábado por la noche.",
+ "Toddlers–preschool": "Niños pequeños–preescolar",
+ "Town-run recreational gymnastics lessons and a competitive team, in fall sessions.": "Clases recreativas de gimnasia y un equipo competitivo organizados por el pueblo, en sesiones de otoño."
 };</script>
 <script data-goatcounter="https://ctkidscalendar.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="/shared/imports/glastonbury.js"></script>

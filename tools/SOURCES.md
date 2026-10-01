@@ -165,10 +165,14 @@ The "Also cited in your data" lists are generated from the site itself by
 | Source | What to look for / how often | Last checked |
 |---|---|---|
 | [Welles-Turner Memorial Library — kids' events list](https://wtmlib.librarycalendar.com/events/list?age_groups%5B59%5D=59&age_groups%5B143%5D=143&age_groups%5B58%5D=58) | Monthly. This link is already filtered to kids' age groups: copy each page and paste to Claude. Session storytimes fill by lottery each September (and likely January); watch for new sessions. | Sep 30, 2026 (imported Oct–Dec) |
+| [Glastonbury Parks & Rec — programs list](https://glastonburyct.myrec.com/info/activities/default.aspx?type=activities) | Monthly, and when seasons open (registration days fill fast). Family Programs, Holiday Programs and Pre-School categories: Story Stroll, Santa's Underwater Adventure, Festive Driving Tour, Kids Night Out, playgroup. | Sep 30, 2026 |
+| [Santa's Run](https://www.glastonburyct.gov/departments/department-directory-i-z/parks-and-recreation/santa-s-run) | Each October: date and registration (Dec 6 this year). | Sep 30, 2026 |
+| [Apple Harvest & Music Festival](https://www.eventbrite.com/e/2026-glastonbury-apple-harvest-and-music-festival-tickets-1994245146918) | Each summer: next year's dates (CT River Valley Chamber). Don't confuse with England's Glastonbury Festival. | Sep 30, 2026 |
+| [Historical Society of Glastonbury — events](https://hsgct.org/events/) | Every month or two: Thanksgiving Celebration and other family events. Has a calendar feed (saved in sources.json). | Sep 30, 2026 |
+| [Glastonbury farms list (town)](https://www.glastonburyct.gov/departments/department-directory-a-h/health/better-health-initiatives/glastonbury-farms-and-resources) | Each spring and fall: pick-your-own seasons, hayrides, corn mazes. | Sep 30, 2026 |
 
 **Worth adding** (not used yet)
 
-- [Glastonbury Parks & Recreation](https://www.glastonburyct.gov/) — Seasonal programs and town events — not yet reviewed.
 
 
 ---
