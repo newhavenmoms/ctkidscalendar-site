@@ -713,3 +713,8 @@ footer{font-size:.84rem;line-height:1.6}
 .schoolnote strong{font-family:var(--mono);text-transform:uppercase;letter-spacing:.05em;font-size:.78rem}
 .weekday.closureonly{padding:.55rem 0;border-bottom:1px solid var(--line)}
 .weekday.closureonly h4{margin:.1rem 0;font-size:1.05rem}
+
+/* Things-to-do place names that link to the place's own website */
+.places li strong a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent)}
+.places li strong a:hover{text-decoration-color:currentColor}
+.places li strong a::after{content:"\2197";font-size:.75em;margin-left:.25em;opacity:.55}

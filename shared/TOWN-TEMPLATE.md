@@ -23,7 +23,10 @@ those two files, and every town gets it.
    style="--tc:<pin color>">Name</a></li>` in the `.townlist` — **keep the
    list alphabetical** — and a pin in the `.ctmap` SVG (copy an existing
    `<a class="mappin">` block and adjust the coordinates and label width).
-8. Add the town's URL to `/sitemap.xml` and its slug to the `TOWNS` list in
+8. Add website links for the town's "Things to do" places to
+   `shared/place-links.json` (checked links only), then run
+   `node tools/link-places.js`. Run it with `--report` to see places still unlinked.
+9. Add the town's URL to `/sitemap.xml` and its slug to the `TOWNS` list in
    `shared/build-stats.js`, then re-run `node shared/build-stats.js`.
 
 ## `window.TOWN` field reference
