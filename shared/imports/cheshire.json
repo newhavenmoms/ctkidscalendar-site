@@ -1,0 +1,840 @@
+{
+ "venues": {
+  "cheshire-library": [
+   "Cheshire Public Library",
+   "104 Main St"
+  ]
+ },
+ "venueMeta": {
+  "cheshire-library": [
+   null,
+   1
+  ]
+ },
+ "events": [
+  {
+   "t": "Art Exploration with ARTs Studio (Grades K-5)",
+   "v": "cheshire-library",
+   "ages": "Grades K–5",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "blurb": "Our friends from ARTs Studio in Cheshire will teach about the technique of pointillism, using The Dot by Peter Reynolds. Participants will create an original work of art to take home! Sponsored by The Friends of the Cheshire Library. Room: Mary Baldwin Room, Main Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/17352089",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-10-01",
+     "t": [
+      [
+       "16:00",
+       "17:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Play and Learn (Ages 0-5 with caregiver)",
+   "v": "cheshire-library",
+   "ages": "Ages 0–5",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "Children and their caregivers explore interactive and sensory activities together, encouraging the development of both early literacy and social emotional skills through play. Enjoy a shortened storytime with books, rhymes and finger plays! Room: Mary Baldwin Room, Main Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/15897968",
+   "imp": "Cheshire Public Library",
+   "s": [
+    [
+     5,
+     [
+      [
+       "10:00",
+       "10:45"
+      ]
+     ],
+     "2026-10-02",
+     "2026-11-20"
+    ]
+   ],
+   "x": [
+    "2026-10-30",
+    "2026-11-06",
+    "2026-11-13"
+   ]
+  },
+  {
+   "t": "Make Me an Author Creative Writing Club (Grades 3-4)",
+   "v": "cheshire-library",
+   "ages": "Grades 3–4",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "blurb": "Storytellers and creative writers in third and fourth grade -- this one's for you! Room: The Loft, Upper Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/17302570",
+   "imp": "Cheshire Public Library",
+   "s": [
+    [
+     1,
+     [
+      [
+       "16:00",
+       "16:45"
+      ]
+     ],
+     "2026-10-05",
+     "2026-12-21"
+    ]
+   ],
+   "x": [
+    "2026-10-12",
+    "2026-10-26",
+    "2026-11-09",
+    "2026-11-16",
+    "2026-11-23",
+    "2026-12-14"
+   ]
+  },
+  {
+   "t": "STEAM Lab Explorers: Mad Scientist Edition (Grades K-2)",
+   "v": "cheshire-library",
+   "ages": "Grades K–2",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Hair-raising science that is guaranteed to make your brain itch we as explore Frankenstein, galvanism, electricity, and life! Registration required. Sponsored by the Friends of the Cheshire Public Library. Room: The Loft, Upper Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/15899344",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-10-06",
+     "t": [
+      [
+       "16:00",
+       "16:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Teen Advisory Board (Grades 6-12)",
+   "v": "cheshire-library",
+   "ages": "Grades 6–12",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "blurb": "The Teen Advisory Board is a group of teens in grades 6-12 who want to take an active part in helping the library and the community. Giveaways and snacks will be provided. What does the TAB do? Help run library programs. Write book reviews. Room: The Loft, Upper Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/15900369",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-10-07",
+     "t": [
+      [
+       "15:30",
+       "16:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-04",
+     "t": [
+      [
+       "15:30",
+       "16:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Stories on Saturday (All Ages)",
+   "v": "cheshire-library",
+   "ages": "All ages",
+   "a": [
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Start your weekend off right with stories, songs, rhymes, movement and BUBBLES! For children of all ages and their caregivers. Registration is required. Registration begins on the previous Monday at 10:00am. Room: Mary Baldwin Room, Main Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/15921444",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-10-10",
+     "t": [
+      [
+       "10:00",
+       "10:45"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-28",
+     "t": [
+      [
+       "10:00",
+       "10:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Winnie-the-Pooh Party (Ages 2-5)",
+   "v": "cheshire-library",
+   "ages": "Ages 2–5",
+   "a": [
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "It's been 100 years since the beloved book Winnie-the-Pooh by A. A. Milne was first published. Celebrate the Hundred Acre Wood with activities and a sweet treat Pooh would approve of. Registration required. Sponsored by The Friends of the Cheshire Library. Room: Mary Baldwin Room, Main Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/17260590",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-10-14",
+     "t": [
+      [
+       "10:00",
+       "10:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Family STEAM Night: Mad Scientist Edition",
+   "v": "cheshire-library",
+   "ages": "See listing",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Hair raising science that is guaranteed to make you brain itch we as explore Frankenstein, galvanism, static electricity, and the foundations of life! This program is designed for families to enjoy the wonders of STEAM together! Registration required. Room: Mary Baldwin Room, Main Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/17203318",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-10-14",
+     "t": [
+      [
+       "18:30",
+       "19:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Dodd Drop In (Grades 7-8)",
+   "v": "cheshire-library",
+   "ages": "Grades 7–8",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "Drop by the library on early dismissal day for Dodd Middle School. We'll have snacks, board games, and extra space to relax with friends. No registration required. Just drop in! Room: Mary Baldwin Room, Main Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/17270678",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-10-15",
+     "t": [
+      [
+       "14:15",
+       "15:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Nutmeg Readers (Grades K-3)",
+   "v": "cheshire-library",
+   "ages": "Grades K–3",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "We'll read a current or past Elementary Nutmeg Book Award nominee aloud together and enjoy an activity related to the book. Registration is required. Caregivers for children under 12 are required to remain in the library for the duration of the program. Room: The Loft, Upper Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/17402926",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-10-15",
+     "t": [
+      [
+       "16:00",
+       "16:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "STEAM  Lab Jr. Mad Scientist Edition (Ages 3-5)",
+   "v": "cheshire-library",
+   "ages": "Ages 3–5",
+   "a": [
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Join us for a colorful science program full of science as we melt monster hands and make pumpkins puke! This program is designed for CHILDREN AGES 3-5 and their caregiver. Registration required. Room: The Loft, Upper Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/15899288",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-10-19",
+     "t": [
+      [
+       "11:00",
+       "11:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Yarn Garlands (Grades 3-5)",
+   "v": "cheshire-library",
+   "ages": "Grades 3–5",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Make a decorative yarn garland! You choose the colors and style: spooky with ghosts, pumpkins, and spiders; fun with colorful tassles and pom poms; or something all your own. For children in grades 3 to 5. Registration required. Room: The Loft, Upper Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/15899184",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-10-20",
+     "t": [
+      [
+       "16:00",
+       "16:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Teen VR (Grades 6-12)",
+   "v": "cheshire-library",
+   "ages": "Grades 6–12",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "Escape reality for a while and travel into a virtual world using the library's Oculus headsets. Visit the International Space Station or a coral reef! Work with a partner to defuse a virtual bomb! Walk through a ghost story set here in Cheshire! Room: Mary Baldwin Room, Main Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/15900446",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-10-21",
+     "t": [
+      [
+       "15:30",
+       "16:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-18",
+     "t": [
+      [
+       "15:30",
+       "16:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Teen Cozy Cafe (Grades 6-12)",
+   "v": "cheshire-library",
+   "ages": "Grades 6–12",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "blurb": "A comfy, relaxing space with warm drinks and snacks, puzzling, crafting and room to do homework. Sponsored by The Friends of the Cheshire Public Library. Room: The Loft, Upper Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/17332689",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-10-22",
+     "t": [
+      [
+       "15:30",
+       "16:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-19",
+     "t": [
+      [
+       "15:30",
+       "16:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "STEAM Lab: Mad Scientist Edition (Grades 3-5)",
+   "v": "cheshire-library",
+   "ages": "Grades 3–5",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Join us for hair raising science program that is guaranteed to make you brain itch we as explore Frankenstein, galvanism, electricity and life! This program is designed for children grades 3-5. Registration required. Room: The Loft, Upper Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/15899447",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-10-26",
+     "t": [
+      [
+       "16:00",
+       "16:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Volunteens Craft",
+   "v": "cheshire-library",
+   "ages": "See listing",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "Stop by the Children's Room between 5:30 and 6:30pm to make a craft with the help of teen volunteers! For children of all ages and their caregivers. Registration is not required, just drop in.",
+   "src": "https://cheshirelibrary.libcal.com/event/17321546",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-10-26",
+     "t": [
+      [
+       "17:30",
+       "18:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-23",
+     "t": [
+      [
+       "17:30",
+       "18:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Cupcake Wars (Grades 6-12)",
+   "v": "cheshire-library",
+   "ages": "Grades 6–12",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Go head to head with other teens to find out who made the best cupcake. For teens entering grades 6-12. Registration required. Caregivers for children under 12 years of age must remain inside the library building during events. Room: The Loft, Upper Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/17328434",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-10-27",
+     "t": [
+      [
+       "15:30",
+       "16:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Boo, Baby! Halloween Baby Storytime (Ages 0-12 months)",
+   "v": "cheshire-library",
+   "ages": "Ages 0–12 months",
+   "a": [
+    "baby"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Read, sing, and bounce with baby in this short Halloween themed storytime. We will do special Halloween activities, so feel free to wear a costume! For children ages 0-12 months and their caregivers. Pre-registration is required. Room: Mary Baldwin Room, Main Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/15897953",
+   "imp": "Cheshire Public Library",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-29",
+     "t": [
+      [
+       "10:00",
+       "10:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Cookbook Book Club for Teens (Grades 6-12)",
+   "v": "cheshire-library",
+   "ages": "Grades 6–12",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Join us monthly for a delicious book club where we will each craft a dish and explore new flavors! For October's meeting we'll use recipes from Snacking Bakes by Yossy Arefi. How does it work? Step 1: Choose your recipe. Room: The Loft, Upper Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/17233054",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-10-29",
+     "t": [
+      [
+       "18:00",
+       "19:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-03",
+     "t": [
+      [
+       "18:00",
+       "19:00"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Happy Halloween Party (Ages 2-5)",
+   "v": "cheshire-library",
+   "ages": "Ages 2–5",
+   "a": [
+    "toddler",
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Join us for a not-too-spooky Halloween party with lots of fun activities and games! We will end with a trick-or-treat parade (for non-candy items) around the library so be sure to wear your costumes! Room: Mary Baldwin Room, Main Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/17258885",
+   "imp": "Cheshire Public Library",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-30",
+     "t": [
+      [
+       "10:00",
+       "10:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Write a Letter to a Veteran",
+   "v": "cheshire-library",
+   "ages": "See listing",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "Stop by the library anytime Monday, Nov. 2nd to Wednesday, Nov. 4th to write a letter to or draw a picture for a veteran. We will provide the paper and drawing or writing materials; you provide the creativity! Room: Children's Room.",
+   "src": "https://cheshirelibrary.libcal.com/event/17260581",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-11-02",
+     "to": "2026-11-04",
+     "t": []
+    }
+   ]
+  },
+  {
+   "t": "STEAM Lab Explorers: Balloons Over Broadway Edition (Grades K-2)",
+   "v": "cheshire-library",
+   "ages": "Grades K–2",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Join us for a STEAM program that celebrates the wonders of air pressure as we use helium filled balloons to make our own parade \"floats\"! How much weight can yours lift and will it survive the parade of doom? Room: The Loft, Upper Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/15899345",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-11-03",
+     "t": [
+      [
+       "16:00",
+       "16:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Gnome-vember Party (age 4 )",
+   "v": "cheshire-library",
+   "ages": "Age 4",
+   "a": [
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "You're invited to an afternoon filled with gnomes, fairies and other fantastical friends. Wear your woodland finery, if you like, and enjoy books, activities and crafts featuring magical nature dwellers. Registration required. Room: Mary Baldwin Room, Main Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/17278678",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-11-05",
+     "t": [
+      [
+       "14:30",
+       "15:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Pinecone Hedgehogs (Grades K-5)",
+   "v": "cheshire-library",
+   "ages": "Grades K–5",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "Drop-in to the library to make a hedgehog out of pinecones and art materials. While supplies last. Room: Children's Room.",
+   "src": "https://cheshirelibrary.libcal.com/event/17328279",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-11-10",
+     "t": [
+      [
+       "14:00",
+       "15:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Tiny Turkeys Baby Storytime (Ages 0-12 months)",
+   "v": "cheshire-library",
+   "ages": "Ages 0–12 months",
+   "a": [
+    "baby"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Read, sing, and bounce with baby in this short Thanksgiving themed storytime. We will make a special Thanksgiving craft, so prepare to get messy! For children ages 0-12 months and their caregivers. Pre-registration is required. Room: Mary Baldwin Room, Main Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/15897956",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-11-19",
+     "t": [
+      [
+       "10:00",
+       "10:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "STEAM Lab Jr. Popcorn Science (Ages 3-5)",
+   "v": "cheshire-library",
+   "ages": "Ages 3–5",
+   "a": [
+    "preschool"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Join us as we explore the science of popcorn! and their caregiver. Registration required. You will be emailed in the event of a weather related cancellation. Sponsored by the Friends of the Cheshire Public Library. Room: The Loft, Upper Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/15899289",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-11-19",
+     "t": [
+      [
+       "11:00",
+       "11:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Everybody Dances: Indian Dance Traditions (All ages)",
+   "v": "cheshire-library",
+   "ages": "All ages",
+   "a": [
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "blurb": "In this interactive program, Layavinyasa explores Indian dance traditions through Indian classical dance, folk styles such as Bhangra and Dandiya, and contemporary Bollywood movement, incorporating visuals, music and gentle guided movement. Room: Mary Baldwin Room, Main Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/17194852",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-11-21",
+     "t": [
+      [
+       "14:30",
+       "15:30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "STEAM Lab: Balloons Over Broadway (Grades 3-5)",
+   "v": "cheshire-library",
+   "ages": "Grades 3–5",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Join us for a STEAM program that celebrates the wonders of air pressure as we use helium filled balloons to make our own parade \"floats\"! How much weight can yours lift and will it survive the parade of doom? Room: The Loft, Upper Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/15899448",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-11-23",
+     "t": [
+      [
+       "16:00",
+       "16:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Treasure Chests (Grades 3-5)",
+   "v": "cheshire-library",
+   "ages": "Grades 3–5",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "Decorate your own mini treasure chest! Use it to store your trinkets or give it away as a gift. For children in grades 3 to 5. Registration required. Sponsored by the Friends of the Cheshire Public Library. Room: The Loft, Upper Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/15899185",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-11-24",
+     "t": [
+      [
+       "16:00",
+       "16:45"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Teen Craft Fair",
+   "v": "cheshire-library",
+   "ages": "Grade 6–12",
+   "a": [
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "blurb": "Come support local teen artists while shopping for your holiday gifts this year. Doors will be open from 2:00-4:00pm in the Mary Baldwin Room at the Cheshire Public Library! Room: Mary Baldwin Room, Main Level.",
+   "src": "https://cheshirelibrary.libcal.com/event/17300555",
+   "imp": "Cheshire Public Library",
+   "when": [
+    {
+     "from": "2026-12-05",
+     "t": [
+      [
+       "14:00",
+       "16:00"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "updated": "2026-10-01"
+}

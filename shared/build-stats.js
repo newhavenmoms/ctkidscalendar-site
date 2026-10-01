@@ -2,7 +2,8 @@
    Run this (node shared/build-stats.js from the repo root) any time town
    data changes, so the homepage's headline numbers stay accurate.
    It reads window.TOWN out of each town's index.html and writes
-   shared/stats.json, which the homepage fetches at runtime.
+   shared/stats.json, which the homepage fetches at runtime. Imported events
+   (shared/imports/<town>.json, from tools/approve-imports.js) are counted too.
 
    Definitions used (documented here so a future edit stays consistent):
    - things    = classes.length + events that are NOT a Big Day (e.can.special is unset)
@@ -29,6 +30,14 @@ for (const slug of TOWNS) {
   const TOWN = (function () {
     return eval('(' + html.slice(start, end).replace('window.TOWN = ', '').replace(/;\s*$/, '') + ')');
   })();
+
+  // events published by tools/approve-imports.js live beside the page, not in it
+  const importsFile = path.join(ROOT, 'shared', 'imports', slug + '.json');
+  if (fs.existsSync(importsFile)) {
+    const imp = JSON.parse(fs.readFileSync(importsFile, 'utf8'));
+    TOWN.events = TOWN.events.concat(imp.events || []);
+    for (const k of Object.keys(imp.venues || {})) if (!TOWN.venues[k]) TOWN.venues[k] = imp.venues[k];
+  }
 
   const classCount = TOWN.classes.length;
   const eventCount = TOWN.events.length;

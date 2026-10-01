@@ -1,0 +1,117 @@
+{
+  "_help": "Calendar feeds the importer reads, by town. Paste each library's iCal subscribe link into \"url\" (see tools/README.md for where to find it). \"venue\" must match a venue key on the town page; \"venueName\"/\"address\" are only used if that key doesn't exist yet. \"kidsOnly\": true if the feed is already filtered to children's events. \"defaultFree\": library programs are free unless the listing shows a price.",
+  "towns": {
+    "cheshire": [
+      {
+        "name": "Cheshire Public Library",
+        "platform": "LibCal",
+        "url": "https://cheshirelibrary.libcal.com/ical_subscribe.php?src=p&cid=1860",
+        "calendarPage": "https://cheshirelibrary.libcal.com/",
+        "src": "https://cheshirelibrary.libcal.com/",
+        "venue": "cheshire-library",
+        "venueName": "Cheshire Public Library",
+        "address": "104 Main St",
+        "kidsOnly": false,
+        "defaultFree": true
+      }
+    ],
+    "milford": [
+      {
+        "name": "Milford Public Library",
+        "platform": "LibCal",
+        "url": "",
+        "calendarPage": "https://milford-pl.libcal.com/calendar/children",
+        "src": "https://milford-pl.libcal.com/",
+        "venue": "milford-library",
+        "venueName": "Milford Public Library",
+        "address": "57 New Haven Ave",
+        "kidsOnly": false,
+        "defaultFree": true
+      }
+    ],
+    "trumbull": [
+      {
+        "name": "Trumbull Library",
+        "platform": "LibCal",
+        "url": "",
+        "calendarPage": "https://trumbull.libcal.com/",
+        "src": "https://trumbull.libcal.com/",
+        "venue": "trumbull-library",
+        "venueName": "Trumbull Library",
+        "address": "33 Quality St",
+        "kidsOnly": false,
+        "defaultFree": true
+      }
+    ],
+    "branford": [
+      {
+        "name": "James Blackstone Memorial Library",
+        "platform": "LibraryCalendar",
+        "url": "",
+        "calendarPage": "https://events.blackstonelibrary.org/",
+        "src": "https://www.blackstonelibrary.org/",
+        "venue": "blackstone",
+        "venueName": "James Blackstone Memorial Library",
+        "address": "758 Main St",
+        "kidsOnly": false,
+        "defaultFree": true
+      }
+    ],
+    "glastonbury": [
+      {
+        "name": "Welles-Turner Memorial Library",
+        "platform": "LibraryCalendar",
+        "url": "",
+        "calendarPage": "https://wtmlib.librarycalendar.com/",
+        "src": "https://wtmlib.librarycalendar.com/",
+        "venue": "wtm-library",
+        "venueName": "Welles-Turner Memorial Library",
+        "address": "2407 Main St",
+        "kidsOnly": false,
+        "defaultFree": true
+      }
+    ],
+    "middletown": [
+      {
+        "name": "Russell Library",
+        "platform": "LibraryCalendar",
+        "url": "",
+        "calendarPage": "https://russelllibrary.librarycalendar.com/",
+        "src": "https://russelllibrary.librarycalendar.com/",
+        "venue": "russell-library",
+        "venueName": "Russell Library",
+        "address": "123 Broad St",
+        "kidsOnly": false,
+        "defaultFree": true
+      }
+    ],
+    "wallingford": [
+      {
+        "name": "Wallingford Public Library",
+        "platform": "unknown",
+        "url": "",
+        "calendarPage": "https://www.wallingfordlibrary.org/events/upcoming",
+        "src": "https://www.wallingfordlibrary.org/events/upcoming",
+        "venue": "wallingford-library",
+        "venueName": "Wallingford Public Library",
+        "address": "200 N Main St",
+        "kidsOnly": false,
+        "defaultFree": true
+      }
+    ],
+    "newtown": [
+      {
+        "name": "C.H. Booth Library",
+        "platform": "unknown",
+        "url": "",
+        "calendarPage": "https://www.chboothlibrary.org/",
+        "src": "https://www.chboothlibrary.org/",
+        "venue": "booth-library",
+        "venueName": "C.H. Booth Library",
+        "address": "25 Main St",
+        "kidsOnly": false,
+        "defaultFree": true
+      }
+    ]
+  }
+}

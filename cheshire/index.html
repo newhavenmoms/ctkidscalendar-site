@@ -87,6 +87,22 @@ window.TOWN = {
   "cheshire-youth-center": [
    "Cheshire Youth Center",
    "559 S Main St"
+  ],
+  "bartlem": [
+   "Bartlem Park",
+   "S Main St"
+  ],
+  "cheshire-around-town": [
+   "Parks & landmarks around Cheshire",
+   "Prizes at the Youth Center, 559 S Main St"
+  ],
+  "cheshire-parks-rec": [
+   "Cheshire Parks & Recreation",
+   "Location on registration"
+  ],
+  "kathan-woods": [
+   "Quinnipiac Trail, Kathan Woods (Prospect)",
+   "20 Boardman Dr, Prospect"
   ]
  },
  "venueMeta": {
@@ -113,6 +129,22 @@ window.TOWN = {
   "cheshire-youth-center": [
    null,
    1
+  ],
+  "bartlem": [
+   null,
+   0
+  ],
+  "cheshire-around-town": [
+   null,
+   0
+  ],
+  "cheshire-parks-rec": [
+   null,
+   1
+  ],
+  "kathan-woods": [
+   null,
+   0
   ]
  },
  "hoods": [],
@@ -326,7 +358,8 @@ window.TOWN = {
      "from": "2026-10-23",
      "t": [
       [
-       "17:00"
+       "17:00",
+       "19:00"
       ]
      ]
     }
@@ -341,9 +374,8 @@ window.TOWN = {
    "price": "Free",
    "free": true,
    "drop": true,
-   "check": true,
-   "blurb": "The town's Halloween party at Mixville Park, where the scarecrow contest winners are announced at 5 p.m. Past years have included a costume parade for leashed dogs. Check the rec department's calendar for this year's schedule.",
-   "src": "https://cheshirect.myrec.com/info/calendar/default.aspx",
+   "blurb": "A free town-wide Halloween party. Bring your own pumpkin to carve or paint with Artsplace (pre-register by Oct 22), trick-or-treat at the Lions Club's Trunk or Treat, cheer the scarecrow contest winners at 5, watch the Howl-o-ween dog costume parade at 6, and take a Scout-led Spooky Walk. Come in costume!",
+   "src": "https://cheshirect.myrec.com/info/activities/program_details.aspx?ProgramID=29896",
    "special": "hw"
   },
   {
@@ -396,16 +428,144 @@ window.TOWN = {
    "check": true,
    "blurb": "A hands-on kids' cooking class with Mary Amter through Cheshire Recreation. Registration required; check the listing for the exact room.",
    "src": "https://cheshirect.myrec.com/info/activities/program_details.aspx?ProgramID=30365"
+  },
+  {
+   "t": "Scarecrows at Bartlem Park",
+   "v": "bartlem",
+   "when": [
+    {
+     "from": "2026-10-08",
+     "to": "2026-10-31",
+     "t": []
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "drop": true,
+   "blurb": "The 7th annual town-wide scarecrow contest: dozens of homemade scarecrows line the paved walking trail. Vote for the Community Favorite online Oct 13–18; winners are announced at the Mixville Halloween Bash. Proceeds help Cheshire Human Services.",
+   "src": "https://cheshirect.myrec.com/info/activities/program_details.aspx?ProgramID=29891",
+   "special": "fall"
+  },
+  {
+   "t": "The Great Turkey Hunt",
+   "v": "cheshire-around-town",
+   "when": [
+    {
+     "from": "2026-11-19",
+     "t": [
+      [
+       "18:30",
+       "19:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "Families",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "A town-wide clue hunt: solve the clues to find laminated turkeys hidden at parks and landmarks, then trade one per group for a prize basket at the Youth Center. Free for Cheshire residents; register by 4 p.m. that day to get the clues, and bring a flashlight.",
+   "src": "https://cheshirect.myrec.com/info/activities/program_details.aspx?ProgramID=29897",
+   "special": "fall"
+  },
+  {
+   "t": "Halloween Cookie Decorating for Kids",
+   "v": "cheshire-parks-rec",
+   "when": [
+    {
+     "from": "2026-10-19",
+     "t": [
+      [
+       "17:30",
+       "18:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "Ages 5–11",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "price": "$40 residents / $45 non-residents",
+   "free": false,
+   "rsvp": true,
+   "blurb": "Decorate three sugar cookies with three icing colors and step-by-step help from The Tasty Sprinkle. Registration required; the listing has the location.",
+   "src": "https://cheshirect.myrec.com/info/activities/program_details.aspx?ProgramID=30363",
+   "special": "hw"
+  },
+  {
+   "t": "Cookie Decorating for Kids",
+   "v": "cheshire-parks-rec",
+   "when": [
+    {
+     "from": "2026-11-16",
+     "t": [
+      [
+       "17:30",
+       "18:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-14",
+     "t": [
+      [
+       "17:30",
+       "18:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "Ages 5–11",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "price": "$40 residents / $45 non-residents",
+   "free": false,
+   "rsvp": true,
+   "blurb": "Thanksgiving (Nov 16) and winter (Dec 14) themed sugar-cookie decorating with The Tasty Sprinkle; kids decorate three cookies to take home. Registration required; the listing has the location.",
+   "src": "https://cheshirect.myrec.com/info/activities/program_details.aspx?ProgramID=30363"
+  },
+  {
+   "t": "Trail Trekkers Walk: Quinnipiac Trail",
+   "v": "kathan-woods",
+   "when": [
+    {
+     "from": "2026-10-10",
+     "t": [
+      [
+       "10:00",
+       "11:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "rsvp": true,
+   "blurb": "A free guided walk with Cheshire Parks & Rec's walking club, led by Scott Ellis. Park at the end of Boardman Drive in Prospect and carpool if you can. Register to get updates; weather cancellations are announced a few hours ahead.",
+   "src": "https://cheshirect.myrec.com/info/activities/program_details.aspx?ProgramID=29827"
   }
  ],
  "tba": [
-  {
-   "g": "fall",
-   "t": "Scarecrows at Bartlem Park",
-   "w": "Bartlem Park Great Lawn",
-   "p": "Families, groups and businesses fill the lawn with scarecrows, usually from about Oct 8 through Halloween, with online voting mid-month and awards at the Mixville Halloween Bash. Proceeds help Cheshire Human Services.",
-   "src": "https://cheshirect.myrec.com/info/activities/program_details.aspx?ProgramID=29891"
-  },
   {
    "g": "fall",
    "t": "Hot COCO Kids' Fun Run",
@@ -426,10 +586,10 @@ window.TOWN = {
    "id": "artsplace",
    "c": "art",
    "n": "Artsplace Art Classes",
-   "u": "https://www.artsplacecheshirect.org/",
-   "blurb": "A community art school with fall classes most weekday afternoons: Art Explorers, Drawing Fun & Games, cartooning, a Graphic Novel Studio and acrylic painting.",
+   "u": "https://cheshirect.myrec.com/info/activities/default.aspx?CategoryID=1558&type=",
+   "blurb": "The town's community art school on West Main Street. Kids' classes this season include Mini Art, Young Artists, Art Explorers, Clay, Drawing, Cartooning, Graphic Novel, Sewing and Homeschool Art History.",
    "ages": "Ages 5–teens",
-   "where": "Artsplace"
+   "where": "Artsplace, 493 W Main St"
   },
   {
    "id": "supertots-cheshire",
@@ -538,6 +698,42 @@ window.TOWN = {
    "blurb": "Monthly pack meetings plus two to four den outings a month, usually at Highland Elementary. About $225 a year.",
    "ages": "Elementary",
    "where": "Pack 114"
+  },
+  {
+   "id": "trail-trekkers",
+   "c": "nature",
+   "n": "Trail Trekkers Walks",
+   "u": "https://cheshirect.myrec.com/info/activities/program_details.aspx?ProgramID=29827",
+   "blurb": "Free guided walks for all ages, usually on the first Saturday and third Wednesday of each month at parks and trails around Cheshire. Register for each walk to get the meeting spot.",
+   "ages": "All ages",
+   "where": "Cheshire Parks & Recreation"
+  },
+  {
+   "id": "bergamo-ninjas",
+   "c": "move",
+   "n": "Nursery Ninjas & Ninja-Fit",
+   "u": "https://cheshirect.myrec.com/info/activities/program_details.aspx?ProgramID=30361",
+   "blurb": "Obstacle and movement classes at Bergamo's Martial Arts through Cheshire Recreation, plus Yoga for Youth.",
+   "ages": "See listing",
+   "where": "Bergamo's Martial Arts"
+  },
+  {
+   "id": "dance-with-me",
+   "c": "dance",
+   "n": "Dance with Me: Ballet & Tap",
+   "u": "https://cheshirect.myrec.com/info/activities/program_details.aspx?ProgramID=29900",
+   "blurb": "An intro ballet and tap class that grown-ups and kids take together, through Cheshire Recreation. An intro hip-hop class for pre-teens is also offered.",
+   "ages": "See listing",
+   "where": "Cheshire Parks & Recreation"
+  },
+  {
+   "id": "safe-sitter",
+   "c": "play",
+   "n": "Safe Sitter Babysitter Training",
+   "u": "https://cheshirect.myrec.com/info/activities/program_details.aspx?ProgramID=29907",
+   "blurb": "Babysitting skills, safety and first-aid basics for tweens getting ready to babysit, plus a Safe@Home course for kids staying home alone.",
+   "ages": "Tweens",
+   "where": "Cheshire Parks & Recreation"
   }
  ],
  "library": {
@@ -773,6 +969,7 @@ window.TOWN = {
 
 <script>window.DATA_ES = {
  "$15 residents / $20 non-residents": "$15 residentes / $20 no residentes",
+ "$40 residents / $45 non-residents": "$40 residentes / $45 no residentes",
  "$60 residents / $65 non-residents": "$60 residentes / $65 no residentes",
  "0–12 months + caregiver": "0–12 meses + adulto",
  "12–24 months + caregiver": "12–24 meses + adulto",
@@ -780,24 +977,28 @@ window.TOWN = {
  "6 months–18": "Desde 6 meses hasta 18 años",
  "A Cheshire Recreation trip to the Mahan Planetarium in Wallingford: winter constellations and a “Season of Light” show. An adult must come along. Register through Cheshire Recreation.": "Una salida de Cheshire Recreation al Planetario Mahan en Wallingford: constelaciones de invierno y el espectáculo “Season of Light”. Debe asistir un adulto. Inscríbete a través de Cheshire Recreation.",
  "A children's day at St. Peter's community pumpkin patch on Main Street; the patch itself is open daily through the season. Found on the schools' community bulletin board, so check the details first.": "Un día para niños en el huerto comunitario de calabazas de St. Peter's, en Main Street; el huerto abre todos los días durante la temporada. Lo encontramos en el tablón comunitario de las escuelas, así que confirma los detalles.",
- "A community art school with fall classes most weekday afternoons: Art Explorers, Drawing Fun & Games, cartooning, a Graphic Novel Studio and acrylic painting.": "Una escuela de arte comunitaria con clases de otoño casi todas las tardes entre semana: Art Explorers, Drawing Fun & Games, caricatura, un taller de novela gráfica y pintura acrílica.",
+ "A free guided walk with Cheshire Parks & Rec's walking club, led by Scott Ellis. Park at the end of Boardman Drive in Prospect and carpool if you can. Register to get updates; weather cancellations are announced a few hours ahead.": "Una caminata guiada gratuita con el club de caminata de Cheshire Parks & Rec, dirigida por Scott Ellis. Estaciona al final de Boardman Drive en Prospect y comparte auto si puedes. Inscríbete para recibir avisos; las cancelaciones por clima se anuncian unas horas antes.",
+ "A free town-wide Halloween party. Bring your own pumpkin to carve or paint with Artsplace (pre-register by Oct 22), trick-or-treat at the Lions Club's Trunk or Treat, cheer the scarecrow contest winners at 5, watch the Howl-o-ween dog costume parade at 6, and take a Scout-led Spooky Walk. Come in costume!": "Una fiesta de Halloween gratuita para todo el pueblo. Trae tu propia calabaza para tallarla o pintarla con Artsplace (inscríbete antes del 22 de octubre), pide dulces en el Trunk or Treat del Lions Club, aplaude a los ganadores del concurso de espantapájaros a las 5, mira el desfile de disfraces para perros Howl-o-ween a las 6 y haz una Caminata Tenebrosa guiada por los Scouts. ¡Ven disfrazado!",
  "A hands-on kids' cooking class with Mary Amter through Cheshire Recreation. Registration required; check the listing for the exact room.": "Una clase práctica de cocina para niños con Mary Amter a través de Cheshire Recreation. Requiere inscripción; revisa el anuncio para saber la sala exacta.",
  "A kids' fun run alongside the Hot COCO 5K on Nov 14. Start time not confirmed yet.": "Una carrera divertida para niños junto al Hot COCO 5K el 14 de noviembre. La hora de inicio aún no está confirmada.",
  "A special evening family storytime in PJs. We haven't seen it on the library's live calendar yet, so check before you go.": "Un cuentacuentos familiar especial por la noche, en pijama. Aún no lo vemos en el calendario actual de la biblioteca, así que confirma antes de ir.",
+ "A town-wide clue hunt: solve the clues to find laminated turkeys hidden at parks and landmarks, then trade one per group for a prize basket at the Youth Center. Free for Cheshire residents; register by 4 p.m. that day to get the clues, and bring a flashlight.": "Una búsqueda de pistas por todo el pueblo: resuelve las pistas para encontrar pavos plastificados escondidos en parques y lugares conocidos, y cambia uno por grupo por una canasta de premios en el Youth Center. Gratis para residentes de Cheshire; inscríbete antes de las 4 p. m. ese día para recibir las pistas y trae una linterna.",
  "About 15-minute horse-drawn wagon tours of the farm. The farm reopened under new owners in 2025 and we couldn't confirm this on its site, so check first.": "Recorridos de unos 15 minutos por la granja en carreta tirada por caballos. La granja reabrió con nuevos dueños en 2025 y no pudimos confirmarlo en su sitio, así que verifica antes.",
  "Ages 2–4": "De 2 a 4 años",
  "Ages 2–6 + family": "De 2 a 6 años + familia",
  "Ages 3½–teens": "De 3 años y medio a adolescentes",
  "Ages 3–14": "De 3 a 14 años",
  "Ages 3–5 + caregiver": "De 3 a 5 años + adulto",
+ "Ages 5–11": "De 5 a 11 años",
  "Ages 5–teens": "De 5 años a adolescentes",
  "Ages 6–14": "De 6 a 14 años",
  "Ages 7+": "7 años en adelante",
  "Ages 7–18": "De 7 a 18 años",
  "All ages": "Todas las edades",
+ "An intro ballet and tap class that grown-ups and kids take together, through Cheshire Recreation. An intro hip-hop class for pre-teens is also offered.": "Una clase introductoria de ballet y tap que adultos y niños toman juntos, a través de Cheshire Recreation. También hay una clase introductoria de hip-hop para preadolescentes.",
  "Artsplace Art Classes": "Clases de arte en Artsplace",
  "Babies–pre-K": "Bebés–pre-K",
- "Bartlem Park Great Lawn": "Great Lawn de Bartlem Park",
+ "Babysitting skills, safety and first-aid basics for tweens getting ready to babysit, plus a Safe@Home course for kids staying home alone.": "Habilidades de cuidado de niños, seguridad y primeros auxilios básicos para preadolescentes que se preparan para cuidar niños, además del curso Safe@Home para niños que se quedan solos en casa.",
  "Birth–5 + caregiver": "Desde el nacimiento hasta 5 años + adulto",
  "Bounce & Rhyme Baby Storytime": "Cuentacuentos para bebés Bounce & Rhyme",
  "CATS Gymnastics": "CATS Gymnastics",
@@ -805,13 +1006,18 @@ window.TOWN = {
  "Cheshire Soccer Club's in-house fall season starts at U4 (Saturdays through Oct 31). Cheshire Junior Football & Cheer runs flag football from kindergarten, and Cheshire Youth Baseball & Softball offers fall T-ball.": "La temporada interna de otoño del Cheshire Soccer Club empieza desde U4 (sábados hasta el 31 de octubre). Cheshire Junior Football & Cheer ofrece flag football desde kínder, y Cheshire Youth Baseball & Softball tiene T-ball en otoño.",
  "Clydesdale Wagon Rides at Old Bishop Farm": "Paseos en carreta con caballos Clydesdale en Old Bishop Farm",
  "Community Play Atelier": "Community Play Atelier",
+ "Cookie Decorating for Kids": "Decoración de galletas para niños",
  "Cub Scout Pack 114": "Cub Scouts, Pack 114",
+ "Dance with Me: Ballet & Tap": "Baila conmigo: ballet y tap",
+ "Decorate three sugar cookies with three icing colors and step-by-step help from The Tasty Sprinkle. Registration required; the listing has the location.": "Decora tres galletas de azúcar con tres colores de glaseado y ayuda paso a paso de The Tasty Sprinkle. Requiere inscripción; el anuncio indica el lugar.",
  "Elementary": "Primaria",
- "Families, groups and businesses fill the lawn with scarecrows, usually from about Oct 8 through Halloween, with online voting mid-month and awards at the Mixville Halloween Bash. Proceeds help Cheshire Human Services.": "Familias, grupos y negocios llenan el césped de espantapájaros, normalmente desde el 8 de octubre hasta Halloween, con votación en línea a mediados de mes y premios en la fiesta de Halloween de Mixville. Lo recaudado ayuda a Cheshire Human Services.",
+ "Families": "Familias",
  "Family Planetarium Night": "Noche familiar en el planetario",
  "Free": "Gratis",
+ "Free guided walks for all ages, usually on the first Saturday and third Wednesday of each month at parks and trails around Cheshire. Register for each walk to get the meeting spot.": "Caminatas guiadas gratuitas para todas las edades, normalmente el primer sábado y el tercer miércoles de cada mes en parques y senderos de Cheshire. Inscríbete en cada caminata para saber el punto de encuentro.",
  "Free, every week": "Gratis, cada semana",
  "Friday-morning sports sampler through Cheshire Recreation: age 2 at 9:15, age 3 at 10:15 and age 4 at 11:15.": "Muestra de deportes los viernes por la mañana a través de Cheshire Recreation: 2 años a las 9:15, 3 años a las 10:15 y 4 años a las 11:15.",
+ "Halloween Cookie Decorating for Kids": "Decoración de galletas de Halloween para niños",
  "Holiday Cooking Class: Reindeer Quesadillas & Cookie Stacks": "Clase de cocina navideña: quesadillas de reno y torres de galletas",
  "Hot COCO Kids' Fun Run": "Carrera infantil Hot COCO",
  "Inclusive programs through Cheshire Recreation, including a Wednesday walking club (Sep 23–Dec 9) and TR soccer.": "Programas inclusivos de Cheshire Recreation, incluido un club de caminata los miércoles (del 23 de septiembre al 9 de diciembre) y fútbol recreativo terapéutico.",
@@ -823,15 +1029,19 @@ window.TOWN = {
  "Mostly grades 5–8": "Sobre todo 5.º a 8.º grado",
  "Music Together": "Music Together",
  "Norton School": "Escuela Norton",
+ "Nursery Ninjas & Ninja-Fit": "Nursery Ninjas y Ninja-Fit",
+ "Obstacle and movement classes at Bergamo's Martial Arts through Cheshire Recreation, plus Yoga for Youth.": "Clases de obstáculos y movimiento en Bergamo's Martial Arts a través de Cheshire Recreation, además de yoga para jóvenes.",
  "Pajama Storytime": "Cuentacuentos en pijama",
  "Preschool & up": "Preescolar en adelante",
  "Preschool Storytime": "Cuentacuentos preescolar",
  "Preschool and recreational gymnastics classes.": "Clases de gimnasia preescolar y recreativa.",
  "Reading, rhymes, songs and play for one-year-olds. Register for each date; Cheshire residents can sign up two weeks ahead, non-residents one week ahead.": "Lectura, rimas, canciones y juego para niños de un año. Inscríbete para cada fecha; los residentes de Cheshire pueden inscribirse con dos semanas de anticipación y los no residentes con una.",
+ "Safe Sitter Babysitter Training": "Capacitación de niñeras Safe Sitter",
  "Saturday parent-and-child swim for little ones, plus leveled lessons and pre-team in fall sessions.": "Natación de padre e hijo los sábados para los más pequeños, además de clases por niveles y pre-equipo en las sesiones de otoño.",
  "Scarecrows at Bartlem Park": "Espantapájaros en Bartlem Park",
  "School-age + adult": "Edad escolar + adulto",
  "Seasonal kids' classes: holiday cookie decorating and cooking nights, kids' yoga, STEAM challenges, coding, skateboarding and tennis.": "Clases infantiles de temporada: decoración de galletas y noches de cocina festivas, yoga infantil, retos STEAM, programación, patineta y tenis.",
+ "See listing": "Ver anuncio",
  "See the library's calendar": "Ver el calendario de la biblioteca",
  "Sensory, process-art play groups at Old Bishop Farm, including a baby group and Tuesday and Thursday creative play groups, with $30 drop-ins. Some sessions were sold out.": "Grupos de juego sensorial y arte de proceso en Old Bishop Farm, con un grupo para bebés y grupos de juego creativo los martes y jueves, y visitas sueltas a $30. Algunas sesiones estaban agotadas.",
  "Songs, rhymes, books and playtime for babies. Register separately for each week; sign-up opens at 10 a.m. the Saturday before. No siblings, please.": "Canciones, rimas, libros y juego para bebés. Inscríbete por separado para cada semana; la inscripción abre a las 10 a. m. el sábado anterior. Sin hermanos, por favor.",
@@ -840,13 +1050,19 @@ window.TOWN = {
  "SuperTots Multi-Sport": "SuperTots: multideporte",
  "Swim Lessons at the Community Pool": "Clases de natación en la piscina comunitaria",
  "Ten-week family music classes, fall session through late November. The 10:30 a.m. Thursday, Friday and Saturday sections had openings when last checked.": "Clases de música en familia de diez semanas; la sesión de otoño dura hasta finales de noviembre. Las secciones de las 10:30 a. m. del jueves, viernes y sábado tenían cupo en la última revisión.",
- "The town's Halloween party at Mixville Park, where the scarecrow contest winners are announced at 5 p.m. Past years have included a costume parade for leashed dogs. Check the rec department's calendar for this year's schedule.": "La fiesta de Halloween del pueblo en Mixville Park, donde se anuncian los ganadores del concurso de espantapájaros a las 5 p. m. En años anteriores hubo un desfile de disfraces para perros con correa. Revisa el calendario del departamento de recreación para el horario de este año.",
+ "Thanksgiving (Nov 16) and winter (Dec 14) themed sugar-cookie decorating with The Tasty Sprinkle; kids decorate three cookies to take home. Registration required; the listing has the location.": "Decoración de galletas de azúcar con temas de Acción de Gracias (16 de noviembre) e invierno (14 de diciembre) con The Tasty Sprinkle; los niños decoran tres galletas para llevar a casa. Requiere inscripción; el anuncio indica el lugar.",
+ "The 7th annual town-wide scarecrow contest: dozens of homemade scarecrows line the paved walking trail. Vote for the Community Favorite online Oct 13–18; winners are announced at the Mixville Halloween Bash. Proceeds help Cheshire Human Services.": "El 7.º concurso anual de espantapájaros del pueblo: decenas de espantapájaros hechos a mano bordean el sendero pavimentado. Vota por el favorito de la comunidad en línea del 13 al 18 de octubre; los ganadores se anuncian en la fiesta de Halloween de Mixville. Lo recaudado ayuda a Cheshire Human Services.",
+ "The Great Turkey Hunt": "La Gran Búsqueda del Pavo",
  "The town's annual tree lighting, with music, games, a hayride, cookies and cocoa, and Santa. This year's date isn't posted yet.": "El encendido anual del árbol del pueblo, con música, juegos, paseo en heno, galletas, chocolate caliente y Santa. La fecha de este año aún no está publicada.",
+ "The town's community art school on West Main Street. Kids' classes this season include Mini Art, Young Artists, Art Explorers, Clay, Drawing, Cartooning, Graphic Novel, Sewing and Homeschool Art History.": "La escuela de arte comunitaria del pueblo, en West Main Street. Las clases infantiles de esta temporada incluyen Mini Art, Young Artists, Art Explorers, arcilla, dibujo, caricatura, novela gráfica, costura e historia del arte para niños educados en casa.",
  "Therapeutic Recreation": "Recreación terapéutica",
  "Time for Twos": "Tiempo para los de dos",
  "Toddlers–teens": "Niños pequeños–adolescentes",
  "Town-run socials, crafts and clubs, mostly for grades 5–8: movie nights, BINGO, glow games, a LEGO club and holiday craft nights.": "Actividades sociales, manualidades y clubes organizados por el pueblo, sobre todo para 5.º a 8.º grado: noches de cine, BINGO, juegos con luces, un club LEGO y noches de manualidades festivas.",
+ "Trail Trekkers Walk: Quinnipiac Trail": "Caminata de Trail Trekkers: Quinnipiac Trail",
+ "Trail Trekkers Walks": "Caminatas de Trail Trekkers",
  "Tree Lighting at Bartlem Park": "Encendido del árbol en Bartlem Park",
+ "Tweens": "Preadolescentes",
  "Weekly small-group coding (Scratch, Minecraft, Roblox, Python) from about $169/month.": "Programación semanal en grupos pequeños (Scratch, Minecraft, Roblox, Python) desde unos $169 al mes.",
  "Weekly storytimes for babies, ones, twos and preschoolers, plus STEAM programs, crafts and clubs for older kids. Most children's programs need registration for each date. Watch for the Tiny Art Show in October and a dinosaur scavenger hunt all through November.": "Cuentacuentos semanales para bebés, niños de uno y dos años y preescolares, además de programas STEAM, manualidades y clubes para niños mayores. La mayoría de los programas infantiles requieren inscripción para cada fecha. No te pierdas la Tiny Art Show en octubre y una búsqueda de dinosaurios durante todo noviembre.",
  "Whimsical Ones": "Whimsical Ones (para niños de un año)",
@@ -855,6 +1071,7 @@ window.TOWN = {
  "theCoderSchool": "theCoderSchool"
 };</script>
 <script data-goatcounter="https://ctkidscalendar.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="/shared/imports/cheshire.js"></script>
 <script src="/shared/app.js"></script>
 </body>
 </html>
