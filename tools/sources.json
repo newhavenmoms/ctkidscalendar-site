@@ -55,7 +55,7 @@
         "address": "758 Main St",
         "kidsOnly": false,
         "defaultFree": true,
-        "method": "paste: Filters \u2192 kids age groups \u2192 List view, copy each page"
+        "method": "paste: Filters → kids age groups → List view, copy each page"
       },
       {
         "name": "Willoughby Wallace Memorial Library",
@@ -130,9 +130,9 @@
     "newtown": [
       {
         "name": "C.H. Booth Library",
-        "platform": "unknown",
-        "url": "",
-        "calendarPage": "https://www.chboothlibrary.org/",
+        "platform": "LibCal",
+        "url": "https://chboothlibrary.libcal.com/ical_subscribe.php?src=p&cid=20981",
+        "calendarPage": "https://chboothlibrary.libcal.com/calendar?cid=20981&t=d&cal%5B%5D=20981",
         "src": "https://www.chboothlibrary.org/",
         "venue": "booth-library",
         "venueName": "C.H. Booth Library",

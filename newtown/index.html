@@ -71,6 +71,14 @@ window.TOWN = {
   "booth-library": [
    "C.H. Booth Library",
    "25 Main St"
+  ],
+  "newtown-community-center": [
+   "Newtown Community Center",
+   "8 Simpson St"
+  ],
+  "main-street": [
+   "Main Street",
+   "Newtown"
   ]
  },
  "venueMeta": {
@@ -81,6 +89,14 @@ window.TOWN = {
   "booth-library": [
    null,
    1
+  ],
+  "newtown-community-center": [
+   null,
+   1
+  ],
+  "main-street": [
+   null,
+   0
   ]
  },
  "hoods": [],
@@ -126,9 +142,84 @@ window.TOWN = {
    "check": true,
    "blurb": "A short story plus a matching science craft, taught by a former Newtown kindergarten teacher. Runs during the school year only. We couldn't confirm this fall's exact days, so check with the museum first.",
    "src": "https://www.everwondermuseum.org/"
+  },
+  {
+   "t": "Halloween Hoot 'N Howl",
+   "v": "newtown-community-center",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-23",
+     "to": "2026-10-23",
+     "t": [
+      [
+       "17:30",
+       "19:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "Kids 10 and under with a parent",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Fee; registration required",
+   "free": false,
+   "rsvp": true,
+   "blurb": "Newtown Parks & Rec's costume party: a haunted hayride, games, crafts and a DJ dance party. Kids come in costume, and families are asked to bring a bag of candy to donate to Halloween on Main.",
+   "src": "https://www.newtown-ct.gov/parks-recreation/pages/2026-halloween-hoot-n-howl"
+  },
+  {
+   "t": "Halloween on Main",
+   "v": "main-street",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-31",
+     "to": "2026-10-31",
+     "t": []
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Free",
+   "free": true,
+   "check": true,
+   "blurb": "Thousands of trick-or-treaters fill Newtown's historic Main Street on Halloween night, with the houses along it handing out candy. There's no set start time; families with little ones tend to arrive from about 4 pm.",
+   "src": "https://www.halloweenonmain.com/"
   }
  ],
- "tba": [],
+ "tba": [
+  {
+   "g": "hw",
+   "t": "Newtown Community Center Trunk-or-Treat",
+   "w": "Newtown Community Center, 8 Simpson St",
+   "p": "Decorated cars, candy and a DJ in the community center lot, with local fire and police crews on hand. Last year it was the Sunday before Halloween; this year's date isn't announced yet.",
+   "src": "https://newtowncommunitycenter.org/"
+  },
+  {
+   "g": "hol",
+   "t": "Ram Pasture Tree Lighting",
+   "w": "Ram Pasture, Elm Dr & Hawley Ln",
+   "p": "Luminaria line Main Street and Elm Drive, then there's singing, dancing, a countdown and seated visits with Santa (bring a letter for the North Pole mailbox). Usually a Friday evening in early-to-mid December at 6:30 pm; this year's date isn't announced yet.",
+   "src": "https://www.newtown-ct.gov/parks-recreation"
+  },
+  {
+   "g": "hol",
+   "t": "Sandy Hook Center Tree Lighting",
+   "w": "Riverside Rd & Washington Ave, Sandy Hook",
+   "p": "Festivities in the Sandy Hook business district, karaoke and a visit with Santa, then the tree is lit. Bring a food donation for FAITH Food Pantry for a chance to light it. Usually the first weekend of December; this year's date isn't announced yet.",
+   "src": "https://www.newtownbee.com/11282025/three-local-tree-lighting-events-planned/"
+  }
+ ],
  "classes": [
   {
    "id": "ew-early-dismissal",
@@ -140,11 +231,182 @@ window.TOWN = {
    "where": "EverWonder Children's Museum"
   },
   {
+   "id": "pr-soccer-shots",
+   "c": "move",
+   "n": "Soccer Shots",
+   "u": "https://swct.soccershots.com/",
+   "blurb": "Weekly soccer with character lessons built in: a parent-and-me class for 2s and 3s, a classic class for preschoolers and a more skills-focused class for 6–8s. Sunday mornings in fall; register on Soccer Shots' site.",
+   "ages": "Ages 2–8",
+   "where": "Head O'Meadow School field"
+  },
+  {
+   "id": "pr-soccer-tots",
+   "c": "move",
+   "n": "Soccer Tots with Skyhawks",
+   "u": "https://www.newtown-ct.gov/sites/g/files/vyhlif12216/f/uploads/fall_2026_brochure_1.pdf",
+   "blurb": "Game-based soccer basics for little ones. Parents play along with 2–3 year olds and stay on site for 4–5 year olds. Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 2–5",
+   "where": "Head O'Meadow School"
+  },
+  {
+   "id": "pr-mini-kickers",
+   "c": "move",
+   "n": "Tiny & Mini Kickers and Multi-Sport",
+   "u": "https://www.newtown-ct.gov/sites/g/files/vyhlif12216/f/uploads/fall_2026_brochure_1.pdf",
+   "blurb": "Six-week clinics from CT Sports Network with props, songs and imaginative games. Kickers is all soccer; Multi-Sport tries a different sport each week. Parents join the youngest group. Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 1½–5",
+   "where": "Treadwell Park turf"
+  },
+  {
+   "id": "pr-tumbling",
+   "c": "move",
+   "n": "Toddler Tumbling",
+   "u": "https://www.newtown-ct.gov/sites/g/files/vyhlif12216/f/uploads/fall_2026_brochure_1.pdf",
+   "blurb": "Basic tumbling, balance beam, obstacle courses, creative movement and freeze dance. Wednesday afternoons, October 7 to November 25. Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 3–5",
+   "where": "Newtown Teen Center"
+  },
+  {
+   "id": "pr-volleyball-xc",
+   "c": "move",
+   "n": "Kids' Volleyball & Cross Country",
+   "u": "https://www.newtown-ct.gov/sites/g/files/vyhlif12216/f/uploads/fall_2026_brochure_1.pdf",
+   "blurb": "Beginner-friendly clinics from CT Sports Network: volleyball basics in the gym, or a running program on the Fairfield Hills fields. Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 5–10",
+   "where": "Reed Intermediate School / Fairfield Hills"
+  },
+  {
+   "id": "pr-futsal",
+   "c": "move",
+   "n": "Futsal & Street Soccer Skills",
+   "u": "https://www.newtown-ct.gov/sites/g/files/vyhlif12216/f/uploads/fall_2026_brochure_1.pdf",
+   "blurb": "Fast, small-sided indoor soccer that gives kids far more touches on the ball. Thursday evenings, November 5 to December 10; a jersey is included. Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 6–13",
+   "where": "NYA Sports & Fitness"
+  },
+  {
+   "id": "pr-hoopsters",
+   "c": "move",
+   "n": "Hoopsters Adaptive Basketball",
+   "u": "https://www.newtown-ct.gov/sites/g/files/vyhlif12216/f/uploads/fall_2026_brochure_1.pdf",
+   "blurb": "A judgment-free basketball program for kids of all abilities, played at each child's own pace. Saturday mornings, December through March, and only $20 for the season. Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 5 and up",
+   "where": "Hawley School gym"
+  },
+  {
+   "id": "pr-ball-clinics",
+   "c": "move",
+   "n": "Nighthawks Baseball & Softball Clinics",
+   "u": "https://www.newtown-ct.gov/sites/g/files/vyhlif12216/f/uploads/fall_2026_brochure_1.pdf",
+   "blurb": "Fall hitting, fielding and base-running clinics led by Newtown High School coaches and players. Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 7–14",
+   "where": "Watertown Field / Newtown Middle School"
+  },
+  {
+   "id": "pr-tennis",
+   "c": "move",
+   "n": "Youth Tennis with Fairfield County Tennis",
+   "u": "https://www.fairfieldcountytennis.net/",
+   "blurb": "Clinics from Tiny Tots up through match play, outdoors at Dickinson Park in early fall and indoors at NYA through the winter. Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 3 and up",
+   "where": "Dickinson Park / NYA Sports & Fitness"
+  },
+  {
+   "id": "pr-martial-arts",
+   "c": "move",
+   "n": "Karate & Taekwondo",
+   "u": "https://www.newtown-ct.gov/sites/g/files/vyhlif12216/f/uploads/fall_2026_brochure_1.pdf",
+   "blurb": "Two Parks & Rec martial-arts options: Tang Soo Do karate at Porco's Karate Academy (5 and up) and taekwondo with Master Heny at World Championship Taekwondo (3 and up). Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 3 and up",
+   "where": "Church Hill Rd & South Main St studios"
+  },
+  {
+   "id": "pr-torpedoes",
+   "c": "swim",
+   "n": "Newtown Torpedoes Swim Team",
+   "u": "https://www.teamunify.com/team/nent/page/home",
+   "blurb": "A recreational swim team with practices Monday to Thursday evenings and Saturday meets in winter. New swimmers need a quick evaluation, and non-residents are now welcome.",
+   "ages": "Ages 6–17",
+   "where": "Newtown High School pool"
+  },
+  {
+   "id": "pr-dance",
+   "c": "dance",
+   "n": "Lisa Mennilli Dance Academy",
+   "u": "https://www.newtown-ct.gov/sites/g/files/vyhlif12216/f/uploads/fall_2026_brochure_1.pdf",
+   "blurb": "Dance and tumbling in a range of styles, booked through Parks & Rec. Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 2½–18",
+   "where": "Lisa Mennilli Dance Academy, 71 South Main St"
+  },
+  {
+   "id": "pr-art-shuffle",
+   "c": "art",
+   "n": "Art Shuffle with One River School",
+   "u": "https://www.newtown-ct.gov/sites/g/files/vyhlif12216/f/uploads/fall_2026_brochure_1.pdf",
+   "blurb": "Drawing, painting, sculpture, printmaking and mixed media inspired by contemporary artists. Tuesday afternoons, October 13 to December 1, with separate classes for 5–8 and 9–12. Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 5–12",
+   "where": "Newtown Teen Center"
+  },
+  {
+   "id": "pr-creative-creations",
+   "c": "art",
+   "n": "Creative Creations Art Workshop",
+   "u": "https://www.newtown-ct.gov/sites/g/files/vyhlif12216/f/uploads/fall_2026_brochure_1.pdf",
+   "blurb": "A new hands-on art project each session using different materials and techniques; all supplies included. Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 8–13",
+   "where": "Newtown Middle School"
+  },
+  {
+   "id": "pr-knitting",
+   "c": "art",
+   "n": "Kids & Tweens Knitting",
+   "u": "https://www.newtown-ct.gov/sites/g/files/vyhlif12216/f/uploads/fall_2026_brochure_1.pdf",
+   "blurb": "Learn to knit (and some crochet) and finish a first project, with a next-level class for kids who already know the basics. Parents can sign up alongside their child. Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 7 and up",
+   "where": "Newtown Teen Center"
+  },
+  {
+   "id": "pr-mad-science",
+   "c": "build",
+   "n": "NASA Space Lab with Mad Science",
+   "u": "https://www.newtown-ct.gov/sites/g/files/vyhlif12216/f/uploads/fall_2026_brochure_1.pdf",
+   "blurb": "Weekly space challenges and hands-on projects inspired by real NASA missions, right after school at each elementary school. Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 6–9",
+   "where": "Newtown elementary schools"
+  },
+  {
+   "id": "pr-chess",
+   "c": "build",
+   "n": "Checkmate Chess",
+   "u": "https://www.newtown-ct.gov/sites/g/files/vyhlif12216/f/uploads/fall_2026_brochure_1.pdf",
+   "blurb": "Chess from the rules up through tournament play, taught by a coach whose students have won 13 national scholastic titles. Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 6–13",
+   "where": "Newtown Middle School"
+  },
+  {
+   "id": "pr-craft-fair",
+   "c": "build",
+   "n": "My First Craft Fair",
+   "u": "https://www.newtown-ct.gov/sites/g/files/vyhlif12216/f/uploads/fall_2026_brochure_1.pdf",
+   "blurb": "Kids make handmade goods and 'sell' them at their own craft fair, learning about money, budgeting and advertising along the way. Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 4–6",
+   "where": "Sandy Hook School"
+  },
+  {
+   "id": "pr-esports",
+   "c": "build",
+   "n": "Gaming & Coding with Affinity Esports",
+   "u": "https://www.newtown-ct.gov/sites/g/files/vyhlif12216/f/uploads/fall_2026_brochure_1.pdf",
+   "blurb": "Recreational gaming and coding programs built around teamwork, communication and healthy gaming habits. Run by Newtown Parks & Rec; non-residents can join some programs for an extra fee.",
+   "ages": "Ages 7–17",
+   "where": "Affinity Esports, 27 Glen Rd"
+  },
+  {
    "id": "ncc",
-   "c": "play",
+   "c": "swim",
    "n": "Newtown Community Center Programs",
    "u": "https://newtowncommunitycenter.org/",
-   "blurb": "The town's community center runs youth programs and school-break camps. Check its site for the current season.",
+   "blurb": "The town's community center has a pool and runs swim lessons, youth programs and school-break camps. Check its site for the current season.",
    "ages": "Varies",
    "where": "Newtown Community Center"
   }
@@ -152,12 +414,12 @@ window.TOWN = {
  "library": {
   "for": "Free",
   "name": "C.H. Booth Library",
-  "desc": "Newtown's public library runs storytimes and kids' programs. We haven't been able to confirm this fall's schedule yet, so check the library's own calendar.",
+  "desc": "Newtown's public library runs storytimes for babies, toddlers and preschoolers plus kids' programs, most with registration. Its fall schedule isn't published anywhere we can check yet, so see the library's calendar.",
   "a": "Visit the library's site",
-  "href": "https://www.chboothlibrary.org/"
+  "href": "https://chboothlibrary.libcal.com/calendar?cid=20981&t=d&cal%5B%5D=20981"
  },
  "extraResources": []
-};
+};;
 
 </script>
 
