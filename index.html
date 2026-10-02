@@ -52,6 +52,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/shared/style.css">
 <style>
+
+/* ---------- big days by county ---------- */
+.homebig{background:var(--paper-2);border-top:0;border-bottom:1.5px solid var(--ink)}
+.homebig .wrap{max-width:1180px}
+.homebig h2.sec::before{content:"This season";counter-increment:none}
+.homebig h3{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.homebig h3 small{font-family:var(--sans);font-size:.8rem;font-weight:600;color:var(--ink-soft)}
+.homebig .bdcol:nth-child(1) h3{border-color:var(--pool-deep)}
+.homebig .bdcol:nth-child(2) h3{border-color:var(--elm)}
+.homebig .bdcol:nth-child(3) h3{border-color:var(--marigold)}
+.homebig .bd-date{background:var(--card)}
+.homebig .g-hw .bd-date{background:var(--marigold-tint)}
+.homebig .g-hol .bd-date{background:var(--lilac-tint)}
+.homebig .bd strong a{color:var(--ink);text-decoration:none}
+.homebig .bd strong a:hover{text-decoration:underline;text-underline-offset:3px}
+.homebig .bd .gtag{display:inline-block;margin-top:5px;font-size:.75rem;font-weight:700;padding:2px 9px;border-radius:999px;background:var(--card);color:var(--ink-soft);border:1px solid var(--line)}
+.homebig .bdmore{margin-top:14px}
+.homebig .bdmore .linkbtn{margin:0}
 :root{ --accent:#A9E0F2; }
 
 .top .wrap{max-width:1180px}
@@ -409,6 +427,15 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
     </div>
   </section>
 
+  <section class="block homebig" id="bigdays" hidden>
+    <div class="wrap">
+      <h2 class="sec" data-i18n="bigH2">Big days around Connecticut</h2>
+      <p class="intro" data-i18n="bigIntro">Festivals, shows, Halloween fun and holiday favorites coming up in every town we cover, grouped by county. Tap one to open it in that town&rsquo;s calendar.</p>
+      <p class="swipehint" data-i18n="bigSwipe">Swipe for more counties</p>
+      <div class="bigdays" id="homeBig"></div>
+    </div>
+  </section>
+
   <section class="statstrip">
     <div class="wrap">
       <div class="statitem"><div class="num" id="statTownsNum">18</div><div class="lbl" data-i18n="statTowns">Towns open</div></div>
@@ -449,6 +476,10 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       suggestTown:"Suggest a town", footerTag:"CT Kids Calendar &middot; a town-by-town guide for Connecticut families",
       tickWelcome:"WELCOME TO CT KIDS CALENDAR", tickTowns:"{{T}} TOWNS OPEN NOW", tickThings:"{{N}} THINGS TO DO, TRACKED BY HAND",
       langBtn:"Espa\u00f1ol",
+      bigH2:"Big days around Connecticut", bigIntro:"Festivals, shows, Halloween fun and holiday favorites coming up in every town we cover, grouped by county. Tap one to open it in that town&rsquo;s calendar.",
+      bigSwipe:"Swipe for more counties", bigShowAll:"Show all {{N}}", bigShowFewer:"Show fewer", bigTowns:"{{N}} towns", bigNone:"Nothing coming up right now. Check back soon.",
+      gfall:"Fall fun", gshows:"Show", ghw:"Halloween", ghol:"Holiday", and:" and ",
+      mon:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
     },
     es:{
       contact:"Contacto", eyebrow:"Connecticut, pueblo por pueblo", h1:'Encuentra un <em>calendario</em> infantil',
@@ -458,6 +489,10 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       suggestTown:"Sugerir un pueblo", footerTag:"CT Kids Calendar &middot; una gu\u00eda pueblo por pueblo para familias de Connecticut",
       tickWelcome:"BIENVENIDO A CT KIDS CALENDAR", tickTowns:"{{T}} PUEBLOS DISPONIBLES", tickThings:"{{N}} COSAS QUE HACER, VERIFICADAS A MANO",
       langBtn:"English",
+      bigH2:"D\u00edas especiales en Connecticut", bigIntro:"Festivales, espect\u00e1culos, Halloween y fiestas de fin de a\u00f1o en todos nuestros pueblos, agrupados por condado. Toca uno para abrirlo en el calendario de ese pueblo.",
+      bigSwipe:"Desliza para ver m\u00e1s condados", bigShowAll:"Ver los {{N}}", bigShowFewer:"Ver menos", bigTowns:"{{N}} pueblos", bigNone:"No hay nada pr\u00f3ximamente. Vuelve pronto.",
+      gfall:"Oto\u00f1o", gshows:"Espect\u00e1culo", ghw:"Halloween", ghol:"Fiestas", and:" y ",
+      mon:["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"],
     }
   };
   let STATS={towns:18,things:1146,venues:479,festivals:203}; // fallback; overwritten by /shared/stats.json when reachable
@@ -470,11 +505,48 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
   function apply(){
     document.documentElement.lang=LANG;
     document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;if(UI.en[k]!==undefined)el.innerHTML=UI[LANG][k].replace("{{N}}",STATS.things).replace("{{T}}",STATS.towns)});
+    renderBig();
     const lb=document.getElementById("langBtn");
     if(lb){lb.querySelector(".full").textContent=UI[LANG].langBtn;lb.querySelector(".short").textContent=LANG==="es"?"EN":"ES";lb.setAttribute("aria-label",LANG==="es"?"Switch to English":"Cambiar a espa\u00f1ol")}
     const ids={towns:"statTownsNum",things:"statThingsNum",venues:"statVenuesNum",festivals:"statFestivalsNum"};
     Object.keys(ids).forEach(k=>{const el=document.getElementById(ids[k]);if(el)el.textContent=STATS[k]});
   }
+  /* ---------- big days by county (data: /shared/bigdays.json, built by shared/build-stats.js) ---------- */
+  let BIG=null;const bigOpen={};
+  const pad=n=>String(n).padStart(2,"0");
+  const now=new Date(),todayKey=`${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())}`;
+  const pdate=k=>{const[y,m,d]=k.split("-").map(Number);return new Date(y,m-1,d)};
+  const escH=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  function renderBig(){
+    const sec=document.getElementById("bigdays"),el=document.getElementById("homeBig");
+    if(!BIG||!sec||!el)return;
+    const L=UI[LANG],MON=L.mon,PEEK=6;
+    const cols=BIG.counties.map(c=>{
+      const all=BIG.items.filter(i=>i.county===c.id&&i.to>=todayKey);
+      const shown=bigOpen[c.id]?all:all.slice(0,PEEK);
+      const li=shown.map(i=>{
+        const a=pdate(i.from),b=pdate(i.to);
+        const dd=i.from===i.to?a.getDate():(a.getMonth()===b.getMonth()?`${a.getDate()}\u2013${b.getDate()}`:`${a.getDate()}\u2013${MON[b.getMonth()]} ${b.getDate()}`);
+        const dl=String(dd).length,dcls=dl>=8?" xl":(dl>=5?" long":"");
+        const title=LANG==="es"&&i.es?i.es:i.t;
+        const towns=i.towns.map(t=>t.name).join(L.and);
+        const where=[i.place,towns].filter(Boolean).join(" \u00b7 ");
+        return `<li class="bd g-${i.g}"><span class="bd-date${dcls}"><span class="m">${MON[a.getMonth()]}</span><span class="d">${dd}</span></span>
+          <span><strong><a href="${i.towns[0].link.replace(/&d=\d{4}-\d{2}-\d{2}$/,"&d="+(i.from<todayKey?todayKey:i.from))}">${escH(title)}</a></strong><span class="w">${escH(where)}</span><span class="gtag">${L["g"+i.g]||""}</span></span></li>`;
+      }).join("");
+      let more="";
+      if(all.length>PEEK)more=`<div class="bdmore"><button class="linkbtn" type="button" data-bigmore="${c.id}">${bigOpen[c.id]?L.bigShowFewer:L.bigShowAll.replace("{{N}}",all.length)}</button></div>`;
+      return `<div class="bdcol"><h3>${escH(c[LANG]||c.en)} <small>${L.bigTowns.replace("{{N}}",c.towns.length)}</small></h3>${li?`<ol>${li}</ol>`:`<p class="w">${L.bigNone}</p>`}${more}</div>`;
+    });
+    el.innerHTML=cols.join("");
+    sec.hidden=!BIG.items.some(i=>i.to>=todayKey);
+  }
+  document.getElementById("homeBig").addEventListener("click",ev=>{
+    const b=ev.target.closest("[data-bigmore]");if(!b)return;
+    const id=b.dataset.bigmore;bigOpen[id]=!bigOpen[id];renderBig();
+    if(!bigOpen[id])b.closest(".bdcol")&&document.getElementById("bigdays").scrollIntoView({block:"start"});
+  });
+  fetch("/shared/bigdays.json").then(r=>r.ok?r.json():null).then(d=>{if(d&&d.items){BIG=d;renderBig()}}).catch(()=>{});
   fetch("/shared/stats.json").then(r=>r.ok?r.json():null).then(d=>{if(d&&d.things&&d.venues&&d.festivals){STATS=d;apply()}}).catch(()=>{});
   const btn=document.getElementById("langBtn");
   if(btn)btn.onclick=()=>{LANG=LANG==="es"?"en":"es";try{localStorage.setItem("ctk-lang",LANG)}catch(_){}apply()};

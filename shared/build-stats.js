@@ -60,3 +60,71 @@ const stats = {
 
 fs.writeFileSync(path.join(__dirname, 'stats.json'), JSON.stringify(stats, null, 2) + '\n');
 console.log('shared/stats.json written:', stats);
+
+/* ---------- homepage "Big days by county" feed ----------
+   Also writes shared/bigdays.json: every upcoming Big Day (events with a
+   .special tag) from every town, grouped by county. The same event listed by
+   several towns (same title at the same place) appears once, naming every
+   town. The homepage fetches this file and hides anything already over. */
+const COUNTIES = [
+  { id: 'fairfield', en: 'Fairfield County', es: 'Condado de Fairfield',
+    towns: ['darien', 'fairfield', 'greenwich', 'new-canaan', 'newtown', 'norwalk', 'ridgefield', 'stamford', 'trumbull', 'westport'] },
+  { id: 'new-haven', en: 'New Haven County', es: 'Condado de New Haven',
+    towns: ['branford', 'cheshire', 'milford', 'new-haven', 'wallingford'] },
+  { id: 'hartford', en: 'Hartford & Middlesex', es: 'Hartford y Middlesex',
+    towns: ['glastonbury', 'middletown', 'west-hartford'] },
+];
+const missing = TOWNS.filter(t => !COUNTIES.some(c => c.towns.includes(t)));
+if (missing.length) throw new Error('Add these towns to a county in build-stats.js: ' + missing.join(', '));
+
+// Spanish titles come from the shared dictionary the town pages use
+const window_ = {};
+new Function('window', fs.readFileSync(path.join(__dirname, 'data-es.js'), 'utf8'))(window_);
+const ES = window_.DATA_ES || {};
+const slugify = t => t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const today = new Date().toISOString().slice(0, 10);
+
+function loadTown(slug) {
+  const html = fs.readFileSync(path.join(ROOT, slug, 'index.html'), 'utf8');
+  const start = html.indexOf('window.TOWN = {');
+  const end = html.indexOf('\n};', start) + 2;
+  const T = eval('(' + html.slice(start, end).replace('window.TOWN = ', '').replace(/;\s*$/, '') + ')');
+  const importsFile = path.join(ROOT, 'shared', 'imports', slug + '.json');
+  if (fs.existsSync(importsFile)) {
+    const imp = JSON.parse(fs.readFileSync(importsFile, 'utf8'));
+    T.events = T.events.concat(imp.events || []);
+    for (const k of Object.keys(imp.venues || {})) if (!T.venues[k]) T.venues[k] = imp.venues[k];
+  }
+  T.label = (T.name || slug).replace(/ Kids Calendar$/, '');
+  return T;
+}
+
+const bigItems = new Map();
+for (const county of COUNTIES) {
+  for (const slug of county.towns) {
+    if (!TOWNS.includes(slug)) continue;
+    const T = loadTown(slug);
+    for (const e of T.events.filter(x => x.special && x.when && x.when.length)) {
+      const from = e.when[0].from, last = e.when[e.when.length - 1], to = last.to || last.from;
+      if (to < today) continue;
+      const place = (T.venues[e.v] && T.venues[e.v][0]) || '';
+      const k = county.id + '|' + e.t + '|' + place;
+      const town = { slug, name: T.label, link: `/${slug}/#e=${encodeURIComponent(slugify(e.t) + '--' + e.v)}&d=${from}` };
+      const cur = bigItems.get(k);
+      if (cur) {
+        if (!cur.towns.some(t => t.slug === slug)) cur.towns.push(town);
+        if (from < cur.from) cur.from = from;
+        if (to > cur.to) cur.to = to;
+      } else {
+        bigItems.set(k, Object.assign({ county: county.id, g: e.special, t: e.t }, ES[e.t] ? { es: ES[e.t] } : {}, { from, to, place, free: !!e.free, towns: [town] }));
+      }
+    }
+  }
+}
+const bigdays = {
+  updated: today,
+  counties: COUNTIES.map(({ id, en, es, towns }) => ({ id, en, es, towns: towns.filter(t => TOWNS.includes(t)) })),
+  items: [...bigItems.values()].sort((a, b) => a.from < b.from ? -1 : a.from > b.from ? 1 : a.t.localeCompare(b.t)),
+};
+fs.writeFileSync(path.join(__dirname, 'bigdays.json'), JSON.stringify(bigdays) + '\n');
+console.log('shared/bigdays.json written:', COUNTIES.map(c => `${c.en}: ${bigdays.items.filter(i => i.county === c.id).length}`).join(' · '));
