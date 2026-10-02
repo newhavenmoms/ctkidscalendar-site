@@ -118,3 +118,18 @@ New Haven Moms (a separate site, not part of this shared engine) is fully
 bilingual. This shared engine launches English-only — the bilingual pattern
 is proven and could be added later, but it needs real translated content per
 town, which is a separate project once a town's English content is solid.
+
+## Location rule (keep every town page local)
+
+Events, classes, Big Days and "date not announced yet" cards on a town's page must
+take place **in that town** (its villages count: e.g. Cos Cob for Greenwich, Rowayton
+for Norwalk, Stony Creek for Branford, Sandy Hook for Newtown).
+
+Approved exceptions, because they sit right on the town line and families treat
+them as local:
+- **Branford:** Shore Line Trolley Museum (East Haven)
+- **Ridgefield:** Weir Farm National Historical Park (straddles Ridgefield/Wilton; Wilton mailing address)
+- **West Hartford:** Elizabeth Park (straddles Hartford/West Hartford; Hartford mailing address)
+
+Nearby out-of-town places (rinks, farms, shops, museums) may appear **only** in the
+"Worth a short drive" section of Things to do, never as calendar events or classes.
