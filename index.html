@@ -98,7 +98,8 @@
 .mappin:hover .pin-body,.mappin:focus .pin-body{animation:pinwiggle .5s ease-in-out}
 @keyframes pinwiggle{0%,100%{transform:rotate(0deg)}20%{transform:rotate(-9deg)}40%{transform:rotate(7deg)}60%{transform:rotate(-5deg)}80%{transform:rotate(3deg)}}
 .pin-tip{opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s;pointer-events:none}
-.mappin:hover .pin-tip,.mappin:focus .pin-tip{opacity:1;transform:translateY(0)}
+.tip-layer{pointer-events:none}
+.tip-layer .pin-tip{opacity:1;transform:translateY(0)}
 .pin-tip-label{font-family:var(--mono);font-size:13px;font-weight:600;fill:#fff}
 @media (prefers-reduced-motion:reduce){.mappin:hover .pin-body,.mappin:focus .pin-body{animation:none}.hero-maptag svg{animation:none}}
 @media (max-width:600px){.hero-mapcard{padding:8px 4px 4px}.pin-label{font-size:15px}}
@@ -400,6 +401,7 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
     <circle class="pin-hit" cx="0" cy="-17" r="19"></circle>
   </g>
 </a>
+<g class="tip-layer" aria-hidden="true"></g>
 </svg>
         </div>
         <ul class="townlist">
@@ -566,6 +568,12 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
     if(!bigOpen[id])b.closest(".bdcol")&&document.getElementById("bigdays").scrollIntoView({block:"start"});
   });
   fetch("/shared/bigdays.json").then(r=>r.ok?r.json():null).then(d=>{if(d&&d.items){BIG=d;renderBig()}}).catch(()=>{});
+  /* map labels: draw the hovered pin's label in a top layer so neighbouring pins never cover it */
+  (function(){const svg=document.querySelector(".ctmap");if(!svg)return;const layer=svg.querySelector(".tip-layer");
+    const show=a=>{const g=a.querySelector(":scope > g");const tip=a.querySelector(".pin-tip");if(!g||!tip)return;
+      layer.innerHTML="";const w=document.createElementNS("http://www.w3.org/2000/svg","g");w.setAttribute("transform",g.getAttribute("transform"));w.appendChild(tip.cloneNode(true));layer.appendChild(w);};
+    const hide=()=>{layer.innerHTML=""};
+    svg.querySelectorAll(".mappin").forEach(a=>{a.addEventListener("mouseenter",()=>show(a));a.addEventListener("mouseleave",hide);a.addEventListener("focus",()=>show(a));a.addEventListener("blur",hide);});})();
   fetch("/shared/stats.json").then(r=>r.ok?r.json():null).then(d=>{if(d&&d.things&&d.venues&&d.festivals){STATS=d;apply()}}).catch(()=>{});
   const btn=document.getElementById("langBtn");
   if(btn)btn.onclick=()=>{LANG=LANG==="es"?"en":"es";try{localStorage.setItem("ctk-lang",LANG)}catch(_){}apply()};
