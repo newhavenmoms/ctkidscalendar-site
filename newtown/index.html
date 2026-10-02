@@ -79,6 +79,10 @@ window.TOWN = {
   "main-street": [
    "Main Street",
    "Newtown"
+  ],
+  "edmond-town-hall": [
+   "Edmond Town Hall & Main Street",
+   "45 Main St"
   ]
  },
  "venueMeta": {
@@ -95,6 +99,10 @@ window.TOWN = {
    1
   ],
   "main-street": [
+   null,
+   0
+  ],
+  "edmond-town-hall": [
    null,
    0
   ]
@@ -195,6 +203,65 @@ window.TOWN = {
    "check": true,
    "blurb": "Thousands of trick-or-treaters fill Newtown's historic Main Street on Halloween night, with the houses along it handing out candy. There's no set start time; families with little ones tend to arrive from about 4 pm.",
    "src": "https://www.halloweenonmain.com/"
+  },
+  {
+   "t": "Jack O'Lantern Jamboree",
+   "v": "everwonder",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-31",
+     "to": "2026-10-31",
+     "t": [
+      [
+       "09:00",
+       "14:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Kids up to 10",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "$18.50 kids, $13 adults (members less)",
+   "free": false,
+   "ticket": true,
+   "blurb": "EverWonder's Halloween-day science party: slime and squishies to take home, gross and gooey experiments, a candy-corn counting challenge and the whole museum to explore. A quieter sensory-friendly hour runs 9–10 am (reservation required); general admission is 10 am–2 pm. Costumes welcome; reserving ahead is strongly encouraged.",
+   "src": "https://www.simpletix.com/e/jack-o-lantern-jamboree-2026-tickets-295051"
+  },
+  {
+   "t": "Newtown Holiday Festival",
+   "v": "edmond-town-hall",
+   "special": "hol",
+   "when": [
+    {
+     "from": "2026-12-06",
+     "to": "2026-12-06",
+     "t": [
+      [
+       "11:00",
+       "16:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "price": "Tickets (last year $25 kids, $40 adults)",
+   "free": false,
+   "ticket": true,
+   "check": true,
+   "blurb": "A whole day of holiday fun along Main Street, benefiting Newtown Youth & Family Services: an outdoor market with 80+ vendors, visits with Santa, stories with Mrs. Claus, kids' crafts, the Festival of Trees, historic trolley rides and The Nutcracker Suite at Edmond Town Hall. Check this year's ticket prices before you go.",
+   "src": "https://www.newtownyouthandfamilyservices.org/"
   }
  ],
  "tba": [
@@ -419,7 +486,7 @@ window.TOWN = {
   "href": "https://chboothlibrary.libcal.com/calendar?cid=20981&t=d&cal%5B%5D=20981"
  },
  "extraResources": []
-};;
+};;;
 
 </script>
 
@@ -515,14 +582,16 @@ window.TOWN = {
           <h3 data-i18n="getOutside">Get outside</h3>
           <ul>
             <li><strong><a href="https://www.newtown-ct.gov/parks-recreation/pages/dickinson-park" target="_blank" rel="noopener">Dickinson Memorial Park</a></strong><span data-es="Un parque municipal muy concurrido con dos zonas de juegos y un área de juego creativo. Solo para residentes de Newtown, con permiso de estacionamiento.">A popular town park with two playgrounds and a creative play area. Open to Newtown residents only, with a park permit.</span></li>
-            <li><strong><a href="https://www.newtown-ct.gov/parks-recreation/pages/directions-fields-parks-and-facilities" target="_blank" rel="noopener">Treadwell Memorial Park</a></strong><span data-es="Un parque de barrio con parque infantil y campos.">A neighborhood park with a playground and fields.</span></li>
-            <li><strong><a href="https://www.newtown-ct.gov/parks-recreation/pages/directions-fields-parks-and-facilities" target="_blank" rel="noopener">Fairfield Hills</a></strong><span data-es="Céspedes abiertos y senderos en el antiguo campus hospitalario del pueblo.">Open lawns and walking paths on the town's former hospital campus.</span></li>
+            <li><strong><a href="https://www.newtown-ct.gov/parks-recreation/pages/directions-fields-parks-and-facilities" target="_blank" rel="noopener">Treadwell Memorial Park</a></strong><span data-es="Dos parques infantiles, canchas y una piscina en verano. Los no residentes necesitan un permiso de estacionamiento ($20 por día).">Two playgrounds, fields and a summer pool. Non-residents need a park parking permit ($20 a day).</span></li>
+            <li><strong><a href="https://www.newtown-ct.gov/parks-recreation/pages/directions-fields-parks-and-facilities" target="_blank" rel="noopener">Fairfield Hills</a></strong><span data-es="Senderos, un parque infantil para bicicletas y el Fruit Trail en el antiguo campus hospitalario del pueblo.">Walking trails, a bicycle playground and the Fruit Trail on the town&#39;s former hospital campus.</span></li>
+            <li><strong><a href="https://www.newtown-ct.gov/parks-recreation/pages/directions-fields-parks-and-facilities" target="_blank" rel="noopener">Orchard Hill Nature Center</a></strong><span data-es="Senderos en el bosque junto a antiguos molinos y represas del siglo XIX. Abierto de 8 am al atardecer; se necesita permiso de estacionamiento.">Wooded trails past 19th-century mill sites and dams. Open 8 am to sundown; a park parking permit is needed.</span></li>
           </ul>
         </div>
         <div>
           <h3 class="rain" data-i18n="rainyDay">Rainy day, indoors</h3>
           <ul>
             <li><strong><a href="https://www.everwondermuseum.org/" target="_blank" rel="noopener">EverWonder Children's Museum</a></strong><span data-es="Exhibiciones interactivas de STEAM para niños de hasta 10 años. Cerrado lunes y martes durante el año escolar.">Hands-on STEAM exhibits for kids up to 10. Closed Mondays and Tuesdays during the school year.</span></li>
+            <li><strong><a href="https://newtowncommunitycenter.org/" target="_blank" rel="noopener">Newtown Community Center</a></strong><span data-es="Una piscina recreativa cálida con entrada gradual para los más pequeños y zona de chorros, además de carriles para nadar. Se venden pases de un día a no socios.">A warm activity pool with a zero-entry shallow end for little ones and a spray area, plus lap lanes. Non-members can buy a day pass.</span></li>
             <li><strong><a href="https://www.chboothlibrary.org/" target="_blank" rel="noopener">C.H. Booth Library</a></strong><span data-es="La biblioteca pública de Newtown, en Main Street.">Newtown's public library on Main Street.</span></li>
             <li><strong>Edmond Town Hall</strong><span data-es="Un ayuntamiento histórico con un cine económico.">A historic town hall with a low-cost movie theater.</span></li>
           </ul>
