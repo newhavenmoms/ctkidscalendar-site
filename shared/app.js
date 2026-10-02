@@ -202,10 +202,10 @@ const RESOURCES=[
 const LIBRARY_DEFAULT = {for:{en:"Free, every week",es:"Gratis, cada semana"}, name:{en:"Your local library",es:"Tu biblioteca local"}, desc:{en:"Library cards are free, and most branches host storytimes, Stay & Play and other drop-in programs for little ones.",es:"Las tarjetas de biblioteca son gratuitas, y la mayor\u00eda de las sucursales ofrecen cuentacuentos, Stay & Play y otros programas sin inscripci\u00f3n para los m\u00e1s peque\u00f1os."}, a:{en:"Find your local library",es:"Encuentra tu biblioteca local"}, href:"https://ctstatelibrary.org/find-a-library/"};
 const LIB_T = T.library || {};
 const LIBRARY = {
-  for:{en:LIB_T.for||LIBRARY_DEFAULT.for.en, es:dx(LIB_T.for)||LIBRARY_DEFAULT.for.es},
-  name:{en:LIB_T.name||LIBRARY_DEFAULT.name.en, es:dx(LIB_T.name)||LIBRARY_DEFAULT.name.es},
-  desc:{en:LIB_T.desc||LIBRARY_DEFAULT.desc.en, es:dx(LIB_T.desc)||LIBRARY_DEFAULT.desc.es},
-  a:{en:LIB_T.a||LIBRARY_DEFAULT.a.en, es:dx(LIB_T.a)||LIBRARY_DEFAULT.a.es},
+  for:{en:LIB_T.for||LIBRARY_DEFAULT.for.en, get es(){const v=LIB_T.for;return v?((window.DATA_ES&&window.DATA_ES[v])||v):LIBRARY_DEFAULT.for.es}},
+  name:{en:LIB_T.name||LIBRARY_DEFAULT.name.en, get es(){const v=LIB_T.name;return v?((window.DATA_ES&&window.DATA_ES[v])||v):LIBRARY_DEFAULT.name.es}},
+  desc:{en:LIB_T.desc||LIBRARY_DEFAULT.desc.en, get es(){const v=LIB_T.desc;return v?((window.DATA_ES&&window.DATA_ES[v])||v):LIBRARY_DEFAULT.desc.es}},
+  a:{en:LIB_T.a||LIBRARY_DEFAULT.a.en, get es(){const v=LIB_T.a;return v?((window.DATA_ES&&window.DATA_ES[v])||v):LIBRARY_DEFAULT.a.es}},
   href:LIB_T.href||LIBRARY_DEFAULT.href
 };
 
@@ -238,7 +238,7 @@ function timeLabel(times){
   const alsoW=LANG==="es"?"tambi\u00e9n":"also", eachW=LANG==="es"?"c/u":"each", startW=LANG==="es"?"inicio":"start", varyW=LANG==="es"?"var\u00eda, ver anuncio":"vary, see listing";
   if(!times.length)return `${LANG==="es"?"Horarios":"Showtimes"}<small>${varyW}</small>`;
   if(times.length===1)return times[0][1]?`${fmt(times[0][0])}<small>${LANG==="es"?"a":"to"} ${fmt(times[0][1])}</small>`:`${fmt(times[0][0])}<small>${startW}</small>`;
-  const dur=mins(times[0][1])-mins(times[0][0]);const same=times.every(t=>mins(t[1])-mins(t[0])===dur);
+  const hasEnd=times.every(t=>t[1]);const dur=hasEnd?mins(times[0][1])-mins(times[0][0]):0;const same=hasEnd&&times.every(t=>mins(t[1])-mins(t[0])===dur);
   return `${fmt(times[0][0])}<small>${alsoW} ${times.slice(1).map(t=>fmtShort(t[0])).join(", ")}${same?` \u00b7 ${dur} min ${eachW}`:""}</small>`;
 }
 const town=v=>(V[v]&&V[v][2])||TOWN_LABEL;
