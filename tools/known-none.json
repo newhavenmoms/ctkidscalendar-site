@@ -1,0 +1,10 @@
+{
+  "_help": "Categories searched for and confirmed NOT to exist inside the town (Oct 2026). Format: town -> { category name exactly as in refresh-report.js : short note }. Remove an entry if one opens.",
+  "cheshire":   { "Splash pad": "community pool at Bartlem instead", "Theater / family shows": "only an adult community troupe" },
+  "darien":     { "Splash pad": "beaches and ponds instead" },
+  "greenwich":  { "Splash pad": "none found" },
+  "new-canaan": { "Splash pad": "none found" },
+  "wallingford":{ "Splash pad": "none in town" },
+  "trumbull":   { "Theater / family shows": "no family theater in town" },
+  "milford":    { "Toy store": "Mermaid Books sells toys; no dedicated toy shop confirmed" }
+}

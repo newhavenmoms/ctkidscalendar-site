@@ -1,5 +1,7 @@
 # Adding a new town to CT Kids Calendar
 
+> **Finding the content:** follow `tools/PLAYBOOK.md` (library → Parks & Rec → Big Days → theaters → museums → Things to do categories), then run `node tools/refresh-report.js` to check coverage.
+
 Every town site is one HTML file that (1) sets a `window.TOWN` config object with
 that town's content, and (2) loads the two shared files everyone uses:
 `/shared/style.css` and `/shared/app.js`. Fix a bug or add a feature once in

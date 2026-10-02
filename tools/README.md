@@ -1,3 +1,13 @@
+# Tools
+
+| What you want to do | Use |
+|---|---|
+| Add a new town, or refresh one for a new season | **`tools/PLAYBOOK.md`** (the step-by-step method and what worked) |
+| See what needs attention right now | **`node tools/refresh-report.js`** → `tools/refresh-report.md` |
+| See each town's specific sources | `tools/SOURCES.md` (plus `node tools/list-sources.js`) |
+| Import library calendars | The importer, below |
+| Link "Things to do" entries | `node tools/link-places.js` |
+
 # Calendar-feed importer
 
 Pulls kids' and family events from library (and other) calendar feeds, turns
