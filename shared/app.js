@@ -57,7 +57,7 @@ en:{
   noMatchFilters:"Nothing matches those filters this week. Try another age group or neighborhood, or turn off a filter.",
   buildingCal:'We\u2019re still building out this town\u2019s calendar \u2014 check back soon, or <a href="#contact">tell us what\u2019s coming up</a>.',
   catAll:"All", catMusic:"Music", catDance:"Dance", catSwim:"Swim", catMove:"Sports & tumbling",
-  catArt:"Art & theater", catBuild:"Build & tinker", catNature:"Nature",
+  catArt:"Art & theater", catBuild:"Build & tinker", catNature:"Nature", catPlay:"Play & programs",
   showingOf:(p,n)=>`Showing ${p} of ${n}`, showAllN:n=>`Show all ${n} classes`, showFewer:"Show fewer", seeClasses:"See classes",
   welcomeTo:b=>`Welcome to ${b}`, thingsWeekendN:n=>`${n} things to do this weekend`,
   knowEvent:e=>`Know an event? ${e}`, moreTowns:"More towns coming to CT Kids Calendar",
@@ -122,7 +122,7 @@ es:{
   noMatchFilters:"Nada coincide con esos filtros esta semana. Prueba otro grupo de edad o vecindario, o desactiva un filtro.",
   buildingCal:'Todav\u00eda estamos construyendo el calendario de este pueblo \u2014 vuelve pronto, o <a href="#contact">cu\u00e9ntanos qu\u00e9 se viene</a>.',
   catAll:"Todas", catMusic:"M\u00fasica", catDance:"Danza", catSwim:"Nataci\u00f3n", catMove:"Deportes y gimnasia",
-  catArt:"Arte y teatro", catBuild:"Construir y crear", catNature:"Naturaleza",
+  catArt:"Arte y teatro", catBuild:"Construir y crear", catNature:"Naturaleza", catPlay:"Juego y programas",
   showingOf:(p,n)=>`Mostrando ${p} de ${n}`, showAllN:n=>`Ver las ${n} clases`, showFewer:"Ver menos", seeClasses:"Ver clases",
   welcomeTo:b=>`Bienvenido a ${b}`, thingsWeekendN:n=>`${n} cosas para hacer este fin de semana`,
   knowEvent:e=>`\u00bfConoces un evento? ${e}`, moreTowns:"M\u00e1s pueblos pr\u00f3ximamente en CT Kids Calendar",
@@ -471,7 +471,8 @@ bigEl.addEventListener("click",ev=>{
 });
 
 /* ---------- classes ---------- */
-const CCAT_KEYS=[["all","catAll"],["music","catMusic"],["dance","catDance"],["swim","catSwim"],["move","catMove"],["art","catArt"],["build","catBuild"],["nature","catNature"]];
+const CCAT_KEYS=[["all","catAll"],["music","catMusic"],["dance","catDance"],["swim","catSwim"],["move","catMove"],["art","catArt"],["build","catBuild"],["nature","catNature"],["play","catPlay"]];
+CL.forEach(c=>{if(c.c==="sports")c.c="move";if(!CCAT_KEYS.some(k=>k[0]===c.c))c.c="play"});
 let ccat="all",clOpen=false;
 const peek=()=>isMobile()?4:6;
 const chipsEl=document.getElementById("classChips"),clEl=document.getElementById("classList"),clSection=document.getElementById("classes");

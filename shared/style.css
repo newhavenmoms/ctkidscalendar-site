@@ -313,6 +313,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .ctag.swim{background:color-mix(in srgb,var(--harbor) 14%,transparent);color:var(--harbor)}
 .ctag.move{background:var(--marigold);color:var(--marigold-ink)}
 .ctag.build{background:var(--paper-2);color:var(--ink)}
+.ctag.play{background:var(--lilac-tint);color:var(--lilac)}
 .cnote{margin-top:22px;font-size:.95rem;color:var(--ink-soft)}
 /* ===== v5 additions ===== */
 .langbtn{appearance:none;font:inherit;font-size:.9rem;font-weight:700;min-height:40px;padding:0 12px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;white-space:nowrap}
@@ -467,6 +468,7 @@ section.block h2.sec{font-family:var(--serif);font-size:clamp(2.4rem,6vw,4rem);l
 .ctag.swim{background:#fff;color:var(--harbor)}
 .ctag.move{background:var(--marigold);color:var(--marigold-ink)}
 .ctag.build{background:var(--paper-2);color:var(--ink)}
+.ctag.play{background:var(--lilac-tint);color:var(--ink)}
 .cls .meta{font-family:var(--mono);font-size:.78rem;font-weight:500}
 
 /* resources */
