@@ -456,14 +456,26 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
 
 </main>
 
+<section class="privacy" id="privacy" aria-labelledby="privacy-title">
+  <div class="wrap doc">
+    <h2 id="privacy-title" data-i18n="privTitle">Privacy policy</h2>
+    <p class="updated" data-i18n="privEff">Effective October 2, 2026</p>
+    <p data-i18n="privIntro">CT Kids Calendar (ctkidscalendar.com) is a free guide to events, classes and resources for families across Connecticut. It has no accounts. Each town page has the full policy; here are the essentials.</p>
+    <p data-i18n="privP2">To learn which towns, events and features are useful, we use Google Analytics 4. If you choose “Allow” in the cookie notice, it sets analytics cookies and records the pages you view, the links and buttons you tap (like Share or Español), the website that sent you here, your approximate location (city or region) and your device, browser and screen size. Google Analytics doesn't store your IP address. If you choose “No thanks,” no analytics cookies are set, and Google receives only basic signals without cookies or identifiers, used for overall statistics.</p>
+    <p data-i18n="privCk">You can change your choice any time: <a href="#privacy" data-cookie-settings>Cookie settings</a>. You can also block or delete cookies in your browser settings, or use <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google’s opt-out browser add-on</a>.</p>
+    <p data-i18n="privSvc"><strong>GitHub Pages</strong> hosts the site and may keep server logs, including IP addresses, for security. <strong>Google Fonts</strong> supplies the typefaces, so your browser requests them from Google. <strong>Google Analytics</strong> measures how the site is used, as described above. See <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from sites that use its services</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google’s privacy policy</a>.</p>
+    <p data-i18n="privKids">The site is written for parents and caregivers, isn't directed at children under 13, and doesn't knowingly collect information from them.</p>
+  </div>
+</section>
+
 <footer class="home-footer">
   <div class="wrap">
     <span data-i18n="footerTag">CT Kids Calendar &middot; a town-by-town guide for Connecticut families</span>
-    <span><a href="mailto:newhavenmoms@gmail.com?subject=Suggest%20a%20town%20for%20CT%20Kids%20Calendar&body=Town%3A%20" data-i18n="suggestTown">Suggest a town</a></span>
+    <span><a href="mailto:newhavenmoms@gmail.com?subject=Suggest%20a%20town%20for%20CT%20Kids%20Calendar&body=Town%3A%20" data-i18n="suggestTown">Suggest a town</a> &middot; <a href="#privacy" data-i18n="privTitle">Privacy policy</a></span>
   </div>
 </footer>
 
-<script data-goatcounter="https://ctkidscalendar.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script src="/shared/analytics.js" defer></script>
 <script>
 (function(){
   const UI={
@@ -475,6 +487,10 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       suggestTown:"Suggest a town", footerTag:"CT Kids Calendar &middot; a town-by-town guide for Connecticut families",
       tickWelcome:"WELCOME TO CT KIDS CALENDAR", tickTowns:"{{T}} TOWNS OPEN NOW", tickThings:"{{N}} THINGS TO DO, TRACKED BY HAND",
       langBtn:"Espa\u00f1ol",
+      privTitle:"Privacy policy", privEff:"Effective October 2, 2026", privIntro:"CT Kids Calendar (ctkidscalendar.com) is a free guide to events, classes and resources for families across Connecticut. It has no accounts. Each town page has the full policy; here are the essentials.",
+      privP2:"To learn which towns, events and features are useful, we use Google Analytics 4. If you choose \u201cAllow\u201d in the cookie notice, it sets analytics cookies and records the pages you view, the links and buttons you tap (like Share or Espa\u00f1ol), the website that sent you here, your approximate location (city or region) and your device, browser and screen size. Google Analytics doesn't store your IP address. If you choose \u201cNo thanks,\u201d no analytics cookies are set, and Google receives only basic signals without cookies or identifiers, used for overall statistics.",
+      privCk:"You can change your choice any time: <a href=\"#privacy\" data-cookie-settings>Cookie settings</a>. You can also block or delete cookies in your browser settings, or use <a href=\"https://tools.google.com/dlpage/gaoptout\" target=\"_blank\" rel=\"noopener\">Google\u2019s opt-out browser add-on</a>.",
+      privSvc:"<strong>GitHub Pages</strong> hosts the site and may keep server logs, including IP addresses, for security. <strong>Google Fonts</strong> supplies the typefaces, so your browser requests them from Google. <strong>Google Analytics</strong> measures how the site is used, as described above. See <a href=\"https://policies.google.com/technologies/partner-sites\" target=\"_blank\" rel=\"noopener\">how Google uses information from sites that use its services</a> and <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener\">Google\u2019s privacy policy</a>.", privKids:"The site is written for parents and caregivers, isn't directed at children under 13, and doesn't knowingly collect information from them.",
       bigH2:"Big days around Connecticut", bigIntro:"Festivals, shows, Halloween fun and holiday favorites coming up in every town we cover, grouped by county. Tap one to open it in that town&rsquo;s calendar.",
       bigSwipe:"Swipe for more counties", bigShowAll:"Show all {{N}}", bigShowFewer:"Show fewer", bigTowns:"{{N}} towns", bigNone:"Nothing coming up right now. Check back soon.",
       gfall:"Fall fun", gshows:"Show", ghw:"Halloween", ghol:"Holiday", and:" and ",
@@ -488,6 +504,10 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       suggestTown:"Sugerir un pueblo", footerTag:"CT Kids Calendar &middot; una gu\u00eda pueblo por pueblo para familias de Connecticut",
       tickWelcome:"BIENVENIDO A CT KIDS CALENDAR", tickTowns:"{{T}} PUEBLOS DISPONIBLES", tickThings:"{{N}} COSAS QUE HACER, VERIFICADAS A MANO",
       langBtn:"English",
+      privTitle:"Pol\u00edtica de privacidad", privEff:"Vigente desde el 2 de octubre de 2026", privIntro:"CT Kids Calendar (ctkidscalendar.com) es una gu\u00eda gratuita de eventos, clases y recursos para familias en todo Connecticut. No tiene cuentas. Cada p\u00e1gina de pueblo tiene la pol\u00edtica completa; aqu\u00ed est\u00e1 lo esencial.",
+      privP2:"Para saber qu\u00e9 pueblos, eventos y funciones son \u00fatiles, usamos Google Analytics 4. Si eliges \u201cPermitir\u201d en el aviso de cookies, pone cookies de an\u00e1lisis y registra las p\u00e1ginas que ves, los enlaces y botones que tocas (como Compartir o English), el sitio que te envi\u00f3 aqu\u00ed, tu ubicaci\u00f3n aproximada (ciudad o regi\u00f3n) y tu dispositivo, navegador y tama\u00f1o de pantalla. Google Analytics no guarda tu direcci\u00f3n IP. Si eliges \u201cNo, gracias\u201d, no se ponen cookies de an\u00e1lisis y Google solo recibe se\u00f1ales b\u00e1sicas sin cookies ni identificadores, usadas para estad\u00edsticas generales.",
+      privCk:"Puedes cambiar tu elecci\u00f3n en cualquier momento: <a href=\"#privacy\" data-cookie-settings>Configuraci\u00f3n de cookies</a>. Tambi\u00e9n puedes bloquear o borrar cookies en la configuraci\u00f3n de tu navegador, o usar el <a href=\"https://tools.google.com/dlpage/gaoptout\" target=\"_blank\" rel=\"noopener\">complemento de exclusi\u00f3n de Google</a>.",
+      privSvc:"<strong>GitHub Pages</strong> aloja el sitio y puede guardar registros del servidor, incluidas direcciones IP, por seguridad. <strong>Google Fonts</strong> proporciona las tipograf\u00edas, as\u00ed que tu navegador las pide a Google. <strong>Google Analytics</strong> mide c\u00f3mo se usa el sitio, como se describe arriba. Consulta <a href=\"https://policies.google.com/technologies/partner-sites\" target=\"_blank\" rel=\"noopener\">c\u00f3mo usa Google la informaci\u00f3n de los sitios que usan sus servicios</a> y la <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener\">pol\u00edtica de privacidad de Google</a>.", privKids:"El sitio est\u00e1 escrito para padres y cuidadores, no est\u00e1 dirigido a menores de 13 a\u00f1os y no recopila informaci\u00f3n de ellos a sabiendas.",
       bigH2:"D\u00edas especiales en Connecticut", bigIntro:"Festivales, espect\u00e1culos, Halloween y fiestas de fin de a\u00f1o en todos nuestros pueblos, agrupados por condado. Toca uno para abrirlo en el calendario de ese pueblo.",
       bigSwipe:"Desliza para ver m\u00e1s condados", bigShowAll:"Ver los {{N}}", bigShowFewer:"Ver menos", bigTowns:"{{N}} pueblos", bigNone:"No hay nada pr\u00f3ximamente. Vuelve pronto.",
       gfall:"Oto\u00f1o", gshows:"Espect\u00e1culo", ghw:"Halloween", ghol:"Fiestas", and:" y ",
