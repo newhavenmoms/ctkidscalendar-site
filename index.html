@@ -132,6 +132,22 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
 .townlist a{display:inline-block;font-family:var(--mono);font-weight:700;font-size:.82rem;letter-spacing:.03em;color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);border-radius:999px;padding:9px 18px;text-decoration:none;box-shadow:3px 3px 0 var(--ink)}
 .townlist a:hover{background:var(--tc);transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
 @media (max-width:600px){.townlist a{padding:12px 16px;font-size:.82rem}}
+.homenear{border-bottom:1.5px solid var(--ink)}
+.nearrow{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:flex-end;margin:6px 0 4px}
+.nearfield{display:flex;flex-direction:column;gap:6px}
+.nearinput{box-sizing:border-box;height:54px;font:inherit;font-size:1.05rem;font-variant-numeric:tabular-nums;letter-spacing:.06em;width:7.4em;padding:9px 12px;border:1.5px solid var(--ink);border-radius:0;background:var(--card,#fff);color:var(--ink)}
+.nearinput:focus-visible{outline:3px solid var(--marigold);outline-offset:2px}
+.nearinput[aria-invalid="true"]{border-color:#B3261E}
+.nearloc{padding-bottom:10px}
+.nearstatus{color:var(--ink-soft);margin:14px 0 4px;font-size:.97rem}
+.nearday{margin-top:22px}
+.nearday .dayhead{border-bottom:1.5px solid var(--ink);padding-bottom:4px}
+.nearev{display:grid;grid-template-columns:7.5rem 1fr auto;gap:4px 18px;padding:14px 4px;border-bottom:1px solid var(--line);color:inherit;text-decoration:none}
+.nearev:hover .ev-title{color:var(--elm)}
+.nearev:focus-visible{outline:3px solid var(--marigold);outline-offset:-3px}
+.nearev .neardist{font-variant-numeric:tabular-nums;color:var(--ink-soft);font-size:.9rem;white-space:nowrap;padding-top:3px}
+.nearev .ev-town{font-weight:600;color:var(--ink)}
+@media (max-width:760px){.nearev{grid-template-columns:1fr auto;gap:2px 12px}.nearev .ev-time{grid-column:1;grid-row:1;display:flex;gap:8px;align-items:baseline}.nearev .ev-time small{display:inline}.nearev .neardist{grid-column:2;grid-row:1;padding-top:0}.nearev .nearbody{grid-column:1/-1;grid-row:2}}
 </style>
 </head>
 <body>
@@ -428,6 +444,44 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
     </div>
   </section>
 
+  <section class="block homenear" id="near">
+    <div class="wrap">
+      <h2 class="sec" data-i18n="nearH2">What's on near you</h2>
+      <p class="intro" data-i18n="nearIntro">Every town's calendar in one place. Enter your ZIP code and how far you'll drive, then narrow it down the same way you would on a town page.</p>
+      <form class="nearform" id="nearForm" onsubmit="return false">
+        <div class="nearrow">
+          <label class="nearfield"><span class="flabel" data-i18n="nearZip">ZIP code</span>
+            <input id="nearZip" class="nearinput" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" autocomplete="postal-code" placeholder="06902"></label>
+          <label class="nearfield"><span class="flabel" data-i18n="nearRadius">Within</span>
+            <select id="nearRadius" class="chip selectchip"></select></label>
+          <label class="nearfield"><span class="flabel" data-i18n="nearWhen">When</span>
+            <select id="nearWhen" class="chip selectchip"></select></label>
+          <button type="button" class="linkbtn nearloc" id="nearLoc" data-i18n="nearUseLoc">Use my location</button>
+        </div>
+        <div class="filters nearfilters">
+          <div class="fgroup" role="group" aria-label="Filter by age">
+            <span class="flabel" data-i18n="filterAges">Ages</span>
+            <button type="button" class="chip" data-nage="all" aria-pressed="true" data-i18n="catAll">All</button>
+            <button type="button" class="chip" data-nage="baby" aria-pressed="false" data-i18n="ageBabies">Babies</button>
+            <button type="button" class="chip" data-nage="toddler" aria-pressed="false" data-i18n="ageToddlers">Toddlers</button>
+            <button type="button" class="chip" data-nage="preschool" aria-pressed="false" data-i18n="agePreschool">Preschool</button>
+            <button type="button" class="chip" data-nage="big" aria-pressed="false" data-i18n="ageBig">Big kids</button>
+          </div>
+          <div class="fgroup" role="group" aria-label="Other filters">
+            <span class="flabel" data-i18n="filterShowOnly">Show only</span>
+            <button type="button" class="chip" data-ntog="free" aria-pressed="false" data-i18n="tFree">Free</button>
+            <button type="button" class="chip" data-ntog="dropin" aria-pressed="false" data-i18n="tDrop">Drop-in</button>
+            <button type="button" class="chip" data-ntog="indoor" aria-pressed="false" data-i18n="tIndoor">Rainy day (indoors)</button>
+            <button type="button" class="chip" data-ntog="special" aria-pressed="false" data-i18n="tBig">Big days</button>
+          </div>
+        </div>
+      </form>
+      <p class="nearstatus" id="nearStatus" aria-live="polite"></p>
+      <div id="nearList"></div>
+      <div class="bdmore" id="nearMoreWrap" hidden><button type="button" class="linkbtn" id="nearMore"></button></div>
+    </div>
+  </section>
+
   <section class="block homebig" id="bigdays" hidden>
     <div class="wrap">
       <h2 class="sec" data-i18n="bigH2">Big days around Connecticut</h2>
@@ -489,6 +543,48 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       suggestTown:"Suggest a town", footerTag:"CT Kids Calendar &middot; a town-by-town guide for Connecticut families",
       tickWelcome:"WELCOME TO CT KIDS CALENDAR", tickTowns:"{{T}} TOWNS OPEN NOW", tickThings:"{{N}} THINGS TO DO",
       langBtn:"Espa\u00f1ol",
+      nearH2:"What's on near you",
+      nearIntro:"Every town's calendar in one place. Enter your ZIP code and how far you'll drive, then narrow it down the same way you would on a town page.",
+      nearZip:"ZIP code",
+      nearRadius:"Within",
+      nearWhen:"When",
+      nearUseLoc:"Use my location",
+      filterAges:"Ages",
+      catAll:"All",
+      ageBabies:"Babies",
+      ageToddlers:"Toddlers",
+      agePreschool:"Preschool",
+      ageBig:"Big kids",
+      filterShowOnly:"Show only",
+      tFree:"Free",
+      tDrop:"Drop-in",
+      tIndoor:"Rainy day (indoors)",
+      tBig:"Big days",
+      nearMiles:"{{N}} miles",
+      nearAny:"Any distance",
+      nearW_today:"Today",
+      nearW_tomorrow:"Tomorrow",
+      nearW_weekend:"This weekend",
+      nearW_week:"Next 7 days",
+      nearW_month:"Next 30 days",
+      nearLoading:"Loading every town's calendar…",
+      nearError:"Sorry, the calendar didn't load. Try again in a moment.",
+      nearBadZip:"Enter a 5-digit ZIP code.",
+      nearUnknownZip:"We don't recognize that ZIP. Try a Connecticut ZIP code near one of our towns.",
+      nearFoundNear:"{{N}} things to do in {{T}} towns within {{R}} of {{Z}}.",
+      nearFoundAll:"{{N}} things to do across {{T}} towns. Add your ZIP code to see what's close by.",
+      nearYou:"you",
+      nearNoneNear:"Nothing matches within that distance. Try a bigger radius or fewer filters.",
+      nearNone:"Nothing matches those filters. Try fewer filters or a longer time span.",
+      nearTo:"to",
+      nearAlso:"+{{N}} more times",
+      nearSeeTimes:"See times",
+      nearCheck:"Check first",
+      nearMi:"{{N}} mi",
+      nearMore:"Show more ({{N}} left)",
+      nearLocating:"Finding your location…",
+      nearLocFail:"We couldn't get your location. Enter a ZIP code instead.",
+      dowl:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
       privTitle:"Privacy policy", privEff:"Effective October 2, 2026", privIntro:"CT Kids Calendar (ctkidscalendar.com) is a free guide to events, classes and resources for families across Connecticut. It has no accounts. Each town page has the full policy; here are the essentials.",
       privP2:"To learn which towns, events and features are useful, we use Google Analytics 4. If you choose \u201cAllow\u201d in the cookie notice, it sets analytics cookies and records the pages you view, the links and buttons you tap (like Share or Espa\u00f1ol), the website that sent you here, your approximate location (city or region) and your device, browser and screen size. Google Analytics doesn't store your IP address. If you choose \u201cNo thanks,\u201d no analytics cookies are set, and Google receives only basic signals without cookies or identifiers, used for overall statistics.",
       privCk:"You can change your choice any time: <a href=\"#privacy\" data-cookie-settings>Cookie settings</a>. You can also block or delete cookies in your browser settings, or use <a href=\"https://tools.google.com/dlpage/gaoptout\" target=\"_blank\" rel=\"noopener\">Google\u2019s opt-out browser add-on</a>.",
@@ -506,6 +602,48 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       suggestTown:"Sugerir un pueblo", footerTag:"CT Kids Calendar &middot; una gu\u00eda pueblo por pueblo para familias de Connecticut",
       tickWelcome:"BIENVENIDO A CT KIDS CALENDAR", tickTowns:"{{T}} PUEBLOS DISPONIBLES", tickThings:"{{N}} COSAS QUE HACER",
       langBtn:"English",
+      nearH2:"Qué hay cerca de ti",
+      nearIntro:"El calendario de todos los pueblos en un solo lugar. Escribe tu código postal y hasta dónde quieres manejar, y luego filtra igual que en la página de cada pueblo.",
+      nearZip:"Código postal",
+      nearRadius:"A menos de",
+      nearWhen:"Cuándo",
+      nearUseLoc:"Usar mi ubicación",
+      filterAges:"Edades",
+      catAll:"Todos",
+      ageBabies:"Bebés",
+      ageToddlers:"Niños pequeños",
+      agePreschool:"Preescolar",
+      ageBig:"Niños grandes",
+      filterShowOnly:"Mostrar solo",
+      tFree:"Gratis",
+      tDrop:"Sin inscripción",
+      tIndoor:"Día de lluvia (bajo techo)",
+      tBig:"Días especiales",
+      nearMiles:"{{N}} millas",
+      nearAny:"Cualquier distancia",
+      nearW_today:"Hoy",
+      nearW_tomorrow:"Mañana",
+      nearW_weekend:"Este fin de semana",
+      nearW_week:"Próximos 7 días",
+      nearW_month:"Próximos 30 días",
+      nearLoading:"Cargando el calendario de todos los pueblos…",
+      nearError:"Lo sentimos, el calendario no cargó. Inténtalo de nuevo en un momento.",
+      nearBadZip:"Escribe un código postal de 5 dígitos.",
+      nearUnknownZip:"No reconocemos ese código postal. Prueba uno de Connecticut cerca de nuestros pueblos.",
+      nearFoundNear:"{{N}} actividades en {{T}} pueblos a menos de {{R}} de {{Z}}.",
+      nearFoundAll:"{{N}} actividades en {{T}} pueblos. Agrega tu código postal para ver lo que tienes cerca.",
+      nearYou:"ti",
+      nearNoneNear:"No hay nada a esa distancia. Prueba un radio mayor o menos filtros.",
+      nearNone:"No hay nada con esos filtros. Prueba menos filtros o un periodo más largo.",
+      nearTo:"a",
+      nearAlso:"+{{N}} horarios más",
+      nearSeeTimes:"Ver horarios",
+      nearCheck:"Confirmar antes",
+      nearMi:"{{N}} mi",
+      nearMore:"Mostrar más (quedan {{N}})",
+      nearLocating:"Buscando tu ubicación…",
+      nearLocFail:"No pudimos obtener tu ubicación. Escribe un código postal.",
+      dowl:["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"],
       privTitle:"Pol\u00edtica de privacidad", privEff:"Vigente desde el 2 de octubre de 2026", privIntro:"CT Kids Calendar (ctkidscalendar.com) es una gu\u00eda gratuita de eventos, clases y recursos para familias en todo Connecticut. No tiene cuentas. Cada p\u00e1gina de pueblo tiene la pol\u00edtica completa; aqu\u00ed est\u00e1 lo esencial.",
       privP2:"Para saber qu\u00e9 pueblos, eventos y funciones son \u00fatiles, usamos Google Analytics 4. Si eliges \u201cPermitir\u201d en el aviso de cookies, pone cookies de an\u00e1lisis y registra las p\u00e1ginas que ves, los enlaces y botones que tocas (como Compartir o English), el sitio que te envi\u00f3 aqu\u00ed, tu ubicaci\u00f3n aproximada (ciudad o regi\u00f3n) y tu dispositivo, navegador y tama\u00f1o de pantalla. Google Analytics no guarda tu direcci\u00f3n IP. Si eliges \u201cNo, gracias\u201d, no se ponen cookies de an\u00e1lisis y Google solo recibe se\u00f1ales b\u00e1sicas sin cookies ni identificadores, usadas para estad\u00edsticas generales.",
       privCk:"Puedes cambiar tu elecci\u00f3n en cualquier momento: <a href=\"#privacy\" data-cookie-settings>Configuraci\u00f3n de cookies</a>. Tambi\u00e9n puedes bloquear o borrar cookies en la configuraci\u00f3n de tu navegador, o usar el <a href=\"https://tools.google.com/dlpage/gaoptout\" target=\"_blank\" rel=\"noopener\">complemento de exclusi\u00f3n de Google</a>.",
@@ -527,6 +665,7 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
     document.documentElement.lang=LANG;
     document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;if(UI.en[k]!==undefined)el.innerHTML=UI[LANG][k].replace("{{N}}",STATS.things).replace("{{T}}",STATS.towns)});
     renderBig();
+    if(window.ctkNearRelabel)window.ctkNearRelabel();
     const lb=document.getElementById("langBtn");
     if(lb){lb.querySelector(".full").textContent=UI[LANG].langBtn;lb.querySelector(".short").textContent=LANG==="es"?"EN":"ES";lb.setAttribute("aria-label",LANG==="es"?"Switch to English":"Cambiar a espa\u00f1ol")}
     const ids={towns:"statTownsNum",things:"statThingsNum",venues:"statVenuesNum",festivals:"statFestivalsNum"};
@@ -568,6 +707,107 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
     if(!bigOpen[id])b.closest(".bdcol")&&document.getElementById("bigdays").scrollIntoView({block:"start"});
   });
   fetch("/shared/bigdays.json").then(r=>r.ok?r.json():null).then(d=>{if(d&&d.items){BIG=d;renderBig()}}).catch(()=>{});
+  /* ---------- "What's on near you": every town's calendar, filtered by distance ----------
+     data: /shared/allevents.json (built by shared/build-stats.js) + /shared/zips.json.
+     Loaded only once someone uses the section. Schedules expand exactly like the town pages. */
+  (function(){
+    const zipIn=document.getElementById("nearZip"),radSel=document.getElementById("nearRadius"),whenSel=document.getElementById("nearWhen"),
+      list=document.getElementById("nearList"),status=document.getElementById("nearStatus"),moreWrap=document.getElementById("nearMoreWrap"),moreBtn=document.getElementById("nearMore");
+    if(!zipIn)return;
+    let DATA=null,ZIP=null,loading=null,origin=null,limit=40;
+    const nf={age:"all",free:false,dropin:false,indoor:false,special:false};
+    const RAD=[5,10,15,25,50,0],WHEN=["today","tomorrow","weekend","week","month"];
+    try{const s=JSON.parse(localStorage.getItem("ctk-near")||"{}");if(/^\d{5}$/.test(s.zip||""))zipIn.value=s.zip;if(RAD.includes(s.r))radSel.dataset.v=s.r;}catch(_){}
+    const key=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+    const addD=(d,n)=>{const x=new Date(d);x.setDate(x.getDate()+n);return x};
+    const mins=t=>{const[h,m]=t.split(":").map(Number);return h*60+m};
+    const fmtT=t=>{let[h,m]=t.split(":").map(Number);const ap=h>=12?"pm":"am";h=h%12||12;return m?`${h}:${pad(m)}${ap}`:`${h}${ap}`};
+    const miles=(a,b)=>{const R=3958.8,r=Math.PI/180,dLa=(b[0]-a[0])*r,dLo=(b[1]-a[1])*r,h=Math.sin(dLa/2)**2+Math.cos(a[0]*r)*Math.cos(b[0]*r)*Math.sin(dLo/2)**2;return 2*R*Math.asin(Math.sqrt(h))};
+    function fillSelects(){
+      const L=UI[LANG],rv=Number(radSel.value||radSel.dataset.v||15),wv=whenSel.value||"week";
+      radSel.innerHTML=RAD.map(r=>`<option value="${r}"${r===rv?" selected":""}>${r?L.nearMiles.replace("{{N}}",r):L.nearAny}</option>`).join("");
+      whenSel.innerHTML=WHEN.map(w=>`<option value="${w}"${w===wv?" selected":""}>${L["nearW_"+w]}</option>`).join("");
+    }
+    function range(){
+      const t=new Date(now.getFullYear(),now.getMonth(),now.getDate()),w=whenSel.value;
+      if(w==="today")return[t,t];if(w==="tomorrow")return[addD(t,1),addD(t,1)];
+      if(w==="weekend"){const dow=t.getDay();const sat=dow===0?addD(t,-1):addD(t,(6-dow));const start=dow===0||dow===6?t:sat;return[start,dow===0?t:addD(sat,1)]}
+      if(w==="month")return[t,addD(t,29)];return[t,addD(t,6)];
+    }
+    function occurs(r,d,k){if(d.getDay()!==r[0]||k<r[2]||k>r[3])return false;return r[4]?Math.ceil(d.getDate()/7)===r[4]:true}
+    function pass(e){if(nf.age!=="all"&&!e.a.includes(nf.age))return false;if(nf.free&&!e.f)return false;if(nf.dropin&&!e.d)return false;if(nf.indoor&&!e.in)return false;if(nf.special&&!e.sp)return false;return true}
+    function load(){
+      if(loading)return loading;
+      status.textContent=UI[LANG].nearLoading;
+      loading=Promise.all([fetch("/shared/allevents.json").then(r=>r.json()),fetch("/shared/zips.json").then(r=>r.json())]).then(([a,z])=>{DATA=a;ZIP=z}).catch(()=>{status.textContent=UI[LANG].nearError});
+      return loading;
+    }
+    function render(){
+      const L=UI[LANG];if(!DATA)return;
+      const z=zipIn.value.trim();let o=origin;
+      if(!o&&z){if(!/^\d{5}$/.test(z)){zipIn.setAttribute("aria-invalid","true");status.textContent=L.nearBadZip;list.innerHTML="";moreWrap.hidden=true;return}
+        o=ZIP.zips[z];if(!o){zipIn.setAttribute("aria-invalid","true");status.textContent=L.nearUnknownZip;list.innerHTML="";moreWrap.hidden=true;return}}
+      zipIn.removeAttribute("aria-invalid");
+      const rad=Number(radSel.value);const[from,to]=range();
+      const dist={};Object.entries(DATA.towns).forEach(([s,t])=>{dist[s]=o&&t.ll?miles(o,t.ll):null});
+      const inRange=s=>!o||!rad||(dist[s]!=null&&dist[s]<=rad);
+      const days=[];
+      for(let d=new Date(from);d<=to;d=addD(d,1)){
+        const k=key(d),items=[];
+        for(const e of DATA.ev){
+          if(!inRange(e.tw)||!pass(e)||(e.x&&e.x.includes(k)))continue;
+          let times=null;
+          (e.s||[]).forEach(r=>{if(occurs(r,d,k))times=(times||[]).concat(r[1])});
+          (e.w||[]).forEach(w=>{if(k>=w.from&&k<=(w.to||w.from))times=(times||[]).concat(w.t||[])});
+          if(times)items.push({e,times:times.slice().sort((a,b)=>mins(a[0])-mins(b[0]))});
+        }
+        items.sort((a,b)=>(a.times.length?mins(a.times[0][0]):-1)-(b.times.length?mins(b.times[0][0]):-1)||(dist[a.e.tw]||0)-(dist[b.e.tw]||0));
+        if(items.length)days.push({d,k,items});
+      }
+      const total=days.reduce((n,x)=>n+x.items.length,0),townsHit=new Set(days.flatMap(x=>x.items.map(i=>i.e.tw))).size;
+      status.textContent=total?(o?L.nearFoundNear:L.nearFoundAll).replace("{{N}}",total).replace("{{T}}",townsHit).replace("{{R}}",rad?L.nearMiles.replace("{{N}}",rad):L.nearAny.toLowerCase()).replace("{{Z}}",z||L.nearYou):(o?L.nearNoneNear:L.nearNone);
+      let shown=0,html="";
+      for(const day of days){
+        if(shown>=limit)break;
+        const head=`${L.dowl[day.d.getDay()]}, ${L.mon[day.d.getMonth()]} ${day.d.getDate()}`;
+        let rows="";
+        for(const it of day.items){
+          if(shown>=limit)break;shown++;
+          const e=it.e,t=DATA.towns[e.tw];
+          const tm=it.times.length?`${fmtT(it.times[0][0])}${it.times[0][1]?`<small>${L.nearTo} ${fmtT(it.times[0][1])}</small>`:""}${it.times.length>1?`<small>${L.nearAlso.replace("{{N}}",it.times.length-1)}</small>`:""}`:`<small>${L.nearSeeTimes}</small>`;
+          const tags=[e.sp?`<span class="tag">${L["g"+e.sp]||L.tBig}</span>`:"",e.f?`<span class="tag">${L.tFree}</span>`:"",e.d?`<span class="tag">${L.tDrop}</span>`:"",e.ck?`<span class="tag">${L.nearCheck}</span>`:""].join("");
+          const ages=LANG==="es"&&e.age?e.age:e.ag;
+          const dd=dist[e.tw];
+          rows+=`<a class="nearev" href="/${e.tw}/#e=${encodeURIComponent(e.id)}&d=${day.k}">
+            <span class="ev-time">${tm}</span>
+            <span class="nearbody"><span class="ev-title">${escH(LANG==="es"&&e.te?e.te:e.t)}</span><span class="ev-place"><span class="ev-town">${escH(t.n)}</span> \u2014 ${escH(e.p)}${ages?` (${escH(ages)})`:""}</span>${tags?`<span class="tags">${tags}</span>`:""}</span>
+            <span class="neardist">${dd!=null?L.nearMi.replace("{{N}}",dd<1?"<1":Math.round(dd)):""}</span></a>`;
+        }
+        html+=`<div class="nearday"><div class="dayhead"><h2>${head}</h2></div>${rows}</div>`;
+      }
+      list.innerHTML=html;
+      moreWrap.hidden=shown>=total;moreBtn.textContent=L.nearMore.replace("{{N}}",total-shown);
+    }
+    function save(){try{localStorage.setItem("ctk-near",JSON.stringify({zip:zipIn.value.trim(),r:Number(radSel.value)}))}catch(_){}}
+    function go(){limit=40;origin=null;save();load().then(()=>{render();if(window.ctkTrack)window.ctkTrack("near_search",{radius:radSel.value,when:whenSel.value,has_zip:!!zipIn.value})})}
+    zipIn.addEventListener("input",()=>{zipIn.value=zipIn.value.replace(/\D/g,"").slice(0,5);if(zipIn.value.length===5||!zipIn.value)go()});
+    radSel.addEventListener("change",go);whenSel.addEventListener("change",go);
+    document.getElementById("nearForm").addEventListener("click",ev=>{
+      const a=ev.target.closest("[data-nage]"),tg=ev.target.closest("[data-ntog]");
+      if(a){nf.age=a.dataset.nage;document.querySelectorAll("[data-nage]").forEach(x=>x.setAttribute("aria-pressed",x===a?"true":"false"));limit=40;load().then(render)}
+      if(tg){const k=tg.dataset.ntog;nf[k]=!nf[k];tg.setAttribute("aria-pressed",nf[k]?"true":"false");limit=40;load().then(render)}
+    });
+    moreBtn.addEventListener("click",()=>{limit+=40;render()});
+    document.getElementById("nearLoc").addEventListener("click",()=>{
+      if(!navigator.geolocation){status.textContent=UI[LANG].nearLocFail;return}
+      status.textContent=UI[LANG].nearLocating;
+      navigator.geolocation.getCurrentPosition(p=>{zipIn.value="";origin=[p.coords.latitude,p.coords.longitude];limit=40;load().then(()=>{render()})},()=>{status.textContent=UI[LANG].nearLocFail},{maximumAge:600000,timeout:10000});
+    });
+    window.ctkNearRelabel=()=>{fillSelects();if(DATA)render()};
+    fillSelects();
+    if(zipIn.value)go();
+    else if("IntersectionObserver" in window){const io=new IntersectionObserver(es=>{if(es.some(x=>x.isIntersecting)){io.disconnect();load().then(render)}},{rootMargin:"200px"});io.observe(document.getElementById("near"))}
+  })();
   /* map labels: draw the hovered pin's label in a top layer so neighbouring pins never cover it */
   (function(){const svg=document.querySelector(".ctmap");if(!svg)return;const layer=svg.querySelector(".tip-layer");
     const show=a=>{const g=a.querySelector(":scope > g");const tip=a.querySelector(".pin-tip");if(!g||!tip)return;

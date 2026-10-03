@@ -1,5 +1,7 @@
 # Adding a new town to CT Kids Calendar
 
+> **After adding a town:** re-run `node tools/build-zips.js` (so the homepage "near you" search knows the town's location) and `node shared/build-stats.js`.
+
 > **Finding the content:** follow `tools/PLAYBOOK.md` (library → Parks & Rec → Big Days → theaters → museums → Things to do categories), then run `node tools/refresh-report.js` to check coverage.
 
 Every town site is one HTML file that (1) sets a `window.TOWN` config object with

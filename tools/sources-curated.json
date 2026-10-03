@@ -1,0 +1,775 @@
+{
+ "_help": "Hand-picked sources per town. 'check' rows appear under 'Check regularly'; 'extras' are raw markdown blocks kept as written. Rebuild SOURCES.md with: node tools/build-sources-md.js",
+ "header": "# Event sources — monthly check list\n\nOne place to see where each town's events come from, so re-checking and finding\nnew events is quick. Update the \"Last checked\" column whenever a source is reviewed.\n\n## How to use this each month\n\n1. Pick a town and open the **Check regularly** links.\n2. Either send Claude the zip and say \"monthly check for <town>\" (Claude will go\n   through these links and report what's new or changed), or paste in anything\n   you found yourself.\n3. For library calendars with a saved feed link, just say \"re-import <town>\".\n4. Sources under **Worth adding** haven't been used yet — good places to look for\n   more events.\n\nSession dates matter: library storytimes often run in 4–8 week sessions, so a\nmonthly check catches new sessions before the old ones run out.\n\n**Watch for same-name towns.** Research tools keep mixing in other states'\nCheshire, Milford and others. Any address without a Connecticut zip code\n(06xxx) is a red flag.\n\nThis file is generated. Edit `tools/sources-curated.json` (the hand-picked lists),\nthen run `node tools/build-sources-md.js`. The \"Also cited in your data\" lists are\nrebuilt from the site itself each time, so they stay accurate as events are added.\n\n\n---",
+ "towns": {
+  "branford": {
+   "title": "Branford",
+   "check": [
+    {
+     "name": "James Blackstone Memorial Library — events",
+     "url": "https://events.blackstonelibrary.org/",
+     "how": "Monthly. No feed link: click Filters → kids' age groups → List, then copy each page (Cmd+A) and paste to Claude. Several storytimes run only on selected weeks.",
+     "last": "Sep 30, 2026 (imported Oct–Dec)"
+    },
+    {
+     "name": "Branford Parks & Recreation — programs list",
+     "url": "https://branfordct.myrec.com/info/activities/",
+     "how": "Monthly. Check **Annual Special Events** (House Hunt, Goblin Giveaway, parade, Hanukkah, Easter egg hunt) and **Toddler/Youth Programs** (Early Start playgroup, Kids Night Out, swim). Some pages still show last year's details until the town updates them.",
+     "last": "Sep 30, 2026"
+    },
+    {
+     "name": "Willoughby Wallace Memorial Library (Stony Creek)",
+     "url": "https://www.wwml.org/events",
+     "how": "Monthly. Mostly adult talks and concerts; watch for the monthly storytime, Collage & Crafts Club and family movies. Its calendar file link (saved in sources.json) may let Claude import it automatically.",
+     "last": "Sep 30, 2026"
+    },
+    {
+     "name": "Branford Land Trust — news & events",
+     "url": "https://branfordlandtrust.org/blog/",
+     "how": "Before Thanksgiving and in December: Van Wie Walk (Sunday before Thanksgiving) and New Year's Day hike.",
+     "last": "Sep 30, 2026"
+    },
+    {
+     "name": "Legacy Theatre — tickets",
+     "url": "https://www.tix.com/ticket-sales/legacytheatrectcal/6430",
+     "how": "Every couple of months: family series, holiday show ('Tis the Season, Dec 9–20). Don't confuse with Legacy Theatres in Pittsburgh or Las Vegas.",
+     "last": "Sep 30, 2026"
+    },
+    {
+     "name": "Shore Line Trolley Museum — events",
+     "url": "https://events.humanitix.com/host/the-shore-line-trolley-museum",
+     "how": "Each season: Pumpkin Patch Trolley (Oct), Santa/holiday trolleys, storytime and sensory-friendly days. East Haven, but a Branford family favorite.",
+     "last": "Sep 30, 2026"
+    },
+    {
+     "name": "Branford Historical Society — events",
+     "url": "https://branfordhistoricalsociety.org/events/",
+     "how": "November: holiday open house date. Harrison House tours are summer Saturdays only.",
+     "last": "Sep 30, 2026"
+    }
+   ],
+   "extras": []
+  },
+  "cheshire": {
+   "title": "Cheshire",
+   "check": [
+    {
+     "name": "Cheshire Public Library — calendar feed",
+     "url": "https://cheshirelibrary.libcal.com/ical_subscribe.php?src=p&cid=1860",
+     "how": "Monthly. Open the link (a calendar file downloads) and send it to Claude, or ask Claude to re-import. Storytimes, STEAM labs, teen programs.",
+     "last": "Sep 30, 2026"
+    },
+    {
+     "name": "Cheshire Parks & Rec, Artsplace, Pool & Youth Services — programs list",
+     "url": "https://cheshirect.myrec.com/info/activities/default.aspx",
+     "how": "Monthly, and when new seasons open (Jan, Apr, Sept). One-off events (Halloween Bash, Turkey Hunt, cookie decorating) and class schedules.",
+     "last": "Sep 30, 2026"
+    },
+    {
+     "name": "Same site — facility calendar",
+     "url": "https://cheshirect.myrec.com/info/calendar/list.aspx?FacilityID=0&AreaID=0",
+     "how": "Optional skim. Only shows a few days; mostly team practices and rentals. Good for spotting new Youth Services one-offs.",
+     "last": "Sep 30, 2026"
+    },
+    {
+     "name": "Cheshire Historical Society",
+     "url": "https://www.cheshirehistory.org/",
+     "how": "Every month or two. House museum open 2nd & 4th Sundays (exceptions are posted as an image on the home page). Spirits Alive cemetery tour each October.",
+     "last": "Sep 30, 2026"
+    },
+    {
+     "name": "Cheshire Land Trust",
+     "url": "https://www.cheshirelandtrust.org/",
+     "how": "Before Thanksgiving and in December. Hike dates are in the newsletter PDF and on [Facebook](https://www.facebook.com/CheshireLandTrustCT/) — Claude can't read those, so check by eye.",
+     "last": "Sep 30, 2026"
+    }
+   ],
+   "extras": [
+    "**Worth adding** (not used yet)\n\n- [Cheshire Public Schools community bulletin board](https://www.cheshire.k12.ct.us/for-parents/community-bulletin-board/) — Flyers for community events (pumpkin patch day, fun runs).\n- [Cheshire Patch](https://patch.com/connecticut/cheshire) — Local news roundups of weekend events.",
+    "**Don't confuse with**\n\n- Cheshire, **Massachusetts** (cheshirepubliclibrary.org) — a different library with a Tuesday 11am storytime that keeps showing up in research.\n- Historical Society of **Cheshire County** — that's Keene, New Hampshire."
+   ]
+  },
+  "darien": {
+   "title": "Darien",
+   "check": [
+    {
+     "name": "Darien Library — events",
+     "url": "https://www.darienlibrary.org/events/upcoming",
+     "how": "Monthly: storytimes, specials, school-break programs.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Darien Nature Center",
+     "url": "https://www.dariennaturecenter.org/",
+     "how": "Monthly: programs, fall and holiday events.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Darien Arts Center — class catalog",
+     "url": "https://register.darienarts.org/CourseCatalog/CatalogView.asp?ID=72",
+     "how": "Each season: classes. No public kids' shows in fall 2026.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Darien Parks & Recreation",
+     "url": "https://www.darienct.gov/202/Parks-Recreation",
+     "how": "Seasonal brochure and town events.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Museum of Darien",
+     "url": "https://museumofdarien.org/",
+     "how": "Holiday and family events.",
+     "last": "Oct 3, 2026"
+    }
+   ],
+   "extras": []
+  },
+  "fairfield": {
+   "title": "Fairfield",
+   "check": [
+    {
+     "name": "Fairfield Public Library (Main + Fairfield Woods)",
+     "url": "https://fplct.librarymarket.com/",
+     "how": "Monthly. LibraryMarket: filter Preschool + Children, list view, Paste the kids-filtered list view (blocks automated reading). Last full paste Oct 3.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Pequot Library — calendar",
+     "url": "https://www.pequotlibrary.org/calendar/",
+     "how": "Monthly (Southport).",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Fairfield Museum & History Center — events",
+     "url": "https://www.fairfieldhistory.org/events-calendar/month/",
+     "how": "Monthly; Halloween on the Green (late Oct).",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Quick Center for the Arts (Fairfield University)",
+     "url": "https://quickcenter.fairfield.edu/",
+     "how": "When the season is announced: family series (Feb and Mar 2027 shows listed).",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "CT Audubon — Fairfield Nature Center",
+     "url": "https://ctaudubon.org/locations/the-fairfield-nature-center-and-larsen-sanctuary/",
+     "how": "Each season: programs.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Fairfield Parks & Recreation",
+     "url": "https://fairfieldct.org/",
+     "how": "Seasonal programs and town events.",
+     "last": "Oct 3, 2026"
+    }
+   ],
+   "extras": []
+  },
+  "glastonbury": {
+   "title": "Glastonbury",
+   "check": [
+    {
+     "name": "Welles-Turner Memorial Library — kids' events list",
+     "url": "https://wtmlib.librarycalendar.com/events/list?age_groups%5B59%5D=59&age_groups%5B143%5D=143&age_groups%5B58%5D=58",
+     "how": "Monthly. This link is already filtered to kids' age groups: copy each page and paste to Claude. Session storytimes fill by lottery each September (and likely January); watch for new sessions.",
+     "last": "Sep 30, 2026 (imported Oct–Dec)"
+    },
+    {
+     "name": "Glastonbury Parks & Rec — programs list",
+     "url": "https://glastonburyct.myrec.com/info/activities/default.aspx?type=activities",
+     "how": "Monthly, and when seasons open (registration days fill fast). Family Programs, Holiday Programs and Pre-School categories: Story Stroll, Santa's Underwater Adventure, Festive Driving Tour, Kids Night Out, playgroup.",
+     "last": "Sep 30, 2026"
+    },
+    {
+     "name": "Santa's Run",
+     "url": "https://www.glastonburyct.gov/departments/department-directory-i-z/parks-and-recreation/santa-s-run",
+     "how": "Each October: date and registration (Dec 6 this year).",
+     "last": "Sep 30, 2026"
+    },
+    {
+     "name": "Apple Harvest & Music Festival",
+     "url": "https://www.eventbrite.com/e/2026-glastonbury-apple-harvest-and-music-festival-tickets-1994245146918",
+     "how": "Each summer: next year's dates (CT River Valley Chamber). Don't confuse with England's Glastonbury Festival.",
+     "last": "Sep 30, 2026"
+    },
+    {
+     "name": "Historical Society of Glastonbury — events",
+     "url": "https://hsgct.org/events/",
+     "how": "Every month or two: Thanksgiving Celebration and other family events. Has a calendar feed (saved in sources.json).",
+     "last": "Sep 30, 2026"
+    },
+    {
+     "name": "Glastonbury farms list (town)",
+     "url": "https://www.glastonburyct.gov/departments/department-directory-a-h/health/better-health-initiatives/glastonbury-farms-and-resources",
+     "how": "Each spring and fall: pick-your-own seasons, hayrides, corn mazes.",
+     "last": "Sep 30, 2026"
+    },
+    {
+     "name": "Youth & Family Services — theater productions",
+     "url": "https://www.glastonburyct.gov/departments/department-directory-i-z/youth-and-family-services/creative-experiences/theatrical-productions/upcoming-theater-productions-y-fs",
+     "how": "Each season: kid-cast musicals (Charlie Brown, Nov 5–7).",
+     "last": "Oct 3, 2026"
+    }
+   ],
+   "extras": [
+    "**Worth adding** (not used yet)"
+   ]
+  },
+  "greenwich": {
+   "title": "Greenwich",
+   "check": [
+    {
+     "name": "Greenwich Library — children",
+     "url": "https://www.greenwichlibrary.org/children/",
+     "how": "Monthly; storytimes run by lottery registration.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Perrot Library (Old Greenwich) — children's programs",
+     "url": "https://perrotlibrary.org/youth-services/current-childrens-programs/",
+     "how": "Monthly.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Bruce Museum — events",
+     "url": "https://www.brucemuseum.org/events/",
+     "how": "Monthly.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Greenwich Historical Society — events",
+     "url": "https://greenwichhistory.org/ghs-events/",
+     "how": "Monthly: Fall Harvest Festival (Oct), Holiday Festival (early Dec).",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Greenwich Arts Council — events",
+     "url": "https://www.greenwichartscouncil.org/events",
+     "how": "Monthly: author visits, workshops.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Town of Greenwich — special events",
+     "url": "https://www.greenwichct.gov/493/Special-Events-Concerts",
+     "how": "Seasonal town events.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Greenwich Botanical Center — children's programs",
+     "url": "https://greenwichbotanicalcenter.org/childrens-programs/",
+     "how": "Each season.",
+     "last": "Oct 3, 2026"
+    }
+   ],
+   "extras": []
+  },
+  "middletown": {
+   "title": "Middletown",
+   "check": [
+    {
+     "name": "Russell Library — calendar",
+     "url": "https://russelllibrary.librarycalendar.com/",
+     "how": "Monthly. LibraryCalendar: blocks automated reading, so paste the kids-filtered list view. Last full paste Oct 3.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "City of Middletown calendar",
+     "url": "https://middletownct.gov/calendar.aspx?CID=119",
+     "how": "Blocks automated reading; use only if pasted.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Middletown Recreation (MyRec)",
+     "url": "https://middletownct.myrec.com/info/activities/default.aspx",
+     "how": "Monthly: classes, Van Vleck Kids' Nights, Downtown Trick or Treat. Detail pages often cached; search snippets show live dates.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Wesleyan RJ Julia — events",
+     "url": "https://rjjulia.com/upcoming-events",
+     "how": "Monthly: Sunday 11am storytime.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Wadsworth Mansion — public events",
+     "url": "https://www.wadsworthmansion.com/mec-category/public-events/",
+     "how": "Seasonal: Nutcracker (Nov 22), New Year's open house.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Oddfellows Playhouse",
+     "url": "https://www.oddfellows.org/",
+     "how": "Each season: shows, costume sale (Oct).",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Middlesex Chamber — Holiday on Main Street",
+     "url": "https://www.middlesexchamber.com/holiday-on-main-street/",
+     "how": "Early November: confirm tree lighting dates.",
+     "last": "Oct 3, 2026"
+    }
+   ],
+   "extras": []
+  },
+  "milford": {
+   "title": "Milford",
+   "check": [
+    {
+     "name": "Milford Public Library — calendar",
+     "url": "https://milford-pl.libcal.com/calendar/children",
+     "how": "Monthly. LibCal children's calendar: paste the list (or iCal). Parking limited Oct–Dec.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Walnut Beach Arts & Business — events",
+     "url": "https://walnutbeachartsandbusiness.com/our-events",
+     "how": "Monthly in fall/winter: Boo Fest, Witch Parade, tree lighting.",
+     "last": "Sep 29, 2026"
+    },
+    {
+     "name": "Downtown Milford Business Association",
+     "url": "https://downtownmilfordct.com/",
+     "how": "Hall-O-Weekend, farmers market, holiday events. 2026 Hall-O-Weekend schedule not posted yet.",
+     "last": "Sep 29, 2026"
+    },
+    {
+     "name": "Milford Makes — upcoming",
+     "url": "https://milfordmakes.org/upcoming/",
+     "how": "Every month or two; mostly adult, occasional free kids' workshops.",
+     "last": "Sep 30, 2026"
+    },
+    {
+     "name": "Milford Recreation (MyRec)",
+     "url": "https://milfordct.myrec.com/info/activities/default.aspx",
+     "how": "When seasons open. Classes, adaptive (MAPs) programs.",
+     "last": "Sep 29, 2026"
+    },
+    {
+     "name": "Milford Arts Council (the MAC)",
+     "url": "https://milfordarts.org/",
+     "how": "Monthly: Family Pillow Concerts; Pantochino's December musical.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Pantochino Productions",
+     "url": "http://www.pantochino.com/",
+     "how": "October–November: holiday musical title and dates.",
+     "last": "Oct 3, 2026"
+    }
+   ],
+   "extras": [
+    "**Don't confuse with**\n\n- Milford, **New Hampshire** — its Pumpkin Festival (milfordpumpkinfestival.org, 'Granite Town') is not ours."
+   ]
+  },
+  "new-canaan": {
+   "title": "New Canaan",
+   "check": [
+    {
+     "name": "New Canaan Library — events",
+     "url": "https://www.newcanaanlibrary.org/events/month",
+     "how": "Monthly.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "New Canaan Nature Center — events",
+     "url": "https://newcanaannature.org/events/",
+     "how": "Monthly.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Grace Farms — children & families",
+     "url": "https://gracefarms.org/events/category/children-families/list",
+     "how": "Monthly.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Town Players of New Canaan",
+     "url": "https://tpnc.org/",
+     "how": "Each season: Rudolph (Nov 20–Dec 13).",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "New Canaan Chamber — annual events",
+     "url": "https://newcanaanchamber.com/annual-events/",
+     "how": "Seasonal: holiday stroll, Halloween.",
+     "last": "Oct 3, 2026"
+    }
+   ],
+   "extras": []
+  },
+  "new-haven": {
+   "title": "New Haven",
+   "check": [
+    {
+     "name": "New Haven Free Public Library (5 branches)",
+     "url": "https://nhfpl.libcal.com/calendar",
+     "how": "Monthly. LibCal: filter Ages 0–5, 6–11, Family; paste the list. Last full paste Oct 3.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Shubert Theatre — events",
+     "url": "https://www.shubert.com/",
+     "how": "Each season: family shows; library workshops tie in.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Yale Peabody Museum — events",
+     "url": "https://peabody.yale.edu/events",
+     "how": "Monthly.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Blessed Michael McGivney Pilgrimage Center (formerly KofC Museum)",
+     "url": "https://www.kofcmuseum.org/kms/en/index.html",
+     "how": "November: Christmas crèche exhibit dates.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Ralph Walker Rink (Elm City Sports Group)",
+     "url": "https://www.ralphwalkericerink.com/public-skate",
+     "how": "October–March: public skate sessions. New operator as of Sep 2026.",
+     "last": "Oct 3, 2026"
+    }
+   ],
+   "extras": []
+  },
+  "newtown": {
+   "title": "Newtown",
+   "check": [
+    {
+     "name": "EverWonder Children's Museum",
+     "url": "https://www.everwondermuseum.org/",
+     "how": "Monthly. Story Lab days, early-dismissal programs.",
+     "last": "Sep 29, 2026"
+    },
+    {
+     "name": "C.H. Booth Library",
+     "url": "https://www.chboothlibrary.org/",
+     "how": "Monthly. LibCal calendar loads by script, so paste the kids-filtered list view. Baby/toddler sessions end in October.",
+     "last": "Oct 2, 2026"
+    },
+    {
+     "name": "Newtown Parks & Rec — seasonal brochure",
+     "url": "https://www.newtown-ct.gov/parks-recreation",
+     "how": "Each season (PDF): classes and town events.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Edmond Town Hall — box office",
+     "url": "https://edmondtownhall.showare.com/",
+     "how": "Monthly: family shows and kids' workshops.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Newtown Youth & Family Services — Holiday Festival",
+     "url": "https://www.newtownyouthandfamilyservices.org/",
+     "how": "November: festival tickets (Dec 6).",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Newtown Historical Society (Matthew Curtiss House)",
+     "url": "https://newtownhistory.org/",
+     "how": "Spring and fall open houses.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "The Newtown Bee",
+     "url": "https://www.newtownbee.com/",
+     "how": "Weekly: tree lightings, Halloween, local events.",
+     "last": "Oct 3, 2026"
+    }
+   ],
+   "extras": []
+  },
+  "norwalk": {
+   "title": "Norwalk",
+   "check": [
+    {
+     "name": "Norwalk Public Library — Main children's (.ics)",
+     "url": "https://www.norwalkpl.org/common/modules/iCalendar/iCalendar.aspx?catID=25&feed=calendar",
+     "how": "Monthly. CivicPlus: download .ics and run the importer; descriptions are empty, so write blurbs by hand.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Norwalk Public Library — South Norwalk Branch (.ics)",
+     "url": "https://www.norwalkpl.org/calendar.aspx",
+     "how": "Monthly. Branch calendar mixes adult and private bookings.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Norwalk Recreation & Parks",
+     "url": "https://www.norwalkct.gov/",
+     "how": "Seasonal brochure and town events.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Stepping Stones Museum for Children",
+     "url": "https://www.steppingstonesmuseum.org/",
+     "how": "Monthly.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Maritime Aquarium",
+     "url": "https://www.maritimeaquarium.org/",
+     "how": "Monthly.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Crystal Theatre",
+     "url": "https://www.crystaltheatre.org/",
+     "how": "Each season: kid-cast shows (homepage lists dates).",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Music Theatre of Connecticut — student productions",
+     "url": "https://www.musictheatreofct.com/fall-spring-programs",
+     "how": "Each season.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Norwalk Historical Society / Mill Hill",
+     "url": "https://norwalkhistoricalsociety.org/visit/",
+     "how": "Seasonal events.",
+     "last": "Oct 3, 2026"
+    }
+   ],
+   "extras": []
+  },
+  "ridgefield": {
+   "title": "Ridgefield",
+   "check": [
+    {
+     "name": "Ridgefield Library — events",
+     "url": "https://ridgefieldlibrary.librarymarket.com/",
+     "how": "Monthly. LibraryMarket: paste the kids-filtered list.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Ridgefield Parks & Recreation",
+     "url": "https://www.ridgefieldparksandrec.org/",
+     "how": "Seasonal programs and events.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "The Ridgefield Playhouse",
+     "url": "https://ridgefieldplayhouse.org/",
+     "how": "Each season: family series.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "inRidgefield — events",
+     "url": "https://inridgefield.com/",
+     "how": "Monthly: town traditions (Halloween walk, holidays).",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "The Aldrich — Third Saturdays",
+     "url": "https://thealdrich.org/",
+     "how": "Monthly.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Keeler Tavern Museum — events",
+     "url": "https://keelertavernmuseum.org/events/calendar/",
+     "how": "Monthly.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Woodcock Nature Center",
+     "url": "https://www.woodcocknaturecenter.org/upcomingevents",
+     "how": "Monthly.",
+     "last": "Oct 3, 2026"
+    }
+   ],
+   "extras": []
+  },
+  "stamford": {
+   "title": "Stamford",
+   "check": [
+    {
+     "name": "Ferguson Library (5 branches)",
+     "url": "https://www.fergusonlibrary.org/events/list",
+     "how": "Monthly. Paste the kids-filtered list; storytimes run in monthly sessions with registration. Last full paste Oct 3.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Stamford Museum & Nature Center — events",
+     "url": "https://www.stamfordmuseum.org/",
+     "how": "Monthly.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Mill River Park — kids & family",
+     "url": "https://millriverpark.org/events/category/kids-family/",
+     "how": "Monthly; skating season from Thanksgiving.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Palace Theatre",
+     "url": "https://www.palacestamford.org/",
+     "how": "Each season: family shows.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Stamford Downtown — events",
+     "url": "https://stamford-downtown.com/",
+     "how": "Seasonal: parade, holiday events.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Bartlett Arboretum — events",
+     "url": "https://www.bartlettarboretum.org/",
+     "how": "Seasonal.",
+     "last": "Oct 3, 2026"
+    }
+   ],
+   "extras": []
+  },
+  "trumbull": {
+   "title": "Trumbull",
+   "check": [
+    {
+     "name": "Trumbull Library — Programs for Little Ones",
+     "url": "https://trumbull-ct.gov/760/Programs-For-Little-Ones",
+     "how": "Monthly. Weekly storytimes plus monthly Craft Night, PJ Story Time, Sensory Scientists.",
+     "last": "Sep 29, 2026"
+    },
+    {
+     "name": "Trumbull Library — calendar",
+     "url": "https://trumbull.libcal.com/",
+     "how": "Monthly. LibCal: paste the kids-filtered list. Storytimes paused Oct 19–30 for early voting.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Trumbull Farmers' Market",
+     "url": "https://www.trumbull-ct.gov/1018/Trumbull-Farmers-Market",
+     "how": "Each spring for the new season (ends Oct 15 this year).",
+     "last": "Sep 29, 2026"
+    },
+    {
+     "name": "Trumbull Parks & Recreation (MyRec)",
+     "url": "https://trumbullct.myrec.com/info/activities/",
+     "how": "Each season: classes; some programs residents-only.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Town of Trumbull — events",
+     "url": "https://www.trumbull-ct.gov/169/Events",
+     "how": "Fall Festival, Costume Swap, Tree Lighting dates. Town calendar blocks automated reading.",
+     "last": "Oct 3, 2026"
+    }
+   ],
+   "extras": []
+  },
+  "wallingford": {
+   "title": "Wallingford",
+   "check": [
+    {
+     "name": "Wallingford Public Library — upcoming events",
+     "url": "https://www.wallingfordlibrary.org/events/upcoming",
+     "how": "Monthly. LibraryCalendar: paste the kids-filtered list view. Weekly storytimes end the week of Nov 16.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Wallingford Parks & Recreation (MyRec)",
+     "url": "https://wallingfordct.myrec.com/info/activities/default.aspx?type=activities",
+     "how": "Each season: classes and one-day workshops.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Toyota Oakdale Theatre",
+     "url": "https://www.toyotaoakdaletheatre.com/",
+     "how": "Monthly: family shows (watch for Bluey's Big Play).",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Wallingford Patch",
+     "url": "https://patch.com/connecticut/wallingford",
+     "how": "Celebrate Wallingford, Halloween Happenings, Seasons of Celebration, Holiday Stroll.",
+     "last": "Oct 3, 2026"
+    }
+   ],
+   "extras": []
+  },
+  "west-hartford": {
+   "title": "West Hartford",
+   "check": [
+    {
+     "name": "West Hartford Public Library (Noah Webster, Bishops Corner, Faxon)",
+     "url": "https://www.westhartfordlibrary.org/",
+     "how": "Monthly. Paste the kids-filtered list; registered storytime series end mid-October, so check for the next series. Last full paste Oct 3.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "West Hartford Leisure Services",
+     "url": "https://www.westhartfordct.gov/",
+     "how": "Seasonal programs and town events.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Elizabeth Park — events",
+     "url": "https://elizabethparkct.org/",
+     "how": "Seasonal (approved town-line exception).",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Noah Webster House",
+     "url": "https://noahwebsterhouse.org/",
+     "how": "Seasonal: Hauntings, egg hunt.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Playhouse on Park — young audiences",
+     "url": "https://playhouseonpark.org/",
+     "how": "When the season posts.",
+     "last": "Oct 3, 2026"
+    }
+   ],
+   "extras": []
+  },
+  "westport": {
+   "title": "Westport",
+   "check": [
+    {
+     "name": "Westport Library — children",
+     "url": "https://westportlibrary.org/calendar/category/children/",
+     "how": "Monthly.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Wakeman Town Farm",
+     "url": "https://wakemantownfarm.org/",
+     "how": "Each season: kids' programs and events.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Earthplace",
+     "url": "https://earthplace.org/",
+     "how": "Monthly.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Westport Country Playhouse — families",
+     "url": "https://www.westportplayhouse.org/",
+     "how": "Each season: family series (Pinkalicious, Pete the Cat dates TBA).",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Westport Museum for History & Culture",
+     "url": "https://westportmuseum.org/",
+     "how": "Seasonal.",
+     "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Westport Parks & Rec",
+     "url": "https://www.westportct.gov/government/departments-a-z/parks-and-recreation",
+     "how": "Seasonal: PAL Rink, Learn to Skate.",
+     "last": "Oct 3, 2026"
+    }
+   ],
+   "extras": []
+  }
+ }
+}

@@ -4,7 +4,7 @@ How to fill a new town's page, and how to refresh an existing one each season.
 It records what actually worked across the first 18 towns, so the next town is
 faster. Pair it with:
 
-- `tools/SOURCES.md`: each town's specific sources and when they were last checked
+- `tools/SOURCES.md`: each town's specific sources and when they were last checked (generated: edit `tools/sources-curated.json`, then run `node tools/build-sources-md.js`)
 - `node tools/refresh-report.js`: what's stale, ending soon or missing, right now
 - `shared/TOWN-TEMPLATE.md`: page setup and the **location rule**
 

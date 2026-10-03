@@ -128,3 +128,35 @@ const bigdays = {
 };
 fs.writeFileSync(path.join(__dirname, 'bigdays.json'), JSON.stringify(bigdays) + '\n');
 console.log('shared/bigdays.json written:', COUNTIES.map(c => `${c.en}: ${bigdays.items.filter(i => i.county === c.id).length}`).join(' · '));
+
+/* ---------- homepage "Near you" master calendar feed ----------
+   Also writes shared/allevents.json: every event from every town that still
+   has a date today or later, in the same compact schedule format the town
+   pages use (s = weekly rules, when = dated runs, x = skipped dates), plus each
+   town's center from shared/zips.json for distance. The homepage expands the
+   schedules in the browser, so this file stays small. */
+const ZIPS = JSON.parse(fs.readFileSync(path.join(__dirname, 'zips.json'), 'utf8'));
+const allTowns = {}, allEv = [];
+const hasFuture = e => (e.when || []).some(w => (w.to || w.from) >= today) || (e.s || []).some(r => r[3] >= today);
+for (const slug of TOWNS) {
+  const T = loadTown(slug);
+  allTowns[slug] = { n: T.label, ll: ZIPS.towns[slug] || null };
+  const VM = T.venueMeta || {};
+  for (const e of T.events) {
+    if (!hasFuture(e)) continue;
+    const v = T.venues[e.v] || [e.v, ''];
+    const o = { tw: slug, t: e.t, p: v[0], id: slugify(e.t) + '--' + e.v, a: e.a || [] };
+    if (e.free) o.f = 1; if (e.drop) o.d = 1; if (e.special) o.sp = e.special;
+    if ((VM[e.v] || [])[1] === 1) o.in = 1;
+    if (e.ages) { o.ag = e.ages; if (ES[e.ages]) o.age = ES[e.ages]; }
+    if (e.price && !e.free) { o.pr = e.price; if (ES[e.price]) o.pre = ES[e.price]; }
+    if (ES[e.t]) o.te = ES[e.t];
+    if (e.s) o.s = e.s.filter(r => r[3] >= today);
+    if (e.when) o.w = e.when.filter(w => (w.to || w.from) >= today);
+    if (e.x) o.x = e.x.filter(k => k >= today);
+    if (e.check) o.ck = 1;
+    allEv.push(o);
+  }
+}
+fs.writeFileSync(path.join(__dirname, 'allevents.json'), JSON.stringify({ updated: today, towns: allTowns, ev: allEv }) + '\n');
+console.log(`shared/allevents.json written: ${allEv.length} events from ${Object.keys(allTowns).length} towns`);
