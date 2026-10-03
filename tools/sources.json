@@ -140,6 +140,35 @@
         "kidsOnly": false,
         "defaultFree": true
       }
+    ],
+    "norwalk": [
+      {
+        "name": "Norwalk Public Library — Children's Department (Main)",
+        "platform": "CivicPlus",
+        "url": "https://www.norwalkpl.org/common/modules/iCalendar/iCalendar.aspx?catID=25&feed=calendar",
+        "rss": "https://www.norwalkpl.org/RSSFeed.aspx?ModID=58&CID=Childrens-Department-Main-Library-25",
+        "calendarPage": "https://www.norwalkpl.org/calendar.aspx?CID=25",
+        "src": "https://www.norwalkpl.org/calendar.aspx?CID=25",
+        "venue": "norwalk-public-library-main-library-dima",
+        "venueName": "Norwalk Public Library — Main Library / DiMattia Building",
+        "address": "1 Belden Ave",
+        "kidsOnly": true,
+        "defaultFree": true,
+        "note": "CivicPlus calendar. The iCal address follows CivicPlus's standard pattern for category 25; if it doesn't download, open the calendar page, click 'Notify Me' / iCalendar for the Children's Department and use that file with --file. The South Norwalk Branch is a separate category; add it the same way."
+      },
+      {
+        "name": "Norwalk Public Library — South Norwalk Branch",
+        "platform": "CivicPlus",
+        "url": "",
+        "calendarPage": "https://www.norwalkpl.org/calendar.aspx",
+        "src": "https://www.norwalkpl.org/calendar.aspx",
+        "venue": "norwalk-public-library-south-norwalk-bra-2",
+        "venueName": "Norwalk Public Library – South Norwalk Branch",
+        "address": "10 Washington St",
+        "kidsOnly": false,
+        "defaultFree": true,
+        "note": "The SoNo calendar mixes kids' events with adult programs and private room bookings, so kidsOnly is false and the importer filters. Download its .ics from the library calendar and run with --file and --source."
+      }
     ]
   }
 }
