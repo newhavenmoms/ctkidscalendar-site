@@ -132,6 +132,13 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
 .townlist a{display:inline-block;font-family:var(--mono);font-weight:700;font-size:.82rem;letter-spacing:.03em;color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);border-radius:999px;padding:9px 18px;text-decoration:none;box-shadow:3px 3px 0 var(--ink)}
 .townlist a:hover{background:var(--tc);transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
 @media (max-width:600px){.townlist a{padding:12px 16px;font-size:.82rem}}
+.nearmorefilters{margin:4px 0 0}
+.nearmorefilters>summary{list-style:none;cursor:pointer;display:inline-block;padding:6px 0}
+.nearmorefilters>summary::-webkit-details-marker{display:none}
+.nearmorefilters>summary::after{content:" \25BE";}
+.nearmorefilters[open]>summary::after{content:" \25B4";}
+.nearmorefilters .nearfilters{margin-top:6px}
+.nearmorebtns{display:flex;gap:18px;flex-wrap:wrap}
 .homenear{border-bottom:1.5px solid var(--ink)}
 .nearrow{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:flex-end;margin:6px 0 4px}
 .nearfield{display:flex;flex-direction:column;gap:6px}
@@ -458,6 +465,8 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
             <select id="nearWhen" class="chip selectchip"></select></label>
           <button type="button" class="linkbtn nearloc" id="nearLoc" data-i18n="nearUseLoc">Use my location</button>
         </div>
+        <details class="nearmorefilters" id="nearFilters">
+          <summary class="linkbtn"><span id="nearFiltersLbl" data-i18n="nearFilters">More filters</span></summary>
         <div class="filters nearfilters">
           <div class="fgroup" role="group" aria-label="Filter by age">
             <span class="flabel" data-i18n="filterAges">Ages</span>
@@ -475,10 +484,11 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
             <button type="button" class="chip" data-ntog="special" aria-pressed="false" data-i18n="tBig">Big days</button>
           </div>
         </div>
+        </details>
       </form>
       <p class="nearstatus" id="nearStatus" aria-live="polite"></p>
       <div id="nearList"></div>
-      <div class="bdmore" id="nearMoreWrap" hidden><button type="button" class="linkbtn" id="nearMore"></button></div>
+      <div class="bdmore nearmorebtns" id="nearMoreWrap" hidden><button type="button" class="linkbtn" id="nearMore"></button> <button type="button" class="linkbtn" id="nearFewer" hidden></button></div>
     </div>
   </section>
 
@@ -543,6 +553,10 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       suggestTown:"Suggest a town", footerTag:"CT Kids Calendar &middot; a town-by-town guide for Connecticut families",
       tickWelcome:"WELCOME TO CT KIDS CALENDAR", tickTowns:"{{T}} TOWNS OPEN NOW", tickThings:"{{N}} THINGS TO DO",
       langBtn:"Espa\u00f1ol",
+      nearFilters:"More filters",
+      nearFiltersOn:"More filters ({{N}} on)",
+      nearSeeAll:"See all {{N}}",
+      nearFewer:"Show fewer",
       nearH2:"What's on near you",
       nearIntro:"Every town's calendar in one place. Enter your ZIP code and how far you'll drive, then narrow it down the same way you would on a town page.",
       nearZip:"ZIP code",
@@ -602,6 +616,10 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       suggestTown:"Sugerir un pueblo", footerTag:"CT Kids Calendar &middot; una gu\u00eda pueblo por pueblo para familias de Connecticut",
       tickWelcome:"BIENVENIDO A CT KIDS CALENDAR", tickTowns:"{{T}} PUEBLOS DISPONIBLES", tickThings:"{{N}} COSAS QUE HACER",
       langBtn:"English",
+      nearFilters:"Más filtros",
+      nearFiltersOn:"Más filtros (activos: {{N}})",
+      nearSeeAll:"Ver los {{N}}",
+      nearFewer:"Mostrar menos",
       nearH2:"Qué hay cerca de ti",
       nearIntro:"El calendario de todos los pueblos en un solo lugar. Escribe tu código postal y hasta dónde quieres manejar, y luego filtra igual que en la página de cada pueblo.",
       nearZip:"Código postal",
@@ -714,7 +732,7 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
     const zipIn=document.getElementById("nearZip"),radSel=document.getElementById("nearRadius"),whenSel=document.getElementById("nearWhen"),
       list=document.getElementById("nearList"),status=document.getElementById("nearStatus"),moreWrap=document.getElementById("nearMoreWrap"),moreBtn=document.getElementById("nearMore");
     if(!zipIn)return;
-    let DATA=null,ZIP=null,loading=null,origin=null,limit=40;
+    const PEEK=window.matchMedia("(max-width:760px)").matches?4:6;let DATA=null,ZIP=null,loading=null,origin=null,limit=PEEK;
     const nf={age:"all",free:false,dropin:false,indoor:false,special:false};
     const RAD=[5,10,15,25,50,0],WHEN=["today","tomorrow","weekend","week","month"];
     try{const s=JSON.parse(localStorage.getItem("ctk-near")||"{}");if(/^\d{5}$/.test(s.zip||""))zipIn.value=s.zip;if(RAD.includes(s.r))radSel.dataset.v=s.r;}catch(_){}
@@ -786,22 +804,28 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
         html+=`<div class="nearday"><div class="dayhead"><h2>${head}</h2></div>${rows}</div>`;
       }
       list.innerHTML=html;
-      moreWrap.hidden=shown>=total;moreBtn.textContent=L.nearMore.replace("{{N}}",total-shown);
+      const fewer=document.getElementById("nearFewer");
+      moreBtn.hidden=shown>=total;moreBtn.textContent=limit===PEEK?L.nearSeeAll.replace("{{N}}",total):L.nearMore.replace("{{N}}",total-shown);
+      fewer.hidden=limit===PEEK;fewer.textContent=L.nearFewer;
+      moreWrap.hidden=moreBtn.hidden&&fewer.hidden;
+      const on=(nf.age!=="all"?1:0)+["free","dropin","indoor","special"].filter(k=>nf[k]).length;
+      document.getElementById("nearFiltersLbl").textContent=on?L.nearFiltersOn.replace("{{N}}",on):L.nearFilters;
     }
     function save(){try{localStorage.setItem("ctk-near",JSON.stringify({zip:zipIn.value.trim(),r:Number(radSel.value)}))}catch(_){}}
-    function go(){limit=40;origin=null;save();load().then(()=>{render();if(window.ctkTrack)window.ctkTrack("near_search",{radius:radSel.value,when:whenSel.value,has_zip:!!zipIn.value})})}
+    function go(){limit=PEEK;origin=null;save();load().then(()=>{render();if(window.ctkTrack)window.ctkTrack("near_search",{radius:radSel.value,when:whenSel.value,has_zip:!!zipIn.value})})}
     zipIn.addEventListener("input",()=>{zipIn.value=zipIn.value.replace(/\D/g,"").slice(0,5);if(zipIn.value.length===5||!zipIn.value)go()});
     radSel.addEventListener("change",go);whenSel.addEventListener("change",go);
     document.getElementById("nearForm").addEventListener("click",ev=>{
       const a=ev.target.closest("[data-nage]"),tg=ev.target.closest("[data-ntog]");
-      if(a){nf.age=a.dataset.nage;document.querySelectorAll("[data-nage]").forEach(x=>x.setAttribute("aria-pressed",x===a?"true":"false"));limit=40;load().then(render)}
-      if(tg){const k=tg.dataset.ntog;nf[k]=!nf[k];tg.setAttribute("aria-pressed",nf[k]?"true":"false");limit=40;load().then(render)}
+      if(a){nf.age=a.dataset.nage;document.querySelectorAll("[data-nage]").forEach(x=>x.setAttribute("aria-pressed",x===a?"true":"false"));limit=PEEK;load().then(render)}
+      if(tg){const k=tg.dataset.ntog;nf[k]=!nf[k];tg.setAttribute("aria-pressed",nf[k]?"true":"false");limit=PEEK;load().then(render)}
     });
-    moreBtn.addEventListener("click",()=>{limit+=40;render()});
+    moreBtn.addEventListener("click",()=>{limit=limit===PEEK?40:limit+40;render()});
+    document.getElementById("nearFewer").addEventListener("click",()=>{limit=PEEK;render();document.getElementById("near").scrollIntoView({block:"start"})});
     document.getElementById("nearLoc").addEventListener("click",()=>{
       if(!navigator.geolocation){status.textContent=UI[LANG].nearLocFail;return}
       status.textContent=UI[LANG].nearLocating;
-      navigator.geolocation.getCurrentPosition(p=>{zipIn.value="";origin=[p.coords.latitude,p.coords.longitude];limit=40;load().then(()=>{render()})},()=>{status.textContent=UI[LANG].nearLocFail},{maximumAge:600000,timeout:10000});
+      navigator.geolocation.getCurrentPosition(p=>{zipIn.value="";origin=[p.coords.latitude,p.coords.longitude];limit=PEEK;load().then(()=>{render()})},()=>{status.textContent=UI[LANG].nearLocFail},{maximumAge:600000,timeout:10000});
     });
     window.ctkNearRelabel=()=>{fillSelects();if(DATA)render()};
     fillSelects();
