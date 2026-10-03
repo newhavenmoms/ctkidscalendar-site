@@ -46,6 +46,47 @@ source paid off.
 - Note session end dates. Baby and toddler storytimes often run in 4–8 week
   sessions (Booth's ended in October).
 
+### 1a. Library calendars: lessons from the first 18 towns
+
+**Getting the data, by platform**
+
+| Platform | How to tell | What works |
+|---|---|---|
+| LibCal | `*.libcal.com` | iCal feed via the importer, or paste the filtered list view |
+| LibraryMarket / LibraryCalendar (Drupal) | "This event is in the … group" text | Owner pastes the kids-filtered list (Russell, Wallingford, Fairfield, Ferguson, West Hartford) |
+| CivicPlus | `calendar.aspx?CID=` | Download the category .ics. Its descriptions are empty, so use it for dates and times only and write blurbs by hand (Norwalk) |
+| Others | Anything else | Paste the list view, a few pages at a time |
+
+Ask the owner to filter to children's audiences before pasting.
+
+**Reading the paste (the mistakes we actually made)**
+
+- **Never assume "weekly until December."** Storytimes run in sessions, often 4–8 weeks. If dates stop, the series ends there; list only the dates shown and say "next series not posted yet." Examples: Booth and West Hartford end mid-October; Wallingford, Russell and SoNo end mid-November.
+- **Check every expected week for gaps**, and turn gaps into exclusions:
+  - Holidays: Columbus Day, Veterans Day, Thanksgiving week, Christmas week.
+  - Election Day.
+  - Special events taking the slot (Halloween parades, guest performers).
+  - Unusual breaks (Trumbull paused storytimes Oct 19–30 for early voting).
+- **Thanksgiving:** if a feed lists programs that day, leave them off and say so.
+- **Put practical notices in blurbs and the library card:**
+  - Construction (Ferguson's Youth Services closure).
+  - Parking (Milford's lot closure; West Hartford's free garage).
+  - Cancellations.
+  - "Full / waitlist."
+  - "Families register for the month."
+- **Search snippets can be stale.** Twice, snippet-based times were wrong (Russell). The library's own list wins.
+
+**What to include**
+
+- **Include:** storytimes, kids' clubs, after-school programs, holiday and Halloween specials, family concerts and movies, homework help, and caregiver groups for parents of babies.
+- **Group many one-off after-school projects at one branch into a single listing** with all dates and themes in the blurb (Fairfield).
+- **Leave out:**
+  - Adult-only programs.
+  - Private room bookings and club meetings.
+  - Zoom- or YouTube-only programs, unless the town already lists online classes.
+  - Readmobile or pop-up stops without an address.
+- **Teen-only programs:** keep existing ones when the paste was filtered to kids (they were filtered out, not cancelled).
+
 ### 2. Parks & Recreation
 - **The seasonal brochure PDF** is the jackpot (Newtown's gave 19 classes in one
   read). Look for "Fall/Winter Program Guide" on the town site.
