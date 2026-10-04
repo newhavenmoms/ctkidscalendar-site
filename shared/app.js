@@ -54,7 +54,7 @@ en:{
   directions:"Directions", organizerPage:"Organizer's page", shareWithFriend:"Share with a friend", addToCal:"Add to calendar",
   seeOnCal:"See it on the calendar", share:"Share", tba:"TBA", checkForDates:"Check for dates", schoolClosed:"No school", schoolEarly:"Early dismissal",
   groupFall:"Fall festivals", groupShows:"Shows & performances", groupHw:"Halloween", groupHol:"Holidays",
-  bgFall:"Fall fun", bgHw:"Halloween", bgHol:"Holidays", bgShows:"Shows", bgTbaHead:"Dates not announced yet", bgShowAll:"Show all {{N}}", bgFewer:"Show fewer",
+  bgFall:"Fall fun", bgHw:"Halloween", bgHol:"Holidays", bgShows:"Shows", bgTbaHead:"Dates not announced yet", bgShowAll:"Show all {{N}}", bgFewer:"Show fewer", bdThrough:"Through {{D}}", bdAlso:"Also {{D}}", bdMore:"+{{N}} more",
   noMatchFilters:"Nothing matches those filters this week. Try another age group or neighborhood, or turn off a filter.",
   buildingCal:'We\u2019re still building out this town\u2019s calendar \u2014 check back soon, or <a href="#contact">tell us what\u2019s coming up</a>.',
   catAll:"All", catMusic:"Music", catDance:"Dance", catSwim:"Swim", catMove:"Sports & tumbling",
@@ -120,7 +120,7 @@ es:{
   directions:"C\u00f3mo llegar", organizerPage:"P\u00e1gina del organizador", shareWithFriend:"Compartir con un amigo", addToCal:"Agregar al calendario",
   seeOnCal:"Ver en el calendario", share:"Compartir", tba:"Pronto", checkForDates:"Ver fechas", schoolClosed:"Sin clases", schoolEarly:"Salida temprana",
   groupFall:"Festivales de oto\u00f1o", groupShows:"Espect\u00e1culos y funciones", groupHw:"Halloween", groupHol:"Fiestas de fin de a\u00f1o",
-  bgFall:"Oto\u00f1o", bgHw:"Halloween", bgHol:"Fiestas", bgShows:"Espect\u00e1culos", bgTbaHead:"Fechas a\u00fan no anunciadas", bgShowAll:"Ver los {{N}}", bgFewer:"Mostrar menos",
+  bgFall:"Oto\u00f1o", bgHw:"Halloween", bgHol:"Fiestas", bgShows:"Espect\u00e1culos", bgTbaHead:"Fechas a\u00fan no anunciadas", bgShowAll:"Ver los {{N}}", bgFewer:"Mostrar menos", bdThrough:"Hasta el {{D}}", bdAlso:"Tambi\u00e9n {{D}}", bdMore:"y {{N}} m\u00e1s",
   noMatchFilters:"Nada coincide con esos filtros esta semana. Prueba otro grupo de edad o vecindario, o desactiva un filtro.",
   buildingCal:'Todav\u00eda estamos construyendo el calendario de este pueblo \u2014 vuelve pronto, o <a href="#contact">cu\u00e9ntanos qu\u00e9 se viene</a>.',
   catAll:"Todas", catMusic:"M\u00fasica", catDance:"Danza", catSwim:"Nataci\u00f3n", catMove:"Deportes y gimnasia",
@@ -452,6 +452,19 @@ const bigEl=document.getElementById("bigList"),bigSection=document.getElementByI
 /* Big days: one date-ordered list grouped by month, with category filter chips and a short preview */
 const MONF_EN=["January","February","March","April","May","June","July","August","September","October","November","December"];
 const MONF_ES=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+function bigDateParts(segs,todayK,MONS,L){
+  /* segs: [[from,to],...] sorted. Returns {from,m,d,cls,note}: tile shows ONE date (or a same-month run);
+     everything else (continuous cross-month runs, extra separate dates) goes into a short text note. */
+  const pd2=k=>{const[y,m,d]=k.split("-").map(Number);return new Date(y,m-1,d)};
+  const fut=segs.filter(s=>s[1]>=todayK);const cur=fut[0]||segs[segs.length-1];
+  const a=pd2(cur[0]),b=pd2(cur[1]),fmt=x=>L.dfmt(MONS[x.getMonth()],x.getDate());
+  let d=String(a.getDate()),note="";
+  if(cur[0]!==cur[1]){if(a.getMonth()===b.getMonth()&&a.getFullYear()===b.getFullYear())d=`${a.getDate()}\u2013${b.getDate()}`;else note=L.through.replace("{{D}}",fmt(b))}
+  const rest=fut.slice(1).map(s=>fmt(pd2(s[0])));
+  if(rest.length){const shownR=rest.slice(0,2),more=rest.length-shownR.length;
+    const also=L.also.replace("{{D}}",shownR.join(L.and)+(more>0?" "+L.andMore.replace("{{N}}",more):""));note=note?note+" \u00b7 "+also:also}
+  return {from:cur[0],m:MONS[a.getMonth()],d,cls:d.length>=5?" long":"",note};
+}
 const BIG_CATS=[["fall","bgFall"],["hw","bgHw"],["hol","bgHol"],["shows","bgShows"]];
 let bigCat="all",bigOpen=false;
 const BIG_PEEK=window.matchMedia("(max-width:760px)").matches?5:8;
@@ -459,10 +472,12 @@ function renderBig(){
   const byTitle=new Map();
   E.filter(e=>e.special).forEach(e=>{
     const from=e.when[0].from,last=e.when[e.when.length-1],to=last.to||last.from,cur=byTitle.get(e.t);
-    if(cur){cur.to=to>cur.to?to:cur.to;cur.places.push((V[e.v]&&V[e.v][0])||"")}
-    else byTitle.set(e.t,{id:e.id,g:e.special,t:e.t,from,to,places:[(V[e.v]&&V[e.v][0])||""]});
+    const segs=e.when.map(w=>[w.from,w.to||w.from]);
+    if(cur){cur.to=to>cur.to?to:cur.to;cur.places.push((V[e.v]&&V[e.v][0])||"");segs.forEach(sg=>{if(!cur.segs.some(x=>x[0]===sg[0]&&x[1]===sg[1]))cur.segs.push(sg)});cur.segs.sort((a,b)=>a[0]<b[0]?-1:1)}
+    else byTitle.set(e.t,{id:e.id,g:e.special,t:e.t,from,to,segs,places:[(V[e.v]&&V[e.v][0])||""]});
   });
-  const items=[...byTitle.values()].filter(i=>i.to>=key(today)).sort((a,b)=>a.from<b.from?-1:a.from>b.from?1:0);
+  const BL={dfmt:LANG==="es"?(m,d)=>`${d} ${m}`:(m,d)=>`${m} ${d}`,through:tx("bdThrough"),also:tx("bdAlso"),and:LANG==="es"?" y ":" and ",andMore:tx("bdMore")};
+  const items=[...byTitle.values()].filter(i=>i.to>=key(today)).map(i=>Object.assign(i,{P:bigDateParts(i.segs,key(today),MON(),BL)})).sort((a,b)=>a.P.from<b.P.from?-1:a.P.from>b.P.from?1:0);
   if(!items.length&&!TBA.length){if(bigSection)bigSection.style.display="none";return}
   if(bigSection)bigSection.style.display="";
   const counts={};items.concat(TBA).forEach(i=>{counts[i.g]=(counts[i.g]||0)+1});
@@ -484,12 +499,10 @@ function renderBig(){
   let rows="";
   for(const i of dated){
     if(shown>=limit)break;
-    const a=pd(i.from),b=pd(i.to);
-    const dd=i.from===i.to?a.getDate():(a.getMonth()===b.getMonth()?`${a.getDate()}\u2013${b.getDate()}`:`${a.getDate()}\u2013${MON()[b.getMonth()]} ${b.getDate()}`);
-    const dl=String(dd).length,dcls=dl>=8?" xl":(dl>=5?" long":"");
-    rows+=`<li class="bd bdg-${i.g}"><span class="bd-date${dcls}"><span class="m">${MON()[a.getMonth()]}</span><span class="d">${dd}</span></span>
-      <span>${tag(i.g)}<strong>${esc(dx(i.t))}</strong><span class="w">${esc([...new Set(i.places)].join(andWord))}</span>
-      <span class="rowbtns"><button class="linkbtn" type="button" data-jump="${i.from}">${tx("seeOnCal")}</button><button class="linkbtn" type="button" data-share-e="${i.id}" data-share-d="${i.from}">${tx("share")}</button></span></span></li>`;
+    const P=i.P,jd=P.from<key(today)?key(today):P.from;
+    rows+=`<li class="bd bdg-${i.g}"><span class="bd-date${P.cls}"><span class="m">${P.m}</span><span class="d">${P.d}</span></span>
+      <span>${tag(i.g)}<strong>${esc(dx(i.t))}</strong>${P.note?`<span class="w bdnote">${esc(P.note)}</span>`:""}<span class="w">${esc([...new Set(i.places)].join(andWord))}</span>
+      <span class="rowbtns"><button class="linkbtn" type="button" data-jump="${jd}">${tx("seeOnCal")}</button><button class="linkbtn" type="button" data-share-e="${i.id}" data-share-d="${jd}">${tx("share")}</button></span></span></li>`;
     shown++;
   }
   if(rows)html+=`<section class="bdmonth"><ol>${rows}</ol></section>`;
@@ -513,6 +526,48 @@ bigEl.addEventListener("click",ev=>{
   const d=pd(b.dataset.jump);forceOpen=b.dataset.jump;wk=monday(d<today?today:d);renderWeek();forceOpen=null;
   document.getElementById("events").scrollIntoView();
 });
+
+
+/* ---------- Things to do: one balanced grid with category chips ----------
+   Built at load time from the hand-written three-list markup (which stays in the
+   HTML as the no-JS fallback). The same <li> elements are moved, not copied, so the
+   existing data-es translations keep working. */
+const PL_CATS=[["out","getOutside"],["rain","rainyDay"],["drive","shortDrive"]];
+let plCat="all",plOpen=false;
+const plRoot=document.querySelector("#things .places");
+const PL=[];let plChips=null,plList=null,plMore=null,plMix=[];
+if(plRoot&&!plRoot.dataset.built){
+  plRoot.querySelectorAll(":scope>div").forEach(div=>{
+    const h=div.querySelector("h3"),k=h&&h.classList.contains("rain")?"rain":(h&&h.classList.contains("drive")?"drive":"out");
+    div.querySelectorAll(":scope>ul>li").forEach(li=>{const t=document.createElement("span");t.className="pltag pltag-"+k;li.insertBefore(t,li.firstChild);PL.push({k,li,tag:t})});
+  });
+  plChips=document.createElement("div");plChips.className="bdchips plchips";plChips.setAttribute("role","group");
+  plList=document.createElement("ul");plList.className="plgrid";
+  plMore=document.createElement("div");plMore.className="bdmore plmore";
+  plRoot.replaceChildren(plChips,plList,plMore);plRoot.dataset.built="1";
+  // "All" mixes the three kinds round-robin so the preview isn't all parks
+  const by={out:PL.filter(p=>p.k==="out"),rain:PL.filter(p=>p.k==="rain"),drive:PL.filter(p=>p.k==="drive")};
+  for(let i=0;plMix.length<PL.length;i++)["out","rain","drive"].forEach(k=>{if(by[k][i])plMix.push(by[k][i])});
+  plRoot.addEventListener("click",ev=>{
+    const c=ev.target.closest("[data-plcat]");if(c){plCat=c.dataset.plcat;plOpen=false;renderPlaces();return}
+    const m=ev.target.closest("[data-plmore]");if(m){plOpen=!plOpen;renderPlaces();if(!plOpen)document.getElementById("things").scrollIntoView({block:"start"})}
+  });
+}
+function renderPlaces(){
+  if(!plList||!PL.length)return;
+  const counts={};PL.forEach(p=>counts[p.k]=(counts[p.k]||0)+1);
+  const cats=PL_CATS.filter(([k])=>counts[k]);
+  if(plCat!=="all"&&!counts[plCat])plCat="all";
+  plChips.hidden=cats.length<2;
+  plChips.innerHTML=[["all","catAll",PL.length]].concat(cats.map(([k,l])=>[k,l,counts[k]])).map(([k,l,n])=>
+    `<button type="button" class="chip" data-plcat="${k}" aria-pressed="${plCat===k}">${tx(l)} <span class="n">${n}</span></button>`).join("");
+  PL.forEach(p=>{p.tag.textContent=tx((PL_CATS.find(c=>c[0]===p.k)||[])[1]||"")});
+  const list=plCat==="all"?plMix:PL.filter(p=>p.k===plCat),peekN=isMobile()?5:9,limit=plOpen?Infinity:peekN;
+  plList.replaceChildren(...list.map(p=>p.li));
+  list.forEach((p,i)=>{p.li.hidden=i>=limit});
+  plMore.innerHTML=list.length>peekN?`<button type="button" class="linkbtn" data-plmore="1">${plOpen?tx("bgFewer"):tx("bgShowAll").replace("{{N}}",list.length)}</button>`:"";
+}
+renderPlaces();
 
 /* ---------- classes ---------- */
 const CCAT_KEYS=[["all","catAll"],["music","catMusic"],["dance","catDance"],["swim","catSwim"],["move","catMove"],["art","catArt"],["build","catBuild"],["nature","catNature"],["play","catPlay"]];
@@ -618,7 +673,7 @@ function applyStaticI18n(){
   }
 }
 function reRenderAll(){
-  renderHoods();renderDays();renderDay();renderWeek();renderBig();renderClasses();renderTicker();renderResources();applyStaticI18n();updFilterLbl();
+  renderHoods();renderDays();renderDay();renderWeek();renderBig();renderClasses();renderTicker();renderResources();applyStaticI18n();updFilterLbl();renderPlaces();
 }
 const langBtn=document.getElementById("langBtn");
 if(langBtn)langBtn.onclick=()=>{LANG=LANG==="es"?"en":"es";try{localStorage.setItem("ctk-lang",LANG)}catch(_){}reRenderAll();if(LANG==="es"&&!window.__ES_LOADED)ensureEs(reRenderAll)};

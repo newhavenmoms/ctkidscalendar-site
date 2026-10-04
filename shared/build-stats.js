@@ -110,13 +110,16 @@ for (const county of COUNTIES) {
       const place = (T.venues[e.v] && T.venues[e.v][0]) || '';
       const k = county.id + '|' + e.t + '|' + place;
       const town = { slug, name: T.label, link: `/${slug}/#e=${encodeURIComponent(slugify(e.t) + '--' + e.v)}&d=${from}` };
+      const segs = e.when.map(w => [w.from, w.to || w.from]).filter(sg => sg[1] >= today);
       const cur = bigItems.get(k);
       if (cur) {
         if (!cur.towns.some(t => t.slug === slug)) cur.towns.push(town);
         if (from < cur.from) cur.from = from;
         if (to > cur.to) cur.to = to;
+        for (const sg of segs) if (!cur.segs.some(x => x[0] === sg[0] && x[1] === sg[1])) cur.segs.push(sg);
+        cur.segs.sort((a, b) => a[0] < b[0] ? -1 : 1);
       } else {
-        bigItems.set(k, Object.assign({ county: county.id, g: e.special, t: e.t }, ES[e.t] ? { es: ES[e.t] } : {}, { from, to, place, free: !!e.free, towns: [town] }));
+        bigItems.set(k, Object.assign({ county: county.id, g: e.special, t: e.t }, ES[e.t] ? { es: ES[e.t] } : {}, { from, to, segs, place, free: !!e.free, towns: [town] }));
       }
     }
   }
@@ -124,7 +127,7 @@ for (const county of COUNTIES) {
 const bigdays = {
   updated: today,
   counties: COUNTIES.map(({ id, en, es, towns }) => ({ id, en, es, towns: towns.filter(t => TOWNS.includes(t)) })),
-  items: [...bigItems.values()].sort((a, b) => a.from < b.from ? -1 : a.from > b.from ? 1 : a.t.localeCompare(b.t)),
+  items: [...bigItems.values()].map(i => Object.assign(i, { next: (i.segs[0] || [i.from])[0] })).sort((a, b) => a.next < b.next ? -1 : a.next > b.next ? 1 : a.t.localeCompare(b.t)),
 };
 fs.writeFileSync(path.join(__dirname, 'bigdays.json'), JSON.stringify(bigdays) + '\n');
 console.log('shared/bigdays.json written:', COUNTIES.map(c => `${c.en}: ${bigdays.items.filter(i => i.county === c.id).length}`).join(' · '));

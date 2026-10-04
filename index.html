@@ -560,6 +560,9 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       suggestTown:"Suggest a town", footerTag:"CT Kids Calendar &middot; a town-by-town guide for Connecticut families",
       tickWelcome:"WELCOME TO CT KIDS CALENDAR", tickTowns:"{{T}} TOWNS OPEN NOW", tickThings:"{{N}} THINGS TO DO",
       langBtn:"Espa\u00f1ol",
+      bdThrough:"Through {{D}}",
+      bdAlso:"Also {{D}}",
+      bdMore:"+{{N}} more",
       nearFilterBy:"Filter",
       nearFilters:"More filters",
       nearFiltersOn:"More filters ({{N}} on)",
@@ -624,6 +627,9 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       suggestTown:"Sugerir un pueblo", footerTag:"CT Kids Calendar &middot; una gu\u00eda pueblo por pueblo para familias de Connecticut",
       tickWelcome:"BIENVENIDO A CT KIDS CALENDAR", tickTowns:"{{T}} PUEBLOS DISPONIBLES", tickThings:"{{N}} COSAS QUE HACER",
       langBtn:"English",
+      bdThrough:"Hasta el {{D}}",
+      bdAlso:"También {{D}}",
+      bdMore:"y {{N}} más",
       nearFilterBy:"Filtrar",
       nearFilters:"Más filtros",
       nearFiltersOn:"Más filtros (activos: {{N}})",
@@ -704,6 +710,20 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
   const now=new Date(),todayKey=`${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())}`;
   const pdate=k=>{const[y,m,d]=k.split("-").map(Number);return new Date(y,m-1,d)};
   const escH=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  function bigDateParts(segs,todayK,MONS,L){
+  /* segs: [[from,to],...] sorted. Returns {from,m,d,cls,note}: tile shows ONE date (or a same-month run);
+     everything else (continuous cross-month runs, extra separate dates) goes into a short text note. */
+  const pd2=k=>{const[y,m,d]=k.split("-").map(Number);return new Date(y,m-1,d)};
+  const fut=segs.filter(s=>s[1]>=todayK);const cur=fut[0]||segs[segs.length-1];
+  const a=pd2(cur[0]),b=pd2(cur[1]),fmt=x=>L.dfmt(MONS[x.getMonth()],x.getDate());
+  let d=String(a.getDate()),note="";
+  if(cur[0]!==cur[1]){if(a.getMonth()===b.getMonth()&&a.getFullYear()===b.getFullYear())d=`${a.getDate()}\u2013${b.getDate()}`;else note=L.through.replace("{{D}}",fmt(b))}
+  const rest=fut.slice(1).map(s=>fmt(pd2(s[0])));
+  if(rest.length){const shownR=rest.slice(0,2),more=rest.length-shownR.length;
+    const also=L.also.replace("{{D}}",shownR.join(L.and)+(more>0?" "+L.andMore.replace("{{N}}",more):""));note=note?note+" \u00b7 "+also:also}
+  return {from:cur[0],m:MONS[a.getMonth()],d,cls:d.length>=5?" long":"",note};
+}
+  UI.en.dfmt=(m,d)=>`${m} ${d}`;UI.es.dfmt=(m,d)=>`${d} ${m}`;
   function renderBig(){
     const sec=document.getElementById("bigdays"),el=document.getElementById("homeBig");
     if(!BIG||!sec||!el)return;
@@ -712,14 +732,13 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       const all=BIG.items.filter(i=>i.county===c.id&&i.to>=todayKey);
       const shown=bigOpen[c.id]?all:all.slice(0,PEEK);
       const li=shown.map(i=>{
-        const a=pdate(i.from),b=pdate(i.to);
-        const dd=i.from===i.to?a.getDate():(a.getMonth()===b.getMonth()?`${a.getDate()}\u2013${b.getDate()}`:`${a.getDate()}\u2013${MON[b.getMonth()]} ${b.getDate()}`);
-        const dl=String(dd).length,dcls=dl>=8?" xl":(dl>=5?" long":"");
+        const P=bigDateParts(i.segs&&i.segs.length?i.segs:[[i.from,i.to]],todayKey,MON,{dfmt:L.dfmt,through:L.bdThrough,also:L.bdAlso,and:L.and,andMore:L.bdMore});
+        const dd=P.d,dcls=P.cls;
         const title=LANG==="es"&&i.es?i.es:i.t;
         const towns=i.towns.map(t=>t.name).join(L.and);
         const where=[i.place,towns].filter(Boolean).join(" \u00b7 ");
-        return `<li class="bd g-${i.g}"><span class="bd-date${dcls}"><span class="m">${MON[a.getMonth()]}</span><span class="d">${dd}</span></span>
-          <span><strong><a href="${i.towns[0].link.replace(/&d=\d{4}-\d{2}-\d{2}$/,"&d="+(i.from<todayKey?todayKey:i.from))}">${escH(title)}</a></strong><span class="w">${escH(where)}</span><span class="gtag">${L["g"+i.g]||""}</span></span></li>`;
+        return `<li class="bd g-${i.g}"><span class="bd-date${dcls}"><span class="m">${P.m}</span><span class="d">${dd}</span></span>
+          <span><strong><a href="${i.towns[0].link.replace(/&d=\d{4}-\d{2}-\d{2}$/,"&d="+(P.from<todayKey?todayKey:P.from))}">${escH(title)}</a></strong>${P.note?`<span class="w bdnote">${escH(P.note)}</span>`:""}<span class="w">${escH(where)}</span><span class="gtag">${L["g"+i.g]||""}</span></span></li>`;
       }).join("");
       let more="";
       if(all.length>PEEK)more=`<div class="bdmore"><button class="linkbtn" type="button" data-bigmore="${c.id}">${bigOpen[c.id]?L.bigShowFewer:L.bigShowAll.replace("{{N}}",all.length)}</button></div>`;

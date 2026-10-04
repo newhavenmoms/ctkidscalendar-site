@@ -782,3 +782,18 @@ select.selectchip{padding-right:36px}
 .bdtag-shows::before{background:#3E7CB1}
 #bigdays #bigList{padding-left:0;padding-right:0}
 #bigdays #bigList{padding-left:0!important;padding-right:0!important;margin-left:0;margin-right:0}
+.bd .bdnote{font-family:var(--mono);font-size:.74rem;letter-spacing:.04em;text-transform:uppercase;color:var(--ink);margin:2px 0 1px}
+.bd-date .d{white-space:nowrap}
+
+/* ---- Things to do: one balanced grid with category chips (built by app.js) ---- */
+#things .swipehint{display:none}
+#things .places[data-built]{display:block;overflow:visible;margin:0!important;padding:0!important}
+#things .places[data-built]::after{display:none}
+.plgrid{list-style:none;margin:8px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));column-gap:40px}
+.plgrid>li[hidden]{display:none}
+.places li span.pltag{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 4px}
+.pltag::before{content:"";width:9px;height:9px;border:1.5px solid var(--ink);background:#3E8E5A;flex:none}
+.pltag-rain::before{background:#3E7CB1}
+.pltag-drive::before{background:#E07A2E}
+#things .plmore{margin-top:16px}
+@media (max-width:760px){.plgrid{grid-template-columns:1fr}}
