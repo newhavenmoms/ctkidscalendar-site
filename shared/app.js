@@ -77,7 +77,7 @@ en:{
   swipeHw:"Swipe for Halloween and holidays",
   secCalendar:"The calendar", calIntro:"Everything we're tracking, week by week. Narrow it down by age, or show only the free, drop-in or rainy-day stuff.",
   filterAges:"Ages", ageBabies:"Babies", ageToddlers:"Toddlers", agePreschoolF:"Preschool", ageBigKids:"Big kids",
-  filterArea:"Area", filterShowOnly:"Show only", filterIndoorLong:"Rainy day (indoors)",
+  filterArea:"Area", filterShowOnly:"Show only", filterBy:"Filter", moreFilters:"Filters", moreFiltersOn:"Filters ({{N}} on)", filterIndoorLong:"Rainy day (indoors)",
   finePrint:'Holiday closures aren\u2019t always reflected here. Events marked "Check first" are recurring slots we haven\u2019t been able to confirm for every date, so look at the organizer\u2019s page before you head out.',
   secThings:"Things to do anytime", thingsIntro:"No schedule needed. Good for whenever cabin fever hits \u2014 just check each spot's hours before you head out, since not everything opens early.",
   swipeThings:"Swipe for rainy-day spots and short drives",
@@ -142,7 +142,7 @@ es:{
   swipeHw:"Desliza para ver Halloween y las fiestas",
   secCalendar:"El calendario", calIntro:"Todo lo que estamos siguiendo, semana a semana. Filtra por edad, o muestra solo lo gratis, sin inscripci\u00f3n o para d\u00edas de lluvia.",
   filterAges:"Edades", ageBabies:"Beb\u00e9s", ageToddlers:"Peque\u00f1os", agePreschoolF:"Preescolar", ageBigKids:"Ni\u00f1os grandes",
-  filterArea:"Zona", filterShowOnly:"Mostrar solo", filterIndoorLong:"D\u00eda de lluvia (interior)",
+  filterArea:"Zona", filterShowOnly:"Mostrar solo", filterBy:"Filtrar", moreFilters:"Filtros", moreFiltersOn:"Filtros (activos: {{N}})", filterIndoorLong:"D\u00eda de lluvia (interior)",
   finePrint:'Los cierres por d\u00edas festivos no siempre se reflejan aqu\u00ed. Los eventos marcados "Verifica antes" son horarios recurrentes que no hemos podido confirmar para cada fecha, as\u00ed que revisa la p\u00e1gina del organizador antes de salir.',
   secThings:"Qu\u00e9 hacer en cualquier momento", thingsIntro:"No hace falta un horario. Ideal para cuando ataca el aburrimiento \u2014 solo revisa el horario de cada lugar antes de salir, ya que no todos abren temprano.",
   swipeThings:"Desliza para ver lugares para d\u00edas de lluvia y paseos cortos",
@@ -406,7 +406,7 @@ function pass(e){
   if(f.special&&!e.special)return false;
   return true;
 }
-function renderWeek(){
+function renderWeek(){updFilterLbl();
   const end=addDays(wk,6);
   weekTitle.textContent=wk.getMonth()===end.getMonth()?`${MON()[wk.getMonth()]} ${wk.getDate()}\u2013${end.getDate()}`:`${MON()[wk.getMonth()]} ${wk.getDate()} \u2013 ${MON()[end.getMonth()]} ${end.getDate()}`;
   prevB.disabled=wk<=firstWeek;nextB.disabled=wk>=lastWeek;
@@ -427,6 +427,17 @@ prevB.onclick=()=>{wk=addDays(wk,-7);renderWeek()};
 nextB.onclick=()=>{wk=addDays(wk,7);renderWeek()};
 document.querySelectorAll("[data-age]").forEach(b=>b.onclick=()=>{f.age=b.dataset.age;document.querySelectorAll("[data-age]").forEach(x=>x.setAttribute("aria-pressed",x===b?"true":"false"));renderWeek()});
 document.querySelectorAll("[data-toggle]").forEach(b=>b.onclick=()=>{const k=b.dataset.toggle;f[k]=!f[k];b.setAttribute("aria-pressed",f[k]?"true":"false");renderWeek()});
+/* filter dropdown: label shows how many filters are on; closes on outside click / Escape; panel stays on screen */
+function updFilterLbl(){const el=document.getElementById("calFiltersLbl");if(!el)return;const L=UI[LANG]||UI.en;
+  const on=(f.age&&f.age!=="all"?1:0)+["free","dropin","indoor","special"].filter(k=>f[k]).length;
+  el.textContent=on?L.moreFiltersOn.replace("{{N}}",on):L.moreFilters;}
+(function(){const d=document.getElementById("calFilters");if(!d)return;
+  document.querySelectorAll("[data-age],[data-toggle]").forEach(b=>b.addEventListener("click",updFilterLbl));
+  document.addEventListener("click",ev=>{if(d.open&&!d.contains(ev.target))d.open=false});
+  document.addEventListener("keydown",ev=>{if(ev.key==="Escape"&&d.open){d.open=false;d.querySelector("summary").focus()}});
+  d.addEventListener("toggle",()=>{const p=d.querySelector(".fdpanel");p.style.left="0px";if(!d.open)return;
+    const r=p.getBoundingClientRect(),vw=document.documentElement.clientWidth,pad=12;
+    if(r.right>vw-pad)p.style.left=Math.max(pad-d.getBoundingClientRect().left,(vw-pad)-r.right)+"px"});})();
 const hoodWrap=document.getElementById("hoodWrap"),hoodSel=document.getElementById("hoodSel");
 function renderHoods(){
   if(!HOODS.length){if(hoodWrap)hoodWrap.style.display="none";return}
@@ -574,7 +585,7 @@ function applyStaticI18n(){
   }
 }
 function reRenderAll(){
-  renderHoods();renderDays();renderDay();renderWeek();renderBig();renderClasses();renderTicker();renderResources();applyStaticI18n();
+  renderHoods();renderDays();renderDay();renderWeek();renderBig();renderClasses();renderTicker();renderResources();applyStaticI18n();updFilterLbl();
 }
 const langBtn=document.getElementById("langBtn");
 if(langBtn)langBtn.onclick=()=>{LANG=LANG==="es"?"en":"es";try{localStorage.setItem("ctk-lang",LANG)}catch(_){}reRenderAll();if(LANG==="es"&&!window.__ES_LOADED)ensureEs(reRenderAll)};

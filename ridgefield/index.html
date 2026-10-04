@@ -2764,25 +2764,32 @@ window.TOWN = {
     <div class="wrap">
       <h2 class="sec" data-i18n="secCalendar">The calendar</h2>
       <p class="intro" data-i18n="calIntro">Everything we're tracking, week by week. Narrow it down by age, or show only the free, drop-in or rainy-day stuff.</p>
-      <div class="filters">
-        <div class="fgroup" role="group" aria-label="Filter by age">
-          <span class="flabel" data-i18n="filterAges">Ages</span>
-          <button class="chip" data-age="all" aria-pressed="true" data-i18n="catAll">All</button>
-          <button class="chip" data-age="baby" aria-pressed="false" data-i18n="ageBabies">Babies</button>
-          <button class="chip" data-age="toddler" aria-pressed="false" data-i18n="ageToddlers">Toddlers</button>
-          <button class="chip" data-age="preschool" aria-pressed="false" data-i18n="agePreschoolF">Preschool</button>
-          <button class="chip" data-age="big" aria-pressed="false" data-i18n="ageBigKids">Big kids</button>
+      <div class="filters filtersdd">
+        <div class="fgroup fdropwrap">
+          <details class="fdrop" id="calFilters">
+            <summary class="chip selectchip"><span id="calFiltersLbl" data-i18n="moreFilters">Filters</span></summary>
+            <div class="fdpanel">
+              <div class="fgroup" role="group" aria-label="Filter by age">
+                <span class="flabel" data-i18n="filterAges">Ages</span>
+                <button class="chip" data-age="all" aria-pressed="true" data-i18n="catAll">All</button>
+                <button class="chip" data-age="baby" aria-pressed="false" data-i18n="ageBabies">Babies</button>
+                <button class="chip" data-age="toddler" aria-pressed="false" data-i18n="ageToddlers">Toddlers</button>
+                <button class="chip" data-age="preschool" aria-pressed="false" data-i18n="agePreschoolF">Preschool</button>
+                <button class="chip" data-age="big" aria-pressed="false" data-i18n="ageBigKids">Big kids</button>
+              </div>
+              <div class="fgroup" role="group" aria-label="Other filters">
+                <span class="flabel" data-i18n="filterShowOnly">Show only</span>
+                <button class="chip" data-toggle="free" aria-pressed="false" data-i18n="free">Free</button>
+                <button class="chip" data-toggle="dropin" aria-pressed="false" data-i18n="dropIn">Drop-in</button>
+                <button class="chip" data-toggle="indoor" aria-pressed="false" data-i18n="filterIndoorLong">Rainy day (indoors)</button>
+                <button class="chip" data-toggle="special" aria-pressed="false" data-i18n="filterBig">Big days</button>
+              </div>
+            </div>
+          </details>
         </div>
         <div class="fgroup" id="hoodWrap">
           <label class="flabel" for="hoodSel" data-i18n="filterArea">Area</label>
           <select class="chip selectchip" id="hoodSel"></select>
-        </div>
-        <div class="fgroup" role="group" aria-label="Other filters">
-          <span class="flabel" data-i18n="filterShowOnly">Show only</span>
-          <button class="chip" data-toggle="free" aria-pressed="false" data-i18n="free">Free</button>
-          <button class="chip" data-toggle="dropin" aria-pressed="false" data-i18n="dropIn">Drop-in</button>
-          <button class="chip" data-toggle="indoor" aria-pressed="false" data-i18n="filterIndoorLong">Rainy day (indoors)</button>
-          <button class="chip" data-toggle="special" aria-pressed="false" data-i18n="filterBig">Big days</button>
         </div>
       </div>
       <div class="weeknav">

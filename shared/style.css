@@ -718,3 +718,23 @@ footer{font-size:.84rem;line-height:1.6}
 .places li strong a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent)}
 .places li strong a:hover{text-decoration-color:currentColor}
 .places li strong a::after{content:"\2197";font-size:.75em;margin-left:.25em;opacity:.55}
+
+/* ---- Calendar filters as a dropdown (town pages; same pattern as the homepage "near you" panel) ---- */
+.filtersdd{align-items:flex-end}
+.fdrop{position:relative}
+.fdrop>summary{list-style:none;cursor:pointer;display:flex;align-items:center;white-space:nowrap;padding-right:34px}
+.fdrop>summary::-webkit-details-marker{display:none}
+.fdrop .fdpanel{position:absolute;z-index:20;top:calc(100% + 8px);left:0;width:min(300px,86vw);display:flex;flex-direction:column;gap:16px;padding:16px;background:var(--card,#fff);border:1.5px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.fdrop .fdpanel .fgroup{display:flex;flex-direction:column;align-items:stretch;flex-wrap:nowrap;gap:4px;margin:0}
+.fdrop .fdpanel .flabel{margin:0 0 2px}
+.fdrop .fdpanel .chip{box-sizing:border-box;width:100%;min-height:0;height:auto;padding:9px 12px;text-align:left;justify-content:flex-start;box-shadow:none;margin:0}
+/* small phones: keep the header on one line (long town names trim instead of pushing buttons off-screen) */
+@media (max-width:430px){
+  .btn-sm{padding:8px 9px;font-size:.7rem;letter-spacing:.03em}
+  .langbtn{padding-left:9px;padding-right:9px}
+  .brand{min-width:0;flex:1 1 auto}
+  .brand > span,.brand .bname{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+}
+.fdrop:not([open]) .fdpanel{display:none}
+@media (max-width:430px){.brand{flex:1 1 0%;overflow:hidden}}
+select.selectchip{padding-right:36px}

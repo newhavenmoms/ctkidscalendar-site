@@ -132,13 +132,17 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
 .townlist a{display:inline-block;font-family:var(--mono);font-weight:700;font-size:.82rem;letter-spacing:.03em;color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);border-radius:999px;padding:9px 18px;text-decoration:none;box-shadow:3px 3px 0 var(--ink)}
 .townlist a:hover{background:var(--tc);transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
 @media (max-width:600px){.townlist a{padding:12px 16px;font-size:.82rem}}
-.nearmorefilters{margin:4px 0 0}
-.nearmorefilters>summary{list-style:none;cursor:pointer;display:inline-block;padding:6px 0}
-.nearmorefilters>summary::-webkit-details-marker{display:none}
-.nearmorefilters>summary::after{content:" \25BE";}
-.nearmorefilters[open]>summary::after{content:" \25B4";}
-.nearmorefilters .nearfilters{margin-top:6px}
 .nearmorebtns{display:flex;gap:18px;flex-wrap:wrap}
+.nearmorefilters{position:relative}
+.nearmorefilters:not([open]) .nearfilters{display:none}
+.nearmorefilters>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;height:54px;box-sizing:border-box;white-space:nowrap;padding-right:34px}
+.nearmorefilters>summary::-webkit-details-marker{display:none}
+.nearmorefilters .nearfilters{position:absolute;z-index:20;top:calc(100% + 8px);left:0;width:min(300px,86vw);display:flex;flex-direction:column;align-items:stretch;gap:16px;padding:16px;margin:0;background:var(--card,#fff);border:1.5px solid var(--ink);box-shadow:4px 4px 0 var(--ink);overflow:visible}
+.nearmorefilters .fgroup{flex-direction:column;align-items:stretch;flex-wrap:nowrap;gap:6px}
+.nearmorefilters .fgroup .flabel{margin:0 0 2px}
+.nearmorefilters .fgroup .chip{box-sizing:border-box;width:100%;min-height:0;height:auto;padding:9px 12px;text-align:left;justify-content:flex-start;box-shadow:none}
+.nearmorefilters .fgroup{gap:4px}
+@media (max-width:760px){.nearmorefilters .nearfilters{position:absolute;margin:0;padding:16px;flex-wrap:nowrap;overflow:visible}.nearmorefilters .fgroup{flex:none}}
 .homenear{border-bottom:1.5px solid var(--ink)}
 .nearrow{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:flex-end;margin:6px 0 4px}
 .nearfield{display:flex;flex-direction:column;gap:6px}
@@ -463,10 +467,9 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
             <select id="nearRadius" class="chip selectchip"></select></label>
           <label class="nearfield"><span class="flabel" data-i18n="nearWhen">When</span>
             <select id="nearWhen" class="chip selectchip"></select></label>
-          <button type="button" class="linkbtn nearloc" id="nearLoc" data-i18n="nearUseLoc">Use my location</button>
-        </div>
+        <div class="nearfield"><span class="flabel" data-i18n="nearFilterBy">Filter</span>
         <details class="nearmorefilters" id="nearFilters">
-          <summary class="linkbtn"><span id="nearFiltersLbl" data-i18n="nearFilters">More filters</span></summary>
+          <summary class="chip selectchip nearfsum"><span id="nearFiltersLbl" data-i18n="nearFilters">More filters</span></summary>
         <div class="filters nearfilters">
           <div class="fgroup" role="group" aria-label="Filter by age">
             <span class="flabel" data-i18n="filterAges">Ages</span>
@@ -485,6 +488,9 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
           </div>
         </div>
         </details>
+        </div>
+          <button type="button" class="linkbtn nearloc" id="nearLoc" data-i18n="nearUseLoc">Use my location</button>
+        </div>
       </form>
       <p class="nearstatus" id="nearStatus" aria-live="polite"></p>
       <div id="nearList"></div>
@@ -553,6 +559,7 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       suggestTown:"Suggest a town", footerTag:"CT Kids Calendar &middot; a town-by-town guide for Connecticut families",
       tickWelcome:"WELCOME TO CT KIDS CALENDAR", tickTowns:"{{T}} TOWNS OPEN NOW", tickThings:"{{N}} THINGS TO DO",
       langBtn:"Espa\u00f1ol",
+      nearFilterBy:"Filter",
       nearFilters:"More filters",
       nearFiltersOn:"More filters ({{N}} on)",
       nearSeeAll:"See all {{N}}",
@@ -616,6 +623,7 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       suggestTown:"Sugerir un pueblo", footerTag:"CT Kids Calendar &middot; una gu\u00eda pueblo por pueblo para familias de Connecticut",
       tickWelcome:"BIENVENIDO A CT KIDS CALENDAR", tickTowns:"{{T}} PUEBLOS DISPONIBLES", tickThings:"{{N}} COSAS QUE HACER",
       langBtn:"English",
+      nearFilterBy:"Filtrar",
       nearFilters:"Más filtros",
       nearFiltersOn:"Más filtros (activos: {{N}})",
       nearSeeAll:"Ver los {{N}}",
@@ -820,6 +828,12 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       if(a){nf.age=a.dataset.nage;document.querySelectorAll("[data-nage]").forEach(x=>x.setAttribute("aria-pressed",x===a?"true":"false"));limit=PEEK;load().then(render)}
       if(tg){const k=tg.dataset.ntog;nf[k]=!nf[k];tg.setAttribute("aria-pressed",nf[k]?"true":"false");limit=PEEK;load().then(render)}
     });
+    const fdet=document.getElementById("nearFilters");
+    fdet.addEventListener("toggle",()=>{const pnl=fdet.querySelector(".nearfilters");if(!pnl)return;pnl.style.left="0px";if(!fdet.open)return;
+      const r=pnl.getBoundingClientRect(),vw=document.documentElement.clientWidth,pad=12;
+      if(r.right>vw-pad)pnl.style.left=Math.max(pad-fdet.getBoundingClientRect().left,(vw-pad)-r.right)+"px"});
+    document.addEventListener("click",ev=>{if(fdet.open&&!fdet.contains(ev.target))fdet.open=false});
+    document.addEventListener("keydown",ev=>{if(ev.key==="Escape"&&fdet.open){fdet.open=false;fdet.querySelector("summary").focus()}});
     moreBtn.addEventListener("click",()=>{limit=limit===PEEK?40:limit+40;render()});
     document.getElementById("nearFewer").addEventListener("click",()=>{limit=PEEK;render();document.getElementById("near").scrollIntoView({block:"start"})});
     document.getElementById("nearLoc").addEventListener("click",()=>{
