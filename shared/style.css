@@ -745,3 +745,40 @@ select.selectchip{padding-right:36px}
 .filtersdd .fgroup{flex:none;max-width:100%}
 .filtersdd #hoodSel{max-width:100%}
 @media (max-width:760px){.filters.filtersdd{flex-wrap:wrap;overflow:visible;margin-left:0;margin-right:0;padding-left:0;padding-right:0}}
+
+/* ---- Big days: single date-ordered list grouped by month (replaces the category columns) ---- */
+#bigdays .swipehint{display:none}
+#bigdays .bigdays{display:block;overflow:visible;margin:0;padding:0}
+.bdchips{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 8px}
+.bdchips .chip .n{font-variant-numeric:tabular-nums;opacity:.7;margin-left:2px}
+.bdchips .chip[aria-pressed="true"] .n{opacity:1}
+.bdmonth{margin-top:22px}
+.bdmonth>h3{font-family:var(--serif);font-style:italic;font-weight:400;font-size:1.7rem;margin:0 0 2px;padding-bottom:6px;border-bottom:1.5px solid var(--ink)}
+.bdmonth>h3::after{display:none}
+.bdmonth ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));column-gap:40px}
+.bdmonth .bd{border-bottom:1px dashed var(--line)}
+.bdtag{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 4px}
+.bdtag::before{content:"";width:9px;height:9px;border:1.5px solid var(--ink);background:var(--elm);flex:none}
+.bdtag-hw::before{background:var(--marigold)}
+.bdtag-hol::before{background:var(--lilac)}
+.bdtag-shows::before{background:var(--pool-deep)}
+.bd .rowbtns{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:4px 18px;margin-top:6px}
+.bd .rowbtns .linkbtn,.bd>span>.linkbtn{white-space:nowrap;text-align:left}
+#bigdays .bdmore{margin-top:16px}
+@media (max-width:760px){
+  .bdchips{flex-wrap:nowrap;overflow-x:auto;margin:4px -20px 8px;padding:0 20px 4px;scrollbar-width:none}
+  .bdchips::-webkit-scrollbar{display:none}
+  .bdchips .chip{flex:none}
+  .bdmonth ol{grid-template-columns:1fr}
+  .bdmonth>h3{font-size:1.45rem}
+}
+.bdmonth:first-of-type{margin-top:8px}
+.bdmonth-tba{margin-top:28px}
+.bd-date.long .d{font-size:1.15rem;letter-spacing:-.02em}
+.bd-date.xl .d{font-size:.95rem;letter-spacing:-.02em;white-space:normal;line-height:1.1}
+.bdtag::before{background:#E07A2E}
+.bdtag-hw::before{background:var(--marigold)}
+.bdtag-hol::before{background:#C8384F}
+.bdtag-shows::before{background:#3E7CB1}
+#bigdays #bigList{padding-left:0;padding-right:0}
+#bigdays #bigList{padding-left:0!important;padding-right:0!important;margin-left:0;margin-right:0}

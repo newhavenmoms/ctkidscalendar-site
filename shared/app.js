@@ -54,6 +54,7 @@ en:{
   directions:"Directions", organizerPage:"Organizer's page", shareWithFriend:"Share with a friend", addToCal:"Add to calendar",
   seeOnCal:"See it on the calendar", share:"Share", tba:"TBA", checkForDates:"Check for dates", schoolClosed:"No school", schoolEarly:"Early dismissal",
   groupFall:"Fall festivals", groupShows:"Shows & performances", groupHw:"Halloween", groupHol:"Holidays",
+  bgFall:"Fall fun", bgHw:"Halloween", bgHol:"Holidays", bgShows:"Shows", bgTbaHead:"Dates not announced yet", bgShowAll:"Show all {{N}}", bgFewer:"Show fewer",
   noMatchFilters:"Nothing matches those filters this week. Try another age group or neighborhood, or turn off a filter.",
   buildingCal:'We\u2019re still building out this town\u2019s calendar \u2014 check back soon, or <a href="#contact">tell us what\u2019s coming up</a>.',
   catAll:"All", catMusic:"Music", catDance:"Dance", catSwim:"Swim", catMove:"Sports & tumbling",
@@ -119,6 +120,7 @@ es:{
   directions:"C\u00f3mo llegar", organizerPage:"P\u00e1gina del organizador", shareWithFriend:"Compartir con un amigo", addToCal:"Agregar al calendario",
   seeOnCal:"Ver en el calendario", share:"Compartir", tba:"Pronto", checkForDates:"Ver fechas", schoolClosed:"Sin clases", schoolEarly:"Salida temprana",
   groupFall:"Festivales de oto\u00f1o", groupShows:"Espect\u00e1culos y funciones", groupHw:"Halloween", groupHol:"Fiestas de fin de a\u00f1o",
+  bgFall:"Oto\u00f1o", bgHw:"Halloween", bgHol:"Fiestas", bgShows:"Espect\u00e1culos", bgTbaHead:"Fechas a\u00fan no anunciadas", bgShowAll:"Ver los {{N}}", bgFewer:"Mostrar menos",
   noMatchFilters:"Nada coincide con esos filtros esta semana. Prueba otro grupo de edad o vecindario, o desactiva un filtro.",
   buildingCal:'Todav\u00eda estamos construyendo el calendario de este pueblo \u2014 vuelve pronto, o <a href="#contact">cu\u00e9ntanos qu\u00e9 se viene</a>.',
   catAll:"Todas", catMusic:"M\u00fasica", catDance:"Danza", catSwim:"Nataci\u00f3n", catMove:"Deportes y gimnasia",
@@ -447,35 +449,66 @@ if(hoodSel)hoodSel.onchange=()=>{f.hood=hoodSel.value;hoodSel.classList.toggle("
 
 /* ---------- big days ---------- */
 const bigEl=document.getElementById("bigList"),bigSection=document.getElementById("bigdays");
+/* Big days: one date-ordered list grouped by month, with category filter chips and a short preview */
+const MONF_EN=["January","February","March","April","May","June","July","August","September","October","November","December"];
+const MONF_ES=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+const BIG_CATS=[["fall","bgFall"],["hw","bgHw"],["hol","bgHol"],["shows","bgShows"]];
+let bigCat="all",bigOpen=false;
+const BIG_PEEK=window.matchMedia("(max-width:760px)").matches?5:8;
 function renderBig(){
-  const groups={fall:["groupFall",""],shows:["groupShows","shows"],hw:["groupHw","hw"],hol:["groupHol","hol"]};
   const byTitle=new Map();
   E.filter(e=>e.special).forEach(e=>{
     const from=e.when[0].from,last=e.when[e.when.length-1],to=last.to||last.from,cur=byTitle.get(e.t);
     if(cur){cur.to=to>cur.to?to:cur.to;cur.places.push((V[e.v]&&V[e.v][0])||"")}
     else byTitle.set(e.t,{id:e.id,g:e.special,t:e.t,from,to,places:[(V[e.v]&&V[e.v][0])||""]});
   });
-  const items=[...byTitle.values()].filter(i=>i.to>=key(today)).sort((a,b)=>a.from<b.from?-1:1);
+  const items=[...byTitle.values()].filter(i=>i.to>=key(today)).sort((a,b)=>a.from<b.from?-1:a.from>b.from?1:0);
   if(!items.length&&!TBA.length){if(bigSection)bigSection.style.display="none";return}
   if(bigSection)bigSection.style.display="";
+  const counts={};items.concat(TBA).forEach(i=>{counts[i.g]=(counts[i.g]||0)+1});
+  const cats=BIG_CATS.filter(([g])=>counts[g]);
+  if(bigCat!=="all"&&!counts[bigCat])bigCat="all";
+  const pick=i=>bigCat==="all"||i.g===bigCat;
+  const dated=items.filter(pick),tba=TBA.filter(pick),total=dated.length+tba.length;
+  const limit=bigOpen?Infinity:BIG_PEEK;
   const andWord=LANG==="es"?" y ":" and ";
-  bigEl.innerHTML=Object.entries(groups).map(([g,[lk,c]])=>{
-    const dated=items.filter(i=>i.g===g).map(i=>{
-      const a=pd(i.from),b=pd(i.to);
-      const dd=i.from===i.to?a.getDate():(a.getMonth()===b.getMonth()?`${a.getDate()}\u2013${b.getDate()}`:`${a.getDate()}\u2013${MON()[b.getMonth()]} ${b.getDate()}`);
-      const dl=String(dd).length,dcls=dl>=8?" xl":(dl>=5?" long":"");
-      return `<li class="bd"><span class="bd-date${dcls}"><span class="m">${MON()[a.getMonth()]}</span><span class="d">${dd}</span></span>
-        <span><strong>${esc(dx(i.t))}</strong><span class="w">${esc([...new Set(i.places)].join(andWord))}</span>
-        <span class="rowbtns"><button class="linkbtn" type="button" data-jump="${i.from}">${tx("seeOnCal")}</button><button class="linkbtn" type="button" data-share-e="${i.id}" data-share-d="${i.from}">${tx("share")}</button></span></span></li>`;
-    }).join("");
-    const tba=TBA.filter(i=>i.g===g).map(i=>`<li class="bd"><span class="bd-date tba"><span class="d">${tx("tba")}</span></span>
-        <span><strong>${esc(dx(i.t))}</strong><span class="w">${esc(dx(i.w))}</span><p>${esc(dx(i.p))}</p>
-        <a class="linkbtn" href="${i.src}" target="_blank" rel="noopener">${tx("checkForDates")}</a></span></li>`).join("");
-    if(!dated&&!tba)return "";
-    return `<div class="bdcol${c?" bd"+c:""}"><h3 class="${c}">${tx(lk)}</h3><ol>${dated}${tba}</ol></div>`;
-  }).join("");
+  const tag=g=>{const c=BIG_CATS.find(x=>x[0]===g);return c?`<span class="bdtag bdtag-${g}">${tx(c[1])}</span>`:""};
+  let shown=0,html="";
+  // chips (only when there is more than one category)
+  if(cats.length>1){
+    html+=`<div class="bdchips" role="group" aria-label="${esc(tx("secBigDays"))}">`+
+      [["all","catAll",items.length+TBA.length]].concat(cats.map(([g,k])=>[g,k,counts[g]])).map(([g,k,n])=>
+        `<button type="button" class="chip" data-bigcat="${g}" aria-pressed="${bigCat===g}">${tx(k)} <span class="n">${n}</span></button>`).join("")+`</div>`;
+  }
+  // dated items: one continuous, date-ordered grid (each tile shows its month)
+  let rows="";
+  for(const i of dated){
+    if(shown>=limit)break;
+    const a=pd(i.from),b=pd(i.to);
+    const dd=i.from===i.to?a.getDate():(a.getMonth()===b.getMonth()?`${a.getDate()}\u2013${b.getDate()}`:`${a.getDate()}\u2013${MON()[b.getMonth()]} ${b.getDate()}`);
+    const dl=String(dd).length,dcls=dl>=8?" xl":(dl>=5?" long":"");
+    rows+=`<li class="bd bdg-${i.g}"><span class="bd-date${dcls}"><span class="m">${MON()[a.getMonth()]}</span><span class="d">${dd}</span></span>
+      <span>${tag(i.g)}<strong>${esc(dx(i.t))}</strong><span class="w">${esc([...new Set(i.places)].join(andWord))}</span>
+      <span class="rowbtns"><button class="linkbtn" type="button" data-jump="${i.from}">${tx("seeOnCal")}</button><button class="linkbtn" type="button" data-share-e="${i.id}" data-share-d="${i.from}">${tx("share")}</button></span></span></li>`;
+    shown++;
+  }
+  if(rows)html+=`<section class="bdmonth"><ol>${rows}</ol></section>`;
+  // "date not announced yet" cards at the end
+  let trows="";
+  for(const i of tba){
+    if(shown>=limit)break;
+    trows+=`<li class="bd bdg-${i.g}"><span class="bd-date tba"><span class="d">${tx("tba")}</span></span>
+      <span>${tag(i.g)}<strong>${esc(dx(i.t))}</strong><span class="w">${esc(dx(i.w))}</span><p>${esc(dx(i.p))}</p>
+      <a class="linkbtn" href="${i.src}" target="_blank" rel="noopener">${tx("checkForDates")}</a></span></li>`;
+    shown++;
+  }
+  if(trows)html+=`<section class="bdmonth bdmonth-tba"><h3>${tx("bgTbaHead")}</h3><ol>${trows}</ol></section>`;
+  if(total>BIG_PEEK)html+=`<div class="bdmore"><button type="button" class="linkbtn" data-bigmore="1">${bigOpen?tx("bgFewer"):tx("bgShowAll").replace("{{N}}",total)}</button></div>`;
+  bigEl.innerHTML=html;
 }
 bigEl.addEventListener("click",ev=>{
+  const c=ev.target.closest("[data-bigcat]");if(c){bigCat=c.dataset.bigcat;bigOpen=false;renderBig();return}
+  const m=ev.target.closest("[data-bigmore]");if(m){bigOpen=!bigOpen;renderBig();if(!bigOpen&&bigSection)bigSection.scrollIntoView({block:"start"});return}
   const b=ev.target.closest("[data-jump]");if(!b)return;
   const d=pd(b.dataset.jump);forceOpen=b.dataset.jump;wk=monday(d<today?today:d);renderWeek();forceOpen=null;
   document.getElementById("events").scrollIntoView();
