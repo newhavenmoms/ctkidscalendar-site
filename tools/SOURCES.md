@@ -648,3 +648,49 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 - [barnesandnoble.com](https://www.barnesandnoble.com/) — 1 class card(s)
 
 ---
+
+## Guilford
+
+**Check regularly**
+
+| Source | What to look for / how often | Last checked |
+|---|---|---|
+| [Guilford Free Library — events calendar](https://guilfordfreelibrary.org/events/audience/children/) | Monthly. Month-grid view only (no list view): save each month as PDF or screenshot; the children's listing shows only each series' next date. | Oct 4, 2026 |
+| [Town of Guilford](https://www.ci.guilford.ct.us/) | Seasonal: Spooktacular on the Green (late Oct), tree lighting and luminaria (early Dec). | Oct 4, 2026 |
+| [Bishop's Orchards](https://www.bishopsorchards.com/) | Seasonal: pick-your-own dates. | Oct 4, 2026 |
+
+**Also cited in your data** (0 more site(s), busiest first)
+
+
+---
+
+## Old Saybrook
+
+**Check regularly**
+
+| Source | What to look for / how often | Last checked |
+|---|---|---|
+| [Acton Public Library (Assabet calendar)](https://actonlibrary.assabetinteractive.com/calendar/) | Monthly. Assabet: open each month's 'By Date-Ordered Listings' view and paste it. Several programs get canceled week to week, so check for CANCELED tags. | Oct 4, 2026 |
+| [Old Saybrook Torchlight Parade](https://oldsaybrooktorchlight.com/) | Each fall: parade date (2nd Saturday of December in 2026). | Oct 4, 2026 |
+| [The Kate](https://thekate.org/) | Each season: look for children's shows (none in fall 2026). | Oct 4, 2026 |
+
+**Also cited in your data** (0 more site(s), busiest first)
+
+
+---
+
+## Essex
+
+**Check regularly**
+
+| Source | What to look for / how often | Last checked |
+|---|---|---|
+| [Essex Library (Engaged Patrons)](https://www.youressexlibrary.org/) | Monthly. Paste the events list; kids' programs are mixed with many adult ones. Storytime series dates past October weren't posted as of Oct 4. | Oct 4, 2026 |
+| [essexct.com events (Ivoryton Library + town)](https://essexct.com/events/category/activity/) | Monthly. Readable directly and offers .ics export; covers the Ivoryton Library, FestiFall and the Pumpkin Festival. | Oct 4, 2026 |
+| [Essex Steam Train — North Pole Express](https://essexsteamtrain.com/) | Late summer: holiday dates and times (tickets online only). | Oct 4, 2026 |
+| [Connecticut River Museum](https://ctrivermuseum.org/) | November: Holiday Train Show and Trees in the Rigging dates. | Oct 4, 2026 |
+
+**Also cited in your data** (0 more site(s), busiest first)
+
+
+---

@@ -770,6 +770,84 @@
     }
    ],
    "extras": []
+  },
+  "guilford": {
+   "title": "Guilford",
+   "extras": [],
+   "check": [
+    {
+     "name": "Guilford Free Library — events calendar",
+     "url": "https://guilfordfreelibrary.org/events/audience/children/",
+     "how": "Monthly. Month-grid view only (no list view): save each month as PDF or screenshot; the children's listing shows only each series' next date.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Town of Guilford",
+     "url": "https://www.ci.guilford.ct.us/",
+     "how": "Seasonal: Spooktacular on the Green (late Oct), tree lighting and luminaria (early Dec).",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Bishop's Orchards",
+     "url": "https://www.bishopsorchards.com/",
+     "how": "Seasonal: pick-your-own dates.",
+     "last": "Oct 4, 2026"
+    }
+   ]
+  },
+  "old-saybrook": {
+   "title": "Old Saybrook",
+   "extras": [],
+   "check": [
+    {
+     "name": "Acton Public Library (Assabet calendar)",
+     "url": "https://actonlibrary.assabetinteractive.com/calendar/",
+     "how": "Monthly. Assabet: open each month's 'By Date-Ordered Listings' view and paste it. Several programs get canceled week to week, so check for CANCELED tags.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Old Saybrook Torchlight Parade",
+     "url": "https://oldsaybrooktorchlight.com/",
+     "how": "Each fall: parade date (2nd Saturday of December in 2026).",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "The Kate",
+     "url": "https://thekate.org/",
+     "how": "Each season: look for children's shows (none in fall 2026).",
+     "last": "Oct 4, 2026"
+    }
+   ]
+  },
+  "essex": {
+   "title": "Essex",
+   "extras": [],
+   "check": [
+    {
+     "name": "Essex Library (Engaged Patrons)",
+     "url": "https://www.youressexlibrary.org/",
+     "how": "Monthly. Paste the events list; kids' programs are mixed with many adult ones. Storytime series dates past October weren't posted as of Oct 4.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "essexct.com events (Ivoryton Library + town)",
+     "url": "https://essexct.com/events/category/activity/",
+     "how": "Monthly. Readable directly and offers .ics export; covers the Ivoryton Library, FestiFall and the Pumpkin Festival.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Essex Steam Train — North Pole Express",
+     "url": "https://essexsteamtrain.com/",
+     "how": "Late summer: holiday dates and times (tickets online only).",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Connecticut River Museum",
+     "url": "https://ctrivermuseum.org/",
+     "how": "November: Holiday Train Show and Trees in the Rigging dates.",
+     "last": "Oct 4, 2026"
+    }
+   ]
   }
  }
 }

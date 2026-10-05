@@ -17,7 +17,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const TOWNS = ['stamford', 'norwalk', 'fairfield', 'ridgefield', 'west-hartford', 'new-haven', 'greenwich', 'darien', 'westport', 'new-canaan', 'cheshire', 'milford', 'trumbull', 'wallingford', 'middletown', 'glastonbury', 'newtown', 'branford'];
+const TOWNS = ['stamford', 'norwalk', 'fairfield', 'ridgefield', 'west-hartford', 'new-haven', 'greenwich', 'darien', 'westport', 'new-canaan', 'cheshire', 'milford', 'trumbull', 'wallingford', 'middletown', 'glastonbury', 'newtown', 'branford', 'guilford', 'old-saybrook', 'essex'];
 
 let things = 0, venues = 0, festivals = 0;
 
@@ -70,9 +70,11 @@ const COUNTIES = [
   { id: 'fairfield', en: 'Fairfield County', es: 'Condado de Fairfield',
     towns: ['darien', 'fairfield', 'greenwich', 'new-canaan', 'newtown', 'norwalk', 'ridgefield', 'stamford', 'trumbull', 'westport'] },
   { id: 'new-haven', en: 'New Haven County', es: 'Condado de New Haven',
-    towns: ['branford', 'cheshire', 'milford', 'new-haven', 'wallingford'] },
-  { id: 'hartford', en: 'Hartford & Middlesex', es: 'Hartford y Middlesex',
-    towns: ['glastonbury', 'middletown', 'west-hartford'] },
+    towns: ['branford', 'cheshire', 'guilford', 'milford', 'new-haven', 'wallingford'] },
+  { id: 'hartford', en: 'Hartford County', es: 'Condado de Hartford',
+    towns: ['glastonbury', 'west-hartford'] },
+  { id: 'middlesex', en: 'Middlesex County', es: 'Condado de Middlesex',
+    towns: ['essex', 'middletown', 'old-saybrook'] },
 ];
 const missing = TOWNS.filter(t => !COUNTIES.some(c => c.towns.includes(t)));
 if (missing.length) throw new Error('Add these towns to a county in build-stats.js: ' + missing.join(', '));
