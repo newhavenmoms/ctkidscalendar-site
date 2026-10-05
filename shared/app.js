@@ -456,6 +456,10 @@ function bigDateParts(segs,todayK,MONS,L){
   /* segs: [[from,to],...] sorted. Returns {from,m,d,cls,note}: tile shows ONE date (or a same-month run);
      everything else (continuous cross-month runs, extra separate dates) goes into a short text note. */
   const pd2=k=>{const[y,m,d]=k.split("-").map(Number);return new Date(y,m-1,d)};
+  const nextDay=k=>{const x=pd2(k);x.setDate(x.getDate()+1);return `${x.getFullYear()}-${String(x.getMonth()+1).padStart(2,"0")}-${String(x.getDate()).padStart(2,"0")}`};
+  /* join back-to-back or overlapping days into one run (Oct 16, 17, 18 -> Oct 16-18) */
+  const merged=[];segs.slice().sort((a,b)=>a[0]<b[0]?-1:1).forEach(s=>{const l=merged[merged.length-1];if(l&&s[0]<=nextDay(l[1])){if(s[1]>l[1])l[1]=s[1]}else merged.push([s[0],s[1]])});
+  segs=merged;
   const fut=segs.filter(s=>s[1]>=todayK);const cur=fut[0]||segs[segs.length-1];
   const a=pd2(cur[0]),b=pd2(cur[1]),fmt=x=>L.dfmt(MONS[x.getMonth()],x.getDate());
   let d=String(a.getDate()),note="";

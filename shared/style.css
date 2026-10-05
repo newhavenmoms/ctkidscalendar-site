@@ -747,8 +747,8 @@ select.selectchip{padding-right:36px}
 @media (max-width:760px){.filters.filtersdd{flex-wrap:wrap;overflow:visible;margin-left:0;margin-right:0;padding-left:0;padding-right:0}}
 
 /* ---- Big days: single date-ordered list grouped by month (replaces the category columns) ---- */
-#bigdays .swipehint{display:none}
-#bigdays .bigdays{display:block;overflow:visible;margin:0;padding:0}
+#bigList ~ .swipehint,#bigdays .swipehint:has(+ #bigList){display:none}
+#bigList.bigdays{display:block;overflow:visible;margin:0;padding:0}
 .bdchips{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 8px}
 .bdchips .chip .n{font-variant-numeric:tabular-nums;opacity:.7;margin-left:2px}
 .bdchips .chip[aria-pressed="true"] .n{opacity:1}
@@ -764,7 +764,7 @@ select.selectchip{padding-right:36px}
 .bdtag-shows::before{background:var(--pool-deep)}
 .bd .rowbtns{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:4px 18px;margin-top:6px}
 .bd .rowbtns .linkbtn,.bd>span>.linkbtn{white-space:nowrap;text-align:left}
-#bigdays .bdmore{margin-top:16px}
+#bigList .bdmore{margin-top:16px}
 @media (max-width:760px){
   .bdchips{flex-wrap:nowrap;overflow-x:auto;margin:4px -20px 8px;padding:0 20px 4px;scrollbar-width:none}
   .bdchips::-webkit-scrollbar{display:none}
@@ -780,8 +780,7 @@ select.selectchip{padding-right:36px}
 .bdtag-hw::before{background:var(--marigold)}
 .bdtag-hol::before{background:#C8384F}
 .bdtag-shows::before{background:#3E7CB1}
-#bigdays #bigList{padding-left:0;padding-right:0}
-#bigdays #bigList{padding-left:0!important;padding-right:0!important;margin-left:0;margin-right:0}
+#bigList.bigdays{padding-left:0!important;padding-right:0!important;margin-left:0;margin-right:0}
 .bd .bdnote{font-family:var(--mono);font-size:.74rem;letter-spacing:.04em;text-transform:uppercase;color:var(--ink);margin:2px 0 1px}
 .bd-date .d{white-space:nowrap}
 
@@ -797,3 +796,11 @@ select.selectchip{padding-right:36px}
 .pltag-drive::before{background:#E07A2E}
 #things .plmore{margin-top:16px}
 @media (max-width:760px){.plgrid{grid-template-columns:1fr}}
+
+/* homepage Big Days: counties side by side on desktop, stacked on phones (no sideways swipe) */
+@media (max-width:760px){
+  #homeBig.bigdays{display:block!important;overflow:visible!important;margin:0!important;padding:0!important;scroll-snap-type:none}
+  #homeBig.bigdays::after{display:none}
+  #homeBig.bigdays>.bdcol{margin:0 0 30px}
+  #homeBig ~ .swipehint,.homebig .swipehint{display:none}
+}
