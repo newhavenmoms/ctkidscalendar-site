@@ -244,3 +244,7 @@ snippets): `*.librarycalendar.com` event pages, `middletownct.gov` calendar,
 ### Holiday tags (added Oct 5, 2026)
 
 Major holidays show as a tag on the calendar's day headings. They're listed in `HOL` near the top of the calendar code in `shared/app.js`, with English and Spanish names. The list currently runs through Martin Luther King Jr. Day (Jan 18, 2027). Each fall, add the coming year: Hanukkah, Diwali, Thanksgiving, MLK Day and the Monday holidays move every year, so look the dates up rather than copying last year's.
+
+### Submissions form (added Oct 5, 2026)
+
+Every page has a "Submit an event" button and footer link that open a shared form (`shared/submit.js`). Submissions go to newhavenmoms@gmail.com through Web3Forms once its access key is pasted into `WEB3FORMS_KEY` at the top of that file; until then the form opens the visitor's email app, pre-filled. `build_town.py` adds each new town to the form's town list. Treat submissions like any other lead: verify against the organizer's own page before adding, and note the source.

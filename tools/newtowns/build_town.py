@@ -50,3 +50,13 @@ for x in T.get('tba', []):
 lib = T.get('library') or {}
 if lib.get('desc') and lib['desc'] not in S.ES: missing.append('library desc')
 print(f'{slug}: wrote page ({len(T["events"])} events, {len(T.get("tba", []))} cards, {sum(len(v) for v in S.PLACES.values())} places); Spanish added {ins.count(chr(10))}; missing ES: {missing or "none"}')
+
+# keep the "Submit an event" form's town list in step
+import re as _re
+sp = os.path.join(ROOT, 'shared', 'submit.js'); sj = open(sp).read()
+m = _re.search(r'const TOWNS = \[(.*?)\];', sj)
+names = _re.findall(r'"([^"]+)"', m.group(1))
+if name not in names:
+    names = sorted(names + [name])
+    sj = sj[:m.start(1)] + ','.join(json.dumps(n) for n in names) + sj[m.end(1):]
+    open(sp, 'w').write(sj); print(f'added {name} to the submit form town list')
