@@ -859,3 +859,5 @@ header.top .navwrap{flex:none}
 /* header buttons: one consistent height (Español, Submit an event, All towns) */
 header.top .langbtn,header.top .btn-sm{height:42px;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;padding-top:0;padding-bottom:0;line-height:1;vertical-align:middle}
 @media (max-width:600px){header.top .langbtn,header.top .btn-sm{height:40px}}
+.hdr-school{text-decoration:none;color:var(--ink);padding:0 14px}
+.hdr-school:hover{background:var(--marigold);color:var(--marigold-ink)}

@@ -248,3 +248,7 @@ Major holidays show as a tag on the calendar's day headings. They're listed in `
 ### Submissions form (added Oct 5, 2026)
 
 Every page has a "Submit an event" button and footer link that open a shared form (`shared/submit.js`). Submissions go to newhavenmoms@gmail.com through Web3Forms once its access key is pasted into `WEB3FORMS_KEY` at the top of that file; until then the form opens the visitor's email app, pre-filled. `build_town.py` adds each new town to the form's town list. Treat submissions like any other lead: verify against the organizer's own page before adding, and note the source.
+
+### School page (added Oct 6, 2026)
+
+`/school/` is linked from the homepage menu ("School") and currently shows a "Coming soon" card (English/Spanish). It's marked noindex and kept out of the sitemap until it launches; when real content goes up, remove the robots meta tag and add it to sitemap.xml.

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>School · CT Kids Calendar</title>
+<!-- Private preview page: keep out of search engines and out of the sitemap. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="only light">
+<link rel="icon" href="/shared/favicon.ico" sizes="any">
+<meta name="theme-color" content="#A9E0F2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared/style.css">
+<style>
+  .school-main{min-height:60vh;padding:64px 0 80px}
+  .school-card{max-width:520px;margin:0 auto;background:#fff;border:2px solid var(--ink);box-shadow:8px 8px 0 var(--ink);padding:32px 28px}
+  .school-card h1{font-family:var(--serif);font-weight:400;font-size:2.6rem;line-height:1.05;margin:0 0 10px}
+  .school-card p{margin:0 0 18px;color:var(--ink-soft)}
+  .school-soon{display:inline-block;font-family:var(--mono);font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:#FFF1C9;border:1.5px solid var(--ink);padding:4px 10px;margin-bottom:14px}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="CT Kids Calendar, home">
+      <svg width="38" height="38" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 92 C50 92 20 58 20 38 C20 20 33 6 50 6 C67 6 80 20 80 38 C80 58 50 92 50 92 Z" fill="#1B2A4A"/><rect x="33" y="21" width="34" height="30" rx="8" fill="#FFD84D"/><circle cx="42.5" cy="32.5" r="4" fill="#1B2A4A"/><circle cx="57.5" cy="32.5" r="4" fill="#1B2A4A"/><circle cx="42.5" cy="43.5" r="4" fill="#1B2A4A"/><circle cx="57.5" cy="43.5" r="4" fill="#1B2A4A"/></svg><span>CT Kids Calendar</span>
+    </a>
+    <div class="navwrap">
+      <a class="btn-sm" href="/" id="homeLink">&larr; Home</a>
+    </div>
+  </div>
+</header>
+
+<main class="school-main">
+  <div class="wrap">
+    <section class="school-card" id="content">
+      <span class="school-soon" id="cSoon">Coming soon</span>
+      <h1 id="cTitle">School</h1>
+      <p id="cIntro">School information for Connecticut families, including application deadlines, board meetings and more, is coming soon.</p>
+    </section>
+  </div>
+</main>
+
+<script>
+/* School page: placeholder ("Coming soon"), in English or Spanish to match the site's language setting. */
+(function () {
+  const T = {
+    en: { cSoon: "Coming soon", cTitle: "School", cIntro: "School information for Connecticut families, including application deadlines, board meetings and more, is coming soon.", home: "\u2190 Home" },
+    es: { cSoon: "Pr\u00f3ximamente", cTitle: "Escuela", cIntro: "Pronto habr\u00e1 informaci\u00f3n escolar para familias de Connecticut, como fechas l\u00edmite de solicitud, reuniones de la junta escolar y m\u00e1s.", home: "\u2190 Inicio" }
+  };
+  let lang = "en"; try { if ((localStorage.getItem("ctk-lang") || "") === "es") lang = "es"; } catch (_) {}
+  document.documentElement.lang = lang;
+  const L = T[lang];
+  ["cSoon", "cTitle", "cIntro"].forEach(id => { document.getElementById(id).textContent = L[id]; });
+  document.getElementById("homeLink").textContent = L.home;
+})();
+</script>
+<script src="/shared/analytics.js" defer></script>
+</body>
+</html>
