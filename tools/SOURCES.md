@@ -661,6 +661,7 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Guilford Parks & Recreation](https://www.guilfordparkrec.com/newslist.php) | Monthly: the News List page is current (Spooktacular, holiday events) even though the home page shows an old 2020 copy. Each August: fall/winter brochure. | Oct 4, 2026 |
 | [Dudley Farm Museum — events](https://dudleyfarm.com/events/) | Monthly: Harvest Day (mid-Oct), farmers' market (Sat through Oct), holiday market. | Oct 4, 2026 |
 | [Henry Whitfield State Museum](https://portal.ct.gov/decd/content/historic-preservation/04_state_museums/henry-whitfield-state-museum/events-and-exhibits) | House closed for restoration in 2026; check for reopening and events. | Oct 4, 2026 |
+| [Patch — Guilford calendar](https://patch.com/connecticut/guilford/calendar) | Weekend check Oct 5: Nov 14–15 had nothing kid-focused (accepted gap). | Oct 5, 2026 |
 
 **Also cited in your data** (0 more site(s), busiest first)
 
@@ -677,6 +678,8 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Old Saybrook Torchlight Parade](https://oldsaybrooktorchlight.com/) | Each fall: parade date (2nd Saturday of December in 2026). | Oct 4, 2026 |
 | [The Kate](https://thekate.org/) | Each season: look for children's shows (none in fall 2026). | Oct 4, 2026 |
 | [Old Saybrook Parks & Recreation (MyRec)](https://oldsaybrookct.myrec.com/info/activities/default.aspx) | Each season: preschool programs, Soccer Shots, martial arts, 'Tis the Season, Trunk or Treat (late Oct). | Oct 4, 2026 |
+| [Greater Old Saybrook Chamber — events](https://business.goschamber.com/events/) | Each summer: Arts & Crafts Festival on the Town Green (first weekend of October; Oct 3–4 in 2026), Chili Fest, holiday events. | Oct 5, 2026 |
+| [Patch — Old Saybrook calendar](https://patch.com/connecticut/old-saybrook-ct/calendar) | Monthly: Clark Community Park nature walks, Kate family shows (e.g., Missoula Children's Theatre), library programs. | Oct 5, 2026 |
 
 **Also cited in your data** (0 more site(s), busiest first)
 
@@ -695,6 +698,7 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Connecticut River Museum](https://ctrivermuseum.org/) | November: Holiday Train Show and Trees in the Rigging dates. | Oct 4, 2026 |
 | [Essex Parks & Recreation (RecDesk)](https://essexct.recdesk.com/Community/Page?pageId=513) | October: Ivoryton Pumpkin Festival schedule (costume parade 4:30, carving at Bushy Hill). | Oct 4, 2026 |
 | [Bushy Hill Nature Center](https://www.bushyhill.org/) | Each season: community workshops and vacation days. | Oct 4, 2026 |
+| [Patch — Essex calendar](https://patch.com/connecticut/essex-chester-deepriver/calendar) | Weekend check Oct 5: Nov 7–8 and 14–15 empty; steam-train season ends in October and holiday events start late November (accepted gap). | Oct 5, 2026 |
 
 **Also cited in your data** (0 more site(s), busiest first)
 
@@ -711,6 +715,7 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Madison Beach & Recreation](https://www.madisonct.org/) | Seasonal: holiday tree lighting (early December), programs. | Oct 4, 2026 |
 | [R.J. Julia Booksellers](https://rjjulia.com/upcoming-events) | Monthly: children's storytimes and author events. | Oct 4, 2026 |
 | [Meigs Point Nature Center](https://www.meigspointnaturecenter.org/) | Monthly: Astronomy Night, seasonal programs; free admission. | Oct 4, 2026 |
+| [Patch — Madison calendar](https://patch.com/connecticut/madison-ct/calendar) | Weekend check Oct 5: Oct 10 and 17 only have library Itty Bitty Meetup; Patch had nothing kid-focused (accepted gap). Beware Madison WI/MN/IL/GA results in searches. | Oct 5, 2026 |
 
 **Also cited in your data** (0 more site(s), busiest first)
 

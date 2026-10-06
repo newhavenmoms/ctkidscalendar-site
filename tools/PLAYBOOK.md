@@ -87,6 +87,10 @@ Ask the owner to filter to children's audiences before pasting.
   - Readmobile or pop-up stops without an address.
 - **Teen-only programs:** keep existing ones when the paste was filtered to kids (they were filtered out, not cancelled).
 
+### Weekend check (added Oct 5, 2026)
+
+After building or refreshing a town, look at each of the next six weekends on its page. If a weekend has nothing, search the town's Chamber of Commerce events page and its Patch calendar before accepting the gap. Small towns' biggest weekends (craft festivals, Parks & Rec fall series) are often only listed there. Old Saybrook's Arts & Crafts Festival (Oct 3–4) was missed this way.
+
 ### 2. Parks & Recreation
 - **The seasonal brochure PDF** is the jackpot (Newtown's gave 19 classes in one
   read). Look for "Fall/Winter Program Guide" on the town site.
@@ -236,3 +240,7 @@ New to `SOURCES.md`, grouped by town. Note how each source was read.
 **Sites that block automated reading** (ask for a paste or work from search
 snippets): `*.librarycalendar.com` event pages, `middletownct.gov` calendar,
 `ctvisit.com` (very large pages), some `*.myrec.com` detail pages.
+
+### Holiday tags (added Oct 5, 2026)
+
+Major holidays show as a tag on the calendar's day headings. They're listed in `HOL` near the top of the calendar code in `shared/app.js`, with English and Spanish names. The list currently runs through Martin Luther King Jr. Day (Jan 18, 2027). Each fall, add the coming year: Hanukkah, Diwali, Thanksgiving, MLK Day and the Monday holidays move every year, so look the dates up rather than copying last year's.

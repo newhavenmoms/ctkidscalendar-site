@@ -361,13 +361,31 @@ const today=new Date();today.setHours(0,0,0,0);
 const daysEl=document.getElementById("days"),dayList=document.getElementById("dayList"),dayTitle=document.getElementById("dayTitle");
 const wkBtn=document.getElementById("weekendBtn");
 let sel=0,wkMode=false;
+/* Major holidays: shown as a tag on the calendar's day headings (not events). Update each year. */
+const HOL={
+ "2026-10-12":["Columbus Day / Indigenous Peoples' Day","Día de la Raza / Día de los Pueblos Indígenas"],
+ "2026-10-31":["Halloween","Halloween"],
+ "2026-11-02":["Día de los Muertos","Día de los Muertos"],
+ "2026-11-03":["Election Day","Día de las elecciones"],
+ "2026-11-08":["Diwali","Diwali"],
+ "2026-11-11":["Veterans Day","Día de los Veteranos"],
+ "2026-11-26":["Thanksgiving","Día de Acción de Gracias"],
+ "2026-12-04":["Hanukkah begins at sundown","Comienza Janucá al atardecer"],
+ "2026-12-24":["Christmas Eve","Nochebuena"],
+ "2026-12-25":["Christmas","Navidad"],
+ "2026-12-26":["Kwanzaa begins","Comienza Kwanzaa"],
+ "2026-12-31":["New Year's Eve","Nochevieja"],
+ "2027-01-01":["New Year's Day","Año Nuevo"],
+ "2027-01-18":["Martin Luther King Jr. Day","Día de Martin Luther King Jr."],
+};
+const holTag=d=>{const h=HOL[key(d)];return h?`<span class="holtag">${esc(LANG==="es"?h[1]:h[0])}</span>`:""};
 function renderDays(){
   daysEl.innerHTML="";
   for(let i=0;i<7;i++){
     const d=addDays(today,i),n=eventsOn(d).length,b=document.createElement("button");
     b.className="day"+([0,6].includes(d.getDay())?" wkend":"");b.type="button";b.setAttribute("aria-pressed",!wkMode&&i===sel?"true":"false");
     b.innerHTML=`<span class="dow">${i===0?tx("today"):cap(DOW()[d.getDay()])}</span><span class="num">${d.getDate()}</span><span class="cnt">${n}<span class="w"> ${n===1?tx("thing"):tx("things")}</span></span>`;
-    b.setAttribute("aria-label",`${dLong(d)}, ${n} ${n===1?tx("thing"):tx("things")}`);
+    b.setAttribute("aria-label",`${dLong(d)}${HOL[key(d)]?" ("+(LANG==="es"?HOL[key(d)][1]:HOL[key(d)][0])+")":""}, ${n} ${n===1?tx("thing"):tx("things")}`);
     b.onclick=()=>{sel=i;wkMode=false;renderDays();renderDay()};
     daysEl.appendChild(b);
   }
@@ -380,11 +398,11 @@ function renderDay(){
     const ds=weekendDates();
     dayTitle.textContent=tx("weekendTitle",dShort(ds[0]),ds.length>1?dShort(ds[1]):dShort(ds[0]));
     lbl.textContent=tx("shareWeekend");
-    dayList.innerHTML=ds.map(d=>{const l=eventsOn(d);return `<li class="wkhead">${dMed(d)} \u00b7 ${l.length}</li>`+(l.length?l.map(o=>row(o,d)).join(""):`<li class="empty">${tx("emptyDay")}</li>`)}).join("");
+    dayList.innerHTML=ds.map(d=>{const l=eventsOn(d);return `<li class="wkhead">${dMed(d)} \u00b7 ${l.length}${holTag(d)}</li>`+(l.length?l.map(o=>row(o,d)).join(""):`<li class="empty">${tx("emptyDay")}</li>`)}).join("");
     return;
   }
   const d=addDays(today,sel),list=eventsOn(d);
-  dayTitle.textContent=(sel===0?tx("todayPrefix"):sel===1?tx("tomorrowPrefix"):"")+dLong(d);
+  dayTitle.innerHTML=esc((sel===0?tx("todayPrefix"):sel===1?tx("tomorrowPrefix"):"")+dLong(d))+holTag(d);
   lbl.textContent=tx("shareDayLbl");
   dayList.innerHTML=list.length?list.map(o=>row(o,d)).join(""):`<li class="empty">${tx("emptyDay")}</li>`;
 }
@@ -418,10 +436,11 @@ function renderWeek(){updFilterLbl();
     const cl=SCL.get(key(d));
     const clHtml=cl?`<p class="schoolnote ${cl.k}"><strong>${tx(cl.k==="closed"?"schoolClosed":"schoolEarly")}</strong>${cl.t?" \u00b7 "+esc(dx(cl.t)):""}</p>`:"";
     const list=eventsOn(d).filter(o=>pass(o.e));
-    if(!list.length){if(clHtml)html+=`<div class="weekday closureonly"><h4><span>${dMed(d)}</span></h4>${clHtml}</div>`;continue}
+    const ht=holTag(d);
+    if(!list.length){if(clHtml||ht)html+=`<div class="weekday closureonly"><h4><span>${dMed(d)}</span>${ht}</h4>${clHtml}</div>`;continue}
     total+=list.length;
     const openIt=!isMobile()||total===list.length||key(d)===forceOpen;
-    html+=`<details class="weekday"${openIt?" open":""}><summary><h4><span>${dMed(d)} <span class="n">\u00b7 ${list.length}</span></span></h4></summary>${clHtml}<ul class="list">${list.map(o=>row(o,d)).join("")}</ul></details>`;
+    html+=`<details class="weekday"${openIt?" open":""}><summary><h4><span>${dMed(d)} <span class="n">\u00b7 ${list.length}</span></span>${ht}</h4></summary>${clHtml}<ul class="list">${list.map(o=>row(o,d)).join("")}</ul></details>`;
   }
   weekList.innerHTML=(total||html)?html:`<p class="empty">${E.length?tx("noMatchFilters"):tx("buildingCal")}</p>`;
 }

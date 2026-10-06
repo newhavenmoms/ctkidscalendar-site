@@ -127,3 +127,20 @@ ES.update({
  "Preschool and elementary":"Preescolar y primaria",
  "Old Saybrook Parks & Recreation":"Old Saybrook Parks & Recreation",
 })
+
+# ---- Weekend gap fix (Oct 5) ----
+TOWN["tba"].append({"g":"fall","t":"Parks & Rec Fall Fun Series","w":"Atlantic Street Park",
+  "p":"A Parks & Rec series of fall activities for families with young kids that kicked off Saturday, Oct 3, at Atlantic Street Park. Upcoming dates aren't posted yet; check Parks & Rec.","src":"https://oldsaybrookct.myrec.com/info/activities/default.aspx"})
+PLACES["out"].append(("Clark Community Park","A town park on School House Road with walking trails and seasonal nature walks.","Un parque del pueblo en School House Road con senderos para caminar y caminatas de naturaleza por temporada."))
+ES.update({
+ "A Parks & Rec series of fall activities for families with young kids that kicked off Saturday, Oct 3, at Atlantic Street Park. Upcoming dates aren't posted yet; check Parks & Rec.":"Una serie de actividades de otoño de Parks & Rec para familias con niños pequeños que comenzó el sábado 3 de octubre en Atlantic Street Park. Las próximas fechas aún no se han publicado; consulta Parks & Rec.",
+ "Atlantic Street Park":"Atlantic Street Park",
+})
+
+# ---- Weekend check (Oct 5): Patch calendar ----
+TOWN["venues"]["goodwin-school"]=["Kathleen E. Goodwin Elementary School","80 Old Boston Post Rd"]
+TOWN["venueMeta"]["goodwin-school"]=[None,0]
+TOWN["events"].append({"t":"Electrify Your Drive! Free EV Car Show","v":"goodwin-school","when":[W("2026-10-10",[["12:00"]])],"ages":"All ages","a":["preschool","big"],"free":True,"price":"Free","drop":True,"check":True,
+  "src":"https://patch.com/connecticut/madison-ct/calendar/event/20261010/5fe31ae4-2437-46d6-aba3-7113ba2b61c9/electrify-your-drive-free-ev-car-show-in-old-saybrook",
+  "blurb":"A free show of electric cars and trucks in the school parking lot. A fun look for car-loving kids."})
+ES.update({"A free show of electric cars and trucks in the school parking lot. A fun look for car-loving kids.":"Una exhibición gratis de autos y camionetas eléctricos en el estacionamiento de la escuela. Ideal para niños a los que les encantan los autos."})
