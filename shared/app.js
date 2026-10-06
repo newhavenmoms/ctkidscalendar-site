@@ -475,6 +475,8 @@ const BIG_PEEK=window.matchMedia("(max-width:760px)").matches?5:8;
 function renderBig(){
   const byTitle=new Map();
   E.filter(e=>e.special).forEach(e=>{
+    /* a Big Day may be defined by weekly rules (s) instead of dates (when): expand the rule into its dates */
+    if(!(e.when&&e.when.length)){const ds=[];(e.s||[]).forEach(r=>{for(let d=pd(r[2]);key(d)<=r[3];d=new Date(d.getFullYear(),d.getMonth(),d.getDate()+1)){const k=key(d);if(d.getDay()===r[0]&&!(e.x||[]).includes(k)&&!ds.includes(k))ds.push(k)}});ds.sort();if(!ds.length)return;e={...e,when:ds.map(k=>({from:k}))}}
     const from=e.when[0].from,last=e.when[e.when.length-1],to=last.to||last.from,cur=byTitle.get(e.t);
     const segs=e.when.map(w=>[w.from,w.to||w.from]);
     if(cur){cur.to=to>cur.to?to:cur.to;cur.places.push((V[e.v]&&V[e.v][0])||"");segs.forEach(sg=>{if(!cur.segs.some(x=>x[0]===sg[0]&&x[1]===sg[1]))cur.segs.push(sg)});cur.segs.sort((a,b)=>a[0]<b[0]?-1:1)}
@@ -634,7 +636,7 @@ function renderTicker(){
   const wkN=weekendDates().reduce((a,d)=>a+eventsOn(d).length,0);
   if(wkN)items.push(tx("thingsWeekendN",wkN));
   const soon=key(addDays(today,21)),seen=new Set();
-  E.filter(e=>e.special).forEach(e=>{const w=e.when[0];if(w.from>=key(today)&&w.from<=soon&&!seen.has(e.t)){seen.add(e.t);items.push(`${dx(e.t)} \u00b7 ${dShort(pd(w.from))}`)}});
+  E.filter(e=>e.special).forEach(e=>{const w=(e.when||[])[0];if(!w)return;if(w.from>=key(today)&&w.from<=soon&&!seen.has(e.t)){seen.add(e.t);items.push(`${dx(e.t)} \u00b7 ${dShort(pd(w.from))}`)}});
   if(EMAIL)items.push(tx("knowEvent",EMAIL));
   if(T.instagram)items.push("@"+T.instagram.replace(/^@/,""));
   if(items.length<3)items.push(tx("moreTowns"));

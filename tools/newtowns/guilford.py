@@ -34,7 +34,7 @@ TOWN={
   ev(t="Haunted Gingerbread Houses",special="hw",when=[W("2026-10-14",[])],ages="Kids",a=["big"],rsvp=True,check=True,
      blurb="Build a spooky gingerbread house for Halloween. Check the library calendar for the time and registration."),
   {"t":"Spooktacular on the Green","v":"guilford-green","special":"hw","when":[W("2026-10-25",[["14:00","16:00"]])],"ages":"All ages","a":B+["big"],"free":True,"price":"Free","drop":True,
-   "blurb":"The town's annual Halloween afternoon of family fun on the Green. Costumes encouraged.","src":SRC},
+   "blurb":"The town's annual Halloween afternoon of family fun on the Green, run by Guilford Parks & Rec. Costumes encouraged. If it rains, it moves to the Guilford Community Center (32 Church St).","src":"https://www.guilfordparkrec.com/newslist.php"},
   ev(t="Trick-or-Treat Storytime",special="hw",when=[W("2026-10-27",[["16:00","16:45"]])],ages="Ages 4–6",a=["preschool"],
      blurb="A Halloween storytime for young kids. Costumes welcome."),
   ev(t="History Comes Alive: History of Halloween",special="hw",when=[W("2026-10-29",[["16:15","17:15"]])],ages="Ages 8–11",a=["big"],rsvp=True,
@@ -104,3 +104,59 @@ ES={
  "Storytimes for babies, twos and preschoolers in fall series, monthly guest storytimes, reading-dog visits four days a week, chess, LEGO and family game nights.":"Cuentacuentos para bebés, niños de dos años y preescolares en series de otoño, cuentacuentos mensuales con invitados, visitas de perros de lectura cuatro días a la semana, ajedrez, LEGO y noches de juegos en familia.",
  "Free":"Gratis",
 }
+
+# ---- Playbook pass (Oct 4): classes, museums, farm, bookstore/toy stores ----
+DF="dudley-farm"
+TOWN["venues"][DF]=["Dudley Farm Museum","2351 Durham Rd, North Guilford"]
+TOWN["venueMeta"][DF]=[None,0]
+TOWN["events"]+=[
+ {"t":"Raptors of Connecticut","v":DF,"when":[W("2026-10-10",[["11:00","12:00"]])],"ages":"Kids and families","a":["preschool","big"],"src":"https://dudleyfarm.com/events/","check":True,
+  "blurb":"Meet some of Connecticut's birds of prey in a family program at the Dudley Farm."},
+ {"t":"Dudley Farm Harvest Day","v":DF,"special":"fall","when":[W("2026-10-17",[["10:00","14:00"]])],"ages":"All ages","a":B+["big"],"src":"https://dudleyfarm.com/events/",
+  "blurb":"The farm museum's annual family harvest festival. Rain date October 24."},
+ {"t":"Guilford Farmers' Market at the Dudley Farm","v":DF,"s":[[6,[["09:30","12:30"]],"2026-10-10","2026-10-31"]],"ages":"All ages","a":B+["big"],"free":True,"price":"Free","drop":True,"src":"https://visitnewhaven.com/events/guilfords-farmers-market-at-the-dudley-farm/",
+  "blurb":"Local produce and handmade crafts on the grounds of a farm kept as it was in 1900. Saturdays through October 31."},
+]
+TOWN["classes"]+=[
+ {"id":"gpr-preschool-gym","c":"move","n":"Preschool Gym: Lil' Movers, Tumbling & Stumbling, Movers & Shakers","u":"https://www.guilfordparkrec.com/",
+  "blurb":"Long-running Guilford Parks & Rec classes on mats, beams and rings: parent-and-child Lil' Movers for 18 months–3, Tumbling & Stumbling for 3–5 and Movers & Shakers for 5–7. Offered most seasons; check the current brochure for days and fees.",
+  "ages":"18 months–7 years (by class)","where":"Nathanael B. Greene Community Center, 32 Church St"},
+ {"id":"gpr-martial-arts","c":"move","n":"Kids' Martial Arts","u":"https://www.guilfordparkrec.com/",
+  "blurb":"A Parks & Rec martial arts class for young kids covering motor skills, tumbling, basic kicks, pad work and games, with a separate class for older belts. Check the current brochure.",
+  "ages":"Ages 3–9 (kids class)","where":"Nathanael B. Greene Community Center, 32 Church St"},
+ {"id":"limelite-guilford","c":"dance","n":"Limelite Dance Studio","u":"https://www.limelitedancestudio.com/",
+  "blurb":"A dance studio with classes from 18 months through adult and performance teams for ages 5–18. The 2026–27 schedule is posted.",
+  "ages":"18 months–adult","where":"17 Water St (also in Madison)"},
+ {"id":"guilford-art-center","c":"art","n":"Guilford Art Center","u":"https://www.guilfordartcenter.org/",
+  "blurb":"A community art school with classes and workshops for kids alongside its adult studios. Check the catalog for current sessions.",
+  "ages":"Kids (varies by class)","where":"Guilford Art Center"},
+]
+PLACES["out"]=[p if p[0]!="Jacobs Beach" else ("Jacobs Beach","The town beach on Long Island Sound, with calm water, a splash pad and a new playground with shade structures.","La playa del pueblo en el estrecho de Long Island, con agua tranquila, una zona de chorros de agua y un parque infantil nuevo con sombra.") for p in PLACES["out"]]
+PLACES["out"]=[p if p[0]!="Dudley Farm Museum" else ("Dudley Farm Museum","A farm museum in North Guilford kept as it was around 1900, with barns, gardens, a Saturday farmers' market through October and a fall Harvest Day.","Un museo granja en North Guilford conservado como era hacia 1900, con graneros, huertos, mercado de agricultores los sábados hasta octubre y un Harvest Day en otoño.") for p in PLACES["out"]]
+PLACES["rain"]=[p for p in PLACES["rain"] if p[0] not in ("Henry Whitfield State Museum","Breakwater Books")]
+PLACES["rain"]+=[
+ ("Henry Whitfield State Museum","Connecticut's oldest house (1639) is closed for restoration in 2026, but the visitor center's archaeology exhibit is open weekdays 10–4, and there's a StoryWalk and pollinator garden outside. Kids 5 and under free.","La casa más antigua de Connecticut (1639) está cerrada por restauración en 2026, pero la exposición de arqueología del centro de visitantes abre entre semana de 10 a 4, y afuera hay un StoryWalk y un jardín de polinizadores. Menores de 5 años gratis."),
+ ("Guilford's historic house museums","The Hyland House, the Thomas Griswold House and the Medad Stone Tavern open seasonally for tours and events; check each museum's schedule.","La Hyland House, la Thomas Griswold House y la Medad Stone Tavern abren por temporada para visitas y eventos; consulta el horario de cada museo."),
+ ("Breakwater Books","An independent bookstore on the Green (81 Whitfield St) with a dedicated children's room.","Una librería independiente junto al Green (81 Whitfield St) con una sala dedicada a los niños."),
+ ("The Purple Bear","An independent toy store on the Green (63 Whitfield St) with free gift wrapping.","Una juguetería independiente junto al Green (63 Whitfield St) con envoltura de regalo gratis."),
+ ("Jordie's Toy Shoppe","A toy store at Guilford Commons (1100 Village Walk).","Una juguetería en Guilford Commons (1100 Village Walk)."),
+]
+ES.update({
+ "Meet some of Connecticut's birds of prey in a family program at the Dudley Farm.":"Conoce algunas aves rapaces de Connecticut en un programa familiar en la Dudley Farm.",
+ "The farm museum's annual family harvest festival. Rain date October 24.":"El festival familiar anual de la cosecha del museo granja. Fecha en caso de lluvia: 24 de octubre.",
+ "Local produce and handmade crafts on the grounds of a farm kept as it was in 1900. Saturdays through October 31.":"Productos locales y artesanías en los terrenos de una granja conservada como en 1900. Los sábados hasta el 31 de octubre.",
+ "Long-running Guilford Parks & Rec classes on mats, beams and rings: parent-and-child Lil' Movers for 18 months–3, Tumbling & Stumbling for 3–5 and Movers & Shakers for 5–7. Offered most seasons; check the current brochure for days and fees.":"Clases de larga trayectoria de Guilford Parks & Rec con colchonetas, barras y aros: Lil' Movers con un adulto para 18 meses–3 años, Tumbling & Stumbling para 3–5 y Movers & Shakers para 5–7. Se ofrecen casi todas las temporadas; consulta el folleto actual para días y precios.",
+ "Preschool Gym: Lil' Movers, Tumbling & Stumbling, Movers & Shakers":"Gimnasia preescolar: Lil' Movers, Tumbling & Stumbling, Movers & Shakers",
+ "18 months–7 years (by class)":"18 meses–7 años (según la clase)",
+ "Nathanael B. Greene Community Center, 32 Church St":"Nathanael B. Greene Community Center, 32 Church St",
+ "A Parks & Rec martial arts class for young kids covering motor skills, tumbling, basic kicks, pad work and games, with a separate class for older belts. Check the current brochure.":"Una clase de artes marciales de Parks & Rec para niños pequeños con motricidad, volteretas, patadas básicas, trabajo con almohadillas y juegos, y otra clase para cinturones más avanzados. Consulta el folleto actual.",
+ "Kids' Martial Arts":"Artes marciales para niños",
+ "Ages 3–9 (kids class)":"3–9 años (clase infantil)",
+ "A dance studio with classes from 18 months through adult and performance teams for ages 5–18. The 2026–27 schedule is posted.":"Una escuela de danza con clases desde los 18 meses hasta adultos y equipos de presentación para 5–18 años. El horario 2026–27 ya está publicado.",
+ "18 months–adult":"18 meses–adultos",
+ "17 Water St (also in Madison)":"17 Water St (también en Madison)",
+ "A community art school with classes and workshops for kids alongside its adult studios. Check the catalog for current sessions.":"Una escuela comunitaria de arte con clases y talleres para niños además de sus talleres para adultos. Consulta el catálogo para las sesiones actuales.",
+ "Kids (varies by class)":"Niños (varía según la clase)",
+})
+
+ES.update({"The town's annual Halloween afternoon of family fun on the Green, run by Guilford Parks & Rec. Costumes encouraged. If it rains, it moves to the Guilford Community Center (32 Church St).":"La tarde anual de Halloween del pueblo, con diversión familiar en el Green, organizada por Guilford Parks & Rec. Se recomiendan disfraces. Si llueve, se traslada al Guilford Community Center (32 Church St)."})

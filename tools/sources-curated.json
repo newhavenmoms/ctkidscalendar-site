@@ -792,6 +792,24 @@
      "url": "https://www.bishopsorchards.com/",
      "how": "Seasonal: pick-your-own dates.",
      "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Guilford Parks & Recreation",
+     "url": "https://www.guilfordparkrec.com/newslist.php",
+     "how": "Monthly: the News List page is current (Spooktacular, holiday events) even though the home page shows an old 2020 copy. Each August: fall/winter brochure.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Dudley Farm Museum — events",
+     "url": "https://dudleyfarm.com/events/",
+     "how": "Monthly: Harvest Day (mid-Oct), farmers' market (Sat through Oct), holiday market.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Henry Whitfield State Museum",
+     "url": "https://portal.ct.gov/decd/content/historic-preservation/04_state_museums/henry-whitfield-state-museum/events-and-exhibits",
+     "how": "House closed for restoration in 2026; check for reopening and events.",
+     "last": "Oct 4, 2026"
     }
    ]
   },
@@ -815,6 +833,12 @@
      "name": "The Kate",
      "url": "https://thekate.org/",
      "how": "Each season: look for children's shows (none in fall 2026).",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Old Saybrook Parks & Recreation (MyRec)",
+     "url": "https://oldsaybrookct.myrec.com/info/activities/default.aspx",
+     "how": "Each season: preschool programs, Soccer Shots, martial arts, 'Tis the Season, Trunk or Treat (late Oct).",
      "last": "Oct 4, 2026"
     }
    ]
@@ -845,6 +869,48 @@
      "name": "Connecticut River Museum",
      "url": "https://ctrivermuseum.org/",
      "how": "November: Holiday Train Show and Trees in the Rigging dates.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Essex Parks & Recreation (RecDesk)",
+     "url": "https://essexct.recdesk.com/Community/Page?pageId=513",
+     "how": "October: Ivoryton Pumpkin Festival schedule (costume parade 4:30, carving at Bushy Hill).",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Bushy Hill Nature Center",
+     "url": "https://www.bushyhill.org/",
+     "how": "Each season: community workshops and vacation days.",
+     "last": "Oct 4, 2026"
+    }
+   ]
+  },
+  "madison": {
+   "title": "Madison",
+   "extras": [],
+   "check": [
+    {
+     "name": "E.C. Scranton Memorial Library (LibraryCalendar)",
+     "url": "https://scranton.librarycalendar.com/events/upcoming",
+     "how": "Monthly. Filter Age Group to Children and paste the list. Storytimes rotate on scattered dates rather than weekly series.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Madison Beach & Recreation",
+     "url": "https://www.madisonct.org/",
+     "how": "Seasonal: holiday tree lighting (early December), programs.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "R.J. Julia Booksellers",
+     "url": "https://rjjulia.com/upcoming-events",
+     "how": "Monthly: children's storytimes and author events.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Meigs Point Nature Center",
+     "url": "https://www.meigspointnaturecenter.org/",
+     "how": "Monthly: Astronomy Night, seasonal programs; free admission.",
      "last": "Oct 4, 2026"
     }
    ]

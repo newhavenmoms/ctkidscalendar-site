@@ -99,6 +99,14 @@ window.TOWN = {
   "ivoryton-village": [
    "Ivoryton Village",
    "Main St, Ivoryton"
+  ],
+  "bushy-hill": [
+   "Bushy Hill Nature Center",
+   "253 Bushy Hill Rd, Ivoryton"
+  ],
+  "walnut-main": [
+   "Walnut St & Main St (parade start)",
+   "Ivoryton"
   ]
  },
  "venueMeta": {
@@ -135,6 +143,14 @@ window.TOWN = {
    0
   ],
   "ivoryton-village": [
+   "ivoryton",
+   0
+  ],
+  "bushy-hill": [
+   "ivoryton",
+   0
+  ],
+  "walnut-main": [
    "ivoryton",
    0
   ]
@@ -451,7 +467,7 @@ window.TOWN = {
    "v": "ivoryton-village",
    "free": true,
    "price": "Free",
-   "src": "https://essexct.com/events/category/activity/",
+   "src": "https://essexct.recdesk.com/Community/Page?pageId=513",
    "t": "Ivoryton Village Pumpkin Festival",
    "special": "hw",
    "when": [
@@ -468,7 +484,7 @@ window.TOWN = {
     "big"
    ],
    "check": true,
-   "blurb": "Ivoryton's fall festival day, with carved pumpkins and family activities around the village. Check the festival's listing for times."
+   "blurb": "Ivoryton's fall festival with hayrides, trunk-or-treat, cookie decorating, face painting, live music (5–7 pm) and an evening Pumpkin Stroll of carved pumpkins. Check the town's festival page for the full schedule."
   },
   {
    "v": "essex-library",
@@ -842,6 +858,58 @@ window.TOWN = {
    "check": true,
    "blurb": "A 90-minute evening ride to the North Pole on a vintage train. Departures run every 30 minutes (afternoons and evenings on weekends, evenings on weekdays). Tickets are online only and sell out.",
    "src": "https://essexsteamtrain.com/"
+  },
+  {
+   "t": "Pumpkin Carving Party at Bushy Hill",
+   "v": "bushy-hill",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-24",
+     "t": [
+      [
+       "10:00",
+       "12:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "src": "https://essexct.recdesk.com/Community/Page?pageId=513",
+   "check": true,
+   "blurb": "Carve a pumpkin to be displayed in the Ivoryton Pumpkin Festival's evening Pumpkin Stroll. All ages and skill levels welcome."
+  },
+  {
+   "t": "Ivoryton Costume Parade",
+   "v": "walnut-main",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-24",
+     "t": [
+      [
+       "16:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "Kids 12 and under (all welcome)",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "drop": true,
+   "src": "https://essexct.recdesk.com/Community/Page?pageId=513",
+   "check": true,
+   "blurb": "The Pumpkin Festival's costume parade steps off from Walnut and Main Street and winds through the heart of the village."
   }
  ],
  "tba": [
@@ -860,7 +928,26 @@ window.TOWN = {
    "src": "https://ctrivermuseum.org/"
   }
  ],
- "classes": [],
+ "classes": [
+  {
+   "id": "bushy-hill",
+   "c": "nature",
+   "n": "Bushy Hill Nature Center",
+   "u": "https://www.bushyhill.org/",
+   "blurb": "Outdoor and wilderness education on 700 acres: community workshops, school-vacation days and summer camp, run by Incarnation Center.",
+   "ages": "Kids (varies by program)",
+   "where": "253 Bushy Hill Rd, Ivoryton"
+  },
+  {
+   "id": "natures-playground",
+   "c": "nature",
+   "n": "Nature's Playground After School",
+   "u": "https://incarnationcenter.org/education/natures-playground/",
+   "blurb": "An outdoor after-school program with homework help, hiking, farming, fishing and wilderness skills. Buses from Essex and Deep River elementary schools; full days on school vacation days.",
+   "ages": "Elementary school",
+   "where": "253 Bushy Hill Rd, Ivoryton"
+  }
+ ],
  "library": {
   "for": "Free, every week",
   "name": "Essex Library & Ivoryton Library",
@@ -973,6 +1060,7 @@ window.TOWN = {
             <li><strong><a href="https://essexsteamtrain.com/" target="_blank" rel="noopener">Essex Steam Train &amp; Riverboat</a></strong><span data-es="Paseos en tren de vapor antiguo por el valle del río Connecticut, con cruceros por el río en temporada.">Vintage steam-train rides through the Connecticut River valley, with riverboat cruises in season.</span></li>
             <li><strong>Essex Village &amp; the waterfront</strong><span data-es="Una Main Street para caminar que termina en el río, con barcos, tiendas y el muelle del pueblo.">A walkable Main Street that ends at the river, with boats, shops and the town dock.</span></li>
             <li><strong>Essex Land Trust preserves</strong><span data-es="Senderos cortos y fáciles como The Millrace en Ivoryton, ideales para pequeños excursionistas.">Short, easy trails like The Millrace in Ivoryton, good for little hikers.</span></li>
+            <li><strong><a href="https://www.bushyhill.org/" target="_blank" rel="noopener">Bushy Hill Nature Center</a></strong><span data-es="700 acres de bosques, campos y un lago en Ivoryton, con talleres comunitarios y programas en vacaciones escolares.">700 acres of woods, fields and a lake in Ivoryton, with community workshops and school-vacation programs.</span></li>
           </ul>
         </div>
         <div>
@@ -982,6 +1070,7 @@ window.TOWN = {
             <li><strong><a href="https://www.youressexlibrary.org/" target="_blank" rel="noopener">Essex Library</a></strong><span data-es="Cuentacuentos, programas para bebés y STEAM Saturdays.">Storytimes, baby programs and STEAM Saturdays.</span></li>
             <li><strong>Ivoryton Library</strong><span data-es="Una pequeña biblioteca de pueblo con fiestas después de clases y programas festivos.">A small village library with after-school parties and holiday programs.</span></li>
             <li><strong>Ivoryton Playhouse</strong><span data-es="Un teatro histórico de pueblo; consulta su temporada para funciones familiares.">A historic village theater; check its season for family-friendly shows.</span></li>
+            <li><strong><a href="https://www.toysahoyessex.com/" target="_blank" rel="noopener">Toys Ahoy!</a></strong><span data-es="La juguetería del pueblo en 43 Main St, con una mezcla ecléctica de juguetes, juegos y libros infantiles, y un simpático perro de la tienda.">The village toy store at 43 Main St, with an eclectic mix of toys, games and children&#x27;s books, and a friendly shop dog.</span></li>
           </ul>
         </div>
         <div>

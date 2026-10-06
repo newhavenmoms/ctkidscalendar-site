@@ -90,3 +90,40 @@ ES={
  "Drop-in Playgroup on Mondays, Storytime on Tuesdays and Sing & Stomp on Fridays, plus Tinker Lab, a reading dog, Pokémon Club, free Grab & Go craft kits on Fridays and a Noon Year's Eve party.":"Grupo de juego sin inscripción los lunes, cuentacuentos los martes y Sing & Stomp los viernes, además de Tinker Lab, un perro de lectura, Pokémon Club, kits de manualidades gratis los viernes y una fiesta de Noon Year's Eve.",
  "Free":"Gratis",
 }
+
+# ---- Playbook pass (Oct 4) ----
+OSPR="os-rec"; MYREC="https://oldsaybrookct.myrec.com/info/activities/default.aspx"
+TOWN["venues"][OSPR]=["Old Saybrook Parks & Recreation","308 Main St"]
+TOWN["venueMeta"][OSPR]=[None,1]
+TOWN["events"]+=[
+ {"t":"'Tis the Season!","v":OSPR,"special":"hol","when":D(["2026-12-05","2026-12-12","2026-12-19","2027-01-02","2027-01-09"],[["09:30","10:30"]]),"ages":"Ages 3–5","a":["preschool"],"free":False,"price":"$30 residents / $40 non-residents (series)","rsvp":True,"src":"https://oldsaybrookct.myrec.com/info/activities/program_details.aspx?ProgramID=11848",
+  "blurb":"A month of Saturday holiday celebrations exploring winter traditions through music, art and science. Register for the whole series."},
+]
+TOWN["tba"].append({"g":"hw","t":"Halloween Trunk or Treat at the Rec","w":"Old Saybrook Parks & Recreation, 308 Main St",
+  "p":"Parks & Rec hosts a Trunk or Treat for families with kids in pre-K through grade 4, usually on a late-October Saturday evening. This year's date isn't posted yet.","src":MYREC})
+TOWN["classes"]+=[
+ {"id":"ospr-soccer-shots","c":"move","n":"Soccer Shots","u":MYREC,
+  "blurb":"A 45-minute introduction to dribbling, passing and shooting on Saturday mornings in the fall session. Shin guards required.",
+  "ages":"Ages 3–4","where":"Old Saybrook Parks & Recreation, 308 Main St"},
+ {"id":"ospr-martial-arts","c":"move","n":"Martial Arts Confidence Course","u":MYREC,
+  "blurb":"Martial arts classes grouped by age, from preschoolers to teens, plus an all-ages family class. Check MyRec for the current session.",
+  "ages":"Ages 3 and up (by class)","where":"Old Saybrook Parks & Recreation, 308 Main St"},
+ {"id":"ospr-junior-tennis","c":"move","n":"Junior Tennis","u":MYREC,
+  "blurb":"Red-ball and orange-ball tennis lessons for young players, in multi-week sessions.",
+  "ages":"Preschool and elementary","where":"Old Saybrook Parks & Recreation"},
+]
+PLACES["drive"].append(("Toys Ahoy! (Essex)","A classic village toy store on Main Street in Essex, with toys, games and children's books.","Una clásica juguetería de pueblo en Main Street de Essex, con juguetes, juegos y libros infantiles."))
+ES.update({
+ "A month of Saturday holiday celebrations exploring winter traditions through music, art and science. Register for the whole series.":"Un mes de celebraciones navideñas los sábados para explorar las tradiciones de invierno con música, arte y ciencia. Inscríbete para toda la serie.",
+ "Ages 3–5":"3–5 años",
+ "$30 residents / $40 non-residents (series)":"$30 residentes / $40 no residentes (serie)",
+ "Parks & Rec hosts a Trunk or Treat for families with kids in pre-K through grade 4, usually on a late-October Saturday evening. This year's date isn't posted yet.":"Parks & Rec organiza un Trunk or Treat para familias con niños de prekínder a 4.º grado, normalmente un sábado por la tarde a fines de octubre. La fecha de este año aún no se ha publicado.",
+ "Old Saybrook Parks & Recreation, 308 Main St":"Old Saybrook Parks & Recreation, 308 Main St",
+ "A 45-minute introduction to dribbling, passing and shooting on Saturday mornings in the fall session. Shin guards required.":"Una introducción de 45 minutos a regatear, pasar y tirar, los sábados por la mañana en la sesión de otoño. Se requieren espinilleras.",
+ "Ages 3–4":"3–4 años",
+ "Martial arts classes grouped by age, from preschoolers to teens, plus an all-ages family class. Check MyRec for the current session.":"Clases de artes marciales por edad, de preescolares a adolescentes, además de una clase familiar para todas las edades. Consulta MyRec para la sesión actual.",
+ "Ages 3 and up (by class)":"Desde 3 años (según la clase)",
+ "Red-ball and orange-ball tennis lessons for young players, in multi-week sessions.":"Clases de tenis con pelota roja y naranja para jugadores jóvenes, en sesiones de varias semanas.",
+ "Preschool and elementary":"Preescolar y primaria",
+ "Old Saybrook Parks & Recreation":"Old Saybrook Parks & Recreation",
+})

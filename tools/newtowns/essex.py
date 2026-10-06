@@ -111,3 +111,43 @@ ES={
  "Free":"Gratis",
  "$20":"$20",
 }
+
+# ---- Playbook pass (Oct 4) ----
+BH="bushy-hill"
+TOWN["venues"][BH]=["Bushy Hill Nature Center","253 Bushy Hill Rd, Ivoryton"]
+TOWN["venueMeta"][BH]=["ivoryton",0]
+TOWN["venues"]["walnut-main"]=["Walnut St & Main St (parade start)","Ivoryton"]
+TOWN["venueMeta"]["walnut-main"]=["ivoryton",0]
+PF="https://essexct.recdesk.com/Community/Page?pageId=513"
+for e in TOWN["events"]:
+    if e["t"]=="Ivoryton Village Pumpkin Festival":
+        e["src"]=PF
+        e["blurb"]="Ivoryton's fall festival with hayrides, trunk-or-treat, cookie decorating, face painting, live music (5–7 pm) and an evening Pumpkin Stroll of carved pumpkins. Check the town's festival page for the full schedule."
+TOWN["events"]+=[
+ {"t":"Pumpkin Carving Party at Bushy Hill","v":BH,"special":"hw","when":[W("2026-10-24",[["10:00","12:00"]])],"ages":"All ages","a":["preschool","big"],"src":PF,"check":True,
+  "blurb":"Carve a pumpkin to be displayed in the Ivoryton Pumpkin Festival's evening Pumpkin Stroll. All ages and skill levels welcome."},
+ {"t":"Ivoryton Costume Parade","v":"walnut-main","special":"hw","when":[W("2026-10-24",[["16:30"]])],"ages":"Kids 12 and under (all welcome)","a":B+["big"],"free":True,"price":"Free","drop":True,"src":PF,"check":True,
+  "blurb":"The Pumpkin Festival's costume parade steps off from Walnut and Main Street and winds through the heart of the village."},
+]
+TOWN["classes"]+=[
+ {"id":"bushy-hill","c":"nature","n":"Bushy Hill Nature Center","u":"https://www.bushyhill.org/",
+  "blurb":"Outdoor and wilderness education on 700 acres: community workshops, school-vacation days and summer camp, run by Incarnation Center.",
+  "ages":"Kids (varies by program)","where":"253 Bushy Hill Rd, Ivoryton"},
+ {"id":"natures-playground","c":"nature","n":"Nature's Playground After School","u":"https://incarnationcenter.org/education/natures-playground/",
+  "blurb":"An outdoor after-school program with homework help, hiking, farming, fishing and wilderness skills. Buses from Essex and Deep River elementary schools; full days on school vacation days.",
+  "ages":"Elementary school","where":"253 Bushy Hill Rd, Ivoryton"},
+]
+PLACES["rain"].append(("Toys Ahoy!","The village toy store at 43 Main St, with an eclectic mix of toys, games and children's books, and a friendly shop dog.","La juguetería del pueblo en 43 Main St, con una mezcla ecléctica de juguetes, juegos y libros infantiles, y un simpático perro de la tienda."))
+PLACES["out"].append(("Bushy Hill Nature Center","700 acres of woods, fields and a lake in Ivoryton, with community workshops and school-vacation programs.","700 acres de bosques, campos y un lago en Ivoryton, con talleres comunitarios y programas en vacaciones escolares."))
+ES.update({
+ "Ivoryton's fall festival with hayrides, trunk-or-treat, cookie decorating, face painting, live music (5–7 pm) and an evening Pumpkin Stroll of carved pumpkins. Check the town's festival page for the full schedule.":"El festival de otoño de Ivoryton con paseos en carreta de heno, dulces desde los autos, decoración de galletas, pintura de caras, música en vivo (5–7 pm) y un paseo nocturno entre calabazas talladas. Consulta la página del festival para el programa completo.",
+ "Carve a pumpkin to be displayed in the Ivoryton Pumpkin Festival's evening Pumpkin Stroll. All ages and skill levels welcome.":"Talla una calabaza para exhibirla en el paseo nocturno de calabazas del Ivoryton Pumpkin Festival. Todas las edades y niveles son bienvenidos.",
+ "The Pumpkin Festival's costume parade steps off from Walnut and Main Street and winds through the heart of the village.":"El desfile de disfraces del Pumpkin Festival sale de Walnut y Main Street y recorre el corazón del pueblo.",
+ "Kids 12 and under (all welcome)":"Niños de 12 años o menos (todos bienvenidos)",
+ "Outdoor and wilderness education on 700 acres: community workshops, school-vacation days and summer camp, run by Incarnation Center.":"Educación al aire libre y en la naturaleza en 700 acres: talleres comunitarios, días de vacaciones escolares y campamento de verano, a cargo de Incarnation Center.",
+ "Kids (varies by program)":"Niños (varía según el programa)",
+ "253 Bushy Hill Rd, Ivoryton":"253 Bushy Hill Rd, Ivoryton",
+ "An outdoor after-school program with homework help, hiking, farming, fishing and wilderness skills. Buses from Essex and Deep River elementary schools; full days on school vacation days.":"Un programa al aire libre después de clases con ayuda con la tarea, caminatas, granja, pesca y habilidades de supervivencia. Autobuses desde las primarias de Essex y Deep River; días completos en vacaciones escolares.",
+ "Nature's Playground After School":"Nature's Playground después de clases",
+ "Elementary school":"Primaria",
+})
