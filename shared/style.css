@@ -855,4 +855,7 @@ header.top .navwrap{flex:none}
 @media (max-width:1100px){body:not(.home) header.top .nav{display:none}}
 @media (min-width:1101px){body:not(.home) header.top .nav a{padding:8px 7px}body:not(.home) .hdr-submit .full{display:none}body:not(.home) .hdr-submit .short{display:inline}}
 .hdr-submit .icon{display:none;font-size:1.25rem;line-height:1;font-weight:700}
-@media (max-width:600px){.hdr-submit .full,.hdr-submit .short{display:none!important}.hdr-submit .icon{display:inline}.hdr-submit{padding:6px 12px!important}}
+@media (max-width:600px){.hdr-submit .full,.hdr-submit .short{display:none!important}.hdr-submit .icon{display:inline}.hdr-submit{padding:0 14px!important}}
+/* header buttons: one consistent height (Español, Submit an event, All towns) */
+header.top .langbtn,header.top .btn-sm{height:42px;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;padding-top:0;padding-bottom:0;line-height:1;vertical-align:middle}
+@media (max-width:600px){header.top .langbtn,header.top .btn-sm{height:40px}}
