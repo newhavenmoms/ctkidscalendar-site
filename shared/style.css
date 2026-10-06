@@ -815,7 +815,7 @@ select.selectchip{padding-right:36px}
 .submit-cta .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px 32px;flex-wrap:wrap}
 .submit-cta h2{font-family:var(--serif);font-weight:400;font-size:1.9rem;margin:0 0 6px}
 .submit-cta p{margin:0;max-width:60ch;color:var(--ink-soft)}
-.submit-cta .btn{cursor:pointer;border:0;font:inherit;font-weight:700}
+.submit-cta .btn{cursor:pointer;appearance:none;-webkit-appearance:none;line-height:1.2}
 .sbm-dlg{border:2px solid var(--ink);border-radius:6px;padding:0;width:min(680px,94vw);max-height:92vh;overflow:auto;box-shadow:8px 8px 0 var(--ink);background:#fff;color:var(--ink)}
 .sbm-dlg::backdrop{background:rgba(27,42,74,.45)}
 .sbm{padding:22px 24px 20px}
@@ -833,8 +833,26 @@ select.selectchip{padding-right:36px}
 .sbm-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 .sbm-msg{margin:14px 0 0;padding:10px 12px;border:1.5px solid #C8384F;background:#FDECEF;border-radius:3px}
 .sbm-actions{display:flex;justify-content:flex-end;gap:12px;margin-top:18px}
-.sbm-actions .btn,.sbm-actions .btn-sm{cursor:pointer;font:inherit;font-weight:700;border:0}
-.sbm-cancel{background:#fff!important;color:var(--ink)!important;border:1.5px solid var(--ink)!important;padding:10px 18px;border-radius:999px}
+.sbm-actions .btn,.sbm-actions .act{cursor:pointer;appearance:none;-webkit-appearance:none;line-height:1.2;margin:0}
+.sbm-actions{align-items:center}
 .sbm-note{margin:12px 0 0;font-size:.85rem;color:var(--ink-soft);text-align:right}
 @media (max-width:600px){.sbm-grid{grid-template-columns:1fr}.sbm{padding:18px 16px}.sbm-dlg{width:100vw;max-height:100vh;height:100%;border-radius:0;box-shadow:none}}
 @media (max-width:600px){.sbm-dlg{max-width:100vw;max-height:100vh;width:100vw;height:100%;margin:0;inset:0}}
+
+/* form dropdowns: the site's own arrow, set in from the edge */
+.sbm-grid select{appearance:none;-webkit-appearance:none;padding-right:42px;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 22px) 50%,calc(100% - 16px) 50%;background-size:6px 6px;background-repeat:no-repeat}
+.sbm-grid input:focus,.sbm-grid select:focus,.sbm-grid textarea:focus{outline:3px solid #FFD84D;outline-offset:1px}
+.sbm-actions .btn,.sbm-actions .act{min-height:46px;display:inline-flex;align-items:center;justify-content:center;padding:0 22px;box-sizing:border-box}
+/* header "Submit an event" button: same look as the header's other buttons, short label on small phones */
+.hdr-submit{cursor:pointer;appearance:none;-webkit-appearance:none;line-height:1.2}
+.hdr-submit .short{display:none}
+@media (max-width:560px){.hdr-submit .full{display:none}.hdr-submit .short{display:inline}}
+@media (max-width:700px){.hdr-submit .full{display:none}.hdr-submit .short{display:inline}}
+header.top .wrap>.brand{min-width:0;flex:1 1 auto;overflow:hidden}
+header.top .wrap>.brand>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+header.top .navwrap{flex:none}
+/* town header fit: section links only on wide screens; short "Submit" label when they're showing */
+@media (max-width:1100px){body:not(.home) header.top .nav{display:none}}
+@media (min-width:1101px){body:not(.home) header.top .nav a{padding:8px 7px}body:not(.home) .hdr-submit .full{display:none}body:not(.home) .hdr-submit .short{display:inline}}
+.hdr-submit .icon{display:none;font-size:1.25rem;line-height:1;font-weight:700}
+@media (max-width:600px){.hdr-submit .full,.hdr-submit .short{display:none!important}.hdr-submit .icon{display:inline}.hdr-submit{padding:6px 12px!important}}

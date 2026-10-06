@@ -17,7 +17,7 @@
 
   const T = {
     en: {
-      open: "Submit an event", title: "Tell us about it",
+      open: "Submit an event", openShort: "Submit", title: "Tell us about it",
       ctaH: "Know about something we're missing?", ctaP: "Events, classes, places to go, or a fix to something we've listed. Send it in and we'll take a look.",
       intro: "Know about an event, class or place we should list? Send it our way. We check every submission before it goes on the calendar.",
       type: "What is it?", tEvent: "An event", tClass: "A class or program", tPlace: "A place to go", tFix: "A correction to something listed",
@@ -34,7 +34,7 @@
       byEmail: "Send by email", mailNote: "This opens your email app with your submission filled in. Just press send."
     },
     es: {
-      open: "Enviar un evento", title: "Cuéntanos",
+      open: "Enviar un evento", openShort: "Enviar", title: "Cuéntanos",
       ctaH: "¿Sabes de algo que nos falta?", ctaP: "Eventos, clases, lugares para visitar o una corrección a algo publicado. Envíanoslo y lo revisaremos.",
       intro: "¿Conoces un evento, una clase o un lugar que deberíamos incluir? Envíanoslo. Revisamos cada envío antes de agregarlo al calendario.",
       type: "¿Qué es?", tEvent: "Un evento", tClass: "Una clase o programa", tPlace: "Un lugar para visitar", tFix: "Una corrección a algo publicado",
@@ -82,7 +82,7 @@
     <input type="checkbox" name="botcheck" class="sbm-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
   </div>
   <p class="sbm-msg" role="alert" hidden></p>
-  <div class="sbm-actions"><button type="button" class="btn-sm sbm-cancel" data-sbm-close>${esc(l.cancel)}</button><button type="submit" class="btn sbm-send">${esc(l.send)}</button></div>
+  <div class="sbm-actions"><button type="button" class="act sbm-cancel" data-sbm-close>${esc(l.cancel)}</button><button type="submit" class="btn sbm-send">${esc(l.send)}</button></div>
   ${WEB3FORMS_KEY ? "" : `<p class="sbm-note">${esc(l.mailNote)}</p>`}
 </form>`;
     const form = dlg.querySelector("form");
@@ -145,7 +145,7 @@
   }
   document.addEventListener("click", e => { const b = e.target.closest("[data-submit]"); if (!b) return; e.preventDefault(); open(b.getAttribute("data-submit") || "event"); });
   // label the buttons in the current language (and again after the language toggle)
-  function relabel() { document.querySelectorAll("[data-submit-label]").forEach(el => el.textContent = L()[el.getAttribute("data-submit-label")] || el.textContent); }
+  function relabel() { document.querySelectorAll("[data-submit-label]").forEach(el => el.textContent = L()[el.getAttribute("data-submit-label")] || el.textContent); document.querySelectorAll("[data-submit-aria]").forEach(el => el.setAttribute("aria-label", L()[el.getAttribute("data-submit-aria")])); }
   document.addEventListener("click", e => { if (e.target.closest("#langBtn")) setTimeout(relabel, 50); });
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", relabel); else relabel();
   window.ctkOpenSubmit = open;

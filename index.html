@@ -162,7 +162,7 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
 @media (max-width:760px){.nearev{grid-template-columns:1fr auto;gap:2px 12px}.nearev .ev-time{grid-column:1;grid-row:1;display:flex;gap:8px;align-items:baseline}.nearev .ev-time small{display:inline}.nearev .neardist{grid-column:2;grid-row:1;padding-top:0}.nearev .nearbody{grid-column:1/-1;grid-row:2}}
 </style>
 </head>
-<body>
+<body class="home">
 
 <div class="ticker" aria-hidden="true"><div class="ticker-track" id="tickerTrack">
 <span data-i18n="tickWelcome">WELCOME TO CT KIDS CALENDAR</span><span data-i18n="tickTowns">18 TOWNS OPEN NOW</span><span data-i18n="tickThings">1146 THINGS TO DO</span><span data-i18n="tickWelcome">WELCOME TO CT KIDS CALENDAR</span><span data-i18n="tickTowns">18 TOWNS OPEN NOW</span><span data-i18n="tickThings">1146 THINGS TO DO</span>
@@ -176,7 +176,7 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
     <div class="navwrap">
       <div class="actions">
         <button class="langbtn" type="button" id="langBtn"><span class="full">Español</span><span class="short">ES</span></button>
-        <a class="btn-sm" href="mailto:newhavenmoms@gmail.com?subject=Hello%20from%20CT%20Kids%20Calendar" data-i18n="contact">Contact</a>
+        <button class="btn-sm hdr-submit" type="button" data-submit="event" aria-label="Submit an event" data-submit-aria="open"><span class="full" data-submit-label="open">Submit an event</span><span class="short" data-submit-label="openShort">Submit</span><span class="icon" aria-hidden="true">+</span></button>
       </div>
     </div>
   </div>
@@ -610,7 +610,7 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
 <footer class="home-footer">
   <div class="wrap">
     <span data-i18n="footerTag">CT Kids Calendar &middot; a town-by-town guide for Connecticut families</span>
-    <span><a href="#submit" data-submit="event" data-submit-label="open">Submit an event</a> &middot; <a href="mailto:newhavenmoms@gmail.com?subject=Suggest%20a%20town%20for%20CT%20Kids%20Calendar&body=Town%3A%20" data-i18n="suggestTown">Suggest a town</a> &middot; <a href="#privacy" data-i18n="privTitle">Privacy policy</a></span>
+    <span><a href="#submit" data-submit="event" data-submit-label="open">Submit an event</a> &middot; <a href="mailto:newhavenmoms@gmail.com?subject=Suggest%20a%20town%20for%20CT%20Kids%20Calendar&body=Town%3A%20" data-i18n="suggestTown">Suggest a town</a> &middot; <a href="mailto:newhavenmoms@gmail.com?subject=Hello%20from%20CT%20Kids%20Calendar" data-i18n="contact">Contact</a> &middot; <a href="#privacy" data-i18n="privTitle">Privacy policy</a></span>
   </div>
 </footer>
 
