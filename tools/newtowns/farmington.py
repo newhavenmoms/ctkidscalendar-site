@@ -292,3 +292,12 @@ ES.update({
  "Coding coaching two kids to a coach, plus group classes in block coding, Minecraft, Roblox and Python. Some fall classes are also offered through Farmington Continuing Ed.":"Clases de programación con un instructor por cada dos niños, además de clases grupales de programación por bloques, Minecraft, Roblox y Python. Algunas clases de otoño también se ofrecen por medio de Farmington Continuing Ed.",
  "6–17 years":"6–17 años",
 })
+
+# ---- patch: drop-childrens-museum-2026-10-08.py ----
+ADD_PLACES={'out':[],'rain':[],'drive':[]}; REPLACE_PLACES={}; DROP_PLACES=[]
+_ES_before=dict(ES)
+DROP_PLACES.append("The Children's Museum")  # closed permanently (WFSB, Feb 4 2026)
+
+ES.update(globals().get('ES_PATCH', {}))
+for _k,_v in ADD_PLACES.items(): PLACES[_k]+=_v
+for _k in PLACES: PLACES[_k]=[REPLACE_PLACES.get(p[0],p) for p in PLACES[_k] if p[0] not in DROP_PLACES]

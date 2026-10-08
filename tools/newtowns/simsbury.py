@@ -223,3 +223,12 @@ ADD_PLACES["out"]+=[("Rotary Park Boundless Playground","An accessible 'boundles
 ES.update(globals().get('ES_PATCH', {}))
 for _k,_v in ADD_PLACES.items(): PLACES[_k]+=_v
 for _k in PLACES: PLACES[_k]=[REPLACE_PLACES.get(p[0],p) for p in PLACES[_k] if p[0] not in DROP_PLACES]
+
+# ---- patch: drop-childrens-museum-2026-10-08.py ----
+ADD_PLACES={'out':[],'rain':[],'drive':[]}; REPLACE_PLACES={}; DROP_PLACES=[]
+_ES_before=dict(ES)
+DROP_PLACES.append("The Children's Museum")  # closed permanently (WFSB, Feb 4 2026)
+
+ES.update(globals().get('ES_PATCH', {}))
+for _k,_v in ADD_PLACES.items(): PLACES[_k]+=_v
+for _k in PLACES: PLACES[_k]=[REPLACE_PLACES.get(p[0],p) for p in PLACES[_k] if p[0] not in DROP_PLACES]

@@ -240,6 +240,30 @@ window.TOWN = {
    "Weir Farm National Historical Park",
    "735 Nod Hill Rd",
    "Wilton, CT"
+  ],
+  "lounsbury-house": [
+   "Lounsbury House",
+   "316 Main St"
+  ],
+  "richardson-park": [
+   "Richardson Park",
+   "729 N Salem Rd"
+  ],
+  "jesse-lee-church": [
+   "Jesse Lee Church",
+   "207 Main St"
+  ],
+  "farmingville-school": [
+   "Farmingville Elementary School",
+   "324 Farmingville Rd"
+  ],
+  "peter-parley": [
+   "Peter Parley Schoolhouse",
+   "West Ln at South Salem Rd"
+  ],
+  "bgc-ridgefield": [
+   "Boys & Girls Club of Ridgefield",
+   "41 Governor St"
   ]
  },
  "venueMeta": {
@@ -417,6 +441,30 @@ window.TOWN = {
   ],
   "weir-farm-nhp": [
    "nearby",
+   0
+  ],
+  "lounsbury-house": [
+   null,
+   1
+  ],
+  "richardson-park": [
+   null,
+   0
+  ],
+  "jesse-lee-church": [
+   null,
+   0
+  ],
+  "farmingville-school": [
+   null,
+   0
+  ],
+  "peter-parley": [
+   null,
+   1
+  ],
+  "bgc-ridgefield": [
+   null,
    0
   ]
  },
@@ -633,6 +681,15 @@ window.TOWN = {
      ]
     },
     {
+     "from": "2026-10-17",
+     "t": [
+      [
+       "10:30",
+       "11:30"
+      ]
+     ]
+    },
+    {
      "from": "2026-11-21",
      "t": [
       [
@@ -669,18 +726,25 @@ window.TOWN = {
    "check": true,
    "blurb": "Interactive, judgment-free exhibition tour.",
    "src": "https://thealdrich.org/learn",
-   "s": [
-    [
-     6,
-     [
+   "when": [
+    {
+     "from": "2026-11-21",
+     "t": [
       [
        "13:00",
        "14:00"
       ]
-     ],
-     "2026-11-21",
-     "2026-11-21"
-    ]
+     ]
+    },
+    {
+     "from": "2026-12-19",
+     "t": [
+      [
+       "13:00",
+       "14:00"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -1961,23 +2025,639 @@ window.TOWN = {
    "price": "Half day $48 / $53 · full day $73 / $78 (members / non-members)",
    "blurb": "Art camps on days off from school, with half-day (9–12) and full-day (9–3) options. Bring a nut-free lunch and water bottle for full days.",
    "src": "https://www.ridgefieldparksandrec.org/youth-courses/pages/giggling-pig-art"
+  },
+  {
+   "t": "Jesse Lee Pumpkin Patch",
+   "v": "jesse-lee-church",
+   "special": "fall",
+   "s": [
+    [
+     1,
+     [
+      [
+       "14:00",
+       "18:00"
+      ]
+     ],
+     "2026-10-08",
+     "2026-10-31"
+    ],
+    [
+     2,
+     [
+      [
+       "14:00",
+       "18:00"
+      ]
+     ],
+     "2026-10-08",
+     "2026-10-31"
+    ],
+    [
+     3,
+     [
+      [
+       "14:00",
+       "18:00"
+      ]
+     ],
+     "2026-10-08",
+     "2026-10-31"
+    ],
+    [
+     4,
+     [
+      [
+       "14:00",
+       "18:00"
+      ]
+     ],
+     "2026-10-08",
+     "2026-10-31"
+    ],
+    [
+     5,
+     [
+      [
+       "14:00",
+       "18:00"
+      ]
+     ],
+     "2026-10-08",
+     "2026-10-31"
+    ],
+    [
+     6,
+     [
+      [
+       "10:00",
+       "18:00"
+      ]
+     ],
+     "2026-10-08",
+     "2026-10-31"
+    ],
+    [
+     0,
+     [
+      [
+       "10:00",
+       "18:00"
+      ]
+     ],
+     "2026-10-08",
+     "2026-10-31"
+    ]
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "free": true,
+   "price": "Free to visit; pumpkins priced individually",
+   "drop": true,
+   "src": "https://jesseleechurch.com/pumpkin-patch/",
+   "blurb": "The church lawn fills with pumpkins on Main Street; pick one out and take photos. Open weekdays 2–6 and weekends 10–6."
+  },
+  {
+   "t": "Art and Agriculture Tour",
+   "v": "weir-farm-nhp",
+   "when": [
+    {
+     "from": "2026-10-11",
+     "t": [
+      [
+       "10:00",
+       "11:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "drop": true,
+   "src": "https://www.nps.gov/wefa/planyourvisit/featured-programs.htm",
+   "blurb": "A ranger tour of the farm's barns, farming history and artwork; meet at the Visitor Center sign."
+  },
+  {
+   "t": "Hocus Pocus Family Screening",
+   "v": "ridgefield-library",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-12",
+     "t": [
+      [
+       "14:00",
+       "15:40"
+      ]
+     ]
+    }
+   ],
+   "ages": "Grades K–5 + family",
+   "a": [
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "drop": true,
+   "src": "https://inridgefield.com/events/hocus-pocus-family-screening/",
+   "blurb": "A school-holiday showing of Hocus Pocus; an adult must stay."
+  },
+  {
+   "t": "Paranormal Park Ghost Walk",
+   "v": "richardson-park",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-16",
+     "t": [
+      [
+       "18:30",
+       "21:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-17",
+     "t": [
+      [
+       "18:30",
+       "21:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-23",
+     "t": [
+      [
+       "18:30",
+       "21:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-24",
+     "t": [
+      [
+       "18:30",
+       "21:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Ages 10+ (under 14 with an adult)",
+   "a": [
+    "big"
+   ],
+   "free": false,
+   "price": "Tickets online",
+   "rsvp": true,
+   "check": true,
+   "src": "https://inridgefield.com/events/paranormal-park-ghost-walk/",
+   "blurb": "A 15–20 minute haunted trail walk after dark with live actors, run by the Ridgefield Fathers Club. Scary; best for older kids."
+  },
+  {
+   "t": "Nature Center Open House",
+   "v": "woodcock-nature-center",
+   "when": [
+    {
+     "from": "2026-10-17",
+     "t": [
+      [
+       "10:00",
+       "12:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-08",
+     "t": [
+      [
+       "10:00",
+       "12:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "drop": true,
+   "src": "https://www.woodcocknaturecenter.org/upcomingevents",
+   "blurb": "Drop in to meet Woodcock's animal ambassadors."
+  },
+  {
+   "t": "Fall Hike Weekend at Weir Farm",
+   "v": "weir-farm-nhp",
+   "special": "fall",
+   "when": [
+    {
+     "from": "2026-10-17",
+     "t": [
+      [
+       "09:30",
+       "11:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-10-18",
+     "t": [
+      [
+       "09:30",
+       "11:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Families",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "drop": true,
+   "src": "https://www.nps.gov/wefa/planyourvisit/featured-programs.htm",
+   "blurb": "A ranger hike about trees and why leaves change color, then a leaf-print or landscape craft."
+  },
+  {
+   "t": "Critters and Costumes!",
+   "v": "woodcock-nature-center",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-23",
+     "t": [
+      [
+       "10:30",
+       "12:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Ages 2–6 + caregiver",
+   "a": [
+    "toddler",
+    "preschool"
+   ],
+   "free": false,
+   "price": "$30 per child",
+   "rsvp": true,
+   "src": "https://www.woodcocknaturecenter.org/upcomingevents",
+   "blurb": "Hike in costume following animal clues, meet a tarantula and an albino snake, then hear a story. Bring a snack."
+  },
+  {
+   "t": "Autumn Leaves and Amphibians Hike",
+   "v": "woodcock-nature-center",
+   "when": [
+    {
+     "from": "2026-10-24",
+     "t": [
+      [
+       "10:00",
+       "11:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "Families",
+   "a": [
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "rsvp": true,
+   "src": "https://www.woodcocknaturecenter.org/upcomingevents",
+   "blurb": "Search the leaf litter for salamanders on a guided family hike."
+  },
+  {
+   "t": "Zombie Tag & Food Drive",
+   "v": "farmingville-school",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-24",
+     "t": [
+      [
+       "15:30",
+       "17:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Kids",
+   "a": [
+    "big"
+   ],
+   "free": true,
+   "price": "Free (bring a food donation)",
+   "drop": true,
+   "check": true,
+   "src": "https://inridgefield.com/events/zombie-tag-food-drive/",
+   "blurb": "A big game of zombie tag hosted by Cub Scout Pack 116; bring a nonperishable food item."
+  },
+  {
+   "t": "Halloween at the Schoolhouse",
+   "v": "peter-parley",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-25",
+     "t": [
+      [
+       "13:00",
+       "16:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "drop": true,
+   "src": "https://ridgefieldhistoricalsociety.org/event/24119/",
+   "blurb": "Come in costume to the one-room schoolhouse for treats and spooky local-history stories."
+  },
+  {
+   "t": "Halloween Storytime & Parade",
+   "v": "ridgefield-library",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-31",
+     "t": [
+      [
+       "10:30",
+       "11:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Young kids",
+   "a": [
+    "toddler",
+    "preschool"
+   ],
+   "free": true,
+   "price": "Free",
+   "rsvp": true,
+   "src": "https://inridgefield.com/events/halloween-storytime-and-parade/",
+   "blurb": "Halloween stories, then a costume parade around the library with goodie bags. Registration encouraged."
+  },
+  {
+   "t": "Trunk-or-Treat with the Ridgefield Police",
+   "v": "lounsbury-house",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-31",
+     "t": [
+      [
+       "17:00",
+       "20:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "drop": true,
+   "src": "https://lounsburyhouse.org/calendar/",
+   "blurb": "Decorated trunks and treats outdoors at Lounsbury House on Halloween night."
+  },
+  {
+   "t": "Storytime: On the Trails",
+   "v": "woodcock-nature-center",
+   "when": [
+    {
+     "from": "2026-11-02",
+     "t": [
+      [
+       "10:00",
+       "11:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Ages 2–6 + caregiver",
+   "a": [
+    "toddler",
+    "preschool"
+   ],
+   "free": true,
+   "price": "Free",
+   "rsvp": true,
+   "src": "https://www.woodcocknaturecenter.org/upcomingevents",
+   "blurb": "A short trail walk about fall nature, then a story."
+  },
+  {
+   "t": "Free Family Fun Day",
+   "v": "ridgefield-parks-recreation-ridgefield-r-2",
+   "when": [
+    {
+     "from": "2026-11-03",
+     "t": [
+      [
+       "12:00",
+       "16:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "drop": true,
+   "src": "https://www.ridgefieldparksandrec.org/programs/events/30486",
+   "blurb": "An Election Day open house: inflatables, Big Blue Blocks, recreation swim 2–4 and a pool slide (42-inch minimum) 2:30–3:30."
+  },
+  {
+   "t": "Surviving Winter as a Turtle Hike",
+   "v": "woodcock-nature-center",
+   "when": [
+    {
+     "from": "2026-11-07",
+     "t": [
+      [
+       "13:00",
+       "14:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "Families",
+   "a": [
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "rsvp": true,
+   "src": "https://www.woodcocknaturecenter.org/upcomingevents",
+   "blurb": "A guided hike about how turtles and other animals get through a Connecticut winter."
+  },
+  {
+   "t": "Veterans Day Ceremony",
+   "v": "lounsbury-house",
+   "when": [
+    {
+     "from": "2026-11-11",
+     "t": [
+      [
+       "11:00",
+       "12:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "drop": true,
+   "src": "https://lounsburyhouse.org/calendar/",
+   "blurb": "The town's ceremony with American Legion Post 78, with refreshments after."
+  },
+  {
+   "t": "Kids Night Out: Glow Night",
+   "v": "ridgefield-parks-recreation-ridgefield-r-2",
+   "when": [
+    {
+     "from": "2026-11-20",
+     "t": [
+      [
+       "17:00",
+       "19:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "Grades K–4",
+   "a": [
+    "big"
+   ],
+   "free": false,
+   "price": "$35 members, $40 non-members",
+   "rsvp": true,
+   "src": "https://www.ridgefieldparksandrec.org/youth-programs/events/30551",
+   "blurb": "Karaoke, dancing, crafts, pizza and popsicles; wear white or neon."
+  },
+  {
+   "t": "Turkey Pardon",
+   "v": "lounsbury-house",
+   "when": [
+    {
+     "from": "2026-11-22",
+     "t": [
+      [
+       "12:00",
+       "13:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "drop": true,
+   "src": "https://lounsburyhouse.org/calendar/",
+   "blurb": "The First Selectman pardons 'Mr. Gobble'; meet the turkey and play lawn games. Rain or shine."
+  },
+  {
+   "t": "Turkey Trot Kids' Fun Run",
+   "v": "bgc-ridgefield",
+   "when": [
+    {
+     "from": "2026-11-26",
+     "t": [
+      [
+       "08:00",
+       "08:20"
+      ]
+     ]
+    }
+   ],
+   "ages": "Kids",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "free": false,
+   "price": "$22.95 (5K $38.96)",
+   "rsvp": true,
+   "src": "https://www.givesignup.org/Race/CT/Ridgefield/RidgefieldTurkeyTrot",
+   "blurb": "The Boys & Girls Club's 45th Thanksgiving trot: a short kids' run at 8, then the 5K at 8:30. Prices go up after Oct 31."
+  },
+  {
+   "t": "Holiday Stroll North Pole",
+   "v": "lounsbury-house",
+   "special": "hol",
+   "when": [
+    {
+     "from": "2026-12-04",
+     "t": [
+      [
+       "18:00",
+       "21:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "drop": true,
+   "check": true,
+   "src": "https://lounsburyhouse.org/calendar/",
+   "blurb": "During the Holiday Stroll: Santa and Mrs. Claus, live reindeer, selfies with elves and postcards for the troops."
   }
  ],
  "tba": [
-  {
-   "g": "hw",
-   "t": "Trunk-or-Treat with the Ridgefield Police",
-   "w": "Lounsbury House",
-   "p": "A free Halloween party run by Ridgefield police officers and local teens. In past years it has been held on Halloween night. This year’s details aren’t confirmed yet.",
-   "src": "https://inridgefield.com/halloween-festivities-in-ridgefield/"
-  },
-  {
-   "g": "fall",
-   "t": "Jesse Lee Pumpkin Patch",
-   "w": "Jesse Lee Church, Main Street",
-   "p": "A favorite town tradition: pick a pumpkin on the church grounds. In past years the patch has opened around the end of September and stayed open daily through Oct 31. Check for this year’s hours.",
-   "src": "https://inridgefield.com/outstanding-october-events-in-ridgefield/"
-  },
   {
    "g": "fall",
    "t": "Fall in Love with Ridgefield",
@@ -2005,6 +2685,27 @@ window.TOWN = {
    "w": "Ridgefield Library",
    "p": "Kids ages 4–11 decorate a mini pumpkin as a favorite character and drop it off at the library for public voting. Last year the contest ran Oct 18–31; this year’s dates aren’t confirmed yet.",
    "src": "https://inridgefield.com/spooktacular-halloween-happenings-in-ridgefield/"
+  },
+  {
+   "g": "hol",
+   "t": "Festival of Lights & Tree Lighting",
+   "w": "In front of Town Hall, Main St",
+   "p": "Santa, the high school choir and the Main Street lights switch on with the tree, the Friday after Thanksgiving at 6. This year's details aren't posted yet.",
+   "src": "https://danbury.macaronikid.com/events/6722d92a3487006b6b433163/ridgefields-annual-festival-of-lights-and-annual-tree-lighting"
+  },
+  {
+   "g": "hw",
+   "t": "Halloween Kids' Night Out",
+   "w": "Boys & Girls Club, 41 Governor St",
+   "p": "A late-October Friday drop-off night with a Halloween parade and gym games. Last year it was Oct 24, 6:30–8:30 ($40 members). This year's date isn't posted yet.",
+   "src": "https://inridgefield.com/events/halloween-kids-night-out/"
+  },
+  {
+   "g": "hol",
+   "t": "Library Days at Books on the Common",
+   "w": "Books on the Common, 404 Main St",
+   "p": "The Saturday after Thanksgiving, the bookstore donates 15% to the library for card holders and gives away a children's book every hour. Last year it was Nov 29, 10–3.",
+   "src": "https://patch.com/connecticut/ridgefield/calendar/event/20251129/6246ed89-4ec7-4044-91d4-e78d0e3e6e7d/library-days-at-books-on-the-common"
   }
  ],
  "classes": [
@@ -2664,6 +3365,24 @@ window.TOWN = {
    "blurb": "Parent-participation gymnastics and movement classes for babies through grade-schoolers, plus camps and birthday parties. Call ahead for the class schedule.",
    "ages": "Babies–grade school",
    "where": "96 Danbury Rd"
+  },
+  {
+   "id": "rf-glee-club",
+   "c": "music",
+   "n": "Glee Club (Parks & Rec)",
+   "u": "https://www.ridgefieldparksandrec.org/youth-courses/pages/glee-club",
+   "blurb": "Wednesday singing club, Sep 30–Dec 2. $163 members, $193 non-members.",
+   "ages": "Grades K–5",
+   "where": "Ridgefield Recreation Center"
+  },
+  {
+   "id": "rf-build-it",
+   "c": "build",
+   "n": "Build It, Break It, Mold It, Make It",
+   "u": "https://www.ridgefieldparksandrec.org/youth-courses/pages/build-it-break-it-mold-it-make-it",
+   "blurb": "Monday hands-on engineering and making, Sep 28–Nov 30; a slime-and-science class follows in January.",
+   "ages": "Grades K–5",
+   "where": "Ridgefield Recreation Center"
   }
  ],
  "library": {

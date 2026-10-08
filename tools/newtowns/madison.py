@@ -171,3 +171,57 @@ ES.update({
  "18 months–adult":"18 meses–adultos",
  "168 Boston Post Rd (also in Guilford)":"168 Boston Post Rd (también en Guilford)",
 })
+
+# ---- patch: madison-2026-10-08.py ----
+ADD_PLACES={'out':[],'rain':[],'drive':[]}; REPLACE_PLACES={}; DROP_PLACES=[]
+_ES_before=dict(ES)
+# Full playbook re-run, Oct 8 2026
+BARN="madison-arts-barn"; BP="bauer-park"; SYD="syds-book-shack"; LEE="lees-academy"
+TOWN["venues"].update({BARN:["The Barn (Madison Arts Barn)","8 Campus Dr"],BP:["Bauer Park","257 Copse Rd"],SYD:["Syd's Book Shack & Boutique","26 Boston Post Rd"],LEE:["Lee's Academy (Madison Historical Society)","14 Meetinghouse Ln"]})
+TOWN["venueMeta"].update({BARN:[None,1],BP:[None,0],SYD:[None,1],LEE:[None,0]})
+for e in TOWN["events"]:
+    if e["t"]=="Astronomy Night at Meigs Point": e["when"]=[W("2026-11-06",[["19:00","21:00"]])]
+MP="https://www.meigspointnaturecenter.org/event/"
+TOWN["events"]+=[
+ {"t":"SFX Makeup Workshop","v":BARN,"special":"hw","when":[W("2026-10-15",[["16:00","17:30"]])],"ages":"Grades 3+","a":["big"],"free":False,"price":"See sign-up page","rsvp":True,"check":True,"src":"https://patch.com/connecticut/madison-ct/calendar/event/20261015/ce0f7172-d165-4e7f-98b2-5193683bcf8c/sfx-makeup-workshop",
+  "blurb":"Make fake cuts, scars and bruises with makeup, then design a Halloween monster. No experience needed; end time is an estimate."},
+ {"t":"Bauer Park Harvest Festival","v":BP,"special":"fall","when":[W("2026-10-17",[["11:00","16:00"]])],"ages":"All ages","a":B+["big"],"free":True,"price":"Free","drop":True,"check":True,"src":"https://madisonlandtrust.org/events/",
+  "blurb":"An old-fashioned fall fair: hay maze, potato dig, duck launch, two-man saw and scarecrow making."},
+ {"t":"Syd's Book Shack Book Fest & Sale","v":SYD,"when":D(["2026-10-17","2026-10-18"],[["10:00","16:00"]]),"ages":"All ages","a":["preschool","big"],"free":True,"price":"Free entry","drop":True,"check":True,"src":"https://patch.com/connecticut/madison-ct/calendar/event/20261017/5be0d9a2-1ca7-46ee-b9a7-1f0f8ca5636f/syds-book-shack-book-festival-sale",
+  "blurb":"A used-book festival with kids' crafts, face painting, a scavenger hunt, raffles and giveaways."},
+ {"t":"Bats in Connecticut","v":"meigs-point","special":"hw","when":[W("2026-10-24",[["11:00","12:00"],["13:00","14:00"]])],"ages":"All ages","a":["big"],"free":True,"price":"Free","rsvp":True,"check":True,"src":MP+"bats-in-connecticut/",
+  "blurb":"A talk about Connecticut's bats by a Master Wildlife Conservationist, at 11 and 1."},
+ {"t":"Owl-O-Ween","v":"meigs-point","special":"hw","when":[W("2026-10-30",[["18:00","20:00"]])],"ages":"All ages","a":B+["big"],"free":False,"price":"$5 suggested donation","drop":True,"src":MP+"owl-o-ween/",
+  "blurb":"Meet live owls, opossums and snakes up close, with crafts, face painting and glitter tattoos; costumes encouraged. 6–7 is the busier early-bird hour, 7–8 the quieter night-owl hour."},
+ {"t":"Lantern Tour: Our History, Our Stories","v":LEE,"when":[W("2026-11-07",[["17:00","20:30"]])],"ages":"Ages 10+","a":["big"],"free":False,"price":"See registration","rsvp":True,"src":"https://www.madisonhistory.org/lantern-tour/",
+  "blurb":"A 45-minute lantern-lit walk across the Green where youth reenactors play figures from Madison's 200 years. Tours leave every 20 minutes; rain or shine."},
+ {"t":"Hammonasset Fall Festival","v":"meigs-point","special":"fall","when":[W("2026-11-14",[["11:00","16:00"]])],"ages":"All ages","a":B+["big"],"free":True,"price":"Free","drop":True,"check":True,"src":MP+"fall-fest/",
+  "blurb":"A family day at the nature center with seasonal activities, treats and nature exhibits."},
+ {"t":"Madison Turkey Trot","v":"madison-green","when":[W("2026-11-26",[["10:00","11:30"]])],"ages":"All ages (2-mile walk; strollers OK)","a":["big"],"free":False,"price":"About $23 walk, $34 run","rsvp":True,"src":"https://runsignup.com/Race/CT/Madison/LennyandJoesMadisonTurkeyTrot",
+  "blurb":"Lenny & Joe's Thanksgiving 5-mile run (10:00) and 2-mile walk (10:05) from the Green; strollers and leashed dogs on the walk only."},
+]
+TOWN["tba"]+=[{"g":"hol","t":"Santa Arrives in Downtown Madison","w":"From Madison Hose Co. 1 to E.C. Scranton Library","p":"A morning parade with the fire and police departments, then Santa photos on the library steps, letters to Santa, hayrides and cookie decorating, usually the first Saturday of December. Last year it was Dec 6 from 11. This year's date isn't posted yet.","src":"https://new.patch.com/connecticut/madison-ct/santa-arrives-downtown-madison-weekend"}]
+REPLACE_PLACES={"R.J. Julia Booksellers":("R.J. Julia Booksellers","A beloved independent bookstore on Boston Post Road with a big children's section; its kids' storytimes are at the Middletown store.","Una querida librería independiente en Boston Post Road con una gran sección infantil; sus cuentacuentos infantiles son en la tienda de Middletown.")}
+ADD_PLACES["out"]+=[("Madison Land Trust trails","35 miles of free trails, each with a geocache; Rettich Preserve, Neck River and Summer Hill are good for young kids.","56 km de senderos gratis, cada uno con un geocaché; Rettich Preserve, Neck River y Summer Hill son buenos para los pequeños.")]
+ES_PATCH={
+ "Grades 3+":"3.er grado en adelante","See sign-up page":"Ver la página de inscripción",
+ "Make fake cuts, scars and bruises with makeup, then design a Halloween monster. No experience needed; end time is an estimate.":"Haz cortadas, cicatrices y moretones falsos con maquillaje y luego diseña un monstruo de Halloween. No se necesita experiencia; la hora de término es aproximada.",
+ "An old-fashioned fall fair: hay maze, potato dig, duck launch, two-man saw and scarecrow making.":"Una feria de otoño a la antigua: laberinto de paja, cosecha de papas, lanzamiento de patos, serrucho de dos personas y espantapájaros.",
+ "Free entry":"Entrada gratis",
+ "A used-book festival with kids' crafts, face painting, a scavenger hunt, raffles and giveaways.":"Un festival de libros usados con manualidades para niños, pintacaritas, búsqueda del tesoro, rifas y regalos.",
+ "A talk about Connecticut's bats by a Master Wildlife Conservationist, at 11 and 1.":"Una charla sobre los murciélagos de Connecticut a cargo de un conservacionista de vida silvestre, a las 11 y a la 1.",
+ "$5 suggested donation":"Donación sugerida de $5",
+ "Meet live owls, opossums and snakes up close, with crafts, face painting and glitter tattoos; costumes encouraged. 6–7 is the busier early-bird hour, 7–8 the quieter night-owl hour.":"Conoce de cerca búhos, zarigüeyas y serpientes vivos, con manualidades, pintacaritas y tatuajes de brillantina; se recomienda ir disfrazado. De 6 a 7 hay más gente; de 7 a 8 es más tranquilo.",
+ "Ages 10+":"10 años o más","See registration":"Ver la inscripción",
+ "A 45-minute lantern-lit walk across the Green where youth reenactors play figures from Madison's 200 years. Tours leave every 20 minutes; rain or shine.":"Un recorrido de 45 minutos con faroles por el Green, donde jóvenes actores interpretan personajes de los 200 años de Madison. Salen cada 20 minutos; con lluvia o sol.",
+ "A family day at the nature center with seasonal activities, treats and nature exhibits.":"Un día familiar en el centro de naturaleza con actividades de temporada, golosinas y exposiciones.",
+ "All ages (2-mile walk; strollers OK)":"Todas las edades (caminata de 2 millas; se permiten carriolas)",
+ "About $23 walk, $34 run":"Unos $23 la caminata, $34 la carrera",
+ "Lenny & Joe's Thanksgiving 5-mile run (10:00) and 2-mile walk (10:05) from the Green; strollers and leashed dogs on the walk only.":"La carrera de 5 millas (10:00) y caminata de 2 millas (10:05) de Acción de Gracias de Lenny & Joe's desde el Green; carriolas y perros con correa solo en la caminata.",
+ "From Madison Hose Co. 1 to E.C. Scranton Library":"De Madison Hose Co. 1 a la E.C. Scranton Library",
+ "A morning parade with the fire and police departments, then Santa photos on the library steps, letters to Santa, hayrides and cookie decorating, usually the first Saturday of December. Last year it was Dec 6 from 11. This year's date isn't posted yet.":"Un desfile matutino con bomberos y policía, luego fotos con Santa en los escalones de la biblioteca, cartas a Santa, paseos en carreta y decoración de galletas, por lo general el primer sábado de diciembre. El año pasado fue el 6 de dic. desde las 11. La fecha de este año aún no se ha publicado.",
+}
+
+ES.update(globals().get('ES_PATCH', {}))
+for _k,_v in ADD_PLACES.items(): PLACES[_k]+=_v
+for _k in PLACES: PLACES[_k]=[REPLACE_PLACES.get(p[0],p) for p in PLACES[_k] if p[0] not in DROP_PLACES]

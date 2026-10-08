@@ -367,6 +367,24 @@
      "url": "https://fairfieldct.org/",
      "how": "Seasonal programs and town events.",
      "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Fairfield Community Services",
+     "url": "https://ffldcommunity.com/",
+     "how": "Seasonal; category pages list program sessions (fairfieldrecreation.com redirects here).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Fairfield Museum family-fun category",
+     "url": "https://www.fairfieldhistory.org/events-calendar/category/family-fun/",
+     "how": "Monthly; readable.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Quick Center season calendar",
+     "url": "https://quickcenter.fairfield.edu/2026-27-season-calendar/dance/connecticut-dance-school.html",
+     "how": "Seasonal: Nutcracker in December; family series from February.",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": []
@@ -772,6 +790,24 @@
      "url": "https://patch.com/connecticut/madison-ct/calendar",
      "how": "Weekend check Oct 5: Oct 10 and 17 only have library Itty Bitty Meetup; Patch had nothing kid-focused (accepted gap). Beware Madison WI/MN/IL/GA results in searches.",
      "last": "Oct 5, 2026"
+    },
+    {
+     "name": "Meigs Point Nature Center month view",
+     "url": "https://www.meigspointnaturecenter.org/events/month/2026-11/",
+     "how": "Monthly; readable (change YYYY-MM): Owl-O-Ween, fall fest, astronomy night.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Madison Land Conservation Trust events",
+     "url": "https://madisonlandtrust.org/events/",
+     "how": "Seasonal: Bauer Park Harvest Festival (October), moonlight walks.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Patch Madison (The Barn youth workshops)",
+     "url": "https://patch.com/connecticut/madison-ct/calendar",
+     "how": "Weekly; The Barn's Ludus pages are JavaScript-only, so its workshops surface on Patch.",
+     "last": "Oct 8, 2026"
     }
    ]
   },
@@ -951,6 +987,24 @@
      "url": "http://www.pantochino.com/",
      "how": "October–November: holiday musical title and dates.",
      "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Pantochino — what's next",
+     "url": "https://www.pantochino.com/whats-next",
+     "how": "Seasonal; full season with dates (holiday musical at the MAC in December).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Milford Rec (MyRec) family programs",
+     "url": "https://milfordct.myrec.com/info/activities/program_details.aspx?ProgramID=29940",
+     "how": "Monthly: family movie nights, pottery, break camps.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "MAC Holiday Buoy Tree",
+     "url": "https://milfordarts.org/holiday-buoy-tree-exhibit/",
+     "how": "Each November (lighting the first Sunday of December).",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": [
@@ -989,6 +1043,24 @@
      "url": "https://newcanaanchamber.com/annual-events/",
      "how": "Seasonal: holiday stroll, Halloween.",
      "last": "Oct 3, 2026"
+    },
+    {
+     "name": "New Canaan Library list view",
+     "url": "https://www.newcanaanlibrary.org/events/upcoming?page=0",
+     "how": "Monthly; readable without a paste — page through ?page=N.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "New Canaan Parks & Rec (MyRec)",
+     "url": "https://newcanaanct.myrec.com/info/activities/default.aspx?type=activities",
+     "how": "Seasonal: Fall Family Fun, skating lessons, after-school programs.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Carriage Barn Arts Center",
+     "url": "https://carriagebarn.org/",
+     "how": "Monthly: free family drop-ins, kids' classes, Waveny Arts Festival.",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": []
@@ -1259,6 +1331,30 @@
      "url": "https://www.woodcocknaturecenter.org/upcomingevents",
      "how": "Monthly.",
      "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Lounsbury House community calendar",
+     "url": "https://lounsburyhouse.org/calendar/",
+     "how": "Monthly; readable: trunk-or-treat, Turkey Pardon, Holiday Stroll North Pole, Veterans Day.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Woodcock Nature Center upcoming events",
+     "url": "https://www.woodcocknaturecenter.org/upcomingevents",
+     "how": "Monthly. Note: listed as 56 Deer Run Rd on the Wilton/Ridgefield line.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Weir Farm featured programs",
+     "url": "https://www.nps.gov/wefa/planyourvisit/featured-programs.htm",
+     "how": "Seasonal; readable (the NPS calendar page is dead).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Ridgefield Parks & Rec monthly calendar",
+     "url": "https://www.ridgefieldparksandrec.org/calendar/month/2026-11",
+     "how": "Monthly; readable (change the month).",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": []
@@ -1499,6 +1595,24 @@
      "url": "https://patch.com/connecticut/wallingford",
      "how": "Celebrate Wallingford, Halloween Happenings, Seasons of Celebration, Holiday Stroll.",
      "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Catalyst Art Studio events",
+     "url": "https://catalystartstudio.com/",
+     "how": "Monthly: no-school-day art camps and paint nights.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Wallingford YMCA program guide",
+     "url": "https://wallingfordymca.org/wp-content/uploads/2026/08/2026-Fall1-Web.pdf",
+     "how": "Each session (look for a Fall 2 guide): Y-Cation days, Friday Night Out, BOO-nanza, Scuba Santa.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Town events calendar",
+     "url": "https://www.wallingfordct.gov/events/",
+     "how": "Monthly views list Halloween Happenings and Seasons of Celebration.",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": []
@@ -1601,6 +1715,30 @@
      "url": "https://playhouseonpark.org/",
      "how": "When the season posts.",
      "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Playhouse on Park — Season 18",
+     "url": "https://playhouseonpark.org/web2/Season18/Season18Shows.html",
+     "how": "Seasonal: Theater for Young Audiences shows (Pinocchio Oct 31–Nov 21) and holiday show.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Noah Webster House Schoolmaster series",
+     "url": "https://noahwebsterhouse.org/americas-schoolmaster-series/",
+     "how": "School-break programs; Saturday farm demonstrations.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Jewish Federation of Greater Hartford calendar",
+     "url": "https://www.jewishhartford.org/community-calendar/",
+     "how": "Monthly; event pages readable: Tot Shabbat, Mandell JCC and JLive kids' events. Check Chabad of Greater Hartford in November for Hanukkah.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "West Hartford Public Library homepage",
+     "url": "https://www.westhartfordlibrary.org/",
+     "how": "Monthly; the homepage lists upcoming programs through mid-December (LibraryMarket itself blocks robots).",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": []
@@ -1643,6 +1781,24 @@
      "url": "https://www.westportct.gov/government/departments-a-z/parks-and-recreation",
      "how": "Seasonal: PAL Rink, Learn to Skate.",
      "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Earthplace month view",
+     "url": "https://earthplace.org/events/month/2026-11/",
+     "how": "Monthly: Kids' Night Out, campfires, hikes, pumpkin carving.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "MoCA CT (via Patch user page)",
+     "url": "https://patch.com/users/moca-ct",
+     "how": "Monthly: Family Fun Days and school-recess camps.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Westport Weston Family Y events",
+     "url": "https://westporty.org/events/",
+     "how": "Seasonal: Spooktacular, vacation day camps.",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": []

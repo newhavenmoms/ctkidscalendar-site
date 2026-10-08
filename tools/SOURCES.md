@@ -200,26 +200,31 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Quick Center for the Arts (Fairfield University)](https://quickcenter.fairfield.edu/) | When the season is announced: family series (Feb and Mar 2027 shows listed). | Oct 3, 2026 |
 | [CT Audubon — Fairfield Nature Center](https://ctaudubon.org/locations/the-fairfield-nature-center-and-larsen-sanctuary/) | Each season: programs. | Oct 3, 2026 |
 | [Fairfield Parks & Recreation](https://fairfieldct.org/) | Seasonal programs and town events. | Oct 3, 2026 |
+| [Fairfield Community Services](https://ffldcommunity.com/) | Seasonal; category pages list program sessions (fairfieldrecreation.com redirects here). | Oct 8, 2026 |
+| [Fairfield Museum family-fun category](https://www.fairfieldhistory.org/events-calendar/category/family-fun/) | Monthly; readable. | Oct 8, 2026 |
+| [Quick Center season calendar](https://quickcenter.fairfield.edu/2026-27-season-calendar/dance/connecticut-dance-school.html) | Seasonal: Nutcracker in December; family series from February. | Oct 8, 2026 |
 
-**Also cited in your data** (26 more site(s), busiest first)
+**Also cited in your data** (28 more site(s), busiest first)
 
 - [fairfieldtheatreacademy.org](https://fairfieldtheatreacademy.org/classes-2026/) — 23 class card(s)
 - [fairfieldareaswimschool.com](https://www.fairfieldareaswimschool.com/springservices) — 5 class card(s)
-- [ffldcommunity.com](https://ffldcommunity.com/farmer_s_market/index.php) — 1 event(s), 3 class card(s)
 - [fairfieldctmoms.com](https://fairfieldctmoms.com/resources/activities-and-classes/) — 4 class card(s)
-- [ctdanceschool.org](https://www.ctdanceschool.org/) — 1 event(s), 2 class card(s)
 - [fairfieldskatingclub.com](https://fairfieldskatingclub.com/) — 3 class card(s)
 - [cccymca.org](https://cccymca.org/locations/fairfield/swim/) — 3 class card(s)
 - [fairfieldpubliclibrary.org](https://fairfieldpubliclibrary.org/children/family-events-and-afterschool-classes/) — 3 class card(s)
 - [nstudios.org](https://www.nstudios.org/register.html) — 3 class card(s)
 - [edgertoncenter.org](https://edgertoncenter.org/events/sam-the-snowman/) — 2 event(s)
+- [ctdanceschool.org](https://www.ctdanceschool.org/) — 2 class card(s)
 - [wow-swim.com](https://wow-swim.com/) — 2 class card(s)
 - [fairfieldskatingclub.org](https://www.fairfieldskatingclub.org/) — 2 class card(s)
 - [fairfield.kidstrong.com](https://fairfield.kidstrong.com/) — 2 class card(s)
 - [mygym.com](https://www.mygym.com/fairfield) — 2 class card(s)
 - [events.fairfield.edu](https://events.fairfield.edu/event/childrens-storytime-in-the-fairfield-forest-1972) — 1 event(s)
 - [commerce.fairfieldctchamber.com](https://commerce.fairfieldctchamber.com/events/details/fairfield-harvest-market-fall-2026-6641) — 1 event(s)
+- [patch.com](https://patch.com/connecticut/fairfield/calendar/event/20261011/3590d2c6-dd30-4413-b578-5ffe485a7a46/new-mom-and-baby-expo) — 1 event(s)
+- [jewishfairfield.org](https://www.jewishfairfield.org/6982304) — 1 event(s)
 - [mofflylifestylemedia.com](https://mofflylifestylemedia.com/fairfield-county-holiday-market-pop-up-guide/) — 1 event(s)
+- [newcanaanite.com](https://newcanaanite.com/new-canaan-event/chabad-of-fairfield-menorah-lighting-gelt-drop-at-sherman-green) — 1 event(s)
 - [ctfairfieldweb.myvscloud.com](https://ctfairfieldweb.myvscloud.com/webtrac/web/search.html?module=AR&type=Camps%20and%20Clinics) — 1 class card(s)
 - [creativefamilyrhythms.com](https://www.creativefamilyrhythms.com/music-together-mixed-ages.html?sem0=54068) — 1 class card(s)
 - [fairfieldperformingartsstudio.com](https://www.fairfieldperformingartsstudio.com/) — 1 class card(s)
@@ -391,6 +396,9 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [R.J. Julia Booksellers](https://rjjulia.com/upcoming-events) | Monthly: children's storytimes and author events. | Oct 4, 2026 |
 | [Meigs Point Nature Center](https://www.meigspointnaturecenter.org/) | Monthly: Astronomy Night, seasonal programs; free admission. | Oct 4, 2026 |
 | [Patch — Madison calendar](https://patch.com/connecticut/madison-ct/calendar) | Weekend check Oct 5: Oct 10 and 17 only have library Itty Bitty Meetup; Patch had nothing kid-focused (accepted gap). Beware Madison WI/MN/IL/GA results in searches. | Oct 5, 2026 |
+| [Meigs Point Nature Center month view](https://www.meigspointnaturecenter.org/events/month/2026-11/) | Monthly; readable (change YYYY-MM): Owl-O-Ween, fall fest, astronomy night. | Oct 8, 2026 |
+| [Madison Land Conservation Trust events](https://madisonlandtrust.org/events/) | Seasonal: Bauer Park Harvest Festival (October), moonlight walks. | Oct 8, 2026 |
+| [Patch Madison (The Barn youth workshops)](https://patch.com/connecticut/madison-ct/calendar) | Weekly; The Barn's Ludus pages are JavaScript-only, so its workshops surface on Patch. | Oct 8, 2026 |
 
 **Also cited in your data** (0 more site(s), busiest first)
 
@@ -457,18 +465,25 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Milford Recreation (MyRec)](https://milfordct.myrec.com/info/activities/default.aspx) | When seasons open. Classes, adaptive (MAPs) programs. | Sep 29, 2026 |
 | [Milford Arts Council (the MAC)](https://milfordarts.org/) | Monthly: Family Pillow Concerts; Pantochino's December musical. | Oct 3, 2026 |
 | [Pantochino Productions](http://www.pantochino.com/) | October–November: holiday musical title and dates. | Oct 3, 2026 |
+| [Pantochino — what's next](https://www.pantochino.com/whats-next) | Seasonal; full season with dates (holiday musical at the MAC in December). | Oct 8, 2026 |
+| [Milford Rec (MyRec) family programs](https://milfordct.myrec.com/info/activities/program_details.aspx?ProgramID=29940) | Monthly: family movie nights, pottery, break camps. | Oct 8, 2026 |
+| [MAC Holiday Buoy Tree](https://milfordarts.org/holiday-buoy-tree-exhibit/) | Each November (lighting the first Sunday of December). | Oct 8, 2026 |
 
 **Don't confuse with**
 
 - Milford, **New Hampshire** — its Pumpkin Festival (milfordpumpkinfestival.org, 'Granite Town') is not ours.
 
-**Also cited in your data** (18 more site(s), busiest first)
+**Also cited in your data** (22 more site(s), busiest first)
 
+- [allevents.in](https://allevents.in/milford/jwc-of-milfords-touch-a-truck-halloween-event/200030586408036) — 2 event(s)
 - [bridgesct.org](https://bridgesct.org/folks-on-spokes/) — 1 event(s)
 - [connecticutfestivals.com](https://connecticutfestivals.com/Milford-CT) — 1 event(s)
 - [findarace.com](https://findarace.com/us/events/15th-annual-milford-5k-trick-or-trot-run-walk) — 1 event(s)
 - [stores.barnesandnoble.com](https://stores.barnesandnoble.com/store/2240) — 1 event(s)
 - [facebook.com](https://www.facebook.com/MilfordLL/) — 1 event(s)
+- [raceentry.com](https://www.raceentry.com/milford-turkey-trot/race-information) — 1 event(s)
+- [new.patch.com](https://new.patch.com/connecticut/milford/tree-lighting-details-announced-milford) — 1 event(s)
+- [jewishmilford.com](https://www.jewishmilford.com/) — 1 event(s)
 - [ctaudubon.org](https://www.ctaudubon.org/coastal-center-at-milford-point/) — 1 class card(s)
 - [musicalfolk.com](https://www.musicalfolk.com/MilfordOrange.html) — 1 class card(s)
 - [thegigglingpig.com](https://www.thegigglingpig.com/milford-tgp) — 1 class card(s)
@@ -496,16 +511,20 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Grace Farms — children & families](https://gracefarms.org/events/category/children-families/list) | Monthly. | Oct 3, 2026 |
 | [Town Players of New Canaan](https://tpnc.org/) | Each season: Rudolph (Nov 20–Dec 13). | Oct 3, 2026 |
 | [New Canaan Chamber — annual events](https://newcanaanchamber.com/annual-events/) | Seasonal: holiday stroll, Halloween. | Oct 3, 2026 |
+| [New Canaan Library list view](https://www.newcanaanlibrary.org/events/upcoming?page=0) | Monthly; readable without a paste — page through ?page=N. | Oct 8, 2026 |
+| [New Canaan Parks & Rec (MyRec)](https://newcanaanct.myrec.com/info/activities/default.aspx?type=activities) | Seasonal: Fall Family Fun, skating lessons, after-school programs. | Oct 8, 2026 |
+| [Carriage Barn Arts Center](https://carriagebarn.org/) | Monthly: free family drop-ins, kids' classes, Waveny Arts Festival. | Oct 8, 2026 |
 
-**Also cited in your data** (25 more site(s), busiest first)
+**Also cited in your data** (26 more site(s), busiest first)
 
 - [newcanaanymca.org](https://newcanaanymca.org/) — 1 event(s), 10 class card(s)
 - [newcanaanct.gov](https://www.newcanaanct.gov/) — 6 class card(s)
-- [carriagebarn.org](https://carriagebarn.org/) — 2 class card(s)
+- [nchistory.org](https://nchistory.org/election-day-family-fun-2026/) — 1 event(s), 1 class card(s)
+- [newcanaanite.com](https://newcanaanite.com/new-canaan-event/gifting-for-good-5/) — 2 event(s)
 - [performingartsconservatory.com](https://www.performingartsconservatory.com/) — 2 class card(s)
 - [schoolofrock.com](https://www.schoolofrock.com/locations/newcanaan) — 2 class card(s)
+- [bedfordnewcanaanmag.com](https://www.bedfordnewcanaanmag.com/local-calendar/new-canaan-community-menorah-lighting) — 1 event(s)
 - [newcanaandarienmoms.com](https://newcanaandarienmoms.com/calendar/category/family/) — 1 class card(s)
-- [nchistory.org](https://nchistory.org/) — 1 class card(s)
 - [musicologie.com](https://musicologie.com/locations/new-canaan/) — 1 class card(s)
 - [neadance.com](https://neadance.com/) — 1 class card(s)
 - [craftykidsnewcanaan.com](https://craftykidsnewcanaan.com/) — 1 class card(s)
@@ -684,8 +703,12 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [The Aldrich — Third Saturdays](https://thealdrich.org/) | Monthly. | Oct 3, 2026 |
 | [Keeler Tavern Museum — events](https://keelertavernmuseum.org/events/calendar/) | Monthly. | Oct 3, 2026 |
 | [Woodcock Nature Center](https://www.woodcocknaturecenter.org/upcomingevents) | Monthly. | Oct 3, 2026 |
+| [Lounsbury House community calendar](https://lounsburyhouse.org/calendar/) | Monthly; readable: trunk-or-treat, Turkey Pardon, Holiday Stroll North Pole, Veterans Day. | Oct 8, 2026 |
+| [Woodcock Nature Center upcoming events](https://www.woodcocknaturecenter.org/upcomingevents) | Monthly. Note: listed as 56 Deer Run Rd on the Wilton/Ridgefield line. | Oct 8, 2026 |
+| [Weir Farm featured programs](https://www.nps.gov/wefa/planyourvisit/featured-programs.htm) | Seasonal; readable (the NPS calendar page is dead). | Oct 8, 2026 |
+| [Ridgefield Parks & Rec monthly calendar](https://www.ridgefieldparksandrec.org/calendar/month/2026-11) | Monthly; readable (change the month). | Oct 8, 2026 |
 
-**Also cited in your data** (18 more site(s), busiest first)
+**Also cited in your data** (23 more site(s), busiest first)
 
 - [ridgefielddance.org](https://www.ridgefielddance.org/calendar/) — 5 class card(s)
 - [actofct.org](https://www.actofct.org/youth-choir) — 4 class card(s)
@@ -698,6 +721,11 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 - [ridgefieldfarmersmarket.org](https://www.ridgefieldfarmersmarket.org/) — 1 event(s)
 - [ridgefieldmom.com](https://ridgefieldmom.com/calendar/2026-04-25/) — 1 event(s)
 - [ridgefieldpubliclibrary.com](https://www.ridgefieldpubliclibrary.com/children-programs) — 1 event(s)
+- [jesseleechurch.com](https://jesseleechurch.com/pumpkin-patch/) — 1 event(s)
+- [ridgefieldhistoricalsociety.org](https://ridgefieldhistoricalsociety.org/event/24119/) — 1 event(s)
+- [givesignup.org](https://www.givesignup.org/Race/CT/Ridgefield/RidgefieldTurkeyTrot) — 1 event(s)
+- [danbury.macaronikid.com](https://danbury.macaronikid.com/events/6722d92a3487006b6b433163/ridgefields-annual-festival-of-lights-and-annual-tree-lighting) — 1 event(s)
+- [patch.com](https://patch.com/connecticut/ridgefield/calendar/event/20251129/6246ed89-4ec7-4044-91d4-e78d0e3e6e7d/library-days-at-books-on-the-common) — 1 event(s)
 - [rgoa.org](https://rgoa.org/course/joy-of-art-fall-2026/) — 1 class card(s)
 - [landmarkpreschool.org](https://www.landmarkpreschool.org/fun-for-ones) — 1 class card(s)
 - [scor.org](https://www.scor.org/Default.aspx?tabid=927299) — 1 class card(s)
@@ -826,10 +854,15 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Wallingford Parks & Recreation (MyRec)](https://wallingfordct.myrec.com/info/activities/default.aspx?type=activities) | Each season: classes and one-day workshops. | Oct 3, 2026 |
 | [Toyota Oakdale Theatre](https://www.toyotaoakdaletheatre.com/) | Monthly: family shows (watch for Bluey's Big Play). | Oct 3, 2026 |
 | [Wallingford Patch](https://patch.com/connecticut/wallingford) | Celebrate Wallingford, Halloween Happenings, Seasons of Celebration, Holiday Stroll. | Oct 3, 2026 |
+| [Catalyst Art Studio events](https://catalystartstudio.com/) | Monthly: no-school-day art camps and paint nights. | Oct 8, 2026 |
+| [Wallingford YMCA program guide](https://wallingfordymca.org/wp-content/uploads/2026/08/2026-Fall1-Web.pdf) | Each session (look for a Fall 2 guide): Y-Cation days, Friday Night Out, BOO-nanza, Scuba Santa. | Oct 8, 2026 |
+| [Town events calendar](https://www.wallingfordct.gov/events/) | Monthly views list Halloween Happenings and Seasons of Celebration. | Oct 8, 2026 |
 
-**Also cited in your data** (1 more site(s), busiest first)
+**Also cited in your data** (3 more site(s), busiest first)
 
+- [allevents.in](https://allevents.in/wallingford/zion-scarecrow-festival/200030750635912) — 2 event(s)
 - [centerforpediatrictherapy.com](https://centerforpediatrictherapy.com/screenings/) — 1 event(s)
+- [wallingfordsymphony.org](https://www.wallingfordsymphony.org/tickets) — 1 event(s)
 
 ---
 
@@ -866,21 +899,25 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Elizabeth Park — events](https://elizabethparkct.org/) | Seasonal (approved town-line exception). | Oct 3, 2026 |
 | [Noah Webster House](https://noahwebsterhouse.org/) | Seasonal: Hauntings, egg hunt. | Oct 3, 2026 |
 | [Playhouse on Park — young audiences](https://playhouseonpark.org/) | When the season posts. | Oct 3, 2026 |
+| [Playhouse on Park — Season 18](https://playhouseonpark.org/web2/Season18/Season18Shows.html) | Seasonal: Theater for Young Audiences shows (Pinocchio Oct 31–Nov 21) and holiday show. | Oct 8, 2026 |
+| [Noah Webster House Schoolmaster series](https://noahwebsterhouse.org/americas-schoolmaster-series/) | School-break programs; Saturday farm demonstrations. | Oct 8, 2026 |
+| [Jewish Federation of Greater Hartford calendar](https://www.jewishhartford.org/community-calendar/) | Monthly; event pages readable: Tot Shabbat, Mandell JCC and JLive kids' events. Check Chabad of Greater Hartford in November for Hanukkah. | Oct 8, 2026 |
+| [West Hartford Public Library homepage](https://www.westhartfordlibrary.org/) | Monthly; the homepage lists upcoming programs through mid-December (LibraryMarket itself blocks robots). | Oct 8, 2026 |
 
-**Also cited in your data** (40 more site(s), busiest first)
+**Also cited in your data** (41 more site(s), busiest first)
 
-- [mandelljcc.org](https://www.mandelljcc.org/index.php?category=AquaticsCenter&link=AquaticsCenterLanding&src=gendocs) — 11 class card(s)
+- [mandelljcc.org](https://www.mandelljcc.org/index.php?src=events&srctype=detail&category=JCC%20Events&refno=4541) — 1 event(s), 11 class card(s)
 - [westhartfordartleague.squarespace.com](https://westhartfordartleague.squarespace.com/kids-fall-2026-classes) — 8 class card(s)
 - [musictogetherwhfv.com](https://musictogetherwhfv.com/classes.aspx) — 6 class card(s)
-- [wehamoms.com](https://wehamoms.com/halloweenstrollregistration) — 1 event(s), 2 class card(s)
 - [teamplusone.com](https://www.teamplusone.com/kids-martial-arts-west-hartford/) — 3 class card(s)
 - [schoolofrock.com](https://www.schoolofrock.com/locations/westhartford) — 3 class card(s)
 - [riverbendbookshop.com](https://riverbendbookshop.com/event/2026-10-13/adam-and-makana-wallenta-punk-taco-vol-2-launch-party-and-drawing-workshop) — 2 event(s)
+- [patch.com](https://patch.com/connecticut/westhartford/october-west-hartford-fall-fun-festivals-more) — 2 event(s)
+- [wehamoms.com](https://wehamoms.com/) — 2 class card(s)
 - [thebookclubct.com](https://www.thebookclubct.com/classes) — 2 class card(s)
 - [westhartford.recdesk.com](https://westhartford.recdesk.com/Community/Program/Detail?programId=17294) — 2 class card(s)
 - [hartfordstitch.com](https://www.hartfordstitch.com/service-page/october-saturday-sewing-club) — 2 class card(s)
 - [ywcahartford.org](https://www.ywcahartford.org/programs/childcare/kidslink-before-after-school-program/west-hartford/) — 2 class card(s)
-- [thechildrensmuseumct.org](https://www.thechildrensmuseumct.org/full-calendar/) — 2 class card(s)
 - [stores.barnesandnoble.com](https://stores.barnesandnoble.com/event/9780062202706-22) — 1 event(s)
 - [westhartford.librarymarket.com](https://westhartford.librarymarket.com/events/week/2026/05/27) — 1 event(s)
 - [homedepot.com](https://www.homedepot.com/l/West-Hartford/CT/West-Hartford/06110/6210) — 1 event(s)
@@ -892,6 +929,7 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 - [westhartfordpride.org](https://westhartfordpride.org/) — 1 event(s)
 - [noahwebster.yapsody.com](https://noahwebster.yapsody.com/) — 1 event(s)
 - [westhartfordsaf.com](https://www.westhartfordsaf.com/) — 1 event(s)
+- [wfsb.com](https://www.wfsb.com/2024/11/07/santa-arrives-westfarms-mall-today) — 1 event(s)
 - [thelittlewanderers.com](https://www.thelittlewanderers.com/) — 1 class card(s)
 - [activekids.com](https://www.activekids.com/west-hartford-ct/baseball/baseball-leagues/miracle-league-minor-league-fall-ball-ages-4-11-years-old-2026) — 1 class card(s)
 - [wehasoccer.org](https://www.wehasoccer.org/Default.aspx?tabid=746569) — 1 class card(s)
@@ -924,16 +962,18 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Westport Country Playhouse — families](https://www.westportplayhouse.org/) | Each season: family series (Pinkalicious, Pete the Cat dates TBA). | Oct 3, 2026 |
 | [Westport Museum for History & Culture](https://westportmuseum.org/) | Seasonal. | Oct 3, 2026 |
 | [Westport Parks & Rec](https://www.westportct.gov/government/departments-a-z/parks-and-recreation) | Seasonal: PAL Rink, Learn to Skate. | Oct 3, 2026 |
+| [Earthplace month view](https://earthplace.org/events/month/2026-11/) | Monthly: Kids' Night Out, campfires, hikes, pumpkin carving. | Oct 8, 2026 |
+| [MoCA CT (via Patch user page)](https://patch.com/users/moca-ct) | Monthly: Family Fun Days and school-recess camps. | Oct 8, 2026 |
+| [Westport Weston Family Y events](https://westporty.org/events/) | Seasonal: Spooktacular, vacation day camps. | Oct 8, 2026 |
 
-**Also cited in your data** (19 more site(s), busiest first)
+**Also cited in your data** (18 more site(s), busiest first)
 
-- [westporty.org](https://westporty.org/summercamp/) — 15 class card(s)
-- [westportmoms.com](https://westportmoms.com/calendar/category/family/month/) — 6 class card(s)
 - [mocawestport.org](https://mocawestport.org/) — 6 class card(s)
-- [westporthistory.org](https://westporthistory.org/events/) — 3 class card(s)
+- [westportmoms.com](https://westportmoms.com/calendar/category/family/month/) — 5 class card(s)
+- [westportjournal.com](https://westportjournal.com/) — 4 event(s)
+- [westporthistory.org](https://westporthistory.org/event/winter-market-2/) — 1 event(s), 3 class card(s)
 - [westportdowntown.com](https://westportdowntown.com/westoberfest) — 1 event(s), 1 class card(s)
 - [levittpavilion.com](https://levittpavilion.com/) — 2 class card(s)
-- [westportjournal.com](https://westportjournal.com/) — 1 event(s)
 - [westportsoccer.org](https://www.westportsoccer.org/) — 1 class card(s)
 - [westportlittleleague.com](https://www.westportlittleleague.com/) — 1 class card(s)
 - [westportpal.org](https://westportpal.org/) — 1 class card(s)
