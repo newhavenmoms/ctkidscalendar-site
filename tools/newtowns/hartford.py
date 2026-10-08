@@ -251,3 +251,14 @@ ES.update({
  "A big community makerspace downtown with intro courses (woodworking, CNC, welding) and combat-robotics meetups; free summer STEAM program for teens. Check for youth classes.":"Un gran makerspace comunitario en el centro con cursos introductorios (carpintería, CNC, soldadura) y encuentros de robótica de combate; programa STEAM gratis en verano para adolescentes. Consulta las clases para jóvenes.",
  "7–17 years":"7–17 años",
 })
+
+# ---- patch: hartford-2026-10-08b.py ----
+ADD_PLACES={'out':[],'rain':[],'drive':[]}; REPLACE_PLACES={}; DROP_PLACES=[]
+_ES_before=dict(ES)
+# Out and About Mom blog leads (owner request Oct 8)
+ADD_PLACES["out"]+=[("Goodwin Park","A big city park in the South End with an accessible 'boundless' playground (1192 Maple Ave).","Un gran parque de la ciudad en el South End con un parque infantil accesible 'boundless' (1192 Maple Ave).")]
+ADD_PLACES["rain"]+=[("Connecticut Museum of Culture and History","The former Connecticut Historical Society, with hands-on history exhibits for families (1 Elizabeth St).","La antigua Connecticut Historical Society, con exposiciones de historia interactivas para familias (1 Elizabeth St).")]
+
+ES.update(globals().get('ES_PATCH', {}))
+for _k,_v in ADD_PLACES.items(): PLACES[_k]+=_v
+for _k in PLACES: PLACES[_k]=[REPLACE_PLACES.get(p[0],p) for p in PLACES[_k] if p[0] not in DROP_PLACES]

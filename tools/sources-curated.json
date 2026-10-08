@@ -46,6 +46,18 @@
      "url": "https://branfordhistoricalsociety.org/events/",
      "how": "November: holiday open house date. Harrison House tours are summer Saturdays only.",
      "last": "Sep 30, 2026"
+    },
+    {
+     "name": "Fired Up! studio events",
+     "url": "https://www.firedupbranford.com/studioevents",
+     "how": "Monthly; readable: tween nights, kids-only pizza parties, Santa, Noon Year's.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Branford Rec (MyRec) workshops",
+     "url": "https://branfordct.myrec.com/info/activities/program_details.aspx?ProgramID=30172",
+     "how": "Monthly: Chef Mary cooking, Play-Well LEGO, holiday programs.",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": []
@@ -290,6 +302,30 @@
      "url": "https://patch.com/connecticut/essex-chester-deepriver/calendar",
      "how": "Weekend check Oct 5: Nov 7–8 and 14–15 empty; steam-train season ends in October and holiday events start late November (accepted gap).",
      "last": "Oct 5, 2026"
+    },
+    {
+     "name": "Essex Library (Engaged Patrons)",
+     "url": "https://engagedpatrons.org/EventsCalendar.cfm?SiteID=1314",
+     "how": "Monthly; readable. Add &thisMonth=MM&thisYear=2026 for other months.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Ivoryton Village Alliance events",
+     "url": "https://www.ivorytonalliance.org/events",
+     "how": "Seasonal: Pumpkin Festival and trunk-or-treat (late Oct), Ivoryton Illuminations (early Dec).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Connecticut River Museum events",
+     "url": "https://ctrivermuseum.org/events/",
+     "how": "Seasonal: train show (Nov–Jan), Trees in the Rigging (Sunday after Thanksgiving).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Essex Park & Rec (RecDesk)",
+     "url": "https://essexct.recdesk.com/Community/Program?category=3",
+     "how": "Paste only (JavaScript list).",
+     "last": "Oct 8, 2026"
     }
    ]
   },
@@ -439,6 +475,18 @@
      "url": "https://www.glastonburyct.gov/departments/department-directory-i-z/youth-and-family-services/creative-experiences/theatrical-productions/upcoming-theater-productions-y-fs",
      "how": "Each season: kid-cast musicals (Charlie Brown, Nov 5–7).",
      "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Glastonbury Parks & Rec (MyRec) family & holiday programs",
+     "url": "https://glastonburyct.myrec.com/info/activities/program_details.aspx?ProgramID=30008",
+     "how": "Monthly; readable: playgroup parties, Family Paint Nights, Sew This!, break camps.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "River Bend Bookshop — Glastonbury events",
+     "url": "https://riverbendbookshop.com/events/tags/glastonbury-event",
+     "how": "Monthly; use the tag page (the calendar view shows only one event).",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": [
@@ -538,6 +586,18 @@
      "url": "https://patch.com/connecticut/guilford/calendar",
      "how": "Weekend check Oct 5: Nov 14–15 had nothing kid-focused (accepted gap).",
      "last": "Oct 5, 2026"
+    },
+    {
+     "name": "Guilford Art Center youth classes & workshops",
+     "url": "https://guilfordartcenter.org/about-the-school/art-classes-for-youth-teens/",
+     "how": "Monthly; readable. One-day kids' workshops (Halloween, Day of the Dead, Thanksgiving, Drop & Shop in December).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Visit Guilford CT events",
+     "url": "https://visitguilfordct.com/events/",
+     "how": "Monthly; readable; carries land-trust walks.",
+     "last": "Oct 8, 2026"
     }
    ]
   },
@@ -609,6 +669,12 @@
      "name": "Macaroni Kid Wallingford/New Haven",
      "url": "https://wallingford.macaronikid.com",
      "how": "Weekly. Says it covers New Haven and surrounding towns; Hamden not named. Calendar is 403 to automated reading.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Out and About Mom (blog)",
+     "url": "https://www.outandaboutmom.com/places-weve-been/links/",
+     "how": "Evergreen leads only (posts 2011–2015, by town): playgrounds and places. Confirm each is still open before adding.",
      "last": "Oct 8, 2026"
     }
    ]
@@ -825,6 +891,18 @@
      "url": "https://www.middlesexchamber.com/holiday-on-main-street/",
      "how": "Early November: confirm tree lighting dates.",
      "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Middletown Rec (MyRec) family programs",
+     "url": "https://middletownct.myrec.com/info/activities/program_details.aspx?ProgramID=29998",
+     "how": "Monthly: family bingo, Curious Creatures, Superhero Training Day, Van Vleck Kids' Nights, nature walks.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Wadsworth Mansion event calendar",
+     "url": "https://www.wadsworthmansion.com/event-calendar/a-christmas-carol/",
+     "how": "Seasonal: Nutcracker and immersive Christmas Carol (December).",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": []
@@ -995,6 +1073,24 @@
      "url": "https://www.newtownbee.com/",
      "how": "Weekly: tree lightings, Halloween, local events.",
      "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Newtown Bee calendar",
+     "url": "https://www.newtownbee.com/calendar/?calendar_day=2026-10-24",
+     "how": "Weekly; readable by day; event_id pages give full details.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Edmond Town Hall",
+     "url": "https://edmondtownhall.org/gettickets/",
+     "how": "Monthly: free family movies, kids' cooking, youth musicals.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Catherine Violet Hubbard Animal Sanctuary events",
+     "url": "https://www.cvhfoundation.org/events/",
+     "how": "Monthly; dates readable (Amilia detail pages blocked).",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": []
@@ -1092,6 +1188,30 @@
      "url": "https://patch.com/connecticut/old-saybrook-ct/calendar",
      "how": "Monthly: Clark Community Park nature walks, Kate family shows (e.g., Missoula Children's Theatre), library programs.",
      "last": "Oct 5, 2026"
+    },
+    {
+     "name": "Acton Library newsletter (PDF)",
+     "url": "https://actonlibrary.org/wp-content/uploads/2026-NovDec.pdf",
+     "how": "Every two months. Readable PDF with the whole program grid and closures; the Assabet calendar is stale or 403, so use this (or paste the calendar).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "The Kate — events list",
+     "url": "https://www.thekate.org/events/",
+     "how": "Monthly. The list view is readable through 2027 (the homepage shows two weeks). Kids' shows: Ballet Spooktacular, panto, Barter Players.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Saybrook Starlight Festival",
+     "url": "https://www.sayoldsaybrook.com/saybrook-starlight-festival",
+     "how": "Each November, for the 2026 schedule (first Saturday of December).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Saybrook Point Resort special events",
+     "url": "https://www.saybrook.com/dine/special-events/",
+     "how": "Late October, for Brunch with Santa times.",
+     "last": "Oct 8, 2026"
     }
    ]
   },
@@ -1337,6 +1457,18 @@
      "url": "https://www.trumbull-ct.gov/169/Events",
      "how": "Fall Festival, Costume Swap, Tree Lighting dates. Town calendar blocks automated reading.",
      "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Trumbull Nature & Arts Center family programs",
+     "url": "https://www.trumbullnatureandartscenter.org/community",
+     "how": "Monthly; readable, with prices and registration links.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Trumbull Library (LibCal) event pages",
+     "url": "https://trumbull.libcal.com/calendar?cid=15779",
+     "how": "Monthly. The calendar view needs a paste; single event pages list every date in a series.",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": []

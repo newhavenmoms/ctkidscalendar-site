@@ -135,3 +135,13 @@ ES.update({
  "Eli Whitney Museum & Workshop, 915 Whitney Ave":"Eli Whitney Museum & Workshop, 915 Whitney Ave",
  "The museum's A.C. Gilbert/American Flyer toy-train layout opens the day after Thanksgiving and runs into January, free. Last year it opened Nov 28. This year's dates aren't posted yet.":"La maqueta de trenes de juguete A.C. Gilbert/American Flyer del museo abre el día después de Acción de Gracias y sigue hasta enero, gratis. El año pasado abrió el 28 de nov. Las fechas de este año aún no se han publicado.",
 })
+
+# ---- patch: hamden-2026-10-08b.py ----
+ADD_PLACES={'out':[],'rain':[],'drive':[]}; REPLACE_PLACES={}; DROP_PLACES=[]
+_ES_before=dict(ES)
+# Owner request Oct 8: add Josh's Jungle (source: outandaboutmom.com, May 2015 post)
+ADD_PLACES["out"].insert(0,("Josh's Jungle (Town Center Park)","A fully fenced, accessible playground with a soft rubber surface, ramps throughout, lots of slides and climbers, and shady picnic tables; great for toddlers. Free, with a big parking lot (2761 Dixwell Ave, next to Miller Library).","Un parque infantil totalmente cercado y accesible, con superficie de goma suave, rampas por todas partes, muchos toboganes y juegos para trepar, y mesas de picnic con sombra; ideal para los más pequeños. Gratis, con un gran estacionamiento (2761 Dixwell Ave, junto a la Miller Library)."))
+
+ES.update(globals().get('ES_PATCH', {}))
+for _k,_v in ADD_PLACES.items(): PLACES[_k]+=_v
+for _k in PLACES: PLACES[_k]=[REPLACE_PLACES.get(p[0],p) for p in PLACES[_k] if p[0] not in DROP_PLACES]

@@ -42,17 +42,22 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Legacy Theatre — tickets](https://www.tix.com/ticket-sales/legacytheatrectcal/6430) | Every couple of months: family series, holiday show ('Tis the Season, Dec 9–20). Don't confuse with Legacy Theatres in Pittsburgh or Las Vegas. | Sep 30, 2026 |
 | [Shore Line Trolley Museum — events](https://events.humanitix.com/host/the-shore-line-trolley-museum) | Each season: Pumpkin Patch Trolley (Oct), Santa/holiday trolleys, storytime and sensory-friendly days. East Haven, but a Branford family favorite. | Sep 30, 2026 |
 | [Branford Historical Society — events](https://branfordhistoricalsociety.org/events/) | November: holiday open house date. Harrison House tours are summer Saturdays only. | Sep 30, 2026 |
+| [Fired Up! studio events](https://www.firedupbranford.com/studioevents) | Monthly; readable: tween nights, kids-only pizza parties, Santa, Noon Year's. | Oct 8, 2026 |
+| [Branford Rec (MyRec) workshops](https://branfordct.myrec.com/info/activities/program_details.aspx?ProgramID=30172) | Monthly: Chef Mary cooking, Play-Well LEGO, holiday programs. | Oct 8, 2026 |
 
-**Also cited in your data** (8 more site(s), busiest first)
+**Also cited in your data** (11 more site(s), busiest first)
 
 - [blackstonelibrary.org](https://www.blackstonelibrary.org/) — 16 event(s)
 - [allevents.in](https://allevents.in/branford-ct/all) — 1 event(s)
 - [patch.com](https://patch.com/connecticut/branford) — 1 event(s)
+- [runsignup.com](https://runsignup.com/Race/Info/CT/Branford/BranfordRotaryBC2Thanksgiving5K) — 1 event(s)
+- [newhavenindependent.org](https://www.newhavenindependent.org/article/veterans_day_parade_honors_all_who_served) — 1 event(s)
 - [legacytheatrect.org](https://www.legacytheatrect.org/classes) — 1 class card(s)
 - [musicalfolk.com](https://www.musicalfolk.com/OurClasses.html) — 1 class card(s)
 - [ymca.org](https://www.ymca.org/locations/soundview-family-ymca) — 1 class card(s)
 - [danceunlimitedcrew.com](https://www.danceunlimitedcrew.com/) — 1 class card(s)
 - [shiningstarzacrodanceacademyct.com](https://shiningstarzacrodanceacademyct.com/) — 1 class card(s)
+- [local.zip06.com](https://local.zip06.com/branford-ct/shoreline-school-of-art-and-music-203-481-4830) — 1 class card(s)
 
 ---
 
@@ -173,6 +178,10 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Essex Parks & Recreation (RecDesk)](https://essexct.recdesk.com/Community/Page?pageId=513) | October: Ivoryton Pumpkin Festival schedule (costume parade 4:30, carving at Bushy Hill). | Oct 4, 2026 |
 | [Bushy Hill Nature Center](https://www.bushyhill.org/) | Each season: community workshops and vacation days. | Oct 4, 2026 |
 | [Patch — Essex calendar](https://patch.com/connecticut/essex-chester-deepriver/calendar) | Weekend check Oct 5: Nov 7–8 and 14–15 empty; steam-train season ends in October and holiday events start late November (accepted gap). | Oct 5, 2026 |
+| [Essex Library (Engaged Patrons)](https://engagedpatrons.org/EventsCalendar.cfm?SiteID=1314) | Monthly; readable. Add &thisMonth=MM&thisYear=2026 for other months. | Oct 8, 2026 |
+| [Ivoryton Village Alliance events](https://www.ivorytonalliance.org/events) | Seasonal: Pumpkin Festival and trunk-or-treat (late Oct), Ivoryton Illuminations (early Dec). | Oct 8, 2026 |
+| [Connecticut River Museum events](https://ctrivermuseum.org/events/) | Seasonal: train show (Nov–Jan), Trees in the Rigging (Sunday after Thanksgiving). | Oct 8, 2026 |
+| [Essex Park & Rec (RecDesk)](https://essexct.recdesk.com/Community/Program?category=3) | Paste only (JavaScript list). | Oct 8, 2026 |
 
 **Also cited in your data** (0 more site(s), busiest first)
 
@@ -257,11 +266,14 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Historical Society of Glastonbury — events](https://hsgct.org/events/) | Every month or two: Thanksgiving Celebration and other family events. Has a calendar feed (saved in sources.json). | Sep 30, 2026 |
 | [Glastonbury farms list (town)](https://www.glastonburyct.gov/departments/department-directory-a-h/health/better-health-initiatives/glastonbury-farms-and-resources) | Each spring and fall: pick-your-own seasons, hayrides, corn mazes. | Sep 30, 2026 |
 | [Youth & Family Services — theater productions](https://www.glastonburyct.gov/departments/department-directory-i-z/youth-and-family-services/creative-experiences/theatrical-productions/upcoming-theater-productions-y-fs) | Each season: kid-cast musicals (Charlie Brown, Nov 5–7). | Oct 3, 2026 |
+| [Glastonbury Parks & Rec (MyRec) family & holiday programs](https://glastonburyct.myrec.com/info/activities/program_details.aspx?ProgramID=30008) | Monthly; readable: playgroup parties, Family Paint Nights, Sew This!, break camps. | Oct 8, 2026 |
+| [River Bend Bookshop — Glastonbury events](https://riverbendbookshop.com/events/tags/glastonbury-event) | Monthly; use the tag page (the calendar view shows only one event). | Oct 8, 2026 |
 
 **Worth adding** (not used yet)
 
-**Also cited in your data** (0 more site(s), busiest first)
+**Also cited in your data** (1 more site(s), busiest first)
 
+- [runsignup.com](https://runsignup.com/Race/CT/Glastonbury/GoodwillHalloweenHustle5K) — 1 event(s)
 
 ---
 
@@ -315,6 +327,8 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Dudley Farm Museum — events](https://dudleyfarm.com/events/) | Monthly: Harvest Day (mid-Oct), farmers' market (Sat through Oct), holiday market. | Oct 4, 2026 |
 | [Henry Whitfield State Museum](https://portal.ct.gov/decd/content/historic-preservation/04_state_museums/henry-whitfield-state-museum/events-and-exhibits) | House closed for restoration in 2026; check for reopening and events. | Oct 4, 2026 |
 | [Patch — Guilford calendar](https://patch.com/connecticut/guilford/calendar) | Weekend check Oct 5: Nov 14–15 had nothing kid-focused (accepted gap). | Oct 5, 2026 |
+| [Guilford Art Center youth classes & workshops](https://guilfordartcenter.org/about-the-school/art-classes-for-youth-teens/) | Monthly; readable. One-day kids' workshops (Halloween, Day of the Dead, Thanksgiving, Drop & Shop in December). | Oct 8, 2026 |
+| [Visit Guilford CT events](https://visitguilfordct.com/events/) | Monthly; readable; carries land-trust walks. | Oct 8, 2026 |
 
 **Also cited in your data** (0 more site(s), busiest first)
 
@@ -338,6 +352,7 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [This Week in Hamden (Substack)](https://thisweekinhamden.substack.com/p/special-edition-halloween-in-hamden-e3a) | Seasonal. Very Hamden-specific Halloween and holiday round-ups (trunk-or-treats, Elks, Keefe Center, ConnCorp), but the newest post found is fall 2024, so use it for patterns. | Oct 8, 2026 |
 | [Quinnipiac University: children & families](https://local.qu.edu/children-and-families/) | Seasonal: Boomer's Boo Bash (late October) and other community days. | Oct 8, 2026 |
 | [Macaroni Kid Wallingford/New Haven](https://wallingford.macaronikid.com) | Weekly. Says it covers New Haven and surrounding towns; Hamden not named. Calendar is 403 to automated reading. | Oct 8, 2026 |
+| [Out and About Mom (blog)](https://www.outandaboutmom.com/places-weve-been/links/) | Evergreen leads only (posts 2011–2015, by town): playgrounds and places. Confirm each is still open before adding. | Oct 8, 2026 |
 
 **Also cited in your data** (0 more site(s), busiest first)
 
@@ -418,9 +433,13 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Wadsworth Mansion — public events](https://www.wadsworthmansion.com/mec-category/public-events/) | Seasonal: Nutcracker (Nov 22), New Year's open house. | Oct 3, 2026 |
 | [Oddfellows Playhouse](https://www.oddfellows.org/) | Each season: shows, costume sale (Oct). | Oct 3, 2026 |
 | [Middlesex Chamber — Holiday on Main Street](https://www.middlesexchamber.com/holiday-on-main-street/) | Early November: confirm tree lighting dates. | Oct 3, 2026 |
+| [Middletown Rec (MyRec) family programs](https://middletownct.myrec.com/info/activities/program_details.aspx?ProgramID=29998) | Monthly: family bingo, Curious Creatures, Superhero Training Day, Van Vleck Kids' Nights, nature walks. | Oct 8, 2026 |
+| [Wadsworth Mansion event calendar](https://www.wadsworthmansion.com/event-calendar/a-christmas-carol/) | Seasonal: Nutcracker and immersive Christmas Carol (December). | Oct 8, 2026 |
 
-**Also cited in your data** (1 more site(s), busiest first)
+**Also cited in your data** (3 more site(s), busiest first)
 
+- [patch.com](https://patch.com/connecticut/middletown-ct/calendar/event/20251206/250f0d44-c1d9-4029-a9df-a6529746fc18/holiday-breakfast) — 1 event(s)
+- [wesleyan.edu](https://www.wesleyan.edu/coe/symposiaandevents/pumpkinfestival.html) — 1 event(s)
 - [midymca.org](https://www.midymca.org/) — 1 class card(s)
 
 ---
@@ -562,16 +581,23 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Newtown Youth & Family Services — Holiday Festival](https://www.newtownyouthandfamilyservices.org/) | November: festival tickets (Dec 6). | Oct 3, 2026 |
 | [Newtown Historical Society (Matthew Curtiss House)](https://newtownhistory.org/) | Spring and fall open houses. | Oct 3, 2026 |
 | [The Newtown Bee](https://www.newtownbee.com/) | Weekly: tree lightings, Halloween, local events. | Oct 3, 2026 |
+| [Newtown Bee calendar](https://www.newtownbee.com/calendar/?calendar_day=2026-10-24) | Weekly; readable by day; event_id pages give full details. | Oct 8, 2026 |
+| [Edmond Town Hall](https://edmondtownhall.org/gettickets/) | Monthly: free family movies, kids' cooking, youth musicals. | Oct 8, 2026 |
+| [Catherine Violet Hubbard Animal Sanctuary events](https://www.cvhfoundation.org/events/) | Monthly; dates readable (Amilia detail pages blocked). | Oct 8, 2026 |
 
-**Also cited in your data** (7 more site(s), busiest first)
+**Also cited in your data** (11 more site(s), busiest first)
 
 - [chboothlibrary.libcal.com](https://chboothlibrary.libcal.com/calendar?cid=20981&t=d&cal%5B%5D=20981) — 14 event(s)
+- [runsignup.com](https://runsignup.com/Race/CT/Newtown/RaceforCatherine) — 2 event(s)
 - [newtowncommunitycenter.org](https://newtowncommunitycenter.org/) — 1 event(s), 1 class card(s)
 - [halloweenonmain.com](https://www.halloweenonmain.com/) — 1 event(s)
 - [simpletix.com](https://www.simpletix.com/e/jack-o-lantern-jamboree-2026-tickets-295051) — 1 event(s)
+- [onthestage.tickets](https://onthestage.tickets/show/newtown-stage-company/6a9e389e4e3e5e9fc544b375) — 1 event(s)
+- [monroe.macaronikid.com](https://monroe.macaronikid.com/events/657b39fe31ce3b06db4d88ed/-noon-years-eve_-everwonder-newtown) — 1 event(s)
 - [swct.soccershots.com](https://swct.soccershots.com/) — 1 class card(s)
 - [fairfieldcountytennis.net](https://www.fairfieldcountytennis.net/) — 1 class card(s)
 - [teamunify.com](https://www.teamunify.com/team/nent/page/home) — 1 class card(s)
+- [newtownstageco.com](https://newtownstageco.com/fall-2026) — 1 class card(s)
 
 ---
 
@@ -635,6 +661,10 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Old Saybrook Parks & Recreation (MyRec)](https://oldsaybrookct.myrec.com/info/activities/default.aspx) | Each season: preschool programs, Soccer Shots, martial arts, 'Tis the Season, Trunk or Treat (late Oct). | Oct 4, 2026 |
 | [Greater Old Saybrook Chamber — events](https://business.goschamber.com/events/) | Each summer: Arts & Crafts Festival on the Town Green (first weekend of October; Oct 3–4 in 2026), Chili Fest, holiday events. | Oct 5, 2026 |
 | [Patch — Old Saybrook calendar](https://patch.com/connecticut/old-saybrook-ct/calendar) | Monthly: Clark Community Park nature walks, Kate family shows (e.g., Missoula Children's Theatre), library programs. | Oct 5, 2026 |
+| [Acton Library newsletter (PDF)](https://actonlibrary.org/wp-content/uploads/2026-NovDec.pdf) | Every two months. Readable PDF with the whole program grid and closures; the Assabet calendar is stale or 403, so use this (or paste the calendar). | Oct 8, 2026 |
+| [The Kate — events list](https://www.thekate.org/events/) | Monthly. The list view is readable through 2027 (the homepage shows two weeks). Kids' shows: Ballet Spooktacular, panto, Barter Players. | Oct 8, 2026 |
+| [Saybrook Starlight Festival](https://www.sayoldsaybrook.com/saybrook-starlight-festival) | Each November, for the 2026 schedule (first Saturday of December). | Oct 8, 2026 |
+| [Saybrook Point Resort special events](https://www.saybrook.com/dine/special-events/) | Late October, for Brunch with Santa times. | Oct 8, 2026 |
 
 **Also cited in your data** (0 more site(s), busiest first)
 
@@ -777,9 +807,12 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Trumbull Farmers' Market](https://www.trumbull-ct.gov/1018/Trumbull-Farmers-Market) | Each spring for the new season (ends Oct 15 this year). | Sep 29, 2026 |
 | [Trumbull Parks & Recreation (MyRec)](https://trumbullct.myrec.com/info/activities/) | Each season: classes; some programs residents-only. | Oct 3, 2026 |
 | [Town of Trumbull — events](https://www.trumbull-ct.gov/169/Events) | Fall Festival, Costume Swap, Tree Lighting dates. Town calendar blocks automated reading. | Oct 3, 2026 |
+| [Trumbull Nature & Arts Center family programs](https://www.trumbullnatureandartscenter.org/community) | Monthly; readable, with prices and registration links. | Oct 8, 2026 |
+| [Trumbull Library (LibCal) event pages](https://trumbull.libcal.com/calendar?cid=15779) | Monthly. The calendar view needs a paste; single event pages list every date in a series. | Oct 8, 2026 |
 
-**Also cited in your data** (0 more site(s), busiest first)
+**Also cited in your data** (1 more site(s), busiest first)
 
+- [patch.com](https://patch.com/connecticut/trumbull/trumbull-hold-menorah-lighting-town-hall) — 2 event(s)
 
 ---
 

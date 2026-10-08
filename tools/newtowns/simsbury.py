@@ -212,3 +212,14 @@ ES.update({
  "Drama and musical-theater classes from age 3: Once Upon a Twist (3–7), Mini-Mainstage (6–8) and a SpongeBob musical class (9–13). Free trial class; 860-523-5900 x16.":"Clases de teatro y teatro musical desde los 3 años: Once Upon a Twist (3–7), Mini-Mainstage (6–8) y una clase del musical de SpongeBob (9–13). Clase de prueba gratis; 860-523-5900 ext. 16.",
  "3–13 years":"3–13 años",
 })
+
+# ---- patch: simsbury-2026-10-08b.py ----
+ADD_PLACES={'out':[],'rain':[],'drive':[]}; REPLACE_PLACES={}; DROP_PLACES=[]
+_ES_before=dict(ES)
+# Out and About Mom blog leads (owner request Oct 8): public parks
+ADD_PLACES["out"]+=[("Rotary Park Boundless Playground","An accessible 'boundless' playground designed so kids of all abilities can play together (Rotary Park, Weatogue).","Un parque infantil accesible 'boundless', diseñado para que niños de todas las capacidades jueguen juntos (Rotary Park, Weatogue)."),
+                    ("Stratton Brook State Park","A state park with an easy, flat rail-trail loop, a pond and picnic areas; good for strollers and bikes.","Un parque estatal con un circuito plano y fácil sobre una antigua vía de tren, un estanque y áreas de picnic; bueno para carriolas y bicicletas.")]
+
+ES.update(globals().get('ES_PATCH', {}))
+for _k,_v in ADD_PLACES.items(): PLACES[_k]+=_v
+for _k in PLACES: PLACES[_k]=[REPLACE_PLACES.get(p[0],p) for p in PLACES[_k] if p[0] not in DROP_PLACES]

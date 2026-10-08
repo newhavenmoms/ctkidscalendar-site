@@ -75,6 +75,14 @@ window.TOWN = {
   "dudley-farm": [
    "Dudley Farm Museum",
    "2351 Durham Rd, North Guilford"
+  ],
+  "guilford-art-center": [
+   "Guilford Art Center",
+   "411 Church St"
+  ],
+  "bishops": [
+   "Bishop's Orchards (pick-your-own fields)",
+   "480 New England Rd"
   ]
  },
  "venueMeta": {
@@ -87,6 +95,14 @@ window.TOWN = {
    0
   ],
   "dudley-farm": [
+   null,
+   0
+  ],
+  "guilford-art-center": [
+   null,
+   1
+  ],
+  "bishops": [
    null,
    0
   ]
@@ -161,15 +177,6 @@ window.TOWN = {
    "when": [
     {
      "from": "2026-10-06",
-     "t": [
-      [
-       "10:00",
-       "10:45"
-      ]
-     ]
-    },
-    {
-     "from": "2026-10-13",
      "t": [
       [
        "10:00",
@@ -316,7 +323,7 @@ window.TOWN = {
      ]
     },
     {
-     "from": "2026-10-15",
+     "from": "2026-10-14",
      "t": [
       [
        "09:30",
@@ -604,7 +611,7 @@ window.TOWN = {
   {
    "v": "guilford-library",
    "free": true,
-   "price": "Free",
+   "price": "Free (full; waitlist only)",
    "src": "https://guilfordfreelibrary.org/events/audience/children/",
    "t": "Junior Chess Class",
    "when": [
@@ -960,6 +967,130 @@ window.TOWN = {
    "drop": true,
    "src": "https://visitnewhaven.com/events/guilfords-farmers-market-at-the-dudley-farm/",
    "blurb": "Local produce and handmade crafts on the grounds of a farm kept as it was in 1900. Saturdays through October 31."
+  },
+  {
+   "t": "Bishop's Fall Festival",
+   "v": "bishops",
+   "special": "fall",
+   "when": [
+    {
+     "from": "2026-10-08",
+     "to": "2026-11-01",
+     "t": [
+      [
+       "10:00",
+       "17:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "free": false,
+   "price": "$10–18 all-access (2 and under free)",
+   "drop": true,
+   "src": "https://www.bishopsorchards.com/fall-festival",
+   "blurb": "A 4-acre corn maze, bounce pads, gem mining, Tire Mountain and pedal karts, plus pick-your-own apples, pears and pumpkins. The Apple Train, Mega Slide and wagon rides run on weekends; cheaper on weekdays."
+  },
+  {
+   "t": "CT Spooky Writing Contest",
+   "v": "guilford-library",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-08",
+     "to": "2026-10-31",
+     "t": []
+    }
+   ],
+   "ages": "Children's category ages 6–11",
+   "a": [
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "src": "https://guilfordfreelibrary.org/events/event/ct-spooky-writing-contest/",
+   "blurb": "Write an original spooky story set in Connecticut and submit it online by Oct 31. Winners get a prize and are published in the library's Spooky CT volume."
+  },
+  {
+   "t": "Kids' Magical Halloween Workshop",
+   "v": "guilford-art-center",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-24",
+     "t": [
+      [
+       "12:30",
+       "15:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Ages 5+",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "free": false,
+   "price": "$37.50 + $20 materials",
+   "rsvp": true,
+   "src": "https://guilfordartcenter.org/classes/kids-magical-halloween-workshop/",
+   "blurb": "Clay and mixed-media spooky art: witches, animal familiars, luminaries and potions."
+  },
+  {
+   "t": "Day of the Dead Workshop",
+   "v": "guilford-art-center",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-11-01",
+     "t": [
+      [
+       "12:00",
+       "14:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "Ages 7+",
+   "a": [
+    "big"
+   ],
+   "free": false,
+   "price": "$37.50 + $15 materials",
+   "rsvp": true,
+   "src": "https://guilfordartcenter.org/classes/mexican-day-of-the-dead-workshop/",
+   "blurb": "Make a clay skull luminary and decorate it with jewels, sequins and marigolds."
+  },
+  {
+   "t": "Thanksgiving Harvest Baskets Workshop",
+   "v": "guilford-art-center",
+   "when": [
+    {
+     "from": "2026-11-21",
+     "t": [
+      [
+       "12:00",
+       "14:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "Ages 7+",
+   "a": [
+    "big"
+   ],
+   "free": false,
+   "price": "$37.50 + $20 materials",
+   "rsvp": true,
+   "src": "https://guilfordartcenter.org/classes/thanksgiving-harvest-baskets-workshop/",
+   "blurb": "Kids make a clay cornucopia centerpiece with mini pumpkins, acorns and corn, plus a personalized placemat for the holiday table."
   }
  ],
  "tba": [
@@ -969,6 +1100,34 @@ window.TOWN = {
    "w": "Guilford Green",
    "p": "Guilford lights its tree on the Green each December, usually alongside the Guilford Foundation's luminaria. This year's date isn't posted yet.",
    "src": "https://www.ci.guilford.ct.us/"
+  },
+  {
+   "g": "hol",
+   "t": "Santa's Workshop",
+   "w": "Guilford Community Center, 32 Church St",
+   "p": "Parks & Rec's photos with Santa, holiday crafts, pizza and dessert, the same Friday as the tree lighting ($35 per family, register ahead). Last year it was Dec 5, 4–5:30. This year's date isn't posted yet.",
+   "src": "https://new.patch.com/connecticut/guilford/calendar/event/20251205/20741e3f-91c3-45b6-a930-8e3ec62d8e1c/santas-workshop"
+  },
+  {
+   "g": "hol",
+   "t": "Holiday Market at Dudley Farm",
+   "w": "Dudley Farm, 2351 Durham Rd, North Guilford",
+   "p": "A free market with 30+ artisans in the Munger Barn plus a paper-ornament craft in the decorated farmhouse, the first two weekends of December, 10–2. This year's dates aren't posted yet.",
+   "src": "https://ctvisit.com/events/holiday-market-dudley-farm"
+  },
+  {
+   "g": "hol",
+   "t": "Fire & Ice Menorah Lighting",
+   "w": "Guilford Green",
+   "p": "Chabad of the Shoreline carves a giant ice menorah and dreidel on the Green, with donuts, cider and free menorahs. It happens during Hanukkah (Dec 4–12 this year); the date isn't posted yet.",
+   "src": "https://events.newhavenarts.org/events/fire-ice-menorah-lighting-on-the-guilford-green"
+  },
+  {
+   "g": "hol",
+   "t": "Drop & Shop Art Workshops",
+   "w": "Guilford Art Center, 411 Church St",
+   "p": "Kids make art for two hours while parents shop the Holiday Expo ($25 per child, register ahead). Last year: Saturdays Dec 13 and 20, 12–2. This year's dates aren't posted yet.",
+   "src": "https://patch.com/connecticut/guilford/calendar/event/20251213/24c1aff4-8c29-402c-bdd1-84a445ccd349/guilford-art-center-helps-parents-check-off-holiday-lists-with-drop-shop-art-workshops"
   }
  ],
  "classes": [
@@ -1124,14 +1283,14 @@ window.TOWN = {
             <li><strong>Chaffinch Island Park</strong><span data-es="Un parque costero rocoso con senderos cortos, lugares para picnic y lindas vistas del estrecho.">A rocky shoreline park with short trails, picnic spots and great views of the Sound.</span></li>
             <li><strong>Westwoods Trails</strong><span data-es="Kilómetros de senderos en el bosque con formaciones rocosas y un lago, incluidos circuitos cortos para piernas pequeñas.">Miles of wooded trails with rock formations and a lake, including short loops for little legs.</span></li>
             <li><strong>Bishop&#x27;s Orchards</strong><span data-es="Una granja familiar de seis generaciones: frutas para cosechar en temporada, calabazas, mercado y heladería.">A six-generation family farm: pick-your-own fruit in season, pumpkins, a farm market and a creamery.</span></li>
-            <li><strong><a href="https://dudleyfarm.com/" target="_blank" rel="noopener">Dudley Farm Museum</a></strong><span data-es="Un museo granja en North Guilford conservado como era hacia 1900, con graneros, huertos, mercado de agricultores los sábados hasta octubre y un Harvest Day en otoño.">A farm museum in North Guilford kept as it was around 1900, with barns, gardens, a Saturday farmers&#x27; market through October and a fall Harvest Day.</span></li>
+            <li><strong>Dudley Farm Museum</strong><span data-es="Un museo granja en North Guilford conservado como era hacia 1900, con graneros, huertos, mercado de agricultores los sábados hasta octubre y un Harvest Day en otoño.">A farm museum in North Guilford kept as it was around 1900, with barns, gardens, a Saturday farmers&#x27; market through October and a fall Harvest Day.</span></li>
           </ul>
         </div>
         <div>
           <h3 class="rain" data-i18n="rainyDay">Rainy day, indoors</h3>
           <ul>
-            <li><strong><a href="https://guilfordfreelibrary.org/" target="_blank" rel="noopener">Guilford Free Library</a></strong><span data-es="Cuentacuentos casi todos los días entre semana, visitas de perros de lectura y una gran sala infantil.">Storytimes most weekdays, reading-dog visits and a big children&#x27;s room.</span></li>
-            <li><strong><a href="https://portal.ct.gov/decd/content/historic-preservation/04_state_museums/henry-whitfield-state-museum/plan-your-visit" target="_blank" rel="noopener">Henry Whitfield State Museum</a></strong><span data-es="La casa más antigua de Connecticut (1639) está cerrada por restauración en 2026, pero la exposición de arqueología del centro de visitantes abre entre semana de 10 a 4, y afuera hay un StoryWalk y un jardín de polinizadores. Menores de 5 años gratis.">Connecticut&#x27;s oldest house (1639) is closed for restoration in 2026, but the visitor center&#x27;s archaeology exhibit is open weekdays 10–4, and there&#x27;s a StoryWalk and pollinator garden outside. Kids 5 and under free.</span></li>
+            <li><strong>Guilford Free Library</strong><span data-es="Cuentacuentos casi todos los días entre semana, visitas de perros de lectura y una gran sala infantil.">Storytimes most weekdays, reading-dog visits and a big children&#x27;s room.</span></li>
+            <li><strong>Henry Whitfield State Museum</strong><span data-es="La casa más antigua de Connecticut (1639) está cerrada por restauración en 2026, pero la exposición de arqueología del centro de visitantes abre entre semana de 10 a 4, y afuera hay un StoryWalk y un jardín de polinizadores. Menores de 5 años gratis.">Connecticut&#x27;s oldest house (1639) is closed for restoration in 2026, but the visitor center&#x27;s archaeology exhibit is open weekdays 10–4, and there&#x27;s a StoryWalk and pollinator garden outside. Kids 5 and under free.</span></li>
             <li><strong>Guilford&#x27;s historic house museums</strong><span data-es="La Hyland House, la Thomas Griswold House y la Medad Stone Tavern abren por temporada para visitas y eventos; consulta el horario de cada museo.">The Hyland House, the Thomas Griswold House and the Medad Stone Tavern open seasonally for tours and events; check each museum&#x27;s schedule.</span></li>
             <li><strong>Breakwater Books</strong><span data-es="Una librería independiente junto al Green (81 Whitfield St) con una sala dedicada a los niños.">An independent bookstore on the Green (81 Whitfield St) with a dedicated children&#x27;s room.</span></li>
             <li><strong>The Purple Bear</strong><span data-es="Una juguetería independiente junto al Green (63 Whitfield St) con envoltura de regalo gratis.">An independent toy store on the Green (63 Whitfield St) with free gift wrapping.</span></li>
@@ -1142,8 +1301,8 @@ window.TOWN = {
           <h3 class="drive" data-i18n="shortDrive">Worth a short drive</h3>
           <ul>
             <li><strong>Hammonasset Beach State Park</strong><span data-es="La playa pública más larga de Connecticut, además de los tanques táctiles y senderos del Meigs Point Nature Center, en Madison.">Connecticut&#x27;s longest public beach, plus the Meigs Point Nature Center&#x27;s touch tanks and trails, just over the line in Madison.</span></li>
-            <li><strong><a href="https://essexsteamtrain.com/" target="_blank" rel="noopener">Essex Steam Train &amp; Riverboat</a></strong><span data-es="Paseos en tren de vapor antiguo junto al río Connecticut, incluido el North Pole Express navideño.">Vintage steam-train rides along the Connecticut River, including the holiday North Pole Express.</span></li>
-            <li><strong><a href="https://lymanorchards.com/pick-your-own/" target="_blank" rel="noopener">Lyman Orchards</a></strong><span data-es="Manzanas y calabazas para cosechar, laberinto de maíz y actividades de fin de semana en otoño en Middlefield.">Pick-your-own apples and pumpkins, a corn maze and fall weekend activities in Middlefield.</span></li>
+            <li><strong>Essex Steam Train &amp; Riverboat</strong><span data-es="Paseos en tren de vapor antiguo junto al río Connecticut, incluido el North Pole Express navideño.">Vintage steam-train rides along the Connecticut River, including the holiday North Pole Express.</span></li>
+            <li><strong>Lyman Orchards</strong><span data-es="Manzanas y calabazas para cosechar, laberinto de maíz y actividades de fin de semana en otoño en Middlefield.">Pick-your-own apples and pumpkins, a corn maze and fall weekend activities in Middlefield.</span></li>
           </ul>
         </div>
       </div>

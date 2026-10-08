@@ -1,0 +1,3 @@
+# Out and About Mom blog leads (owner request Oct 8): public parks
+ADD_PLACES["out"]+=[("Rotary Park Boundless Playground","An accessible 'boundless' playground designed so kids of all abilities can play together (Rotary Park, Weatogue).","Un parque infantil accesible 'boundless', diseñado para que niños de todas las capacidades jueguen juntos (Rotary Park, Weatogue)."),
+                    ("Stratton Brook State Park","A state park with an easy, flat rail-trail loop, a pond and picnic areas; good for strollers and bikes.","Un parque estatal con un circuito plano y fácil sobre una antigua vía de tren, un estanque y áreas de picnic; bueno para carriolas y bicicletas.")]
