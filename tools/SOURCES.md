@@ -92,6 +92,8 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Same site — facility calendar](https://cheshirect.myrec.com/info/calendar/list.aspx?FacilityID=0&AreaID=0) | Optional skim. Only shows a few days; mostly team practices and rentals. Good for spotting new Youth Services one-offs. | Sep 30, 2026 |
 | [Cheshire Historical Society](https://www.cheshirehistory.org/) | Every month or two. House museum open 2nd & 4th Sundays (exceptions are posted as an image on the home page). Spirits Alive cemetery tour each October. | Sep 30, 2026 |
 | [Cheshire Land Trust](https://www.cheshirelandtrust.org/) | Before Thanksgiving and in December. Hike dates are in the newsletter PDF and on [Facebook](https://www.facebook.com/CheshireLandTrustCT/) — Claude can't read those, so check by eye. | Sep 30, 2026 |
+| [St. Peter's Episcopal events](https://stpeterscheshire.org/) | Seasonal (pumpkin patch, Christmas bazaar); read individual /events/ pages. | Oct 8, 2026 |
+| [Cheshire Library LibCal day endpoint](https://cheshirelibrary.libcal.com/ajax/calendar/list?c=1860&date=2026-12-01) | Monthly; readable per day but rate-limits quickly. | Oct 8, 2026 |
 
 **Worth adding** (not used yet)
 
@@ -103,12 +105,13 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 - Cheshire, **Massachusetts** (cheshirepubliclibrary.org) — a different library with a Tuesday 11am storytime that keeps showing up in research.
 - Historical Society of **Cheshire County** — that's Keene, New Hampshire.
 
-**Also cited in your data** (11 more site(s), busiest first)
+**Also cited in your data** (12 more site(s), busiest first)
 
+- [patch.com](https://patch.com/connecticut/cheshire/winter-festival-cheshire-high-school-what-know) — 2 event(s)
 - [cheshirelibrary.org](https://www.cheshirelibrary.org/events) — 1 event(s)
 - [cheshire.k12.ct.us](https://www.cheshire.k12.ct.us/for-parents/community-bulletin-board/) — 1 event(s)
 - [oldbishopfarms.com](https://www.oldbishopfarms.com/) — 1 event(s)
-- [jbsports.com](https://www.jbsports.com/) — 1 event(s)
+- [runsignup.com](https://runsignup.com/Race/CT/Cheshire/HotCOCO5K) — 1 event(s)
 - [musicalfolk.com](https://www.musicalfolk.com/Cheshire.html) — 1 class card(s)
 - [communityplayatelier.com](https://communityplayatelier.com/programs) — 1 class card(s)
 - [catsgymnastics.com](https://www.catsgymnastics.com/) — 1 class card(s)
@@ -152,11 +155,17 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Darien Arts Center — class catalog](https://register.darienarts.org/CourseCatalog/CatalogView.asp?ID=72) | Each season: classes. No public kids' shows in fall 2026. | Oct 3, 2026 |
 | [Darien Parks & Recreation](https://www.darienct.gov/202/Parks-Recreation) | Seasonal brochure and town events. | Oct 3, 2026 |
 | [Museum of Darien](https://museumofdarien.org/) | Holiday and family events. | Oct 3, 2026 |
+| [Darien Nature Center events](https://www.dariennaturecenter.org/upcoming-events) | Monthly: early-dismissal programs, pumpkin decorating, vacation camps (event pages omit the year). | Oct 8, 2026 |
+| [Darien Arts Center Nutcracker tickets](https://register.darienarts.org/CourseCatalog/Tickets/EventView.asp?EventID=100) | Annual (early-mid December). | Oct 8, 2026 |
+| [Museum of Darien events](https://museumofdarien.org/events/) | Monthly; readable with prices. | Oct 8, 2026 |
 
-**Also cited in your data** (7 more site(s), busiest first)
+**Also cited in your data** (10 more site(s), busiest first)
 
 - [darien-ymca.org](https://darien-ymca.org/child-care/summer-camp/) — 1 event(s), 13 class card(s)
+- [patch.com](https://patch.com/connecticut/darien/calendar/event/20251129/ffc5d697-e674-4cf4-96b0-e4ab34a3bd0d/spirit-of-the-season-launch-in-darien) — 2 event(s)
+- [runsignup.com](https://runsignup.com/Race/CT/Darien/DarienDepotOverstuffed) — 1 event(s)
 - [newcanaandarienmoms.com](https://newcanaandarienmoms.com/calendar/) — 1 event(s)
+- [darienite.com](https://darienite.com/dca-annual-halloween-parade-coming-friday-oct-29-downtown-267862) — 1 event(s)
 - [darienschoolofdance.com](https://darienschoolofdance.com/) — 1 class card(s)
 - [dariensoccer.org](https://dariensoccer.org/) — 1 class card(s)
 - [darienlittleleague.com](https://www.darienlittleleague.com/) — 1 class card(s)
@@ -295,8 +304,11 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Greenwich Arts Council — events](https://www.greenwichartscouncil.org/events) | Monthly: author visits, workshops. | Oct 3, 2026 |
 | [Town of Greenwich — special events](https://www.greenwichct.gov/493/Special-Events-Concerts) | Seasonal town events. | Oct 3, 2026 |
 | [Greenwich Botanical Center — children's programs](https://greenwichbotanicalcenter.org/childrens-programs/) | Each season. | Oct 3, 2026 |
+| [Greenwich Pulse weekly newsletter](https://buttondown.com/greenwichpulse/archive/) | Weekly (Thursdays); lists kid events with ages and links. | Oct 8, 2026 |
+| [Greenwich Recreation newsletter](https://www.greenwichct.gov/2708/Recreation-Newsletter) | Monthly: rink specials, Santa's Holiday Village, registration dates. | Oct 8, 2026 |
+| [Audubon Greenwich events](https://www.audubon.org/events?view_type=row&location=Greenwich+Audubon+Center) | Monthly; readable list (ticket pages fail). | Oct 8, 2026 |
 
-**Also cited in your data** (18 more site(s), busiest first)
+**Also cited in your data** (21 more site(s), busiest first)
 
 - [greenwichmoms.com](https://www.greenwichmoms.com/) — 2 event(s), 28 class card(s)
 - [greenwichymca.org](https://greenwichymca.org/programs/youth/sports-art-enrichment/) — 13 class card(s)
@@ -312,7 +324,10 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 - [greenwichfarmersmarketct.com](https://www.greenwichfarmersmarketct.com/) — 1 event(s)
 - [cityeventsct.com](https://www.cityeventsct.com/events/og-farmers-market-2026) — 1 event(s)
 - [abilis.us](https://www.abilis.us/) — 1 event(s)
+- [runscore.runsignup.com](https://runscore.runsignup.com/Race/CT/Greenwich/GreenwichAllianceTurkeyTrot) — 1 event(s)
 - [greenwichtownparty.org](https://www.greenwichtownparty.org/) — 1 event(s)
+- [greenwichfreepress.com](https://greenwichfreepress.com/news/business/greenwich-moms-halloween-greet-treat-returns-to-greenwich-ave-on-oct-26-223109/) — 1 event(s)
+- [chabadgreenwich.org](https://www.chabadgreenwich.org/6712206) — 1 event(s)
 - [gcyha.net](https://www.gcyha.net/) — 1 class card(s)
 - [bgcg.org](https://bgcg.org/what-we-do/after-school-programs/) — 1 class card(s)
 - [foodshednetwork.org](https://foodshednetwork.org/) — 1 class card(s)
@@ -358,6 +373,8 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Quinnipiac University: children & families](https://local.qu.edu/children-and-families/) | Seasonal: Boomer's Boo Bash (late October) and other community days. | Oct 8, 2026 |
 | [Macaroni Kid Wallingford/New Haven](https://wallingford.macaronikid.com) | Weekly. Says it covers New Haven and surrounding towns; Hamden not named. Calendar is 403 to automated reading. | Oct 8, 2026 |
 | [Out and About Mom (blog)](https://www.outandaboutmom.com/places-weve-been/links/) | Evergreen leads only (posts 2011–2015, by town): playgrounds and places. Confirm each is still open before adding. | Oct 8, 2026 |
+| [Eli Whitney Museum events](https://www.eliwhitney.org/events) | Seasonal: vacation workshops, train display (opens day after Thanksgiving). | Oct 8, 2026 |
+| [Best Video Film & Cultural Center events](https://www.bestvideo.com/events) | Monthly: occasional kids' music, cartoons, family yoga. | Oct 8, 2026 |
 
 **Also cited in your data** (0 more site(s), busiest first)
 
@@ -379,6 +396,8 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Hartford Symphony / Connecticut Ballet Nutcracker](https://hartfordsymphony.org/portfolio-items/the-nutcracker-2026/) | Annual (Dec 19–20, 2026). | Oct 7, 2026 |
 | [Winterfest Hartford](https://www.wfsb.com/2025/11/26/winterfest-returns-hartfords-bushnell-park-15th-year/) | Annual: Black Friday into January; 2026 dates not posted Oct 7. | Oct 7, 2026 |
 | [Macaroni Kid Hartford (mom-run events newsletter)](https://hartford.macaronikid.com) | Weekly. Covers Hartford, West Hartford, Avon, Canton and Simsbury (Farmington Valley too). The events calendar returns 403 to automated reading, so read it in a browser or paste it. | Oct 8, 2026 |
+| [Connecticut Science Center events](https://ctsciencecenter.org/event/holiday-enchantment) | Monthly: Toddler Tuesdays, Pokémon Day, Holiday Enchantment. | Oct 8, 2026 |
+| [Hartford Public Library data feed](https://programs.hplct.org/eeventcaldata?event_type=0) | Monthly; the Communico JSON endpoint is readable even though the calendar page is JavaScript-only. | Oct 8, 2026 |
 
 **Also cited in your data** (0 more site(s), busiest first)
 
@@ -557,13 +576,15 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Yale Peabody Museum — events](https://peabody.yale.edu/events) | Monthly. | Oct 3, 2026 |
 | [Blessed Michael McGivney Pilgrimage Center (formerly KofC Museum)](https://www.kofcmuseum.org/kms/en/index.html) | November: Christmas crèche exhibit dates. | Oct 3, 2026 |
 | [Ralph Walker Rink (Elm City Sports Group)](https://www.ralphwalkericerink.com/public-skate) | October–March: public skate sessions. New operator as of Sep 2026. | Oct 3, 2026 |
+| [The Shops at Yale holiday page](https://theshopsatyale.com/holiday/) | Each November: carolers, ice carving, Santa, tree and menorah lighting dates. | Oct 8, 2026 |
+| [YCBA programs](https://britishart.yale.edu/exhibitions-programs?page=0) | Monthly; paginated (Exploring Art-ism, family programs). | Oct 8, 2026 |
+| [New Haven Symphony family events](https://newhavensymphony.org/events/category/holiday-extravaganza-concerts/) | Seasonal; under 18 free with an adult. | Oct 8, 2026 |
 
-**Also cited in your data** (24 more site(s), busiest first)
+**Also cited in your data** (26 more site(s), busiest first)
 
 - [commongroundct.org](https://www.commongroundct.org/calendar/open-farm-day) — 2 event(s), 1 class card(s)
 - [creativeartsworkshop.org](https://creativeartsworkshop.org/courses/no-term/art-with-you-and-me/) — 2 event(s), 1 class card(s)
 - [cityseed.org](https://www.cityseed.org) — 2 event(s)
-- [theshopsatyale.com](https://theshopsatyale.com/chalkart/) — 2 event(s)
 - [eventbrite.com](https://www.eventbrite.com/e/2nd-annual-faith-family-fall-festival-tickets-1993959908763) — 2 event(s)
 - [nmsnewhaven.org](https://nmsnewhaven.org/music-classes) — 2 class card(s)
 - [newhavenballet.org](https://newhavenballet.org/programs-tuition/programs-tuition-childrens/) — 2 class card(s)
@@ -573,10 +594,13 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 - [pebblestoys.com](https://pebblestoys.com/pages/contact) — 1 event(s)
 - [trinitynewhaven.org](https://www.trinitynewhaven.org/children-youth-and-family-ministry-events) — 1 event(s)
 - [cpcnewhaven.org](https://cpcnewhaven.org/sundays.html) — 1 event(s)
-- [britishart.yale.edu](https://britishart.yale.edu/exhibitions-programs/make-time-see-touch-landscapes) — 1 event(s)
 - [newhavenmuseum.org](https://www.newhavenmuseum.org/free-first-sunday/) — 1 event(s)
 - [visitnewhaven.com](https://visitnewhaven.com/events/new-haven-grand-prix/) — 1 event(s)
 - [ctfolk.org](https://www.ctfolk.org/) — 1 event(s)
+- [ctexaminer.com](https://ctexaminer.com/events/family-day-storytelling-at-yale-university-museum-of-art/2026-11-01/) — 1 event(s)
+- [ctvisit.com](https://ctvisit.com/events/free-exhibition-spirit-christmas) — 1 event(s)
+- [dailynutmeg.com](https://dailynutmeg.com/blogs/blog/this-halloween-in-new-haven-2025) — 1 event(s)
+- [westvillect.org](https://westvillect.org/node/233) — 1 event(s)
 - [musicalfolk.com](https://www.musicalfolk.com/OurClasses.html) — 1 class card(s)
 - [musichavenct.org](https://www.musichavenct.org/) — 1 class card(s)
 - [leapforkids.org](https://www.leapforkids.org/swimming) — 1 class card(s)
@@ -634,8 +658,11 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Crystal Theatre](https://www.crystaltheatre.org/) | Each season: kid-cast shows (homepage lists dates). | Oct 3, 2026 |
 | [Music Theatre of Connecticut — student productions](https://www.musictheatreofct.com/fall-spring-programs) | Each season. | Oct 3, 2026 |
 | [Norwalk Historical Society / Mill Hill](https://norwalkhistoricalsociety.org/visit/) | Seasonal events. | Oct 3, 2026 |
+| [Stepping Stones puppetry page](https://www.steppingstonesmuseum.org/experience/puppetry-arts) | Seasonal; dated puppet shows but no year shown, so check weekdays. | Oct 8, 2026 |
+| [Maritime Aquarium sleepovers & pajama parties](https://www.maritimeaquarium.org/sleepovers) | Seasonal; readable table (main calendar is bot-protected). | Oct 8, 2026 |
+| [Norwalk Symphony season](https://www.norwalksymphony.org/20262027) | Season list: Holiday Pops (Dec), Peter and the Wolf (Apr). | Oct 8, 2026 |
 
-**Also cited in your data** (28 more site(s), busiest first)
+**Also cited in your data** (30 more site(s), busiest first)
 
 - [thenorwalkartspace.org](https://www.thenorwalkartspace.org/education) — 9 class card(s)
 - [fliphtml5.com](https://fliphtml5.com/qmsjn/kpqu/) — 3 event(s), 4 class card(s)
@@ -649,11 +676,13 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 - [lockwoodmathewsmansion.com](https://lockwoodmathewsmansion.com/event/ghosts-spirits-at-the-mansion/) — 1 event(s), 1 class card(s)
 - [ctpridecenter.org](https://www.ctpridecenter.org/caregiver-mixer) — 1 event(s), 1 class card(s)
 - [norwalklib.org](https://www.norwalklib.org/calendar.aspx?CID=25) — 1 event(s), 1 class card(s)
+- [patch.com](https://patch.com/connecticut/norwalk/norwalk-host-pancake-breakfast-frosty-holiday-event) — 2 event(s)
 - [goldfishswimschool.com](https://goldfishswimschool.com/norwalk/pricing/additional-program/) — 2 class card(s)
 - [sonoicehouse.com](https://www.sonoicehouse.com/) — 2 class card(s)
 - [norwalk.kidstrong.com](https://norwalk.kidstrong.com/) — 2 class card(s)
-- [norwalksymphony.org](https://www.norwalksymphony.org/20262027) — 1 event(s)
 - [norwalkartscenter.org](https://www.norwalkartscenter.org/) — 1 event(s)
+- [westportjournal.com](https://westportjournal.com/community/maritime-aquarium-norwalk-holiday-events-2025/) — 1 event(s)
+- [ctvisit.com](https://ctvisit.com/events/holiday-extravaganza-7) — 1 event(s)
 - [njsa.org](https://njsa.org/) — 1 class card(s)
 - [childrenofthesound.com](https://www.childrenofthesound.com/) — 1 class card(s)
 - [stewleonards.com](https://www.stewleonards.com/) — 1 class card(s)
@@ -770,23 +799,25 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 | [Palace Theatre](https://www.palacestamford.org/) | Each season: family shows. | Oct 3, 2026 |
 | [Stamford Downtown — events](https://stamford-downtown.com/) | Seasonal: parade, holiday events. | Oct 3, 2026 |
 | [Bartlett Arboretum — events](https://www.bartlettarboretum.org/) | Seasonal. | Oct 3, 2026 |
+| [Stamford JCC events](https://www.stamfordjcc.org/events/) | Monthly; paginated (/events/2/ …). Many kids' events are members-only. | Oct 8, 2026 |
+| [Chabad of Stamford events](https://www.stamfordchabad.org/events) | Each November for Chanukah festival and car parade. | Oct 8, 2026 |
+| [Stamford Recreation fall brochure](https://www.stamfordrecreation.com/_files/ugd/4367dc_71342bedd5da4161926dc0eba8568d8e.pdf) | Each season: Mighty Makers, break camps, Santa Hay Ride. | Oct 8, 2026 |
+| [Avon on Tour](https://avontheatre.org/avon-on-tour) | Monthly: free screenings at Stamford Town Center during the theater's renovation. | Oct 8, 2026 |
+| [Stamford Moms](https://stamfordmoms.com/2026-stamford-moms-events/) | Seasonal roundups (Halloween, holidays); confirm on host sites. | Oct 8, 2026 |
 
-**Also cited in your data** (28 more site(s), busiest first)
+**Also cited in your data** (26 more site(s), busiest first)
 
 - [chelseapiers.com](https://www.chelseapiers.com/athleticclub-stamford/classes) — 14 class card(s)
-- [stamfordjcc.org](https://www.stamfordjcc.org/index.php?mrkrs=Early+Learning+Swim&src=programs) — 10 class card(s)
 - [abilis.us](https://www.abilis.us/parent-and-child-classes-fall-2026/) — 5 class card(s)
 - [stamfordct.gov](https://www.stamfordct.gov/) — 1 event(s), 3 class card(s)
-- [stamfordrecreation.com](https://www.stamfordrecreation.com/) — 2 event(s), 2 class card(s)
 - [littlejigz.com](https://www.littlejigz.com/) — 4 class card(s)
-- [stamfordmoms.com](https://stamfordmoms.com/stamford-moms-family-fun-day/) — 3 event(s)
 - [soundwaters.org](https://soundwaters.org/youth-programs/fall-adventure-series-2/) — 3 class card(s)
 - [atozdancestudio.com](https://www.atozdancestudio.com/) — 2 class card(s)
 - [curtaincallinc.com](https://www.curtaincallinc.com/) — 2 class card(s)
 - [codeninjas.com](https://www.codeninjas.com/locations/en-us/ct/stamford/coding-school-249.html) — 2 class card(s)
-- [stamfordchabad.org](https://www.stamfordchabad.org/civicrm/event/info?id=724&reset=1) — 1 event(s)
-- [shopstamfordtowncenter.com](https://shopstamfordtowncenter.com/events/) — 1 event(s)
-- [heystamford.com](https://www.heystamford.com/event-calendar) — 1 event(s)
+- [eventbrite.com](https://www.eventbrite.com/e/15th-annual-harbor-point-5k-turkey-trot-fun-run-tickets-1999388908046) — 1 event(s)
+- [theholidaywish.com](https://theholidaywish.com/) — 1 event(s)
+- [shippantrot.com](https://www.shippantrot.com) — 1 event(s)
 - [childrenofthesound.com](https://www.childrenofthesound.com/) — 1 class card(s)
 - [penderkeady.com](https://www.penderkeady.com/) — 1 class card(s)
 - [balletschoolofstamford.org](https://www.balletschoolofstamford.org/school-schedule) — 1 class card(s)
@@ -801,6 +832,7 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 - [bgcastamford.org](https://www.bgcastamford.org/) — 1 class card(s)
 - [germanschoolct.org](https://germanschoolct.org/class-registration/) — 1 class card(s)
 - [armelleforkids.com](https://armelleforkids.com/tag/learn-spanish/) — 1 class card(s)
+- [hudsontable.com](https://hudsontable.com/stamford/kids-classes/) — 1 class card(s)
 
 ---
 

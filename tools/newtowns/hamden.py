@@ -145,3 +145,49 @@ ADD_PLACES["out"].insert(0,("Josh's Jungle (Town Center Park)","A fully fenced, 
 ES.update(globals().get('ES_PATCH', {}))
 for _k,_v in ADD_PLACES.items(): PLACES[_k]+=_v
 for _k in PLACES: PLACES[_k]=[REPLACE_PLACES.get(p[0],p) for p in PLACES[_k] if p[0] not in DROP_PLACES]
+
+# ---- patch: hamden-2026-10-08c.py ----
+ADD_PLACES={'out':[],'rain':[],'drive':[]}; REPLACE_PLACES={}; DROP_PLACES=[]
+_ES_before=dict(ES)
+# Round 3 finishing pass, Oct 8 2026
+BV="best-video"; SHA="sacred-heart-academy"
+TOWN["venues"].update({BV:["Best Video Film & Cultural Center","1842 Whitney Ave"],SHA:["Sacred Heart Academy","265 Benham St"]})
+TOWN["venueMeta"].update({BV:[None,1],SHA:[None,1]})
+TOWN["tba"]=[x for x in TOWN["tba"] if x["t"]!="Holiday train display at the Eli Whitney Museum"]
+EWS="https://www.eliwhitney.org/"
+TOWN["events"]+=[
+ {"t":"Cartoons and Cereal","v":BV,"when":[W("2026-10-10",[["09:30","11:00"]])],"ages":"Kids","a":["preschool","big"],"free":False,"price":"See listing","drop":True,"check":True,"src":"https://www.bestvideo.com/events",
+  "blurb":"Saturday-morning cartoons and cereal at Best Video."},
+ {"t":"Eli Whitney School-Vacation Workshops","v":EW,"when":D(["2026-10-12","2026-11-03","2026-11-11"],[["09:00","15:00"]]),"ages":"Ages 6–11","a":["big"],"free":False,"price":"$88","rsvp":True,"src":EWS+"events",
+  "blurb":"Full-day building workshops on no-school days, with separate projects for ages 6–8 and 9–11: folk toys and Chilean lamps (Oct 12), STEAM playground and chain reactions (Nov 3), castles and Greek trade ships (Nov 11)."},
+ {"t":"Family Yoga at Best Video","v":BV,"when":[W("2026-10-18",[["09:00","10:00"]])],"ages":"Families","a":["preschool","big"],"free":False,"price":"See listing","drop":True,"check":True,"src":"https://www.bestvideo.com/events",
+  "blurb":"A Sunday-morning family yoga class with Lani."},
+ {"t":"Halloween Sing-Along with Robert Messore","v":BV,"special":"hw","when":[W("2026-10-31",[["10:30","11:15"]])],"ages":"Young kids","a":["toddler","preschool"],"free":False,"price":"Suggested $5–10 per family","drop":True,"src":"https://www.bestvideo.com/events",
+  "blurb":"A Halloween-morning children's music sing-along."},
+ {"t":"Holiday Train Display Opening","v":EW,"special":"hol","when":[W("2026-11-27",[["10:00","15:00"]])],"ages":"All ages","a":B+["big"],"free":True,"price":"Free (donations welcome)","drop":True,"src":EWS+"events?page=1",
+  "blurb":"The museum's A.C. Gilbert American Flyer toy-train layout opens the day after Thanksgiving and runs weekends 10–3 into January."},
+]
+TOWN["classes"]+=[
+ {"id":"hamden-dance-unlimited","c":"dance","n":"Dance Unlimited","u":"https://www.danceunlimitedcrew.com/","blurb":"Ballet, jazz and tap from Diaper Dancers (16 months) up to pre-teens; free trial class.","ages":"16 months–12 years","where":"2600 State St"},
+ {"id":"hamden-eli-whitney-workshops","c":"build","n":"Eli Whitney Museum workshops","u":"https://www.eliwhitney.org/events","blurb":"Weekend walk-in builds (Sat–Sun 10–3, projects change weekly) and full-day vacation workshops.","ages":"6–11 years","where":"915 Whitney Ave"},
+]
+ES_PATCH={
+ "Kids":"Niños","See listing":"Ver el anuncio",
+ "Saturday-morning cartoons and cereal at Best Video.":"Caricaturas y cereal el sábado por la mañana en Best Video.",
+ "Ages 6–11":"6–11 años","$88":"$88",
+ "Full-day building workshops on no-school days, with separate projects for ages 6–8 and 9–11: folk toys and Chilean lamps (Oct 12), STEAM playground and chain reactions (Nov 3), castles and Greek trade ships (Nov 11).":"Talleres de construcción de día completo en días sin escuela, con proyectos para 6–8 y 9–11 años: juguetes tradicionales y lámparas chilenas (12 de oct.), juegos STEAM y reacciones en cadena (3 de nov.), castillos y barcos mercantes griegos (11 de nov.).",
+ "Families":"Familias",
+ "A Sunday-morning family yoga class with Lani.":"Una clase de yoga familiar el domingo por la mañana con Lani.",
+ "Young kids":"Niños pequeños","Suggested $5–10 per family":"Sugerido $5–10 por familia",
+ "A Halloween-morning children's music sing-along.":"Un canto infantil la mañana de Halloween.",
+ "Free (donations welcome)":"Gratis (se aceptan donativos)",
+ "The museum's A.C. Gilbert American Flyer toy-train layout opens the day after Thanksgiving and runs weekends 10–3 into January.":"La maqueta de trenes de juguete A.C. Gilbert American Flyer del museo abre el día después de Acción de Gracias y sigue los fines de semana de 10 a 3 hasta enero.",
+ "Ballet, jazz and tap from Diaper Dancers (16 months) up to pre-teens; free trial class.":"Ballet, jazz y tap desde Diaper Dancers (16 meses) hasta preadolescentes; clase de prueba gratis.",
+ "16 months–12 years":"16 meses–12 años",
+ "Weekend walk-in builds (Sat–Sun 10–3, projects change weekly) and full-day vacation workshops.":"Construcciones sin cita los fines de semana (sáb–dom de 10 a 3, los proyectos cambian cada semana) y talleres de día completo en vacaciones.",
+ "6–11 years":"6–11 años",
+}
+
+ES.update(globals().get('ES_PATCH', {}))
+for _k,_v in ADD_PLACES.items(): PLACES[_k]+=_v
+for _k in PLACES: PLACES[_k]=[REPLACE_PLACES.get(p[0],p) for p in PLACES[_k] if p[0] not in DROP_PLACES]

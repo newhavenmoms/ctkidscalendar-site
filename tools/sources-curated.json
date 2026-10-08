@@ -148,6 +148,18 @@
      "url": "https://www.cheshirelandtrust.org/",
      "how": "Before Thanksgiving and in December. Hike dates are in the newsletter PDF and on [Facebook](https://www.facebook.com/CheshireLandTrustCT/) — Claude can't read those, so check by eye.",
      "last": "Sep 30, 2026"
+    },
+    {
+     "name": "St. Peter's Episcopal events",
+     "url": "https://stpeterscheshire.org/",
+     "how": "Seasonal (pumpkin patch, Christmas bazaar); read individual /events/ pages.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Cheshire Library LibCal day endpoint",
+     "url": "https://cheshirelibrary.libcal.com/ajax/calendar/list?c=1860&date=2026-12-01",
+     "how": "Monthly; readable per day but rate-limits quickly.",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": [
@@ -253,6 +265,24 @@
      "url": "https://museumofdarien.org/",
      "how": "Holiday and family events.",
      "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Darien Nature Center events",
+     "url": "https://www.dariennaturecenter.org/upcoming-events",
+     "how": "Monthly: early-dismissal programs, pumpkin decorating, vacation camps (event pages omit the year).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Darien Arts Center Nutcracker tickets",
+     "url": "https://register.darienarts.org/CourseCatalog/Tickets/EventView.asp?EventID=100",
+     "how": "Annual (early-mid December).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Museum of Darien events",
+     "url": "https://museumofdarien.org/events/",
+     "how": "Monthly; readable with prices.",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": []
@@ -555,6 +585,24 @@
      "url": "https://greenwichbotanicalcenter.org/childrens-programs/",
      "how": "Each season.",
      "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Greenwich Pulse weekly newsletter",
+     "url": "https://buttondown.com/greenwichpulse/archive/",
+     "how": "Weekly (Thursdays); lists kid events with ages and links.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Greenwich Recreation newsletter",
+     "url": "https://www.greenwichct.gov/2708/Recreation-Newsletter",
+     "how": "Monthly: rink specials, Santa's Holiday Village, registration dates.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Audubon Greenwich events",
+     "url": "https://www.audubon.org/events?view_type=row&location=Greenwich+Audubon+Center",
+     "how": "Monthly; readable list (ticket pages fail).",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": []
@@ -694,6 +742,18 @@
      "url": "https://www.outandaboutmom.com/places-weve-been/links/",
      "how": "Evergreen leads only (posts 2011–2015, by town): playgrounds and places. Confirm each is still open before adding.",
      "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Eli Whitney Museum events",
+     "url": "https://www.eliwhitney.org/events",
+     "how": "Seasonal: vacation workshops, train display (opens day after Thanksgiving).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Best Video Film & Cultural Center events",
+     "url": "https://www.bestvideo.com/events",
+     "how": "Monthly: occasional kids' music, cartoons, family yoga.",
+     "last": "Oct 8, 2026"
     }
    ]
   },
@@ -753,6 +813,18 @@
      "name": "Macaroni Kid Hartford (mom-run events newsletter)",
      "url": "https://hartford.macaronikid.com",
      "how": "Weekly. Covers Hartford, West Hartford, Avon, Canton and Simsbury (Farmington Valley too). The events calendar returns 403 to automated reading, so read it in a browser or paste it.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Connecticut Science Center events",
+     "url": "https://ctsciencecenter.org/event/holiday-enchantment",
+     "how": "Monthly: Toddler Tuesdays, Pokémon Day, Holiday Enchantment.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Hartford Public Library data feed",
+     "url": "https://programs.hplct.org/eeventcaldata?event_type=0",
+     "how": "Monthly; the Communico JSON endpoint is readable even though the calendar page is JavaScript-only.",
      "last": "Oct 8, 2026"
     }
    ]
@@ -1097,6 +1169,24 @@
      "url": "https://www.ralphwalkericerink.com/public-skate",
      "how": "October–March: public skate sessions. New operator as of Sep 2026.",
      "last": "Oct 3, 2026"
+    },
+    {
+     "name": "The Shops at Yale holiday page",
+     "url": "https://theshopsatyale.com/holiday/",
+     "how": "Each November: carolers, ice carving, Santa, tree and menorah lighting dates.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "YCBA programs",
+     "url": "https://britishart.yale.edu/exhibitions-programs?page=0",
+     "how": "Monthly; paginated (Exploring Art-ism, family programs).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "New Haven Symphony family events",
+     "url": "https://newhavensymphony.org/events/category/holiday-extravaganza-concerts/",
+     "how": "Seasonal; under 18 free with an adult.",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": []
@@ -1217,6 +1307,24 @@
      "url": "https://norwalkhistoricalsociety.org/visit/",
      "how": "Seasonal events.",
      "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Stepping Stones puppetry page",
+     "url": "https://www.steppingstonesmuseum.org/experience/puppetry-arts",
+     "how": "Seasonal; dated puppet shows but no year shown, so check weekdays.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Maritime Aquarium sleepovers & pajama parties",
+     "url": "https://www.maritimeaquarium.org/sleepovers",
+     "how": "Seasonal; readable table (main calendar is bot-protected).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Norwalk Symphony season",
+     "url": "https://www.norwalksymphony.org/20262027",
+     "how": "Season list: Holiday Pops (Dec), Peter and the Wolf (Apr).",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": []
@@ -1463,6 +1571,36 @@
      "url": "https://www.bartlettarboretum.org/",
      "how": "Seasonal.",
      "last": "Oct 3, 2026"
+    },
+    {
+     "name": "Stamford JCC events",
+     "url": "https://www.stamfordjcc.org/events/",
+     "how": "Monthly; paginated (/events/2/ …). Many kids' events are members-only.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Chabad of Stamford events",
+     "url": "https://www.stamfordchabad.org/events",
+     "how": "Each November for Chanukah festival and car parade.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Stamford Recreation fall brochure",
+     "url": "https://www.stamfordrecreation.com/_files/ugd/4367dc_71342bedd5da4161926dc0eba8568d8e.pdf",
+     "how": "Each season: Mighty Makers, break camps, Santa Hay Ride.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Avon on Tour",
+     "url": "https://avontheatre.org/avon-on-tour",
+     "how": "Monthly: free screenings at Stamford Town Center during the theater's renovation.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Stamford Moms",
+     "url": "https://stamfordmoms.com/2026-stamford-moms-events/",
+     "how": "Seasonal roundups (Halloween, holidays); confirm on host sites.",
+     "last": "Oct 8, 2026"
     }
    ],
    "extras": []

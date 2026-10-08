@@ -91,6 +91,14 @@ window.TOWN = {
   "eli-whitney": [
    "Eli Whitney Museum & Workshop",
    "915 Whitney Ave"
+  ],
+  "best-video": [
+   "Best Video Film & Cultural Center",
+   "1842 Whitney Ave"
+  ],
+  "sacred-heart-academy": [
+   "Sacred Heart Academy",
+   "265 Benham St"
   ]
  },
  "venueMeta": {
@@ -119,6 +127,14 @@ window.TOWN = {
    0
   ],
   "eli-whitney": [
+   null,
+   1
+  ],
+  "best-video": [
+   null,
+   1
+  ],
+  "sacred-heart-academy": [
    null,
    1
   ]
@@ -617,6 +633,154 @@ window.TOWN = {
    "drop": true,
    "src": "https://local.qu.edu/children-and-families/boomers-boo-bash/",
    "blurb": "Quinnipiac's free Halloween morning on the Mount Carmel quad: activities, prizes, giveaways and candy with Boomer the Bobcat and QU athletes. Rain moves it into the student center."
+  },
+  {
+   "t": "Cartoons and Cereal",
+   "v": "best-video",
+   "when": [
+    {
+     "from": "2026-10-10",
+     "t": [
+      [
+       "09:30",
+       "11:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Kids",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "free": false,
+   "price": "See listing",
+   "drop": true,
+   "check": true,
+   "src": "https://www.bestvideo.com/events",
+   "blurb": "Saturday-morning cartoons and cereal at Best Video."
+  },
+  {
+   "t": "Eli Whitney School-Vacation Workshops",
+   "v": "eli-whitney",
+   "when": [
+    {
+     "from": "2026-10-12",
+     "t": [
+      [
+       "09:00",
+       "15:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-03",
+     "t": [
+      [
+       "09:00",
+       "15:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-11",
+     "t": [
+      [
+       "09:00",
+       "15:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Ages 6–11",
+   "a": [
+    "big"
+   ],
+   "free": false,
+   "price": "$88",
+   "rsvp": true,
+   "src": "https://www.eliwhitney.org/events",
+   "blurb": "Full-day building workshops on no-school days, with separate projects for ages 6–8 and 9–11: folk toys and Chilean lamps (Oct 12), STEAM playground and chain reactions (Nov 3), castles and Greek trade ships (Nov 11)."
+  },
+  {
+   "t": "Family Yoga at Best Video",
+   "v": "best-video",
+   "when": [
+    {
+     "from": "2026-10-18",
+     "t": [
+      [
+       "09:00",
+       "10:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Families",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "free": false,
+   "price": "See listing",
+   "drop": true,
+   "check": true,
+   "src": "https://www.bestvideo.com/events",
+   "blurb": "A Sunday-morning family yoga class with Lani."
+  },
+  {
+   "t": "Halloween Sing-Along with Robert Messore",
+   "v": "best-video",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-31",
+     "t": [
+      [
+       "10:30",
+       "11:15"
+      ]
+     ]
+    }
+   ],
+   "ages": "Young kids",
+   "a": [
+    "toddler",
+    "preschool"
+   ],
+   "free": false,
+   "price": "Suggested $5–10 per family",
+   "drop": true,
+   "src": "https://www.bestvideo.com/events",
+   "blurb": "A Halloween-morning children's music sing-along."
+  },
+  {
+   "t": "Holiday Train Display Opening",
+   "v": "eli-whitney",
+   "special": "hol",
+   "when": [
+    {
+     "from": "2026-11-27",
+     "t": [
+      [
+       "10:00",
+       "15:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "free": true,
+   "price": "Free (donations welcome)",
+   "drop": true,
+   "src": "https://www.eliwhitney.org/events?page=1",
+   "blurb": "The museum's A.C. Gilbert American Flyer toy-train layout opens the day after Thanksgiving and runs weekends 10–3 into January."
   }
  ],
  "tba": [
@@ -633,13 +797,6 @@ window.TOWN = {
    "w": "Around Hamden",
    "p": "Most years Hamden has several free trunk-or-treats on late-October Saturdays, including the YMCA's Trunk-or-Treat & Fall Festival at Camp Mountain Laurel (registration required), the Hamden Elks Lodge (175 School St) and Quinnipiac's Boomer's Boo Bash. This year's dates aren't posted yet.",
    "src": "https://thisweekinhamden.substack.com/p/special-edition-halloween-in-hamden-e3a"
-  },
-  {
-   "g": "hol",
-   "t": "Holiday train display at the Eli Whitney Museum",
-   "w": "Eli Whitney Museum & Workshop, 915 Whitney Ave",
-   "p": "The museum's A.C. Gilbert/American Flyer toy-train layout opens the day after Thanksgiving and runs into January, free. Last year it opened Nov 28. This year's dates aren't posted yet.",
-   "src": "https://cloud.eliwhitney.org/node/4146"
   }
  ],
  "classes": [
@@ -660,6 +817,24 @@ window.TOWN = {
    "blurb": "Six-week evening swim lessons at the Laura Luzzi Aquatic Center ($80 residents). The fall sessions are full; watch for winter registration.",
    "ages": "Levels 1–2, plus ages 10–16",
    "where": "Hamden High School pool"
+  },
+  {
+   "id": "hamden-dance-unlimited",
+   "c": "dance",
+   "n": "Dance Unlimited",
+   "u": "https://www.danceunlimitedcrew.com/",
+   "blurb": "Ballet, jazz and tap from Diaper Dancers (16 months) up to pre-teens; free trial class.",
+   "ages": "16 months–12 years",
+   "where": "2600 State St"
+  },
+  {
+   "id": "hamden-eli-whitney-workshops",
+   "c": "build",
+   "n": "Eli Whitney Museum workshops",
+   "u": "https://www.eliwhitney.org/events",
+   "blurb": "Weekend walk-in builds (Sat–Sun 10–3, projects change weekly) and full-day vacation workshops.",
+   "ages": "6–11 years",
+   "where": "915 Whitney Ave"
   }
  ],
  "library": {

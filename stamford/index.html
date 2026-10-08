@@ -271,6 +271,18 @@ window.TOWN = {
   "home-depot-stamford": [
    "The Home Depot (Stamford)",
    ""
+  ],
+  "latham-park": [
+   "Latham Park",
+   "Bedford St"
+  ],
+  "cove-island-pavilion": [
+   "Cove Island Park Pavilion",
+   "1125 Cove Rd"
+  ],
+  "harbor-point-square": [
+   "Harbor Point Square",
+   "20 Harbor Point Rd"
   ]
  },
  "venueMeta": {
@@ -481,6 +493,18 @@ window.TOWN = {
   "home-depot-stamford": [
    "nearby",
    1
+  ],
+  "latham-park": [
+   null,
+   0
+  ],
+  "cove-island-pavilion": [
+   null,
+   0
+  ],
+  "harbor-point-square": [
+   null,
+   0
   ]
  },
  "hoods": [],
@@ -1787,39 +1811,9 @@ window.TOWN = {
    "a": [
     "big"
    ],
-   "price": "$20/child · pre-register",
+   "price": "$20 per child; pre-register (limit 100)",
    "blurb": "A Halloween party with a magic show by Dan Bowen, a costume contest, ice cream sundaes and a goodie bag. Come in costume. Pre-registration required; limited to 100 kids.",
    "src": "https://www.stamfordrecreation.com/"
-  },
-  {
-   "t": "Saturday Matinee at Stamford Town Center (Avon on Tour)",
-   "v": "stamford-town-center",
-   "s": [
-    [
-     6,
-     [
-      [
-       "13:00",
-       "16:00"
-      ]
-     ],
-     "2026-10-03",
-     "2026-12-31",
-     1
-    ]
-   ],
-   "ages": "All ages",
-   "a": [
-    "baby",
-    "toddler",
-    "preschool",
-    "big"
-   ],
-   "price": "Free",
-   "free": true,
-   "drop": true,
-   "blurb": "A free family movie in the Grand Court while the Avon Theatre is renovated, on the first Saturday of the month. First come, first served. The Oct 3 film is Hotel Transylvania (PG). Check the mall’s events page for the showtime.",
-   "src": "https://shopstamfordtowncenter.com/events/"
   },
   {
    "t": "Home Depot Kids Workshop",
@@ -3075,16 +3069,422 @@ window.TOWN = {
    ],
    "rsvp": true,
    "blurb": "A book discussion, craft and treat; books are available at the Waterside Branch. Registration required."
+  },
+  {
+   "t": "Babies, Blocks & Bagels",
+   "v": "stamford-jcc",
+   "when": [
+    {
+     "from": "2026-10-18",
+     "t": [
+      [
+       "09:30",
+       "11:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-01",
+     "t": [
+      [
+       "09:30",
+       "11:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Birth–3 + caregiver (siblings to 6)",
+   "a": [
+    "baby",
+    "toddler"
+   ],
+   "free": false,
+   "price": "Free for members, $25 per family for community",
+   "rsvp": true,
+   "src": "https://www.stamfordjcc.org/events/2026/10/18/early-learning/babies-blocks-bagels/",
+   "blurb": "An open-play morning with snacks at the JCC, open to all families."
+  },
+  {
+   "t": "Kids' Night Out at the JCC",
+   "v": "stamford-jcc",
+   "when": [
+    {
+     "from": "2026-10-24",
+     "t": [
+      [
+       "17:30",
+       "21:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-14",
+     "t": [
+      [
+       "17:30",
+       "21:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-12",
+     "t": [
+      [
+       "17:30",
+       "21:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Grades K–5",
+   "a": [
+    "big"
+   ],
+   "free": false,
+   "price": "$25 first child, $20 each additional (JCC members only)",
+   "rsvp": true,
+   "src": "https://www.stamfordjcc.org/events/2026/10/24/youth-family/kids-night-out/",
+   "blurb": "A members-only drop-off evening with rotating themed activities."
+  },
+  {
+   "t": "Tot Shabbat at the JCC",
+   "v": "stamford-jcc",
+   "when": [
+    {
+     "from": "2026-11-13",
+     "t": [
+      [
+       "17:30",
+       "19:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-11",
+     "t": [
+      [
+       "17:30",
+       "19:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Families with young children",
+   "a": [
+    "toddler",
+    "preschool"
+   ],
+   "free": false,
+   "price": "See JCC",
+   "rsvp": true,
+   "check": true,
+   "src": "https://www.stamfordjcc.org/events/2026/11/13/special-events/tot-shabbat-with-rabbi-josh-strom/",
+   "blurb": "Songs, blessings, a kosher-style dinner and an art project; Dec 11 is a Chanukah edition with Ori Zaff."
+  },
+  {
+   "t": "Halloween Candy Crawl",
+   "v": "stamford-town-center",
+   "special": "hw",
+   "when": [
+    {
+     "from": "2026-10-25",
+     "t": [
+      [
+       "11:00",
+       "14:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "drop": true,
+   "src": "https://stamfordmoms.com/join-us-for-the-stamford-moms-candy-crawl-at-stamford-town-center/",
+   "blurb": "Stamford Moms' 5th annual mall trick-or-treat at stores with orange balloons, plus characters, face painting and crafts on Level 4."
+  },
+  {
+   "t": "Mighty Makers Saturday Workshops",
+   "v": "stamford-recreation-recreation-star-cent",
+   "when": [
+    {
+     "from": "2026-10-24",
+     "t": [
+      [
+       "09:00",
+       "12:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-11-14",
+     "t": [
+      [
+       "09:00",
+       "12:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-19",
+     "t": [
+      [
+       "09:00",
+       "12:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Grades K–4",
+   "a": [
+    "big"
+   ],
+   "free": false,
+   "price": "$50",
+   "rsvp": true,
+   "src": "https://www.stamfordrecreation.com/_files/ugd/4367dc_71342bedd5da4161926dc0eba8568d8e.pdf",
+   "blurb": "Saturday-morning workshops at the Star Center: Spooktacular Science (Oct 24), Art Explosion (Nov 14) and a Holiday Make & Take with cookies (Dec 19)."
+  },
+  {
+   "t": "Free Holiday Movies (Avon on Tour)",
+   "v": "stamford-town-center",
+   "special": "hol",
+   "when": [
+    {
+     "from": "2026-11-07",
+     "t": [
+      [
+       "13:30",
+       "16:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-04",
+     "t": [
+      [
+       "17:30",
+       "19:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-11",
+     "t": [
+      [
+       "17:30",
+       "19:30"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-18",
+     "t": [
+      [
+       "17:30",
+       "19:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages (G/PG)",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "free": true,
+   "price": "Free, first come",
+   "drop": true,
+   "src": "https://avontheatre.org/movies/avon-on-tour-the-muppet-christmas-carol/",
+   "blurb": "The Avon Theatre's free screenings at Stamford Town Center: The Muppet Christmas Carol (Sat Nov 7, activities 1:30, film 2), then Friday nights The Polar Express (Dec 4), The Grinch (Dec 11) and Elf (Dec 18)."
+  },
+  {
+   "t": "Friday Night Kids Club",
+   "v": "stamford-recreation-recreation-star-cent",
+   "when": [
+    {
+     "from": "2026-11-13",
+     "t": [
+      [
+       "18:00",
+       "21:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "Grades K–5",
+   "a": [
+    "big"
+   ],
+   "free": false,
+   "price": "$25",
+   "rsvp": true,
+   "src": "https://www.stamfordrecreation.com/_files/ugd/4367dc_71342bedd5da4161926dc0eba8568d8e.pdf",
+   "blurb": "A parents' night out at the Star Center with a snack and drink; limit 40."
+  },
+  {
+   "t": "Harbor Point Turkey Trot Fun Run",
+   "v": "harbor-point-square",
+   "when": [
+    {
+     "from": "2026-11-26",
+     "t": [
+      [
+       "08:00",
+       "09:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages (under 18 with a parent)",
+   "a": [
+    "preschool",
+    "big"
+   ],
+   "free": true,
+   "price": "Free (optional raffle)",
+   "rsvp": true,
+   "src": "https://www.eventbrite.com/e/15th-annual-harbor-point-5k-turkey-trot-fun-run-tickets-1999388908046",
+   "blurb": "An untimed Thanksgiving-morning family 5K; RSVP and waiver online, walk-ups welcome."
+  },
+  {
+   "t": "Santa Hay Ride",
+   "v": "cove-island-pavilion",
+   "special": "hol",
+   "when": [
+    {
+     "from": "2026-12-05",
+     "t": [
+      [
+       "10:00",
+       "13:00"
+      ],
+      [
+       "14:00",
+       "16:00"
+      ]
+     ]
+    },
+    {
+     "from": "2026-12-12",
+     "t": [
+      [
+       "10:00",
+       "13:00"
+      ],
+      [
+       "14:00",
+       "16:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages (Stamford residents)",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "free": false,
+   "price": "$8 per rider",
+   "rsvp": true,
+   "src": "https://www.stamfordrecreation.com/_files/ugd/4367dc_71342bedd5da4161926dc0eba8568d8e.pdf",
+   "blurb": "The 26th annual hay ride with Santa, who sings and gives each child a treat. Tickets online from Nov 2; no day-of sales."
+  },
+  {
+   "t": "Chanukah Festival & Giant Menorah Lighting",
+   "v": "latham-park",
+   "special": "hol",
+   "when": [
+    {
+     "from": "2026-12-06",
+     "t": [
+      [
+       "16:00",
+       "17:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "rsvp": true,
+   "src": "https://www.stamfordchabad.org/civicrm/event/info?id=699&reset=1",
+   "blurb": "Chabad of Stamford lights 'Fairfield County's largest menorah' with music, latkes, hot cider and chocolate gelt for kids. Register online."
+  },
+  {
+   "t": "Heights & Lights",
+   "v": "stamford-downtown-bedford-street",
+   "special": "hol",
+   "when": [
+    {
+     "from": "2026-12-06",
+     "t": [
+      [
+       "17:00",
+       "19:00"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "drop": true,
+   "check": true,
+   "src": "https://stamford-downtown.com/event/heights-lights/",
+   "blurb": "Santa, Rudolph and the Grinch rappel 22 stories down Landmark Square, then fireworks and a procession up Bedford St to the city tree lighting at Latham Park. Time not posted yet (5pm in past years)."
+  },
+  {
+   "t": "Menorah Car Parade",
+   "v": "latham-park",
+   "special": "hol",
+   "when": [
+    {
+     "from": "2026-12-12",
+     "t": [
+      [
+       "18:00",
+       "19:30"
+      ]
+     ]
+    }
+   ],
+   "ages": "All ages",
+   "a": [
+    "baby",
+    "toddler",
+    "preschool",
+    "big"
+   ],
+   "free": true,
+   "price": "Free",
+   "drop": true,
+   "src": "https://www.stamfordchabad.org/civicrm/event/info?id=701&reset=1",
+   "blurb": "Cars topped with menorahs parade from Chabad (770 High Ridge Rd) through Stamford to a giant menorah lighting at Latham Park."
   }
  ],
  "tba": [
-  {
-   "g": "hol",
-   "t": "Heights & Lights: Rappelling Santa & Tree Lighting",
-   "w": "Landmark Square & Latham Park, Stamford Downtown",
-   "p": "Santa and friends rappel down a 22-story building, followed by fireworks, then holiday music and the tree lighting at Latham Park. Last year it was the first Sunday in December; this year’s date isn’t announced yet.",
-   "src": "https://www.heystamford.com/event-calendar"
-  },
   {
    "g": "hol",
    "t": "Santa Calls (Stamford Recreation)",
@@ -3098,6 +3498,20 @@ window.TOWN = {
    "w": "Cohen Skating Center, Mill River Park",
    "p": "Stamford’s only outdoor ice rink usually opens in mid to late November and stays open through mid-March. Last year opening day was Nov 22; this year’s date isn’t announced yet. Timed tickets are recommended.",
    "src": "https://millriverpark.org/venue/steven-alexandra-cohen-skating-center/"
+  },
+  {
+   "g": "hol",
+   "t": "Holiday Wish Express",
+   "w": "Stamford Town Center, Level 5",
+   "p": "An immersive North Pole walk-through from mid/late November to Dec 24 (it opened Nov 22 last year). Tickets go on sale Oct 13.",
+   "src": "https://theholidaywish.com/"
+  },
+  {
+   "g": "hol",
+   "t": "Shippan Turkey Trot",
+   "w": "280 Ocean Dr East, Shippan",
+   "p": "A free 4K on Thanksgiving morning at 10 (bring canned food or a donation for Pacific House); costumes encouraged.",
+   "src": "https://www.shippantrot.com"
   }
  ],
  "classes": [
@@ -3721,6 +4135,15 @@ window.TOWN = {
    "blurb": "A 465,000-sq-ft sports complex with a Little Athletes zone (jungle gym, slides), toddler and preschool gymnastics, swim lessons and a warm-water pool open play for ages 1–5 (around midday most days, $25 drop-in). Also runs an infant/toddler/preschool daycare program with Spanish, music and sports classes built in. Check the site for the day’s drop-in schedule and pricing — both change often.",
    "ages": "Ages 3 months–17 (drop-in pool open play: 1–5)",
    "where": "Chelsea Piers Connecticut — 1 Blachley Rd"
+  },
+  {
+   "id": "stam-hudson-table",
+   "c": "art",
+   "n": "Hudson Table kids' cooking",
+   "u": "https://hudsontable.com/stamford/kids-classes/",
+   "blurb": "Hands-on cooking classes and series, from Mommy & Me for ages 2–4 to drop-off classes and an after-school 'Around the World' series for ages 8–14.",
+   "ages": "2–14 years",
+   "where": "Stamford"
   }
  ],
  "library": {

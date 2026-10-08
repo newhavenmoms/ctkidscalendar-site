@@ -220,3 +220,22 @@ PLACES["out"]+=[("City splash pads","Bridgeport Parks & Recreation runs 15 free 
 
 # ---- creative places / bookstores / blogs pass (Oct 8) ----
 PLACES["out"]+=[("Captain's Cove Seaport","A free waterfront boardwalk and marina on Black Rock Harbor for a walk and boat-watching (1 Bostwick Ave).","Un malecón y puerto deportivo gratis en Black Rock Harbor para caminar y ver barcos (1 Bostwick Ave).")]
+
+# ---- patch: bridgeport-2026-10-08c.py ----
+ADD_PLACES={'out':[],'rain':[],'drive':[]}; REPLACE_PLACES={}; DROP_PLACES=[]
+_ES_before=dict(ES)
+# Round 3 finishing pass, Oct 8 2026
+for e in TOWN["events"]:
+    if e["t"]=="Trick or Treat Fest at the Discovery Museum": e["check"]=True
+TOWN["tba"]=[x for x in TOWN["tba"] if x["t"]!="Boo at the Zoo"]
+TOWN["events"]+=[{"t":"Tinker Together","v":DSC,"s":[[3,[["11:00","11:45"]],"2026-10-14","2026-12-30"]],"x":["2026-12-23"],"ages":"Ages 5 and under + caregiver","a":["toddler","preschool"],"free":False,"price":"Included with admission (free Wednesdays for Bridgeport residents)","drop":True,"check":True,"src":"https://www.shudiscovery.org/special-exhibits/tinker-together",
+  "blurb":"Story time, a short science lesson and a craft for little ones every Wednesday morning."}]
+ADD_PLACES["out"]+=[("The Adventure Park at the Discovery Museum","Treetop ropes courses and ziplines for ages 5+ (4450 Park Ave); weekends through Nov 29, plus Friday evenings in October.","Circuitos de cuerdas en los árboles y tirolesas para mayores de 5 años (4450 Park Ave); fines de semana hasta el 29 de nov., además de los viernes por la tarde en octubre.")]
+ADD_PLACES["rain"]+=[("Rogue Comics","A Black Rock comic shop with comics and Pokémon cards (3000 Fairfield Ave).","Una tienda de cómics en Black Rock con cómics y cartas de Pokémon (3000 Fairfield Ave).")]
+ES_PATCH={"Ages 5 and under + caregiver":"5 años o menos + un adulto",
+ "Included with admission (free Wednesdays for Bridgeport residents)":"Incluido con la entrada (gratis los miércoles para residentes de Bridgeport)",
+ "Story time, a short science lesson and a craft for little ones every Wednesday morning.":"Cuentacuentos, una breve lección de ciencia y una manualidad para los pequeños cada miércoles por la mañana."}
+
+ES.update(globals().get('ES_PATCH', {}))
+for _k,_v in ADD_PLACES.items(): PLACES[_k]+=_v
+for _k in PLACES: PLACES[_k]=[REPLACE_PLACES.get(p[0],p) for p in PLACES[_k] if p[0] not in DROP_PLACES]
