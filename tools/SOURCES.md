@@ -56,6 +56,26 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 
 ---
 
+## Bridgeport
+
+**Check regularly**
+
+| Source | What to look for / how often | Last checked |
+|---|---|---|
+| [Bridgeport Public Library (LibCal)](https://bportlibrary.libcal.com/) | Monthly. Readable via …/ajax/calendar/list?c=-1&date=0000-00-00&perpage=35&page=N with audience=7093 (ages 0–5) and audience=7094 (ages 6–11). Five branches. | Oct 7, 2026 |
+| [Connecticut's Beardsley Zoo press releases](https://beardsleyzoo.org/about-us/press/connecticuts-beardsley-zoo-announces-a-glowing-schedule-of-events-for-september-through-december/) | Seasonal: Boo at the Zoo (late October), GLOW Wild, Zoo Tots. 2026 dates not found yet. | Oct 7, 2026 |
+| [Discovery Museum](https://www.shudiscovery.org/) | Monthly: events page was a 404 on Oct 7; free Wednesdays for residents. | Oct 7, 2026 |
+| [City of Bridgeport events](https://www.bridgeportct.gov/events/mayor-ganim-and-city-bridgeports-annual-tree-lighting) | Annual: tree lighting on McLevy Green (late Nov/early Dec). | Oct 7, 2026 |
+| [Connecticut's Beardsley Zoo](https://beardsleyzoo.org/) | Seasonal: GLOW Wild (Oct 1–Dec 20, Thu–Sun evenings), awareness days. Boo at the Zoo not listed for 2026. | Oct 7, 2026 |
+| [SHU Discovery Science Center & Planetarium](https://www.shudiscovery.org/) | Seasonal: Trick or Treat Fest (Oct 17), Thankful Friday (Nov 27). Formerly the Discovery Museum. | Oct 7, 2026 |
+| [Downtown Cabaret Theatre](https://dtcab.com/bridgeport-theatre-co-dct) | Seasonal: children's theatre company; season not found online Oct 7. | Oct 7, 2026 |
+| [KidsWannaGo Fairfield County / Fairfield After Dark](https://www.fairfieldafterdark.com/stratford-ct) | Checked Oct 8: KidsWannaGo's weekend page was stale (April 2026) and Fairfield After Dark is mostly adult events. Low value; Macaroni Kid Fairfield–Trumbull–Shelton does not cover Bridgeport or Stratford. | Oct 8, 2026 |
+
+**Also cited in your data** (0 more site(s), busiest first)
+
+
+---
+
 ## Cheshire
 
 **Check regularly**
@@ -94,6 +114,28 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 
 ---
 
+## Danbury
+
+**Check regularly**
+
+| Source | What to look for / how often | Last checked |
+|---|---|---|
+| [Danbury Library (mylibrary.digital)](https://danburylibrary.events.mylibrary.digital/) | Monthly, paste only (403 to automated reading). Filter audiences Early Learners (0–5) and School Age (6–12). The paste shows start times only, so end times on the page are estimates. | Oct 7, 2026 |
+| [Danbury Railway Museum](https://ctvisit.com/events/ride-husking-bee-pumpkin-patch-train-1) | Seasonal: Pumpkin Patch Train (Oct 10–Nov 1, 2026), Santa trains (late Nov–Dec). | Oct 7, 2026 |
+| [CityCenter Danbury events](https://danbury.macaronikid.com/events/66fff33da04af54b6afc6cd1/-32nd-annual-halloween-on-the-green--citycenter-danbury-green) | Annual: Halloween on the Green (late October) and Light the Lights (early December). 2026 dates not posted yet. | Oct 7, 2026 |
+| [Patch — Danbury calendar](https://patch.com/connecticut/danbury/calendar) | Weekend check Oct 7: Nov 7 weekend empty (accepted gap). | Oct 7, 2026 |
+| [CityCenter Danbury](https://citycenterdanbury.com/) | Seasonal: Halloween on the Green (Oct 31), Light the Lights (Dec 5). | Oct 7, 2026 |
+| [Danbury Music Centre Nutcracker](https://danburymusiccentre.org/program/nutcracker-ballet/) | Annual (Dec 11–13, 2026; tickets Nov 1). | Oct 7, 2026 |
+| [Danbury Museum & Historical Society](https://danburymuseum.org/) | Wed–Sat 12–4; events page. | Oct 7, 2026 |
+| [Danbury Parks & Rec](https://danburyct.qscend.com/ParksRec) | No fall program listings online (summer camp, youth sports). | Oct 7, 2026 |
+| [Macaroni Kid Danbury](https://danbury.macaronikid.com) | Weekly. Events calendar returns 403 to automated reading (paste it); single event pages open. Homepage looked stale in Oct 2026; useful for past-year patterns (Irish Center Samhain, B&N author storytimes). | Oct 8, 2026 |
+| [Jumpz / Thrillz / Xtreme Play (indoor play)](https://www.jumpzdanbury.com/) | Seasonal check for toddler times, school-break specials and holiday hours. | Oct 8, 2026 |
+
+**Also cited in your data** (0 more site(s), busiest first)
+
+
+---
+
 ## Darien
 
 **Check regularly**
@@ -115,6 +157,25 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 - [darienlittleleague.com](https://www.darienlittleleague.com/) — 1 class card(s)
 - [darienyouthlacrosse.org](https://www.darienyouthlacrosse.org/) — 1 class card(s)
 - [djfl.org](https://www.djfl.org/) — 1 class card(s)
+
+---
+
+## Essex
+
+**Check regularly**
+
+| Source | What to look for / how often | Last checked |
+|---|---|---|
+| [Essex Library (Engaged Patrons)](https://www.youressexlibrary.org/) | Monthly. Paste the events list; kids' programs are mixed with many adult ones. Storytime series dates past October weren't posted as of Oct 4. | Oct 4, 2026 |
+| [essexct.com events (Ivoryton Library + town)](https://essexct.com/events/category/activity/) | Monthly. Readable directly and offers .ics export; covers the Ivoryton Library, FestiFall and the Pumpkin Festival. | Oct 4, 2026 |
+| [Essex Steam Train — North Pole Express](https://essexsteamtrain.com/) | Late summer: holiday dates and times (tickets online only). | Oct 4, 2026 |
+| [Connecticut River Museum](https://ctrivermuseum.org/) | November: Holiday Train Show and Trees in the Rigging dates. | Oct 4, 2026 |
+| [Essex Parks & Recreation (RecDesk)](https://essexct.recdesk.com/Community/Page?pageId=513) | October: Ivoryton Pumpkin Festival schedule (costume parade 4:30, carving at Bushy Hill). | Oct 4, 2026 |
+| [Bushy Hill Nature Center](https://www.bushyhill.org/) | Each season: community workshops and vacation days. | Oct 4, 2026 |
+| [Patch — Essex calendar](https://patch.com/connecticut/essex-chester-deepriver/calendar) | Weekend check Oct 5: Nov 7–8 and 14–15 empty; steam-train season ends in October and holiday events start late November (accepted gap). | Oct 5, 2026 |
+
+**Also cited in your data** (0 more site(s), busiest first)
+
 
 ---
 
@@ -159,6 +220,27 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 - [dvaldaandsirico.com](https://www.dvaldaandsirico.com/) — 1 class card(s)
 - [flashpointedance.com](https://www.flashpointedance.com/) — 1 class card(s)
 - [bricksandminifigs.com](https://bricksandminifigs.com/fairfield-ct/) — 1 class card(s)
+
+---
+
+## Farmington
+
+**Check regularly**
+
+| Source | What to look for / how often | Last checked |
+|---|---|---|
+| [Farmington Libraries (LibraryCalendar)](https://www.farmingtonlibraries.org/events) | Monthly, paste only (blocks automated reading). Pastes saved in tools/pastes/farmington-2026-10-p*.txt. Hoppin Gallery = Barney Library (71 Main St). Monday Preschool Storytime mostly cancelled this fall. | Oct 7, 2026 |
+| [Hill-Stead Museum](https://ctvisit.com/events/halloween-hill-2) | Seasonal: Halloween on the Hill (Oct 31), Holiday Boutique (Dec 5–6). | Oct 7, 2026 |
+| [Stanley-Whitman House](https://ctvisit.com/listings/stanley-whitman-house) | Seasonal: Maple Day (March), candlelight tours (December). | Oct 7, 2026 |
+| [Patch — Farmington calendar](https://patch.com/connecticut/farmington/calendar) | Weekend check Oct 7: Oct 24 weekend empty (accepted gap). | Oct 7, 2026 |
+| [Stanley-Whitman House programs](https://www.s-wh.org/programs) | Monthly: Ghost Walk Tours (Oct 17), Colonial Thanksgiving (Nov 14), Candlelight Tours (Dec 12). | Oct 7, 2026 |
+| [Unionville Museum](https://unionvillemuseum.org) | Seasonal exhibits (Wed/Sat/Sun 2–4); walking tours. | Oct 7, 2026 |
+| [Ballet Hartford Nutcracker at Hill-Stead](https://events.humanitix.com/the-nutcracker-land-of-the-sweets) | Annual? Nov 14, 2026. | Oct 7, 2026 |
+| [Farmington Recreation (MyRec)](https://farmingtonct.myrec.com/info/activities/default.aspx) | Seasonal. Readable once the owner sends this link; then open each program_details.aspx?ProgramID= page for sessions, fees and seats. Youth Sports Clinics and Cultural & Creative hold the kid classes; the Fall Festival is a program page too. Ice Academy skating meets in Simsbury (not listed). | Oct 8, 2026 |
+| [Macaroni Kid Hartford (mom-run events newsletter)](https://hartford.macaronikid.com) | Weekly. Covers Hartford, West Hartford, Avon, Canton and Simsbury (Farmington Valley too). The events calendar returns 403 to automated reading, so read it in a browser or paste it. | Oct 8, 2026 |
+
+**Also cited in your data** (0 more site(s), busiest first)
+
 
 ---
 
@@ -217,6 +299,109 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 - [gcyha.net](https://www.gcyha.net/) — 1 class card(s)
 - [bgcg.org](https://bgcg.org/what-we-do/after-school-programs/) — 1 class card(s)
 - [foodshednetwork.org](https://foodshednetwork.org/) — 1 class card(s)
+
+---
+
+## Guilford
+
+**Check regularly**
+
+| Source | What to look for / how often | Last checked |
+|---|---|---|
+| [Guilford Free Library — events calendar](https://guilfordfreelibrary.org/events/audience/children/) | Monthly. Month-grid view only (no list view): save each month as PDF or screenshot; the children's listing shows only each series' next date. | Oct 4, 2026 |
+| [Town of Guilford](https://www.ci.guilford.ct.us/) | Seasonal: Spooktacular on the Green (late Oct), tree lighting and luminaria (early Dec). | Oct 4, 2026 |
+| [Bishop's Orchards](https://www.bishopsorchards.com/) | Seasonal: pick-your-own dates. | Oct 4, 2026 |
+| [Guilford Parks & Recreation](https://www.guilfordparkrec.com/newslist.php) | Monthly: the News List page is current (Spooktacular, holiday events) even though the home page shows an old 2020 copy. Each August: fall/winter brochure. | Oct 4, 2026 |
+| [Dudley Farm Museum — events](https://dudleyfarm.com/events/) | Monthly: Harvest Day (mid-Oct), farmers' market (Sat through Oct), holiday market. | Oct 4, 2026 |
+| [Henry Whitfield State Museum](https://portal.ct.gov/decd/content/historic-preservation/04_state_museums/henry-whitfield-state-museum/events-and-exhibits) | House closed for restoration in 2026; check for reopening and events. | Oct 4, 2026 |
+| [Patch — Guilford calendar](https://patch.com/connecticut/guilford/calendar) | Weekend check Oct 5: Nov 14–15 had nothing kid-focused (accepted gap). | Oct 5, 2026 |
+
+**Also cited in your data** (0 more site(s), busiest first)
+
+
+---
+
+## Hamden
+
+**Check regularly**
+
+| Source | What to look for / how often | Last checked |
+|---|---|---|
+| [Hamden Public Library (LibCal)](https://hamdenlibrary.libcal.com/calendar/programs/) | Monthly via the LibCal list endpoint. Audience IDs: 4605 Children – Preschool, 3367 Children – School age. Toddler storytimes open for registration two weeks ahead. | Oct 7, 2026 |
+| [Silverbells (town holiday celebration)](https://hamdenlibrary.org/?p=23334) | Annual: tree lighting at Town Center Park on a December weekday evening; workshops via hamdenct.myrec.com. | Oct 7, 2026 |
+| [This Week in Hamden (newsletter)](https://thisweekinhamden.substack.com/p/special-edition-halloween-in-hamden-e3a) | Seasonal: Halloween round-up (trunk-or-treats at the Elks, YMCA, Keefe Center). 2026 edition not out yet when checked. | Oct 7, 2026 |
+| [Patch — Hamden calendar](https://patch.com/connecticut/hamden/calendar) | Weekend check Oct 7: nothing kid-focused; Oct 10–24 and Nov 7–14 weekends empty (accepted gap). Worth adding: Eli Whitney Museum workshops, Brooksvale Park events. | Oct 7, 2026 |
+| [Hamden Recreation (MyRec)](https://hamdenct.myrec.com/info/activities/default.aspx) | Seasonal: only a handful of programs (All Ability Halloween Dance Oct 16, swim lessons full). | Oct 7, 2026 |
+| [Sleeping Giant Park Association program calendar](https://sgpa.org/program-calendar/) | Monthly: free guided hikes (registration). | Oct 7, 2026 |
+| [Eli Whitney Museum](https://www.eliwhitney.org/node/177) | Seasonal: weekend walk-ins Sat–Sun 10–3; vacation-day workshops (2026–27 dates not posted Oct 7). | Oct 7, 2026 |
+| [Hamden Family Resource Center](https://www.hamden.org/family-resource-center-frc) | Call 203-407-3111 for Play and Learn schedules (not posted online). | Oct 7, 2026 |
+| [This Week in Hamden (Substack)](https://thisweekinhamden.substack.com/p/special-edition-halloween-in-hamden-e3a) | Seasonal. Very Hamden-specific Halloween and holiday round-ups (trunk-or-treats, Elks, Keefe Center, ConnCorp), but the newest post found is fall 2024, so use it for patterns. | Oct 8, 2026 |
+| [Quinnipiac University: children & families](https://local.qu.edu/children-and-families/) | Seasonal: Boomer's Boo Bash (late October) and other community days. | Oct 8, 2026 |
+| [Macaroni Kid Wallingford/New Haven](https://wallingford.macaronikid.com) | Weekly. Says it covers New Haven and surrounding towns; Hamden not named. Calendar is 403 to automated reading. | Oct 8, 2026 |
+
+**Also cited in your data** (0 more site(s), busiest first)
+
+
+---
+
+## Hartford
+
+**Check regularly**
+
+| Source | What to look for / how often | Last checked |
+|---|---|---|
+| [Hartford Public Library (Communico)](https://programs.hplct.org/events?a=Family%2CYouth) | Monthly, paste only (JavaScript calendar). Filter age groups Family + Youth and a date range. Albany branch programs stopped after October; December was nearly empty when pasted. | Oct 7, 2026 |
+| [Connecticut Science Center](https://ctsciencecenter.org/) | Monthly: Spooktacular (Oct 18), holiday programs, school-break events. | Oct 7, 2026 |
+| [Hartford Stage](https://www.hartfordstage.org/2026-2027/a-christmas-carol/) | Annual: A Christmas Carol (Nov 21–Dec 27, 2026). | Oct 7, 2026 |
+| [Patch — Hartford calendar](https://patch.com/connecticut/hartford/calendar) | Weekend check Oct 7: nothing kid-focused in Hartford; most weekends empty (accepted gap). Worth adding: Wadsworth Atheneum family days, Bushnell family shows, city tree lighting. | Oct 7, 2026 |
+| [Wadsworth Atheneum events (agenda view)](https://www.thewadsworth.org/events/action~agenda/request_format~html/) | Monthly: Second Saturdays for Families (free, 10–2), Día de Muertos, Festival of Lights. Page through with page_offset~N. | Oct 7, 2026 |
+| [Bushnell Children's Theatre](https://www.bushnell.org/education/bushnell-childrens-theatre) | Seasonal: school-day shows the public can attend ($14, box office 860-987-5900). | Oct 7, 2026 |
+| [Hartford Symphony / Connecticut Ballet Nutcracker](https://hartfordsymphony.org/portfolio-items/the-nutcracker-2026/) | Annual (Dec 19–20, 2026). | Oct 7, 2026 |
+| [Winterfest Hartford](https://www.wfsb.com/2025/11/26/winterfest-returns-hartfords-bushnell-park-15th-year/) | Annual: Black Friday into January; 2026 dates not posted Oct 7. | Oct 7, 2026 |
+| [Macaroni Kid Hartford (mom-run events newsletter)](https://hartford.macaronikid.com) | Weekly. Covers Hartford, West Hartford, Avon, Canton and Simsbury (Farmington Valley too). The events calendar returns 403 to automated reading, so read it in a browser or paste it. | Oct 8, 2026 |
+
+**Also cited in your data** (0 more site(s), busiest first)
+
+
+---
+
+## Madison
+
+**Check regularly**
+
+| Source | What to look for / how often | Last checked |
+|---|---|---|
+| [E.C. Scranton Memorial Library (LibraryCalendar)](https://scranton.librarycalendar.com/events/upcoming) | Monthly. Filter Age Group to Children and paste the list. Storytimes rotate on scattered dates rather than weekly series. | Oct 4, 2026 |
+| [Madison Beach & Recreation](https://www.madisonct.org/) | Seasonal: holiday tree lighting (early December), programs. | Oct 4, 2026 |
+| [R.J. Julia Booksellers](https://rjjulia.com/upcoming-events) | Monthly: children's storytimes and author events. | Oct 4, 2026 |
+| [Meigs Point Nature Center](https://www.meigspointnaturecenter.org/) | Monthly: Astronomy Night, seasonal programs; free admission. | Oct 4, 2026 |
+| [Patch — Madison calendar](https://patch.com/connecticut/madison-ct/calendar) | Weekend check Oct 5: Oct 10 and 17 only have library Itty Bitty Meetup; Patch had nothing kid-focused (accepted gap). Beware Madison WI/MN/IL/GA results in searches. | Oct 5, 2026 |
+
+**Also cited in your data** (0 more site(s), busiest first)
+
+
+---
+
+## Manchester
+
+**Check regularly**
+
+| Source | What to look for / how often | Last checked |
+|---|---|---|
+| [Manchester Public Library (mylibrary.digital)](https://manchesterpubliclibraryct.events.mylibrary.digital/) | Monthly, paste only. Filter Audience: Children's, all three locations. The Oct 7 paste listed dates through Nov 12 only and gives start times only. | Oct 7, 2026 |
+| [Downtown Manchester (Halloween Happenings)](https://www.locable.com/connections/19730-downtown-manchester-special-services-district/events/2026/10/17/513121/halloween-happenings-3/) | Annual: Halloween Happenings (Oct 24, 2026). | Oct 7, 2026 |
+| [Town of Manchester calendar](https://www.manchesterct.gov/Community/Town-Calendar-of-Events/Tree-Lighting-Ceremony-2025) | Annual: tree lighting at Center Church (Sat after Thanksgiving in 2025). | Oct 7, 2026 |
+| [Lutz Children's Museum](https://lutzmuseum.org/visit) | Monthly: check for family events; museum hours and admission. | Oct 7, 2026 |
+| [Patch — Manchester calendar](https://patch.com/connecticut/manchester/calendar) | Weekend check Oct 7: calendar only reached Oct 9; most weekends empty (accepted gap). | Oct 7, 2026 |
+| [Town calendar of events](https://www.manchesterct.gov/Community/Town-Calendar-of-Events) | Monthly: Fall Fest, Scarecrow Festival, 2nd Saturdays, America 250 historic walks. Browse forward by date range for Nov–Dec. | Oct 7, 2026 |
+| [Manchester Now fall 2026 program guide (Flipsnack)](https://www.flipsnack.com/57FF8EB569B/manchester-now-fall-2026) | Seasonal. Image-only flipbook, so ask the owner for the PDF (fall 2026 text saved as tools/pastes/manchester-now-fall-2026.txt; the 11 MB PDF itself is not kept in the repo). Text extracts with gaps between letters and jumbled columns, so check day/date pairs. Covers Early Childhood Center playgroups, Leisure Labs family nights and movies, Youth Service Bureau family workshops, drop-in art, pools and basketball. Town moves registration to MyRec from Nov 2026. | Oct 8, 2026 |
+| [Downtown Manchester SSD (Locable)](https://www.locable.com/connections/19730-downtown-manchester-special-services-district/events/2026/11/28/513128/holiday-on-main-6/) | Seasonal: Halloween Happenings (Oct 24), Holiday on Main (Nov 28). | Oct 7, 2026 |
+| [Lutz Children's Museum calendar](https://lutzmuseum.org/calendar-1) | Monthly: Spooktacular (Oct 24); few other dated events. | Oct 7, 2026 |
+| [The Fire Museum](https://thefiremuseum.org/) | Saturdays 10–4. | Oct 7, 2026 |
+| [Mommy Poppins: indoor play spaces in CT](https://mommypoppins.com/connecticut-kids/indoor-activities/indoor-play-spaces-in-connecticut-open-now) | Places only (updated Feb 2026). Trap: manchester.macaronikid.com is Manchester, NH; no CT Macaroni Kid edition covers Manchester. | Oct 8, 2026 |
+
+**Also cited in your data** (0 more site(s), busiest first)
+
 
 ---
 
@@ -438,6 +623,24 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 
 ---
 
+## Old Saybrook
+
+**Check regularly**
+
+| Source | What to look for / how often | Last checked |
+|---|---|---|
+| [Acton Public Library (Assabet calendar)](https://actonlibrary.assabetinteractive.com/calendar/) | Monthly. Assabet: open each month's 'By Date-Ordered Listings' view and paste it. Several programs get canceled week to week, so check for CANCELED tags. | Oct 4, 2026 |
+| [Old Saybrook Torchlight Parade](https://oldsaybrooktorchlight.com/) | Each fall: parade date (2nd Saturday of December in 2026). | Oct 4, 2026 |
+| [The Kate](https://thekate.org/) | Each season: look for children's shows (none in fall 2026). | Oct 4, 2026 |
+| [Old Saybrook Parks & Recreation (MyRec)](https://oldsaybrookct.myrec.com/info/activities/default.aspx) | Each season: preschool programs, Soccer Shots, martial arts, 'Tis the Season, Trunk or Treat (late Oct). | Oct 4, 2026 |
+| [Greater Old Saybrook Chamber — events](https://business.goschamber.com/events/) | Each summer: Arts & Crafts Festival on the Town Green (first weekend of October; Oct 3–4 in 2026), Chili Fest, holiday events. | Oct 5, 2026 |
+| [Patch — Old Saybrook calendar](https://patch.com/connecticut/old-saybrook-ct/calendar) | Monthly: Clark Community Park nature walks, Kate family shows (e.g., Missoula Children's Theatre), library programs. | Oct 5, 2026 |
+
+**Also cited in your data** (0 more site(s), busiest first)
+
+
+---
+
 ## Ridgefield
 
 **Check regularly**
@@ -472,6 +675,28 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 - [ridgefieldtheaterbarn.org](https://ridgefieldtheaterbarn.org/rtbk-workshops/rtbk-playmakers-lab/) — 1 class card(s)
 - [dancefactoryridgefield.com](https://www.dancefactoryridgefield.com/) — 1 class card(s)
 - [thelittlegym.com](https://www.thelittlegym.com/ridgefieldct) — 1 class card(s)
+
+---
+
+## Simsbury
+
+**Check regularly**
+
+| Source | What to look for / how often | Last checked |
+|---|---|---|
+| [Simsbury Public Library (LibraryCalendar)](https://simsbury.librarycalendar.com/events/month?age_groups%5B72%5D=72) | Monthly, paste only. Pastes saved in tools/pastes/simsbury-2026-10-p*.txt. Recurring storytimes were posted through October only. | Oct 7, 2026 |
+| [Simsbury Celebrates](https://www.simsbury-ct.gov/node/176641) | Annual: Saturday after Thanksgiving on Hopmeadow St (Nov 28, 2026), fireworks around 8:15. | Oct 7, 2026 |
+| [Flamig Farm](https://flamigfarm.yapsody.com/event/index/857093/Halloween-at-The-Farm-with-Farmer-Debbie) | Seasonal: farm programs (Halloween at the Farm, Oct 30). | Oct 7, 2026 |
+| [Patch — Simsbury calendar](https://patch.com/connecticut/simsbury/calendar) | Weekend check Oct 7: calendar was stale (September); Oct 17–Nov 7 weekends empty (accepted gap). Worth adding: International Skating Center public skating, Simsbury Farms rink opening. | Oct 7, 2026 |
+| [Simsbury Recreation (MyRec)](https://simsburyct.myrec.com/info/activities/default.aspx) | Seasonal: Little Makers, Tumble Tots, Mad Science, Youth Acting, dance, skating lessons, Gingerbread House competition. | Oct 7, 2026 |
+| [Simsbury Historical Society events](https://simsburyhistory.org/events-programs/) | Monthly: plays, workshops, Children's Holiday Tea (Dec 5), Holiday Market. | Oct 7, 2026 |
+| [Macaroni Kid Hartford (mom-run events newsletter)](https://hartford.macaronikid.com) | Weekly. Covers Hartford, West Hartford, Avon, Canton and Simsbury (Farmington Valley too). The events calendar returns 403 to automated reading, so read it in a browser or paste it. | Oct 8, 2026 |
+| [Flamig Farm tickets (Yapsody)](https://flamigfarm.yapsody.com) | Monthly. Best source for the farm's dated events: Toddlers on the Farm, haunted walk, Halloween with Farmer Debbie, Santa visits (December dates usually posted in November). | Oct 8, 2026 |
+| [Theatre Guild of Simsbury](https://www.theatreguildsimsbury.org/our-season/the-little-mermaid) | Seasonal. Community musicals at Simsbury High School (fall show early-mid October). | Oct 8, 2026 |
+| [Farmington Valley Community newsletter](https://farmington-valley.beehiiv.com/p/simsbury-celebrates-2024) | Seasonal. Covers Simsbury Celebrates and other valley events. | Oct 8, 2026 |
+
+**Also cited in your data** (0 more site(s), busiest first)
+
 
 ---
 
@@ -521,6 +746,26 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 
 ---
 
+## Stratford
+
+**Check regularly**
+
+| Source | What to look for / how often | Last checked |
+|---|---|---|
+| [Stratford Library (LibCal)](https://stratfordlibrary.libcal.com/calendar/events) | Monthly. Readable via the LibCal list endpoint (…/ajax/calendar/list?c=-1&date=0000-00-00&perpage=35&page=N); iCal feed cid=12865. Oct 7 read stopped at a rate limit: Nov 23–30 and after Dec 9 not yet read. | Oct 7, 2026 |
+| [Celebrate Stratford (town events)](https://www.townofstratford.com/article/2802050) | Annual list: Great Pumpkin Festival (Oct 17, rain date Oct 18), Holiday Market & Tree Lighting (Fri after Thanksgiving), Menorah Lighting (Dec 9). Times come from past years; confirm. | Oct 7, 2026 |
+| [Stratford library local museums list](https://stratfordlibrary.org/local-museums/) | Seasonal: museum hours (Helicopter Museum closes mid-October). | Oct 7, 2026 |
+| [Patch — Stratford calendar](https://patch.com/connecticut/stratford/calendar) | Weekend check Oct 7: Nov 7 and Nov 14 weekends empty; Oct weekends have one item each. | Oct 7, 2026 |
+| [Stratford Recreation (RecDesk)](https://townofstratford.recdesk.com/Community/Program?category=3) | Seasonal, paste only (JavaScript list). Oct 8 paste (tools/pastes/stratford-rec-2026-10-p*.txt): 43 youth programs, with classes added to the page. The Preschool category wasn't pasted yet. | Oct 8, 2026 |
+| [Boothe Homestead Christmas (Friends of Boothe Park)](https://stratfordcrier.com/homestead-for-the-holidays/) | Annual, first weekend of December, with Santa photos; 2026 dates not posted. | Oct 7, 2026 |
+| [Connecticut Dance Conservatory](http://www.ctdanceconservatory.org/general-info.html) | Seasonal: Day of Dance (Nov 8). | Oct 7, 2026 |
+| [KidsWannaGo Fairfield County / Fairfield After Dark](https://www.fairfieldafterdark.com/stratford-ct) | Checked Oct 8: KidsWannaGo's weekend page was stale (April 2026) and Fairfield After Dark is mostly adult events. Low value; Macaroni Kid Fairfield–Trumbull–Shelton does not cover Bridgeport or Stratford. | Oct 8, 2026 |
+
+**Also cited in your data** (0 more site(s), busiest first)
+
+
+---
+
 ## Trumbull
 
 **Check regularly**
@@ -552,6 +797,28 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 **Also cited in your data** (1 more site(s), busiest first)
 
 - [centerforpediatrictherapy.com](https://centerforpediatrictherapy.com/screenings/) — 1 event(s)
+
+---
+
+## Waterbury
+
+**Check regularly**
+
+| Source | What to look for / how often | Last checked |
+|---|---|---|
+| [Silas Bronson Library kids' programs](https://www.bronsonlibrary.org/kidprograms) | Monthly. Readable page listing weekly and monthly programs through November. It says 'Sat Nov 3' for a movie (Nov 3 is a Tuesday), so that one was left off. | Oct 7, 2026 |
+| [Mattatuck Museum calendar](https://www.mattmuseum.org/?p=32793) | Monthly: free second Saturdays, chess lessons, School's Out camps. | Oct 7, 2026 |
+| [Palace Theater](https://www.palacetheaterct.org/shows-and-events/main-stage) | Seasonal: show list loads only in a browser; use its Family-Friendly filter. | Oct 7, 2026 |
+| [Waterbury tree lighting](https://thewaterburytimes.com/2025/11/29/waterbury-tree-lighting-ceremony-2025/) | Annual, on the Green after Thanksgiving. Beware Waterbury, VT results (River of Light parade, Waterbury Roundabout). | Oct 7, 2026 |
+| [Mattatuck Museum calendar (list)](https://www.mattmuseum.org/calendar/list/) | Monthly: Family Fun Days, School's Out camps (Nov 3, Nov 11), kids' art workshops, chess. | Oct 7, 2026 |
+| [Spirits Alive at Riverside](https://ctvisit.com/events/spirits-alive-riverside) | Annual cemetery history tour (Oct 17, 2026). | Oct 7, 2026 |
+| [Waterbury Parks & Rec](https://www.waterburyct.gov/services/public-works/recreation) | Rec centers run after-school programs; no fall brochure online. Beware discoverwaterbury.com (Vermont). | Oct 7, 2026 |
+| [Macaroni Kid Southbury (covers Waterbury)](https://southbury.macaronikid.com) | Weekly. Its coverage list includes Waterbury and Naugatuck. Events calendar is 403 to automated reading; paste it. | Oct 8, 2026 |
+| [Waterbury Region Arts calendar](https://events.waterburyregionarts.com/events/school-s-out-324ae) | Monthly. Event pages open; carries Mattatuck School's Out days and arts events. | Oct 8, 2026 |
+| [KidsWannaGo Greater Waterbury](https://kidswannago.com/connecticut/greater-waterbury/) | Weekly calendar, readable. Some entries are mis-tagged (Massachusetts events under Waterbury venues), so confirm each on the host's site. | Oct 8, 2026 |
+
+**Also cited in your data** (0 more site(s), busiest first)
+
 
 ---
 
@@ -646,78 +913,5 @@ rebuilt from the site itself each time, so they stay accurate as events are adde
 - [thewonder.com](https://www.thewonder.com/) — 1 class card(s)
 - [groove-store.com](https://groove-store.com/) — 1 class card(s)
 - [barnesandnoble.com](https://www.barnesandnoble.com/) — 1 class card(s)
-
----
-
-## Guilford
-
-**Check regularly**
-
-| Source | What to look for / how often | Last checked |
-|---|---|---|
-| [Guilford Free Library — events calendar](https://guilfordfreelibrary.org/events/audience/children/) | Monthly. Month-grid view only (no list view): save each month as PDF or screenshot; the children's listing shows only each series' next date. | Oct 4, 2026 |
-| [Town of Guilford](https://www.ci.guilford.ct.us/) | Seasonal: Spooktacular on the Green (late Oct), tree lighting and luminaria (early Dec). | Oct 4, 2026 |
-| [Bishop's Orchards](https://www.bishopsorchards.com/) | Seasonal: pick-your-own dates. | Oct 4, 2026 |
-| [Guilford Parks & Recreation](https://www.guilfordparkrec.com/newslist.php) | Monthly: the News List page is current (Spooktacular, holiday events) even though the home page shows an old 2020 copy. Each August: fall/winter brochure. | Oct 4, 2026 |
-| [Dudley Farm Museum — events](https://dudleyfarm.com/events/) | Monthly: Harvest Day (mid-Oct), farmers' market (Sat through Oct), holiday market. | Oct 4, 2026 |
-| [Henry Whitfield State Museum](https://portal.ct.gov/decd/content/historic-preservation/04_state_museums/henry-whitfield-state-museum/events-and-exhibits) | House closed for restoration in 2026; check for reopening and events. | Oct 4, 2026 |
-| [Patch — Guilford calendar](https://patch.com/connecticut/guilford/calendar) | Weekend check Oct 5: Nov 14–15 had nothing kid-focused (accepted gap). | Oct 5, 2026 |
-
-**Also cited in your data** (0 more site(s), busiest first)
-
-
----
-
-## Old Saybrook
-
-**Check regularly**
-
-| Source | What to look for / how often | Last checked |
-|---|---|---|
-| [Acton Public Library (Assabet calendar)](https://actonlibrary.assabetinteractive.com/calendar/) | Monthly. Assabet: open each month's 'By Date-Ordered Listings' view and paste it. Several programs get canceled week to week, so check for CANCELED tags. | Oct 4, 2026 |
-| [Old Saybrook Torchlight Parade](https://oldsaybrooktorchlight.com/) | Each fall: parade date (2nd Saturday of December in 2026). | Oct 4, 2026 |
-| [The Kate](https://thekate.org/) | Each season: look for children's shows (none in fall 2026). | Oct 4, 2026 |
-| [Old Saybrook Parks & Recreation (MyRec)](https://oldsaybrookct.myrec.com/info/activities/default.aspx) | Each season: preschool programs, Soccer Shots, martial arts, 'Tis the Season, Trunk or Treat (late Oct). | Oct 4, 2026 |
-| [Greater Old Saybrook Chamber — events](https://business.goschamber.com/events/) | Each summer: Arts & Crafts Festival on the Town Green (first weekend of October; Oct 3–4 in 2026), Chili Fest, holiday events. | Oct 5, 2026 |
-| [Patch — Old Saybrook calendar](https://patch.com/connecticut/old-saybrook-ct/calendar) | Monthly: Clark Community Park nature walks, Kate family shows (e.g., Missoula Children's Theatre), library programs. | Oct 5, 2026 |
-
-**Also cited in your data** (0 more site(s), busiest first)
-
-
----
-
-## Essex
-
-**Check regularly**
-
-| Source | What to look for / how often | Last checked |
-|---|---|---|
-| [Essex Library (Engaged Patrons)](https://www.youressexlibrary.org/) | Monthly. Paste the events list; kids' programs are mixed with many adult ones. Storytime series dates past October weren't posted as of Oct 4. | Oct 4, 2026 |
-| [essexct.com events (Ivoryton Library + town)](https://essexct.com/events/category/activity/) | Monthly. Readable directly and offers .ics export; covers the Ivoryton Library, FestiFall and the Pumpkin Festival. | Oct 4, 2026 |
-| [Essex Steam Train — North Pole Express](https://essexsteamtrain.com/) | Late summer: holiday dates and times (tickets online only). | Oct 4, 2026 |
-| [Connecticut River Museum](https://ctrivermuseum.org/) | November: Holiday Train Show and Trees in the Rigging dates. | Oct 4, 2026 |
-| [Essex Parks & Recreation (RecDesk)](https://essexct.recdesk.com/Community/Page?pageId=513) | October: Ivoryton Pumpkin Festival schedule (costume parade 4:30, carving at Bushy Hill). | Oct 4, 2026 |
-| [Bushy Hill Nature Center](https://www.bushyhill.org/) | Each season: community workshops and vacation days. | Oct 4, 2026 |
-| [Patch — Essex calendar](https://patch.com/connecticut/essex-chester-deepriver/calendar) | Weekend check Oct 5: Nov 7–8 and 14–15 empty; steam-train season ends in October and holiday events start late November (accepted gap). | Oct 5, 2026 |
-
-**Also cited in your data** (0 more site(s), busiest first)
-
-
----
-
-## Madison
-
-**Check regularly**
-
-| Source | What to look for / how often | Last checked |
-|---|---|---|
-| [E.C. Scranton Memorial Library (LibraryCalendar)](https://scranton.librarycalendar.com/events/upcoming) | Monthly. Filter Age Group to Children and paste the list. Storytimes rotate on scattered dates rather than weekly series. | Oct 4, 2026 |
-| [Madison Beach & Recreation](https://www.madisonct.org/) | Seasonal: holiday tree lighting (early December), programs. | Oct 4, 2026 |
-| [R.J. Julia Booksellers](https://rjjulia.com/upcoming-events) | Monthly: children's storytimes and author events. | Oct 4, 2026 |
-| [Meigs Point Nature Center](https://www.meigspointnaturecenter.org/) | Monthly: Astronomy Night, seasonal programs; free admission. | Oct 4, 2026 |
-| [Patch — Madison calendar](https://patch.com/connecticut/madison-ct/calendar) | Weekend check Oct 5: Oct 10 and 17 only have library Itty Bitty Meetup; Patch had nothing kid-focused (accepted gap). Beware Madison WI/MN/IL/GA results in searches. | Oct 5, 2026 |
-
-**Also cited in your data** (0 more site(s), busiest first)
-
 
 ---

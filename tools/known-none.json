@@ -24,5 +24,42 @@
  },
  "old-saybrook": {
   "toy store": "No independent toy store in town as of Oct 2026 (only chain stores on Boston Post Rd). Nearest: Toys Ahoy! in Essex."
+ },
+ "hartford": {
+  "Parks & Rec programs": "City posts no fall rec class catalog online (summer programs and Night Gyms only)",
+  "Farm": "urban; none in city",
+  "Toy store": "no independent toy store found (nearest: The Toy Chest, West Hartford)"
+ },
+ "bridgeport": {
+  "Toy store": "no independent toy store found"
+ },
+ "danbury": {
+  "Theater / family shows": "no family theater series; Danbury Music Centre's Nutcracker (Dec) is listed"
+ },
+ "farmington": {
+  "Ice skating": "no rink in town",
+  "Toy store": "none in town; The Perfect Toy (Avon) is listed under short drives"
+ },
+ "hamden": {
+  "Theater / family shows": "only school productions"
+ },
+ "manchester": {
+  "Theater / family shows": "Little Theatre of Manchester (Cheney Hall) stages adult shows; no family series this fall"
+ },
+ "simsbury": {
+  "Splash pad": "none yet; one is planned at Memorial Park (52 Plank Hill Rd)",
+  "Bookstore": "none in town (rechecked Oct 8)"
+ },
+ "stratford": {
+  "Theater / family shows": "Square One Theatre closed; no family theater in town",
+  "Farm": "none in town",
+  "Ice skating": "no rink in town",
+  "Toy store": "no independent toy store found (Mellow Monkey is a novelty gift shop)"
+ },
+ "waterbury": {
+  "Farm": "none in city",
+  "Ice skating": "no ice rink; Roller Magic (roller rink) is listed",
+  "Bookstore": "Barnes & Noble at Brass Mill closed Jan 2026; John Bale Book Co. closed its shop",
+  "Toy store": "none (Richie's Comic Cabana sells comics and Pokémon cards)"
  }
 }

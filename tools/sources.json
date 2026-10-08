@@ -169,6 +169,76 @@
         "defaultFree": true,
         "note": "The SoNo calendar mixes kids' events with adult programs and private room bookings, so kidsOnly is false and the importer filters. Download its .ics from the library calendar and run with --file and --source."
       }
+    ],
+    "stratford": [
+      {
+        "name": "Stratford Library",
+        "platform": "LibCal",
+        "url": "https://stratfordlibrary.libcal.com/ical_subscribe.php?src=p&cid=12865",
+        "calendarPage": "https://stratfordlibrary.libcal.com/calendar/events",
+        "src": "https://stratfordlibrary.libcal.com/calendar/events",
+        "venue": "stratford-library",
+        "venueName": "Stratford Library",
+        "address": "2203 Main St",
+        "kidsOnly": false,
+        "defaultFree": true
+      }
+    ],
+    "bridgeport": [
+      {
+        "name": "Bridgeport Public Library",
+        "platform": "LibCal",
+        "url": "",
+        "calendarPage": "https://bportlibrary.libcal.com/",
+        "src": "https://bportlibrary.libcal.com/",
+        "venue": "bpl-main",
+        "venueName": "Burroughs-Saden Library (Main)",
+        "address": "925 Broad St",
+        "kidsOnly": false,
+        "defaultFree": true
+      }
+    ],
+    "hamden": [
+      {
+        "name": "Hamden Public Library",
+        "platform": "LibCal",
+        "url": "",
+        "calendarPage": "https://hamdenlibrary.libcal.com/calendar/programs/",
+        "src": "https://hamdenlibrary.libcal.com/calendar/programs/",
+        "venue": "hamden-miller",
+        "venueName": "Miller Memorial Library",
+        "address": "2901 Dixwell Ave",
+        "kidsOnly": false,
+        "defaultFree": true
+      }
+    ],
+    "farmington": [
+      {
+        "name": "Farmington Libraries",
+        "platform": "LibraryCalendar",
+        "url": "",
+        "calendarPage": "https://www.farmingtonlibraries.org/events",
+        "src": "https://www.farmingtonlibraries.org/events",
+        "venue": "farmington-library",
+        "venueName": "Farmington Library",
+        "address": "6 Monteith Dr",
+        "kidsOnly": false,
+        "defaultFree": true
+      }
+    ],
+    "simsbury": [
+      {
+        "name": "Simsbury Public Library",
+        "platform": "LibraryCalendar",
+        "url": "",
+        "calendarPage": "https://simsbury.librarycalendar.com/events/month?age_groups%5B72%5D=72",
+        "src": "https://simsbury.librarycalendar.com/events/month?age_groups%5B72%5D=72",
+        "venue": "simsbury-library",
+        "venueName": "Simsbury Public Library",
+        "address": "725 Hopmeadow St",
+        "kidsOnly": true,
+        "defaultFree": true
+      }
     ]
   }
 }

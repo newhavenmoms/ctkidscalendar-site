@@ -11,7 +11,7 @@
      5. calendarThrough dates that need extending */
 const fs = require('fs'), path = require('path');
 const ROOT = path.join(__dirname, '..');
-const TOWNS = fs.readdirSync(ROOT).filter(d => fs.existsSync(path.join(ROOT, d, 'index.html')) && d !== 'shared' && d !== 'tools').sort();
+const TOWNS = fs.readdirSync(ROOT).filter(d => d !== 'shared' && d !== 'tools' && fs.existsSync(path.join(ROOT, d, 'index.html')) && fs.readFileSync(path.join(ROOT, d, 'index.html'), 'utf8').includes('window.TOWN = {')).sort();
 const argDays = process.argv.indexOf('--days');
 const SOON = argDays > -1 ? parseInt(process.argv[argDays + 1], 10) : 30;
 

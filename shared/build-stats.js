@@ -17,7 +17,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const TOWNS = ['stamford', 'norwalk', 'fairfield', 'ridgefield', 'west-hartford', 'new-haven', 'greenwich', 'darien', 'westport', 'new-canaan', 'cheshire', 'milford', 'trumbull', 'wallingford', 'middletown', 'glastonbury', 'newtown', 'branford', 'guilford', 'old-saybrook', 'essex', 'madison'];
+const TOWNS = ['stamford', 'norwalk', 'fairfield', 'ridgefield', 'west-hartford', 'new-haven', 'greenwich', 'darien', 'westport', 'new-canaan', 'cheshire', 'milford', 'trumbull', 'wallingford', 'middletown', 'glastonbury', 'newtown', 'branford', 'guilford', 'old-saybrook', 'essex', 'madison', 'stratford', 'hartford', 'waterbury', 'bridgeport', 'hamden', 'manchester', 'farmington', 'danbury', 'simsbury'];
 
 let things = 0, venues = 0, festivals = 0;
 
@@ -68,11 +68,11 @@ console.log('shared/stats.json written:', stats);
    town. The homepage fetches this file and hides anything already over. */
 const COUNTIES = [
   { id: 'fairfield', en: 'Fairfield County', es: 'Condado de Fairfield',
-    towns: ['darien', 'fairfield', 'greenwich', 'new-canaan', 'newtown', 'norwalk', 'ridgefield', 'stamford', 'trumbull', 'westport'] },
+    towns: ['bridgeport', 'danbury', 'darien', 'fairfield', 'greenwich', 'new-canaan', 'newtown', 'norwalk', 'ridgefield', 'stamford', 'stratford', 'trumbull', 'westport'] },
   { id: 'new-haven', en: 'New Haven County', es: 'Condado de New Haven',
-    towns: ['branford', 'cheshire', 'guilford', 'madison', 'milford', 'new-haven', 'wallingford'] },
+    towns: ['branford', 'cheshire', 'guilford', 'hamden', 'madison', 'milford', 'new-haven', 'wallingford', 'waterbury'] },
   { id: 'hartford', en: 'Hartford County', es: 'Condado de Hartford',
-    towns: ['glastonbury', 'west-hartford'] },
+    towns: ['farmington', 'glastonbury', 'hartford', 'manchester', 'simsbury', 'west-hartford'] },
   { id: 'middlesex', en: 'Middlesex County', es: 'Condado de Middlesex',
     towns: ['essex', 'middletown', 'old-saybrook'] },
 ];

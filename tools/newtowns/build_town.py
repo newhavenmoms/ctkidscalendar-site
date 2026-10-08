@@ -15,7 +15,7 @@ page = (tpl.replace('{{TOWN}}', name).replace('{{URL}}', url).replace('{{ACCENT_
         .replace('{{DOMAIN_DISPLAY}}', f'ctkidscalendar.com/{slug}').replace('{{MONTH_YEAR}}', 'October 2026'))
 data = {'name': f'{name} Kids Calendar', 'townLabel': f'{name}, CT', 'url': url, 'email': '', 'instagram': '',
         'calendarThrough': '2026-12-31', 'venues': T['venues'], 'venueMeta': T['venueMeta'], 'hoods': T.get('hoods', []),
-        'events': T['events'], 'tba': T.get('tba', []), 'classes': T.get('classes', []), 'library': T.get('library'), 'extraResources': []}
+        'events': T['events'], 'tba': T.get('tba', []), 'classes': T.get('classes', []), 'library': T.get('library'), 'extraResources': T.get('extraResources', [])}
 a = page.index('window.TOWN = {'); b = page.index('\n};', a) + 3
 page = page[:a] + 'window.TOWN = ' + json.dumps(data, indent=1, ensure_ascii=False) + ';' + page[b:]
 esc = lambda s: html.escape(s, quote=True)

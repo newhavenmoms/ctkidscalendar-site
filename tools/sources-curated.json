@@ -50,6 +50,60 @@
    ],
    "extras": []
   },
+  "bridgeport": {
+   "title": "Bridgeport",
+   "extras": [],
+   "check": [
+    {
+     "name": "Bridgeport Public Library (LibCal)",
+     "url": "https://bportlibrary.libcal.com/",
+     "how": "Monthly. Readable via …/ajax/calendar/list?c=-1&date=0000-00-00&perpage=35&page=N with audience=7093 (ages 0–5) and audience=7094 (ages 6–11). Five branches.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Connecticut's Beardsley Zoo press releases",
+     "url": "https://beardsleyzoo.org/about-us/press/connecticuts-beardsley-zoo-announces-a-glowing-schedule-of-events-for-september-through-december/",
+     "how": "Seasonal: Boo at the Zoo (late October), GLOW Wild, Zoo Tots. 2026 dates not found yet.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Discovery Museum",
+     "url": "https://www.shudiscovery.org/",
+     "how": "Monthly: events page was a 404 on Oct 7; free Wednesdays for residents.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "City of Bridgeport events",
+     "url": "https://www.bridgeportct.gov/events/mayor-ganim-and-city-bridgeports-annual-tree-lighting",
+     "how": "Annual: tree lighting on McLevy Green (late Nov/early Dec).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Connecticut's Beardsley Zoo",
+     "url": "https://beardsleyzoo.org/",
+     "how": "Seasonal: GLOW Wild (Oct 1–Dec 20, Thu–Sun evenings), awareness days. Boo at the Zoo not listed for 2026.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "SHU Discovery Science Center & Planetarium",
+     "url": "https://www.shudiscovery.org/",
+     "how": "Seasonal: Trick or Treat Fest (Oct 17), Thankful Friday (Nov 27). Formerly the Discovery Museum.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Downtown Cabaret Theatre",
+     "url": "https://dtcab.com/bridgeport-theatre-co-dct",
+     "how": "Seasonal: children's theatre company; season not found online Oct 7.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "KidsWannaGo Fairfield County / Fairfield After Dark",
+     "url": "https://www.fairfieldafterdark.com/stratford-ct",
+     "how": "Checked Oct 8: KidsWannaGo's weekend page was stale (April 2026) and Fairfield After Dark is mostly adult events. Low value; Macaroni Kid Fairfield–Trumbull–Shelton does not cover Bridgeport or Stratford.",
+     "last": "Oct 8, 2026"
+    }
+   ]
+  },
   "cheshire": {
    "title": "Cheshire",
    "check": [
@@ -89,6 +143,72 @@
     "**Don't confuse with**\n\n- Cheshire, **Massachusetts** (cheshirepubliclibrary.org) — a different library with a Tuesday 11am storytime that keeps showing up in research.\n- Historical Society of **Cheshire County** — that's Keene, New Hampshire."
    ]
   },
+  "danbury": {
+   "title": "Danbury",
+   "extras": [],
+   "check": [
+    {
+     "name": "Danbury Library (mylibrary.digital)",
+     "url": "https://danburylibrary.events.mylibrary.digital/",
+     "how": "Monthly, paste only (403 to automated reading). Filter audiences Early Learners (0–5) and School Age (6–12). The paste shows start times only, so end times on the page are estimates.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Danbury Railway Museum",
+     "url": "https://ctvisit.com/events/ride-husking-bee-pumpkin-patch-train-1",
+     "how": "Seasonal: Pumpkin Patch Train (Oct 10–Nov 1, 2026), Santa trains (late Nov–Dec).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "CityCenter Danbury events",
+     "url": "https://danbury.macaronikid.com/events/66fff33da04af54b6afc6cd1/-32nd-annual-halloween-on-the-green--citycenter-danbury-green",
+     "how": "Annual: Halloween on the Green (late October) and Light the Lights (early December). 2026 dates not posted yet.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Patch — Danbury calendar",
+     "url": "https://patch.com/connecticut/danbury/calendar",
+     "how": "Weekend check Oct 7: Nov 7 weekend empty (accepted gap).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "CityCenter Danbury",
+     "url": "https://citycenterdanbury.com/",
+     "how": "Seasonal: Halloween on the Green (Oct 31), Light the Lights (Dec 5).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Danbury Music Centre Nutcracker",
+     "url": "https://danburymusiccentre.org/program/nutcracker-ballet/",
+     "how": "Annual (Dec 11–13, 2026; tickets Nov 1).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Danbury Museum & Historical Society",
+     "url": "https://danburymuseum.org/",
+     "how": "Wed–Sat 12–4; events page.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Danbury Parks & Rec",
+     "url": "https://danburyct.qscend.com/ParksRec",
+     "how": "No fall program listings online (summer camp, youth sports).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Macaroni Kid Danbury",
+     "url": "https://danbury.macaronikid.com",
+     "how": "Weekly. Events calendar returns 403 to automated reading (paste it); single event pages open. Homepage looked stale in Oct 2026; useful for past-year patterns (Irish Center Samhain, B&N author storytimes).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Jumpz / Thrillz / Xtreme Play (indoor play)",
+     "url": "https://www.jumpzdanbury.com/",
+     "how": "Seasonal check for toddler times, school-break specials and holiday hours.",
+     "last": "Oct 8, 2026"
+    }
+   ]
+  },
   "darien": {
    "title": "Darien",
    "check": [
@@ -124,6 +244,54 @@
     }
    ],
    "extras": []
+  },
+  "essex": {
+   "title": "Essex",
+   "extras": [],
+   "check": [
+    {
+     "name": "Essex Library (Engaged Patrons)",
+     "url": "https://www.youressexlibrary.org/",
+     "how": "Monthly. Paste the events list; kids' programs are mixed with many adult ones. Storytime series dates past October weren't posted as of Oct 4.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "essexct.com events (Ivoryton Library + town)",
+     "url": "https://essexct.com/events/category/activity/",
+     "how": "Monthly. Readable directly and offers .ics export; covers the Ivoryton Library, FestiFall and the Pumpkin Festival.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Essex Steam Train — North Pole Express",
+     "url": "https://essexsteamtrain.com/",
+     "how": "Late summer: holiday dates and times (tickets online only).",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Connecticut River Museum",
+     "url": "https://ctrivermuseum.org/",
+     "how": "November: Holiday Train Show and Trees in the Rigging dates.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Essex Parks & Recreation (RecDesk)",
+     "url": "https://essexct.recdesk.com/Community/Page?pageId=513",
+     "how": "October: Ivoryton Pumpkin Festival schedule (costume parade 4:30, carving at Bushy Hill).",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Bushy Hill Nature Center",
+     "url": "https://www.bushyhill.org/",
+     "how": "Each season: community workshops and vacation days.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Patch — Essex calendar",
+     "url": "https://patch.com/connecticut/essex-chester-deepriver/calendar",
+     "how": "Weekend check Oct 5: Nov 7–8 and 14–15 empty; steam-train season ends in October and holiday events start late November (accepted gap).",
+     "last": "Oct 5, 2026"
+    }
+   ]
   },
   "fairfield": {
    "title": "Fairfield",
@@ -166,6 +334,66 @@
     }
    ],
    "extras": []
+  },
+  "farmington": {
+   "title": "Farmington",
+   "extras": [],
+   "check": [
+    {
+     "name": "Farmington Libraries (LibraryCalendar)",
+     "url": "https://www.farmingtonlibraries.org/events",
+     "how": "Monthly, paste only (blocks automated reading). Pastes saved in tools/pastes/farmington-2026-10-p*.txt. Hoppin Gallery = Barney Library (71 Main St). Monday Preschool Storytime mostly cancelled this fall.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Hill-Stead Museum",
+     "url": "https://ctvisit.com/events/halloween-hill-2",
+     "how": "Seasonal: Halloween on the Hill (Oct 31), Holiday Boutique (Dec 5–6).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Stanley-Whitman House",
+     "url": "https://ctvisit.com/listings/stanley-whitman-house",
+     "how": "Seasonal: Maple Day (March), candlelight tours (December).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Patch — Farmington calendar",
+     "url": "https://patch.com/connecticut/farmington/calendar",
+     "how": "Weekend check Oct 7: Oct 24 weekend empty (accepted gap).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Stanley-Whitman House programs",
+     "url": "https://www.s-wh.org/programs",
+     "how": "Monthly: Ghost Walk Tours (Oct 17), Colonial Thanksgiving (Nov 14), Candlelight Tours (Dec 12).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Unionville Museum",
+     "url": "https://unionvillemuseum.org",
+     "how": "Seasonal exhibits (Wed/Sat/Sun 2–4); walking tours.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Ballet Hartford Nutcracker at Hill-Stead",
+     "url": "https://events.humanitix.com/the-nutcracker-land-of-the-sweets",
+     "how": "Annual? Nov 14, 2026.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Farmington Recreation (MyRec)",
+     "url": "https://farmingtonct.myrec.com/info/activities/default.aspx",
+     "how": "Seasonal. Readable once the owner sends this link; then open each program_details.aspx?ProgramID= page for sessions, fees and seats. Youth Sports Clinics and Cultural & Creative hold the kid classes; the Fall Festival is a program page too. Ice Academy skating meets in Simsbury (not listed).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Macaroni Kid Hartford (mom-run events newsletter)",
+     "url": "https://hartford.macaronikid.com",
+     "how": "Weekly. Covers Hartford, West Hartford, Avon, Canton and Simsbury (Farmington Valley too). The events calendar returns 403 to automated reading, so read it in a browser or paste it.",
+     "last": "Oct 8, 2026"
+    }
+   ]
   },
   "glastonbury": {
    "title": "Glastonbury",
@@ -264,6 +492,294 @@
     }
    ],
    "extras": []
+  },
+  "guilford": {
+   "title": "Guilford",
+   "extras": [],
+   "check": [
+    {
+     "name": "Guilford Free Library — events calendar",
+     "url": "https://guilfordfreelibrary.org/events/audience/children/",
+     "how": "Monthly. Month-grid view only (no list view): save each month as PDF or screenshot; the children's listing shows only each series' next date.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Town of Guilford",
+     "url": "https://www.ci.guilford.ct.us/",
+     "how": "Seasonal: Spooktacular on the Green (late Oct), tree lighting and luminaria (early Dec).",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Bishop's Orchards",
+     "url": "https://www.bishopsorchards.com/",
+     "how": "Seasonal: pick-your-own dates.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Guilford Parks & Recreation",
+     "url": "https://www.guilfordparkrec.com/newslist.php",
+     "how": "Monthly: the News List page is current (Spooktacular, holiday events) even though the home page shows an old 2020 copy. Each August: fall/winter brochure.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Dudley Farm Museum — events",
+     "url": "https://dudleyfarm.com/events/",
+     "how": "Monthly: Harvest Day (mid-Oct), farmers' market (Sat through Oct), holiday market.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Henry Whitfield State Museum",
+     "url": "https://portal.ct.gov/decd/content/historic-preservation/04_state_museums/henry-whitfield-state-museum/events-and-exhibits",
+     "how": "House closed for restoration in 2026; check for reopening and events.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Patch — Guilford calendar",
+     "url": "https://patch.com/connecticut/guilford/calendar",
+     "how": "Weekend check Oct 5: Nov 14–15 had nothing kid-focused (accepted gap).",
+     "last": "Oct 5, 2026"
+    }
+   ]
+  },
+  "hamden": {
+   "title": "Hamden",
+   "extras": [],
+   "check": [
+    {
+     "name": "Hamden Public Library (LibCal)",
+     "url": "https://hamdenlibrary.libcal.com/calendar/programs/",
+     "how": "Monthly via the LibCal list endpoint. Audience IDs: 4605 Children – Preschool, 3367 Children – School age. Toddler storytimes open for registration two weeks ahead.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Silverbells (town holiday celebration)",
+     "url": "https://hamdenlibrary.org/?p=23334",
+     "how": "Annual: tree lighting at Town Center Park on a December weekday evening; workshops via hamdenct.myrec.com.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "This Week in Hamden (newsletter)",
+     "url": "https://thisweekinhamden.substack.com/p/special-edition-halloween-in-hamden-e3a",
+     "how": "Seasonal: Halloween round-up (trunk-or-treats at the Elks, YMCA, Keefe Center). 2026 edition not out yet when checked.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Patch — Hamden calendar",
+     "url": "https://patch.com/connecticut/hamden/calendar",
+     "how": "Weekend check Oct 7: nothing kid-focused; Oct 10–24 and Nov 7–14 weekends empty (accepted gap). Worth adding: Eli Whitney Museum workshops, Brooksvale Park events.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Hamden Recreation (MyRec)",
+     "url": "https://hamdenct.myrec.com/info/activities/default.aspx",
+     "how": "Seasonal: only a handful of programs (All Ability Halloween Dance Oct 16, swim lessons full).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Sleeping Giant Park Association program calendar",
+     "url": "https://sgpa.org/program-calendar/",
+     "how": "Monthly: free guided hikes (registration).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Eli Whitney Museum",
+     "url": "https://www.eliwhitney.org/node/177",
+     "how": "Seasonal: weekend walk-ins Sat–Sun 10–3; vacation-day workshops (2026–27 dates not posted Oct 7).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Hamden Family Resource Center",
+     "url": "https://www.hamden.org/family-resource-center-frc",
+     "how": "Call 203-407-3111 for Play and Learn schedules (not posted online).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "This Week in Hamden (Substack)",
+     "url": "https://thisweekinhamden.substack.com/p/special-edition-halloween-in-hamden-e3a",
+     "how": "Seasonal. Very Hamden-specific Halloween and holiday round-ups (trunk-or-treats, Elks, Keefe Center, ConnCorp), but the newest post found is fall 2024, so use it for patterns.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Quinnipiac University: children & families",
+     "url": "https://local.qu.edu/children-and-families/",
+     "how": "Seasonal: Boomer's Boo Bash (late October) and other community days.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Macaroni Kid Wallingford/New Haven",
+     "url": "https://wallingford.macaronikid.com",
+     "how": "Weekly. Says it covers New Haven and surrounding towns; Hamden not named. Calendar is 403 to automated reading.",
+     "last": "Oct 8, 2026"
+    }
+   ]
+  },
+  "hartford": {
+   "title": "Hartford",
+   "extras": [],
+   "check": [
+    {
+     "name": "Hartford Public Library (Communico)",
+     "url": "https://programs.hplct.org/events?a=Family%2CYouth",
+     "how": "Monthly, paste only (JavaScript calendar). Filter age groups Family + Youth and a date range. Albany branch programs stopped after October; December was nearly empty when pasted.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Connecticut Science Center",
+     "url": "https://ctsciencecenter.org/",
+     "how": "Monthly: Spooktacular (Oct 18), holiday programs, school-break events.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Hartford Stage",
+     "url": "https://www.hartfordstage.org/2026-2027/a-christmas-carol/",
+     "how": "Annual: A Christmas Carol (Nov 21–Dec 27, 2026).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Patch — Hartford calendar",
+     "url": "https://patch.com/connecticut/hartford/calendar",
+     "how": "Weekend check Oct 7: nothing kid-focused in Hartford; most weekends empty (accepted gap). Worth adding: Wadsworth Atheneum family days, Bushnell family shows, city tree lighting.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Wadsworth Atheneum events (agenda view)",
+     "url": "https://www.thewadsworth.org/events/action~agenda/request_format~html/",
+     "how": "Monthly: Second Saturdays for Families (free, 10–2), Día de Muertos, Festival of Lights. Page through with page_offset~N.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Bushnell Children's Theatre",
+     "url": "https://www.bushnell.org/education/bushnell-childrens-theatre",
+     "how": "Seasonal: school-day shows the public can attend ($14, box office 860-987-5900).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Hartford Symphony / Connecticut Ballet Nutcracker",
+     "url": "https://hartfordsymphony.org/portfolio-items/the-nutcracker-2026/",
+     "how": "Annual (Dec 19–20, 2026).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Winterfest Hartford",
+     "url": "https://www.wfsb.com/2025/11/26/winterfest-returns-hartfords-bushnell-park-15th-year/",
+     "how": "Annual: Black Friday into January; 2026 dates not posted Oct 7.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Macaroni Kid Hartford (mom-run events newsletter)",
+     "url": "https://hartford.macaronikid.com",
+     "how": "Weekly. Covers Hartford, West Hartford, Avon, Canton and Simsbury (Farmington Valley too). The events calendar returns 403 to automated reading, so read it in a browser or paste it.",
+     "last": "Oct 8, 2026"
+    }
+   ]
+  },
+  "madison": {
+   "title": "Madison",
+   "extras": [],
+   "check": [
+    {
+     "name": "E.C. Scranton Memorial Library (LibraryCalendar)",
+     "url": "https://scranton.librarycalendar.com/events/upcoming",
+     "how": "Monthly. Filter Age Group to Children and paste the list. Storytimes rotate on scattered dates rather than weekly series.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Madison Beach & Recreation",
+     "url": "https://www.madisonct.org/",
+     "how": "Seasonal: holiday tree lighting (early December), programs.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "R.J. Julia Booksellers",
+     "url": "https://rjjulia.com/upcoming-events",
+     "how": "Monthly: children's storytimes and author events.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Meigs Point Nature Center",
+     "url": "https://www.meigspointnaturecenter.org/",
+     "how": "Monthly: Astronomy Night, seasonal programs; free admission.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Patch — Madison calendar",
+     "url": "https://patch.com/connecticut/madison-ct/calendar",
+     "how": "Weekend check Oct 5: Oct 10 and 17 only have library Itty Bitty Meetup; Patch had nothing kid-focused (accepted gap). Beware Madison WI/MN/IL/GA results in searches.",
+     "last": "Oct 5, 2026"
+    }
+   ]
+  },
+  "manchester": {
+   "title": "Manchester",
+   "extras": [],
+   "check": [
+    {
+     "name": "Manchester Public Library (mylibrary.digital)",
+     "url": "https://manchesterpubliclibraryct.events.mylibrary.digital/",
+     "how": "Monthly, paste only. Filter Audience: Children's, all three locations. The Oct 7 paste listed dates through Nov 12 only and gives start times only.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Downtown Manchester (Halloween Happenings)",
+     "url": "https://www.locable.com/connections/19730-downtown-manchester-special-services-district/events/2026/10/17/513121/halloween-happenings-3/",
+     "how": "Annual: Halloween Happenings (Oct 24, 2026).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Town of Manchester calendar",
+     "url": "https://www.manchesterct.gov/Community/Town-Calendar-of-Events/Tree-Lighting-Ceremony-2025",
+     "how": "Annual: tree lighting at Center Church (Sat after Thanksgiving in 2025).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Lutz Children's Museum",
+     "url": "https://lutzmuseum.org/visit",
+     "how": "Monthly: check for family events; museum hours and admission.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Patch — Manchester calendar",
+     "url": "https://patch.com/connecticut/manchester/calendar",
+     "how": "Weekend check Oct 7: calendar only reached Oct 9; most weekends empty (accepted gap).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Town calendar of events",
+     "url": "https://www.manchesterct.gov/Community/Town-Calendar-of-Events",
+     "how": "Monthly: Fall Fest, Scarecrow Festival, 2nd Saturdays, America 250 historic walks. Browse forward by date range for Nov–Dec.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Manchester Now fall 2026 program guide (Flipsnack)",
+     "url": "https://www.flipsnack.com/57FF8EB569B/manchester-now-fall-2026",
+     "how": "Seasonal. Image-only flipbook, so ask the owner for the PDF (fall 2026 text saved as tools/pastes/manchester-now-fall-2026.txt; the 11 MB PDF itself is not kept in the repo). Text extracts with gaps between letters and jumbled columns, so check day/date pairs. Covers Early Childhood Center playgroups, Leisure Labs family nights and movies, Youth Service Bureau family workshops, drop-in art, pools and basketball. Town moves registration to MyRec from Nov 2026.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Downtown Manchester SSD (Locable)",
+     "url": "https://www.locable.com/connections/19730-downtown-manchester-special-services-district/events/2026/11/28/513128/holiday-on-main-6/",
+     "how": "Seasonal: Halloween Happenings (Oct 24), Holiday on Main (Nov 28).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Lutz Children's Museum calendar",
+     "url": "https://lutzmuseum.org/calendar-1",
+     "how": "Monthly: Spooktacular (Oct 24); few other dated events.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "The Fire Museum",
+     "url": "https://thefiremuseum.org/",
+     "how": "Saturdays 10–4.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Mommy Poppins: indoor play spaces in CT",
+     "url": "https://mommypoppins.com/connecticut-kids/indoor-activities/indoor-play-spaces-in-connecticut-open-now",
+     "how": "Places only (updated Feb 2026). Trap: manchester.macaronikid.com is Manchester, NH; no CT Macaroni Kid edition covers Manchester.",
+     "last": "Oct 8, 2026"
+    }
+   ]
   },
   "middletown": {
    "title": "Middletown",
@@ -537,6 +1053,48 @@
    ],
    "extras": []
   },
+  "old-saybrook": {
+   "title": "Old Saybrook",
+   "extras": [],
+   "check": [
+    {
+     "name": "Acton Public Library (Assabet calendar)",
+     "url": "https://actonlibrary.assabetinteractive.com/calendar/",
+     "how": "Monthly. Assabet: open each month's 'By Date-Ordered Listings' view and paste it. Several programs get canceled week to week, so check for CANCELED tags.",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Old Saybrook Torchlight Parade",
+     "url": "https://oldsaybrooktorchlight.com/",
+     "how": "Each fall: parade date (2nd Saturday of December in 2026).",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "The Kate",
+     "url": "https://thekate.org/",
+     "how": "Each season: look for children's shows (none in fall 2026).",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Old Saybrook Parks & Recreation (MyRec)",
+     "url": "https://oldsaybrookct.myrec.com/info/activities/default.aspx",
+     "how": "Each season: preschool programs, Soccer Shots, martial arts, 'Tis the Season, Trunk or Treat (late Oct).",
+     "last": "Oct 4, 2026"
+    },
+    {
+     "name": "Greater Old Saybrook Chamber — events",
+     "url": "https://business.goschamber.com/events/",
+     "how": "Each summer: Arts & Crafts Festival on the Town Green (first weekend of October; Oct 3–4 in 2026), Chili Fest, holiday events.",
+     "last": "Oct 5, 2026"
+    },
+    {
+     "name": "Patch — Old Saybrook calendar",
+     "url": "https://patch.com/connecticut/old-saybrook-ct/calendar",
+     "how": "Monthly: Clark Community Park nature walks, Kate family shows (e.g., Missoula Children's Theatre), library programs.",
+     "last": "Oct 5, 2026"
+    }
+   ]
+  },
   "ridgefield": {
    "title": "Ridgefield",
    "check": [
@@ -585,6 +1143,72 @@
    ],
    "extras": []
   },
+  "simsbury": {
+   "title": "Simsbury",
+   "extras": [],
+   "check": [
+    {
+     "name": "Simsbury Public Library (LibraryCalendar)",
+     "url": "https://simsbury.librarycalendar.com/events/month?age_groups%5B72%5D=72",
+     "how": "Monthly, paste only. Pastes saved in tools/pastes/simsbury-2026-10-p*.txt. Recurring storytimes were posted through October only.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Simsbury Celebrates",
+     "url": "https://www.simsbury-ct.gov/node/176641",
+     "how": "Annual: Saturday after Thanksgiving on Hopmeadow St (Nov 28, 2026), fireworks around 8:15.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Flamig Farm",
+     "url": "https://flamigfarm.yapsody.com/event/index/857093/Halloween-at-The-Farm-with-Farmer-Debbie",
+     "how": "Seasonal: farm programs (Halloween at the Farm, Oct 30).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Patch — Simsbury calendar",
+     "url": "https://patch.com/connecticut/simsbury/calendar",
+     "how": "Weekend check Oct 7: calendar was stale (September); Oct 17–Nov 7 weekends empty (accepted gap). Worth adding: International Skating Center public skating, Simsbury Farms rink opening.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Simsbury Recreation (MyRec)",
+     "url": "https://simsburyct.myrec.com/info/activities/default.aspx",
+     "how": "Seasonal: Little Makers, Tumble Tots, Mad Science, Youth Acting, dance, skating lessons, Gingerbread House competition.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Simsbury Historical Society events",
+     "url": "https://simsburyhistory.org/events-programs/",
+     "how": "Monthly: plays, workshops, Children's Holiday Tea (Dec 5), Holiday Market.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Macaroni Kid Hartford (mom-run events newsletter)",
+     "url": "https://hartford.macaronikid.com",
+     "how": "Weekly. Covers Hartford, West Hartford, Avon, Canton and Simsbury (Farmington Valley too). The events calendar returns 403 to automated reading, so read it in a browser or paste it.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Flamig Farm tickets (Yapsody)",
+     "url": "https://flamigfarm.yapsody.com",
+     "how": "Monthly. Best source for the farm's dated events: Toddlers on the Farm, haunted walk, Halloween with Farmer Debbie, Santa visits (December dates usually posted in November).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Theatre Guild of Simsbury",
+     "url": "https://www.theatreguildsimsbury.org/our-season/the-little-mermaid",
+     "how": "Seasonal. Community musicals at Simsbury High School (fall show early-mid October).",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Farmington Valley Community newsletter",
+     "url": "https://farmington-valley.beehiiv.com/p/simsbury-celebrates-2024",
+     "how": "Seasonal. Covers Simsbury Celebrates and other valley events.",
+     "last": "Oct 8, 2026"
+    }
+   ]
+  },
   "stamford": {
    "title": "Stamford",
    "check": [
@@ -626,6 +1250,60 @@
     }
    ],
    "extras": []
+  },
+  "stratford": {
+   "title": "Stratford",
+   "extras": [],
+   "check": [
+    {
+     "name": "Stratford Library (LibCal)",
+     "url": "https://stratfordlibrary.libcal.com/calendar/events",
+     "how": "Monthly. Readable via the LibCal list endpoint (…/ajax/calendar/list?c=-1&date=0000-00-00&perpage=35&page=N); iCal feed cid=12865. Oct 7 read stopped at a rate limit: Nov 23–30 and after Dec 9 not yet read.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Celebrate Stratford (town events)",
+     "url": "https://www.townofstratford.com/article/2802050",
+     "how": "Annual list: Great Pumpkin Festival (Oct 17, rain date Oct 18), Holiday Market & Tree Lighting (Fri after Thanksgiving), Menorah Lighting (Dec 9). Times come from past years; confirm.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Stratford library local museums list",
+     "url": "https://stratfordlibrary.org/local-museums/",
+     "how": "Seasonal: museum hours (Helicopter Museum closes mid-October).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Patch — Stratford calendar",
+     "url": "https://patch.com/connecticut/stratford/calendar",
+     "how": "Weekend check Oct 7: Nov 7 and Nov 14 weekends empty; Oct weekends have one item each.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Stratford Recreation (RecDesk)",
+     "url": "https://townofstratford.recdesk.com/Community/Program?category=3",
+     "how": "Seasonal, paste only (JavaScript list). Oct 8 paste (tools/pastes/stratford-rec-2026-10-p*.txt): 43 youth programs, with classes added to the page. The Preschool category wasn't pasted yet.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Boothe Homestead Christmas (Friends of Boothe Park)",
+     "url": "https://stratfordcrier.com/homestead-for-the-holidays/",
+     "how": "Annual, first weekend of December, with Santa photos; 2026 dates not posted.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Connecticut Dance Conservatory",
+     "url": "http://www.ctdanceconservatory.org/general-info.html",
+     "how": "Seasonal: Day of Dance (Nov 8).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "KidsWannaGo Fairfield County / Fairfield After Dark",
+     "url": "https://www.fairfieldafterdark.com/stratford-ct",
+     "how": "Checked Oct 8: KidsWannaGo's weekend page was stale (April 2026) and Fairfield After Dark is mostly adult events. Low value; Macaroni Kid Fairfield–Trumbull–Shelton does not cover Bridgeport or Stratford.",
+     "last": "Oct 8, 2026"
+    }
+   ]
   },
   "trumbull": {
    "title": "Trumbull",
@@ -692,6 +1370,72 @@
     }
    ],
    "extras": []
+  },
+  "waterbury": {
+   "title": "Waterbury",
+   "extras": [],
+   "check": [
+    {
+     "name": "Silas Bronson Library kids' programs",
+     "url": "https://www.bronsonlibrary.org/kidprograms",
+     "how": "Monthly. Readable page listing weekly and monthly programs through November. It says 'Sat Nov 3' for a movie (Nov 3 is a Tuesday), so that one was left off.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Mattatuck Museum calendar",
+     "url": "https://www.mattmuseum.org/?p=32793",
+     "how": "Monthly: free second Saturdays, chess lessons, School's Out camps.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Palace Theater",
+     "url": "https://www.palacetheaterct.org/shows-and-events/main-stage",
+     "how": "Seasonal: show list loads only in a browser; use its Family-Friendly filter.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Waterbury tree lighting",
+     "url": "https://thewaterburytimes.com/2025/11/29/waterbury-tree-lighting-ceremony-2025/",
+     "how": "Annual, on the Green after Thanksgiving. Beware Waterbury, VT results (River of Light parade, Waterbury Roundabout).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Mattatuck Museum calendar (list)",
+     "url": "https://www.mattmuseum.org/calendar/list/",
+     "how": "Monthly: Family Fun Days, School's Out camps (Nov 3, Nov 11), kids' art workshops, chess.",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Spirits Alive at Riverside",
+     "url": "https://ctvisit.com/events/spirits-alive-riverside",
+     "how": "Annual cemetery history tour (Oct 17, 2026).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Waterbury Parks & Rec",
+     "url": "https://www.waterburyct.gov/services/public-works/recreation",
+     "how": "Rec centers run after-school programs; no fall brochure online. Beware discoverwaterbury.com (Vermont).",
+     "last": "Oct 7, 2026"
+    },
+    {
+     "name": "Macaroni Kid Southbury (covers Waterbury)",
+     "url": "https://southbury.macaronikid.com",
+     "how": "Weekly. Its coverage list includes Waterbury and Naugatuck. Events calendar is 403 to automated reading; paste it.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "Waterbury Region Arts calendar",
+     "url": "https://events.waterburyregionarts.com/events/school-s-out-324ae",
+     "how": "Monthly. Event pages open; carries Mattatuck School's Out days and arts events.",
+     "last": "Oct 8, 2026"
+    },
+    {
+     "name": "KidsWannaGo Greater Waterbury",
+     "url": "https://kidswannago.com/connecticut/greater-waterbury/",
+     "how": "Weekly calendar, readable. Some entries are mis-tagged (Massachusetts events under Waterbury venues), so confirm each on the host's site.",
+     "last": "Oct 8, 2026"
+    }
+   ]
   },
   "west-hartford": {
    "title": "West Hartford",
@@ -770,180 +1514,6 @@
     }
    ],
    "extras": []
-  },
-  "guilford": {
-   "title": "Guilford",
-   "extras": [],
-   "check": [
-    {
-     "name": "Guilford Free Library — events calendar",
-     "url": "https://guilfordfreelibrary.org/events/audience/children/",
-     "how": "Monthly. Month-grid view only (no list view): save each month as PDF or screenshot; the children's listing shows only each series' next date.",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Town of Guilford",
-     "url": "https://www.ci.guilford.ct.us/",
-     "how": "Seasonal: Spooktacular on the Green (late Oct), tree lighting and luminaria (early Dec).",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Bishop's Orchards",
-     "url": "https://www.bishopsorchards.com/",
-     "how": "Seasonal: pick-your-own dates.",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Guilford Parks & Recreation",
-     "url": "https://www.guilfordparkrec.com/newslist.php",
-     "how": "Monthly: the News List page is current (Spooktacular, holiday events) even though the home page shows an old 2020 copy. Each August: fall/winter brochure.",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Dudley Farm Museum — events",
-     "url": "https://dudleyfarm.com/events/",
-     "how": "Monthly: Harvest Day (mid-Oct), farmers' market (Sat through Oct), holiday market.",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Henry Whitfield State Museum",
-     "url": "https://portal.ct.gov/decd/content/historic-preservation/04_state_museums/henry-whitfield-state-museum/events-and-exhibits",
-     "how": "House closed for restoration in 2026; check for reopening and events.",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Patch — Guilford calendar",
-     "url": "https://patch.com/connecticut/guilford/calendar",
-     "how": "Weekend check Oct 5: Nov 14–15 had nothing kid-focused (accepted gap).",
-     "last": "Oct 5, 2026"
-    }
-   ]
-  },
-  "old-saybrook": {
-   "title": "Old Saybrook",
-   "extras": [],
-   "check": [
-    {
-     "name": "Acton Public Library (Assabet calendar)",
-     "url": "https://actonlibrary.assabetinteractive.com/calendar/",
-     "how": "Monthly. Assabet: open each month's 'By Date-Ordered Listings' view and paste it. Several programs get canceled week to week, so check for CANCELED tags.",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Old Saybrook Torchlight Parade",
-     "url": "https://oldsaybrooktorchlight.com/",
-     "how": "Each fall: parade date (2nd Saturday of December in 2026).",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "The Kate",
-     "url": "https://thekate.org/",
-     "how": "Each season: look for children's shows (none in fall 2026).",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Old Saybrook Parks & Recreation (MyRec)",
-     "url": "https://oldsaybrookct.myrec.com/info/activities/default.aspx",
-     "how": "Each season: preschool programs, Soccer Shots, martial arts, 'Tis the Season, Trunk or Treat (late Oct).",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Greater Old Saybrook Chamber — events",
-     "url": "https://business.goschamber.com/events/",
-     "how": "Each summer: Arts & Crafts Festival on the Town Green (first weekend of October; Oct 3–4 in 2026), Chili Fest, holiday events.",
-     "last": "Oct 5, 2026"
-    },
-    {
-     "name": "Patch — Old Saybrook calendar",
-     "url": "https://patch.com/connecticut/old-saybrook-ct/calendar",
-     "how": "Monthly: Clark Community Park nature walks, Kate family shows (e.g., Missoula Children's Theatre), library programs.",
-     "last": "Oct 5, 2026"
-    }
-   ]
-  },
-  "essex": {
-   "title": "Essex",
-   "extras": [],
-   "check": [
-    {
-     "name": "Essex Library (Engaged Patrons)",
-     "url": "https://www.youressexlibrary.org/",
-     "how": "Monthly. Paste the events list; kids' programs are mixed with many adult ones. Storytime series dates past October weren't posted as of Oct 4.",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "essexct.com events (Ivoryton Library + town)",
-     "url": "https://essexct.com/events/category/activity/",
-     "how": "Monthly. Readable directly and offers .ics export; covers the Ivoryton Library, FestiFall and the Pumpkin Festival.",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Essex Steam Train — North Pole Express",
-     "url": "https://essexsteamtrain.com/",
-     "how": "Late summer: holiday dates and times (tickets online only).",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Connecticut River Museum",
-     "url": "https://ctrivermuseum.org/",
-     "how": "November: Holiday Train Show and Trees in the Rigging dates.",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Essex Parks & Recreation (RecDesk)",
-     "url": "https://essexct.recdesk.com/Community/Page?pageId=513",
-     "how": "October: Ivoryton Pumpkin Festival schedule (costume parade 4:30, carving at Bushy Hill).",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Bushy Hill Nature Center",
-     "url": "https://www.bushyhill.org/",
-     "how": "Each season: community workshops and vacation days.",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Patch — Essex calendar",
-     "url": "https://patch.com/connecticut/essex-chester-deepriver/calendar",
-     "how": "Weekend check Oct 5: Nov 7–8 and 14–15 empty; steam-train season ends in October and holiday events start late November (accepted gap).",
-     "last": "Oct 5, 2026"
-    }
-   ]
-  },
-  "madison": {
-   "title": "Madison",
-   "extras": [],
-   "check": [
-    {
-     "name": "E.C. Scranton Memorial Library (LibraryCalendar)",
-     "url": "https://scranton.librarycalendar.com/events/upcoming",
-     "how": "Monthly. Filter Age Group to Children and paste the list. Storytimes rotate on scattered dates rather than weekly series.",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Madison Beach & Recreation",
-     "url": "https://www.madisonct.org/",
-     "how": "Seasonal: holiday tree lighting (early December), programs.",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "R.J. Julia Booksellers",
-     "url": "https://rjjulia.com/upcoming-events",
-     "how": "Monthly: children's storytimes and author events.",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Meigs Point Nature Center",
-     "url": "https://www.meigspointnaturecenter.org/",
-     "how": "Monthly: Astronomy Night, seasonal programs; free admission.",
-     "last": "Oct 4, 2026"
-    },
-    {
-     "name": "Patch — Madison calendar",
-     "url": "https://patch.com/connecticut/madison-ct/calendar",
-     "how": "Weekend check Oct 5: Oct 10 and 17 only have library Itty Bitty Meetup; Patch had nothing kid-focused (accepted gap). Beware Madison WI/MN/IL/GA results in searches.",
-     "last": "Oct 5, 2026"
-    }
-   ]
   }
  }
 }

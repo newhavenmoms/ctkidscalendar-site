@@ -13,7 +13,7 @@
 (function () {
   const WEB3FORMS_KEY = "303d4e37-2607-4dc4-84b1-8c742c6914bf";               // paste your Web3Forms access key here
   const SUBMIT_TO = "newhavenmoms@gmail.com";
-  const TOWNS = ["Branford","Cheshire","Darien","Essex","Fairfield","Glastonbury","Greenwich","Guilford","Madison","Middletown","Milford","New Canaan","New Haven","Newtown","Norwalk","Old Saybrook","Ridgefield","Stamford","Trumbull","Wallingford","West Hartford","Westport"];
+  const TOWNS = ["Branford","Bridgeport","Cheshire","Danbury","Darien","Essex","Fairfield","Farmington","Glastonbury","Greenwich","Guilford","Hamden","Hartford","Madison","Manchester","Middletown","Milford","New Canaan","New Haven","Newtown","Norwalk","Old Saybrook","Ridgefield","Simsbury","Stamford","Stratford","Trumbull","Wallingford","Waterbury","West Hartford","Westport"];
 
   const T = {
     en: {

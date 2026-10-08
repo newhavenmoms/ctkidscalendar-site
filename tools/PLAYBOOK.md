@@ -142,12 +142,22 @@ Cover each category; this is the "rainy day / get outside" backbone.
 | Rinks | Rink's public-skate page; outdoor rinks open around Thanksgiving |
 | Bookstores | **ctbooktrail.org** lists every independent bookstore with its site |
 | Toy stores | Yelp/YellowPages to find names, then confirm the store's own site |
+| Indoor play, climbing, roller rinks | Mommy Poppins indoor-play guide, ctvisit.com listings; confirm on the venue's site |
+| Creative studios, coding, music, drama | Patch "parent's guide to after-school activities" articles, classcub.com, Macaroni Kid directories |
 | Museums | Town history pages, ctvisit.com listings |
 | Libraries | Every branch |
 
 ### 7. Bookstore and toy-store events
 Indie bookstores often run weekly storytimes (Wesleyan RJ Julia: Sundays 11 am;
 Fairfield University Bookstore: Saturdays). Check each store's events page.
+
+### 7b. Creative places, indoor play and mom blogs (added Oct 8)
+Don't stop at "no bookstore / no toy store" after one list check. For every town:
+- **Chains count:** Barnes & Noble (storytimes and author visits; the event pages load by script, so check the town's Macaroni Kid edition for dates), LEGO Store build events, comic and game shops (thecardshopfinder.com lists Pokémon/Magic shops by town), and the library Friends' used-book shop (often in the library basement).
+- **Creative places:** paint-your-own pottery, kids' art and workshop studios, coding/STEM schools (Code Ninjas, theCoderSchool, Snapology), music schools, drama academies, community theater (family musicals), kids' cooking.
+- **Indoor play:** trampoline and adventure parks (Urban Air, Lava Island, Jumpz, FunMax), climbing gyms, roller rinks, play cafés, mall play areas. Mommy Poppins' "indoor play spaces in CT" guide (updated Feb 2026) and ctvisit.com listings are the fastest finders. Confirm address and town; many are just over a town line.
+- **Mom blogs and family-event sites:** find the Macaroni Kid edition that names the town in its coverage list (Hartford covers Simsbury and the Farmington Valley; Southbury covers Waterbury; Danbury has its own; manchester.macaronikid.com is New Hampshire). Their calendars return 403 to automated reading, so ask the owner to paste them. Also: town-specific newsletters (This Week in Hamden on Substack, Farmington Valley Community on beehiiv), farm ticket pages (Flamig Farm on Yapsody), KidsWannaGo (often stale; mis-tags), Mommy Poppins (good for places, stale for dates).
+- Confirm every event from a blog on the host's own site, and record dead ends in `known-none.json` with the reason (e.g., Waterbury's Barnes & Noble closed Jan 2026).
 
 ### 8. Think outside the box
 Farms' fall weekends, nature centers, observatories (Wesleyan's Van Vleck Kids'
@@ -249,6 +259,29 @@ Major holidays show as a tag on the calendar's day headings. They're listed in `
 
 Every page has a "Submit an event" button and footer link that open a shared form (`shared/submit.js`). Submissions go to newhavenmoms@gmail.com through Web3Forms once its access key is pasted into `WEB3FORMS_KEY` at the top of that file; until then the form opens the visitor's email app, pre-filled. `build_town.py` adds each new town to the form's town list. Treat submissions like any other lead: verify against the organizer's own page before adding, and note the source.
 
-### School page (added Oct 6, 2026)
+### Schools page (added Oct 6, 2026; renamed Oct 7, 2026)
 
-`/school/` is linked from the homepage menu ("School") and currently shows a "Coming soon" card (English/Spanish). It's marked noindex and kept out of the sitemap until it launches; when real content goes up, remove the robots meta tag and add it to sitemap.xml.
+`/schools/` is linked from the homepage menu ("Schools" / "Escuelas"; menu order is Español, Schools, Submit an event) and currently shows a "Coming soon" card (English/Spanish). It's marked noindex and kept out of the sitemap until it launches; when real content goes up, remove the robots meta tag and add it to sitemap.xml.
+
+The page used to live at `/school/`. That folder now holds only a small redirect page that sends visitors (and any `?query` or `#anchor`) on to `/schools/`. Keep it so old links keep working, and keep it out of the sitemap. If the site moves to a host with server-side redirects (Netlify `_redirects`, Cloudflare Pages, etc.), add a 301 from `/school/` to `/schools/` there as well.
+
+### Nine new towns (added Oct 7, 2026)
+
+Stratford, Hartford, Waterbury, Bridgeport, Hamden, Manchester, Farmington, Danbury and Simsbury, built with `tools/newtowns/<town>.py` + `build_town.py` like the others. Lessons:
+
+- **LibCal can be read without a paste.** The calendar page itself loads by JavaScript, but its list endpoint returns the events: `https://<lib>.libcal.com/ajax/calendar/list?c=-1&date=0000-00-00&perpage=35&page=1&audience=<id>&cats=&inc=0`. Keep `perpage` at 35 or less (bigger pages get cut off) and page through. Audience IDs are in the raw data: Bridgeport 7093 (ages 0–5) and 7094 (6–11); Hamden 4605 (preschool) and 3367 (school age). Fetching many pages quickly hits a rate limit, so pace it.
+- **Paste-only calendars:** LibraryCalendar (Farmington, Simsbury), Communico (Hartford, `programs.hplct.org`) and mylibrary.digital (Danbury, Manchester). mylibrary.digital list views show **start times only**, so Danbury and Manchester end times are estimates; the events are marked "check." The importer's paste parser (`tools/lib/librarycalendar-text.js`) handled the Farmington and Simsbury pastes directly.
+- **Big cities, thin pages.** Hartford, Hamden and Manchester came out thin because their libraries carry most of the kids' calendar and the cities' Big Days are mostly undated so far. Hartford especially needs a second pass: Wadsworth Atheneum family days, the Bushnell's family shows, the city tree lighting.
+- **Same-name trap: Waterbury, Vermont** (River of Light parade, "Waterbury Roundabout"). Bridgeport, West Virginia also showed up for rinks.
+- **Weekend check (Oct 7):** Patch calendars for Hartford, Hamden, Manchester and Simsbury had nothing kid-focused or were stale. The gaps are recorded in `SOURCES.md` as accepted for now.
+- **Map pins** for the new towns were placed from `shared/zips.json` town centers using a fit of the existing pins, then nudged apart by hand around Hartford (Farmington, Hartford, Simsbury).
+
+**Full playbook pass (also Oct 7):** The first build of these nine covered only the library, Big Days and a few places. A second pass went through every step: Parks & Rec, theaters, museum and historical-society calendars, bookstores and toy stores, farms, rinks and splash pads, and the Chamber/Patch weekend check. Don't skip it: it roughly doubled the events on the thinnest towns and filled the classes sections. What worked:
+- **MyRec catalogs** (`<town>ct.myrec.com/info/activities/default.aspx`) list program names; ask the reader for each program's `program_details.aspx?ProgramID=` link, then read each one for sessions, ages and fees (Simsbury, Hamden).
+- **RecDesk** (Stratford) and **Flipsnack** guides (Manchester) don't render outside a browser, so ask the owner for a paste or a PDF. Last year's PDF guide often sits at a predictable town-site path and shows the pattern.
+- **Museum agenda views** page through cleanly (the Wadsworth's `events/action~agenda/page_offset~N/`; the Mattatuck's `calendar/list/`).
+- **The Bushnell Children's Theatre** school-day shows are open to the public ($14 by phone), so list them.
+- Same-name traps again: Waterbury VT (discoverwaterbury.com) and Manchester NH (Wonderland Books and Toys).
+- Record categories confirmed absent in `tools/known-none.json` so the refresh report stops flagging them.
+
+**Owner-supplied sources (Oct 8):** WebFetch refuses URLs that haven't appeared in a search result or a message. When a town's Rec catalog (MyRec, RecDesk) won't open, ask the owner to send the link in a message; after that it reads normally (Farmington MyRec). Open each `program_details.aspx?ProgramID=` page for sessions, fees and seats, and skip sessions that have ended or meet out of town. Seasonal guides that only exist as image flipbooks (Manchester Now) need the owner's PDF. Its extracted text has gaps between letters and jumbled columns, so check each day/date pair against a calendar before using it. Keep the extracted text in tools/pastes/, not the PDF.

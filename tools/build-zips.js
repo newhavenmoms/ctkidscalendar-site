@@ -12,7 +12,7 @@ const pkg = process.argv[2];
 if (!pkg) { console.error('Usage: node tools/build-zips.js <path-to-zipcodes-package>'); process.exit(1); }
 const Z = Object.values(require(path.resolve(pkg)).codes);
 const ROOT = path.join(__dirname, '..');
-const TOWNS = fs.readdirSync(ROOT).filter(d => fs.existsSync(path.join(ROOT, d, 'index.html')) && !['shared', 'tools'].includes(d));
+const TOWNS = fs.readdirSync(ROOT).filter(d => fs.existsSync(path.join(ROOT, d, 'index.html')) && !['shared', 'tools', 'school', 'schools'].includes(d));
 const nameOf = slug => slug.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
 const r2 = x => Math.round(x * 1e4) / 1e4;
 const towns = {};
