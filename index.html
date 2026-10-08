@@ -651,8 +651,6 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
           <label class="nearfield"><span class="flabel" data-i18n="nearRadius">Within</span>
             <select id="nearRadius" class="chip selectchip"></select></label>
           <label class="nearfield"><span class="flabel" data-i18n="nearWhen">When</span>
-            <select id="nearWhen" class="chip selectchip"></select></label>
-          <label class="nearfield" id="nearDateWrap" hidden><span class="flabel" data-i18n="nearDate">Date</span>
             <input id="nearDate" type="date" class="nearinput neardate"></label>
         <div class="nearfield"><span class="flabel" data-i18n="nearFilterBy">Filter</span>
         <details class="nearmorefilters" id="nearFilters">
@@ -774,13 +772,6 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       tBig:"Big days",
       nearMiles:"{{N}} miles",
       nearAny:"Any distance",
-      nearW_today:"Today",
-      nearW_tomorrow:"Tomorrow",
-      nearW_weekend:"This weekend",
-      nearW_week:"Next 7 days",
-      nearW_month:"Next 30 days",
-      nearW_date:"Pick a date…",
-      nearDate:"Date",
       nearLoading:"Loading every town's calendar…",
       nearError:"Sorry, the calendar didn't load. Try again in a moment.",
       nearBadZip:"Enter a 5-digit ZIP code.",
@@ -789,7 +780,7 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       nearFoundAll:"{{N}} things to do across {{T}} towns. Add your ZIP code to see what's close by.",
       nearYou:"you",
       nearNoneNear:"Nothing matches within that distance. Try a bigger radius or fewer filters.",
-      nearNone:"Nothing matches those filters. Try fewer filters or a longer time span.",
+      nearNone:"Nothing matches those filters. Try fewer filters or another date.",
       nearTo:"to",
       nearAlso:"+{{N}} more times",
       nearSeeTimes:"See times",
@@ -843,13 +834,6 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       tBig:"Días especiales",
       nearMiles:"{{N}} millas",
       nearAny:"Cualquier distancia",
-      nearW_today:"Hoy",
-      nearW_tomorrow:"Mañana",
-      nearW_weekend:"Este fin de semana",
-      nearW_week:"Próximos 7 días",
-      nearW_month:"Próximos 30 días",
-      nearW_date:"Elegir una fecha…",
-      nearDate:"Fecha",
       nearLoading:"Cargando el calendario de todos los pueblos…",
       nearError:"Lo sentimos, el calendario no cargó. Inténtalo de nuevo en un momento.",
       nearBadZip:"Escribe un código postal de 5 dígitos.",
@@ -858,7 +842,7 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       nearFoundAll:"{{N}} actividades en {{T}} pueblos. Agrega tu código postal para ver lo que tienes cerca.",
       nearYou:"ti",
       nearNoneNear:"No hay nada a esa distancia. Prueba un radio mayor o menos filtros.",
-      nearNone:"No hay nada con esos filtros. Prueba menos filtros o un periodo más largo.",
+      nearNone:"No hay nada con esos filtros. Prueba menos filtros u otra fecha.",
       nearTo:"a",
       nearAlso:"+{{N}} horarios más",
       nearSeeTimes:"Ver horarios",
@@ -952,14 +936,14 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
      data: /shared/allevents.json (built by shared/build-stats.js) + /shared/zips.json.
      Loaded only once someone uses the section. Schedules expand exactly like the town pages. */
   (function(){
-    const zipIn=document.getElementById("nearZip"),radSel=document.getElementById("nearRadius"),whenSel=document.getElementById("nearWhen"),
+    const zipIn=document.getElementById("nearZip"),radSel=document.getElementById("nearRadius"),
       list=document.getElementById("nearList"),status=document.getElementById("nearStatus"),moreWrap=document.getElementById("nearMoreWrap"),moreBtn=document.getElementById("nearMore");
     if(!zipIn)return;
     const PEEK=window.matchMedia("(max-width:760px)").matches?4:6;let DATA=null,ZIP=null,loading=null,origin=null,limit=PEEK;
     const nf={age:"all",free:false,dropin:false,indoor:false,special:false};
-    const RAD=[5,10,15,25,50,0],WHEN=["today","tomorrow","weekend","week","month","date"];
-    const dateIn=document.getElementById("nearDate"),dateWrap=document.getElementById("nearDateWrap");
-    dateIn.min=todayKey;dateIn.max=`${now.getFullYear()+1}-12-31`;
+    const RAD=[5,10,15,25,50,0];
+    const dateIn=document.getElementById("nearDate");
+    dateIn.min=todayKey;dateIn.value=todayKey;dateIn.max=`${now.getFullYear()+1}-12-31`;
     try{const s=JSON.parse(localStorage.getItem("ctk-near")||"{}");if(/^\d{5}$/.test(s.zip||""))zipIn.value=s.zip;if(RAD.includes(s.r))radSel.dataset.v=s.r;}catch(_){}
     const key=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
     const addD=(d,n)=>{const x=new Date(d);x.setDate(x.getDate()+n);return x};
@@ -967,16 +951,12 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
     const fmtT=t=>{let[h,m]=t.split(":").map(Number);const ap=h>=12?"pm":"am";h=h%12||12;return m?`${h}:${pad(m)}${ap}`:`${h}${ap}`};
     const miles=(a,b)=>{const R=3958.8,r=Math.PI/180,dLa=(b[0]-a[0])*r,dLo=(b[1]-a[1])*r,h=Math.sin(dLa/2)**2+Math.cos(a[0]*r)*Math.cos(b[0]*r)*Math.sin(dLo/2)**2;return 2*R*Math.asin(Math.sqrt(h))};
     function fillSelects(){
-      const L=UI[LANG],rv=Number(radSel.value||radSel.dataset.v||15),wv=whenSel.value||"week";
+      const L=UI[LANG],rv=Number(radSel.value||radSel.dataset.v||15);
       radSel.innerHTML=RAD.map(r=>`<option value="${r}"${r===rv?" selected":""}>${r?L.nearMiles.replace("{{N}}",r):L.nearAny}</option>`).join("");
-      whenSel.innerHTML=WHEN.map(w=>`<option value="${w}"${w===wv?" selected":""}>${L["nearW_"+w]}</option>`).join("");
     }
     function range(){
-      const t=new Date(now.getFullYear(),now.getMonth(),now.getDate()),w=whenSel.value;
-      if(w==="date"){const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(dateIn.value||"");const d=m?new Date(+m[1],+m[2]-1,+m[3]):t;return[d,d]}
-      if(w==="today")return[t,t];if(w==="tomorrow")return[addD(t,1),addD(t,1)];
-      if(w==="weekend"){const dow=t.getDay();const sat=dow===0?addD(t,-1):addD(t,(6-dow));const start=dow===0||dow===6?t:sat;return[start,dow===0?t:addD(sat,1)]}
-      if(w==="month")return[t,addD(t,29)];return[t,addD(t,6)];
+      const t=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+      const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(dateIn.value||"");const d=m?new Date(+m[1],+m[2]-1,+m[3]):t;return[d,d];
     }
     function occurs(r,d,k){if(d.getDay()!==r[0]||k<r[2]||k>r[3])return false;return r[4]?Math.ceil(d.getDate()/7)===r[4]:true}
     function pass(e){if(nf.age!=="all"&&!e.a.includes(nf.age))return false;if(nf.free&&!e.f)return false;if(nf.dropin&&!e.d)return false;if(nf.indoor&&!e.in)return false;if(nf.special&&!e.sp)return false;return true}
@@ -1038,11 +1018,13 @@ footer.home-footer .ft-note{flex-basis:100%;font-family:var(--serif);font-style:
       document.getElementById("nearFiltersLbl").textContent=on?L.nearFiltersOn.replace("{{N}}",on):L.nearFilters;
     }
     function save(){try{localStorage.setItem("ctk-near",JSON.stringify({zip:zipIn.value.trim(),r:Number(radSel.value)}))}catch(_){}}
-    function go(){limit=PEEK;origin=null;save();load().then(()=>{render();if(window.ctkTrack)window.ctkTrack("near_search",{radius:radSel.value,when:whenSel.value==="date"?"date:"+dateIn.value:whenSel.value,has_zip:!!zipIn.value})})}
+    function go(){limit=PEEK;origin=null;save();load().then(()=>{render();if(window.ctkTrack)window.ctkTrack("near_search",{radius:radSel.value,when:"date:"+dateIn.value,has_zip:!!zipIn.value})})}
     zipIn.addEventListener("input",()=>{zipIn.value=zipIn.value.replace(/\D/g,"").slice(0,5);if(zipIn.value.length===5||!zipIn.value)go()});
-    function syncDate(open){const on=whenSel.value==="date";dateWrap.hidden=!on;if(on){if(!dateIn.value)dateIn.value=todayKey;if(open){try{dateIn.showPicker()}catch(_){dateIn.focus()}}}}
-    radSel.addEventListener("change",go);whenSel.addEventListener("change",()=>{syncDate(true);go()});
-    dateIn.addEventListener("change",()=>{if(!dateIn.value)dateIn.value=todayKey;go()});
+        radSel.addEventListener("change",go);
+    let lastDate=dateIn.value;function dateGo(){if(!dateIn.value)dateIn.value=todayKey;if(dateIn.value===lastDate)return;lastDate=dateIn.value;go()}
+    dateIn.addEventListener("change",dateGo);dateIn.addEventListener("input",dateGo);
+    dateIn.addEventListener("click",()=>{try{dateIn.showPicker()}catch(_){}});
+    window.addEventListener("pageshow",()=>{if(!dateIn.value||dateIn.value<todayKey){dateIn.value=todayKey;dateGo()}});
     document.getElementById("nearForm").addEventListener("click",ev=>{
       const a=ev.target.closest("[data-nage]"),tg=ev.target.closest("[data-ntog]");
       if(a){nf.age=a.dataset.nage;document.querySelectorAll("[data-nage]").forEach(x=>x.setAttribute("aria-pressed",x===a?"true":"false"));limit=PEEK;load().then(render)}
